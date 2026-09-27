@@ -12,6 +12,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'cataclysm_spellbooks:excelsius_leggings',
         'cataclysm_spellbooks:excelsius_greaves',
         'cataclysm_spellbooks:ignis_chestplate_elytra',
-        'cataclysm_spellbooks:cursium_mage_elytra'
+        'cataclysm_spellbooks:cursium_mage_elytra',
+        'artifacts:everlasting_beef',
+        'artifacts:eternal_steak'
     ])
 })

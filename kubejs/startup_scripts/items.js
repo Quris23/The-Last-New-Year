@@ -5,6 +5,7 @@ StartupEvents.registry('item', event => {
     .displayName('Кузнечный шаблон: Улучшение костей рептилии')
     .appliesTo('§9Алмазному снаряжению')
     .ingredients('§9Слиток древнего металла')
+
     //event.create('ancient_upgrade_smithing_template', 'smithing_template').displayName('Кузнечный шаблон')//.tooltip('§7§oУлучшение костей рептилии')
     //event.create('ancient_upgrade_smithing_template').displayName('Кузнечный шаблон').tooltip('§7§oУлучшение костей рептилии')
 

@@ -21,6 +21,20 @@ const SCROLL_SCHOOL_CHECKS = {
     '365CF225A08970DD': { school: 'irons_spellbooks:ice', rarity: null }, // Q3: any Ice scroll
     // Infernal (Fire)
     '7DCAC4D5F483CB03': { school: 'irons_spellbooks:fire', rarity: null }, // Q3: any Fire scroll
+    // Abyssal (universal)
+    '11FA3B6C8D2E4F52': { school: 'cataclysm_spellbooks:abyssal', rarity: null }, // any Abyssal scroll
+    // Sand (universal)
+    '21FA3B6C8D2E4F52': { school: 'cataclysm_spellbooks:sand', rarity: null }, // any Sand scroll
+    // Storm (Lightning)
+    '37AB000000000005': { school: 'irons_spellbooks:lightning', rarity: null }, // any Lightning scroll
+    // Ender
+    '38AB000000000005': { school: 'irons_spellbooks:ender', rarity: null }, // any Ender scroll
+    // Druid (Nature)
+    '39AB000000000005': { school: 'irons_spellbooks:nature', rarity: null }, // any Nature scroll
+    // Priest (Holy)
+    '3AAB000000000005': { school: 'irons_spellbooks:holy', rarity: null }, // any Holy scroll
+    // Vampire (Blood)
+    '20AD1E0000000005': { school: 'irons_spellbooks:blood', rarity: null }, // any Blood scroll
 }
 
 function hexId(task) {
@@ -40,6 +54,31 @@ const ANY_ITEM_CHECKS = {
         'irons_spellbooks:gold_spell_book',
     ],
     '0428702D1AFA1817': [ // Infernal (Fire): any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '37AB000000000007': [ // Storm (Lightning): any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '38AB000000000007': [ // Ender: any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '39AB000000000007': [ // Druid (Nature): any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '3AAB000000000007': [ // Priest (Holy): any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '20AD1E0000000007': [ // Vampire (Blood): any grimoire
         'irons_spellbooks:copper_spell_book',
         'irons_spellbooks:iron_spell_book',
         'irons_spellbooks:gold_spell_book',

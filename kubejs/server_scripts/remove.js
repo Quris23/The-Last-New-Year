@@ -70,6 +70,9 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'cataclysm_spellbooks:excelsius_leggings' })
   event.remove({ output: 'cataclysm_spellbooks:excelsius_greaves' })
 
+  // Полное удаление: Вечная Говядина / Вечный Стейк (Artifacts)
+  event.remove({ output: 'artifacts:eternal_steak' })
+
 })
 //LootJS.modifiers(event => {
 //  event.addLootTypeModifier([LootType.CHEST, LootType.ENTITY])
