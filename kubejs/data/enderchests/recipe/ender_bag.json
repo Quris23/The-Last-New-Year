@@ -1,0 +1,21 @@
+{
+   "type": "enderchests:crafting",
+   "neoforge:conditions": [
+      { "type": "neoforge:not", "value": { "type": "neoforge:true" } }
+   ],
+   "group": "enderchests:bag",
+   "pattern": [
+      "#I#",
+      " B ",
+      "#W#"
+   ],
+   "key": {
+      "#": { "item": "minecraft:blaze_powder" },
+      "W": { "tag": "minecraft:wool" },
+      "I": { "tag": "c:ingots/iron" },
+      "B": { "item": "enderchests:ender_pouch" }
+   },
+   "result": {
+      "id": "enderchests:ender_bag"
+   }
+}

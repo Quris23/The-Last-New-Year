@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blood"
+	group: "3AC9C1A5395BF5C0"
+	id: "2F6921C81B308D38"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+}

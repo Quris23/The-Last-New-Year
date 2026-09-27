@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ender"
+	group: "3AC9C1A5395BF5C0"
+	id: "79667D19722FA0FB"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+}

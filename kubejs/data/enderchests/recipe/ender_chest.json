@@ -1,0 +1,21 @@
+{
+   "type": "enderchests:crafting",
+   "neoforge:conditions": [
+      { "type": "neoforge:not", "value": { "type": "neoforge:true" } }
+   ],
+   "group": "enderchests:chest",
+   "pattern": [
+      "#W#",
+      "OBO",
+      "#O#"
+   ],
+   "key": {
+      "#": { "tag": "c:rods/blaze" },
+      "W": { "tag": "minecraft:wool" },
+      "O": { "tag": "c:obsidians" },
+      "B": { "item": "enderchests:ender_pouch" }
+   },
+   "result": {
+      "id": "enderchests:ender_chest"
+   }
+}

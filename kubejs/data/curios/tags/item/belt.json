@@ -1,0 +1,12 @@
+{
+  "replace": true,
+  "values": [
+    "#artifacts:slot/belt",
+    "supplementaries:quiver",
+    "#supplementaries:keys"
+  ],
+  "remove": [
+    "artifacts:chorus_totem",
+    "artifacts:crystal_heart"
+  ]
+}

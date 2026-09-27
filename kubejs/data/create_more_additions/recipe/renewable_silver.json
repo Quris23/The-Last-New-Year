@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "neoforge:conditions": [
+    { "type": "neoforge:not", "value": { "type": "neoforge:true" } }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:basalt"
+    }
+  ],
+  "processing_time": 375,
+  "results": [
+    {
+      "chance": 0.25,
+      "id": "minecraft:flint"
+    },
+    {
+      "chance": 0.08,
+      "id": "create_more_additions:silver_nugget"
+    }
+  ]
+}

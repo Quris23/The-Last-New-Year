@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#northstar:moon_biomes",
+  "features": "kubejs:lunar_enderitium_ore",
+  "step": "underground_ores"
+}

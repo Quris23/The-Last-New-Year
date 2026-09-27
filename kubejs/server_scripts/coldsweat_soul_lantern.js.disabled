@@ -1,0 +1,14 @@
+// Cold Sweat: фонарь душ в руке (основной или второй) полностью гасит жару Незера:
+// иммунитет к нагреву от биомов/измерения, ближних блоков (лава, огонь) и существ.
+// Работает только в Незере, чтобы в Верхнем мире фонарь не давал защиту от климата.
+ColdSweatEvents.registries(event => {
+  event.addItemTemperature(item => {
+    item.items('minecraft:soul_lantern')
+      .equipmentSlots('hand')
+      .temperature(0)
+      .immuneToModifier('cold_sweat:biomes', 1.0)
+      .immuneToModifier('cold_sweat:blocks', 1.0)
+      .immuneToModifier('cold_sweat:entities', 1.0)
+      .entityPredicate(entity => String(entity.level.dimension).indexOf('the_nether') !== -1)
+  })
+})
