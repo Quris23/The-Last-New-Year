@@ -32,15 +32,13 @@ public final class NecronomiconSpells {
 
     public static final ResourceLocation NECRONOMICON = ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "necronomicon_spell_book");
 
-    // Conjure Amethyst Crab (Nature) and Thoth's Witness (Sand) were deliberately dropped - the
-    // Vampire shouldn't get access to those. Conjure Ignited Reinforcement (Fire) stays.
+    // Conjure Amethyst Crab (Nature), Thoth's Witness (Sand), Conjure Koboldiator and Summon
+    // Koboleton were deliberately dropped - the Vampire shouldn't get access to those.
     private static final List<Supplier<AbstractSpell>> SUMMON_SPELLS = List.of(
             SpellRegistry.SUMMON_VEX_SPELL,
             SpellRegistry.SUMMON_POLAR_BEAR_SPELL,
             SpellRegistry.RAISE_DEAD_SPELL,
             SpellRegistry.SUMMON_HORSE_SPELL,
-            SpellRegistries.CONJURE_KOBOLDIATOR,
-            SpellRegistries.CONJURE_KOBOLETON,
             SpellRegistries.CONJURE_THRALL,
             SpellRegistries.CONJURE_IGNITED_REINFORCEMENT
     );
@@ -51,8 +49,6 @@ public final class NecronomiconSpells {
             "irons_spellbooks:summon_polar_bear",
             "irons_spellbooks:raise_dead",
             "irons_spellbooks:summon_horse",
-            "cataclysm_spellbooks:conjure_koboldiator",
-            "cataclysm_spellbooks:summon_koboleton",
             "cataclysm_spellbooks:conjure_thralls",
             "cataclysm_spellbooks:conjure_ignited_reinforcement"
     );

@@ -24,6 +24,9 @@
     "FtbQuestsChapterVisibilityMixin",
     "FtbQuestsTaskGateMixin",
     "TeamDataPersonalProgressMixin",
-    "ItemComponentsAccessor"
+    "ItemComponentsAccessor",
+    "CataclysmMaceSmashMixin",
+    "ItemMaceSmashMixin",
+    "SwordItemMaceSmashMixin"
   ]
 }

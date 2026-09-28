@@ -3,6 +3,17 @@
 	default_quest_shape: ""
 	filename: "ender"
 	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 9
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:dragonskin_spell_book"
+	}
 	id: "79667D19722FA0FB"
 	images: [ ]
 	order_index: 4
@@ -91,6 +102,7 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
+			title: "Первый Гримуар"
 			id: "38AA000000000007"
 			tasks: [{
 				id: "38AB000000000007"

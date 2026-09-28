@@ -3,6 +3,17 @@
 	default_quest_shape: ""
 	filename: "fire"
 	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:blaze_spell_book"
+	}
 	id: "6056220CF06A0917"
 	images: [ ]
 	order_index: 1
@@ -114,6 +125,7 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
+			title: "Первый Гримуар"
 			id: "7A2FC9A09A1C2C5C"
 			tasks: [{
 				id: "0428702D1AFA1817"

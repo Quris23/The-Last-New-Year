@@ -3,6 +3,17 @@
 	default_quest_shape: ""
 	filename: "nature"
 	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:druidic_spell_book"
+	}
 	id: "7A8AC9B64D5FD26A"
 	images: [ ]
 	order_index: 3
@@ -68,6 +79,7 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
+			title: "Первый Гримуар"
 			id: "39AA000000000007"
 			tasks: [{
 				id: "39AB000000000007"

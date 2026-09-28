@@ -3,6 +3,23 @@
 	default_quest_shape: ""
 	filename: "blood"
 	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:affinity_data": {
+				bonuses: {
+					"irons_spellbooks:blood_slash": 1
+					"irons_spellbooks:blood_step": 1
+				}
+			}
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:cursed_doll_spell_book"
+	}
 	id: "2F6921C81B308D38"
 	images: [ ]
 	order_index: 5
@@ -68,6 +85,7 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
+			title: "Первый Гримуар"
 			id: "10AD1E0000000007"
 			tasks: [{
 				id: "20AD1E0000000007"

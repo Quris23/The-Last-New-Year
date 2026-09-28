@@ -3,6 +3,17 @@
 	default_quest_shape: ""
 	filename: "lightning"
 	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "spellclasses:storm_atlas"
+	}
 	id: "373774E94F304EFC"
 	images: [ ]
 	order_index: 2
@@ -92,6 +103,7 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
+			title: "Первый Гримуар"
 			id: "37AA000000000007"
 			tasks: [{
 				id: "37AB000000000007"

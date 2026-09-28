@@ -8,4 +8,13 @@ ServerEvents.recipes(event => {
         addition: { item: 'cataclysm:void_core' },
         result: { id: 'cataclysm_spellbooks:void_staff' }
     })
+
+    // Brontes - добавка фьюжна заменена с Астрапы на Twilight Gale (заклинание см. BrontesSpell.java)
+    event.remove({ output: 'cataclysm:brontes' })
+    event.custom({
+        type: 'cataclysm:weapon_fusion',
+        base: { item: 'cataclysm:infernal_forge' },
+        addition: { item: 'irons_spellbooks:twilight_gale' },
+        result: { id: 'cataclysm:brontes' }
+    })
 })
