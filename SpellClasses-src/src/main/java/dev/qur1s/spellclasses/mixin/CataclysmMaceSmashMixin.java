@@ -3,6 +3,7 @@ package dev.qur1s.spellclasses.mixin;
 import com.github.L_Ender.cataclysm.items.Brontes;
 import com.github.L_Ender.cataclysm.items.Infernal_forge;
 import com.github.L_Ender.cataclysm.items.Void_forge;
+import net.acetheeldritchking.cataclysm_spellbooks.items.weapons.HellfireForgeItem;
 import net.mcreator.borninchaosv.item.SkullCrusherItem;
 import net.minecraft.core.Direction;
 import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
@@ -26,14 +27,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.function.Predicate;
 
 /**
- * Gives Brontes, the Infernal Forge, the Void Forge (Cataclysm) and the Skullbreaker Hammer (Born
- * in Chaos) the vanilla Mace's "smash attack" landing effects (knockback, no-fall-damage stop, the
- * mace sounds) - the exact logic from {@link net.minecraft.world.item.MaceItem#hurtEnemy}, added
- * onto each item's own hurtEnemy override without touching its existing on-hit effects. The
- * matching bonus-damage half - {@code Item.getAttackDamageBonus}/{@code postHurtEnemy}, which none
- * of them override - lives in {@link ItemMaceSmashMixin}.
+ * Gives Brontes, the Infernal Forge, the Void Forge (Cataclysm), the Hellfire Forge (Cataclysm:
+ * Spellbooks) and the Skullbreaker Hammer (Born in Chaos) the vanilla Mace's "smash attack" landing
+ * effects (knockback, no-fall-damage stop, the mace sounds) - the exact logic from
+ * {@link net.minecraft.world.item.MaceItem#hurtEnemy}, added onto each item's own hurtEnemy
+ * override without touching its existing on-hit effects. The matching bonus-damage half -
+ * {@code Item.getAttackDamageBonus}/{@code postHurtEnemy}, which none of them override - lives in
+ * {@link ItemMaceSmashMixin}.
  */
-@Mixin(value = {Brontes.class, Infernal_forge.class, Void_forge.class, SkullCrusherItem.class}, remap = false)
+@Mixin(value = {Brontes.class, Infernal_forge.class, Void_forge.class, SkullCrusherItem.class, HellfireForgeItem.class}, remap = false)
 public abstract class CataclysmMaceSmashMixin {
     @Inject(method = "hurtEnemy", at = @At("RETURN"))
     private void spellclasses$maceSmash(ItemStack stack, LivingEntity target, LivingEntity attacker, CallbackInfoReturnable<Boolean> cir) {

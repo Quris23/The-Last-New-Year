@@ -3,6 +3,7 @@ package dev.qur1s.spellclasses.mixin;
 import com.github.L_Ender.cataclysm.items.Brontes;
 import com.github.L_Ender.cataclysm.items.Infernal_forge;
 import com.github.L_Ender.cataclysm.items.Void_forge;
+import net.acetheeldritchking.cataclysm_spellbooks.items.weapons.HellfireForgeItem;
 import net.mcreator.borninchaosv.item.SkullCrusherItem;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
@@ -17,20 +18,21 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
- * The bonus-damage half of the Mace smash mechanic for Brontes, the Infernal Forge, the Void Forge
- * and the Skullbreaker Hammer - see {@link CataclysmMaceSmashMixin} for the knockback/sound half.
- * None of them override {@code getAttackDamageBonus}, so they fall through to this base
- * {@code Item} method, which is exactly what's injected here (guarded by an instanceof check,
- * same pattern as {@code AbstractSpellOverridesMixin}'s per-spell overrides). The no-fall-damage
- * reset ({@code postHurtEnemy}) is here too for the three Cataclysm items, but the Skullbreaker
- * Hammer needs its own ({@link SwordItemMaceSmashMixin}) since {@code SwordItem} overrides that
- * method itself.
+ * The bonus-damage half of the Mace smash mechanic for Brontes, the Infernal Forge, the Void
+ * Forge, the Hellfire Forge and the Skullbreaker Hammer - see {@link CataclysmMaceSmashMixin} for
+ * the knockback/sound half. None of them override {@code getAttackDamageBonus}, so they fall
+ * through to this base {@code Item} method, which is exactly what's injected here (guarded by an
+ * instanceof check, same pattern as {@code AbstractSpellOverridesMixin}'s per-spell overrides).
+ * The no-fall-damage reset ({@code postHurtEnemy}) is here too for the three Cataclysm items, but
+ * the Hellfire Forge and Skullbreaker Hammer need their own ({@link SwordItemMaceSmashMixin})
+ * since {@code SwordItem} overrides that method itself and both are sword-lineage items.
  */
 @Mixin(value = Item.class, remap = false)
 public abstract class ItemMaceSmashMixin {
     private boolean spellclasses$isMaceSmashItem() {
         return (Object) this instanceof Brontes || (Object) this instanceof Infernal_forge
-                || (Object) this instanceof Void_forge || (Object) this instanceof SkullCrusherItem;
+                || (Object) this instanceof Void_forge || (Object) this instanceof SkullCrusherItem
+                || (Object) this instanceof HellfireForgeItem;
     }
 
     @Inject(method = "getAttackDamageBonus", at = @At("HEAD"), cancellable = true)
