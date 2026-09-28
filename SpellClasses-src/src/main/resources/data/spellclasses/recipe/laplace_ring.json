@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " M ",
+    "AEK",
+    " A "
+  ],
+  "key": {
+    "M": {
+      "item": "irons_spellbooks:mana_ring"
+    },
+    "K": {
+      "item": "irons_spellbooks:cooldown_ring"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "A": {
+      "item": "irons_spellbooks:arcane_rune"
+    }
+  },
+  "result": {
+    "id": "spellclasses:laplace_ring",
+    "count": 1
+  }
+}

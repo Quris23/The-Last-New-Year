@@ -5,3 +5,4 @@
 - `mods/` — собранные jar-ы собственных модов
 - `kubejs/` — server/client scripts, data overrides
 - `ftbquests/` — главы, группы, lang квестов
+- `SpellClasses-src/` — исходники мода SpellClasses (Java + assets), синхронизируются вместе с обновлением jar-а в `mods/`

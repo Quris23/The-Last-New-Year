@@ -1,0 +1,45 @@
+{
+  "item.spellclasses.class_book": "Книга Магии",
+  "item.spellclasses.class_book.desc": "ПКМ, чтобы выбрать класс.",
+  "spellclasses.screen.title": "Выберите класс",
+  "spellclasses.message.already_chosen": "Ты уже выбрал класс.",
+  "spellclasses.message.class_full": "На этот класс набор закрыт.",
+  "spellclasses.message.class_chosen": "Теперь ты %s.",
+  "spellclasses.message.wrong_school": "Ты не %s, чтобы использовать это заклинание.",
+  "spellclasses.message.requires_pharaoh_armor": "Необходимо Полное Одеяние Фараона.",
+  "spellclasses.message.requires_abyssal_armor": "Необходимо Полное Одеяние Бездны.",
+  "spellclasses.message.wrong_school_quest": "Этот квест доступен только твоему классу.",
+  "spellclasses.message.wrong_grimoire": "Это заклинание можно вписать только в %s.",
+  "spellclasses.message.requires_void_staff": "Портал можно использовать только с Палочкой Туда-Обратно или Void Staff в руке.",
+  "spellclasses.message.requires_blood_armor": "Необходим Полный Сет Брони Культиста.",
+
+  "item.spellclasses.storm_atlas": "Штормовой Атлас",
+  "item.spellclasses.laplace_ring": "Кольцо Лапласа",
+  "item.spellclasses.laplace_ring.lore.legend": "Легенда: Кольцо древнего Злобога Лапласа, наделяющее владельца огромными запасами маны.",
+  "item.spellclasses.laplace_ring.lore.effect": "Фактор Лапласа: +2000 к запасу маны, -50% к перезарядке заклинаний и -20% к затратам маны на 5 минут.",
+  "item.spellclasses.laplace_ring.lore.aftermath": "По окончании эффекта: слабость, слепота, тошнота, медлительность и отравление на 1 минуту.",
+  "item.spellclasses.laplace_ring.lore.cooldown": "Активируется сразу при надевании. Перезарядка: 10 минут.",
+  "effect.spellclasses.laplace_factor": "Фактор Лапласа",
+  "spellclasses.message.laplace_on_cooldown": "Кольцо Лапласа ещё восстанавливается (осталось %s сек.).",
+
+  "item.spellclasses.brass_belt": "Латунный Пояс",
+  "item.spellclasses.black_steel_belt": "Пояс Чёрной Стали",
+
+  "spellclasses.class.ice": "Ледяной Маг",
+  "spellclasses.class.fire": "Адский Заклинатель",
+  "spellclasses.class.lightning": "Штормовой Волшебник",
+  "spellclasses.class.nature": "Друид",
+  "spellclasses.class.ender": "Эндер",
+  "spellclasses.class.blood": "Вампир",
+  "spellclasses.class.holy": "Священник",
+
+  "spellclasses.class.fire.desc": "Выходец из глубин Незера. Станьте Вестником Погибели в этом мире и, подчинив себе Адское Пламя, бросьте вызов владыке Игнису.",
+  "spellclasses.class.ice.desc": "Нежить, подчинившая себе Холод и его Драугов. Обратив сердце в Лёд, разыщите Заснеженную Тюрьму Маледиктуса и займите его место.",
+  "spellclasses.class.lightning.desc": "Наследник Небес, повелевайте Громом и Электричеством, чтобы отправиться в Облачный Акрополь с помощью неизведанных Технологий.",
+  "spellclasses.class.nature.desc": "Дитя леса и Живых пещер. Ваш долг оберегать природу и её жителей. Лишь вы в Гармонии с природой и её Властителем.",
+  "spellclasses.class.ender.desc": "Существо из другого мира, прорвавшееся в наш. Оно открывает разломы в пространстве и практически неуловимо. Найдите помощь у существ этого мира, чтобы победить Чудовище, отнявшее ваш Дом.",
+  "spellclasses.class.blood.desc": "Властитель Мёртвых и Ночи. Мёртвый король отнял у вас власть над ушедшими, и вы обязаны его отыскать и отомстить.",
+  "spellclasses.class.holy.desc": "Святой Отец, оберегающий людей этого мира от Грехов и Смерти. Ваш долг — сопровождать и защищать близких в их долгом приключении.",
+
+  "spellclasses.screen.subtitle": "Выбор нельзя изменить самостоятельно"
+}

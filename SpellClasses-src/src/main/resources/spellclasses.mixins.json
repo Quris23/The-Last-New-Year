@@ -1,0 +1,30 @@
+{
+  "required": false,
+  "package": "dev.qur1s.spellclasses.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "ImbueRestrictionMixin",
+    "SpellSlotUpgradeCapMixin",
+    "DragonskinSlotMixin",
+    "SunbeamSizeMixin",
+    "SunbeamRenderMixin",
+    "TinyPotatoModelFixMixin",
+    "MaxManaCapMixin",
+    "IceTombHealthMixin",
+    "FireArrowMixin",
+    "ChargeTooltipMixin",
+    "BloodSlashMixin",
+    "AbstractSpellOverridesMixin",
+    "ChargedFovMixin",
+    "ArmorCapMixin",
+    "FtbQuestsThemeCrashFixMixin",
+    "UniqueSpellBookFilterMixin",
+    "InscriptionTableSlotCapMixin",
+    "FtbQuestsChapterVisibilityMixin",
+    "FtbQuestsTaskGateMixin",
+    "TeamDataPersonalProgressMixin",
+    "ItemComponentsAccessor",
+    "ThothsWitnessArmorBypassMixin"
+  ]
+}

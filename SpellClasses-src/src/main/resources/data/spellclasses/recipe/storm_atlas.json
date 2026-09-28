@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ALA",
+    "LBL",
+    "ALA"
+  ],
+  "key": {
+    "A": {
+      "item": "irons_spellbooks:arcane_rune"
+    },
+    "L": {
+      "item": "irons_spellbooks:lightning_rune"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "id": "spellclasses:storm_atlas",
+    "count": 1
+  }
+}
