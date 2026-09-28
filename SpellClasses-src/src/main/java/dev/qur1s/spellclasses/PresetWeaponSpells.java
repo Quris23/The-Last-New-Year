@@ -30,9 +30,9 @@ public final class PresetWeaponSpells {
     private record Preset(ResourceLocation item, Supplier<AbstractSpell> spell, int level) {
     }
 
-    // Brontes: Twilight Gale's own spell (Volt Strike). Void Forge: Arcane Shackle 10.
+    // Brontes: Twilight Gale's own spell (Volt Strike) 10. Void Forge: Arcane Shackle 10.
     private static final Preset[] PRESETS = {
-            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"), SpellRegistry.VOLT_STRIKE_SPELL, 5),
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"), SpellRegistry.VOLT_STRIKE_SPELL, 10),
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.ARCANE_SHACKLE_SPELL, 10)
     };
 
