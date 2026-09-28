@@ -27,6 +27,7 @@
     "ItemComponentsAccessor",
     "CataclysmMaceSmashMixin",
     "ItemMaceSmashMixin",
-    "SwordItemMaceSmashMixin"
+    "SwordItemMaceSmashMixin",
+    "HideSelectedSpellTooltipMixin"
   ]
 }
