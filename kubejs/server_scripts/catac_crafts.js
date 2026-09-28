@@ -339,5 +339,20 @@ ServerEvents.recipes(event => {
         event.recipes.createFilling(upgrTransit, [upgrTransit, Fluid.of('lava', 500)]),
         event.recipes.createPressing(upgrTransit, upgrTransit)
   ]).transitionalItem(upgrTransit).loops(2)
+
+  // Эндеритовый блок
+  let endTransit = 'crying_obsidian'
+  event.recipes.create.sequenced_assembly([
+        CreateItem.of('cataclysm:enderite_block', 0.80),
+        CreateItem.of('crying_obsidian', 0.10),
+        CreateItem.of('cataclysm:polished_obsidian', 0.10),
+  ], 'crying_obsidian', [
+        event.recipes.createDeploying(endTransit, [endTransit, 'ender_pearl']),
+        event.recipes.createPressing(endTransit, endTransit),
+        event.recipes.createDeploying(endTransit, [endTransit, 'cataclysm:void_jaw']),
+        event.recipes.createPressing(endTransit, endTransit),
+        event.recipes.createDeploying(endTransit, [endTransit, 'glow_ink_sac']),
+        event.recipes.createPressing(endTransit, endTransit)
+  ]).transitionalItem(endTransit).loops(3)
   
 })

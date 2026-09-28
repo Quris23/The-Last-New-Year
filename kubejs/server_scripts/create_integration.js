@@ -60,5 +60,23 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sandpaper_polishing('kubejs:chorium_jewel', 'createcasing:chorium_ingot')
 
+    // Алтарь возрождения
+
+    let fluidTank = ['create:fluid_tank', 'createcasing:andesite_fluid_tank', 'createcasing:brass_fluid_tank', 'createcasing:zinc_fluid_tank']
+    event.recipes.create.mechanical_crafting('reviveraltar:ritual_altar', [
+        ' AAA ',
+        'ASBSA',
+        'ACTCA',
+        'ASRSA',
+        ' AAA '
+    ], {
+        A: 'create_wizardry:arcane_sheet',
+        S: 'irons_spellbooks:shriving_stone',
+        B: 'beacon',
+        C: 'create_wizardry:arcane_casing',
+        R: 'respawn_anchor',
+        T: fluidTank
+    })
+
     
 })

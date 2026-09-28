@@ -52,6 +52,8 @@ ClientEvents.lang('ru_ru', event => {
     event.add('fluid_type.create_wizard.mana', 'Мана')
 
     // Legendary monsters
+
+    event.renameItem('kubejs:lunar_enderitium_ore', 'Лунная эндеритиумовая руда')
     event.renameEntity('legendary_monsters:the_obliterator', 'Опустошитель')
     event.renameItem('create_more_additions:electrum_jewel', 'Пластина электрума')
     event.renameItem('legendary_monsters:eye_of_annihilation', 'Око аннигиляции')
