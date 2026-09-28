@@ -28,6 +28,7 @@
     "CataclysmMaceSmashMixin",
     "ItemMaceSmashMixin",
     "SwordItemMaceSmashMixin",
-    "HideSelectedSpellTooltipMixin"
+    "HideSelectedSpellTooltipMixin",
+    "SandScrollFocusMixin"
   ]
 }

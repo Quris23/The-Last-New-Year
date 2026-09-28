@@ -262,6 +262,18 @@ ServerEvents.recipes(event => {
         template: { item: 'cataclysm:amethyst_crab_shell' }
     })
 
+    // Руна Бездны - база заменена с материалов Катаклизма на любой ванильный блок коралла
+    let coral = ['tube_coral_block', 'brain_coral_block', 'bubble_coral_block', 'fire_coral_block', 'horn_coral_block']
+    event.remove({ output: 'cataclysm_spellbooks:abyssal_rune' })
+    event.shaped('cataclysm_spellbooks:abyssal_rune', [
+        'CCC',
+        'CRC',
+        'CCC'
+    ], {
+        C: coral,
+        R: 'irons_spellbooks:blank_rune'
+    })
+
     // Броня Abyssal - добавлена Незеритовая Броня Мага (в пустой слот у штанов/ботинок, вместо одной Ткани у шлема/нагрудника)
     event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_helmet' })
     event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [

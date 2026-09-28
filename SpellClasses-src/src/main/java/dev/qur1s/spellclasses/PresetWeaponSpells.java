@@ -30,10 +30,10 @@ public final class PresetWeaponSpells {
     private record Preset(ResourceLocation item, Supplier<AbstractSpell> spell, int level) {
     }
 
-    // Brontes: Twilight Gale's own spell (Volt Strike). Void Forge: Starfall 10, as requested.
+    // Brontes: Twilight Gale's own spell (Volt Strike). Void Forge: Arcane Shackle 10.
     private static final Preset[] PRESETS = {
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"), SpellRegistry.VOLT_STRIKE_SPELL, 5),
-            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.STARFALL_SPELL, 10)
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.ARCANE_SHACKLE_SPELL, 10)
     };
 
     private static final int CHECK_INTERVAL_TICKS = 40;
@@ -53,10 +53,15 @@ public final class PresetWeaponSpells {
         if (stack.isEmpty()) return;
         for (Preset preset : PRESETS) {
             if (!stack.is(BuiltInRegistries.ITEM.get(preset.item()))) continue;
-            if (ISpellContainer.isSpellContainer(stack)) return;
+
+            AbstractSpell expected = preset.spell().get();
+            if (ISpellContainer.isSpellContainer(stack)
+                    && ISpellContainer.get(stack).getSpellAtIndex(0).getSpell() == expected) {
+                return;
+            }
 
             ISpellContainerMutable container = ISpellContainer.create(1, true, false).mutableCopy();
-            container.addSpell(preset.spell().get(), preset.level(), true);
+            container.addSpell(expected, preset.level(), true);
             ISpellContainer.set(stack, container.toImmutable());
             return;
         }

@@ -80,6 +80,21 @@
 		}
 		{
 			dependencies: ["2D69BB81FED8AA3F"]
+			icon: {
+				id: "cataclysm:cursium_ingot"
+			}
+			id: "5A2D8E4C90B31775"
+			tasks: [{
+				consume_items: false
+				id: "5A2D8E4C90B31776"
+				item: { count: 1, id: "cataclysm:cursium_ingot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2D69BB81FED8AA3F"]
 			id: "2886A3C5A21F4103"
 			tasks: [{
 				id: "1D0B7C0701EE440B"
@@ -102,7 +117,6 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
-			title: "Первый Гримуар"
 			id: "71E630A7002C686D"
 			tasks: [{
 				id: "5A0F359B1D9B7D65"

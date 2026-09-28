@@ -85,7 +85,6 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
-			title: "Первый Гримуар"
 			id: "10AD1E0000000007"
 			tasks: [{
 				id: "20AD1E0000000007"

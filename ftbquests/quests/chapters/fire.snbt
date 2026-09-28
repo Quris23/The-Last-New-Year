@@ -103,6 +103,21 @@
 		}
 		{
 			dependencies: ["4051AA53CA84BC74"]
+			icon: {
+				id: "cataclysm:burning_ashes"
+			}
+			id: "3F9C7D2A1B4E6081"
+			tasks: [{
+				consume_items: false
+				id: "3F9C7D2A1B4E6082"
+				item: { count: 1, id: "cataclysm:burning_ashes" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4051AA53CA84BC74"]
 			id: "2300C549F1763C30"
 			tasks: [{
 				id: "018105517E6A9445"
@@ -125,7 +140,6 @@
 				}
 				id: "irons_spellbooks:gold_spell_book"
 			}
-			title: "Первый Гримуар"
 			id: "7A2FC9A09A1C2C5C"
 			tasks: [{
 				id: "0428702D1AFA1817"

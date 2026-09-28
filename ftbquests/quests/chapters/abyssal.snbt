@@ -45,6 +45,21 @@
 		}
 		{
 			dependencies: ["11FA3B6C8D2E4F51"]
+			icon: {
+				id: "cataclysm:tidal_claws"
+			}
+			id: "13FA3B6C8D2E4F51"
+			tasks: [{
+				consume_items: false
+				id: "13FA3B6C8D2E4F52"
+				item: { count: 1, id: "cataclysm:tidal_claws" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11FA3B6C8D2E4F51"]
 			id: "12FA3B6C8D2E4F51"
 			shape: "hexagon"
 			tasks: [
@@ -74,10 +89,10 @@
 		}
 		{
 			dependencies: ["12FA3B6C8D2E4F51"]
-			id: "13FA3B6C8D2E4F51"
+			id: "7A4A7F3B407FAF0A"
 			shape: "square"
 			tasks: [{
-				id: "13FA3B6C8D2E4F52"
+				id: "5A2AB7A9D5F2F52E"
 				item: { count: 1, id: "cataclysm_spellbooks:coral_staff" }
 				type: "item"
 			}]
