@@ -128,7 +128,6 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["2300C549F1763C30"]
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {

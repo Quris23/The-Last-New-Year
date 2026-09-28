@@ -5,6 +5,7 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.api.spells.IPresetSpellContainer;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -15,26 +16,39 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
+import java.util.Set;
+
 @EventBusSubscriber(modid = "spellclasses", bus = EventBusSubscriber.Bus.GAME)
 public final class GateEvents {
     private GateEvents() {
     }
 
+    // Brontes and the Void Forge (see PresetWeaponSpells) are plain Cataclysm weapons, not
+    // SwordItem and not natively IPresetSpellContainer, so they fall outside the check below.
+    // Their forced-imbued spell is meant for whoever holds the weapon, regardless of class.
+    private static final Set<ResourceLocation> UNIVERSAL_PRESET_WEAPONS = Set.of(
+            ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"),
+            ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge")
+    );
+
     @SubscribeEvent
     static void onPreCast(SpellPreCastEvent event) {
         Player player = event.getEntity();
-
-        // Swords built by the game around one fixed spell (Spellbreaker's Counterspell, Misery's
-        // Wither Skull, ...) work for whoever's holding them, regardless of class. A plain sword
-        // a player imbued themselves at the Arcane Anvil doesn't carry that marker, so it's still
-        // gated normally — imbuing can't be used to hand a class-locked spell to someone else.
-        // Must also actually be a SwordItem: non-sword preset items (Hither-Thither Wand, ...) cast
-        // through the same CastSource.SWORD path but should stay gated by class like everything else.
         var mainHandItem = player.getMainHandItem().getItem();
-        if (event.getCastSource() == CastSource.SWORD
-                && mainHandItem instanceof IPresetSpellContainer
-                && mainHandItem instanceof SwordItem) {
-            return;
+
+        if (event.getCastSource() == CastSource.SWORD) {
+            // Swords built by the game around one fixed spell (Spellbreaker's Counterspell, Misery's
+            // Wither Skull, ...) work for whoever's holding them, regardless of class. A plain sword
+            // a player imbued themselves at the Arcane Anvil doesn't carry that marker, so it's still
+            // gated normally — imbuing can't be used to hand a class-locked spell to someone else.
+            // Must also actually be a SwordItem: non-sword preset items (Hither-Thither Wand, ...) cast
+            // through the same CastSource.SWORD path but should stay gated by class like everything else.
+            if (mainHandItem instanceof IPresetSpellContainer && mainHandItem instanceof SwordItem) {
+                return;
+            }
+            if (UNIVERSAL_PRESET_WEAPONS.contains(BuiltInRegistries.ITEM.getKey(mainHandItem))) {
+                return;
+            }
         }
 
         var schoolId = event.getSchoolType().getId();

@@ -55,9 +55,11 @@ public final class PresetWeaponSpells {
             if (!stack.is(BuiltInRegistries.ITEM.get(preset.item()))) continue;
 
             AbstractSpell expected = preset.spell().get();
-            if (ISpellContainer.isSpellContainer(stack)
-                    && ISpellContainer.get(stack).getSpellAtIndex(0).getSpell() == expected) {
-                return;
+            if (ISpellContainer.isSpellContainer(stack)) {
+                var current = ISpellContainer.get(stack).getSpellAtIndex(0);
+                if (current.getSpell() == expected && current.getLevel() == preset.level()) {
+                    return;
+                }
             }
 
             ISpellContainerMutable container = ISpellContainer.create(1, true, false).mutableCopy();
