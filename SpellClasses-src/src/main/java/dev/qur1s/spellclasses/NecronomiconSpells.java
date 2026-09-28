@@ -32,6 +32,8 @@ public final class NecronomiconSpells {
 
     public static final ResourceLocation NECRONOMICON = ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "necronomicon_spell_book");
 
+    // Conjure Amethyst Crab (Nature) and Thoth's Witness (Sand) were deliberately dropped - the
+    // Vampire shouldn't get access to those. Conjure Ignited Reinforcement (Fire) stays.
     private static final List<Supplier<AbstractSpell>> SUMMON_SPELLS = List.of(
             SpellRegistry.SUMMON_VEX_SPELL,
             SpellRegistry.SUMMON_POLAR_BEAR_SPELL,
@@ -39,10 +41,8 @@ public final class NecronomiconSpells {
             SpellRegistry.SUMMON_HORSE_SPELL,
             SpellRegistries.CONJURE_KOBOLDIATOR,
             SpellRegistries.CONJURE_KOBOLETON,
-            SpellRegistries.CONJURE_IGNITED_REINFORCEMENT,
             SpellRegistries.CONJURE_THRALL,
-            SpellRegistries.CONJURE_AMETHYST_CRAB,
-            SpellRegistries.THOTHS_WITNESS
+            SpellRegistries.CONJURE_IGNITED_REINFORCEMENT
     );
 
     /** Same list as {@link #SUMMON_SPELLS}, as the spell-id strings {@code SpellPreCastEvent} deals in - see {@link GateEvents}. */
@@ -53,10 +53,8 @@ public final class NecronomiconSpells {
             "irons_spellbooks:summon_horse",
             "cataclysm_spellbooks:conjure_koboldiator",
             "cataclysm_spellbooks:summon_koboleton",
-            "cataclysm_spellbooks:conjure_ignited_reinforcement",
             "cataclysm_spellbooks:conjure_thralls",
-            "cataclysm_spellbooks:conjure_amethyst_crab",
-            "cataclysm_spellbooks:thoths_witness"
+            "cataclysm_spellbooks:conjure_ignited_reinforcement"
     );
 
     /** Built fresh each call since {@code getSpells()} may be invoked before the spell registries are fully populated. */

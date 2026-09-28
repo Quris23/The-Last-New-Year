@@ -1,14 +1,10 @@
 package dev.qur1s.spellclasses.mixin;
 
-import dev.qur1s.spellclasses.ClassManager;
-import dev.qur1s.spellclasses.NecronomiconSpells;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
-import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.CastResult;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.spells.blood.BloodSlashSpell;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -98,17 +94,6 @@ public abstract class AbstractSpellOverridesMixin {
     private void spellclasses$schoolArmorRequirement(int spellLevel, CastSource castSource, MagicData playerMagicData, Player player, CallbackInfoReturnable<CastResult> cir) {
         AbstractSpell self = (AbstractSpell) (Object) this;
         if (!cir.getReturnValue().isSuccess()) return;
-
-        // A Vampire casting one of the Necronomicon's summon spells (see NecronomiconSpells)
-        // bypasses every school-specific requirement, armor included - matches the school-gate
-        // exception in GateEvents.
-        if (NecronomiconSpells.SUMMON_SPELL_IDS.contains(self.getSpellResource().toString())
-                && player instanceof ServerPlayer sp
-                && ClassManager.chosenSchool(sp).map(SchoolRegistry.BLOOD_RESOURCE::equals).orElse(false)
-                && NecronomiconSpells.isHolding(player)
-                && NecronomiconSpells.wearsBloodArmor(player)) {
-            return;
-        }
 
         ResourceLocation schoolId = self.getSchoolType().getId();
         java.util.Map<EquipmentSlot, ResourceLocation[]> requiredSet;

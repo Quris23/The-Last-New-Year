@@ -24,7 +24,6 @@
     "FtbQuestsChapterVisibilityMixin",
     "FtbQuestsTaskGateMixin",
     "TeamDataPersonalProgressMixin",
-    "ItemComponentsAccessor",
-    "ThothsWitnessArmorBypassMixin"
+    "ItemComponentsAccessor"
   ]
 }
