@@ -38,6 +38,18 @@ import java.util.List;
 @Mixin(value = TeamData.class, remap = false)
 public abstract class TeamDataPersonalProgressMixin {
 
+    /** Vanilla only clears the shared {@code taskProgress} map, which class-gated tasks don't read from. */
+    @Inject(method = "resetProgress", at = @At("HEAD"), cancellable = true)
+    private void spellclasses$resetProgress(Task task, CallbackInfo ci) {
+        if (FtbQuestsClassGate.requiredSchoolForObject(task) == null) return;
+        ci.cancel();
+        Player player = spellclasses$resolvePlayer((TeamData) (Object) this);
+        if (player == null) return;
+        PersonalQuestProgress.setProgress(player, task.id, 0L);
+        PersonalQuestProgress.setStarted(player, task.id, false);
+        PersonalQuestProgress.setCompleted(player, task.id, false);
+    }
+
     @Inject(method = "getProgress(Ldev/ftb/mods/ftbquests/quest/task/Task;)J", at = @At("HEAD"), cancellable = true)
     private void spellclasses$getProgress(Task task, CallbackInfoReturnable<Long> cir) {
         if (FtbQuestsClassGate.requiredSchoolForObject(task) == null) return;
@@ -158,9 +170,18 @@ public abstract class TeamDataPersonalProgressMixin {
         task.onCompleted(new QuestProgressEventData<>(new Date(), self, task, justThisPlayer, justThisPlayer));
     }
 
+    /**
+     * Not every FTB Quests code path wraps its work in {@code withPlayerContext} - notably
+     * {@code FTBQuestsEventHandler.playerKill} (kill tasks) never sets it, so
+     * {@code getCurrentPlayer()} comes back null there even though the killer is perfectly well
+     * known. Falls back to this team's one online member, which is exactly correct for the
+     * solo (one-player-per-team) setup this pack actually runs.
+     */
     private static Player spellclasses$resolvePlayer(TeamData self) {
         if (self.getFile().isServerSide()) {
-            return ServerQuestFile.INSTANCE.getCurrentPlayer();
+            Player current = ServerQuestFile.INSTANCE.getCurrentPlayer();
+            if (current != null) return current;
+            return self.getOnlineMembers().stream().findFirst().orElse(null);
         }
         return Minecraft.getInstance().player;
     }

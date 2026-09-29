@@ -12,6 +12,7 @@
   "spellclasses.message.wrong_grimoire": "This spell can only be inscribed into a %s.",
   "spellclasses.message.requires_void_staff": "Portal can only be used while holding the Hither-Thither Wand or the Void Staff.",
   "spellclasses.message.requires_blood_armor": "Requires the Full Cultist Armor Set.",
+  "spellclasses.message.requires_druid_nirvana": "Only a Druid can do this.",
 
   "item.spellclasses.storm_atlas": "Storm Atlas",
   "item.spellclasses.laplace_ring": "Laplace's Ring",

@@ -12,6 +12,7 @@
   "spellclasses.message.wrong_grimoire": "Это заклинание можно вписать только в %s.",
   "spellclasses.message.requires_void_staff": "Портал можно использовать только с Палочкой туда-обратно или Посохом пустоты (Void staff) в руке.",
   "spellclasses.message.requires_blood_armor": "Необходим Полный Сет Брони Культиста.",
+  "spellclasses.message.requires_druid_nirvana": "Это доступно только Друиду.",
 
   "item.spellclasses.storm_atlas": "Штормовой атлас",
   "item.spellclasses.laplace_ring": "Кольцо Лапласа",

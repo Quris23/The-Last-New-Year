@@ -1,0 +1,22 @@
+{
+  "required": false,
+  "package": "dev.qur1s.sphereshields.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "StaticSphereMixin",
+    "OpacityMixin",
+    "ShieldGeneratorBlockEntityAccessor",
+    "GroundShieldTrackMixin",
+    "GlyphOverlayRenderMixin",
+    "RenderBoundingBoxMixin",
+    "HideTriangleOutlinesMixin",
+    "TieredPowerMixin",
+    "AccessControlDataMixin",
+    "ShieldGeneratorMenuAccessor",
+    "ContainerScreenAccessor",
+    "ImpactSoundRangeMixin",
+    "ArtificerCaneGateMixin",
+    "ShieldGeneratorFlavorTextMixin"
+  ]
+}
