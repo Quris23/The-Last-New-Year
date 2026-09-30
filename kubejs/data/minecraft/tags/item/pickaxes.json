@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [],
+  "remove": [
+    "cataclysm:brontes",
+    "cataclysm:void_forge",
+    "cataclysm:infernal_forge"
+  ]
+}

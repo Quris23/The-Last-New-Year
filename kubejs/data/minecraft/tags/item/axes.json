@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [],
+  "remove": [
+    "cataclysm:meat_shredder",
+    "cataclysm:soul_render",
+    "born_in_chaos_v1:great_reaper_axe"
+  ]
+}
