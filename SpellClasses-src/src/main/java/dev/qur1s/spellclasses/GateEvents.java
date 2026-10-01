@@ -31,6 +31,25 @@ public final class GateEvents {
             ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge")
     );
 
+    /**
+     * Thoth's Witness, Conjure Koboldiator, and Conjure/Summon Koboleton are all themed entirely
+     * around Pharaoh/Sand, require the full Pharaoh Mage set to cast (see
+     * {@link dev.qur1s.spellclasses.mixin.AbstractSpellOverridesMixin}), and live in Cataclysm:
+     * Spellbooks' own {@code spells.holy} Java package - but the mod itself registers all three under
+     * Iron's Spellbooks' real {@code holy} school (confirmed by decompiling each spell's constructor),
+     * not {@code cataclysm_spellbooks:sand}. Left as-is, the generic class gate below reads their real
+     * school and demands the Holy class ("Священник") before the Pharaoh-armor check ever runs.
+     * Substituting the Sand school here (already in {@link ClassSchools#ADDON_FREE_SCHOOLS}) for these
+     * three spell ids only skips that misattributed class requirement, leaving every other Holy-school
+     * spell gated normally.
+     */
+    private static final Set<ResourceLocation> PHARAOH_HOLY_MISLABELED_SPELLS = Set.of(
+            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "thoths_witness"),
+            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "conjure_koboldiator"),
+            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "summon_koboleton")
+    );
+    private static final ResourceLocation SAND_SCHOOL = ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "sand");
+
     @SubscribeEvent
     static void onPreCast(SpellPreCastEvent event) {
         Player player = event.getEntity();
@@ -51,7 +70,7 @@ public final class GateEvents {
             }
         }
 
-        var schoolId = event.getSchoolType().getId();
+        var schoolId = PHARAOH_HOLY_MISLABELED_SPELLS.contains(event.getSpellId()) ? SAND_SCHOOL : event.getSchoolType().getId();
         var chosen = player instanceof ServerPlayer sp ? ClassManager.chosenSchool(sp).orElse(null) : null;
         if (ClassSchools.isAllowed(schoolId, chosen)) return;
 

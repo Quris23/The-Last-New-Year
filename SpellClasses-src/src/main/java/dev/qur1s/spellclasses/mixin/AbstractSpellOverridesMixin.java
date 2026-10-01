@@ -5,6 +5,9 @@ import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.CastResult;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.spells.blood.BloodSlashSpell;
+import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ConjureKoboldiatorSpell;
+import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ConjureKoboletonSpell;
+import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ThothsWitnessSpell;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -98,7 +101,12 @@ public abstract class AbstractSpellOverridesMixin {
         ResourceLocation schoolId = self.getSchoolType().getId();
         java.util.Map<EquipmentSlot, ResourceLocation[]> requiredSet;
         String messageKey;
-        if (schoolId.equals(SAND_SCHOOL)) {
+        // Thoth's Witness, Conjure Koboldiator, and Conjure Koboleton all live in the mod's own
+        // "spells.holy" package and are registered under Iron's Spellbooks' real "holy" school
+        // (not cataclysm_spellbooks:sand, despite the Pharaoh/Sand theming), so schoolId alone misses
+        // all three here.
+        if (schoolId.equals(SAND_SCHOOL) || self instanceof ThothsWitnessSpell
+                || self instanceof ConjureKoboldiatorSpell || self instanceof ConjureKoboletonSpell) {
             requiredSet = PHARAOH_MAGE_SET;
             messageKey = "spellclasses.message.requires_pharaoh_armor";
         } else if (schoolId.equals(ABYSSAL_SCHOOL)) {

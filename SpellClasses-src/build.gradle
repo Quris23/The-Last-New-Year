@@ -75,6 +75,7 @@ dependencies {
     compileOnly files("libs/aerowarptics.jar")
     compileOnly files("libs/geckolib.jar")
     compileOnly files("libs/sable.jar")
+    compileOnly files("libs/architectury.jar")
 }
 
 tasks.withType(ProcessResources).configureEach {

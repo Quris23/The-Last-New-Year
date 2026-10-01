@@ -5,11 +5,13 @@ import com.momosoftworks.coldsweat.api.util.Temperature;
 import com.momosoftworks.coldsweat.api.util.placement.Placement;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 
@@ -36,14 +38,37 @@ final class ColdSweatHooks {
     static void syncResistance(ServerPlayer player, Optional<ResourceLocation> school) {
         Temperature.removeModifiers(player, Temperature.Trait.COLD_RESISTANCE, SimpleTempModifier.class);
         Temperature.removeModifiers(player, Temperature.Trait.HEAT_RESISTANCE, SimpleTempModifier.class);
-        school.ifPresent(s -> {
-            switch (s.getPath()) {
-                case "ice" -> grantFullResistance(player, Temperature.Trait.COLD_RESISTANCE);
-                case "fire" -> grantFullResistance(player, Temperature.Trait.HEAT_RESISTANCE);
-                default -> {
-                }
-            }
-        });
+
+        boolean iceClass = school.map(s -> s.getPath().equals("ice")).orElse(false);
+        if (iceClass) {
+            grantFullResistance(player, Temperature.Trait.COLD_RESISTANCE);
+        }
+        boolean heatImmune = school.map(s -> s.getPath().equals("fire")).orElse(false) || holdingSoulLanternInNether(player);
+        if (heatImmune) {
+            grantFullResistance(player, Temperature.Trait.HEAT_RESISTANCE);
+        }
+    }
+
+    private static final ResourceLocation SOULSPRING_LAMP = ResourceLocation.fromNamespaceAndPath("cold_sweat", "soulspring_lamp");
+
+    /**
+     * Replaces the old kubejs {@code coldsweat_soul_lantern.js} item-temperature + entityPredicate
+     * registration, which crashed the server: Cold Sweat's own debug-log line for a freshly loaded
+     * item-temperature registry entry ({@code ConfigLoadingHandler.logRegistryLoaded}) calls
+     * {@code ConfigData.toString()}, whose codec throws an NPE on {@code Optional.of(null)} for any
+     * entry using {@code .entityPredicate(...)} - a bug in Cold Sweat 2.4.3.1 itself, not fixable from
+     * the kubejs side. Granting full {@link Temperature.Trait#HEAT_RESISTANCE} here instead (piggy-backing
+     * on the same wipe-then-grant pass as the Fire class's own bonus, so the two can't stomp each
+     * other's modifier) sidesteps that registry/codec path entirely while reaching the same practical
+     * effect: "Фонарь Душ" is Cold Sweat's own Soulspring Lamp ({@code cold_sweat:soulspring_lamp}),
+     * not vanilla's Soul Lantern (confirmed via a debug chat log of the actual held item) - held in
+     * hand it makes heat from biomes, nearby blocks, and entities a non-issue, scoped to the Nether
+     * only so it never affects Overworld climate.
+     */
+    private static boolean holdingSoulLanternInNether(ServerPlayer player) {
+        if (player.level().dimension() != Level.NETHER) return false;
+        Item soulspringLamp = BuiltInRegistries.ITEM.get(SOULSPRING_LAMP);
+        return player.getMainHandItem().is(soulspringLamp) || player.getOffhandItem().is(soulspringLamp);
     }
 
     private static void grantFullResistance(ServerPlayer player, Temperature.Trait trait) {

@@ -17,6 +17,7 @@
     "ContainerScreenAccessor",
     "ImpactSoundRangeMixin",
     "ArtificerCaneGateMixin",
-    "ShieldGeneratorFlavorTextMixin"
+    "ShieldGeneratorFlavorTextMixin",
+    "RedstonelessMixin"
   ]
 }

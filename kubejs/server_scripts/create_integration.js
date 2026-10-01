@@ -62,6 +62,8 @@ ServerEvents.recipes(event => {
 
     // Алтарь возрождения
 
+    event.remove({ output: 'reviveraltar:ritual_altar' })
+
     let fluidTank = ['create:fluid_tank', 'createcasing:andesite_fluid_tank', 'createcasing:brass_fluid_tank', 'createcasing:zinc_fluid_tank']
     event.recipes.create.mechanical_crafting('reviveraltar:ritual_altar', [
         ' AAA ',

@@ -39,6 +39,7 @@
     "SwordItemMaceSmashMixin",
     "HideSelectedSpellTooltipMixin",
     "SandScrollFocusMixin",
-    "FtbQuestsEncoderCrashFixMixin"
+    "FtbQuestsEncoderCrashFixMixin",
+    "ArchitecturyFtbQuestsSendFixMixin"
   ]
 }
