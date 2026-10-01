@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
     I: 'glow_ink_sac'
   })
 
-  // Драконий кодекс - база не разделяемая ruinBook (Зачарованная книга/Diamond Spell Book), а Испорченная книга
+  // Драконий кодекс
   let dragonBook = 'irons_spellbooks:ruined_book'
 
   event.recipes.create.sequenced_assembly([
@@ -204,113 +204,4 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(ruinBook).loops(2)
 
-    // Пириевый посох - Магическая ткань заменена на Жгучий эль
-    event.remove({ output: 'irons_spellbooks:pyrium_staff' })
-    event.shaped('irons_spellbooks:pyrium_staff', [
-        ' P ',
-        ' AP',
-        'N  '
-    ], {
-        A: 'irons_spellbooks:fire_ale',
-        N: '#c:ingots/netherite',
-        P: '#c:ingots/pyrium'
-    })
-
-    // Жаровня душ - железные нагетсы сверху/слева/справа от Костра Душ, снизу - Проклятый слиток
-    event.remove({ output: 'irons_spellbooks:brazier_soul' })
-    event.shaped('irons_spellbooks:brazier_soul', [
-        ' I ',
-        'IFI',
-        ' C '
-    ], {
-        I: '#c:nuggets/iron',
-        F: 'minecraft:soul_campfire',
-        C: 'cataclysm:cursium_ingot'
-    })
-
-    // Bloom Stone - база апгрейда с Чумной Брони (plagued_*) на Незеритовую Броню Мага (netherite_mage_*)
-    event.remove({ output: 'cataclysm_spellbooks:bloom_stone_hat' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        addition: { item: 'minecraft:amethyst_shard' },
-        base: { item: 'irons_spellbooks:netherite_mage_helmet' },
-        result: { id: 'cataclysm_spellbooks:bloom_stone_hat' },
-        template: { item: 'cataclysm:amethyst_crab_shell' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:bloom_stone_chestplate' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        addition: { item: 'minecraft:amethyst_shard' },
-        base: { item: 'irons_spellbooks:netherite_mage_chestplate' },
-        result: { id: 'cataclysm_spellbooks:bloom_stone_chestplate' },
-        template: { item: 'cataclysm:amethyst_crab_shell' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:bloom_stone_skirt' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        addition: { item: 'minecraft:amethyst_shard' },
-        base: { item: 'irons_spellbooks:netherite_mage_leggings' },
-        result: { id: 'cataclysm_spellbooks:bloom_stone_skirt' },
-        template: { item: 'cataclysm:amethyst_crab_shell' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:bloom_stone_greaves' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        addition: { item: 'minecraft:amethyst_shard' },
-        base: { item: 'irons_spellbooks:netherite_mage_boots' },
-        result: { id: 'cataclysm_spellbooks:bloom_stone_greaves' },
-        template: { item: 'cataclysm:amethyst_crab_shell' }
-    })
-
-    // Руна Бездны - база заменена с материалов Катаклизма на любой ванильный блок коралла
-    let coral = ['tube_coral_block', 'brain_coral_block', 'bubble_coral_block', 'fire_coral_block', 'horn_coral_block']
-    event.remove({ output: 'cataclysm_spellbooks:abyssal_rune' })
-    event.shaped('cataclysm_spellbooks:abyssal_rune', [
-        'CCC',
-        'CRC',
-        'CCC'
-    ], {
-        C: coral,
-        R: 'irons_spellbooks:blank_rune'
-    })
-
-    // Броня Abyssal - добавлена Незеритовая Броня Мага (в пустой слот у штанов/ботинок, вместо одной Ткани у шлема/нагрудника)
-    event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_helmet' })
-    event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
-        'Ncc',
-        'crc'
-    ], {
-        c: 'irons_spellbooks:magic_cloth',
-        r: 'cataclysm_spellbooks:abyssal_rune',
-        N: 'irons_spellbooks:netherite_mage_helmet'
-    })
-    event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_chestplate' })
-    event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
-        'Nrc',
-        'ccc',
-        'ccc'
-    ], {
-        c: 'irons_spellbooks:magic_cloth',
-        r: 'cataclysm_spellbooks:abyssal_rune',
-        N: 'irons_spellbooks:netherite_mage_chestplate'
-    })
-    event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_leggings' })
-    event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
-        'ccc',
-        'crc',
-        'cNc'
-    ], {
-        c: 'irons_spellbooks:magic_cloth',
-        r: 'cataclysm_spellbooks:abyssal_rune',
-        N: 'irons_spellbooks:netherite_mage_leggings'
-    })
-    event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_boots' })
-    event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
-        'cNc',
-        'crc'
-    ], {
-        c: 'irons_spellbooks:magic_cloth',
-        r: 'cataclysm_spellbooks:abyssal_rune',
-        N: 'irons_spellbooks:netherite_mage_boots'
-    })
 })

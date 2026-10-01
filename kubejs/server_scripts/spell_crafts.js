@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
-
-  // Рамка портала
+    
+    // Рамка портала
     let bars = ['iron_bars', 'born_in_chaos_v1:dark_grid']
     let portTrans = 'kubejs:incomplete_uportal_frame'
     event.recipes.create.sequenced_assembly([
@@ -16,27 +16,44 @@ ServerEvents.recipes(event => {
     .transitionalItem(portTrans).loops(1)
 
 
-  // Волшебный слиток
+    // Волшебный слиток
+    let arcaneIngot = 'irons_spellbooks:arcane_ingot'
+    let Ingots = ['iron_ingot', 'gold_ingot', 'copper_ingot', 'cataclysm:black_steel_ingot']
+    event.shapeless(`9x ${'irons_spellbooks:arcane_ingot'}`, 'create_wizardry:arcane_block')
 
-  let arcaneIngot = 'irons_spellbooks:arcane_ingot'
-  let Ingots = ['iron_ingot', 'gold_ingot', 'copper_ingot', 'cataclysm:black_steel_ingot']
-  event.shapeless(`9x ${'irons_spellbooks:arcane_ingot'}`, 'create_wizardry:arcane_block')
-
-  event.recipes.createFilling('irons_spellbooks:arcane_ingot', [
+    event.recipes.createFilling('irons_spellbooks:arcane_ingot', [
         Ingots,
         Fluid.of('create_wizardry:mana', 1000)
     ])
 
-  // Кожа хоглина
-  event.shaped('irons_spellbooks:hogskin', [
-    'AA',
-    'AA'
-], {
-    A: 'cold_sweat:hoglin_hide'
-})
+    // Кожа хоглина
+    event.shaped('irons_spellbooks:hogskin', [
+        'AA',
+        'AA'
+    ], {
+        A: 'cold_sweat:hoglin_hide'
+    })
 
-    // Кольцо Лапласа
+    // Магическая ткань
+    event.shaped('irons_spellbooks:magic_cloth', [
+        'EEE',
+        'EAE',
+        'EEE'
+    ], {
+        A: 'northstar:durable_fabric',
+        E: 'irons_spellbooks:arcane_essence'
+    })
 
+    event.recipes.create.filling(
+        'irons_spellbooks:magic_cloth',
+    ['northstar:durable_fabric', Fluid.of('create_wizardry:mana', 500)])
+
+    // Хемп вместо картошки
+    event.get('irons_spellbooks:nature_focus')
+        .remove('minecraft:poisonous_potato')
+        .add('nirvana:hemp')
+
+    // Кольцо Лапласа 
     let ringTrans0 = 'irons_spellbooks:cooldown_ring'
     event.recipes.create.sequenced_assembly([
         'spellclasses:laplace_ring'
@@ -61,48 +78,51 @@ ServerEvents.recipes(event => {
     ])
     .transitionalItem(ringTrans1).loops(1)
 
-    // Броня Инженера - крафт на кузнечном столе: база Незеритовая Мантия Мага + Механизм Точности (шаблон) + Руна Молнии (добавка)
-    event.remove({ output: 'cataclysm_spellbooks:engineer_hood' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:netherite_mage_helmet' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'cataclysm_spellbooks:engineer_hood' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_suit' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:netherite_mage_chestplate' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'cataclysm_spellbooks:engineer_suit' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_leggings' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:netherite_mage_leggings' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'cataclysm_spellbooks:engineer_leggings' }
-    })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_boots' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:netherite_mage_boots' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'cataclysm_spellbooks:engineer_boots' }
+    // Броня бездны
+    let coral = ['tube_coral_block', 'brain_coral_block', 'bubble_coral_block', 'fire_coral_block', 'horn_coral_block']
+    event.shaped('cataclysm_spellbooks:abyssal_rune', [
+        'CCC',
+        'CRC',
+        'CCC'
+    ], {
+        C: coral,
+        R: 'irons_spellbooks:blank_rune'
     })
 
-    // Трость Изобретателя - крафт на кузнечном столе: база Посох Молнии + Механизм Точности (шаблон) + Руна Молнии (добавка)
-    event.remove({ output: 'irons_spellbooks:artificer_cane' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:lightning_rod' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'irons_spellbooks:artificer_cane' }
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_helmet',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_chestplate',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_leggings',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_boots',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
     })
 
 })

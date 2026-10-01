@@ -1,8 +1,6 @@
 // kubejs/server_scripts/recipe_overrides.js
 ServerEvents.recipes(event => {
 
-    // Простой крафт на обычном верстаке
-
     // Кристалл Энда
     event.shaped('minecraft:end_crystal', [
         'GGG',
@@ -13,39 +11,6 @@ ServerEvents.recipes(event => {
         T: 'ghast_tear',
         S: 'create_more_additions:silver_jewel'
     })
-
-    // Камень Пустоты
-    event.shaped('cataclysm:void_stone', [
-        'ASA',
-        'SOS',
-        'ASA'
-    ], {
-        O: ['minecraft:crying_obsidian', 'minecraft:obsidian', 'cataclysm:polished_obsidian'],
-        A: 'northstar:polished_amethyst',
-        S: 'northstar:polished_lunar_sapphire'
-    })
-
-    // Фонарь Пустоты
-    event.shaped('cataclysm:void_lantern_block', [
-        ' V ',
-        'VGV',
-        ' V '
-    ], {
-        G: 'minecraft:glowstone',
-        V: 'cataclysm:void_stone'
-    })
-
-    // Пылающий пепел
-    event.shaped('cataclysm:burning_ashes', [
-        ' D ',
-        'DLD',
-        ' D '
-    ], {
-        L: 'cataclysm:lava_power_cell',
-        D: 'cataclysm:dying_ember'
-    })
-
-    // Последовательная сборка Create (Sequenced Assembly)
 
     // Зачарованное золотое яблоко
     let appleTransitional = 'kubejs:incomplete_enchanted_apple'

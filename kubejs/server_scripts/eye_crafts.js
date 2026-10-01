@@ -120,8 +120,6 @@ ServerEvents.recipes(event => {
         V: 'create:blaze_cake'
     })
 
-    // Последовательная сборка Create (Sequenced Assembly)
-
     // Око Непростительного Проклятия
     let transitional = 'kubejs:incomplete_cursed_eye'
     event.recipes.create.sequenced_assembly([
@@ -164,7 +162,6 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(crypticTransitional, crypticTransitional)
     ]).transitionalItem(crypticTransitional).loops(5)
 
-    // Механическая сборка Create
     // Око Потерянной Технологии
     event.recipes.create.mechanical_crafting('endrem:corrupted_eye', [
         ' SRS ',
