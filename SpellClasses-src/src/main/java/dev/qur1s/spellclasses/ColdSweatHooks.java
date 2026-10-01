@@ -50,17 +50,35 @@ final class ColdSweatHooks {
         Temperature.addModifier(player, new SimpleTempModifier(1.0, SimpleTempModifier.Operation.SET), trait, Placement.LAST);
     }
 
-    /** Biomes that never get winter (Serene Seasons' warm/tropical set) — see seasons.toml. */
-    private static final Set<ResourceLocation> WARM_BIOMES = Set.of(
-            ResourceLocation.withDefaultNamespace("savanna"),
-            ResourceLocation.withDefaultNamespace("savanna_plateau"),
-            ResourceLocation.withDefaultNamespace("windswept_savanna"),
-            ResourceLocation.withDefaultNamespace("mangrove_swamp"),
+    /**
+     * Forest-type biomes (vanilla {@code #minecraft:is_forest} + {@code is_taiga} + {@code is_jungle}
+     * tags, plus a few tree-covered biomes vanilla doesn't formally tag as forest) - by user design,
+     * a Druid's passive regen/spell-power environment match. No mod in this pack adds any biome to
+     * the Overworld itself (confirmed: nothing overrides the vanilla multi-noise parameter list), so
+     * this is the complete, exhaustive Overworld forest set.
+     */
+    private static final Set<ResourceLocation> FOREST_BIOMES = Set.of(
+            // #minecraft:is_forest
+            ResourceLocation.withDefaultNamespace("forest"),
+            ResourceLocation.withDefaultNamespace("flower_forest"),
+            ResourceLocation.withDefaultNamespace("birch_forest"),
+            ResourceLocation.withDefaultNamespace("old_growth_birch_forest"),
+            ResourceLocation.withDefaultNamespace("dark_forest"),
+            ResourceLocation.withDefaultNamespace("grove"),
+            // #minecraft:is_taiga
+            ResourceLocation.withDefaultNamespace("taiga"),
+            ResourceLocation.withDefaultNamespace("snowy_taiga"),
+            ResourceLocation.withDefaultNamespace("old_growth_pine_taiga"),
+            ResourceLocation.withDefaultNamespace("old_growth_spruce_taiga"),
+            // #minecraft:is_jungle
             ResourceLocation.withDefaultNamespace("jungle"),
             ResourceLocation.withDefaultNamespace("sparse_jungle"),
             ResourceLocation.withDefaultNamespace("bamboo_jungle"),
-            ResourceLocation.withDefaultNamespace("mushroom_fields"),
-            ResourceLocation.withDefaultNamespace("warm_ocean")
+            // Tree-covered but not in any of the tags above
+            ResourceLocation.withDefaultNamespace("windswept_forest"),
+            ResourceLocation.withDefaultNamespace("cherry_grove"),
+            ResourceLocation.withDefaultNamespace("wooded_badlands"),
+            ResourceLocation.withDefaultNamespace("mangrove_swamp")
     );
 
     /** Whether {@code school}'s matching environment currently holds — drives both the weak regen and the +10% spell power. */
@@ -70,14 +88,14 @@ final class ColdSweatHooks {
             case "ice" -> Temperature.get(player, Temperature.Trait.WORLD) < 0.0;
             case "fire" -> level.dimension() == Level.NETHER;
             case "lightning" -> level.isThundering();
-            case "nature" -> level.dimension() == Level.OVERWORLD && isInWarmBiome(player);
+            case "nature" -> level.dimension() == Level.OVERWORLD && isInForestBiome(player);
             default -> false;
         };
     }
 
-    private static boolean isInWarmBiome(ServerPlayer player) {
+    private static boolean isInForestBiome(ServerPlayer player) {
         Holder<Biome> biome = player.level().getBiome(player.blockPosition());
-        return biome.unwrapKey().map(key -> WARM_BIOMES.contains(key.location())).orElse(false);
+        return biome.unwrapKey().map(key -> FOREST_BIOMES.contains(key.location())).orElse(false);
     }
 
     /** Adds/removes the +10% spell power modifier for {@code school}'s own power attribute to match {@code active}. */

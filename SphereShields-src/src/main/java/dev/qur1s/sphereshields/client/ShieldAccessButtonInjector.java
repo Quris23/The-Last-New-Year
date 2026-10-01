@@ -3,6 +3,7 @@ package dev.qur1s.sphereshields.client;
 import com.anton.shieldgenerators.ShieldGeneratorBlockEntity;
 import com.anton.shieldgenerators.ShieldGeneratorScreen;
 import dev.qur1s.sphereshields.AllowedPlayersHolder;
+import dev.qur1s.sphereshields.MobAccessHolder;
 import dev.qur1s.sphereshields.mixin.ContainerScreenAccessor;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
@@ -34,6 +35,7 @@ public final class ShieldAccessButtonInjector {
 
         BlockEntity be = Minecraft.getInstance().level.getBlockEntity(pos);
         if (!(be instanceof ShieldGeneratorBlockEntity blockEntity) || !(blockEntity instanceof AllowedPlayersHolder holder)) return;
+        if (!(blockEntity instanceof MobAccessHolder mobAccess)) return;
 
         // Placed to the LEFT of the panel rather than to the right: the right side is where JEI
         // docks its ingredient list, and a widget placed there ends up rendered underneath it.
@@ -43,7 +45,7 @@ public final class ShieldAccessButtonInjector {
 
         ThemedButton button = new ThemedButton(x, y, 70, 20, Component.literal("Доступ"), b -> {
             var currentlyAllowed = new LinkedHashSet<>(holder.sphereshields$getAllowedPlayers());
-            Minecraft.getInstance().setScreen(new PlayerAccessScreen(screen, pos, currentlyAllowed));
+            Minecraft.getInstance().setScreen(new PlayerAccessScreen(screen, pos, currentlyAllowed, mobAccess.sphereshields$isAllowMobs()));
         });
         button.setHighlighted(true);
 

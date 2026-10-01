@@ -1,5 +1,6 @@
 package dev.qur1s.sphereshields.client;
 
+import dev.qur1s.sphereshields.network.SetAllowMobsPayload;
 import dev.qur1s.sphereshields.network.SetAllowedPlayersPayload;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
@@ -35,7 +36,9 @@ public class PlayerAccessScreen extends Screen {
     private final Screen parent;
     private final BlockPos generatorPos;
     private final Set<UUID> allowed;
+    private boolean allowMobs;
     private final Map<UUID, ThemedButton> rowButtons = new LinkedHashMap<>();
+    private ThemedButton mobsButton;
     private List<PlayerInfo> players = List.of();
 
     private int panelX;
@@ -43,11 +46,12 @@ public class PlayerAccessScreen extends Screen {
     private int panelWidth;
     private int panelHeight;
 
-    public PlayerAccessScreen(Screen parent, BlockPos generatorPos, Set<UUID> currentlyAllowed) {
+    public PlayerAccessScreen(Screen parent, BlockPos generatorPos, Set<UUID> currentlyAllowed, boolean currentlyAllowMobs) {
         super(Component.literal("Доступ к куполу"));
         this.parent = parent;
         this.generatorPos = generatorPos;
         this.allowed = new LinkedHashSet<>(currentlyAllowed);
+        this.allowMobs = currentlyAllowMobs;
     }
 
     @Override
@@ -59,7 +63,8 @@ public class PlayerAccessScreen extends Screen {
         }
         this.players.sort(Comparator.comparing(info -> info.getProfile().getName()));
 
-        int rowCount = Math.max(this.players.size(), 1);
+        // +1 row for the "Мобы" toggle, always shown first regardless of how many players are online.
+        int rowCount = Math.max(this.players.size(), 1) + 1;
         this.panelWidth = ROW_WIDTH + PANEL_PADDING * 2;
         this.panelHeight = TITLE_HEIGHT + rowCount * (ROW_HEIGHT + ROW_SPACING) - ROW_SPACING + PANEL_PADDING * 2;
         this.panelX = (this.width - this.panelWidth) / 2;
@@ -67,6 +72,12 @@ public class PlayerAccessScreen extends Screen {
 
         int rowX = this.panelX + PANEL_PADDING;
         int y = this.panelY + PANEL_PADDING + TITLE_HEIGHT;
+
+        this.mobsButton = new ThemedButton(rowX, y, ROW_WIDTH, ROW_HEIGHT,
+                Component.literal("Мобы"), b -> this.sphereshields$toggleMobs());
+        this.mobsButton.setHighlighted(this.allowMobs);
+        this.addRenderableWidget(this.mobsButton);
+        y += ROW_HEIGHT + ROW_SPACING;
 
         for (PlayerInfo info : this.players) {
             UUID id = info.getProfile().getId();
@@ -78,6 +89,12 @@ public class PlayerAccessScreen extends Screen {
             this.addRenderableWidget(button);
             y += ROW_HEIGHT + ROW_SPACING;
         }
+    }
+
+    private void sphereshields$toggleMobs() {
+        this.allowMobs = !this.allowMobs;
+        this.mobsButton.setHighlighted(this.allowMobs);
+        PacketDistributor.sendToServer(new SetAllowMobsPayload(this.generatorPos, this.allowMobs));
     }
 
     private void sphereshields$toggle(UUID id) {

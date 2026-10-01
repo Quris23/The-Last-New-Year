@@ -3,6 +3,7 @@ package dev.qur1s.sphereshields.mixin;
 import com.anton.shieldgenerators.ShieldGeneratorBlockEntity;
 import dev.qur1s.sphereshields.AllowedPlayersHolder;
 import dev.qur1s.sphereshields.GroundShieldTracker;
+import dev.qur1s.sphereshields.MobAccessHolder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -28,7 +29,9 @@ abstract class GroundShieldTrackMixin {
         if (self.sphereshields$isActive() && self.sphereshields$isGroundShieldMode()) {
             double effectiveRadius = self.sphereshields$getGroundShieldRadius() * Math.clamp(redstoneSignal / 15.0, 0.0, 1.0);
             AllowedPlayersHolder accessControl = (AllowedPlayersHolder) (Object) this;
-            GroundShieldTracker.update(level.dimension(), pos, effectiveRadius, accessControl.sphereshields$getAllowedPlayers());
+            MobAccessHolder mobAccess = (MobAccessHolder) (Object) this;
+            GroundShieldTracker.update(level.dimension(), pos, effectiveRadius,
+                    accessControl.sphereshields$getAllowedPlayers(), mobAccess.sphereshields$isAllowMobs());
         } else {
             GroundShieldTracker.remove(level.dimension(), pos);
         }

@@ -59,6 +59,7 @@ public final class HostileMobBarrier {
         if (isPlayer && (((ServerPlayer) entity).isCreative() || ((ServerPlayer) entity).isSpectator())) return;
 
         for (GroundShieldTracker.Dome dome : GroundShieldTracker.domesIn(serverLevel.dimension())) {
+            if (isHostile && dome.allowMobs()) continue;
             if (isPlayer && dome.allowedPlayers().contains(((ServerPlayer) entity).getUUID())) continue;
 
             BlockPos center = dome.center();

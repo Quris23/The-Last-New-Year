@@ -4,6 +4,7 @@ import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
 import io.redspace.ironsspellbooks.api.spells.ISpellContainerMutable;
+import net.acetheeldritchking.cataclysm_spellbooks.registries.SpellRegistries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -31,9 +32,12 @@ public final class PresetWeaponSpells {
     }
 
     // Brontes: Twilight Gale's own spell (Volt Strike) 10. Void Forge: Arcane Shackle 10.
+    // Bloom Stone Staff: Conjure Amethyst Crab 10. Soul Brazier: Conjure Undead Thralls 10.
     private static final Preset[] PRESETS = {
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"), SpellRegistry.VOLT_STRIKE_SPELL, 10),
-            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.ARCANE_SHACKLE_SPELL, 10)
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.ARCANE_SHACKLE_SPELL, 10),
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "bloom_stone_staff"), SpellRegistries.CONJURE_AMETHYST_CRAB, 10),
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "soul_brazier"), SpellRegistries.CONJURE_THRALL, 10)
     };
 
     private static final int CHECK_INTERVAL_TICKS = 40;

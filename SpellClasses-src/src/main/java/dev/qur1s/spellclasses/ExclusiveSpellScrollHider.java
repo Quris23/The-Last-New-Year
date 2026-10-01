@@ -22,7 +22,7 @@ import java.util.function.Supplier;
  * These spells are each baked permanently into one specific preset weapon (see
  * PresetWeaponSpells, VoidStaffPortalSpell, and the vanilla items' own built-in preset spells:
  * Spellbreaker/Amethyst Rapier/Boreal Blade/Twilight Gale/Hellrazor/Monstrous Flamberge/
- * Hither-Thither Wand). Their scrolls are hidden from the creative menu so nobody can put the
+ * Hither-Thither Wand/Bloom Stone Staff/Soul Brazier). Their scrolls are hidden from the creative menu so nobody can put the
  * spell into a regular grimoire - the weapon is the only source. Scroll Forge crafting and JEI's
  * recipe listing for them are separately disabled via the "allow_crafting" spell config overlay
  * (kubejs/data/<mod_id>/irons_spellbooks_spell_config/<spell_id>.json); JEI's own item list
@@ -41,7 +41,9 @@ public final class ExclusiveSpellScrollHider {
             SpellRegistry.FROSTBITE_SPELL,
             SpellRegistry.RAISE_HELL_SPELL,
             SpellRegistry.PORTAL_SPELL,
-            SpellRegistries.TECTONIC_TREMBLE
+            SpellRegistries.TECTONIC_TREMBLE,
+            SpellRegistries.CONJURE_AMETHYST_CRAB,
+            SpellRegistries.CONJURE_THRALL
     );
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

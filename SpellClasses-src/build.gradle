@@ -66,6 +66,15 @@ dependencies {
     compileOnly files("libs/cataclysm.jar")
     compileOnly files("libs/cataclysm_spellbooks.jar")
     compileOnly files("libs/ftbquests.jar")
+    compileOnly files("libs/northstar.jar")
+    compileOnly files("libs/create.jar")
+    compileOnly files("libs/ponder.jar")
+    compileOnly files("libs/flywheel.jar")
+    compileOnly files("libs/registrate.jar")
+    compileOnly files("libs/sphereshields.jar")
+    compileOnly files("libs/aerowarptics.jar")
+    compileOnly files("libs/geckolib.jar")
+    compileOnly files("libs/sable.jar")
 }
 
 tasks.withType(ProcessResources).configureEach {

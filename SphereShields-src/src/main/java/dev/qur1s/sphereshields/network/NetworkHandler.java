@@ -2,6 +2,7 @@ package dev.qur1s.sphereshields.network;
 
 import com.anton.shieldgenerators.ShieldGeneratorBlockEntity;
 import dev.qur1s.sphereshields.AllowedPlayersHolder;
+import dev.qur1s.sphereshields.MobAccessHolder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -27,6 +28,7 @@ public final class NetworkHandler {
     static void register(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1");
         registrar.playToServer(SetAllowedPlayersPayload.TYPE, SetAllowedPlayersPayload.STREAM_CODEC, NetworkHandler::handleSetAllowedPlayers);
+        registrar.playToServer(SetAllowMobsPayload.TYPE, SetAllowMobsPayload.STREAM_CODEC, NetworkHandler::handleSetAllowMobs);
     }
 
     private static void handleSetAllowedPlayers(SetAllowedPlayersPayload payload, IPayloadContext context) {
@@ -41,6 +43,24 @@ public final class NetworkHandler {
 
             Set<UUID> allowed = new LinkedHashSet<>(payload.allowed());
             holder.sphereshields$setAllowedPlayers(allowed);
+            blockEntity.setChanged();
+            if (blockEntity.getLevel() instanceof ServerLevel serverLevel) {
+                serverLevel.sendBlockUpdated(pos, blockEntity.getBlockState(), blockEntity.getBlockState(), 3);
+            }
+        });
+    }
+
+    private static void handleSetAllowMobs(SetAllowMobsPayload payload, IPayloadContext context) {
+        context.enqueueWork(() -> {
+            if (!(context.player() instanceof ServerPlayer player)) return;
+            BlockPos pos = payload.generatorPos();
+            if (player.distanceToSqr(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5) > MAX_INTERACTION_DISTANCE_SQR) return;
+
+            BlockEntity blockEntity = player.level().getBlockEntity(pos);
+            if (!(blockEntity instanceof ShieldGeneratorBlockEntity)) return;
+            if (!(blockEntity instanceof MobAccessHolder holder)) return;
+
+            holder.sphereshields$setAllowMobs(payload.allowMobs());
             blockEntity.setChanged();
             if (blockEntity.getLevel() instanceof ServerLevel serverLevel) {
                 serverLevel.sendBlockUpdated(pos, blockEntity.getBlockState(), blockEntity.getBlockState(), 3);

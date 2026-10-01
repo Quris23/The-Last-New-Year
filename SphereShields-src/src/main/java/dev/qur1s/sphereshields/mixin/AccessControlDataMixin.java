@@ -2,6 +2,7 @@ package dev.qur1s.sphereshields.mixin;
 
 import com.anton.shieldgenerators.ShieldGeneratorBlockEntity;
 import dev.qur1s.sphereshields.AllowedPlayersHolder;
+import dev.qur1s.sphereshields.MobAccessHolder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -19,17 +20,23 @@ import java.util.Set;
 import java.util.UUID;
 
 /**
- * Adds a per-generator whitelist of player UUIDs directly onto {@code ShieldGeneratorBlockEntity} -
- * saved/loaded/synced the same way the mod's own fields already are (saveAdditional / loadAdditional
- * / getUpdateTag), so it survives restarts and reaches the client for the access GUI. Any player NOT
- * on this list gets pushed out of the dome exactly like a hostile mob (see HostileMobBarrier).
+ * Adds a per-generator whitelist of player UUIDs, plus a flat "allow all mobs" toggle, directly onto
+ * {@code ShieldGeneratorBlockEntity} - saved/loaded/synced the same way the mod's own fields already
+ * are (saveAdditional / loadAdditional / getUpdateTag), so both survive restarts and reach the client
+ * for the access GUI. Any player NOT on the whitelist gets pushed out of the dome exactly like a
+ * hostile mob (see HostileMobBarrier), unless the mob toggle is on, in which case mobs are left alone
+ * entirely (the player whitelist still applies to players regardless).
  */
 @Mixin(value = ShieldGeneratorBlockEntity.class, remap = false)
-public abstract class AccessControlDataMixin implements AllowedPlayersHolder {
+public abstract class AccessControlDataMixin implements AllowedPlayersHolder, MobAccessHolder {
     private static final String ALLOWED_PLAYERS_KEY = "SphereShields_AllowedPlayers";
+    private static final String ALLOW_MOBS_KEY = "SphereShields_AllowMobs";
 
     @Unique
     private final Set<UUID> sphereshields$allowedPlayers = new LinkedHashSet<>();
+
+    @Unique
+    private boolean sphereshields$allowMobs = false;
 
     @Override
     public Set<UUID> sphereshields$getAllowedPlayers() {
@@ -42,6 +49,16 @@ public abstract class AccessControlDataMixin implements AllowedPlayersHolder {
         this.sphereshields$allowedPlayers.addAll(allowed);
     }
 
+    @Override
+    public boolean sphereshields$isAllowMobs() {
+        return this.sphereshields$allowMobs;
+    }
+
+    @Override
+    public void sphereshields$setAllowMobs(boolean allow) {
+        this.sphereshields$allowMobs = allow;
+    }
+
     @Inject(method = "saveAdditional", at = @At("TAIL"))
     private void sphereshields$saveAllowed(CompoundTag tag, HolderLookup.Provider registries, CallbackInfo ci) {
         ListTag list = new ListTag();
@@ -49,6 +66,7 @@ public abstract class AccessControlDataMixin implements AllowedPlayersHolder {
             list.add(StringTag.valueOf(id.toString()));
         }
         tag.put(ALLOWED_PLAYERS_KEY, list);
+        tag.putBoolean(ALLOW_MOBS_KEY, this.sphereshields$allowMobs);
     }
 
     @Inject(method = "loadAdditional", at = @At("TAIL"))
@@ -62,6 +80,7 @@ public abstract class AccessControlDataMixin implements AllowedPlayersHolder {
                 }
             }
         }
+        this.sphereshields$allowMobs = tag.getBoolean(ALLOW_MOBS_KEY);
     }
 
     @Inject(method = "getUpdateTag", at = @At("RETURN"))
@@ -71,5 +90,6 @@ public abstract class AccessControlDataMixin implements AllowedPlayersHolder {
             list.add(StringTag.valueOf(id.toString()));
         }
         cir.getReturnValue().put(ALLOWED_PLAYERS_KEY, list);
+        cir.getReturnValue().putBoolean(ALLOW_MOBS_KEY, this.sphereshields$allowMobs);
     }
 }
