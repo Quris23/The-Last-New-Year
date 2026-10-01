@@ -5,7 +5,7 @@ StartupEvents.registry('item', event => {
     .displayName('Кузнечный шаблон: Улучшение костей рептилии')
     .appliesTo('§9Алмазному снаряжению')
     .ingredients('§9Слиток древнего металла')
-
+    
     //event.create('ancient_upgrade_smithing_template', 'smithing_template').displayName('Кузнечный шаблон')//.tooltip('§7§oУлучшение костей рептилии')
     //event.create('ancient_upgrade_smithing_template').displayName('Кузнечный шаблон').tooltip('§7§oУлучшение костей рептилии')
 
@@ -69,4 +69,16 @@ ItemEvents.modification(event => {
   event.modify('cataclysm:bone_reptile_chestplate', item => {
     item.maxDamage = 560
   })
+})
+
+  // Legendary Monsters
+StartupEvents.registry('block', event => {
+  event.create('lunar_enderitium_ore')
+    .texture('kubejs:block/lunar_enderitium_ore')
+    .hardness(2.5)
+    .resistance(2.5)
+    .stoneSoundType()
+    .requiresTool()
+    .tagBlock('minecraft:mineable/pickaxe')
+    .noDrops() // лут-таблица своя, см. kubejs/data/kubejs/loot_table/blocks/lunar_enderitium_ore.json
 })
