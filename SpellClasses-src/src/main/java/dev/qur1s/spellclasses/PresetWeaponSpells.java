@@ -32,11 +32,16 @@ public final class PresetWeaponSpells {
     }
 
     // Brontes: Twilight Gale's own spell (Volt Strike) 10. Void Forge: Arcane Shackle 10.
-    // Bloom Stone Staff: Conjure Amethyst Crab 10. Soul Brazier: Conjure Undead Thralls 10.
+    // Bloom Stone Staff: Conjure Amethyst Crab 2 (crab count = level, see comment below).
+    // Soul Brazier: Conjure Undead Thralls 10.
     private static final Preset[] PRESETS = {
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "brontes"), SpellRegistry.VOLT_STRIKE_SPELL, 10),
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "void_forge"), SpellRegistry.ARCANE_SHACKLE_SPELL, 10),
-            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "bloom_stone_staff"), SpellRegistries.CONJURE_AMETHYST_CRAB, 10),
+            // Conjure Amethyst Crab's onCast loops "for (i < spellLevel)" spawning one crab per
+            // iteration - crab count is spellLevel, 1:1 (confirmed by decompiling the spell). Its own
+            // declared max level (1) only bounds normal spellbook levelling; addSpell() here sets the
+            // level directly and isn't clamped to it. By user design: 2 crabs.
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "bloom_stone_staff"), SpellRegistries.CONJURE_AMETHYST_CRAB, 2),
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "soul_brazier"), SpellRegistries.CONJURE_THRALL, 10)
     };
 

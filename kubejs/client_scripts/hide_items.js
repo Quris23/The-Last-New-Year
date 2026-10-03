@@ -14,8 +14,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'cataclysm_spellbooks:ignis_chestplate_elytra',
         'cataclysm_spellbooks:cursium_mage_elytra',
         'artifacts:everlasting_beef',
-        'artifacts:eternal_steak',
-        'aerowarptics:rift_gate_frame',
-        'aerowarptics:rift_gate'
+        'artifacts:eternal_steak'
     ])
 })

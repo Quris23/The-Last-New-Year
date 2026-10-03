@@ -40,6 +40,17 @@
     "HideSelectedSpellTooltipMixin",
     "SandScrollFocusMixin",
     "FtbQuestsEncoderCrashFixMixin",
-    "ArchitecturyFtbQuestsSendFixMixin"
+    "ArchitecturyFtbQuestsSendFixMixin",
+    "WarpValidatorSingularityOnlyMixin",
+    "RiftDriveCrossDimensionMixin",
+    "RiftBeaconCrossDimensionMixin",
+    "SettlementRoadsNoStructuresMixin",
+    "ColdSweatBiomeUnloadedChunkMixin",
+    "NetherPortalBlockMixin",
+    "RiftGateRegistryCrossMixin",
+    "RiftGateBlockEntityCrossMixin"
+  ],
+  "client": [
+    "SablePlotChunkForgetMixin"
   ]
 }
