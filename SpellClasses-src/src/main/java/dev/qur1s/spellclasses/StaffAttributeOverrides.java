@@ -80,6 +80,11 @@ public final class StaffAttributeOverrides {
             overrideEngineerPiece("engineer_suit", EquipmentSlotGroup.CHEST, 8.0);
             overrideEngineerPiece("engineer_leggings", EquipmentSlotGroup.LEGS, 6.0);
             overrideEngineerPiece("engineer_boots", EquipmentSlotGroup.FEET, 3.0);
+
+            // Нагрудник Светоносца (Iron's Spellbooks, paladin_chestplate) - броня 8 -> 16, остальные
+            // атрибуты предмета (мана, сила заклинаний, стойкость...) остаются как есть
+            overrideArmorValue("irons_spellbooks", "paladin_chestplate", 16.0);
+
         });
     }
 
@@ -103,6 +108,35 @@ public final class StaffAttributeOverrides {
                 .add(AttributeRegistry.NATURE_SPELL_POWER, new AttributeModifier(id(path + "_nature_power"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
                 .add(AttributeRegistry.SPELL_POWER, new AttributeModifier(id(path + "_spell_power"), 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
                 .build());
+    }
+
+    /** The same modifiers with the ARMOR entry set to {@code armor}; every other entry is untouched. */
+    public static ItemAttributeModifiers withArmor(ItemAttributeModifiers current, double armor, EquipmentSlotGroup slot, ResourceLocation fallbackId) {
+        ItemAttributeModifiers.Builder rebuilt = ItemAttributeModifiers.builder();
+        boolean found = false;
+        for (ItemAttributeModifiers.Entry entry : current.modifiers()) {
+            AttributeModifier modifier = entry.modifier();
+            if (entry.attribute().is(Attributes.ARMOR)) {
+                modifier = new AttributeModifier(modifier.id(), armor, modifier.operation());
+                found = true;
+            }
+            rebuilt.add(entry.attribute(), modifier, entry.slot());
+        }
+        if (!found) {
+            rebuilt.add(Attributes.ARMOR, new AttributeModifier(fallbackId, armor, AttributeModifier.Operation.ADD_VALUE), slot);
+        }
+        return rebuilt.build();
+    }
+
+    /** Replaces only the ARMOR entry of an item's attribute modifiers (component), keeping every other one. */
+    private static void overrideArmorValue(String namespace, String path, double armor) {
+        Item item = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(namespace, path));
+        if (item == Items.AIR) return;
+        ItemAttributeModifiers current = item.components().get(DataComponents.ATTRIBUTE_MODIFIERS);
+        if (current == null) {
+            current = item.getDefaultAttributeModifiers();
+        }
+        override(namespace, path, withArmor(current, armor, EquipmentSlotGroup.CHEST, id(path + "_armor")));
     }
 
     private static void override(String namespace, String path, ItemAttributeModifiers modifiers) {

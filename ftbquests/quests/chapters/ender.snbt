@@ -20,10 +20,22 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "38AA000000000001"
 			shape: "octagon"
 			tasks: [{
 				entity: "minecraft:enderman"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "38AB000000000001"
 				type: "kill"
 				value: 1L
@@ -33,6 +45,7 @@
 		}
 		{
 			dependencies: ["38AA000000000001"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000002"
 			tasks: [{
 				id: "38AB000000000002"
@@ -44,6 +57,7 @@
 		}
 		{
 			dependencies: ["38AA000000000002"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000003"
 			tasks: [{
 				id: "38AB000000000003"
@@ -55,6 +69,7 @@
 		}
 		{
 			dependencies: ["38AA000000000003"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000004"
 			tasks: [{
 				id: "38AB000000000004"
@@ -66,6 +81,7 @@
 		}
 		{
 			dependencies: ["38AA000000000004"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
 			}
@@ -80,6 +96,7 @@
 		}
 		{
 			dependencies: ["38AA000000000005"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000006"
 			tasks: [{
 				id: "38AB000000000006"
@@ -90,6 +107,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -111,6 +129,7 @@
 		}
 		{
 			dependencies: ["38AA000000000005"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000008"
 			tasks: [{
 				id: "38AB000000000008"
@@ -121,6 +140,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "38AA000000000009"
 			preset: "normal"
 			tasks: [{
@@ -133,6 +153,7 @@
 		}
 		{
 			dependencies: ["38AA000000000009"]
+			entity_vis_size: 1.0f
 			id: "38AA00000000000A"
 			tasks: [{
 				id: "38AB00000000000A"
@@ -143,6 +164,7 @@
 			y: 10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "38AA00000000000C"
 			shape: "square"
 			tasks: [{
@@ -159,7 +181,9 @@
 				"38AA00000000000A"
 				"38AA000000000007"
 				"38AA00000000000C"
+				"38AA000000000006"
 			]
+			entity_vis_size: 1.0f
 			id: "38AA00000000000D"
 			tasks: [{
 				id: "38AB00000000000D"
@@ -170,7 +194,8 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["38AA00000000000D"]
+			dependencies: ["38AA000000000007"]
+			entity_vis_size: 1.0f
 			id: "38AA00000000000E"
 			shape: "circle"
 			tasks: [{
@@ -183,6 +208,7 @@
 		}
 		{
 			dependencies: ["38AA000000000002"]
+			entity_vis_size: 1.0f
 			id: "38AA00000000000F"
 			tasks: [{
 				id: "38AB00000000000F"
@@ -194,6 +220,7 @@
 		}
 		{
 			dependencies: ["38AA00000000000F"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000010"
 			tasks: [{
 				id: "38AB000000000010"
@@ -205,6 +232,7 @@
 		}
 		{
 			dependencies: ["38AA000000000009"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000011"
 			shape: "hexagon"
 			tasks: [
@@ -234,6 +262,7 @@
 		}
 		{
 			dependencies: ["38AA000000000011"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000012"
 			tasks: [{
 				id: "38AB000000000012"
@@ -245,6 +274,7 @@
 		}
 		{
 			dependencies: ["38AA000000000012"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000013"
 			tasks: [{
 				id: "38AB000000000013"
@@ -256,6 +286,7 @@
 		}
 		{
 			dependencies: ["38AA000000000012"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000014"
 			shape: "hexagon"
 			tasks: [
@@ -285,6 +316,7 @@
 		}
 		{
 			dependencies: ["38AA000000000011"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000015"
 			shape: "hexagon"
 			tasks: [
@@ -313,6 +345,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "38AA000000000016"
 			tasks: [{
 				id: "38AB000000000016"
@@ -324,6 +357,7 @@
 		}
 		{
 			dependencies: ["38AA000000000016"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000017"
 			tasks: [{
 				id: "38AB000000000017"
@@ -335,6 +369,7 @@
 		}
 		{
 			dependencies: ["38AA000000000017"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000018"
 			tasks: [{
 				id: "38AB000000000018"
@@ -346,6 +381,7 @@
 		}
 		{
 			dependencies: ["38AA000000000018"]
+			entity_vis_size: 1.0f
 			id: "38AA000000000019"
 			tasks: [{
 				id: "38AB000000000019"
@@ -357,6 +393,7 @@
 		}
 		{
 			dependencies: ["38AA000000000019"]
+			entity_vis_size: 1.0f
 			id: "38AA00000000001A"
 			shape: "hexagon"
 			tasks: [{
@@ -366,6 +403,60 @@
 			}]
 			x: -6.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["38AA000000000002"]
+			entity_vis_size: 1.0f
+			id: "4DCB44F16B5B42F2"
+			tasks: [{
+				id: "2D587B8C64E163FB"
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "irons_spellbooks:echoing_strikes", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:amethyst_rapier" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DCB44F16B5B42F2"]
+			entity_vis_size: 1.0f
+			id: "56E8869050D03302"
+			tasks: [{
+				id: "1984179C4C36AFC1"
+				item: { count: 1, id: "cataclysm:void_forge" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["38AA000000000015"]
+			entity_vis_size: 1.0f
+			id: "38AA00000000001B"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "38AB00000000001B"
+					item: { count: 1, id: "echoing_magic:reinforced_juggernaut_helmet" }
+					type: "item"
+				}
+				{
+					id: "38AC00000000001B"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "echoing_magic:reinforced_juggernaut_chestplate" }
+					type: "item"
+				}
+				{
+					id: "38AD00000000001B"
+					item: { count: 1, id: "echoing_magic:reinforced_juggernaut_leggings" }
+					type: "item"
+				}
+				{
+					id: "38AE00000000001B"
+					item: { count: 1, id: "echoing_magic:reinforced_juggernaut_boots" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.0d
 		}
 	]
 }

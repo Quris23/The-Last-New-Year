@@ -175,7 +175,7 @@
   "aerowarptics.gui.rift_gate.no_gates": "Въ предѣлахъ досягаемости нѣтъ вратъ",
   "aerowarptics.gui.rift_gate.opening": "Проёмъ %s x %s",
   "aerowarptics.gui.rift_gate.pick": "Выберите врата для открытія",
-  "aerowarptics.gui.rift_gate.ready": "Открыты — проѣзжайте",
+  "aerowarptics.gui.rift_gate.ready": "Открыты — проходите",
   "aerowarptics.gui.rift_gate.standing_by": "Готовы къ открытію",
   "aerowarptics.gui.rift_gate.title": "Хексъ-врата",
   "aerowarptics.gui.rift_gate.unformed_hint": "Замкните кольцо вокругъ свободнаго проёма",

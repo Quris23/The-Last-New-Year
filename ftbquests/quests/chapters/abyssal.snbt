@@ -20,6 +20,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "10FA3B6C8D2E4F51"
 			tasks: [{
 				id: "10FA3B6C8D2E4F52"
@@ -31,6 +32,7 @@
 		}
 		{
 			dependencies: ["10FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
 			}
@@ -45,6 +47,7 @@
 		}
 		{
 			dependencies: ["11FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "cataclysm:tidal_claws"
 			}
@@ -60,6 +63,7 @@
 		}
 		{
 			dependencies: ["11FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			id: "12FA3B6C8D2E4F51"
 			shape: "hexagon"
 			tasks: [
@@ -89,6 +93,7 @@
 		}
 		{
 			dependencies: ["12FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			id: "7A4A7F3B407FAF0A"
 			shape: "square"
 			tasks: [{

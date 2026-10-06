@@ -1,0 +1,32 @@
+{
+  "display": {
+    "hidden": true,
+    "icon": {
+      "id": "spellclasses:storm_atlas"
+    },
+    "title": {
+      "translate": "advancements.wind_spellbooks.spell_book_wind.title"
+    },
+    "description": {
+      "translate": "advancements.wind_spellbooks.spell_book_wind.description"
+    },
+    "announce_to_chat": true,
+    "show_toast": true,
+    "frame": "task"
+  },
+  "parent": "irons_spellbooks:irons_spellbooks/spell_book_equip",
+  "criteria": {
+    "requirement": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spellclasses:storm_atlas"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  }
+}

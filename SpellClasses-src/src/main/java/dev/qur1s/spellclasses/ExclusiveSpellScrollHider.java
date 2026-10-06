@@ -46,12 +46,30 @@ public final class ExclusiveSpellScrollHider {
             SpellRegistries.CONJURE_THRALL
     );
 
+    /** Cosmic school spells (Echoing Magic) cut from the pack; no compile dependency, so by id. */
+    private static final List<ResourceLocation> HIDDEN_SPELL_IDS = List.of(
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echo_star"),
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echo_blast"),
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echoing_explosion"),
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echoing_slam"),
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "collapse"),
+            ResourceLocation.fromNamespaceAndPath("echoing_magic", "summon_brave"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "iron_slash"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "aeropic"),
+            ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "ascension"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tailwind"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "wind_blade"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "almighty_push")
+    );
+
     @SubscribeEvent(priority = EventPriority.LOWEST)
     static void onBuildCreativeTab(BuildCreativeModeTabContentsEvent event) {
         Set<ResourceLocation> hiddenIds = new LinkedHashSet<>();
         for (Supplier<AbstractSpell> spell : HIDDEN_SPELLS) {
             hiddenIds.add(spell.get().getSpellResource());
         }
+
+        hiddenIds.addAll(HIDDEN_SPELL_IDS);
 
         Set<ItemStack> toRemove = new LinkedHashSet<>();
         for (ItemStack stack : event.getSearchEntries()) {

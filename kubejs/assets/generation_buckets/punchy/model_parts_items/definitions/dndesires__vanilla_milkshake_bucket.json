@@ -1,0 +1,28 @@
+{
+  "items": [
+    "dndesires:vanilla_milkshake_bucket"
+  ],
+  "geo": "generation_buckets:punchy/model_parts_items/geo/bucket_generic.geo.json",
+  "texture": "minecraft:punchy/model_parts_items/textures/baldes",
+  "bone_textures": [
+    {
+      "texture": "generation_buckets:punchy/model_parts_items/textures/dndesires__vanilla_milkshake_bucket",
+      "bones": [
+        "honey"
+      ]
+    }
+  ],
+  "bone_texture_anim": {
+    "honey": {
+      "frames": 32,
+      "frametime": 2,
+      "frame_height": 16
+    }
+  },
+  "modelPartsAnimation": [
+    {
+      "type": "idle",
+      "disable_swim_animation": true
+    }
+  ]
+}

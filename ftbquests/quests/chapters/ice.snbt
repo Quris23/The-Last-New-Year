@@ -20,10 +20,22 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "4713069E21E1259B"
 			shape: "octagon"
 			tasks: [{
 				entity: "minecraft:stray"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "3B4A626133F14B98"
 				type: "kill"
 				value: 1L
@@ -33,6 +45,7 @@
 		}
 		{
 			dependencies: ["4713069E21E1259B"]
+			entity_vis_size: 1.0f
 			id: "26A03B853D2FC094"
 			tasks: [{
 				id: "2431356BA20E6F2C"
@@ -44,6 +57,7 @@
 		}
 		{
 			dependencies: ["26A03B853D2FC094"]
+			entity_vis_size: 1.0f
 			id: "03201906302BD4B1"
 			tasks: [{
 				id: "1F03FE6513789BCC"
@@ -55,6 +69,7 @@
 		}
 		{
 			dependencies: ["03201906302BD4B1"]
+			entity_vis_size: 1.0f
 			id: "7B6874CEB6B88DA7"
 			tasks: [{
 				id: "684B75E0C0668962"
@@ -66,6 +81,7 @@
 		}
 		{
 			dependencies: ["7B6874CEB6B88DA7"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
 			}
@@ -80,6 +96,7 @@
 		}
 		{
 			dependencies: ["2D69BB81FED8AA3F"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "cataclysm:cursium_ingot"
 			}
@@ -95,6 +112,7 @@
 		}
 		{
 			dependencies: ["2D69BB81FED8AA3F"]
+			entity_vis_size: 1.0f
 			id: "2886A3C5A21F4103"
 			tasks: [{
 				id: "1D0B7C0701EE440B"
@@ -105,6 +123,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -126,6 +145,7 @@
 		}
 		{
 			dependencies: ["438E7FED87B21FD7"]
+			entity_vis_size: 1.0f
 			id: "795B4F07E3BC1043"
 			shape: "square"
 			tasks: [{
@@ -138,6 +158,7 @@
 		}
 		{
 			dependencies: ["69330C094A44679D"]
+			entity_vis_size: 1.0f
 			id: "331C8C6FF4049834"
 			tasks: [{
 				id: "4CDCDD0C991D2E60"
@@ -153,7 +174,9 @@
 				"795B4F07E3BC1043"
 				"331C8C6FF4049834"
 				"71E630A7002C686D"
+				"2886A3C5A21F4103"
 			]
+			entity_vis_size: 1.0f
 			id: "7E728B6AD607BA24"
 			tasks: [{
 				id: "73375C1841B76003"
@@ -165,6 +188,7 @@
 		}
 		{
 			dependencies: ["7E728B6AD607BA24"]
+			entity_vis_size: 1.0f
 			id: "02FA3B6C8D2E4F51"
 			shape: "square"
 			tasks: [{
@@ -177,6 +201,7 @@
 		}
 		{
 			dependencies: ["1535BA20C6ABACB8"]
+			entity_vis_size: 1.0f
 			id: "61FA3B6C8D2E4F51"
 			shape: "hexagon"
 			tasks: [
@@ -206,6 +231,7 @@
 		}
 		{
 			dependencies: ["61FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			id: "71FA3B6C8D2E4F51"
 			shape: "hexagon"
 			tasks: [
@@ -234,7 +260,8 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["7E728B6AD607BA24"]
+			dependencies: ["71E630A7002C686D"]
+			entity_vis_size: 1.0f
 			id: "7271BBFD0F548F21"
 			shape: "circle"
 			tasks: [{
@@ -246,6 +273,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "69330C094A44679D"
 			preset: "normal"
 			tasks: [{
@@ -258,6 +286,7 @@
 		}
 		{
 			dependencies: ["2D69BB81FED8AA3F"]
+			entity_vis_size: 1.0f
 			id: "38B0AA88ECC0CA07"
 			tasks: [{
 				id: "7D74DF0A159380FE"
@@ -269,6 +298,7 @@
 		}
 		{
 			dependencies: ["795B4F07E3BC1043"]
+			entity_vis_size: 1.0f
 			id: "30BB8779EDCE23F3"
 			tasks: [{
 				id: "200752B22F07512E"
@@ -280,6 +310,7 @@
 		}
 		{
 			dependencies: ["795B4F07E3BC1043"]
+			entity_vis_size: 1.0f
 			id: "0958E3C8F322B663"
 			tasks: [{
 				id: "2351A2B9E7562160"
@@ -291,6 +322,7 @@
 		}
 		{
 			dependencies: ["69330C094A44679D"]
+			entity_vis_size: 1.0f
 			id: "1535BA20C6ABACB8"
 			shape: "hexagon"
 			tasks: [
@@ -320,6 +352,7 @@
 		}
 		{
 			dependencies: ["1535BA20C6ABACB8"]
+			entity_vis_size: 1.0f
 			id: "7E93DE0F6BA8707A"
 			tasks: [{
 				id: "2EAB7572D67AC2CA"
@@ -331,6 +364,7 @@
 		}
 		{
 			dependencies: ["7E93DE0F6BA8707A"]
+			entity_vis_size: 1.0f
 			id: "7B7A3E2BF27E8B95"
 			tasks: [{
 				id: "23A8E65CE649D81A"
@@ -342,6 +376,7 @@
 		}
 		{
 			dependencies: ["7E93DE0F6BA8707A"]
+			entity_vis_size: 1.0f
 			id: "5FA92E75A8114046"
 			shape: "hexagon"
 			tasks: [
@@ -370,6 +405,7 @@
 			y: 10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "366D78017BDA1853"
 			tasks: [{
 				id: "601DB11C1815E6E4"
@@ -381,6 +417,7 @@
 		}
 		{
 			dependencies: ["366D78017BDA1853"]
+			entity_vis_size: 1.0f
 			id: "6D7465FB23B13839"
 			tasks: [{
 				id: "324EA0C65793E92F"
@@ -392,6 +429,7 @@
 		}
 		{
 			dependencies: ["6D7465FB23B13839"]
+			entity_vis_size: 1.0f
 			id: "27EACB55EC0E060E"
 			tasks: [{
 				id: "2CCFB38010EA011E"
@@ -403,6 +441,7 @@
 		}
 		{
 			dependencies: ["27EACB55EC0E060E"]
+			entity_vis_size: 1.0f
 			id: "538B2B18EF42388B"
 			tasks: [{
 				id: "5A2D84C24F70111F"
@@ -414,6 +453,7 @@
 		}
 		{
 			dependencies: ["538B2B18EF42388B"]
+			entity_vis_size: 1.0f
 			id: "5154AD1393C4F2B2"
 			shape: "hexagon"
 			tasks: [{
@@ -426,6 +466,7 @@
 		}
 		{
 			dependencies: ["30BB8779EDCE23F3"]
+			entity_vis_size: 1.0f
 			id: "38D3A9D1F335B45A"
 			preset: "normal"
 			shape: "diamond"
@@ -439,6 +480,7 @@
 		}
 		{
 			dependencies: ["7614708D8A646006"]
+			entity_vis_size: 1.0f
 			id: "438E7FED87B21FD7"
 			tasks: [{
 				id: "135EC6519B873E01"
@@ -449,16 +491,79 @@
 			y: 8.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "7614708D8A646006"
 			shape: "octagon"
 			tasks: [{
 				entity: "irons_spellbooks:ice_spider"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
 				id: "247730D85DA3D239"
 				type: "kill"
 				value: 1L
 			}]
 			x: -6.0d
 			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0958E3C8F322B663"
+				"5A328C6A6EE509AE"
+			]
+			entity_vis_size: 1.0f
+			id: "6D12DB21356575C2"
+			tasks: [{
+				id: "142DA20F83CAE1DB"
+				item: { count: 1, id: "legendary_monsters:the_great_frost" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5A328C6A6EE509AE"
+			shape: "square"
+			tasks: [{
+				entity: "legendary_monsters:frostbitten_golem"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0010AA5E2A5AC949"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5A328C6A6EE509AE"]
+			entity_vis_size: 1.0f
+			id: "14A1F50B00B90BFF"
+			tasks: [{
+				id: "73A927CD310F3DEB"
+				item: { count: 1, id: "legendary_monsters:frostbitten_shield" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 10.0d
 		}
 	]
 }

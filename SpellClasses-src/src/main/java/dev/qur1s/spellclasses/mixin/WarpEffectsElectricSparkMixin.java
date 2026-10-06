@@ -15,10 +15,9 @@ import uk.co.iceconchy.aerowarptics.client.fx.WarpEffects;
  * own colour-tinted {@code RIFT_SPARK} particle. {@code aperture()} (gate opening) and {@code onStage()}
  * (failed-warp scatter) do the same. Unlike every other visual in this effects pipeline, that vanilla
  * particle is never tinted by the rift's own colour (own hardcoded texture, own renderer) - so
- * recoloring the rift green/dark green (see {@link RiftModulatorDefaultColourMixin},
- * {@link RiftDriveTierColoursMixin}, and the portal/fluid texture recolor in kubejs/assets) still left
- * a yellow flicker in the wormhole itself. By user design, dropped entirely rather than reimplemented
- * with a tinted replacement.
+ * recolouring the rift (see {@link RiftDriveTierColoursMixin}) still left a yellow flicker in the
+ * wormhole itself. By user design, dropped entirely rather than reimplemented with a tinted
+ * replacement.
  */
 @Mixin(value = WarpEffects.class, remap = false)
 public abstract class WarpEffectsElectricSparkMixin {

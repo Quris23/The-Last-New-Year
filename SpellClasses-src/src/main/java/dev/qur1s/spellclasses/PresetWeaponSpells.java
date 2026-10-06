@@ -42,7 +42,9 @@ public final class PresetWeaponSpells {
             // declared max level (1) only bounds normal spellbook levelling; addSpell() here sets the
             // level directly and isn't clamped to it. By user design: 2 crabs.
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "bloom_stone_staff"), SpellRegistries.CONJURE_AMETHYST_CRAB, 2),
-            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "soul_brazier"), SpellRegistries.CONJURE_THRALL, 10)
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "soul_brazier"), SpellRegistries.CONJURE_THRALL, 10),
+            // Великий Мороз (Legendary Bosses) - то же высеченное заклинание, что у Арктического Клинка (Frostbite 3)
+            new Preset(ResourceLocation.fromNamespaceAndPath("legendary_monsters", "the_great_frost"), SpellRegistry.FROSTBITE_SPELL, 3)
     };
 
     private static final int CHECK_INTERVAL_TICKS = 40;

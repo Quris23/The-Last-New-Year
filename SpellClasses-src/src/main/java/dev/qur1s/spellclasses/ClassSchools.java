@@ -32,15 +32,34 @@ public final class ClassSchools {
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "sand"),
             ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "ritual"),
             ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "hydro"),
-            ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "technomancy")
+            ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "technomancy"),
+            ResourceLocation.fromNamespaceAndPath("hazentouvelib", "cosmic")
     );
+
+    /** Schools cut from the pack (Hazen's Touve Lib): not selectable as a class, items/recipes removed in KubeJS. */
+    public static final Set<ResourceLocation> REMOVED_SCHOOLS = Set.of(
+            ResourceLocation.fromNamespaceAndPath("hazentouvelib", "radiance"),
+            ResourceLocation.fromNamespaceAndPath("hazentouvelib", "shadow")
+    );
+
+    /**
+     * The Wind school (Wind's Spellbooks) is part of Storm: not a class of its own, castable by exactly
+     * those who may cast Lightning, and (see WindSchoolIsStormMixin) it looks and scales like Lightning.
+     */
+    public static final ResourceLocation WIND_SCHOOL = ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "wind");
+
+    /** The Storm (Lightning) school to stand in for {@code id} when it is the folded-in Wind school, else null. */
+    public static SchoolType stormFor(ResourceLocation id) {
+        return WIND_SCHOOL.equals(id) ? SchoolRegistry.getSchool(SchoolRegistry.LIGHTNING_RESOURCE) : null;
+    }
 
     /** Every school a player can pick as their one class. */
     public static Set<ResourceLocation> restrictedSchools() {
         LinkedHashSet<ResourceLocation> result = new LinkedHashSet<>();
         for (SchoolType school : SchoolRegistry.REGISTRY) {
             ResourceLocation id = school.getId();
-            if (!FREE_SCHOOLS.contains(id) && !ADDON_FREE_SCHOOLS.contains(id)) result.add(id);
+            if (!FREE_SCHOOLS.contains(id) && !ADDON_FREE_SCHOOLS.contains(id)
+                    && !REMOVED_SCHOOLS.contains(id) && !WIND_SCHOOL.equals(id)) result.add(id);
         }
         return result;
     }
@@ -52,6 +71,7 @@ public final class ClassSchools {
 
     /** Whether {@code school} is castable by a player whose chosen class is {@code chosenSchool} (may be null/unset). */
     public static boolean isAllowed(ResourceLocation school, ResourceLocation chosenSchool) {
+        if (WIND_SCHOOL.equals(school)) school = SchoolRegistry.LIGHTNING_RESOURCE;
         if (FREE_SCHOOLS.contains(school)) return true;
         if (!restrictedSchools().contains(school)) return true; // unknown/modded school: don't gate it
         return school.equals(chosenSchool);

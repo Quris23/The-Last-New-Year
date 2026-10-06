@@ -38,6 +38,9 @@ import uk.co.iceconchy.aerowarptics.gate.RiftGate;
 import uk.co.iceconchy.aerowarptics.gate.RiftGateBlockEntity;
 import uk.co.iceconchy.aerowarptics.gate.RiftGateRegistry;
 import uk.co.iceconchy.aerowarptics.gate.RiftGateShape;
+import uk.co.iceconchy.aerowarptics.gate.RiftGateState;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -63,6 +66,8 @@ public abstract class RiftGateBlockEntityCrossMixin implements CrossGateAccess {
     private RiftGateShape shape;
     @Shadow
     private UUID connected;
+    @Shadow
+    private RiftGateState state;
     @Shadow
     @Final
     private Map<UUID, Integer> settling;
@@ -348,5 +353,23 @@ public abstract class RiftGateBlockEntityCrossMixin implements CrossGateAccess {
             ShipDimensionTransfer.transferLater(sub, level, farLevel,
                     new Vector3d(arrivalOrigin.x, arrivalOrigin.y, arrivalOrigin.z), orientation);
         }
+    }
+
+    // ---------------------------------------------------------------- ambient sound
+
+    /** An open gate hums now and then, like a Nether portal does (the mod itself has no ambient sound for it). */
+    @Inject(method = "tick", at = @At("RETURN"))
+    private void spellclasses$ambientHum(CallbackInfo ci) {
+        if (this.shape == null || this.state == null || !this.state.hasAperture()
+                || !(((BlockEntity) (Object) this).getLevel() instanceof ServerLevel level)) {
+            return;
+        }
+        if (level.random.nextInt(this.state == RiftGateState.OPEN ? 70 : 140) != 0) {
+            return;
+        }
+        Vec3 c = this.shape.centre();
+        float volume = this.state == RiftGateState.OPEN ? 0.7f : 0.4f;
+        level.playSound(null, c.x, c.y, c.z, SoundEvents.PORTAL_AMBIENT, SoundSource.BLOCKS, volume,
+                level.random.nextFloat() * 0.4f + 0.8f);
     }
 }

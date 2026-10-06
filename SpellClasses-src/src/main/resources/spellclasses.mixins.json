@@ -29,10 +29,8 @@
     "TemperatureRegulatorGoggleLeakMixin",
     "ProgressiveBlockSealerHasLeakMixin",
     "TemperatureRegulatorMaxSealedMixin",
-    "RiftModulatorDefaultColourMixin",
     "RiftDriveTierColoursMixin",
     "WarpEffectsElectricSparkMixin",
-    "RiftEffectManagerFireColourMixin",
     "ItemComponentsAccessor",
     "CataclysmMaceSmashMixin",
     "ItemMaceSmashMixin",
@@ -48,9 +46,21 @@
     "ColdSweatBiomeUnloadedChunkMixin",
     "NetherPortalBlockMixin",
     "RiftGateRegistryCrossMixin",
-    "RiftGateBlockEntityCrossMixin"
+    "RiftGateBlockEntityCrossMixin",
+    "SentinelAegisMinHealthMixin",
+    "ExtendedArmorDefaultsMixin",
+    "WindSchoolIsStormMixin",
+    "WindTornadoSizeMixin",
+    "WindJumpAscensionMixin",
+    "WindBladeDamageMixin",
+    "WindTornadoPullsCasterMixin",
+    "ProjectileOwnerAccessor",
+    "ShockwaveAlmightyPushMixin",
+    "WindJumpStrengthMixin"
   ],
   "client": [
-    "SablePlotChunkForgetMixin"
+    "SablePlotChunkForgetMixin",
+    "OverloadedArmorBarAegisMixin",
+    "SableXaeroMapLabelsMixin"
   ]
 }

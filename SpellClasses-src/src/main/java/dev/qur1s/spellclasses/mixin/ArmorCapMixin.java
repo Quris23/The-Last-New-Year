@@ -8,10 +8,10 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-/** Raises the vanilla armor attribute's hard cap from 30 to 40 (2 full armor bars) — overloadedarmorbar only renders past 30, doesn't raise the cap itself. */
+/** Raises the vanilla armor attribute's hard cap from 30 to 60 (3 full armor bars) — overloadedarmorbar only renders past 30, doesn't raise the cap itself. */
 @Mixin(value = RangedAttribute.class, remap = false)
 public abstract class ArmorCapMixin {
-    private static final double NEW_ARMOR_CAP = 40.0;
+    private static final double NEW_ARMOR_CAP = 60.0;
 
     @Shadow
     @Mutable

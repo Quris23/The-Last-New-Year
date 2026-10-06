@@ -45,6 +45,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			entity_vis_size: 1.0f
 			id: "20FA3B6C8D2E4F51"
 			tasks: [{
 				id: "20FA3B6C8D2E4F52"
@@ -56,6 +57,7 @@
 		}
 		{
 			dependencies: ["20FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
 			}
@@ -70,6 +72,7 @@
 		}
 		{
 			dependencies: ["21FA3B6C8D2E4F51"]
+			entity_vis_size: 1.0f
 			id: "22FA3B6C8D2E4F51"
 			shape: "hexagon"
 			tasks: [
@@ -98,7 +101,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["22FA3B6C8D2E4F51"]
+			dependencies: [
+				"22FA3B6C8D2E4F51"
+				"650CC5443FB56C07"
+			]
+			entity_vis_size: 1.0f
 			id: "23FA3B6C8D2E4F51"
 			shape: "square"
 			tasks: [{
@@ -108,6 +115,18 @@
 			}]
 			x: 4.5d
 			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "650CC5443FB56C07"
+			shape: "square"
+			tasks: [{
+				id: "29DEA83DDBFEB022"
+				item: { count: 1, id: "block_factorys_bosses:sandworm_gauntlet" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
 		}
 	]
 }

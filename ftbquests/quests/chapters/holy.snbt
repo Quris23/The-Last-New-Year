@@ -21,6 +21,7 @@
 	quests: [
 		{
 			dependencies: ["3AAA00000000000B"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000003"
 			tasks: [{
 				id: "3AAB000000000003"
@@ -32,6 +33,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000003"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000004"
 			tasks: [{
 				id: "3AAB000000000004"
@@ -43,6 +45,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000004"]
+			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
 			}
@@ -57,6 +60,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000005"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000006"
 			tasks: [{
 				id: "3AAB000000000006"
@@ -67,6 +71,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			icon: {
 				components: {
 					"irons_spellbooks:spell_container": {
@@ -88,6 +93,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000005"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000008"
 			tasks: [{
 				id: "3AAB000000000008"
@@ -98,6 +104,7 @@
 			y: 4.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3AAA000000000009"
 			preset: "normal"
 			tasks: [{
@@ -110,6 +117,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000009"]
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000A"
 			tasks: [{
 				id: "3AAB00000000000A"
@@ -120,6 +128,7 @@
 			y: 10.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000B"
 			shape: "square"
 			tasks: [{
@@ -135,7 +144,9 @@
 				"3AAA000000000009"
 				"3AAA00000000000A"
 				"3AAA000000000007"
+				"3AAA000000000006"
 			]
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000C"
 			tasks: [{
 				id: "3AAB00000000000C"
@@ -146,7 +157,8 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["3AAA00000000000C"]
+			dependencies: ["3AAA000000000007"]
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000D"
 			shape: "circle"
 			tasks: [{
@@ -159,6 +171,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000009"]
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000E"
 			shape: "hexagon"
 			tasks: [
@@ -188,6 +201,7 @@
 		}
 		{
 			dependencies: ["3AAA00000000000E"]
+			entity_vis_size: 1.0f
 			id: "3AAA00000000000F"
 			tasks: [{
 				id: "3AAB00000000000F"
@@ -199,6 +213,7 @@
 		}
 		{
 			dependencies: ["3AAA00000000000F"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000010"
 			tasks: [{
 				id: "3AAB000000000010"
@@ -210,6 +225,7 @@
 		}
 		{
 			dependencies: ["3AAA00000000000F"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000011"
 			shape: "hexagon"
 			tasks: [
@@ -239,6 +255,7 @@
 		}
 		{
 			dependencies: ["3AAA00000000000E"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000012"
 			shape: "hexagon"
 			tasks: [
@@ -267,6 +284,7 @@
 			y: 6.0d
 		}
 		{
+			entity_vis_size: 1.0f
 			id: "3AAA000000000013"
 			tasks: [{
 				id: "3AAB000000000013"
@@ -278,6 +296,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000013"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000014"
 			tasks: [{
 				id: "3AAB000000000014"
@@ -289,6 +308,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000014"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000015"
 			tasks: [{
 				id: "3AAB000000000015"
@@ -300,6 +320,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000015"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000016"
 			tasks: [{
 				id: "3AAB000000000016"
@@ -311,6 +332,7 @@
 		}
 		{
 			dependencies: ["3AAA000000000016"]
+			entity_vis_size: 1.0f
 			id: "3AAA000000000017"
 			shape: "hexagon"
 			tasks: [{
@@ -322,18 +344,23 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3AAA000000000011"]
+			dependencies: [
+				"3AAA000000000011"
+				"3ED7A18213D61ECB"
+			]
+			entity_vis_size: 1.0f
 			id: "277374578D9D717B"
 			tasks: [{
 				id: "3C6318BE5AD31B46"
 				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3AAA000000000005"]
+			entity_vis_size: 1.0f
 			id: "1C3776B7BBA709E4"
 			tasks: [{
 				id: "483B72B5F139667A"
@@ -342,6 +369,91 @@
 			}]
 			x: -4.0d
 			y: 8.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3ED7A18213D61ECB"
+			shape: "square"
+			tasks: [{
+				entity: "irons_spellbooks:fire_boss"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "345AD840EE739989"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3ED7A18213D61ECB"]
+			entity_vis_size: 1.0f
+			id: "036108B6DDDAD7BE"
+			tasks: [{
+				id: "189FB33FAF825818"
+				item: { count: 1, id: "irons_spellbooks:decrepit_key" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3AAA00000000000E"]
+			entity_vis_size: 1.0f
+			id: "0C01C1410BC28361"
+			shape: "square"
+			tasks: [{
+				entity: "block_factorys_bosses:underworld_knight"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "40EA7E11F42AEAD2"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0C01C1410BC28361"]
+			entity_vis_size: 1.0f
+			id: "2C5815232E5E7470"
+			tasks: [{
+				id: "7282ECF3D7BD83A8"
+				item: { count: 1, id: "block_factorys_bosses:knight_sword" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2C5815232E5E7470"]
+			entity_vis_size: 1.0f
+			id: "71CF915EC7A8430A"
+			tasks: [{
+				id: "57A85C48BCC318CC"
+				item: { count: 1, id: "legendary_monsters:spiky_shield" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 12.0d
 		}
 	]
 }
