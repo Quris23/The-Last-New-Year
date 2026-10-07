@@ -1,0 +1,9 @@
+{
+  "order": 7,
+  "size": 1,
+  "icon": "spellclasses:slot/scabbard",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": false,
+  "drop_rule": "DEFAULT"
+}

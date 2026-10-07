@@ -255,7 +255,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["10AD1E0000000010"]
+			dependencies: ["10AD1E0000000016"]
 			entity_vis_size: 1.0f
 			id: "10AD1E0000000020"
 			shape: "hexagon"
@@ -281,8 +281,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["10AD1E0000000014"]

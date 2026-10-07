@@ -1,4 +1,7 @@
 {
+  "curios.identifier.scabbard": "Ножны",
+  "key.spellclasses.scabbard_swap": "Достать / убрать оружие из ножен",
+  "key.categories.spellclasses": "SpellClasses",
   "item.spellclasses.class_book": "Путеводитель в магию",
   "item.spellclasses.class_book.desc": "ПКМ, чтобы выбрать класс.",
   "spellclasses.screen.title": "Выберите класс",

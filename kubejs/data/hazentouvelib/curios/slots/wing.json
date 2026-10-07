@@ -1,0 +1,9 @@
+{
+  "order": 6,
+  "size": 0,
+  "icon": "hazentouvelib:slot/wing_slot",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": false,
+  "drop_rule": "DEFAULT"
+}

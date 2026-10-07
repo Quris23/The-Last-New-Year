@@ -269,7 +269,7 @@
 				item: { count: 1, id: "irons_spellbooks:ender_rune" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 8.0d
 		}
 		{
@@ -281,7 +281,7 @@
 				item: { count: 1, id: "irons_spellbooks:ender_upgrade_orb" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -311,11 +311,11 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 6.0d
 			y: 10.0d
 		}
 		{
-			dependencies: ["38AA000000000011"]
+			dependencies: ["38AA000000000014"]
 			entity_vis_size: 1.0f
 			id: "38AA000000000015"
 			shape: "hexagon"
@@ -341,8 +341,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -455,8 +455,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 4.0d
+			x: 10.0d
+			y: 10.0d
 		}
 	]
 }

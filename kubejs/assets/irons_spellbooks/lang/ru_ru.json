@@ -1,4 +1,5 @@
 {
+  "item.irons_spellbooks.lightning_rod": "Жезл Шторма",
   "advancements.wind_spellbooks.spell_book_wind.description": "Получите Штормовой атлас.",
   "school.irons_spellbooks.lightning": "Шторм",
   "school.wind_spellbooks.wind": "Шторм",
@@ -158,7 +159,7 @@
   "itemGroup.irons_spellbooks.spellbook_scrolls_tab": "Iron's Spellbooks: Свитки",
 
   "advancements.irons_spellbooks.staff_lightning_rod.title": "Шокирующее открытие",
-  "advancements.irons_spellbooks.staff_lightning_rod.description": "Превратите громоотвод в жезл молний... и переживите процесс.",
+  "advancements.irons_spellbooks.staff_lightning_rod.description": "Превратите громоотвод в жезл шторма... и переживите процесс.",
   "advancements.irons_spellbooks.pyrium_staff.title": "Древние призывы",
   "advancements.irons_spellbooks.pyrium_staff.description": "Выкуйте огненный посох из Пирия",
   "advancements.irons_spellbooks.steal_from_wizard.title": "Глупца безумие",

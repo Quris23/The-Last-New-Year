@@ -200,7 +200,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["1535BA20C6ABACB8"]
+			dependencies: ["5FA92E75A8114046"]
 			entity_vis_size: 1.0f
 			id: "61FA3B6C8D2E4F51"
 			shape: "hexagon"
@@ -226,8 +226,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["61FA3B6C8D2E4F51"]
@@ -256,8 +256,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 4.0d
+			x: 11.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["71E630A7002C686D"]
@@ -359,7 +359,7 @@
 				item: { count: 1, id: "irons_spellbooks:ice_rune" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 8.0d
 		}
 		{
@@ -371,7 +371,7 @@
 				item: { count: 1, id: "irons_spellbooks:ice_upgrade_orb" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -401,7 +401,7 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 6.0d
 			y: 10.0d
 		}
 		{

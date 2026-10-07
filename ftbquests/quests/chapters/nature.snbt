@@ -180,8 +180,8 @@
 				item: { count: 1, id: "cataclysm_spellbooks:bloom_stone_staff" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.0d
+			x: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["39AA000000000009"]
@@ -268,7 +268,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["39AA00000000000F"]
+			dependencies: ["39AA000000000012"]
 			entity_vis_size: 1.0f
 			id: "39AA000000000013"
 			shape: "hexagon"
@@ -294,8 +294,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -327,8 +327,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 4.0d
+			x: 10.5d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -400,8 +400,8 @@
 				item: { count: 1, id: "cataclysm:amethyst_crab_shell" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: 10.5d
+			y: 8.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -424,8 +424,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 10.5d
+			y: 6.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -580,8 +580,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 8.5d
-			y: 8.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["024FBA54BEE1A005"]
@@ -592,8 +592,8 @@
 				item: { count: 1, id: "legendary_monsters:totem_of_moss" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: 6.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["024FBA54BEE1A005"]
@@ -604,8 +604,8 @@
 				item: { count: 1, id: "legendary_monsters:mossy_hammer" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.0d
+			x: 4.0d
+			y: 6.0d
 		}
 	]
 }

@@ -208,7 +208,7 @@
 				item: { count: 1, id: "irons_spellbooks:holy_rune" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 8.0d
 		}
 		{
@@ -220,7 +220,7 @@
 				item: { count: 1, id: "irons_spellbooks:holy_upgrade_orb" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 6.0d
 		}
 		{
@@ -250,11 +250,11 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 6.0d
 			y: 10.0d
 		}
 		{
-			dependencies: ["3AAA00000000000E"]
+			dependencies: ["3AAA000000000011"]
 			entity_vis_size: 1.0f
 			id: "3AAA000000000012"
 			shape: "hexagon"
@@ -280,8 +280,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -355,7 +355,7 @@
 				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 4.0d
 			y: 10.0d
 		}
 		{
@@ -391,8 +391,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 8.5d
-			y: 8.0d
+			x: 2.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3ED7A18213D61ECB"]
@@ -403,8 +403,8 @@
 				item: { count: 1, id: "irons_spellbooks:decrepit_key" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.0d
+			x: 2.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3AAA00000000000E"]
@@ -429,7 +429,7 @@
 				value: 1L
 			}]
 			x: 4.0d
-			y: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0C01C1410BC28361"]
@@ -441,7 +441,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2C5815232E5E7470"]
@@ -452,8 +452,8 @@
 				item: { count: 1, id: "legendary_monsters:spiky_shield" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 12.0d
+			x: 6.0d
+			y: 4.0d
 		}
 	]
 }

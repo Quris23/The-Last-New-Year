@@ -56,11 +56,13 @@
     "WindTornadoPullsCasterMixin",
     "ProjectileOwnerAccessor",
     "ShockwaveAlmightyPushMixin",
+    "LightningBoltCreeperMixin",
     "WindJumpStrengthMixin"
   ],
   "client": [
     "SablePlotChunkForgetMixin",
     "OverloadedArmorBarAegisMixin",
-    "SableXaeroMapLabelsMixin"
+    "SableXaeroMapLabelsMixin",
+    "SpellBookHipLeftMixin"
   ]
 }

@@ -248,7 +248,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["6D2EE8FF9E748DEE"]
+			dependencies: ["313FED81B6DBA3E0"]
 			entity_vis_size: 1.0f
 			id: "60FA3B6C8D2E4F51"
 			shape: "hexagon"
@@ -274,8 +274,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["60FA3B6C8D2E4F51"]
@@ -304,8 +304,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 4.0d
+			x: 10.0d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -551,7 +551,7 @@
 				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 4.0d
 			y: 10.0d
 		}
 		{

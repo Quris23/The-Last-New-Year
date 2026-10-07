@@ -59,7 +59,8 @@ public final class ExclusiveSpellScrollHider {
             ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "ascension"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tailwind"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "wind_blade"),
-            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "almighty_push")
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "almighty_push"),
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tornado")
     );
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

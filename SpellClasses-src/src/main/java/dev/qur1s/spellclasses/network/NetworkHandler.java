@@ -20,6 +20,10 @@ public final class NetworkHandler {
     static void register(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1");
         registrar.playToServer(ChooseClassPayload.TYPE, ChooseClassPayload.STREAM_CODEC, NetworkHandler::handleChooseClass);
+        registrar.playToServer(ScabbardSwapPayload.TYPE, ScabbardSwapPayload.STREAM_CODEC, (payload, context) ->
+                context.enqueueWork(() -> {
+                    if (context.player() instanceof ServerPlayer player) dev.qur1s.spellclasses.Scabbard.swap(player);
+                }));
     }
 
     private static void removeOneClassBook(ServerPlayer player) {
