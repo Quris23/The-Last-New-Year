@@ -1,0 +1,113 @@
+{
+  "item.endrem.old_eye": "§5Око Забытой Древности",
+  "item.endrem.old_eye.description": "§7§oОставшееся со временъ Великой Цивилизацiи\n§7§oОно видѣло Эпоху Распада и ощущаетъ Бiенiе Мiра",
+
+  "item.endrem.rogue_eye": "§aОко Фрактальнаго Краха",
+  "item.endrem.rogue_eye.description": "§7§oСобранное изъ тысячъ Осколковъ Реальности, разсѣянныхъ во Вселенной\n§7§oОно зритъ грядущiй Распадъ Пространства",
+
+  "item.endrem.nether_eye": "§6Око Адскаго Пламени",
+  "item.endrem.nether_eye.description": "§7§oВпервые зажженное въ Горнилѣ Семи Преисподнихъ\n§7§oОно не зритъ, а сжигаетъ въ огнѣ Апокалипсиса",
+
+  "item.endrem.cold_eye": "§dОко Перваго Разлома",
+  "item.endrem.cold_eye.description": "§7§oРожденное въ Безднѣ Океана, гдѣ не свѣтитъ Солнце\n§7§oОно, со дна, дышитъ Холодомъ Тьмы",
+
+  "item.endrem.magical_eye": "§dОко Первородной Магiи",
+  "item.endrem.magical_eye.description": "§7§oПульсирующее остаточной энергiей Изначальныхъ Заклинанiй\n§7§oБезъ него призывъ теряетъ свою Истинную Силу",
+
+  "item.endrem.black_eye": "§1Око Абсолютной Тишины",
+  "item.endrem.black_eye.description": "§7§oСозданное въ тиши самой Глубинной Тьмы\n§7§oОно поглощаетъ любые звуки и вiбрацiи, засасывая ихъ въ Бездну",
+
+  "item.endrem.lost_eye": "§4Око Истинной Скверны",
+  "item.endrem.lost_eye.description": "§7§oСкованное изъ Гибели и пропитанное Смертью\n§7§oОно впитываетъ мертвыя души и источаетъ Шепотъ Забвенья",
+
+  "item.endrem.wither_eye": "§7Око Вѣчныхъ Бурь",
+  "item.endrem.wither_eye.description": "§7§oЗастывшее въ эпицентрѣ Тысячи Грозъ, гдѣ разверзается небо\n§7§oОно слышитъ Громъ Боговъ и зритъ весь Мiръ",
+
+  "item.endrem.guardian_eye": "§3Око Глубиннаго Стража",
+  "item.endrem.guardian_eye.description": "§7§oСвидѣтель безчисленныхъ кораблекрушенiй и Утонувшихъ Надеждъ\n§7§oОно хранитъ секреты тѣхъ, кто не смогъ вернуться съ Морскаго Дна",
+
+  "item.endrem.cursed_eye": "§3Око Непростительнаго Проклятiя",
+  "item.endrem.cursed_eye.description": "§7§oСодержащее Ненависть, источающее Грѣхъ\n§7§oОно лишаетъ прощенiя и отравляетъ Душу",
+
+  "item.endrem.exotic_eye": "§1Око Семи Морей",
+  "item.endrem.exotic_eye.description": "§7§oЗалитое Девятымъ Валомъ Айвазовскаго, что бушуетъ вѣчно\n§7§oОно хранитъ Тайны Семи Морей и поетъ о Плачѣ Океана",
+
+  "item.endrem.evil_eye": "§8Око Роковаго Предзнаменованiя",
+  "item.endrem.evil_eye.description": "§7§oТалисманъ, что не защищаетъ отъ неудачъ, а Питается Ими\n§7§oКаждое спасенiе требуетъ все болѣе Страшной Жертвы",
+
+  "item.endrem.undead_eye": "§eОко Слѣпой Одержимости",
+  "item.endrem.undead_eye.description": "§7§oВыкованное изъ Павшей Души клятвопреступника\n§7§oОно — тяжкiй Обѣтъ, лишающiй Разсудка",
+
+  "item.endrem.cryptic_eye": "§bОко Безграничнаго Знанiя",
+  "item.endrem.cryptic_eye.description": "§7§oХранящее какъ Высшую Истину, такъ и Безумiе\n§7§oОно — танецъ Злобнаго Генiя",
+
+  "item.endrem.corrupted_eye": "§cОко Потерянной Технологiи",
+  "item.endrem.corrupted_eye.description": "§7§oСпроектированное Древнимъ Инженеромъ по Алгоритму\n§7§oОно стремится къ Вѣчному Двигателю",
+
+  "item.endrem.witch_eye": "§5Око Вѣдьминаго Котла",
+  "item.endrem.witch_eye.description": "§7§oВобравшее въ себя рецепты, Утраченные Временемъ\n§7§oОно шепчетъ формулы, способные исказить саму Природу Веществъ",
+
+  "item.endrem.witch_pupil": "§5Зрачокъ Вѣдьмы",
+  "item.endrem.undead_soul": "§eФрагментъ Павшей Души",
+  "item.endrem.ancient_portal_frame": "§8Рамка Древняго Портала",
+
+  "block.endrem.ender_eye.warning": "§cСiй артефактъ отказывается резонировать съ данной рамкой",
+  "block.endrem.custom_eye.place": "§cСiй артефактъ уже запечатанъ въ рамкѣ",
+  "block.endrem.custom_eye.frame_has_eye": "§cРамка уже содержитъ нестабильный артефактъ",
+
+  "itemGroup.endrem.endrem_tab": "§6End Remastered",
+
+  "block.portal_open_sound": "§dАктивацiя Древняго Портала",
+  "block.portal_open_sound.sub": "§dАктивацiя Древняго Портала",
+
+  "advancements.main.root.title": "§8Начало Пути",
+  "advancements.main.root.description": "Соберите первое свое артефактное Око",
+
+  "advancements.main.old_eye.title": "§5Эхо Прошлаго",
+  "advancements.main.old_eye.description": "Обрѣтите Око Забытой Древности",
+
+  "advancements.main.rogue_eye.title": "§aФрактальный Сдвигъ",
+  "advancements.main.rogue_eye.description": "Обрѣтите Око Фрактальнаго Краха",
+
+  "advancements.main.nether_eye.title": "§6Дыханiе Преисподней",
+  "advancements.main.nether_eye.description": "Обрѣтите Око Адскаго Пламени",
+
+  "advancements.main.cold_eye.title": "§dЛедяная Бездна",
+  "advancements.main.cold_eye.description": "Обрѣтите Око Перваго Разлома",
+
+  "advancements.main.corrupted_eye.title": "§cСбой въ Матрицѣ",
+  "advancements.main.corrupted_eye.description": "Обрѣтите Око Потерянной Технологiи",
+
+  "advancements.main.magical_eye.title": "§dУтраченный Даръ",
+  "advancements.main.magical_eye.description": "Обрѣтите Око Первородной Магiи",
+
+  "advancements.main.black_eye.title": "§1Абсолютная Тишина",
+  "advancements.main.black_eye.description": "Обрѣтите Око Абсолютной Тишины",
+
+  "advancements.main.lost_eye.title": "§4Шепотъ Забвенья",
+  "advancements.main.lost_eye.description": "Обрѣтите Око Истинной Скверны",
+
+  "advancements.main.wither_eye.title": "§7Громъ Боговъ",
+  "advancements.main.wither_eye.description": "Обрѣтите Око Вѣчныхъ Бурь",
+
+  "advancements.main.witch_eye.title": "§5Тайны Варки",
+  "advancements.main.witch_eye.description": "Обрѣтите Око Вѣдьминаго Котла",
+
+  "advancements.main.guardian_eye.title": "§3Стражъ Глубинъ",
+  "advancements.main.guardian_eye.description": "Обрѣтите Око Глубиннаго Стража",
+
+  "advancements.main.cursed_eye.title": "§3Печать Грѣха",
+  "advancements.main.cursed_eye.description": "Обрѣтите Око Непростительнаго Проклятiя",
+
+  "advancements.main.evil_eye.title": "§8Роковое Предзнаменованiе",
+  "advancements.main.evil_eye.description": "Обрѣтите Око Роковаго Предзнаменованiя",
+
+  "advancements.main.exotic_eye.title": "§1Зовъ Океана",
+  "advancements.main.exotic_eye.description": "Обрѣтите Око Семи Морей",
+
+  "advancements.main.undead_eye.title": "§eКлятва Мертвыхъ",
+  "advancements.main.undead_eye.description": "Обрѣтите Око Слѣпой Одержимости",
+
+  "advancements.main.cryptic_eye.title": "§bГрань Безумiя",
+  "advancements.main.cryptic_eye.description": "Обрѣтите Око Безграничнаго Знанiя"
+}
