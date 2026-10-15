@@ -47,7 +47,8 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
     .displayName('Незавершенный Тотем хоруса')
 
-  
+    // Endrem + Cataclysm
+
     event.create('incomplete_mech_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око меха')
 
@@ -59,6 +60,9 @@ StartupEvents.registry('item', event => {
 
     event.create('incomplete_nether_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Адского Пламени')
+
+    event.create('incomplete_rogue_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Фрактального Краха')
 
     event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Непростительного Проклятия')
