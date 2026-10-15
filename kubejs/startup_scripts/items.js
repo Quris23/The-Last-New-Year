@@ -47,7 +47,8 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
     .displayName('Незавершенный Тотем хоруса')
 
-  
+    // Endrem + Cataclysm
+
     event.create('incomplete_mech_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око меха')
 
@@ -57,16 +58,30 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_lost_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Истинной Скверны')
 
+    event.create('incomplete_nether_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Адского Пламени')
+
+    event.create('incomplete_rogue_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Фрактального Краха')
+
     event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Непростительного Проклятия')
 })
 
 StartupEvents.registry('fluid', event => {
-  event.create('chaos_fluid')
-    .displayName('Жидкость хаоса')
-    .stillTexture('kubejs:fluid/chaos_fluid_still')
-    .flowingTexture('kubejs:fluid/chaos_fluid_flow')
-    .noBlock()
+    // Жидкость Хаоса
+    event.create('chaos_fluid')
+      .displayName('Жидкость хаоса')
+      .stillTexture('kubejs:fluid/chaos_fluid_still')
+      .flowingTexture('kubejs:fluid/chaos_fluid_flow')
+      .noBlock()
+
+    // Жидкость аннигиляции
+    event.create('annihilation_fluid')
+      .displayName('Жидкость аннигиляции')
+      .stillTexture('kubejs:fluid/annihilation_fluid_still')
+      .flowingTexture('kubejs:fluid/annihilation_fluid_flow')
+      //.noBlock()
 })
 
 ItemEvents.modification(event => { 
