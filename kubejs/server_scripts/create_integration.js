@@ -94,4 +94,16 @@ ServerEvents.recipes(event => {
         Item.of('born_in_chaos_v1:dark_metal_nugget', 3),
         'create:chromatic_compound'
     ]).superheated()
+
+    event.recipes.create.pressing(
+        'create:shadow_steel_casing',           // результат
+        'create:shadow_steel'             // входной предмет
+    );
+
+    // Тёмно-хориевая сталь
+    event.recipes.create.mixing(Item.of('kubejs:dark_chorium_steel', 2), [
+        'createcasing:chorium_ingot',
+        'cataclysm:black_steel_ingot',
+        'create:shadow_steel'
+    ]).superheated()
 })

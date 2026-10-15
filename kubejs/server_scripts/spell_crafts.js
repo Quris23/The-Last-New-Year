@@ -49,9 +49,9 @@ ServerEvents.recipes(event => {
     ['northstar:durable_fabric', Fluid.of('create_wizardry:mana', 500)])
 
     // Хемп вместо картошки
-    event.get('irons_spellbooks:nature_focus')
-        .remove('minecraft:poisonous_potato')
-        .add('nirvana:hemp')
+    // event.get('irons_spellbooks:nature_focus')
+    //     .remove('minecraft:poisonous_potato')
+    //     .add('nirvana:hemp')
 
     // Кольцо Лапласа 
     let ringTrans0 = 'irons_spellbooks:cooldown_ring'

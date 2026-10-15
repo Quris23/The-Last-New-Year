@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
 
     // Cataclysm
     event.remove({ output: 'cataclysm:mech_eye' })
+    event.remove({ output: 'cataclysm:abyss_eye' })
     event.remove({ output: 'cataclysm:void_eye' })
     event.remove({ output: 'cataclysm:cursed_eye' })
     event.remove({ output: 'cataclysm:desert_eye' })
@@ -39,6 +40,12 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cataclysm:blazing_grips' })
     event.remove({ output: 'cataclysm:ignitium_upgrade_smithing_template' })
 
+    // Echoing Magic
+
+    event.remove({ output: 'echoing_magic:reinforced_juggernaut_helmet' })
+    event.remove({ output: 'echoing_magic:reinforced_juggernaut_chestplate' })
+    event.remove({ output: 'echoing_magic:reinforced_juggernaut_leggings' })
+    event.remove({ output: 'echoing_magic:reinforced_juggernaut_boots' })
     // Endrem  
     event.remove({ output: 'endrem:wither_eye' })
     event.remove({ output: 'endrem:guardian_eye' })

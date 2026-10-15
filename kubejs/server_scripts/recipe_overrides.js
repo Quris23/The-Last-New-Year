@@ -12,6 +12,16 @@ ServerEvents.recipes(event => {
         S: 'create_more_additions:silver_jewel'
     })
 
+    event.shaped('minecraft:end_crystal', [
+        'GGG',
+        'GTG',
+        'GSG'
+    ], {
+        G: 'minecraft:glass',
+        T: 'ghast_tear',
+        S: 'obsidian'
+    })
+
     // Зачарованное золотое яблоко
     let appleTransitional = 'kubejs:incomplete_enchanted_apple'
     event.recipes.create.sequenced_assembly([
