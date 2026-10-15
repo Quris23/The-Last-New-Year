@@ -1,6 +1,48 @@
 // kubejs/server_scripts/eye_crafts.js
 ServerEvents.recipes(event => {
 
+    // Око меха
+    transitional = 'kubejs:incomplete_mech_eye'
+    let ironBlocks = ['minecraft:iron_block', 'create:industrial_iron_block', 'create:weathered_iron_block']
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('cataclysm:mech_eye', 0.80),
+        CreateItem.of('create:industrial_iron_block', 0.10),
+        CreateItem.of('create:weathered_iron_block', 0.10)
+    ], 'minecraft:ender_eye', [
+        event.recipes.createFilling(transitional, [transitional, Fluid.of('minecraft:lava', 250)]),
+        event.recipes.createDeploying(transitional, [transitional, 'minecraft:redstone_block']),
+        event.recipes.createDeploying(transitional, [transitional, ironBlocks])
+    ]).transitionalItem(transitional).loops(4)
+
+    // Око Пустыни
+    event.shaped('cataclysm:desert_eye', [
+        'GCM',
+        'DEK',
+        'RSB'
+    ], {
+        G: 'minecraft:gold_block',
+        S: 'minecraft:chiseled_sandstone',
+        C: 'legendary_monsters:crystal_of_sandstorm',
+        M: 'minecraft:emerald_block',
+        B: 'legendary_monsters:dinosaur_bone',
+        E: 'minecraft:ender_eye',
+        D: 'minecraft:dead_bush',
+        K: 'minecraft:cactus',
+        R: 'minecraft:rotten_flesh'
+    })
+
+    // Око Огня
+    event.shaped('cataclysm:flame_eye', [
+        'LLL',
+        'NEN',
+        'SSS'
+    ], {
+        L: 'cataclysm:lava_power_cell',
+        N: 'minecraft:netherite_scrap',
+        E: 'minecraft:ender_eye',
+        S: ['minecraft:soul_sand', 'minecraft:soul_soil']
+    })
+
     // Око пустоты
     event.shaped('cataclysm:void_eye', [
         'PLP',
@@ -25,60 +67,51 @@ ServerEvents.recipes(event => {
         E: 'minecraft:ender_eye'
     })
 
-    // Око Иссушающей Бури
-    event.shaped('endrem:wither_eye', [
-        ' A ',
-        'BCD',
-        ' A '
-    ], {
-        A: 'minecraft:wither_skeleton_skull',
-        B: 'create:brass_ingot',
-        C: 'minecraft:ender_eye',
-        D: 'create:experience_nugget'
-    })
-
-    //Око Абсолютной Тишины
-    event.shaped('endrem:black_eye', [
-        'ABA',
-        'CDC',
-        'AEA'
-    ], {
-        A: 'deeperdarker:reinforced_echo_shard',
-        B: 'deeperdarker:heart_of_the_deep',
-        C: 'minecraft:sculk_catalyst',
-        D: 'minecraft:ender_eye',
-        E: 'deeperdarker:soul_crystal'
-    })
+    // Око Безграничного Знания
+    let crypticTransitional = 'kubejs:incomplete_cryptic_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:cryptic_eye', 0.80),
+        CreateItem.of('create_enchantment_industry:enchanting_template', 0.10),
+        CreateItem.of('create_enchantment_industry:super_enchanting_template', 0.10)
+    ], 'minecraft:ender_eye', [
+        event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('create_enchantment_industry:experience', 1000)]),
+        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'minecraft:enchanted_book']),
+        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'create_enchantment_industry:experience_cake_slice']),
+        event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('create_enchantment_industry:experience', 1000)]),
+        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'irons_spellbooks:eldritch_manuscript']),
+        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'create_enchantment_industry:super_enchanting_template'])
+    ]).transitionalItem(crypticTransitional).loops(5)
 
     // Око Истинной Скверны
-    event.shaped('endrem:lost_eye', [
-        'ABA',
-        'CDE',
-        'AFA'
-    ], {
-        A: 'born_in_chaos_v1:dark_metal_nugget',
-        B: 'alexscaves:darkened_apple',
-        C: 'born_in_chaos_v1:dark_atrium',
-        D: 'minecraft:ender_eye',
-        E: 'born_in_chaos_v1:death_totem',
-        F: 'born_in_chaos_v1:orbofthe_summoner'
-    })
+    let trans = 'kubejs:incomplete_lost_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:lost_eye', 0.80),
+        CreateItem.of('born_in_chaos_v1:orbofthe_summoner', 0.07),
+        CreateItem.of('born_in_chaos_v1:dark_atrium', 0.07),
+        CreateItem.of('alexscaves:darkened_apple', 0.06)
+    ], 'minecraft:ender_eye', [
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:dark_atrium']),
+        event.recipes.createFilling(trans, [trans, Fluid.of('kubejs:chaos_fluid', 500)]),
+        event.recipes.createDeploying(trans, [trans, 'alexscaves:darkened_apple']),
+        event.recipes.createFilling(trans,  [trans, Fluid.of('irons_spellbooks:blood', 500)]),
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:orbofthe_summoner']),
+        event.recipes.createPressing(trans, trans)
+    ]).transitionalItem(trans).loops(1)
 
-    // Око Пустыни
-    event.shaped('cataclysm:desert_eye', [
-        'GCM',
-        'DEK',
-        'RSB'
+    // Око Потерянной Технологии
+    event.recipes.create.mechanical_crafting('endrem:corrupted_eye', [
+        ' SRS ',
+        'APVPA',
+        'RVDVR',
+        'APVPA',
+        ' SRS '
     ], {
-        G: 'minecraft:gold_block',
-        S: 'minecraft:chiseled_sandstone',
-        C: 'legendary_monsters:crystal_of_sandstorm',
-        M: 'minecraft:emerald_block',
-        B: 'legendary_monsters:dinosaur_bone',
-        E: 'minecraft:ender_eye',
-        D: 'minecraft:dead_bush',
-        K: 'minecraft:cactus',
-        R: 'minecraft:rotten_flesh'
+        D: 'minecraft:ender_eye',
+        V: 'cataclysm:witherite_ingot',
+        P: 'create:precision_mechanism',
+        R: 'minecraft:redstone_block',
+        S: 'alexscaves:azure_neodymium_ingot',
+        A: 'alexscaves:scarlet_neodymium_ingot'
     })
 
     // Око Забытой Древности
@@ -95,17 +128,51 @@ ServerEvents.recipes(event => {
         N: 'minecraft:netherite_scrap'
     })
 
-    // Око огня
-    event.shaped('cataclysm:flame_eye', [
-        'LLL',
-        'NEN',
-        'SSS'
+    // Око Слепой Одержимости
+    event.shaped('endrem:undead_eye', [
+        'RSe',
+        'sEs',
+        'eMR'
     ], {
-        L: 'cataclysm:lava_power_cell',
-        N: 'minecraft:netherite_scrap',
+        R: 'born_in_chaos_v1:potion_of_rampage',
+        S: 'legendary_monsters:corrupted_soul',
+        s: 'cold_sweat:soul_sprout',
+        e: 'born_in_chaos_v1:ethereal_spirit',
         E: 'minecraft:ender_eye',
-        S: ['minecraft:soul_sand', 'minecraft:soul_soil']
+        M: 'born_in_chaos_v1:evilometer'
     })
+
+    //Око Абсолютной Тишины
+    event.shaped('endrem:black_eye', [
+        'ABE',
+        'CPC',
+        'ESA'
+    ], {
+        A: 'deeperdarker:reinforced_echo_shard',
+        B: 'deeperdarker:heart_of_the_deep',
+        E: 'echoing_magic:echoed_manuscript',
+        C: 'minecraft:sculk_catalyst',
+        P: 'archaion:impact_pearl',
+        S: 'deeperdarker:soul_crystal'
+    })
+
+    // Око Первого Разлома
+    //event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('aerowarptics:rift_essence', 1000)]),
+
+    // Око Вечных Бурь
+    event.shaped('endrem:wither_eye', [
+        ' A ',
+        'BCD',
+        ' A '
+    ], {
+        A: 'minecraft:wither_skeleton_skull',
+        B: 'create:brass_ingot',
+        C: 'minecraft:ender_eye',
+        D: 'create:experience_nugget'
+    })
+
+    // Око Семи Морей
+
 
     // Око Адского Пламени
     event.shaped('endrem:nether_eye', [
@@ -120,7 +187,7 @@ ServerEvents.recipes(event => {
         V: 'create:blaze_cake'
     })
 
-    // Последовательная сборка Create (Sequenced Assembly)
+    // Око Фрактального Краха
 
     // Око Непростительного Проклятия
     let transitional = 'kubejs:incomplete_cursed_eye'
@@ -135,50 +202,5 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(transitional, [transitional, 'cataclysm:black_steel_ingot']),
         event.recipes.createPressing(transitional, transitional)
     ]).transitionalItem(transitional).loops(2)
-
-    // Око меха
-    transitional = 'kubejs:incomplete_mech_eye'
-    let ironBlocks = ['minecraft:iron_block', 'create:industrial_iron_block', 'create:weathered_iron_block']
-    event.recipes.create.sequenced_assembly([
-        CreateItem.of('cataclysm:mech_eye', 0.80),
-        CreateItem.of('create:industrial_iron_block', 0.10),
-        CreateItem.of('create:weathered_iron_block', 0.10)
-    ], 'minecraft:ender_eye', [
-        event.recipes.createFilling(transitional, [transitional, Fluid.of('minecraft:lava', 250)]),
-        event.recipes.createDeploying(transitional, [transitional, 'minecraft:redstone_block']),
-        event.recipes.createDeploying(transitional, [transitional, ironBlocks])
-    ]).transitionalItem(transitional).loops(4)
-
-    // Око Безграничного Знания
-    let crypticTransitional = 'kubejs:incomplete_cryptic_eye'
-    event.recipes.create.sequenced_assembly([
-        CreateItem.of('endrem:cryptic_eye', 0.80),
-        CreateItem.of('create_enchantment_industry:enchanting_template', 0.10),
-        CreateItem.of('create_enchantment_industry:super_enchanting_template', 0.10)
-    ], 'minecraft:ender_eye', [
-        event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('create_enchantment_industry:experience', 1000)]),
-        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'minecraft:enchanted_book']),
-        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'create_enchantment_industry:experience_cake_slice']),
-        event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('create_enchantment_industry:experience', 1000)]),
-        event.recipes.createDeploying(crypticTransitional, [crypticTransitional, 'create_enchantment_industry:super_enchanting_template']),
-        event.recipes.createPressing(crypticTransitional, crypticTransitional)
-    ]).transitionalItem(crypticTransitional).loops(5)
-
-    // Механическая сборка Create
-    // Око Потерянной Технологии
-    event.recipes.create.mechanical_crafting('endrem:corrupted_eye', [
-        ' SRS ',
-        'APVPA',
-        'RVDVR',
-        'APVPA',
-        ' SRS '
-    ], {
-        D: 'minecraft:ender_eye',
-        V: 'cataclysm:witherite_ingot',
-        P: 'create:precision_mechanism',
-        R: 'minecraft:redstone_block',
-        S: 'alexscaves:azure_neodymium_ingot',
-        A: 'alexscaves:scarlet_neodymium_ingot'
-    })
 
 })
