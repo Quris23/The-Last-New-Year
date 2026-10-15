@@ -62,4 +62,13 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(deathTotemTransitional, deathTotemTransitional),
         event.recipes.createFilling(deathTotemTransitional, [deathTotemTransitional, Fluid.of('kubejs:chaos_fluid', 75)])
     ]).transitionalItem(deathTotemTransitional).loops(1)
+
+    // Тёмная решётка
+    event.shaped(Item.of('born_in_chaos_v1:dark_grid', 8), [
+    ' I ',
+    ' I ',
+    '   '
+  ], {
+    I: 'born_in_chaos_v1:dark_metal_ingot'
+  })
 })

@@ -48,10 +48,31 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:magic_cloth',
     ['northstar:durable_fabric', Fluid.of('create_wizardry:mana', 500)])
 
+    // Жаровня
+  event.shaped('irons_spellbooks:brazier', [
+    ' I ',
+    'IFI',
+    ' I '
+  ], {
+    I: 'iron_bars',
+    F: 'minecraft:campfire'
+  })
+
+  // Жаровня душ
+  event.shaped('irons_spellbooks:brazier_soul', [
+    ' I ',
+    'IFI',
+    ' C '
+  ], {
+    I: 'born_in_chaos_v1:dark_grid',
+    F: 'minecraft:soul_campfire',
+    C: 'cataclysm:cursium_ingot'
+  })
+
     // Хемп вместо картошки
-    // event.get('irons_spellbooks:nature_focus')
-    //     .remove('minecraft:poisonous_potato')
-    //     .add('nirvana:hemp')
+    //  event.get('irons_spellbooks:nature_focus')
+    //      .remove('minecraft:poisonous_potato')
+    //      .add('nirvana:hemp')
 
     // Кольцо Лапласа 
     let ringTrans0 = 'irons_spellbooks:cooldown_ring'

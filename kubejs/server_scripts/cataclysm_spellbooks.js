@@ -19,27 +19,6 @@ ServerEvents.recipes(event => {
     result: { id: 'cataclysm_spellbooks:void_staff' }
   })
 
-  // Жаровня
-  event.shaped('irons_spellbooks:brazier', [
-    ' I ',
-    'IFI',
-    ' I '
-  ], {
-    I: 'iron_bars',
-    F: 'minecraft:campfire'
-  })
-
-  // Жаровня душ
-  event.shaped('irons_spellbooks:brazier_soul', [
-    ' I ',
-    'IFI',
-    ' C '
-  ], {
-    I: 'iron_bars',
-    F: 'minecraft:soul_campfire',
-    C: 'cataclysm:cursium_ingot'
-  })
-
   // Броня бездны
   let coral = ['tube_coral_block', 'brain_coral_block', 'bubble_coral_block', 'fire_coral_block', 'horn_coral_block']
   event.shaped('cataclysm_spellbooks:abyssal_rune', [

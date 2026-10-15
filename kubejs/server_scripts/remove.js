@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'born_in_chaos_v1:bone_heart' })
     event.remove({ output: 'born_in_chaos_v1:dark_atrium' })
     event.remove({ output: 'born_in_chaos_v1:death_totem' })
+    event.remove({ output: 'born_in_chaos_v1:dark_grid' })
+    
 
     // Cataclysm
     event.remove({ output: 'cataclysm:mech_eye' })

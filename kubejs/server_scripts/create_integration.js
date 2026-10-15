@@ -123,4 +123,34 @@ ServerEvents.recipes(event => {
         'cataclysm:black_steel_ingot',
         'create:shadow_steel'
     ]).superheated()
+
+    // Осколок эха
+    const sculkBlocks = [
+        'minecraft:sculk',
+        'minecraft:sculk_catalyst',
+        'minecraft:sculk_shrieker',
+        'minecraft:sculk_sensor'
+    ];
+        // Дробление скалк блоков
+    sculkBlocks.forEach(block => {
+        event.recipes.create.crushing([
+            CreateItem.of('minecraft:echo_shard', 0.005),
+            CreateItem.of('create:experience_nugget', 0.05)
+        ], block);
+    });
+    
+        // Продув огнем душ
+    event.recipes.create.haunting(
+        [
+            CreateItem.of('minecraft:echo_shard', 0.01)
+        ],
+        'minecraft:amethyst_shard'
+    );
+
+    // Тлеющий уголек скверны
+    event.recipes.create.mixing(Item.of('born_in_chaos_v1:smoldering_infernal_ember', 2), [
+         Item.of('soul_fire_charge', 2),
+         Item.of('alexscaves:uranium_shard', 2),
+        'irons_spellbooks:cinder_essence'
+    ]).superheated()
 })
