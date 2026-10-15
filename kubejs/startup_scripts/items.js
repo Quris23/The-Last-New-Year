@@ -1,6 +1,9 @@
 //.minecraft/kubejs/start_scripts/items.js
 StartupEvents.registry('item', event => {
 
+    //event.create('echo_ender_rune').displayName('Руна эхо-эндера')
+    event.create('dark_chorium_steel').displayName('Тёмно-хориевая сталь')
+
     event.create('ancient_upgrade_smithing_template', 'smithing_template')
     .displayName('Кузнечный шаблон: Улучшение костей рептилии')
     .appliesTo('§9Алмазному снаряжению')
@@ -44,14 +47,18 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
     .displayName('Незавершенный Тотем хоруса')
 
-    event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Непростительного Проклятия')
-
+  
     event.create('incomplete_mech_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око меха')
 
     event.create('incomplete_cryptic_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Безграничного Знания')
+
+    event.create('incomplete_lost_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Истинной Скверны')
+
+    event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Непростительного Проклятия')
 })
 
 StartupEvents.registry('fluid', event => {
