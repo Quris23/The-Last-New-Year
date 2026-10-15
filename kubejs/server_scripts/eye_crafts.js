@@ -215,32 +215,33 @@ ServerEvents.recipes(event => {
     })
 
     // Око Адского Пламени
-    event.shaped('endrem:nether_eye', [
-        'MIV',
-        'NEN',
-        'VIM'
-    ], {
-        M: 'alexscaves:primal_magma',
-        I: 'cataclysm:ignitium_ingot',
-        N: 'minecraft:netherite_ingot',
-        E: 'ender_eye',
-        V: 'create:blaze_cake'
-    })
+    let trans1 = 'kubejs:incomplete_nether_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:nether_eye', 0.80),
+        CreateItem.of('2x cataclysm:ignitium_ingot', 0.19),
+        CreateItem.of('4x netherite_scrap', 0.01)
+    ], 'legendary_monsters:eye_of_magma', [ 
+        event.recipes.createDeploying(trans1, [trans1, 'cataclysm:ignitium_ingot']),
+        event.recipes.createFilling(trans1, [trans1, Fluid.of('create_wizardry:fire_ale', 1000)]),
+        event.recipes.createDeploying(trans1, [trans1, 'irons_spellbooks:cinderous_soulcaller']),
+        event.recipes.createDeploying(trans1, [trans1, 'alexscaves:primal_magma']),
+        event.recipes.createFilling(trans1,  [trans1, Fluid.of('lava', 1000)]),
+        event.recipes.createDeploying(trans1, [trans1, 'create:blaze_cake']),
+    ]).transitionalItem(trans1).loops(2)
 
     // Око Фрактального Краха
-    //event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('aerowarptics:rift_essence', 1000)]),
-    event.shaped('endrem:rogue_eye', [
-        'apr',
-        'mEm',
-        'rea'
-    ], {
-        a: 'legendary_monsters:bottle_of_annihilation',
-        p: 'legendary_monsters:portal_shard',
-        r: 'alexscaves:radon_bottle',
-        m: 'northstar:martian_steel_ingot',
-        E: 'ender_eye',
-        e: 'legendary_monsters:enderitium_ingot'
-    })
+        let trans2 = 'kubejs:incomplete_rogue_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:rogue_eye', 0.80),
+        CreateItem.of('2x legendary_monsters:portal_shard', 0.2)
+    ], 'aerowarptics:singularity_core', [ 
+        event.recipes.createDeploying(trans2, [trans2, 'alexscaves:uranium']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
+        event.recipes.createDeploying(trans2, [trans2, 'aeronautics:end_stone_powder']),
+        event.recipes.createDeploying(trans2, [trans2, 'northstar:martian_steel_ingot']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('aerowarptics:rift_essence', 500)]),
+        event.recipes.createDeploying(trans2, [trans2, 'legendary_monsters:portal_shard']),
+    ]).transitionalItem(trans2).loops(2)
 
     // Око Непростительного Проклятия
     let transitional = 'kubejs:incomplete_cursed_eye'

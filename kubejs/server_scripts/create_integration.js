@@ -9,13 +9,30 @@ ServerEvents.recipes(event => {
     ],
     results: [
         { id: 'minecraft:glass_bottle' },
-        { id: 'kubejs:chaos_fluid', amount: 75 }
+        { id: 'kubejs:chaos_fluid', amount: 250 }
     ]
     })
 
     event.recipes.createFilling('born_in_chaos_v1:chaos_component', [
         'minecraft:glass_bottle',
         Fluid.of('kubejs:chaos_fluid', 250)
+    ])
+
+    // Жидкость аннигиляции
+    event.custom({
+    type: 'create:emptying',
+    ingredients: [
+        { item: 'legendary_monsters:bottle_of_annihilation' }
+    ],
+    results: [
+        { id: 'minecraft:glass_bottle' },
+        { id: 'kubejs:annihilation_fluid', amount: 250 }
+    ]
+    })
+
+    event.recipes.createFilling('legendary_monsters:bottle_of_annihilation', [
+        'minecraft:glass_bottle',
+        Fluid.of('kubejs:annihilation_fluid', 250)
     ])
 
     // Черная сталь
