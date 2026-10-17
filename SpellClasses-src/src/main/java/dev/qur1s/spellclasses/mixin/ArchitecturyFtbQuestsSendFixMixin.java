@@ -1,6 +1,5 @@
 package dev.qur1s.spellclasses.mixin;
 
-import net.minecraft.network.protocol.common.ClientboundCustomPayloadPacket;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.server.level.ServerPlayer;
 import org.spongepowered.asm.mixin.Mixin;
@@ -23,9 +22,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * tried, on both dedicated and singleplayer-integrated servers - it's a genuine bug in how FTB
  * Quests calls Architectury's API, not a version mismatch.
  * <p>
- * Fix: for FTB Quests' own payloads specifically, skip Architectury's aggregator entirely and send
- * a plain vanilla {@link ClientboundCustomPayloadPacket} directly - this is exactly what
- * {@code registerReceiver} already set vanilla up to decode correctly on the client.
+ * Fix: for FTB Quests' own payloads, broadcast by calling the single-recipient {@code sendToPlayer} for each
+ * player instead - that overload is the one FTB Quests' sync messages already use successfully. (Sending the raw
+ * payload ourselves breaks the sync messages, which are registered through Architectury's aggregator.)
  */
 @Mixin(value = dev.architectury.networking.NetworkManager.class, remap = false)
 public class ArchitecturyFtbQuestsSendFixMixin {
@@ -33,9 +32,8 @@ public class ArchitecturyFtbQuestsSendFixMixin {
     private static void spellclasses$fixFtbQuestsBroadcast(Iterable<ServerPlayer> players, CustomPacketPayload payload, CallbackInfo ci) {
         if (!payload.getClass().getName().startsWith("dev.ftb.mods.ftbquests.")) return;
 
-        ClientboundCustomPayloadPacket packet = new ClientboundCustomPayloadPacket(payload);
         for (ServerPlayer player : players) {
-            player.connection.send(packet);
+            dev.architectury.networking.NetworkManager.sendToPlayer(player, payload);
         }
         ci.cancel();
     }

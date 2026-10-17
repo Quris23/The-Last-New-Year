@@ -41,6 +41,7 @@ public final class ExclusiveSpellScrollHider {
             SpellRegistry.FROSTBITE_SPELL,
             SpellRegistry.RAISE_HELL_SPELL,
             SpellRegistry.PORTAL_SPELL,
+            SpellRegistry.THUNDERSTORM_SPELL,
             SpellRegistries.TECTONIC_TREMBLE,
             SpellRegistries.CONJURE_AMETHYST_CRAB,
             SpellRegistries.CONJURE_THRALL
@@ -59,8 +60,7 @@ public final class ExclusiveSpellScrollHider {
             ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "ascension"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tailwind"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "wind_blade"),
-            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "almighty_push"),
-            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tornado")
+            ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "almighty_push")
     );
 
     @SubscribeEvent(priority = EventPriority.LOWEST)

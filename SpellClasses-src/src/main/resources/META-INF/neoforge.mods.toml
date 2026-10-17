@@ -37,7 +37,23 @@ config="spellclasses.debug.mixins.json"
     side="BOTH"
 
 [[dependencies.${mod_id}]]
+    modId="supplementaries"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.${mod_id}]]
     modId="cold_sweat"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+# Our resources redraw Cataclysm Spellbooks' Engineer armor; loading after that mod makes ours the ones that win.
+[[dependencies.${mod_id}]]
+    modId="cataclysm_spellbooks"
     type="optional"
     versionRange="[0,)"
     ordering="AFTER"

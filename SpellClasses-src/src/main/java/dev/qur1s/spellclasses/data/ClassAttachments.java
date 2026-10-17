@@ -40,6 +40,14 @@ public final class ClassAttachments {
                     .copyOnDeath()
                     .build());
 
+    /** Nickname of the player who completed each quest of the shared "История" chapter (quest id as text -> name). */
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<java.util.Map<String, String>>> QUEST_COMPLETERS =
+            ATTACHMENT_TYPES.register("quest_completers", () -> AttachmentType.<java.util.Map<String, String>>builder(() -> new java.util.HashMap<>())
+                    .serialize(Codec.unboundedMap(Codec.STRING, Codec.STRING).xmap(java.util.HashMap::new, m -> m))
+                    .sync(ByteBufCodecs.map(java.util.HashMap::new, ByteBufCodecs.STRING_UTF8, ByteBufCodecs.STRING_UTF8))
+                    .copyOnDeath()
+                    .build());
+
     /**
      * String forms of the item ids (see {@link dev.qur1s.spellclasses.FtbQuestsUniversalGate}) this
      * player has obtained at least once - unlocks the matching universal chapter's visibility.

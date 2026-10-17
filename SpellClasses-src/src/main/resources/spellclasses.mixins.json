@@ -15,6 +15,7 @@
     "FireArrowMixin",
     "ChargeTooltipMixin",
     "BloodSlashMixin",
+    "BloodStepDistanceMixin",
     "AbstractSpellOverridesMixin",
     "ChargedFovMixin",
     "ArmorCapMixin",
@@ -23,6 +24,7 @@
     "InscriptionTableSlotCapMixin",
     "FtbQuestsChapterVisibilityMixin",
     "FtbQuestsTaskGateMixin",
+    "QuestOptionalDependenciesMixin",
     "TeamDataPersonalProgressMixin",
     "TemperatureRegulatorAccessor",
     "TemperatureRegulatorColdSweatSyncMixin",
@@ -57,12 +59,25 @@
     "ProjectileOwnerAccessor",
     "ShockwaveAlmightyPushMixin",
     "LightningBoltCreeperMixin",
-    "WindJumpStrengthMixin"
+    "WindJumpStrengthMixin",
+    "PortalFrameShipMixin"
   ],
   "client": [
     "SablePlotChunkForgetMixin",
     "OverloadedArmorBarAegisMixin",
     "SableXaeroMapLabelsMixin",
-    "SpellBookHipLeftMixin"
+    "WindsGliderHandsMixin",
+    "SpellBookHipLeftMixin",
+    "PunchyHideOffhandWhileUsingSwordMixin",
+    "PumpkinArmorGlowMixin",
+    "EngineerArmorGlowMixin",
+    "WarpDriveSmoothMixin",
+    "SpellIconRecolorMixin",
+    "QuestCompleterDescriptionMixin",
+    "QuestMysteryMixin",
+    "QuestButtonRefreshMixin",
+    "FtbCompletionPlaqueMixin",
+    "QuestIngredientHideMixin",
+    "QuestHideUntilPreviousMixin"
   ]
 }

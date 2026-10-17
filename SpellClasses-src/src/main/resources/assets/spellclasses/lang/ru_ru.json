@@ -16,7 +16,6 @@
   "spellclasses.message.requires_void_staff": "Портал можно использовать только с Палочкой туда-обратно или Посохом пустоты (Void staff) в руке.",
   "spellclasses.message.requires_blood_armor": "Необходим Полный Сет Брони Культиста.",
   "spellclasses.message.requires_druid_nirvana": "Это доступно только Друиду.",
-
   "item.spellclasses.storm_atlas": "Штормовой атлас",
   "item.spellclasses.laplace_ring": "Кольцо Лапласа",
   "item.spellclasses.laplace_ring.lore.legend": "Кольцо древнего Злобога Лапласа, наделяющее владельца огромными запасами маны",
@@ -25,10 +24,8 @@
   "item.spellclasses.laplace_ring.lore.cooldown": "Активируется сразу при надевании. Перезарядка: 10 минут.",
   "effect.spellclasses.laplace_factor": "Фактор Лапласа",
   "spellclasses.message.laplace_on_cooldown": "Кольцо Лапласа ещё восстанавливается (осталось %s сек.).",
-
   "item.spellclasses.brass_belt": "Латунный пояс",
   "item.spellclasses.black_steel_belt": "Пояс чёрной Стали",
-
   "spellclasses.class.ice": "Ледяной маг",
   "spellclasses.class.fire": "Адский заклинатель",
   "spellclasses.class.lightning": "Хекстековый учёный",
@@ -36,7 +33,6 @@
   "spellclasses.class.ender": "Эндер",
   "spellclasses.class.blood": "Вампир",
   "spellclasses.class.holy": "Священник",
-
   "spellclasses.class.fire.desc": "§8Вестник Погибели§r, явившийся из пекла §cНезера§r\n\nПронесите в себе бушующее §6Адское Пламя§r сквозь Верхний мир и дальше, превзойдите владыку §6Игниса§r.\n\n§oЛишь тот, кто укротил огонь, достоин его разжечь.",
   "spellclasses.class.ice.desc": "§3Лич§r, подчинивший себе §bХолод§r\n\nОбратив сердце в §bЛёд§r, преодолейте снежные бури и §8безмолвный космос§r, чтобы отыскать §7Заснеженную Тюрьму§r §3Маледиктуса§r.\n\n§oОбжигая холодом, познаешь его истинную суть.",
   "spellclasses.class.lightning.desc": "Изгнанный наследник §9Небесного царства§r\n\nОвладев §9Громом§r и §eЭлектричеством§r, покорите §7Облачный Акрополь§r и обрушьте месть за своё низвержение.\n\n§oЭнергия молний и знания механизмов — ключ к §kподъёму§r.",
@@ -44,6 +40,15 @@
   "spellclasses.class.ender.desc": "Существо из §dДругого мира§r, прорвавшееся в этот\n\nРазрывайте §dПространство§r на части, оставаясь неуловимым, найдите союзников и победите §0Чудовище§r, отнявшее ваш §7Дом§r.\n\n§oТеряясь в пространстве, не потеряйте себя.",
   "spellclasses.class.blood.desc": "Пробудившийся под §8Красной Луной§r\n\nЖивя среди монстров, обуздайте §4Магию крови§r и посвятите себя мести §4Мёртвому королю§r, отнявшему у вас власть над §7Минувшим§r.\n\n§oЧтобы не дрогнуть во тьме, станьте в ней самым жутким.",
   "spellclasses.class.holy.desc": "Святой Отец, ревнитель §eВеры§r\n\nЗащитите хрупких существ этого мира от §8Грехов§r и §8Смерти§r. Ваш §7Долг§r — §eОберегать§r друзей на долгом пути.\n\n§oВысшая степень гармонии достигается в диалоге с собой и близкими.",
-
-  "spellclasses.screen.subtitle": "Выбор нельзя изменить самостоятельно"
+  "spellclasses.screen.subtitle": "Выбор нельзя изменить самостоятельно",
+  "spell.spellclasses.light_shield": "Щит Света",
+  "spell.spellclasses.light_shield.guide": "Создаёт вокруг вас светло-жёлтый сферический щит. Снаряды извне останавливаются, враждебные существа отталкиваются.",
+  "entity.spellclasses.light_shield": "Щит Света",
+  "block.spellclasses.sconce_button": "Бра-кнопка",
+  "item.spellclasses.paladin_helmet": "Шлем светоносца",
+  "item.spellclasses.paladin_leggings": "Поножи светоносца",
+  "item.spellclasses.paladin_boots": "Ботинки светоносца",
+  "tooltip.spellclasses.scarecrow.set": "Бонус полного комплекта:",
+  "tooltip.spellclasses.scarecrow.hunger": "  • Восстанавливает голод при попадании заклинаниями Крови",
+  "tooltip.spellclasses.scarecrow.blood_step": "  • Кровавая Поступь: +10 блоков дальности"
 }

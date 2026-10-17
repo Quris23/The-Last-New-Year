@@ -45,12 +45,10 @@ public final class PresetWeaponSpells {
             new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "soul_brazier"), SpellRegistries.CONJURE_THRALL, 10),
             // Великий Мороз (Legendary Bosses) - то же высеченное заклинание, что у Арктического Клинка (Frostbite 3)
             new Preset(ResourceLocation.fromNamespaceAndPath("legendary_monsters", "the_great_frost"), SpellRegistry.FROSTBITE_SPELL, 3),
-            // Жезл Шторма (lightning_rod) - высеченное заклинание Торнадо (Wind's Spellbooks) 5
-            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "lightning_rod"),
-                    () -> SpellRegistry.getSpell(ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tornado")), 5),
-            // Трость Изобретателя (artificer_cane) - тоже высеченное Торнадо 5
-            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "artificer_cane"),
-                    () -> SpellRegistry.getSpell(ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "tornado")), 5)
+            // Жезл Шторма (lightning_rod) - высеченное заклинание Гроза (Thunderstorm) 5 (раньше было Торнадо)
+            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "lightning_rod"), SpellRegistry.THUNDERSTORM_SPELL, 5),
+            // Трость Изобретателя (artificer_cane) - тоже высеченная Гроза 5
+            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "artificer_cane"), SpellRegistry.THUNDERSTORM_SPELL, 5)
     };
 
     private static final int CHECK_INTERVAL_TICKS = 40;

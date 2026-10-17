@@ -13,7 +13,6 @@
   "spellclasses.message.requires_void_staff": "Portal can only be used while holding the Hither-Thither Wand or the Void Staff.",
   "spellclasses.message.requires_blood_armor": "Requires the Full Cultist Armor Set.",
   "spellclasses.message.requires_druid_nirvana": "Only a Druid can do this.",
-
   "item.spellclasses.storm_atlas": "Storm Atlas",
   "item.spellclasses.laplace_ring": "Laplace's Ring",
   "item.spellclasses.laplace_ring.lore.legend": "Legend: a ring of the ancient evil god Laplace, granting its wearer a vast reserve of mana.",
@@ -22,10 +21,8 @@
   "item.spellclasses.laplace_ring.lore.cooldown": "Activates immediately on equip. Cooldown: 10 minutes.",
   "effect.spellclasses.laplace_factor": "Laplace Factor",
   "spellclasses.message.laplace_on_cooldown": "Laplace's Ring is still recovering (%s s left).",
-
   "item.spellclasses.brass_belt": "Brass Belt",
   "item.spellclasses.black_steel_belt": "Black Steel Belt",
-
   "spellclasses.class.ice": "Ice",
   "spellclasses.class.fire": "Infernal",
   "spellclasses.class.lightning": "Storm",
@@ -33,7 +30,6 @@
   "spellclasses.class.ender": "Ender",
   "spellclasses.class.blood": "Vampire",
   "spellclasses.class.holy": "Priest",
-
   "spellclasses.class.fire.desc": "A denizen of the Nether's depths. Become this world's Herald of Ruin, master Hellfire, and challenge the lord Ignis.",
   "spellclasses.class.ice.desc": "Undead who commands the Cold and its Draugr. Turn your heart to Ice, find Maledictus's Frozen Prison, and take his place.",
   "spellclasses.class.lightning.desc": "Heir to the Skies, command Thunder and Lightning to reach the Cloud Acropolis with untold technology.",
@@ -41,6 +37,15 @@
   "spellclasses.class.ender.desc": "A being from another world that tore its way into ours. It rips open rifts in space and is nearly impossible to catch. Seek the aid of this world's creatures to defeat the Monster that took your Home.",
   "spellclasses.class.blood.desc": "Master of the Dead and of Night. The Dead King stripped you of your dominion over the departed - you must hunt him down and take your revenge.",
   "spellclasses.class.holy.desc": "A holy father who shields this world's people from Sin and Death. Your duty is to guide and protect your kin through their long journey.",
-
-  "spellclasses.screen.subtitle": "This choice cannot be changed on your own"
+  "spellclasses.screen.subtitle": "This choice cannot be changed on your own",
+  "spell.spellclasses.light_shield": "Light Shield",
+  "spell.spellclasses.light_shield.guide": "Conjures a light-yellow sphere shield around you. Projectiles from outside are stopped and hostile creatures are pushed back.",
+  "entity.spellclasses.light_shield": "Light Shield",
+  "block.spellclasses.sconce_button": "Sconce Button",
+  "item.spellclasses.paladin_helmet": "Lightbringer Helmet",
+  "item.spellclasses.paladin_leggings": "Lightbringer Leggings",
+  "item.spellclasses.paladin_boots": "Lightbringer Boots",
+  "tooltip.spellclasses.scarecrow.set": "Full set bonus:",
+  "tooltip.spellclasses.scarecrow.hunger": "  • Restores hunger when hitting with Blood spells",
+  "tooltip.spellclasses.scarecrow.blood_step": "  • Blood Step: +10 blocks of range"
 }

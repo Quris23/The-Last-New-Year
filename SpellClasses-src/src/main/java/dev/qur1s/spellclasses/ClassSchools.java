@@ -66,6 +66,8 @@ public final class ClassSchools {
 
     /** Our own class name for a school (e.g. "Вампир" for blood), distinct from the mod's own school name. */
     public static Component className(ResourceLocation school) {
+        // Wind is folded into Storm (see WIND_SCHOOL): it has no class name of its own, the message names the Storm class
+        if (WIND_SCHOOL.equals(school)) school = SchoolRegistry.LIGHTNING_RESOURCE;
         return Component.translatable("spellclasses.class." + school.getPath());
     }
 

@@ -3,7 +3,6 @@ package dev.qur1s.spellclasses;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.SpellData;
-import net.acetheeldritchking.cataclysm_spellbooks.registries.SpellRegistries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -36,21 +35,17 @@ public final class NecronomiconSpells {
     // Koboleton were deliberately dropped - the Vampire shouldn't get access to those.
     private static final List<Supplier<AbstractSpell>> SUMMON_SPELLS = List.of(
             SpellRegistry.SUMMON_VEX_SPELL,
-            SpellRegistry.SUMMON_POLAR_BEAR_SPELL,
+            () -> SpellRegistry.getSpell(ResourceLocation.fromNamespaceAndPath("echoing_magic", "conjure_grimoray")),
             SpellRegistry.RAISE_DEAD_SPELL,
-            SpellRegistry.SUMMON_HORSE_SPELL,
-            SpellRegistries.CONJURE_THRALL,
-            SpellRegistries.CONJURE_IGNITED_REINFORCEMENT
+            SpellRegistry.SUMMON_HORSE_SPELL
     );
 
     /** Same list as {@link #SUMMON_SPELLS}, as the spell-id strings {@code SpellPreCastEvent} deals in - see {@link GateEvents}. */
     public static final Set<String> SUMMON_SPELL_IDS = Set.of(
             "irons_spellbooks:summon_vex",
-            "irons_spellbooks:summon_polar_bear",
+            "echoing_magic:conjure_grimoray",
             "irons_spellbooks:raise_dead",
-            "irons_spellbooks:summon_horse",
-            "cataclysm_spellbooks:conjure_thralls",
-            "cataclysm_spellbooks:conjure_ignited_reinforcement"
+            "irons_spellbooks:summon_horse"
     );
 
     /** Built fresh each call since {@code getSpells()} may be invoked before the spell registries are fully populated. */

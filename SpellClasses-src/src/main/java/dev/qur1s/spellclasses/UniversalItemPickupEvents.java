@@ -1,6 +1,10 @@
 package dev.qur1s.spellclasses;
 
 import dev.qur1s.spellclasses.data.ClassAttachments;
+import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
+import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
+import io.redspace.ironsspellbooks.api.spells.SpellSlot;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
@@ -43,9 +47,34 @@ public final class UniversalItemPickupEvents {
             if (newlyObtained == null) newlyObtained = new HashSet<>(obtained);
             newlyObtained.add(key);
         }
+        String eldritch = FtbQuestsUniversalGate.ELDRITCH_MARKER.toString();
+        if (!obtained.contains(eldritch) && holdsEldritchSpell(player)) {
+            if (newlyObtained == null) newlyObtained = new HashSet<>(obtained);
+            newlyObtained.add(eldritch);
+        }
         if (newlyObtained != null) {
             player.setData(ClassAttachments.OBTAINED_UNIVERSAL_ITEMS, newlyObtained);
         }
+    }
+
+    /** True if any carried item (scroll, spell book, imbued weapon) holds a spell of the Eldritch school. */
+    private static boolean holdsEldritchSpell(ServerPlayer player) {
+        if (carriesEldritch(player.getMainHandItem()) || carriesEldritch(player.getOffhandItem())) return true;
+        for (ItemStack stack : player.getInventory().items) {
+            if (carriesEldritch(stack)) return true;
+        }
+        return false;
+    }
+
+    private static boolean carriesEldritch(ItemStack stack) {
+        if (stack.isEmpty()) return false;
+        ISpellContainer container = ISpellContainer.get(stack);
+        if (container == null || container.isEmpty()) return false;
+        for (SpellSlot slot : container.getAllSpells()) {
+            AbstractSpell spell = slot.getSpell();
+            if (spell != null && SchoolRegistry.ELDRITCH_RESOURCE.equals(spell.getSchoolType().getId())) return true;
+        }
+        return false;
     }
 
     private static boolean hasItem(ServerPlayer player, Item item) {

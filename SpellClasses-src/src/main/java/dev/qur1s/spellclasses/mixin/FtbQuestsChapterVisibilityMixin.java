@@ -34,12 +34,31 @@ public abstract class FtbQuestsChapterVisibilityMixin {
             return;
         }
 
-        ResourceLocation requiredItem = FtbQuestsUniversalGate.requiredItemFor(chapterId);
-        if (requiredItem != null) {
-            String requiredItemId = requiredItem.toString();
-            boolean anyMemberHasItem = data.getOnlineMembers().stream()
-                    .anyMatch(member -> member.getData(ClassAttachments.OBTAINED_UNIVERSAL_ITEMS).contains(requiredItemId));
-            if (!anyMemberHasItem) {
+        if (chapterId == FtbQuestsClassGate.ACT_TWO_CHAPTER) {
+            // Акт 2 stays closed until both gate quests in "История" are completed
+            for (long questId : FtbQuestsClassGate.ACT_TWO_GATE_QUESTS) {
+                var quest = data.getFile().getQuest(questId);
+                if (quest == null || !data.isCompleted(quest)) {
+                    cir.setReturnValue(false);
+                    return;
+                }
+            }
+            return;
+        }
+
+        if (chapterId == FtbQuestsClassGate.ACT_THREE_CHAPTER) {
+            // Акт 3 stays closed until the Eye of True Corruption quest in "История" is completed
+            var quest = data.getFile().getQuest(FtbQuestsClassGate.ACT_THREE_GATE_QUEST);
+            if (quest == null || !data.isCompleted(quest)) cir.setReturnValue(false);
+            return;
+        }
+
+        if (FtbQuestsUniversalGate.isUniversalChapter(chapterId)) {
+            // Abyssal, Sand and Eldritch: hidden until at least one of their quests has been completed (their first
+            // quests complete by obtaining the item, so the chapter opens itself).
+            Chapter chapter = (Chapter) (Object) this;
+            boolean anyCompleted = chapter.getQuests().stream().anyMatch(data::isCompleted);
+            if (!anyCompleted) {
                 cir.setReturnValue(false);
             }
         }

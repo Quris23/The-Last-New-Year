@@ -5,6 +5,7 @@ import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.CastResult;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
 import io.redspace.ironsspellbooks.spells.blood.BloodSlashSpell;
+import io.redspace.ironsspellbooks.spells.blood.RayOfSiphoningSpell;
 import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ConjureKoboldiatorSpell;
 import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ConjureKoboletonSpell;
 import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ThothsWitnessSpell;
@@ -49,6 +50,26 @@ public abstract class AbstractSpellOverridesMixin {
             float stockBase = BLOOD_SLASH_STOCK_BASE + BLOOD_SLASH_STOCK_PER_LEVEL * (spellLevel - 1);
             float newBase = BLOOD_SLASH_NEW_BASE + BLOOD_SLASH_NEW_PER_LEVEL * (spellLevel - 1);
             cir.setReturnValue(cir.getReturnValue() * (newBase / stockBase));
+        }
+    }
+
+    /** Blood Slash (Кровавый клинок): cooldown 1 second (in ticks). The per-spell config file for it was not being applied. */
+    private static final int BLOOD_SLASH_COOLDOWN_TICKS = 20;
+
+    @Inject(method = "getSpellCooldown", at = @At("RETURN"), cancellable = true)
+    private void spellclasses$bloodSlashCooldown(CallbackInfoReturnable<Integer> cir) {
+        if ((Object) this instanceof BloodSlashSpell) {
+            cir.setReturnValue(BLOOD_SLASH_COOLDOWN_TICKS);
+        }
+    }
+
+    /** Ray of Siphoning (Истощающий луч): twice the damage (and so twice the self-heal, which is 100% of damage dealt). */
+    private static final float RAY_OF_SIPHONING_POWER_MULTIPLIER = 2.0f;
+
+    @Inject(method = "getSpellPower", at = @At("RETURN"), cancellable = true)
+    private void spellclasses$doubleRayOfSiphoning(int spellLevel, @Nullable Entity sourceEntity, CallbackInfoReturnable<Float> cir) {
+        if ((Object) this instanceof RayOfSiphoningSpell) {
+            cir.setReturnValue(cir.getReturnValue() * RAY_OF_SIPHONING_POWER_MULTIPLIER);
         }
     }
 

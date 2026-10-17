@@ -81,11 +81,29 @@ public final class StaffAttributeOverrides {
             overrideEngineerPiece("engineer_leggings", EquipmentSlotGroup.LEGS, 6.0);
             overrideEngineerPiece("engineer_boots", EquipmentSlotGroup.FEET, 3.0);
 
+            // Броня Пугала (irons_spellbooks:pumpkin_*) - статы Брони Инженера, но вместо Молнии бафф Крови 20%
+            overrideScarecrowPiece("pumpkin_helmet", EquipmentSlotGroup.HEAD, 3.0);
+            overrideScarecrowPiece("pumpkin_chestplate", EquipmentSlotGroup.CHEST, 8.0);
+            overrideScarecrowPiece("pumpkin_leggings", EquipmentSlotGroup.LEGS, 6.0);
+            overrideScarecrowPiece("pumpkin_boots", EquipmentSlotGroup.FEET, 3.0);
+
             // Нагрудник Светоносца (Iron's Spellbooks, paladin_chestplate) - броня 8 -> 16, остальные
             // атрибуты предмета (мана, сила заклинаний, стойкость...) остаются как есть
             overrideArmorValue("irons_spellbooks", "paladin_chestplate", 16.0);
+            overrideLightbringerChestplate();
 
         });
+    }
+
+    private static void overrideScarecrowPiece(String path, EquipmentSlotGroup slot, double defense) {
+        override("irons_spellbooks", path, ItemAttributeModifiers.builder()
+                .add(Attributes.ARMOR, new AttributeModifier(id(path + "_armor"), defense, AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(id(path + "_toughness"), 3.0, AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(id(path + "_knockback"), 0.1, AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(AttributeRegistry.MAX_MANA, new AttributeModifier(id(path + "_mana"), 125.0, AttributeModifier.Operation.ADD_VALUE), slot)
+                .add(AttributeRegistry.BLOOD_SPELL_POWER, new AttributeModifier(id(path + "_blood_power"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
+                .add(AttributeRegistry.SPELL_POWER, new AttributeModifier(id(path + "_spell_power"), 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), slot)
+                .build());
     }
 
     private static void overrideEngineerPiece(String path, EquipmentSlotGroup slot, double defense) {
@@ -126,6 +144,24 @@ public final class StaffAttributeOverrides {
             rebuilt.add(Attributes.ARMOR, new AttributeModifier(fallbackId, armor, AttributeModifier.Operation.ADD_VALUE), slot);
         }
         return rebuilt.build();
+    }
+
+    /** Chestplate: +150 mana and +15% Holy spell power instead of Iron's own mana / general spell power; defence etc. kept. */
+    private static void overrideLightbringerChestplate() {
+        ResourceLocation key = ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "paladin_chestplate");
+        Item item = BuiltInRegistries.ITEM.get(key);
+        if (item == Items.AIR) return;
+        ItemAttributeModifiers current = item.components().get(DataComponents.ATTRIBUTE_MODIFIERS);
+        if (current == null) current = item.getDefaultAttributeModifiers();
+        ItemAttributeModifiers.Builder rebuilt = ItemAttributeModifiers.builder();
+        for (ItemAttributeModifiers.Entry entry : current.modifiers()) {
+            if (entry.attribute().is(AttributeRegistry.MAX_MANA.getId()) || entry.attribute().is(AttributeRegistry.SPELL_POWER.getId())
+                    || entry.attribute().is(AttributeRegistry.HOLY_SPELL_POWER.getId())) continue;
+            rebuilt.add(entry.attribute(), entry.modifier(), entry.slot());
+        }
+        rebuilt.add(AttributeRegistry.MAX_MANA, new AttributeModifier(id("paladin_chestplate_mana"), dev.qur1s.spellclasses.item.ArmorItems.MANA, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST);
+        rebuilt.add(AttributeRegistry.HOLY_SPELL_POWER, new AttributeModifier(id("paladin_chestplate_holy_power"), dev.qur1s.spellclasses.item.ArmorItems.HOLY_POWER, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.CHEST);
+        override("irons_spellbooks", "paladin_chestplate", rebuilt.build());
     }
 
     /** Replaces only the ARMOR entry of an item's attribute modifiers (component), keeping every other one. */

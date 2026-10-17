@@ -18,10 +18,17 @@ public class SpellClasses {
         ClassAttachments.register(modBus);
         ClassEffects.register(modBus);
         ClassItems.register(modBus);
+        dev.qur1s.spellclasses.entity.ModEntities.register(modBus);
+        dev.qur1s.spellclasses.spell.ModSpells.register(modBus);
+        dev.qur1s.spellclasses.item.ArmorItems.register(modBus);
+        if (net.neoforged.fml.ModList.get().isLoaded("supplementaries")) dev.qur1s.spellclasses.block.SconceButtons.register(modBus);
         container.registerConfig(ModConfig.Type.SERVER, ClassConfig.SPEC);
         modBus.addListener((ModConfigEvent event) -> {
             if (event.getConfig().getSpec() == ClassConfig.SPEC) ClassManager.invalidateLimitsCache();
         });
         modBus.addListener(ChargedBuffTweaks::onCommonSetup);
+        if (net.neoforged.fml.ModList.get().isLoaded("create") && net.neoforged.fml.ModList.get().isLoaded("cataclysm_spellbooks")) {
+            modBus.addListener(dev.qur1s.spellclasses.compat.EngineerHoodGoggles::onCommonSetup);
+        }
     }
 }

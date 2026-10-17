@@ -58,6 +58,7 @@ dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     compileOnly files("libs/irons_spellbooks_full.jar")
     compileOnly files("libs/curios.jar")
+    compileOnly files("libs/recolor_tablet.jar")
     compileOnly files("libs/coldsweat.jar")
     compileOnly files("libs/quark.jar")
     compileOnly files("libs/zeta.jar")
@@ -66,18 +67,23 @@ dependencies {
     compileOnly files("libs/cataclysm.jar")
     compileOnly files("libs/cataclysm_spellbooks.jar")
     compileOnly files("libs/ftbquests.jar")
+    compileOnly files("libs/ftblibrary.jar")
     compileOnly files("libs/northstar.jar")
     compileOnly files("libs/create.jar")
+    compileOnly files("libs/createdragonsplus.jar")
     compileOnly files("libs/ponder.jar")
     compileOnly files("libs/flywheel.jar")
     compileOnly files("libs/registrate.jar")
     compileOnly files("libs/sphereshields.jar")
     compileOnly files("libs/aerowarptics.jar")
     compileOnly files("libs/geckolib.jar")
+    compileOnly files("libs/azurelib.jar")
     compileOnly files("libs/sable.jar")
     compileOnly files("libs/sable_companion.jar")
     compileOnly files("libs/architectury.jar")
     compileOnly files("libs/wind_spellbooks.jar")
+    compileOnly files("libs/supplementaries.jar")
+    compileOnly files("libs/moonlight.jar")
 }
 
 tasks.withType(ProcessResources).configureEach {

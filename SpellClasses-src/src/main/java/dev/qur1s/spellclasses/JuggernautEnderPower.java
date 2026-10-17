@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Cosmic spells are cut from the pack, and the Reinforced Juggernaut armor (Echoing Magic) is an Ender-class piece:
  * its Cosmic spell power and its all-spells spell power both become Ender spell power - same amount, same operation,
- * same slot.
+ * same slot. Every piece also has +1 armor.
  */
 @EventBusSubscriber(modid = "spellclasses")
 public final class JuggernautEnderPower {
@@ -35,10 +36,18 @@ public final class JuggernautEnderPower {
             return;
         }
         Holder<Attribute> ender = BuiltInRegistries.ATTRIBUTE.getHolder(ENDER).orElse(null);
-        if (ender == null) {
-            return;
-        }
         for (var entry : new ArrayList<>(event.getModifiers())) {
+            // Each piece gets one more point of armor than it has.
+            if (entry.attribute().equals(Attributes.ARMOR)) {
+                event.removeModifier(entry.attribute(), entry.modifier().id());
+                event.addModifier(entry.attribute(),
+                        new AttributeModifier(entry.modifier().id(), entry.modifier().amount() + 1.0, entry.modifier().operation()),
+                        entry.slot());
+                continue;
+            }
+            if (ender == null) {
+                continue;
+            }
             if (entry.attribute().unwrapKey().map(k -> k.location().equals(COSMIC) || k.location().equals(ALL_SPELLS)).orElse(false)) {
                 event.removeModifier(entry.attribute(), entry.modifier().id());
                 event.addModifier(ender,
