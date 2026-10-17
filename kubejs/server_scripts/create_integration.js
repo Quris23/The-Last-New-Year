@@ -35,6 +35,23 @@ ServerEvents.recipes(event => {
         Fluid.of('kubejs:annihilation_fluid', 250)
     ])
 
+    // Облако
+    event.custom({
+    type: 'create:emptying',
+    ingredients: [
+        { item: 'quark:bottled_cloud' }
+    ],
+    results: [
+        { id: 'minecraft:glass_bottle' },
+        { id: 'kubejs:cloud_fluid', amount: 250 }
+    ]
+    })
+
+    event.recipes.createFilling('quark:bottled_cloud', [
+        'minecraft:glass_bottle',
+        Fluid.of('kubejs:cloud_fluid', 250)
+    ])
+
     // Черная сталь
     event.shaped(Item.of('kubejs:black_steel_rod', 4), [
         ' I ',
@@ -153,4 +170,17 @@ ServerEvents.recipes(event => {
          Item.of('alexscaves:uranium_shard', 2),
         'irons_spellbooks:cinder_essence'
     ]).superheated()
+
+    // Мифридиновый слиток
+    event.recipes.create.mixing('kubejs:mithridium_ingot', [
+        'irons_spellbooks:mithril_ingot',
+        'createpropulsion:platinum_ingot'
+    ]).superheated()
+
+    // Портальная жидкость
+    event.recipes.createMixing(Fluid.of('aerowarptics:rift_essence', 1000), [
+      ['aeronautics:levitite', 'aeronautics:pearlescent_levitite'],
+      '4x minecraft:chorus_fruit'
+    ]).superheated()
+    
 })

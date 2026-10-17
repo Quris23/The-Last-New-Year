@@ -11,6 +11,11 @@ ClientEvents.lang('ru_ru', event => {
     event.add('block.kubejs.annihilation_fluid', 'Жидкость аннигиляции')
     event.add('item.kubejs.annihilation_fluid_bucket', 'Ведро жидкости аннигиляции')
 
+    // Quark
+    event.add('fluid_type.kubejs.cloud_fluid', 'Облачная жидкость')
+    //event.add('block.kubejs.cloud_fluid', 'Облачная жидкость')
+    event.add('item.kubejs.annihilation_fluid_bucket', 'Ведро облачной жидкости')
+
     // event.renameItem('born_in_chaos_v1:permafrost_shard', 'Коготь вечной мерзлоты')
     // event.add('item.born_in_chaos_v1.permafrost_shard.description', '§7§oПринадлежит §8§oКрампусу\n§7§oОн является за игроками,\nдостигшими §8§oСотни шаловливости')
 

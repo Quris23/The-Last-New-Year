@@ -184,19 +184,18 @@ ServerEvents.recipes(event => {
     })
 
     // Око Вечных Бурь
-    let levitite = ['aeronautics:levitite', 'aeronautics:pearlescent_levitite']
-    event.shaped('endrem:wither_eye', [
-        'bCr',
-        'lEl',
-        'rRb'
-    ], {
-        b: 'quark:bottled_cloud',
-        C: 'irons_spellbooks:energized_core',
-        R: 'legendary_monsters:air_rune',
-        r: 'legendary_monsters:cloud_rod',
-        l: levitite,
-        E: 'ender_eye'
-    })
+    let trans3 = 'kubejs:incomplete_wither_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:wither_eye', 0.80),
+        CreateItem.of('2x legendary_monsters:air_rune', 0.20)
+    ], 'irons_spellbooks:energized_core', [ 
+        event.recipes.createFilling(trans3, [trans3, Fluid.of('kubejs:cloud_fluid', 1000)]),
+        event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:mithril_weave']),
+        event.recipes.createFilling(trans3,  [trans3, Fluid.of('aeronautics:levitite_blend', 1000)]),
+        event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:cloud_rod']),
+        event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+        event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:air_rune']),
+    ]).transitionalItem(trans3).loops(2)
 
     // Око Семи Морей
     event.shaped('endrem:exotic_eye', [

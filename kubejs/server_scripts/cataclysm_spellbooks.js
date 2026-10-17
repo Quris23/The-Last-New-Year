@@ -93,34 +93,57 @@ ServerEvents.recipes(event => {
   })
 
   // Броня + трость Инженера
-  event.custom({
-    type: 'minecraft:smithing_transform',
-    base: { item: 'irons_spellbooks:netherite_mage_helmet' },
-    template: { item: 'create:precision_mechanism' },
-    addition: { item: 'irons_spellbooks:lightning_rune' },
-    result: { id: 'cataclysm_spellbooks:engineer_hood' }
-  })
-  event.custom({
-    type: 'minecraft:smithing_transform',
-    base: { item: 'irons_spellbooks:netherite_mage_chestplate' },
-    template: { item: 'create:precision_mechanism' },
-    addition: { item: 'irons_spellbooks:lightning_rune' },
-    result: { id: 'cataclysm_spellbooks:engineer_suit' }
-  })
-  event.custom({
-    type: 'minecraft:smithing_transform',
-    base: { item: 'irons_spellbooks:netherite_mage_leggings' },
-    template: { item: 'create:precision_mechanism' },
-    addition: { item: 'irons_spellbooks:lightning_rune' },
-    result: { id: 'cataclysm_spellbooks:engineer_leggings' }
-  })
-  event.custom({
-    type: 'minecraft:smithing_transform',
-    base: { item: 'irons_spellbooks:netherite_mage_boots' },
-    template: { item: 'create:precision_mechanism' },
-    addition: { item: 'irons_spellbooks:lightning_rune' },
-    result: { id: 'cataclysm_spellbooks:engineer_boots' }
-  })
+  let trans3 = 'kubejs:incomplete_wither_eye'
+  let cogwheel = ['createcasing:brass_cogwheel', 'createcasing:brass_large_cogwheel']
+  let neodymium = ['alexscaves:azure_neodymium_ingot', 'alexscaves:scarlet_neodymium_ingot']
+  event.recipes.create.sequenced_assembly([
+    CreateItem.of('cataclysm_spellbooks:engineer_hood', 0.90),
+    CreateItem.of('irons_spellbooks:netherite_mage_helmet', 0.10)
+    ], 'irons_spellbooks:netherite_mage_helmet', [ 
+      event.recipes.createDeploying(trans3, [trans3, cogwheel]),
+      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
+      event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+      event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
+      event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:lightning_upgrade_orb'])
+    ]).transitionalItem(trans3).loops(1)
+
+  event.recipes.create.sequenced_assembly([
+    CreateItem.of('cataclysm_spellbooks:engineer_suit', 0.90),
+    CreateItem.of('irons_spellbooks:netherite_mage_chestplate', 0.10)
+    ], 'irons_spellbooks:netherite_mage_chestplate', [ 
+      event.recipes.createDeploying(trans3, [trans3, cogwheel]),
+      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
+      event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+      event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
+      event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:lightning_upgrade_orb'])
+    ]).transitionalItem(trans3).loops(1)
+
+  event.recipes.create.sequenced_assembly([
+    CreateItem.of('cataclysm_spellbooks:engineer_leggings', 0.90),
+    CreateItem.of('irons_spellbooks:netherite_mage_leggings', 0.10)
+    ], 'irons_spellbooks:netherite_mage_leggings', [ 
+      event.recipes.createDeploying(trans3, [trans3, cogwheel]),
+      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
+      event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+      event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
+      event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:lightning_upgrade_orb'])
+    ]).transitionalItem(trans3).loops(1)
+
+  event.recipes.create.sequenced_assembly([
+    CreateItem.of('cataclysm_spellbooks:engineer_boots', 0.90),
+    CreateItem.of('irons_spellbooks:netherite_mage_boots', 0.10)
+    ], 'irons_spellbooks:netherite_mage_boots', [ 
+      event.recipes.createDeploying(trans3, [trans3, cogwheel]),
+      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
+      event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+      event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
+      event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:lightning_upgrade_orb'])
+    ]).transitionalItem(trans3).loops(1)
+
   event.custom({
     type: 'minecraft:smithing_transform',
     base: { item: 'irons_spellbooks:lightning_rod' },

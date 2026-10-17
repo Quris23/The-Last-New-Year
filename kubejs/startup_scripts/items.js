@@ -22,6 +22,8 @@ StartupEvents.registry('item', event => {
     event.create('aurumite_ingot').displayName('Аурумитовый слиток').rarity('uncommon')
     event.create('aurumite_scrap').displayName('Аурумитовый лом')
 
+    event.create('mithridium_ingot').displayName('Мифридиновый слиток').rarity('uncommon')
+
     event.create('incomplete_cursium_upgrade_smithing_template', 'create:sequenced_assembly')
     .displayName('Незавершенный кузнечный шаблон')
     event.create('incomplete_ignitium_upgrade_smithing_template', 'create:sequenced_assembly')
@@ -58,6 +60,9 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_lost_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Истинной Скверны')
 
+    event.create('incomplete_wither_eye', 'create:sequenced_assembly')
+    .displayName('Незавершенное Око Вечных Бурь')
+
     event.create('incomplete_nether_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Адского Пламени')
 
@@ -81,6 +86,13 @@ StartupEvents.registry('fluid', event => {
       .displayName('Жидкость аннигиляции')
       .stillTexture('kubejs:fluid/annihilation_fluid_still')
       .flowingTexture('kubejs:fluid/annihilation_fluid_flow')
+      //.noBlock()
+
+    // Облако 
+    event.create('cloud_fluid')
+      .displayName('Облачная жидкость')
+      .stillTexture('kubejs:fluid/cloud_still')
+      .flowingTexture('kubejs:fluid/cloud_flowing')
       //.noBlock()
 })
 
