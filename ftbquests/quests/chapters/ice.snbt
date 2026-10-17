@@ -565,5 +565,54 @@
 			x: -8.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["2D69BB81FED8AA3F"]
+			entity_vis_size: 1.0f
+			id: "55EB3157FA6A253E"
+			invisible: true
+			shape: "diamond"
+			tasks: [{
+				id: "58B829E96525E14E"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["34A6C0F7ECCC24EC"]
+			entity_vis_size: 1.0f
+			id: "06A2B72B7D6B4A85"
+			tasks: [{
+				id: "11F5204E913BFF38"
+				item: { count: 1, id: "block_factorys_bosses:ice_gauntlet" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "34A6C0F7ECCC24EC"
+			tasks: [{
+				entity: "block_factorys_bosses:yeti"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "39A691C5CAA53A4D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: 12.0d
+		}
 	]
 }

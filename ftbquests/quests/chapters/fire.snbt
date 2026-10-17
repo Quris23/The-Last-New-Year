@@ -614,5 +614,19 @@
 			x: 8.0d
 			y: 12.0d
 		}
+		{
+			dependencies: ["4051AA53CA84BC74"]
+			entity_vis_size: 1.0f
+			id: "103248E575D0A8BE"
+			invisible: true
+			shape: "diamond"
+			tasks: [{
+				id: "208F593D880FD3B8"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
 	]
 }

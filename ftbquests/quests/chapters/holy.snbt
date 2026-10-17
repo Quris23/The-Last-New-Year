@@ -345,17 +345,35 @@
 		}
 		{
 			dependencies: [
-				"3AAA000000000011"
 				"3ED7A18213D61ECB"
+				"3AAA000000000012"
 			]
 			entity_vis_size: 1.0f
 			id: "277374578D9D717B"
-			tasks: [{
-				id: "3C6318BE5AD31B46"
-				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
-				type: "item"
-			}]
-			x: 4.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5A1D0C7E3B9F2A41"
+					item: { count: 1, id: "spellclasses:paladin_helmet" }
+					type: "item"
+				}
+				{
+					id: "3C6318BE5AD31B46"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:paladin_chestplate" }
+					type: "item"
+				}
+				{
+					id: "6B2E1D8F4CA03B52"
+					item: { count: 1, id: "spellclasses:paladin_leggings" }
+					type: "item"
+				}
+				{
+					id: "7C3F2E905DB14C63"
+					item: { count: 1, id: "spellclasses:paladin_boots" }
+					type: "item"
+				}
+			]
+			x: 10.0d
 			y: 10.0d
 		}
 		{
@@ -391,8 +409,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
-			y: 10.0d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3ED7A18213D61ECB"]
@@ -403,8 +421,8 @@
 				item: { count: 1, id: "irons_spellbooks:decrepit_key" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 12.0d
+			x: 12.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3AAA00000000000E"]
@@ -454,6 +472,20 @@
 			}]
 			x: 6.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["3AAA000000000005"]
+			entity_vis_size: 1.0f
+			id: "0DB08205137A476C"
+			invisible: true
+			shape: "diamond"
+			tasks: [{
+				id: "54C849EFF6BBDA2E"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
 		}
 	]
 }

@@ -511,5 +511,43 @@
 			x: 10.0d
 			y: 8.0d
 		}
+		{
+			dependencies: ["76860364B8C33AC7"]
+			entity_vis_size: 1.0f
+			id: "0764CD5F731EFA2F"
+			tasks: [{
+				id: "69C18DD069B6BDA8"
+				item: { count: 1, id: "create_wizardry:channeler" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["37AA000000000018"]
+			entity_vis_size: 1.0f
+			id: "2E41B7D903C5A682"
+			tasks: [{
+				id: "35C91A7E4D0B6F28"
+				item: { count: 1, id: "shield_generators:shield_generator" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["37AA000000000005"]
+			entity_vis_size: 1.0f
+			id: "7F2105ABBE878380"
+			invisible: true
+			shape: "diamond"
+			tasks: [{
+				id: "30C0743D93CB1642"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
 	]
 }

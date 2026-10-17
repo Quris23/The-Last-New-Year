@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3eddeb7e5237b681"
+	group: "2BBAFBD860BE8ADE"
+	id: "3EDDEB7E5237B681"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "68D519245B2F1227"
+			tasks: [{
+				id: "58CF8E8859C38252"
+				item: { count: 1, id: "endrem:cursed_eye" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6830E7D102A6163D"
+			tasks: [{
+				id: "1E6BE1338773E858"
+				item: { count: 1, id: "endrem:rogue_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0ADDF091CBFA0B09"
+			tasks: [{
+				id: "56A1436426CE3738"
+				item: { count: 1, id: "northstar:telescope" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "northstar:moon_sand"
+			}
+			id: "5783BFA3305EA4DC"
+			tasks: [{
+				dimension: "northstar:moon"
+				id: "699684DB6ED8903C"
+				type: "dimension"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "northstar:mars_sand"
+			}
+			id: "241389BD1176153D"
+			tasks: [{
+				dimension: "northstar:mars"
+				id: "1DDD8363EBDEA66C"
+				type: "dimension"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:eye_of_annihilation"
+			}
+			id: "3F227346DA40697E"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_space_station"
+				criterion: ""
+				id: "4F6922CCD1A99F2C"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3F227346DA40697E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "20D499CC86629B5A"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_wandering_eye"
+				criterion: ""
+				id: "3B056EAB7FCF772D"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["20D499CC86629B5A"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:enderitium_ingot"
+			}
+			id: "7885722AE51B2D69"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_flame_drifter"
+				criterion: ""
+				id: "384AC71BB7C5CE8D"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7885722AE51B2D69"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:enderitium_gem"
+			}
+			id: "4806C44BAEA3BC8D"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_flameborn_guard"
+				criterion: ""
+				id: "0ABB830EFCFA3176"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4806C44BAEA3BC8D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:eye_crystal"
+			}
+			id: "33C0A1565E83ABCB"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_annihilation_pursuer"
+				criterion: ""
+				id: "19CBD0530CECC79F"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["33C0A1565E83ABCB"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:portal_shard"
+			}
+			id: "1BA8B77D8CBA549E"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_the_obliterator"
+				criterion: ""
+				id: "1293DB02C7221E35"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+	]
+}

@@ -1,0 +1,711 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "786780887b963a8c"
+	group: ""
+	icon: {
+		id: "minecraft:wheat"
+	}
+	id: "786780887B963A8C"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:cookie"
+			}
+			id: "2AD38DC2EA7A1C74"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/allay_deliver_item_to_player"
+				criterion: ""
+				id: "0467A00A3EF7F902"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:wheat"
+			}
+			id: "7CBDE09894FDC02D"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/breed_an_animal"
+				criterion: ""
+				id: "284DEC46F277991F"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:fishing_rod"
+			}
+			id: "2FFB725CE8CE861B"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/fishy_business"
+				criterion: ""
+				id: "1A8DE172F729F469"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 6.75d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:glow_ink_sac"
+			}
+			id: "5BBE3712155587A3"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/make_a_sign_glow"
+				criterion: ""
+				id: "5E4DE1BCCC439E1A"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:sniffer_egg"
+			}
+			id: "23F0BE53F278723F"
+			optional: true
+			tasks: [{
+				id: "6C310DB697DD1E1A"
+				item: { count: 1, id: "minecraft:sniffer_egg" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:wheat"
+			}
+			id: "67A8AE67CB4309E8"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/plant_seed"
+				criterion: ""
+				id: "1CF0DB24D2F863C3"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 15.75d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:oak_boat"
+			}
+			id: "43ADB82B6C17B953"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/ride_a_boat_with_a_goat"
+				criterion: ""
+				id: "6797B0D8EAEA7C5B"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 21.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:honey_bottle"
+			}
+			id: "5E75F6B1CC94EB9F"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/safely_harvest_honey"
+				criterion: ""
+				id: "5636D41062820F38"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 22.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:bee_nest"
+			}
+			id: "5325A538987C5FA5"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/silk_touch_nest"
+				criterion: ""
+				id: "2BDDE155B22DCB21"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:tadpole_bucket"
+			}
+			id: "0062DEE86556FA71"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/tadpole_in_a_bucket"
+				criterion: ""
+				id: "1FB958951274DC8D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 25.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:lead"
+			}
+			id: "7A51B3B2A573BBF2"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/tame_an_animal"
+				criterion: ""
+				id: "1049FD5E77975E24"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 30.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:diamond_pickaxe"
+			}
+			id: "74F40AA97D0361C6"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/mine_toretoise"
+				criterion: ""
+				id: "0CB20A2B57EB2AC8"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 34.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "supplementaries:slingshot"
+			}
+			id: "4C219ECA4F37AE20"
+			optional: true
+			tasks: [{
+				advancement: "supplementaries:husbandry/angry_birds"
+				criterion: ""
+				id: "28EFFF091BEFF361"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 36.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "supplementaries:soap"
+			}
+			id: "33F505696652CF58"
+			optional: true
+			tasks: [{
+				advancement: "supplementaries:husbandry/soap"
+				criterion: ""
+				id: "78D2AEAA0C3AA211"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 37.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "supplementaries:turn_table"
+			}
+			id: "3932B1DF458E0E35"
+			optional: true
+			tasks: [{
+				advancement: "supplementaries:husbandry/turn_table"
+				criterion: ""
+				id: "5C1D6F4078F98963"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 39.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "supplementaries:wrench"
+			}
+			id: "1D359497EC4ABD65"
+			optional: true
+			tasks: [{
+				advancement: "supplementaries:husbandry/wrench"
+				criterion: ""
+				id: "0085B9C6FF41B945"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 40.5d
+		}
+		{
+			dependencies: ["2AD38DC2EA7A1C74"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:note_block"
+			}
+			id: "7BD7F6F0F68780B3"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/allay_deliver_cake_to_note_block"
+				criterion: ""
+				id: "0C3606087A2F8663"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CBDE09894FDC02D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:golden_carrot"
+			}
+			id: "0E46FDE0E8647A63"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/bred_all_animals"
+				criterion: ""
+				id: "2DA55CE98E379CAD"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7CBDE09894FDC02D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:poisonous_potato"
+			}
+			id: "09F7B7FBC7873D4F"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/poison_baby"
+				criterion: ""
+				id: "55D5CBD348A1117B"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CBDE09894FDC02D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:egg_parrot_red_blue"
+			}
+			id: "0956ECD7D077BD50"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/throw_parrot_egg"
+				criterion: ""
+				id: "0C0863B82F416010"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2FFB725CE8CE861B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:pufferfish_bucket"
+			}
+			id: "4E2FF9D6BD73E78E"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/tactical_fishing"
+				criterion: ""
+				id: "69CEB565E2CA033F"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 6.75d
+		}
+		{
+			dependencies: ["23F0BE53F278723F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:torchflower_seeds"
+			}
+			id: "6A2E2636D47ABFA2"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/feed_snifflet"
+				criterion: ""
+				id: "03D6AD46374C7CB3"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:apple"
+			}
+			id: "1E7921D08D359691"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/balanced_diet"
+				criterion: ""
+				id: "0609C6FCB3EBB0F0"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:netherite_hoe"
+			}
+			id: "6F91BFB75C5332D3"
+			optional: true
+			tasks: [{
+				id: "3A19AA790664B765"
+				item: { count: 1, id: "minecraft:netherite_hoe" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:ancient_fruit"
+			}
+			id: "0FD5B556F8D998EB"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/ancient_apple_overlevel"
+				criterion: ""
+				id: "2B0B34737DDA63F1"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:red_blossom_sapling"
+			}
+			id: "56912F9CE47E1122"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/get_all_blossom_saplings"
+				criterion: ""
+				id: "3F5CEC952D7B8C76"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:tiny_potato"
+			}
+			id: "2B5BBFC5EA3BFA16"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/pat_potato"
+				criterion: ""
+				id: "1E66709CBF99FF9C"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["67A8AE67CB4309E8"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:suspicious_stew"
+			}
+			id: "49FD8DD0C52D4245"
+			optional: true
+			tasks: [{
+				advancement: "supplementaries:husbandry/sus_stew"
+				criterion: ""
+				id: "6D9C427CC87290E2"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["5E75F6B1CC94EB9F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:honeycomb"
+			}
+			id: "454723CD55288D91"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/wax_on"
+				criterion: ""
+				id: "4BE83099E777A85B"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["0062DEE86556FA71"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:lead"
+			}
+			id: "055A34FBA18F47C0"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/leash_all_frog_variants"
+				criterion: ""
+				id: "3BA43462C4DBBC67"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["7A51B3B2A573BBF2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:cod"
+			}
+			id: "74DCCF5EA5D83D94"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/complete_catalogue"
+				criterion: ""
+				id: "2CEF6F305222EBA1"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["7A51B3B2A573BBF2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:shears"
+			}
+			id: "4C82C05805E3F410"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/remove_wolf_armor"
+				criterion: ""
+				id: "180A1CDC53F28FBE"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 28.5d
+		}
+		{
+			dependencies: ["7A51B3B2A573BBF2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:wolf_armor"
+			}
+			id: "3C64535151751786"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/repair_wolf_armor"
+				criterion: ""
+				id: "031A28ADBC2FAE2D"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["7A51B3B2A573BBF2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "51EF16B625488D23"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/whole_pack"
+				criterion: ""
+				id: "7D11B4E4292EC79A"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 31.5d
+		}
+		{
+			dependencies: ["7A51B3B2A573BBF2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:torch"
+			}
+			id: "4C2C7E20396FDE8A"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/shiba_help"
+				criterion: ""
+				id: "45C2F1A205172858"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["74F40AA97D0361C6"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:glow_berries"
+			}
+			id: "235F9FDE4B97DF51"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/mine_fed_toretoise"
+				criterion: ""
+				id: "3FC991776378AB99"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 34.5d
+		}
+		{
+			dependencies: ["4E2FF9D6BD73E78E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:axolotl_bucket"
+			}
+			id: "189B315025DA2409"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/axolotl_in_a_bucket"
+				criterion: ""
+				id: "0D56DDFE6DB342B1"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4E2FF9D6BD73E78E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:crab_bucket"
+			}
+			id: "23634F27C84F91D3"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/crab_in_a_bucket"
+				criterion: ""
+				id: "0E7B55E280B5B7F0"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6A2E2636D47ABFA2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:pitcher_pod"
+			}
+			id: "05F23BA12F9D78A1"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/plant_any_sniffer_seed"
+				criterion: ""
+				id: "70ADB58A13142AB1"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["454723CD55288D91"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:stone_axe"
+			}
+			id: "24B8CFEA14FAD371"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/wax_off"
+				criterion: ""
+				id: "316B0F3443C0B5E6"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["055A34FBA18F47C0"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:verdant_froglight"
+			}
+			id: "2CE525EAE42F26B6"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/froglights"
+				criterion: ""
+				id: "0D56EFFBBBD49F6B"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["189B315025DA2409"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:tropical_fish_bucket"
+			}
+			id: "4F05FF9733077E22"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:husbandry/kill_axolotl_target"
+				criterion: ""
+				id: "47884B65E3C144E2"
+				type: "advancement"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+	]
+}

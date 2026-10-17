@@ -1,0 +1,478 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "021f60413ad648b0"
+	group: "2BBAFBD860BE8ADE"
+	id: "021F60413AD648B0"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "77C2030252BB5AD7"
+			tasks: [{
+				id: "02C4BF0E401E0E85"
+				item: { count: 1, id: "endrem:black_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "2F7D9F30D5F4C028"
+			tasks: [{
+				id: "34E80FCB02F416E5"
+				item: { count: 1, id: "endrem:old_eye" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:sculk"
+			}
+			id: "517560E2A9B090DC"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/root"
+				criterion: ""
+				id: "3DA1225BC4576106"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 7.125d
+		}
+		{
+			dependencies: ["517560E2A9B090DC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:deepslate_tiles"
+			}
+			id: "2F02B8B9993124D7"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_city"
+				criterion: ""
+				id: "0B16AEEB3F77CF3C"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 7.125d
+		}
+		{
+			dependencies: ["2F02B8B9993124D7"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:heart_of_the_deep"
+			}
+			id: "4607EEFDB1BEDEC2"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/kill_warden"
+				criterion: ""
+				id: "36477A0D2590F012"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 7.125d
+		}
+		{
+			dependencies: ["4607EEFDB1BEDEC2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:reinforced_deepslate"
+			}
+			id: "2F5F5B62AE38E682"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/enter_otherside"
+				criterion: ""
+				id: "0885E77230F671EE"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4607EEFDB1BEDEC2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:reinforced_echo_shard"
+			}
+			id: "1E214A12F76331DC"
+			optional: true
+			tasks: [{
+				id: "01952B20ED0CD5EE"
+				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2F5F5B62AE38E682"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:warden_boots"
+			}
+			id: "3EC0E7112ACE53DC"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/explore_otherside"
+				criterion: ""
+				id: "7512DA2E3B140EFA"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2F5F5B62AE38E682"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:cut_sculk_stone"
+			}
+			id: "090111D346C8A35E"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_temple"
+				criterion: ""
+				id: "31FD8A0E66A20F97"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F5F5B62AE38E682"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:warden_sword"
+			}
+			id: "503929968D2F7A7A"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/kill_all_sculk_mobs"
+				criterion: ""
+				id: "1C019699EC49E674"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F5F5B62AE38E682"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:sonorous_staff"
+			}
+			id: "7BB0742EC33054C3"
+			optional: true
+			tasks: [{
+				id: "54EBC9B189B7D98E"
+				item: { count: 1, id: "deeperdarker:sonorous_staff" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1E214A12F76331DC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:warden_chestplate"
+			}
+			id: "6755F6BC66F721A7"
+			optional: true
+			tasks: [{
+				advancement: "deeperdarker:main/warden_armor"
+				criterion: ""
+				id: "60C20A028595DF4B"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["090111D346C8A35E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "deeperdarker:sculk_transmitter"
+			}
+			id: "6B395F6B9A89F23F"
+			optional: true
+			tasks: [{
+				id: "17758DC019ED8758"
+				item: { count: 1, id: "deeperdarker:sculk_transmitter" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "cataclysm:sandstone_poison_dart_trap"
+			}
+			id: "5109E68B4A16460E"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_cursed_pyramid"
+				criterion: ""
+				id: "26B124F596372E19"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["5109E68B4A16460E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "cataclysm:remnant_skull"
+			}
+			id: "4B4AFC7068129E0D"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:kill_remnant"
+				criterion: ""
+				id: "39B20EE03D1ABA52"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:reinforced_deepslate_bricks"
+			}
+			id: "4D9E158D8DF675F4"
+			optional: true
+			tasks: [{
+				advancement: "archaion:root"
+				criterion: ""
+				id: "3C147F71FA0EF4A4"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 16.625d
+		}
+		{
+			dependencies: ["4D9E158D8DF675F4"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "544789F9D1D90EB3"
+			optional: true
+			tasks: [{
+				advancement: "archaion:obtain_map"
+				criterion: ""
+				id: "30A89671A008D828"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 16.625d
+		}
+		{
+			dependencies: ["544789F9D1D90EB3"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:reinforced_deepslate_bricks"
+			}
+			id: "62A2C557CE2E083C"
+			optional: true
+			tasks: [{
+				advancement: "archaion:enter_ancient_keep"
+				criterion: ""
+				id: "2B077B8D65CE299A"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 16.625d
+		}
+		{
+			dependencies: ["62A2C557CE2E083C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:brave_rod"
+			}
+			id: "4CA44AE5CE995071"
+			optional: true
+			tasks: [{
+				id: "52379E504C0050F0"
+				item: { count: 1, id: "archaion:brave_rod" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["62A2C557CE2E083C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:echo_key"
+			}
+			id: "5B47BABA33892BED"
+			optional: true
+			tasks: [{
+				id: "56685CF51FE8F439"
+				item: { count: 1, id: "archaion:echo_key" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 17.75d
+		}
+		{
+			dependencies: ["4CA44AE5CE995071"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:impact_pearl"
+			}
+			id: "3FE09F288C6C396B"
+			optional: true
+			tasks: [{
+				id: "4E216A1861A11C96"
+				item: { count: 1, id: "archaion:impact_pearl" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5B47BABA33892BED"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:echo_charge"
+			}
+			id: "00CA36367E6B161C"
+			optional: true
+			tasks: [{
+				id: "3276048C2C1486AE"
+				item: { count: 1, id: "archaion:echo_charge" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 17.75d
+		}
+		{
+			dependencies: ["00CA36367E6B161C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:echos_grace"
+			}
+			id: "35ABDB517E36EA4B"
+			optional: true
+			tasks: [{
+				id: "7FD0162C72FAEE80"
+				item: { count: 1, id: "archaion:echos_grace" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["00CA36367E6B161C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:last_of_deepslate_spawn_egg"
+			}
+			id: "72F522AF6B60F6A7"
+			optional: true
+			tasks: [{
+				advancement: "archaion:kill_last_of_deepslate"
+				criterion: ""
+				id: "5FE637D41B3AB19E"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: 18.5d
+		}
+		{
+			dependencies: ["72F522AF6B60F6A7"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "archaion:echo_mace"
+			}
+			id: "2BE80DDDC5822D79"
+			optional: true
+			tasks: [{
+				id: "0013D0E9CBEFD467"
+				item: { count: 1, id: "archaion:echo_mace" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 18.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:sculk_catalyst"
+			}
+			id: "0DACF2B913208F76"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/kill_mob_near_sculk_catalyst"
+				criterion: ""
+				id: "16378A2EF2850D34"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 21.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:sculk_sensor"
+			}
+			id: "67F2DF4244DE4C6F"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/avoid_vibration"
+				criterion: ""
+				id: "3C1C0C5190F4314F"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 23.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:brush"
+			}
+			id: "7E0A6F35EA2B2284"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/salvage_sherd"
+				criterion: ""
+				id: "7DC6EEB53E6C79A8"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 24.5d
+		}
+		{
+			dependencies: ["7E0A6F35EA2B2284"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:decorated_pot"
+			}
+			id: "349BF56DE6F5FE9A"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/craft_decorated_pot_using_only_sherds"
+				criterion: ""
+				id: "5EADDFF7E21AD030"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 24.5d
+		}
+	]
+}

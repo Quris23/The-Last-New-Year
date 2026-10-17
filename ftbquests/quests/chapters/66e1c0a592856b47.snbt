@@ -1,0 +1,34 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "66e1c0a592856b47"
+	group: "2BBAFBD860BE8ADE"
+	id: "66E1C0A592856B47"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "4B523F6C2C36128D"
+			tasks: [{
+				id: "23700E5F92310CA1"
+				item: { count: 1, id: "endrem:undead_eye" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6DF0CE715CCE77A3"
+			tasks: [{
+				id: "2AD78AF0C57A6619"
+				item: { count: 1, id: "endrem:nether_eye" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+	]
+}

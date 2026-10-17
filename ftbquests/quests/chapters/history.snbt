@@ -1,0 +1,159 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "history"
+	group: "2BBAFBD860BE8ADE"
+	icon: {
+		id: "minecraft:end_portal_frame"
+	}
+	id: "4B1570A10000C001"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000001"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000001"
+				item: { count: 1, id: "endrem:cryptic_eye" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000002"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000002"
+				item: { count: 1, id: "endrem:black_eye" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000003"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000003"
+				item: { count: 1, id: "endrem:lost_eye" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000004"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000004"
+				item: { count: 1, id: "endrem:corrupted_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000005"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000005"
+				item: { count: 1, id: "endrem:old_eye" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000006"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000006"
+				item: { count: 1, id: "endrem:cold_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000007"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000007"
+				item: { count: 1, id: "endrem:undead_eye" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000008"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000008"
+				item: { count: 1, id: "endrem:wither_eye" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E00000000009"
+			shape: "square"
+			tasks: [{
+				id: "2157E00000000009"
+				item: { count: 1, id: "endrem:exotic_eye" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E0000000000A"
+			shape: "square"
+			tasks: [{
+				id: "2157E0000000000A"
+				item: { count: 1, id: "endrem:rogue_eye" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E0000000000B"
+			shape: "square"
+			tasks: [{
+				id: "2157E0000000000B"
+				item: { count: 1, id: "endrem:nether_eye" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1157E0000000000C"
+			shape: "square"
+			tasks: [{
+				id: "2157E0000000000C"
+				item: { count: 1, id: "endrem:cursed_eye" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+	]
+}

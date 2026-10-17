@@ -1,0 +1,135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "296bcbeaae93eff8"
+	group: "2BBAFBD860BE8ADE"
+	id: "296BCBEAAE93EFF8"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "538B896949C66783"
+			tasks: [{
+				id: "5AABF525F1D47A88"
+				item: { count: 1, id: "endrem:cold_eye" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0F3AFC67678479F6"
+			tasks: [{
+				id: "03C34C51FE4D46C0"
+				item: { count: 1, id: "endrem:exotic_eye" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7F4F8616DE5CB0F7"
+			tasks: [{
+				id: "3D86734817E96C6B"
+				item: { count: 1, id: "endrem:wither_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "490FB13F04F110AC"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/throw_trident"
+				criterion: ""
+				id: "2D701FC342B187FB"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["490FB13F04F110AC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "477F1BD5BC6620E7"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:adventure/very_very_frightening"
+				criterion: ""
+				id: "71018B4C064D1152"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["490FB13F04F110AC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:trident"
+			}
+			id: "72E188EBD6F3A789"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:adventure/find_trident_trial_monument"
+				criterion: ""
+				id: "2B36CD1C2A806E91"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["72E188EBD6F3A789"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:prismarine_shard"
+			}
+			id: "46931F2C2B0A1459"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:adventure/kill_guardian_boss"
+				criterion: ""
+				id: "72D74F6DBF1FD5CC"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "6BB28019F37FEF02"
+			tasks: [{
+				id: "1CD65AE49808682E"
+				item: { count: 1, id: "block_factorys_bosses:kraken_tooth" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6BB28019F37FEF02"]
+			entity_vis_size: 1.0f
+			id: "71FF164748B3DA6C"
+			tasks: [{
+				id: "5602D53C2D6F0015"
+				item: { count: 1, id: "block_factorys_bosses:kraken_trident" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+}

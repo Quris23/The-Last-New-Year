@@ -1,0 +1,1733 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5c68a55e22912fb1"
+	group: "2BBAFBD860BE8ADE"
+	hide_quest_until_deps_complete: true
+	icon: {
+		components: {
+			"ftbquests:icon": "born_in_chaos_v1:textures/mob_effect/furious_rampage.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "5C68A55E22912FB1"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1157E00000000001"
+				"1157E00000000004"
+				"1375956687662C80"
+				"5B6E18941C28F3F7"
+				"08D0724665A2E053"
+				"0BD41BEFA7356F1A"
+				"156C707701FEBB97"
+				"0AFF8EFCB98B2B97"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "62E099C44C866A43"
+			preset: "goal"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "0FD5419CD131B185"
+				item: { count: 1, id: "endrem:lost_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CEC6B1C2B8B4ACD"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:fangofthe_hound_leader"
+			}
+			id: "3DFA857DEBEC8A43"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:dire_hound_leader"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "25B25D40EC6497D3"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DA28997C1305AA7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:smoked_flesh"
+			}
+			id: "21A6C882289AE5BD"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:bypassingthe_expiration_date"
+				criterion: ""
+				id: "403B9CE132A10D51"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"3A66F32F67285A6E"
+				"39424870BBA20B2B"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:missionaryicon"
+			}
+			id: "65A702192EC1E344"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "born_in_chaos_v1:missioner"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "6F16A8CEC8498D6A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:pieceofdarkmetal"
+			}
+			id: "2CB1F1EBE8116A8A"
+			optional: true
+			tasks: [{
+				id: "347814E5068E2FCD"
+				item: { count: 1, id: "born_in_chaos_v1:pieceofdarkmetal" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3080B9DE181CC911"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:deceived_hopes_icon"
+			}
+			id: "391B86782D5B5C91"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:deceived_hopes"
+				criterion: ""
+				id: "1B56F70C74375C56"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3BEF00C7CEB2B0E7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:double_troubleicon"
+			}
+			id: "3B9A753369AA39CF"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:double_trouble"
+				criterion: ""
+				id: "7C52AC107F3CD2F9"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3EAE06C6D966C592"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:exorcism_icon"
+			}
+			id: "0346BDB14EE34145"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				advancement: "born_in_chaos_v1:exorcism"
+				criterion: ""
+				id: "34757E5F2956B4E2"
+				type: "advancement"
+			}]
+			x: -3.125d
+			y: -5.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:nightmare_stalker_skull"
+			}
+			id: "3080B9DE181CC911"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "484E09D55A406CFD"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7DA28997C1305AA7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:monster_flesh"
+			}
+			id: "09D9EDB915B3D59B"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:food_fight"
+				criterion: ""
+				id: "76CBA95FE11B2607"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["7DA28997C1305AA7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:mint_candy"
+			}
+			id: "0F81C317C21C49BE"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:freshen_your_breath"
+				criterion: ""
+				id: "1D0FE2311A1827EB"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["502E57871915277C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:good_demoman_icon"
+			}
+			id: "3BEF00C7CEB2B0E7"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:skeleton_demoman"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7F88C9A36415B0D4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:gravestone_icon"
+			}
+			id: "3EAE06C6D966C592"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:grave_ravager"
+				criterion: ""
+				id: "6BFEF43ED40C98E5"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3EAE06C6D966C592"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spirit_guideicon"
+			}
+			id: "4CA2AD6C7EFFB948"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:spirit_guide"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "279A37B012207D92"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"6A675805832339DB"
+				"4E897A7FADC53AC8"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:lifestealer_bone"
+			}
+			id: "19B86705CB8DCDD5"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "born_in_chaos_v1:lifestealer"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "5BBC7E5F625C7898"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["502E57871915277C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:sea_terror_eye"
+			}
+			id: "7DA28997C1305AA7"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:glutton_fish"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1C13165483819378"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["08D0724665A2E053"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:lifeturnedouttobeacomedyicon"
+			}
+			id: "502E57871915277C"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:zombie_clown"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7063B69C2D72C70F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3149E634C778A96A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spiritual_gingerbread"
+			}
+			id: "121AFEB3B6260FBD"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:naughty_child"
+				criterion: ""
+				id: "6CB696F15A0254D2"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:pumpkinhead_icon"
+			}
+			id: "3149E634C778A96A"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:sir_pumpkinhead"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1EDD72C3D53146B9"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3149E634C778A96A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:pumpkin_spirit_icon"
+			}
+			id: "0FC7253D957CDB20"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:scarecrow"
+				criterion: ""
+				id: "4DA4C54F7A2A08DB"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["3EAE06C6D966C592"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:ethereal_spirit"
+			}
+			id: "15D49CD5E32186AB"
+			optional: true
+			tasks: [{
+				id: "42F88B672216D43D"
+				item: { count: 1, id: "born_in_chaos_v1:ethereal_spirit" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3EAE06C6D966C592"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:dark_charge"
+			}
+			id: "0C44F6226C4E4FC9"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:dark_vortex"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "2E7D17D9DE3274EB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7DA28997C1305AA7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spiny_shell"
+			}
+			id: "7B8340684AAAA9E2"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:waste_recycler"
+				criterion: ""
+				id: "4C4BE2A30D2867B0"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4CEC6B1C2B8B4ACD"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spider_bite_sword"
+			}
+			id: "3A66F32F67285A6E"
+			optional: true
+			tasks: [{
+				id: "6A3542459A8D7B4D"
+				item: { count: 1, id: "born_in_chaos_v1:spider_bite_sword" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DFA857DEBEC8A43"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:hound_trap"
+			}
+			id: "39424870BBA20B2B"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:unlucky_hunter"
+				criterion: ""
+				id: "7583684456468D03"
+				type: "advancement"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["65A702192EC1E344"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:all_charm"
+			}
+			id: "6A675805832339DB"
+			optional: true
+			tasks: [
+				{
+					id: "22145220A506469E"
+					item: { count: 1, id: "born_in_chaos_v1:charmof_power" }
+					type: "item"
+				}
+				{
+					id: "77DD3C7D0BBA3C90"
+					item: { count: 1, id: "born_in_chaos_v1:charmof_resistance" }
+					type: "item"
+				}
+				{
+					id: "47196462C8BF8283"
+					item: { count: 1, id: "born_in_chaos_v1:charmof_stealth" }
+					type: "item"
+				}
+				{
+					id: "649F0DD43BCE4B19"
+					item: { count: 1, id: "born_in_chaos_v1:charmof_endurance" }
+					type: "item"
+				}
+				{
+					id: "0F20D1787121CB42"
+					item: { count: 1, id: "born_in_chaos_v1:charmof_fury" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65A702192EC1E344"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:missionary_hat_helmet"
+			}
+			id: "4E897A7FADC53AC8"
+			optional: true
+			tasks: [{
+				id: "3EF5264C458BDFE5"
+				item: { count: 1, id: "born_in_chaos_v1:missionary_hat_helmet" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CB1F1EBE8116A8A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_ingot"
+			}
+			id: "19543DC9F2294C39"
+			optional: true
+			tasks: [{
+				id: "66573CE330D8CEA6"
+				item: { count: 1, id: "born_in_chaos_v1:dark_metal_ingot" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3B9A753369AA39CF"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:phantom_bomb"
+			}
+			id: "5FBD5E7ACC865D74"
+			optional: true
+			tasks: [{
+				id: "7BED40B504D3AF9E"
+				item: { count: 1, id: "born_in_chaos_v1:phantom_bomb" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3080B9DE181CC911"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:nightmare_mantleofthe_night_helmet"
+			}
+			id: "02DBF377F63507BA"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:unitywith_darknessachievement"
+				criterion: ""
+				id: "70F98175B96FD7C2"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3BEF00C7CEB2B0E7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:damned_demomans_hat_helmet"
+			}
+			id: "4228D9BD6E571782"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:explosive_temper"
+				criterion: ""
+				id: "4F097A2631196A49"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3EAE06C6D966C592"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:burythemall_icon"
+			}
+			id: "58E2E9307EDD61DF"
+			optional: true
+			tasks: [
+				{
+					id: "6D870C0B830095D1"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_dark_titan_066" }
+					type: "item"
+				}
+				{
+					id: "008DA946C8A43AC7"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_petasi" }
+					type: "item"
+				}
+				{
+					id: "61E8432E62065DB6"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_2003wise" }
+					type: "item"
+				}
+				{
+					id: "3079A7F089C7AC7D"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_orion" }
+					type: "item"
+				}
+				{
+					id: "0E4896566FF26EFF"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_derivas" }
+					type: "item"
+				}
+				{
+					id: "2C0565D36A05B6EB"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_fubuki_banzai" }
+					type: "item"
+				}
+				{
+					id: "6666DCD4BFC27912"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_somfunambulist" }
+					type: "item"
+				}
+				{
+					id: "32F78C5B25400C15"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_memesus" }
+					type: "item"
+				}
+				{
+					id: "5F020578EE56C4C4"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_carrion" }
+					type: "item"
+				}
+				{
+					id: "3F21ACA430017804"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_2_dling" }
+					type: "item"
+				}
+				{
+					id: "64BD1E5340CADF25"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_euthymia" }
+					type: "item"
+				}
+				{
+					id: "605916D02624998C"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_feral" }
+					type: "item"
+				}
+				{
+					id: "47C1D6A67CCB9D30"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_mike_rory" }
+					type: "item"
+				}
+				{
+					id: "4F06C80A29F2CBD5"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_d_4rkdevilx" }
+					type: "item"
+				}
+				{
+					id: "1BE272BDD35DE09B"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_rotborne" }
+					type: "item"
+				}
+				{
+					id: "137FA5AAD2A5CD9F"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_the_gentleman_frog" }
+					type: "item"
+				}
+				{
+					id: "72685341192180BA"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_tem_187" }
+					type: "item"
+				}
+				{
+					id: "057E3373D67FC533"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_plug" }
+					type: "item"
+				}
+				{
+					id: "22C82B8682FD65C7"
+					item: { count: 1, id: "born_in_chaos_v1:tombstone_nino_4416" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4CA2AD6C7EFFB948"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet"
+			}
+			id: "25ABA04332A6DB4F"
+			optional: true
+			tasks: [{
+				id: "6813192C25EF0EBC"
+				item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["19B86705CB8DCDD5"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:dark_atrium"
+			}
+			id: "0BD41BEFA7356F1A"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "60DDA1249E95806B"
+				item: { count: 1, id: "born_in_chaos_v1:dark_atrium" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DA28997C1305AA7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:sea_terror_stomach"
+			}
+			id: "5DA43C69F8B33C3A"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:disgusting_lootbox"
+				criterion: ""
+				id: "01ACCEFC55094E8C"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1375956687662C80"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:bonescaller_staff"
+			}
+			id: "756D46E781A9A16E"
+			optional: true
+			tasks: [{
+				id: "5B52B2E1B5556803"
+				item: { count: 1, id: "born_in_chaos_v1:bonescaller_staff" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["502E57871915277C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:intoxicatind_bomb"
+			}
+			id: "3CF0FCD516BF7D80"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:mr_decoction"
+				criterion: ""
+				id: "4722AB1AAE340EE7"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["502E57871915277C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:shakeand_mixicon"
+			}
+			id: "0176E693C47F3684"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:shakeand_mix"
+				criterion: ""
+				id: "6DD990EA41B63511"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["121AFEB3B6260FBD"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:krampuss_bag"
+			}
+			id: "3912C9B151CE3462"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:krampus"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7A2F018B160C835F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["3149E634C778A96A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:sweet_sword"
+			}
+			id: "40A8051CA599F59E"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:sweet_battle"
+				criterion: ""
+				id: "5CE9E3D2A434C72E"
+				type: "advancement"
+			}]
+			x: 6.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3149E634C778A96A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:serpumpkinhead_m"
+			}
+			id: "5589F74CC3F3A0ED"
+			optional: true
+			tasks: [
+				{
+					id: "24989516F88046DC"
+					item: { count: 1, id: "born_in_chaos_v1:anluka_doors" }
+					type: "item"
+				}
+				{
+					id: "7442F1AA8CFE145F"
+					item: { count: 1, id: "born_in_chaos_v1:serpumpkinhead_m" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["3149E634C778A96A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:transmuting_elixir"
+			}
+			id: "3F7D3087DB8483DE"
+			optional: true
+			tasks: [{
+				id: "4703B5C7B77FE0D9"
+				item: { count: 1, id: "born_in_chaos_v1:transmuting_elixir" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7B8340684AAAA9E2"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spiny_shell_armor_chestplate"
+			}
+			id: "7BDBF98335610F74"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:shell_warrior"
+				criterion: ""
+				id: "25499AB99E6C87AB"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["19543DC9F2294C39"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_armor_helmet"
+			}
+			id: "036F4C8DB6C45C1A"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:chaos_knight"
+				criterion: ""
+				id: "79F95572967EB8ED"
+				type: "advancement"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19543DC9F2294C39"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+			}
+			id: "5228EFC78039CA85"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:dark_blacksmith"
+				criterion: ""
+				id: "15793B9D76EC4FD9"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4228D9BD6E571782"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:spruce_cowboy_in_the_moonlighticon"
+			}
+			id: "388FC7CD33AAF8B4"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:spruce_cowboyinthe_moonlight"
+				criterion: ""
+				id: "69504E711925B2A7"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3F7D3087DB8483DE"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:infernal_medicine_icon"
+			}
+			id: "2E3249672C86F574"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				advancement: "born_in_chaos_v1:infernal_medicine"
+				criterion: ""
+				id: "4782F1A7F95AE5E6"
+				type: "advancement"
+			}]
+			x: -0.625d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3F7D3087DB8483DE"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:lord_pumpkinhead_icon"
+			}
+			id: "219A1315F7225780"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "61D2076DC59D7A1A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3F7D3087DB8483DE"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:eternal_candy"
+			}
+			id: "657E0A86A5449DE3"
+			optional: true
+			tasks: [{
+				id: "24C02B769B300718"
+				item: { count: 1, id: "born_in_chaos_v1:eternal_candy" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5228EFC78039CA85"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:skullbreaker_hammer"
+			}
+			id: "55F7F1A917731905"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:bonk"
+				criterion: ""
+				id: "52D0A6A570BDB779"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5228EFC78039CA85"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:darkwarblade"
+			}
+			id: "24758D5A43C9C2B6"
+			optional: true
+			tasks: [{
+				id: "289B082EF38D4983"
+				item: { count: 1, id: "born_in_chaos_v1:darkwarblade" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5228EFC78039CA85"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:great_reaper_axe"
+			}
+			id: "671E237C9A65B145"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:rampage"
+				criterion: ""
+				id: "644F01F2EAA0546A"
+				type: "advancement"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["219A1315F7225780"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+			}
+			id: "59DEFAC595EA782E"
+			optional: true
+			tasks: [{
+				id: "72DD8591827A413D"
+				item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["657E0A86A5449DE3"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:holiday_candy"
+			}
+			id: "3206D842D92FC3CE"
+			optional: true
+			tasks: [
+				{
+					id: "3A1D65DA52DB2D65"
+					item: { count: 1, id: "born_in_chaos_v1:holiday_candy" }
+					type: "item"
+				}
+				{
+					id: "465F297FD947E799"
+					item: { count: 1, id: "born_in_chaos_v1:magical_holiday_candy" }
+					type: "item"
+				}
+				{
+					id: "651C3BD18C0A3824"
+					item: { count: 1, id: "born_in_chaos_v1:mint_candy" }
+					type: "item"
+				}
+				{
+					id: "35E7C34607B4098C"
+					item: { count: 1, id: "born_in_chaos_v1:mint_ice_cream" }
+					type: "item"
+				}
+				{
+					id: "574E5E27B93A00B3"
+					item: { count: 1, id: "born_in_chaos_v1:caramel_pepper" }
+					type: "item"
+				}
+				{
+					id: "7E182AB8FA3306FC"
+					item: { count: 1, id: "born_in_chaos_v1:gummy_vampire_teeth" }
+					type: "item"
+				}
+				{
+					id: "555F4C79A561B21D"
+					item: { count: 1, id: "born_in_chaos_v1:chocolate_heart" }
+					type: "item"
+				}
+				{
+					id: "36A277A0BE7151B1"
+					item: { count: 1, id: "born_in_chaos_v1:coffee_candy" }
+					type: "item"
+				}
+				{
+					id: "154C52A5E275BC6E"
+					item: { count: 1, id: "born_in_chaos_v1:eternal_candy" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["24758D5A43C9C2B6"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:excessflyswattericon"
+			}
+			id: "7A6B82ADD933B4E5"
+			optional: true
+			tasks: [{
+				advancement: "born_in_chaos_v1:excessive_fly_swatter"
+				criterion: ""
+				id: "46A6BD0428D655A5"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["24758D5A43C9C2B6"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:squireofthedarklordicon"
+			}
+			id: "24AD501830F2E1F3"
+			optional: true
+			tasks: [
+				{
+					id: "6FFBA76828D2505F"
+					item: { count: 1, id: "born_in_chaos_v1:nightmare_scythe" }
+					type: "item"
+				}
+				{
+					id: "20701C11ADBA9B7F"
+					item: { count: 1, id: "born_in_chaos_v1:great_reaper_axe" }
+					type: "item"
+				}
+				{
+					id: "74C6297B5BA5F7F0"
+					item: { count: 1, id: "born_in_chaos_v1:skullbreaker_hammer" }
+					type: "item"
+				}
+				{
+					id: "0C2701253F543241"
+					item: { count: 1, id: "born_in_chaos_v1:sharpened_dark_metal_sword" }
+					type: "item"
+				}
+				{
+					id: "7955DC63CFF566D7"
+					item: { count: 1, id: "born_in_chaos_v1:intoxicating_dagger" }
+					type: "item"
+				}
+				{
+					id: "1743A8D988D6267E"
+					item: { count: 1, id: "born_in_chaos_v1:darkwarblade" }
+					type: "item"
+				}
+				{
+					id: "595F9DFF04A4E0AA"
+					item: { count: 1, id: "born_in_chaos_v1:soul_cutlass" }
+					type: "item"
+				}
+				{
+					id: "707ABD62475BCB57"
+					item: { count: 1, id: "born_in_chaos_v1:spider_bite_sword" }
+					type: "item"
+				}
+				{
+					id: "50431A6FFF362DC5"
+					item: { count: 1, id: "born_in_chaos_v1:frostbitten_blade" }
+					type: "item"
+				}
+				{
+					id: "70F2806395CE91EF"
+					item: { count: 1, id: "born_in_chaos_v1:dark_ritual_dagger" }
+					type: "item"
+				}
+				{
+					id: "4DDE1BE73AD99C5F"
+					item: { count: 1, id: "born_in_chaos_v1:spiritual_sword" }
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59DEFAC595EA782E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "born_in_chaos_v1:hats"
+			}
+			id: "397A2530CE2ECECA"
+			optional: true
+			tasks: [
+				{
+					id: "2007E196D3879F87"
+					item: { count: 1, id: "born_in_chaos_v1:damned_demomans_hat_helmet" }
+					type: "item"
+				}
+				{
+					id: "678F1F841CC12D46"
+					item: { count: 1, id: "born_in_chaos_v1:missionary_hat_helmet" }
+					type: "item"
+				}
+				{
+					id: "7EFD1BEC3FA22E0B"
+					item: { count: 1, id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet" }
+					type: "item"
+				}
+				{
+					id: "3CAA17ED402B583D"
+					item: { count: 1, id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet" }
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"036F4C8DB6C45C1A"
+				"24AD501830F2E1F3"
+				"671E237C9A65B145"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "2D85C729D572395E"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "born_in_chaos_v1:supreme_bonescaller_stage_2"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "010E871779382C4E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D85C729D572395E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "1375956687662C80"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "55A72245B2F106DD"
+				item: { count: 1, id: "born_in_chaos_v1:orbofthe_summoner" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19B86705CB8DCDD5"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "30705D0F3795711E"
+			optional: true
+			tasks: [{
+				id: "03A87FE14C26E5CF"
+				item: { count: 1, id: "born_in_chaos_v1:elixir_of_vampirism" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4CEC6B1C2B8B4ACD"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "4172A6B39ADDF1A3"
+			optional: true
+			tasks: [{
+				id: "781D8649A0865E67"
+				item: { count: 1, id: "born_in_chaos_v1:elixirof_insect_protection" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0346BDB14EE34145"
+				"15D49CD5E32186AB"
+				"0C44F6226C4E4FC9"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "5B6E18941C28F3F7"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "78AC892B53D8EDED"
+				item: { count: 1, id: "born_in_chaos_v1:chaos_component" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.25d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "08D0724665A2E053"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1FB69EFFD7EF98C0"
+				item: { count: 1, id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"58E3A5A871F12157"
+				"602948E3AE2283D0"
+				"28EF4F22F43548B9"
+				"44DABDB224F30AAC"
+				"3F40BBAA3C08F269"
+				"2E3249672C86F574"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "156C707701FEBB97"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "705705B8603EEC44"
+				item: { count: 1, id: "born_in_chaos_v1:fel_soil" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"02DBF377F63507BA"
+				"391B86782D5B5C91"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "42C320FA8505013B"
+			optional: true
+			shape: "diamond"
+			size: 1.25d
+			tasks: [{
+				entity: "alexscaves:forsaken"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1E3FCE8DA2CF1194"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.125d
+			y: 4.375d
+		}
+		{
+			dependencies: ["42C320FA8505013B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "0AFF8EFCB98B2B97"
+			optional: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4D8C74A9523A727A"
+				item: { count: 1, id: "alexscaves:darkened_apple" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4CEC6B1C2B8B4ACD"
+			optional: true
+			tasks: [{
+				entity: "born_in_chaos_v1:mother_spider"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "62792ED77A912102"
+				type: "kill"
+				value: 1L
+			}]
+			x: 17.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "3F40BBAA3C08F269"
+			tasks: [{
+				entity: "born_in_chaos_v1:pumpkin_bruiser"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "282A9AABE70BD82B"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "44DABDB224F30AAC"
+			tasks: [{
+				entity: "born_in_chaos_v1:pumpkin_dunce"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "058DF0F38F98C96F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "602948E3AE2283D0"
+			tasks: [{
+				entity: "born_in_chaos_v1:mr_pumpkin"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "3B1DC149A33E2C71"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "28EF4F22F43548B9"
+			tasks: [{
+				entity: "born_in_chaos_v1:senor_pumpkin"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "70EA6A5CB256EE8C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "58E3A5A871F12157"
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead_head"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "477F47956FE77723"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+	]
+}

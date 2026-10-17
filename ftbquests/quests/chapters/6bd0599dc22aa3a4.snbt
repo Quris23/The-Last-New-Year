@@ -1,0 +1,362 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6bd0599dc22aa3a4"
+	group: "2BBAFBD860BE8ADE"
+	id: "6BD0599DC22AA3A4"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			id: "076C026E3B55C236"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: {
+					id: "minecraft:end_stone"
+				}
+				id: "0C2624208F246BA1"
+				type: "dimension"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["076C026E3B55C236"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "59D77E0263A99B13"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/root"
+				criterion: ""
+				id: "1140CF976B3825AE"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 6.482142857142857d
+		}
+		{
+			dependencies: ["59D77E0263A99B13"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:dragon_head"
+			}
+			id: "1734E7D71ADD2949"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "464446F63A09A362"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 6.482142857142857d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:dragon_breath"
+			}
+			id: "591B2A5CFEF80C4C"
+			optional: true
+			tasks: [{
+				id: "69BE55B036F8911A"
+				item: { count: 1, id: "minecraft:dragon_breath" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:dragon_egg"
+			}
+			id: "01AD23C876DA2BF5"
+			optional: true
+			tasks: [{
+				id: "342A32B27D1A5EEF"
+				item: { count: 1, id: "minecraft:dragon_egg" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:ender_pearl"
+			}
+			id: "7FFB554B6550FDD0"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+				id: "747EEF4C8473BC29"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 4.875d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:end_crystal"
+			}
+			id: "15BC5F0EB7B0659A"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/respawn_dragon"
+				criterion: ""
+				id: "6FBD8429453529B0"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:end_portal_frame"
+			}
+			id: "2CB5F8F492391132"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:end/find_end_castle"
+				criterion: ""
+				id: "22335F75AFEBC50F"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:end_rod"
+			}
+			id: "79C04E52F8349C54"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:end/find_end_lighthouse"
+				criterion: ""
+				id: "74C747E301999056"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1734E7D71ADD2949"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:shulker_box"
+			}
+			id: "22A36EA956964A92"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:end/find_end_ship"
+				criterion: ""
+				id: "581D0E1E2E9A4701"
+				type: "advancement"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7FFB554B6550FDD0"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:purpur_block"
+			}
+			id: "7A0C6D5146048701"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+				id: "2E379EA841AFEBA1"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["7FFB554B6550FDD0"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "quark:myalite_crystal"
+			}
+			id: "184F44B5E8E202DA"
+			optional: true
+			tasks: [{
+				advancement: "quark:content/use_viaduct"
+				criterion: ""
+				id: "5DE9853C7A0D9773"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2CB5F8F492391132"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:phantom_membrane"
+			}
+			id: "4C1ED0AE5A905C28"
+			optional: true
+			tasks: [{
+				advancement: "nova_structures:end/kill_phantom_boss"
+				criterion: ""
+				id: "519D86F50F9D39B8"
+				type: "advancement"
+			}]
+			x: 7.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["7A0C6D5146048701"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:elytra"
+			}
+			id: "6B6C5C42B1E778CD"
+			optional: true
+			tasks: [{
+				id: "24F85C96D5C37249"
+				item: { count: 1, id: "minecraft:elytra" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A0C6D5146048701"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:shulker_shell"
+			}
+			id: "670B34F382064BD5"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:end/levitate"
+				criterion: ""
+				id: "714D93716B60AAD8"
+				type: "advancement"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:eye_of_shulker"
+			}
+			id: "477CE9608EEFC4DC"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:end_root"
+				criterion: ""
+				id: "059FF0F857397957"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["477CE9608EEFC4DC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:chorus_mask"
+			}
+			id: "0287C2D22E2BA6A1"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_chorusling"
+				criterion: ""
+				id: "02F0F543C430F4FF"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["477CE9608EEFC4DC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:infected_chorus_fruit"
+			}
+			id: "429BD2C8D6A4F060"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_ancient_tower_remains"
+				criterion: ""
+				id: "5DC08D92438EF215"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["477CE9608EEFC4DC"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:large_shulker_shell"
+			}
+			id: "2D57CBAA606E16C2"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_shulker_tower"
+				criterion: ""
+				id: "20B2802D708063FD"
+				type: "advancement"
+			}]
+			x: 1.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["429BD2C8D6A4F060"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:chorus_blade"
+			}
+			id: "0E49FAC5112E096B"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_endersent"
+				criterion: ""
+				id: "6FEE6467E80321B1"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2D57CBAA606E16C2"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "legendary_monsters:shulker_shield"
+			}
+			id: "50CC275C46541F79"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_shulker_mimic"
+				criterion: ""
+				id: "7B27F52851D158C3"
+				type: "advancement"
+			}]
+			x: 3.5d
+			y: 18.0d
+		}
+	]
+}

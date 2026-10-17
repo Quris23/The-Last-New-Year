@@ -50,7 +50,10 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["10AD1E0000000004"]
+			dependencies: [
+				"10AD1E0000000004"
+				"372321B44E2AC441"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "irons_spellbooks:scroll"
@@ -444,6 +447,82 @@
 			}]
 			x: 0.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["10AD1E0000000020"]
+			entity_vis_size: 1.0f
+			id: "10AD1E00000000C1"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "20AD1E00000000C1"
+					item: { count: 1, id: "irons_spellbooks:pumpkin_helmet" }
+					type: "item"
+				}
+				{
+					id: "20AD1E00000000C2"
+					item: { count: 1, id: "irons_spellbooks:pumpkin_chestplate" }
+					type: "item"
+				}
+				{
+					id: "20AD1E00000000C3"
+					item: { count: 1, id: "irons_spellbooks:pumpkin_leggings" }
+					type: "item"
+				}
+				{
+					id: "20AD1E00000000C4"
+					item: { count: 1, id: "irons_spellbooks:pumpkin_boots" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["10AD1E0000000005"]
+			entity_vis_size: 1.0f
+			id: "297AECF71EBA8D3A"
+			invisible: true
+			shape: "diamond"
+			tasks: [{
+				id: "69A69810D8697B4B"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["10AD1E0000000003"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "irons_spellbooks:alchemist_cauldron"
+			}
+			id: "4E33EE2ABFBFCE64"
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				id: "4FC3B7F201775B5A"
+				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4E33EE2ABFBFCE64"]
+			entity_vis_size: 1.0f
+			id: "372321B44E2AC441"
+			preset: "normal"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "77CC380F3C8DA493"
+				item: { count: 1, id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
 		}
 	]
 }
