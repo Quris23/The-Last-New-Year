@@ -1,0 +1,9 @@
+{
+  "block.reviveraltar.ritual_altar": "Ritual Altar",
+  "message.reviveraltar.became_ghost": "%s died and has become a ghost. Fill a Ritual Altar with 1000 mB of Mana and 1000 mB of Blood, then place their head on it to revive them.",
+  "message.reviveraltar.revived": "%s has been revived!",
+  "commands.reviveraltar.not_a_ghost": "%s is not a ghost awaiting revival",
+  "commands.reviveraltar.revive_success": "Revived %s player(s)",
+  "message.reviveraltar.need_head_first": "Place the player's head on the altar first",
+  "message.reviveraltar.not_a_ghost_head": "That player isn't currently a ghost awaiting revival"
+}

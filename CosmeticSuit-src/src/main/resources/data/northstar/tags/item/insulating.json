@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "create:netherite_diving_helmet", "required": false },
+    { "id": "create:netherite_backtank", "required": false },
+    { "id": "minecraft:netherite_leggings", "required": false },
+    { "id": "create:netherite_diving_boots", "required": false }
+  ]
+}

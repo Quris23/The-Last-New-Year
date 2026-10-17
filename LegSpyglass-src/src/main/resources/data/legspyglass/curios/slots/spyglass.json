@@ -1,0 +1,9 @@
+{
+  "order": 40,
+  "size": 1,
+  "icon": "legspyglass:slot/spyglass",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": true,
+  "drop_rule": "DEFAULT"
+}

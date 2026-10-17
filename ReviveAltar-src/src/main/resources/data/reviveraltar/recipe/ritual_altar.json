@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CRC",
+    "CCC"
+  ],
+  "key": {
+    "C": { "item": "minecraft:crying_obsidian" },
+    "R": { "item": "minecraft:respawn_anchor" }
+  },
+  "result": {
+    "id": "reviveraltar:ritual_altar",
+    "count": 1
+  }
+}

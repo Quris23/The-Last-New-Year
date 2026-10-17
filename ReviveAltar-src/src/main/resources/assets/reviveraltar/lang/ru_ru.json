@@ -1,0 +1,9 @@
+{
+  "block.reviveraltar.ritual_altar": "Алтарь Возрождения",
+  "message.reviveraltar.became_ghost": "%s погиб и стал призраком. Заполните Алтарь Возрождения 1000 mB Маны и 1000 mB Крови, положите на него голову игрока, чтобы вернуть его.",
+  "message.reviveraltar.revived": "%s был возрождён!",
+  "commands.reviveraltar.not_a_ghost": "%s сейчас не призрак, ожидающий возрождения",
+  "commands.reviveraltar.revive_success": "Возрождено игроков: %s",
+  "message.reviveraltar.need_head_first": "Сначала положи на алтарь голову игрока",
+  "message.reviveraltar.not_a_ghost_head": "Этот игрок сейчас не призрак, ожидающий возрождения"
+}

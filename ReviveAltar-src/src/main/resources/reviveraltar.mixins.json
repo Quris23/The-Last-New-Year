@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.qur1s.reviveraltar.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "reviveraltar.refmap.json",
+  "minVersion": "0.8",
+  "mixins": [
+    "PlayerBroadcastMixin",
+    "GhostInteractMixin"
+  ],
+  "client": [
+    "client.GhostRenderTypeMixin",
+    "client.GhostSeesGlowingMixin"
+  ]
+}

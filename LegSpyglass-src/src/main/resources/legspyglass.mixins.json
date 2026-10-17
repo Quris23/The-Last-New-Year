@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "package": "dev.qur1s.legspyglass.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [],
+  "client": [
+    "PlayerRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

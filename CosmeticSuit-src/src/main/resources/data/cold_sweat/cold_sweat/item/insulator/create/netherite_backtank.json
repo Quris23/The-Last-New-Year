@@ -1,0 +1,39 @@
+{
+  "required_mods": ["create"],
+  "type": "armor",
+  "item": {
+    "items": ["create:netherite_backtank"]
+  },
+  "entity": {
+    "entities": ["*"],
+    "equipment": {
+      "head": {
+        "items": ["create:netherite_diving_helmet"]
+      },
+      "legs": {
+        "items": ["minecraft:netherite_leggings"]
+      },
+      "feet": {
+        "items": [
+          "create:netherite_diving_boots",
+          "minecraft:netherite_boots"
+        ]
+      }
+    }
+  },
+  "attributes": {
+    "cold_sweat:heat_dampening": [
+      {
+        "name": "cs:netherite_diving_set_bonus",
+        "amount": 1.0,
+        "operation": "add_value"
+      }
+    ]
+  },
+  "immune_temp_modifiers": {
+    "cold_sweat:water": 1.0
+  },
+  "hint": {
+    "key": "tooltip.hint.create_backtank"
+  }
+}

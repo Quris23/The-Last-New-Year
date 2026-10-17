@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "package": "dev.qur1s.reviveraltar.mixin.optional",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "reviveraltar.optional.refmap.json",
+  "minVersion": "0.8",
+  "mixins": [
+    "DeathTotemStandaloneBanMixin",
+    "RuinedCitadelHeightMixin"
+  ],
+  "client": [
+    "client.DisableCoordsOverlayMixin"
+  ]
+}

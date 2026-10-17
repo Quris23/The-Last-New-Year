@@ -1,0 +1,19 @@
+{
+  "required": false,
+  "package": "dev.qur1s.cosmeticsuit.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "NorthstarOxygenMixin",
+    "NorthstarTemperatureMixin",
+    "BacktankUtilMixin",
+    "BacktankBlockEntityMixin",
+    "BacktankItemMixin"
+  ],
+  "client": [
+    "SpaceSuitFirstPersonMixin",
+    "PunchyArmArmorMixin",
+    "PunchyCameraDuringCastMixin",
+    "RemainingAirOverlayMixin"
+  ]
+}
