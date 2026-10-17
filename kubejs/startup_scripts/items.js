@@ -47,8 +47,7 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
     .displayName('Незавершенный Тотем хоруса')
 
-    // Endrem + Cataclysm
-
+  
     event.create('incomplete_mech_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око меха')
 
@@ -58,30 +57,16 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_lost_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Истинной Скверны')
 
-    event.create('incomplete_nether_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Адского Пламени')
-
-    event.create('incomplete_rogue_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Фрактального Краха')
-
     event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Непростительного Проклятия')
 })
 
 StartupEvents.registry('fluid', event => {
-    // Жидкость Хаоса
-    event.create('chaos_fluid')
-      .displayName('Жидкость хаоса')
-      .stillTexture('kubejs:fluid/chaos_fluid_still')
-      .flowingTexture('kubejs:fluid/chaos_fluid_flow')
-      .noBlock()
-
-    // Жидкость аннигиляции
-    event.create('annihilation_fluid')
-      .displayName('Жидкость аннигиляции')
-      .stillTexture('kubejs:fluid/annihilation_fluid_still')
-      .flowingTexture('kubejs:fluid/annihilation_fluid_flow')
-      //.noBlock()
+  event.create('chaos_fluid')
+    .displayName('Жидкость хаоса')
+    .stillTexture('kubejs:fluid/chaos_fluid_still')
+    .flowingTexture('kubejs:fluid/chaos_fluid_flow')
+    .noBlock()
 })
 
 ItemEvents.modification(event => { 
@@ -91,16 +76,4 @@ ItemEvents.modification(event => {
   event.modify('cataclysm:bone_reptile_chestplate', item => {
     item.maxDamage = 560
   })
-})
-
-  // Legendary Monsters
-StartupEvents.registry('block', event => {
-  event.create('lunar_enderitium_ore')
-    .texture('kubejs:block/lunar_enderitium_ore')
-    .hardness(2.5)
-    .resistance(2.5)
-    .stoneSoundType()
-    .requiresTool()
-    .tagBlock('minecraft:mineable/pickaxe')
-    .noDrops() // лут-таблица своя, см. kubejs/data/kubejs/loot_table/blocks/lunar_enderitium_ore.json
 })

@@ -80,5 +80,15 @@ ServerEvents.recipes(event => {
         T: fluidTank
     })
 
-    
+    event.recipes.create.pressing(
+        'create:shadow_steel_casing',           // результат
+        'create:shadow_steel'             // входной предмет
+    );
+
+    // Тёмно-хориевая сталь
+    event.recipes.create.mixing(Item.of('kubejs:dark_chorium_steel', 2), [
+        'createcasing:chorium_ingot',
+        'cataclysm:black_steel_ingot',
+        'create:shadow_steel'
+    ]).superheated()
 })

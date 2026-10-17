@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     // Око меха
-    transitional = 'kubejs:incomplete_mech_eye'
+    let transitional = 'kubejs:incomplete_mech_eye'
     let ironBlocks = ['minecraft:iron_block', 'create:industrial_iron_block', 'create:weathered_iron_block']
     event.recipes.create.sequenced_assembly([
         CreateItem.of('cataclysm:mech_eye', 0.80),
@@ -31,6 +31,17 @@ ServerEvents.recipes(event => {
         R: 'minecraft:rotten_flesh'
     })
 
+    // Око Глубины
+    event.shaped('cataclysm:abyss_eye', [
+        'OAO',
+        'AEA',
+        'OAO'
+    ], {
+        O: 'crying_obsidian',
+        A: 'alexscaves:abyssmarine',
+        E: 'ender_eye'
+    })
+
     // Око Огня
     event.shaped('cataclysm:flame_eye', [
         'LLL',
@@ -43,7 +54,7 @@ ServerEvents.recipes(event => {
         S: ['minecraft:soul_sand', 'minecraft:soul_soil']
     })
 
-    // Око пустоты
+    // Око Пустоты
     event.shaped('cataclysm:void_eye', [
         'PLP',
         'VHV',
@@ -139,7 +150,7 @@ ServerEvents.recipes(event => {
         s: 'cold_sweat:soul_sprout',
         e: 'born_in_chaos_v1:ethereal_spirit',
         E: 'minecraft:ender_eye',
-        M: 'born_in_chaos_v1:evilometer'
+        M: 'create:haunted_bell'
     })
 
     //Око Абсолютной Тишины
@@ -157,22 +168,51 @@ ServerEvents.recipes(event => {
     })
 
     // Око Первого Разлома
-    //event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('aerowarptics:rift_essence', 1000)]),
+    let sea = ['alexscaves:pearl', 'alexscaves:magic_conch']
+    let ore = ['deepslate_diamond_ore', 'deepslate_emerald_ore']
+    event.shaped('endrem:cold_eye', [
+        'rEr',
+        'hCs',
+        'rdr'
+    ], {
+        r: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'cataclysm:abyssal_egg',
+        h: 'heart_of_the_sea',
+        C: 'ender_eye',
+        s: sea,
+        d: ore
+    })
 
     // Око Вечных Бурь
+    let levitite = ['aeronautics:levitite', 'aeronautics:pearlescent_levitite']
     event.shaped('endrem:wither_eye', [
-        ' A ',
-        'BCD',
-        ' A '
+        'bCr',
+        'lEl',
+        'rRb'
     ], {
-        A: 'minecraft:wither_skeleton_skull',
-        B: 'create:brass_ingot',
-        C: 'minecraft:ender_eye',
-        D: 'create:experience_nugget'
+        b: 'quark:bottled_cloud',
+        C: 'irons_spellbooks:energized_core',
+        R: 'legendary_monsters:air_rune',
+        r: 'legendary_monsters:cloud_rod',
+        l: levitite,
+        E: 'ender_eye'
     })
 
     // Око Семи Морей
-
+    event.shaped('endrem:exotic_eye', [
+        'tef',
+        'sEw',
+        'lCt'
+    ], {
+        t: 'tide_armor_trim_smithing_template',
+        e: 'cataclysm:essence_of_the_storm',
+        f: 'alexscaves:floater',
+        s: 'sponge',
+        E: 'ender_eye',
+        w: 'wet_sponge',
+        l: 'cataclysm:lacrima',
+        C: 'conduit'
+    })
 
     // Око Адского Пламени
     event.shaped('endrem:nether_eye', [
@@ -183,14 +223,27 @@ ServerEvents.recipes(event => {
         M: 'alexscaves:primal_magma',
         I: 'cataclysm:ignitium_ingot',
         N: 'minecraft:netherite_ingot',
-        E: 'minecraft:ender_eye',
+        E: 'ender_eye',
         V: 'create:blaze_cake'
     })
 
     // Око Фрактального Краха
+    //event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('aerowarptics:rift_essence', 1000)]),
+    event.shaped('endrem:rogue_eye', [
+        'apr',
+        'mEm',
+        'rea'
+    ], {
+        a: 'legendary_monsters:bottle_of_annihilation',
+        p: 'legendary_monsters:portal_shard',
+        r: 'alexscaves:radon_bottle',
+        m: 'northstar:martian_steel_ingot',
+        E: 'ender_eye',
+        e: 'legendary_monsters:enderitium_ingot'
+    })
 
     // Око Непростительного Проклятия
-    let transitional = 'kubejs:incomplete_cursed_eye'
+    transitional = 'kubejs:incomplete_cursed_eye'
     event.recipes.create.sequenced_assembly([
         CreateItem.of('endrem:cursed_eye', 0.80),
         CreateItem.of('2x cataclysm:cursium_ingot', 0.20)

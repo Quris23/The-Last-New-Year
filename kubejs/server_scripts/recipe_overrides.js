@@ -14,35 +14,14 @@ ServerEvents.recipes(event => {
         S: 'create_more_additions:silver_jewel'
     })
 
-    // Камень Пустоты
-    event.shaped('cataclysm:void_stone', [
-        'ASA',
-        'SOS',
-        'ASA'
+    event.shaped('minecraft:end_crystal', [
+        'GGG',
+        'GTG',
+        'GSG'
     ], {
-        O: ['minecraft:crying_obsidian', 'minecraft:obsidian', 'cataclysm:polished_obsidian'],
-        A: 'northstar:polished_amethyst',
-        S: 'northstar:polished_lunar_sapphire'
-    })
-
-    // Фонарь Пустоты
-    event.shaped('cataclysm:void_lantern_block', [
-        ' V ',
-        'VGV',
-        ' V '
-    ], {
-        G: 'minecraft:glowstone',
-        V: 'cataclysm:void_stone'
-    })
-
-    // Пылающий пепел
-    event.shaped('cataclysm:burning_ashes', [
-        ' D ',
-        'DLD',
-        ' D '
-    ], {
-        L: 'cataclysm:lava_power_cell',
-        D: 'cataclysm:dying_ember'
+        G: 'minecraft:glass',
+        T: 'ghast_tear',
+        S: 'obsidian'
     })
 
     // Последовательная сборка Create (Sequenced Assembly)
