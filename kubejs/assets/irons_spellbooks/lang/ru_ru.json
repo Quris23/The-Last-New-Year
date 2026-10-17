@@ -82,7 +82,7 @@
   "death.attack.irons_spellbooks.divine_smite.item": "%1$s подвергся небесной каре, исполненной %2$s с помощью %3$s",
   "death.attack.irons_spellbooks.thunder_step.item": "%1$s был наэлектризован по пути к %2$s с помощью %3$s",
 
-  "effect.irons_spellbooks.heartstop.description": "Наделяет временной неуязвимостью, но по истечении эффекта возвращает 50% урона, накопленного во время его действия.",
+  "effect.irons_spellbooks.heartstop.description": "Наделяет временной неуязвимостью, но по истечении эффекта возвращает урон, накопленный во время его действия.",
   "effect.irons_spellbooks.angel_wings.description": "Наделяет призрачными элитрами.",
   "effect.irons_spellbooks.abyssal_shroud.description": "На время действия эффекта наделяет способностью уклоняться от любых атак.",
   "effect.irons_spellbooks.true_invisibility.description": "Броня и предметы обретают невидимость вместе с владельцем.",
