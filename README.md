@@ -1,9 +1,10 @@
 # The Last New Year
 
-Пак-репозиторий: собранные версии собственных модов (SpellClasses, CosmeticSuit, ReviveAltar, SphereShields), конфиг FTB Quests и скрипты KubeJS.
+Пак-репозиторий: собранные версии собственных модов (SpellClasses, SphereShields, Atlas, CosmeticSuit, ReviveAltar, LegSpyglass, FluidUnifier, ItemBans), конфиг FTB Quests и скрипты KubeJS.
 
 - `mods/` — собранные jar-ы собственных модов
 - `kubejs/` — server/client scripts, data overrides
 - `ftbquests/` — главы, группы, lang квестов
 - `SpellClasses-src/` — исходники мода SpellClasses (Java + assets), синхронизируются вместе с обновлением jar-а в `mods/`
 - `SphereShields-src/` — исходники мода SphereShields (аддон к Create Aeronautics: Shield Generators — сферический наземный купол, привязка цвета/прочности к топливу и редстоуну, белый список игроков, барьер от мобов), синхронизируются вместе с обновлением jar-а в `mods/`
+- `Atlas-src/`, `CosmeticSuit-src/`, `ReviveAltar-src/`, `LegSpyglass-src/`, `FluidUnifier-src/`, `ItemBans-src/` — исходники остальных наших модов (без `libs/` и `build/`)
