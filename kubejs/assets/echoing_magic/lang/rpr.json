@@ -1,0 +1,64 @@
+{
+  "item.echoing_magic.set_bonus.description": "При ношеніи полнаго комплекта:",
+
+  "item.echoing_magic.echoing_essence": "Эхо-эссенція",
+
+  "item.echoing_magic.echoed_manuscript": "Отражённая рукопись",
+  "item.echoing_magic.echoed_manuscript.description": "Держите въ инвентарѣ во время созданія космическихъ заклинаній, чтобы они были связаны съ Послѣднимъ изъ Глубины.",
+
+  "item.echoing_magic.impact_augment": "Усилитель удара",
+  "item.echoing_magic.impact_augment.desc": "Наноситъ уронъ по области, въ которую вы телепортируетесь.",
+  "item.echoing_magic.impact_augment.desc.alt": "Жемчужина, усилившая сущность богатыря, прикрѣплённая къ цѣпи...",
+
+  "item.echoing_magic.reinforced_juggernaut_helmet": "Усиленный шлемъ джаггернаута",
+  "item.echoing_magic.reinforced_juggernaut_chestplate": "Усиленный нагрудникъ джаггернаута",
+  "item.echoing_magic.reinforced_juggernaut_leggings": "Усиленные поножи джаггернаута",
+  "item.echoing_magic.reinforced_juggernaut_boots": "Усиленные ботинки джаггернаута",
+  "item.echoing_magic.reinforced_juggernaut_explosion_resist.description": "Увеличиваетъ сопротивленіе взрывамъ на 30%",
+  "item.echoing_magic.reinforced_juggernaut_set_bonus.description": "При критическомъ ударѣ наноситъ уронъ по области ближайшимъ врагамъ",
+
+
+  "spell.echoing_magic.echo_star": "Звѣзда-Отголосокъ",
+  "spell.echoing_magic.echo_blast": "Эхо-взрывъ",
+  "spell.echoing_magic.echoing_explosion": "Отражённый взрывъ",
+  "spell.echoing_magic.echoing_slam": "Отражённый ударъ",
+  "spell.echoing_magic.conjure_grimoray": "Призывъ гриморея",
+  "spell.echoing_magic.summon_brave": "Призывъ богатыря",
+  "spell.echoing_magic.collapse": "Обрушеніе",
+
+  "spell.echoing_magic.echo_star.guide": "Стрѣляйте звѣздами, которыя взрываются при попаданіи.",
+  "spell.echoing_magic.echo_blast.guide": "Выстрѣлите мощнымъ взрывомъ по врагамъ.",
+  "spell.echoing_magic.echoing_explosion.guide": "Подготовьтесь и произведите взрывъ, накладывая на враговъ эффектъ «Пробітіе брони».",
+  "spell.echoing_magic.echoing_slam.guide": "Ударьте по землѣ и обрушьтесь на враговъ.",
+  "spell.echoing_magic.conjure_grimoray.guide": "Призовите гриморея, чтобы онъ сражался за васъ.",
+  "spell.echoing_magic.summon_brave.guide": "Призовите богатырей, чтобы они сражались за васъ.",
+  "spell.echoing_magic.collapse.guide": "Обрушьте разрушеніе на своихъ враговъ.",
+
+  "entity.echoing_magic.echo_star_spell": "Звѣзда-Отголосокъ",
+  "entity.echoing_magic.echoing_blast_spell": "Эхо-взрывъ",
+  "entity.echoing_magic.slam_spell": "Ударъ",
+  "entity.echoing_magic.falling_block_spell": "Падающій блокъ",
+  "entity.echoing_magic.echo_slam_shockwave": "Ударная волна",
+  "entity.echoing_magic.summon_brave": "Призванный богатырь",
+  "entity.echoing_magic.conjure_grimoray": "Призванный гриморей",
+
+  "ui.echoing_magic.last_of_deepslate_spell": "Требуется Отражённая рукопись для созданія.",
+  "ui.echoing_magic.echo_charge_spell": "Требуется Зарядъ Отголоска для созданія.",
+  "ui.echoing_magic.brave_rod_spell": "Требуется Жезлъ храбрости для созданія.",
+
+  "death.attack.echoing_magic.echo_star": "%1$s былъ обстрѣлянъ %2$s",
+  "death.attack.echoing_magic.echo_blast": "%1$s былъ уничтоженъ %2$s",
+  "death.attack.echoing_magic.echoing_explosion": "%1$s былъ взорванъ %2$s",
+  "death.attack.echoing_magic.echoing_slam": "%1$s былъ испарёнъ %2$s",
+  "death.attack.echoing_magic.collapse": "%1$s былъ раздавленъ %2$s",
+  "death.attack.echoing_magic.summon_brave": "%1$s былъ расплющенъ %2$s",
+  "death.attack.echoing_magic.conjure_grimoray": "Мозгъ %1$s былъ слегка поджаренъ интеллектомъ %2$s, честно.",
+
+  "death.attack.echoing_magic.echo_star.item": "%1$s былъ обстрѣлянъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.echo_blast.item": "%1$s былъ уничтоженъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.echoing_explosion.item": "%1$s былъ взорванъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.echoing_slam.item": "%1$s былъ испарёнъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.collapse.item": "%1$s получилъ поврежденіе мозга отъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.summon_brave.item": "%1$s былъ раздавленъ %2$s съ помощью %3$s",
+  "death.attack.echoing_magic.conjure_grimoray.item": "%1$s стоило бы научиться читать, какъ %2$s, а ещё, кажется, они использовали %3$s, чтобы выбивать его, но это уже неважно."
+}

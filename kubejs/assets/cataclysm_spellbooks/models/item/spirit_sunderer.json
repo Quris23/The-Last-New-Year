@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm_spellbooks:item/spirit_sunderer_gui"
+	},
+	"base": {
+	  "parent": "cataclysm_spellbooks:item/spirit_sunderer_hand"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm_spellbooks:item/spirit_sunderer_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm_spellbooks:item/spirit_sunderer_gui"
+	  }
+	}
+  }

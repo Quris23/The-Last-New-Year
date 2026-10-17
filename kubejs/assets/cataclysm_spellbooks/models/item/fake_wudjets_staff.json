@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm_spellbooks:item/fake_wudjets_staff_gui"
+	},
+	"base": {
+	  "parent": "cataclysm_spellbooks:item/fake_wudjets_staff_hand"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm_spellbooks:item/fake_wudjets_staff_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm_spellbooks:item/fake_wudjets_staff_gui"
+	  }
+	}
+  }

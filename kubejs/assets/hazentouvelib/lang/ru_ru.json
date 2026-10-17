@@ -1,0 +1,78 @@
+{
+
+  "key.hazentouvelib.group": "Способности HazentouveLib",
+  "key.hazentouvelib.ability_1": "Способность 1",
+  "key.hazentouvelib.ability_2": "Способность 2",
+  "key.hazentouvelib.ability_3": "Способность 3",
+  "key.hazentouvelib.ability_4": "Способность 4",
+  "key.hazentouvelib.ability_5": "Способность 5",
+
+  "ui.hazentouvelib.staff_resonation": "Для создания этого заклинания требуется определённый посох...",
+  "ui.hazentouvelib.armor_resonation": "Для создания этого заклинания требуется определённый комплект брони...",
+  "ui.hazentouvelib.weapon_resonation": "Для создания этого заклинания требуется определённое оружие...",
+  "ui.hazentouvelib.spellbook_resonation": "Для создания этого заклинания требуется определённая книга заклинаний...",
+  "ui.hazentouvelib.item_resonation": "Для создания этого заклинания требуется определённый предмет...",
+  "ui.hazentouvelib.material_resonation": "Для создания этого заклинания требуется определённый материал...",
+
+  "rarity.hazentouvelib_rarity_fire.name": "Огнепоцелованный",
+  "rarity.hazentouvelib_rarity_ice.name": "Морозный",
+  "rarity.hazentouvelib_rarity_nature.name": "Расцветший",
+  "rarity.hazentouvelib_rarity_lightning.name": "Ионизированный",
+  "rarity.hazentouvelib_rarity_blood.name": "Кровавый",
+  "rarity.hazentouvelib_rarity_ender.name": "Эндерконический",
+  "rarity.hazentouvelib_rarity_holy.name": "Божественный",
+  "rarity.hazentouvelib_rarity_evocation.name": "Искусственный",
+  "rarity.hazentouvelib_rarity_shadow.name": "Затенённый",
+  "rarity.hazentouvelib_rarity_radiance.name": "Сияющий",
+  "rarity.hazentouvelib_rarity_eldritch.name": "Эзотерический",
+  "rarity.hazentouvelib_rarity_cosmic.name": "Космический",
+  "rarity.hazentouvelib_rarity_deus.name": "Просветлённый",
+  "rarity.hazentouvelib_rarity_hydro.name": "Водный",
+  "rarity.hazentouvelib_rarity_fireblossom.name": "Огнецветный",
+
+  "item.hazentouvelib.radiance_upgrade_orb": "Сфера улучшения сияния",
+  "item.hazentouvelib.shadow_upgrade_orb": "Сфера улучшения тени",
+  "item.hazentouvelib.cosmic_upgrade_orb": "Сфера улучшения космоса",
+
+  "item.hazentouvelib.radiance_rune": "Руна сияния",
+  "item.hazentouvelib.shadow_rune": "Руна тени",
+  "item.hazentouvelib.cosmic_rune": "Руна космоса",
+
+  "item.hazentouvelib.soul_igniter": "Воспламенитель душ",
+  "item.hazentouvelib.soul_igniter.description": "Зажигает огонь душ.",
+
+  "block.hazentouvelib.soul_fire": "Огонь душ",
+
+  "curios.modifiers.wing": "При ношении этих крыльев: ",
+
+  "curios.identifier.wing": "Крылья",
+
+  "effect.hazentouvelib.hexed": "Проклятый",
+  "effect.hazentouvelib.hexed.description": "Вы увядаете с каждым произнесённым заклинанием...",
+
+  "creativetab.hazentouvelib.hazentouvelib_materials": "Материалы HazentouveLib",
+
+  "school.hazentouvelib.radiance": "Сияние",
+  "school.hazentouvelib.shadow": "Тень",
+  "school.hazentouvelib.cosmic": "Космос",
+
+  "material.hazentouvelib.rune_radiance": "Руна сияния",
+  "material.hazentouvelib.rune_shadow": "Руна тени",
+  "material.hazentouvelib.rune_cosmic": "Руна космоса",
+
+  "attribute.hazentouvelib.radiance_spell_power": "Сила заклинаний сияния",
+  "attribute.hazentouvelib.radiance_magic_resist": "Сопротивление магии сияния",
+
+  "attribute.hazentouvelib.shadow_spell_power": "Сила заклинаний тени",
+  "attribute.hazentouvelib.shadow_magic_resist": "Сопротивление магии тени",
+
+  "attribute.hazentouvelib.cosmic_spell_power": "Сила заклинаний космоса",
+  "attribute.hazentouvelib.cosmic_magic_resist": "Сопротивление магии космоса",
+
+  "death.attack.soul_fire": "%1$s сгорел заживо",
+
+  "death.attack.radiance_magic": "%1$s был поглощён светом...",
+  "death.attack.shadow_magic": "%1$s был поглощён тьмой",
+  "death.attack.cosmic_magic": "%1$s обратился в космическую пыль...",
+  "death.attack.corrupt_magic": "%1$s раскололся на осколки"
+}

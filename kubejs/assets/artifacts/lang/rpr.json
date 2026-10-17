@@ -1,0 +1,12 @@
+{
+  "artifacts.config.items.warp_drive.cooldown.description": "Время восстановления эндеръ-жемчуга после броска с помощью червоточного двигателя",
+  "artifacts.config.items.warp_drive.enabled.description": "Влияет ли червоточный двигатель на то, чтобы эндеръ-жемчугъ не расходовался",
+  "artifacts.config.items.warp_drive.hungerCost.description": "Сколько очков голода стоит, чтобы бросить эндеръ-жемчугъ с помощью червоточного двигателя",
+  "artifacts.config.items.warp_drive.hungerCost.title": "Стоимость голода",
+  "artifacts.config.items.warp_drive.nullifyEnderPearlDamage.description": "Влияет ли червоточный двигатель на то, чтобы эндеръ-жемчугъ не наносил никакого урона",
+  "artifacts.config.items.warp_drive.nullifyEnderPearlDamage.title": "Обнуление урона от эндеръ-жемчуга",
+  "artifacts.tooltip.ability.ender_pearl_damage_immunity": "Эндеръ-жемчугъ не наносит урона",
+  "artifacts.tooltip.ability.ender_pearl_hunger_cost.cost": "Эндеръ-жемчугъ не расходуется, но вместо этого расходует голода",
+  "artifacts.tooltip.ability.ender_pearl_hunger_cost.free": "Эндеръ-жемчугъ не расходуется при броске",
+  "item.artifacts.warp_drive": "Червоточный двигатель"
+}
