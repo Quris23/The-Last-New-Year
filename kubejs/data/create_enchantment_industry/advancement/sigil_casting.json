@@ -1,0 +1,14 @@
+{
+ "parent": "create_enchantment_industry:blazing_fusion",
+ "criteria": {
+  "0": {
+   "trigger": "create_enchantment_industry:sigil_casting"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "create:cardboard_armor",
+ "criteria": {
+  "0": {
+   "trigger": "create:package_chute_throw_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

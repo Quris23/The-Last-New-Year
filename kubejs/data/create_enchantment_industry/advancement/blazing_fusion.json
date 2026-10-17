@@ -1,0 +1,14 @@
+{
+ "parent": "create_enchantment_industry:born_talent_of_fire",
+ "criteria": {
+  "0": {
+   "trigger": "create_enchantment_industry:blazing_fusion"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

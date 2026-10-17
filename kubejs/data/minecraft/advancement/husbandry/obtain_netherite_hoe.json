@@ -1,0 +1,24 @@
+{
+ "parent": "minecraft:husbandry/plant_seed",
+ "criteria": {
+  "netherite_hoe": {
+   "conditions": {
+    "items": [
+     {
+      "items": "minecraft:netherite_hoe"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "netherite_hoe"
+  ]
+ ],
+ "rewards": {
+  "experience": 100
+ },
+ "sends_telemetry_event": true
+}

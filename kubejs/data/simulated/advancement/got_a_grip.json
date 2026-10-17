@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:get_a_grip",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:got_a_grip_builtin",
+   "trigger": "simulated:got_a_grip_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "pumpkin_sir_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 30
+ },
+ "parent": "born_in_chaos_v1:bornin_chaos"
+}

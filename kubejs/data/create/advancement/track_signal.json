@@ -1,0 +1,14 @@
+{
+ "parent": "create:conductor",
+ "criteria": {
+  "0": {
+   "trigger": "create:track_signal_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

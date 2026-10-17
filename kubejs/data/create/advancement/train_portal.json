@@ -1,0 +1,14 @@
+{
+ "parent": "create:train_whistle",
+ "criteria": {
+  "0": {
+   "trigger": "create:train_portal_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

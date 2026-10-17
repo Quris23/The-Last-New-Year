@@ -1,0 +1,19 @@
+{
+ "parent": "cold_sweat:extreme_temps",
+ "criteria": {
+  "requirement": {
+   "trigger": "cold_sweat:block_affects_temperature",
+   "conditions": {
+    "total_effect": 0.2,
+    "player_temperature": [
+     {
+      "type": "world",
+      "range": {
+       "below": "min_habitable"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

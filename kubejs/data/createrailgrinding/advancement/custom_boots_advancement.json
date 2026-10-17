@@ -1,0 +1,14 @@
+{
+ "parent": "createrailgrinding:railgrind_advancement",
+ "criteria": {
+  "obtain_custom_boots": {
+   "trigger": "createrailgrinding:obtain_custom_boots"
+  }
+ },
+ "requirements": [
+  [
+   "obtain_custom_boots"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

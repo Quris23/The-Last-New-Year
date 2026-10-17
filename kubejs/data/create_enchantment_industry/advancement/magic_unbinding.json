@@ -1,0 +1,14 @@
+{
+ "parent": "create_enchantment_industry:sigil_casting",
+ "criteria": {
+  "0": {
+   "trigger": "create_enchantment_industry:magic_unbinding"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

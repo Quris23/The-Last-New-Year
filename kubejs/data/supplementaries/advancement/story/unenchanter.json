@@ -1,0 +1,37 @@
+{
+ "parent": "minecraft:story/enchant_item",
+ "criteria": {
+  "apple": {
+   "trigger": "moonlight:grind_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "minecraft:golden_apple"
+     ]
+    }
+   }
+  },
+  "bomb": {
+   "trigger": "moonlight:grind_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "supplementaries:bomb"
+     ]
+    }
+   }
+  }
+ },
+ "requirements": [
+  [
+   "apple",
+   "bomb"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "bomb"
+  }
+ ]
+}

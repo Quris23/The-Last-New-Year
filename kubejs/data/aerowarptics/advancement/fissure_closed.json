@@ -1,0 +1,15 @@
+{
+ "criteria": {
+  "closed": {
+   "trigger": "aerowarptics:fissure_closed",
+   "conditions": {}
+  }
+ },
+ "requirements": [
+  [
+   "closed"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:rift_goggles"
+}

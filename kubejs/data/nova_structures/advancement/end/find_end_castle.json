@@ -1,0 +1,27 @@
+{
+ "parent": "minecraft:end/kill_dragon",
+ "criteria": {
+  "end_castle": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "nova_structures:end_castle"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "end_castle"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

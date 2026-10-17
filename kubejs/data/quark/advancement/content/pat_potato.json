@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:husbandry/plant_seed",
+ "criteria": {
+  "pat_potato": {
+   "trigger": "quark:pat_potato"
+  }
+ },
+ "requirements": [
+  [
+   "pat_potato"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "tiny_potato"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "create:haunted_bell",
+ "criteria": {
+  "0": {
+   "trigger": "create:clockwork_bearing_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

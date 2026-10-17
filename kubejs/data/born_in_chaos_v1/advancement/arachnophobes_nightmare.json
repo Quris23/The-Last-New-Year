@@ -1,0 +1,14 @@
+{
+ "criteria": {
+  "arachnophobes_nightmare_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 20,
+  "recipes": [
+   "born_in_chaos_v1:spider_bite_craft"
+  ]
+ },
+ "parent": "born_in_chaos_v1:bornin_chaos"
+}

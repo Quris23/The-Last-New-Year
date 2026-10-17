@@ -1,0 +1,14 @@
+{
+ "parent": "create:precision_mechanism",
+ "criteria": {
+  "0": {
+   "trigger": "create:speed_controller_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

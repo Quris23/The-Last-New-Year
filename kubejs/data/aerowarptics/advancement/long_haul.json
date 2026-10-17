@@ -1,0 +1,19 @@
+{
+ "criteria": {
+  "warped_far": {
+   "trigger": "aerowarptics:warp_completed",
+   "conditions": {
+    "distance": {
+     "min": 2000.0
+    }
+   }
+  }
+ },
+ "requirements": [
+  [
+   "warped_far"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:first_warp"
+}

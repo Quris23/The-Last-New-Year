@@ -1,0 +1,24 @@
+{
+ "criteria": {
+  "dark_metallurgy_0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:pieceofdarkmetal"
+      ],
+      "count": {
+       "min": 1,
+       "max": 64
+      }
+     }
+    ]
+   }
+  }
+ },
+ "rewards": {
+  "experience": 4
+ },
+ "parent": "born_in_chaos_v1:bornin_chaos"
+}

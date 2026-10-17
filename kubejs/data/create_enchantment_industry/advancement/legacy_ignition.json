@@ -1,0 +1,27 @@
+{
+ "neoforge:conditions": [
+  {
+   "type": "create_dragons_plus:config_feature",
+   "feature": "create_enchantment_industry:processing/classic_blaze_enchanter"
+  }
+ ],
+ "parent": "create_enchantment_industry:blaze_enchantery",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "create_enchantment_industry:classic_blaze_enchanter"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

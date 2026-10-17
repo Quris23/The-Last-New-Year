@@ -1,0 +1,21 @@
+{
+ "parent": "simulated:no_pressure",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "simulated:gyroscopic_mechanism"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

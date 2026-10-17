@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:adventure/trade",
+ "criteria": {
+  "unlock": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "requirements": [
+  [
+   "unlock"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "globe"
+  }
+ ]
+}

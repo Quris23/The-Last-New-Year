@@ -1,0 +1,15 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/root",
+ "criteria": {
+  "requirement": {
+   "conditions": {
+    "curios:slot": {
+     "slots": [
+      "spellbook"
+     ]
+    }
+   },
+   "trigger": "curios:equip_curio"
+  }
+ }
+}

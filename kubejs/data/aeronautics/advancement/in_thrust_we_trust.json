@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:for_every_action",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:in_thrust_we_trust_builtin",
+   "trigger": "aeronautics:in_thrust_we_trust_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

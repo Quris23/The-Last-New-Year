@@ -1,0 +1,17 @@
+{
+ "parent": "archaion:root",
+ "criteria": {
+  "get_map": {
+   "conditions": {
+    "loot_table": "archaion:chests/ancient_keep_map"
+   },
+   "trigger": "minecraft:player_generates_container_loot"
+  }
+ },
+ "requirements": [
+  [
+   "get_map"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

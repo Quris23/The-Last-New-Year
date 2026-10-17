@@ -1,0 +1,21 @@
+{
+ "parent": "create:mechanical_mixer",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "create:blaze_burner"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

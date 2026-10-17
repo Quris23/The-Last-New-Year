@@ -1,0 +1,17 @@
+{
+ "parent": "minecraft:story/mine_stone",
+ "criteria": {
+  "inscription_table": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:inscription_table"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

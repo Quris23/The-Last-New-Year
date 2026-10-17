@@ -1,0 +1,14 @@
+{
+ "parent": "create:extendo_grip",
+ "criteria": {
+  "0": {
+   "trigger": "create:linked_controller_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

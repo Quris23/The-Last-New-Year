@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:alch_101",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:industrial_ink"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,15 @@
+{
+ "parent": "create_ltab:lucky",
+ "criteria": {
+  "gladstone_gander": {
+   "trigger": "minecraft:effects_changed",
+   "conditions": {
+    "effects": {
+     "minecraft:luck": {
+      "amplifier": 1
+     }
+    }
+   }
+  }
+ }
+}

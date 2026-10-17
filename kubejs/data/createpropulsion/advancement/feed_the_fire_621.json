@@ -1,0 +1,22 @@
+{
+ "parent": "createpropulsion:im_vectoring_it",
+ "criteria": {
+  "has_coral_generator": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createpropulsion:coral_generator"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "has_coral_generator"
+  ]
+ ]
+}

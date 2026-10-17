@@ -1,0 +1,27 @@
+{
+ "parent": "minecraft:adventure/ol_betsy",
+ "criteria": {
+  "kill_pillager": {
+   "conditions": {
+    "victims": [
+     [
+      {
+       "condition": "minecraft:entity_properties",
+       "entity": "this",
+       "predicate": {
+        "type": "minecraft:pillager"
+       }
+      }
+     ]
+    ]
+   },
+   "trigger": "minecraft:killed_by_crossbow"
+  }
+ },
+ "requirements": [
+  [
+   "kill_pillager"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

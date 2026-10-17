@@ -1,0 +1,8 @@
+{
+ "parent": "cold_sweat:tame_chameleon",
+ "criteria": {
+  "requirement": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

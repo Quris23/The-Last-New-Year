@@ -1,0 +1,25 @@
+{
+ "parent": "artifacts:amateur_archaeologist",
+ "criteria": {
+  "kill_mimic": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "artifacts:mimic"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  }
+ },
+ "requirements": [
+  [
+   "kill_mimic"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:get_a_grip",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:unpowered_steering_builtin",
+   "trigger": "simulated:unpowered_steering_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

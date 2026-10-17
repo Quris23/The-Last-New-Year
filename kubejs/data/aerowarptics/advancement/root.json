@@ -1,0 +1,20 @@
+{
+ "criteria": {
+  "rift_core": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_core"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_core"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

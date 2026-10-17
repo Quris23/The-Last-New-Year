@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:aura_monster",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:your_soul_is_mine"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

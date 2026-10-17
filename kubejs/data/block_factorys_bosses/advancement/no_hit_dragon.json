@@ -1,0 +1,17 @@
+{
+ "parent": "block_factorys_bosses:kill_dragon",
+ "criteria": {
+  "no_hit_dragon_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "requirements": [
+  [
+   "no_hit_dragon_0"
+  ]
+ ],
+ "rewards": {
+  "experience": 500
+ },
+ "sends_telemetry_event": true
+}

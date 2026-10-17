@@ -1,0 +1,28 @@
+{
+ "parent": "block_factorys_bosses:die_boss",
+ "criteria": {
+  "kill": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:sandworm"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  }
+ },
+ "requirements": [
+  [
+   "kill"
+  ]
+ ],
+ "rewards": {
+  "experience": 100
+ },
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,27 @@
+{
+ "parent": "minecraft:adventure/root",
+ "criteria": {
+  "shrine_combat": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "#nova_structures:shrine"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "shrine_combat"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

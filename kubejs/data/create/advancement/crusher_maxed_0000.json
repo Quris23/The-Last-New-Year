@@ -1,0 +1,14 @@
+{
+ "parent": "create:brass",
+ "criteria": {
+  "0": {
+   "trigger": "create:crusher_maxed_0000_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

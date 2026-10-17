@@ -1,0 +1,19 @@
+{
+ "parent": "create_ltab:plains",
+ "criteria": {
+  "ruins": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "player": [],
+    "items": [
+     {
+      "items": "minecraft:cake",
+      "components": {
+       "minecraft:custom_name": "\"Thanks Cake!!!\""
+      }
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "legendary_monsters:defeat_flame_drifter",
+ "criteria": {
+  "flameborn_guard": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "legendary_monsters:flameborn_guard"
+    }
+   }
+  },
+  "flameborn_warrior": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "legendary_monsters:flameborn_warrior"
+    }
+   }
+  }
+ }
+}

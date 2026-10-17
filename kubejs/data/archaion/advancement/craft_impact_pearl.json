@@ -1,0 +1,21 @@
+{
+ "parent": "archaion:obtain_brave_rod",
+ "criteria": {
+  "has_impact_pearl": {
+   "conditions": {
+    "items": [
+     {
+      "items": "archaion:impact_pearl"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_impact_pearl"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "unlucky_hunter_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 1
+ },
+ "parent": "born_in_chaos_v1:big_boy"
+}

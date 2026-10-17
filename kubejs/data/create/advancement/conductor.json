@@ -1,0 +1,14 @@
+{
+ "parent": "create:train",
+ "criteria": {
+  "0": {
+   "trigger": "create:conductor_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "create_enchantment_industry:copiable_mystery",
+ "criteria": {
+  "0": {
+   "trigger": "create_enchantment_industry:brand_registry"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

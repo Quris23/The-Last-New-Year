@@ -1,0 +1,13 @@
+{
+ "parent": "cataclysm:find_cursed_pyramid",
+ "criteria": {
+  "ignis": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "cataclysm:ancient_remnant"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "create_enchantment_industry:root",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "create:experience_nugget"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

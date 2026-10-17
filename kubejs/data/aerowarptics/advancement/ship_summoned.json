@@ -1,0 +1,15 @@
+{
+ "criteria": {
+  "summoned": {
+   "trigger": "aerowarptics:ship_summoned",
+   "conditions": {}
+  }
+ },
+ "requirements": [
+  [
+   "summoned"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:rift_beacon"
+}

@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:adventure/root",
+ "criteria": {
+  "crawl_in_hollow_log": {
+   "trigger": "quark:hollow_log_crawl"
+  }
+ },
+ "requirements": [
+  [
+   "crawl_in_hollow_log"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "hollow_logs"
+  }
+ ]
+}

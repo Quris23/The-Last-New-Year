@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:heavier_artillery",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:ghostbuster_builtin",
+   "trigger": "aeronautics:ghostbuster_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

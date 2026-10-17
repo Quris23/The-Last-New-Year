@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "rift_goggles": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_goggles"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_goggles"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:root"
+}

@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "unitywith_darknessachievement_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 27
+ },
+ "parent": "born_in_chaos_v1:fighting_nightmares"
+}

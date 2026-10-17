@@ -1,0 +1,14 @@
+{
+ "parent": "create:encased_fan",
+ "criteria": {
+  "0": {
+   "trigger": "create:fan_processing_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

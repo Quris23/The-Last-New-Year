@@ -1,0 +1,7 @@
+{
+ "criteria": {
+  "bornin_chaos_0": {
+   "trigger": "minecraft:tick"
+  }
+ }
+}

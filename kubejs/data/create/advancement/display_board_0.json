@@ -1,0 +1,14 @@
+{
+ "parent": "create:track_signal",
+ "criteria": {
+  "0": {
+   "trigger": "create:display_board_0_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

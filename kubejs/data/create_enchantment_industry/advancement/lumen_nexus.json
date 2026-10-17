@@ -1,0 +1,21 @@
+{
+ "parent": "create_enchantment_industry:spiritual_return",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "create_enchantment_industry:experience_lantern"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

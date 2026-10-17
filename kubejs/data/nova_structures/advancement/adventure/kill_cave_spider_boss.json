@@ -1,0 +1,34 @@
+{
+ "parent": "nova_structures:adventure/find_toxic_lair",
+ "criteria": {
+  "kill_cave_spider_boss": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:any_of",
+      "terms": [
+       {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+         "type": "minecraft:cave_spider",
+         "nbt": "{Tags:[\"cave_spider_boss\"]}"
+        }
+       },
+       {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+         "type": "minecraft:cave_spider",
+         "nbt": "{Tags:[\"cave_spider_boss_ominous\"]}"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "sends_telemetry_event": false
+}

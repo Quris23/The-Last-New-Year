@@ -1,0 +1,30 @@
+{
+ "parent": "deeperdarker:main/enter_otherside",
+ "criteria": {
+  "ancient_temple": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "deeperdarker:ancient_temple"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "ancient_temple"
+  ]
+ ],
+ "rewards": {
+  "experience": 50
+ },
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "aeronautics:head_in_the_clouds",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "aeronautics:music_disc_cloud_skipper"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

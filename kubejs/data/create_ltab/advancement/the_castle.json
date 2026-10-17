@@ -1,0 +1,21 @@
+{
+ "parent": "create_ltab:plains",
+ "criteria": {
+  "the_castle": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structure": "create_ltab:thecastle"
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}

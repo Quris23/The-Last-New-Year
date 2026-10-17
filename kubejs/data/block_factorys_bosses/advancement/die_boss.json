@@ -1,0 +1,24 @@
+{
+ "criteria": {
+  "die_to_boss": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "#block_factorys_bosses:bf_boss"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:entity_killed_player"
+  }
+ },
+ "requirements": [
+  [
+   "die_to_boss"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

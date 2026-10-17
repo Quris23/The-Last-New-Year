@@ -1,0 +1,26 @@
+{
+ "parent": "betterdeserttemples:root",
+ "criteria": {
+  "in_better_desert_temple": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "betterdeserttemples:desert_temple"
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "in_better_desert_temple"
+  ]
+ ]
+}

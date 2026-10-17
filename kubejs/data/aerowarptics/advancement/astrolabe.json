@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "astrolabe": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:astrolabe"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "astrolabe"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:warp_anchor"
+}

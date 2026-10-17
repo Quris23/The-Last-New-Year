@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:what_goes_down",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:rewind_time_builtin",
+   "trigger": "simulated:rewind_time_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,39 @@
+{
+ "parent": "minecraft:adventure/minecraft_trials_edition",
+ "criteria": {
+  "blowback": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "minecraft:breeze"
+      }
+     }
+    ],
+    "killing_blow": {
+     "direct_entity": {
+      "type": "minecraft:breeze_wind_charge"
+     },
+     "tags": [
+      {
+       "expected": true,
+       "id": "minecraft:is_projectile"
+      }
+     ]
+    }
+   },
+   "trigger": "minecraft:player_killed_entity"
+  }
+ },
+ "requirements": [
+  [
+   "blowback"
+  ]
+ ],
+ "rewards": {
+  "experience": 40
+ },
+ "sends_telemetry_event": true
+}

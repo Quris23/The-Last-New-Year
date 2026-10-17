@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "rift_modulator": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_modulator"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_modulator"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:rift_drive"
+}

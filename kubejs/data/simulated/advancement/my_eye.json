@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:big_beam",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:my_eye_builtin",
+   "trigger": "simulated:my_eye_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

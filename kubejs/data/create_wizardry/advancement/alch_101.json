@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:root",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:alch_101"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

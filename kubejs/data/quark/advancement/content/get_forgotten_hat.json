@@ -1,0 +1,28 @@
+{
+ "parent": "minecraft:adventure/kill_a_mob",
+ "criteria": {
+  "get_forgotten_hat": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "quark:forgotten_hat"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "get_forgotten_hat"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "forgotten"
+  }
+ ]
+}

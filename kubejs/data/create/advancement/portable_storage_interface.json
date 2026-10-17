@@ -1,0 +1,14 @@
+{
+ "parent": "create:contraption_actors",
+ "criteria": {
+  "0": {
+   "trigger": "create:portable_storage_interface_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

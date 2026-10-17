@@ -1,0 +1,15 @@
+{
+ "parent": "create_ltab:core",
+ "criteria": {
+  "sand_house": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": {
+     "location": {
+      "structure": "create_ltab:quarry"
+     }
+    }
+   }
+  }
+ }
+}

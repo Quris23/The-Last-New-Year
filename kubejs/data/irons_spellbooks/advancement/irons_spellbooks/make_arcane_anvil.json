@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/make_scroll_forge",
+ "criteria": {
+  "arcane_anvil": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:arcane_anvil"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

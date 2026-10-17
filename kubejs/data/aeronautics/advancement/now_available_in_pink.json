@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:unidentified_floating_object",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:now_available_in_pink_builtin",
+   "trigger": "aeronautics:now_available_in_pink_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

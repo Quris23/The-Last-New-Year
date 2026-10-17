@@ -1,0 +1,14 @@
+{
+ "parent": "create:shifting_gears",
+ "criteria": {
+  "0": {
+   "trigger": "create:millstone_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "simulated:learning_the_ropes",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "simulated:plunger_launcher"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

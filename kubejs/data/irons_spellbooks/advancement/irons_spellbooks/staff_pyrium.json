@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/staff_root",
+ "criteria": {
+  "requirement": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:pyrium_staff"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

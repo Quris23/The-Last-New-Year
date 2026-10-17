@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:husbandry/root",
+ "criteria": {
+  "mine_toretoise": {
+   "trigger": "quark:mine_toretoise"
+  }
+ },
+ "requirements": [
+  [
+   "mine_toretoise"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "toretoise"
+  }
+ ]
+}

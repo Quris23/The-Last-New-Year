@@ -1,0 +1,24 @@
+{
+ "criteria": {
+  "infernal_hatman_0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+      ],
+      "count": {
+       "min": 1,
+       "max": 1
+      }
+     }
+    ]
+   }
+  }
+ },
+ "rewards": {
+  "experience": 40
+ },
+ "parent": "born_in_chaos_v1:pumpkin_lord"
+}

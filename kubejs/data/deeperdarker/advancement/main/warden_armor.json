@@ -1,0 +1,33 @@
+{
+ "parent": "deeperdarker:main/obtain_reinforced_echo_shard",
+ "criteria": {
+  "warden_armor": {
+   "conditions": {
+    "items": [
+     {
+      "items": "deeperdarker:warden_helmet"
+     },
+     {
+      "items": "deeperdarker:warden_chestplate"
+     },
+     {
+      "items": "deeperdarker:warden_leggings"
+     },
+     {
+      "items": "deeperdarker:warden_boots"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "warden_armor"
+  ]
+ ],
+ "rewards": {
+  "experience": 100
+ },
+ "sends_telemetry_event": true
+}

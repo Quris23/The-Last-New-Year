@@ -1,0 +1,22 @@
+{
+ "parent": "quark:content/overlevel_enchant",
+ "criteria": {
+  "instamine_deepslate": {
+   "trigger": "quark:instamine_deepslate"
+  }
+ },
+ "rewards": {
+  "experience": 100
+ },
+ "requirements": [
+  [
+   "instamine_deepslate"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "deepslate_tweak"
+  }
+ ]
+}

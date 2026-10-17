@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:story/enchant_item",
+ "criteria": {
+  "influence": {
+   "trigger": "quark:influence"
+  }
+ },
+ "requirements": [
+  [
+   "influence"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "candle_influencing"
+  }
+ ]
+}

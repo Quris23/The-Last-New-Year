@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "pumpkin_lord_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 90
+ },
+ "parent": "born_in_chaos_v1:transmutalogy"
+}

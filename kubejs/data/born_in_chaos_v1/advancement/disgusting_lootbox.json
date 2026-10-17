@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "disgusting_lootbox_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 5
+ },
+ "parent": "born_in_chaos_v1:horrorofthe_depths"
+}

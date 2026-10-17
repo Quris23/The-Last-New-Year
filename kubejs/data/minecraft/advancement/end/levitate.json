@@ -1,0 +1,24 @@
+{
+ "parent": "minecraft:end/find_end_city",
+ "criteria": {
+  "levitated": {
+   "conditions": {
+    "distance": {
+     "y": {
+      "min": 50.0
+     }
+    }
+   },
+   "trigger": "minecraft:levitation"
+  }
+ },
+ "requirements": [
+  [
+   "levitated"
+  ]
+ ],
+ "rewards": {
+  "experience": 50
+ },
+ "sends_telemetry_event": true
+}

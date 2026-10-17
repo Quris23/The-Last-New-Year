@@ -1,0 +1,13 @@
+{
+ "criteria": {
+  "tick_player": {
+   "trigger": "minecraft:tick"
+  }
+ },
+ "requirements": [
+  [
+   "tick_player"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

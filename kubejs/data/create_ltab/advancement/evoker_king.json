@@ -1,0 +1,13 @@
+{
+ "parent": "create_ltab:kings_castle",
+ "criteria": {
+  "evoker_king": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "team": "evoker"
+    }
+   }
+  }
+ }
+}

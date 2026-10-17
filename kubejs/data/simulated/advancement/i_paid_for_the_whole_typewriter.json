@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:get_a_grip",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:i_paid_for_the_whole_typewriter_builtin",
+   "trigger": "simulated:i_paid_for_the_whole_typewriter_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

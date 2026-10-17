@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:story/enchant_item",
+ "criteria": {
+  "overlevel_enchant": {
+   "trigger": "quark:overlevel"
+  }
+ },
+ "requirements": [
+  [
+   "overlevel_enchant"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "ancient_tomes"
+  }
+ ]
+}

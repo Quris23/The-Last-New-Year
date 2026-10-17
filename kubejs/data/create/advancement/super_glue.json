@@ -1,0 +1,14 @@
+{
+ "parent": "create:millstone",
+ "criteria": {
+  "0": {
+   "trigger": "create:super_glue_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,20 @@
+{
+ "parent": "minecraft:husbandry/plant_seed",
+ "criteria": {
+  "stew": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "minecraft:suspicious_stew"
+     ]
+    }
+   }
+  }
+ },
+ "requirements": [
+  [
+   "stew"
+  ]
+ ]
+}

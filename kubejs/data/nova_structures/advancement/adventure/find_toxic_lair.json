@@ -1,0 +1,27 @@
+{
+ "parent": "nova_structures:adventure/find_all_illager_structures",
+ "criteria": {
+  "toxic_lair": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "nova_structures:toxic_lair"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "toxic_lair"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

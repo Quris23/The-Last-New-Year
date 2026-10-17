@@ -1,0 +1,32 @@
+{
+ "parent": "minecraft:adventure/root",
+ "criteria": {
+  "structure_found": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "supplementaries:road_sign"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "structure_found"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "road_signs"
+  }
+ ]
+}

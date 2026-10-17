@@ -1,0 +1,21 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/make_wayward_compass",
+ "criteria": {
+  "in_catacombs": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "irons_spellbooks:catacombs"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ }
+}

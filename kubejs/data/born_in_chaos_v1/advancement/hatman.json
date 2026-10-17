@@ -1,0 +1,72 @@
+{
+ "criteria": {
+  "hatman_0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:damned_demomans_hat_helmet"
+      ],
+      "count": {
+       "min": 1,
+       "max": 1
+      }
+     }
+    ]
+   }
+  },
+  "hatman_1": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:missionary_hat_helmet"
+      ],
+      "count": {
+       "min": 1,
+       "max": 1
+      }
+     }
+    ]
+   }
+  },
+  "hatman_2": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:spiritual_guide_sombrero_helmet"
+      ],
+      "count": {
+       "min": 1,
+       "max": 1
+      }
+     }
+    ]
+   }
+  },
+  "hatman_3": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+      ],
+      "count": {
+       "min": 1,
+       "max": 1
+      }
+     }
+    ]
+   }
+  }
+ },
+ "rewards": {
+  "experience": 70
+ },
+ "parent": "born_in_chaos_v1:infernal_hatman"
+}

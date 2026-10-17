@@ -1,0 +1,21 @@
+{
+ "parent": "minecraft:adventure/root",
+ "criteria": {
+  "find_artifact": {
+   "conditions": {
+    "items": [
+     {
+      "items": "#artifacts:artifacts"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "find_artifact"
+  ]
+ ],
+ "sends_telemetry_event": true
+}
