@@ -1,8 +1,6 @@
 // kubejs/server_scripts/recipe_overrides.js
 ServerEvents.recipes(event => {
 
-    // Простой крафт на обычном верстаке
-
     // Кристалл Энда
     event.shaped('minecraft:end_crystal', [
         'GGG',
@@ -23,8 +21,6 @@ ServerEvents.recipes(event => {
         T: 'ghast_tear',
         S: 'obsidian'
     })
-
-    // Последовательная сборка Create (Sequenced Assembly)
 
     // Зачарованное золотое яблоко
     let appleTransitional = 'kubejs:incomplete_enchanted_apple'
@@ -66,4 +62,13 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(deathTotemTransitional, deathTotemTransitional),
         event.recipes.createFilling(deathTotemTransitional, [deathTotemTransitional, Fluid.of('kubejs:chaos_fluid', 75)])
     ]).transitionalItem(deathTotemTransitional).loops(1)
+
+    // Тёмная решётка
+    event.shaped(Item.of('born_in_chaos_v1:dark_grid', 8), [
+    ' I ',
+    ' I ',
+    '   '
+  ], {
+    I: 'born_in_chaos_v1:dark_metal_ingot'
+  })
 })

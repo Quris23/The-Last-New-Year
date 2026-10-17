@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
-
-  // Рамка портала
+    
+    // Рамка портала
     let bars = ['iron_bars', 'born_in_chaos_v1:dark_grid']
     let portTrans = 'kubejs:incomplete_uportal_frame'
     event.recipes.create.sequenced_assembly([
@@ -16,27 +16,65 @@ ServerEvents.recipes(event => {
     .transitionalItem(portTrans).loops(1)
 
 
-  // Волшебный слиток
+    // Волшебный слиток
+    let arcaneIngot = 'irons_spellbooks:arcane_ingot'
+    let Ingots = ['iron_ingot', 'gold_ingot', 'copper_ingot', 'cataclysm:black_steel_ingot']
+    event.shapeless(`9x ${'irons_spellbooks:arcane_ingot'}`, 'create_wizardry:arcane_block')
 
-  let arcaneIngot = 'irons_spellbooks:arcane_ingot'
-  let Ingots = ['iron_ingot', 'gold_ingot', 'copper_ingot', 'cataclysm:black_steel_ingot']
-  event.shapeless(`9x ${'irons_spellbooks:arcane_ingot'}`, 'create_wizardry:arcane_block')
-
-  event.recipes.createFilling('irons_spellbooks:arcane_ingot', [
+    event.recipes.createFilling('irons_spellbooks:arcane_ingot', [
         Ingots,
         Fluid.of('create_wizardry:mana', 1000)
     ])
 
-  // Кожа хоглина
-  event.shaped('irons_spellbooks:hogskin', [
-    'AA',
-    'AA'
-], {
-    A: 'cold_sweat:hoglin_hide'
-})
+    // Кожа хоглина
+    event.shaped('irons_spellbooks:hogskin', [
+        'AA',
+        'AA'
+    ], {
+        A: 'cold_sweat:hoglin_hide'
+    })
 
-    // Кольцо Лапласа
+    // Магическая ткань
+    event.shaped('irons_spellbooks:magic_cloth', [
+        'EEE',
+        'EAE',
+        'EEE'
+    ], {
+        A: 'northstar:durable_fabric',
+        E: 'irons_spellbooks:arcane_essence'
+    })
 
+    event.recipes.create.filling(
+        'irons_spellbooks:magic_cloth',
+    ['northstar:durable_fabric', Fluid.of('create_wizardry:mana', 500)])
+
+    // Жаровня
+  event.shaped('irons_spellbooks:brazier', [
+    ' I ',
+    'IFI',
+    ' I '
+  ], {
+    I: 'iron_bars',
+    F: 'minecraft:campfire'
+  })
+
+  // Жаровня душ
+  event.shaped('irons_spellbooks:brazier_soul', [
+    ' I ',
+    'IFI',
+    ' C '
+  ], {
+    I: 'born_in_chaos_v1:dark_grid',
+    F: 'minecraft:soul_campfire',
+    C: 'cataclysm:cursium_ingot'
+  })
+
+    // Хемп вместо картошки
+    //  event.get('irons_spellbooks:nature_focus')
+    //      .remove('minecraft:poisonous_potato')
+    //      .add('nirvana:hemp')
+
+    // Кольцо Лапласа 
     let ringTrans0 = 'irons_spellbooks:cooldown_ring'
     event.recipes.create.sequenced_assembly([
         'spellclasses:laplace_ring'
@@ -61,21 +99,94 @@ ServerEvents.recipes(event => {
     ])
     .transitionalItem(ringTrans1).loops(1)
 
-    // Броня Инженера - оригинальные рецепты мода убираем, свои (кузнечный стол: Мантия Мага + Механизм Точности
-    // + Эссенция Шторма) заданы в boss_integration.js
-    event.remove({ output: 'cataclysm_spellbooks:engineer_hood' })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_suit' })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_leggings' })
-    event.remove({ output: 'cataclysm_spellbooks:engineer_boots' })
+    // Броня бездны
+    let coral = ['tube_coral_block', 'brain_coral_block', 'bubble_coral_block', 'fire_coral_block', 'horn_coral_block']
+    event.shaped('cataclysm_spellbooks:abyssal_rune', [
+        'CCC',
+        'CRC',
+        'CCC'
+    ], {
+        C: coral,
+        R: 'irons_spellbooks:blank_rune'
+    })
 
-    // Трость Изобретателя - крафт на кузнечном столе: база Посох Молнии + Механизм Точности (шаблон) + Руна Молнии (добавка)
-    event.remove({ output: 'irons_spellbooks:artificer_cane' })
-    event.custom({
-        type: 'minecraft:smithing_transform',
-        base: { item: 'irons_spellbooks:lightning_rod' },
-        template: { item: 'create:precision_mechanism' },
-        addition: { item: 'irons_spellbooks:lightning_rune' },
-        result: { id: 'irons_spellbooks:artificer_cane' }
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_helmet',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_chestplate',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_leggings',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
+        'NR',
+        'E '
+    ], {
+        N: 'irons_spellbooks:netherite_mage_boots',
+        R: 'cataclysm_spellbooks:abyssal_rune',
+        E: 'irons_spellbooks:arcane_essence'
+    })
+
+    // Броня светоносца (Lightbringer): нагрудник теперь делается из Незеритового нагрудника мага (раньше - из нагрудника жреца),
+    // шлем, поножи и ботинки (spellclasses:paladin_*) - тем же рецептом из соответствующих частей незеритовой брони мага.
+    event.remove({ id: 'irons_spellbooks:paladin_chestplate' })
+
+    const pieces = {
+      helmet: 'spellclasses:paladin_helmet',
+      chestplate: 'irons_spellbooks:paladin_chestplate',
+      leggings: 'spellclasses:paladin_leggings',
+      boots: 'spellclasses:paladin_boots'
+    }
+    Object.keys(pieces).forEach(piece => {
+      event.shaped(pieces[piece], [
+        'GDG',
+        'WAW',
+        'GWG'
+      ], {
+        G: '#c:ingots/gold',
+        D: 'irons_spellbooks:divine_soulshard',
+        W: 'irons_spellbooks:mithril_weave',
+        A: `irons_spellbooks:netherite_mage_${piece}`
+      }).id(`generation:paladin_${piece}`)
+    })
+
+    // Броня пугала (irons_spellbooks:pumpkin_*): в рецептах кожа и кожаный шлем убраны, добавлены Незеритовая броня боевого мага
+    // соответствующей части и Флакон с кровью. Остальное (магическая ткань, сено, тыква) осталось как в оригинале.
+    const recipes = {
+      helmet: [' C ', 'CNC', 'VPV'],
+      chestplate: ['HVH', 'CNC', 'C C'],
+      leggings: ['HNH', 'C C', 'V V'],
+      boots: ['HNH', 'C C', 'V V']
+    }
+    Object.keys(recipes).forEach(piece => {
+      event.remove({ id: `irons_spellbooks:pumpkin_${piece}` })
+      const key = {
+        C: 'irons_spellbooks:magic_cloth',
+        N: `irons_spellbooks:netherite_mage_${piece}`,
+        V: 'irons_spellbooks:blood_vial'
+      }
+      if (piece === 'helmet') key.P = 'minecraft:carved_pumpkin'
+      else key.H = 'minecraft:hay_block'
+      event.shaped(`irons_spellbooks:pumpkin_${piece}`, recipes[piece], key).id(`generation:pumpkin_${piece}`)
     })
 
 })

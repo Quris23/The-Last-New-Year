@@ -1,7 +1,7 @@
 // kubejs/server_scripts/belt_crafts.js
 ServerEvents.recipes(event => {
 
-  // Латунный пояс — улучшение из Пояса Ученика (cataclysm:belt_of_beginner), +2 слота талисмана
+  // Латунный пояс
   event.shaped('spellclasses:brass_belt', [
     'BAB',
     'AXA',
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     X: 'cataclysm:belt_of_beginner'
   })
 
-  // Пояс Чёрной Стали — улучшение из Латунного пояса, +3 слота талисмана
+  // Пояс Чёрной Стали
   event.shaped('spellclasses:black_steel_belt', [
     'BAB',
     'AXA',

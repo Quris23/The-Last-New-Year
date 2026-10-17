@@ -101,12 +101,12 @@ ServerEvents.recipes(event => {
         CreateItem.of('born_in_chaos_v1:dark_atrium', 0.07),
         CreateItem.of('alexscaves:darkened_apple', 0.06)
     ], 'minecraft:ender_eye', [
-        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:dark_atrium']),
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:orbofthe_summoner']),
         event.recipes.createFilling(trans, [trans, Fluid.of('kubejs:chaos_fluid', 500)]),
         event.recipes.createDeploying(trans, [trans, 'alexscaves:darkened_apple']),
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:fel_soil']),
         event.recipes.createFilling(trans,  [trans, Fluid.of('irons_spellbooks:blood', 500)]),
-        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:orbofthe_summoner']),
-        event.recipes.createPressing(trans, trans)
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:dark_atrium']),
     ]).transitionalItem(trans).loops(1)
 
     // Око Потерянной Технологии
@@ -184,19 +184,18 @@ ServerEvents.recipes(event => {
     })
 
     // Око Вечных Бурь
-    let levitite = ['aeronautics:levitite', 'aeronautics:pearlescent_levitite']
-    event.shaped('endrem:wither_eye', [
-        'bCr',
-        'lEl',
-        'rRb'
-    ], {
-        b: 'quark:bottled_cloud',
-        C: 'irons_spellbooks:energized_core',
-        R: 'legendary_monsters:air_rune',
-        r: 'legendary_monsters:cloud_rod',
-        l: levitite,
-        E: 'ender_eye'
-    })
+    let trans3 = 'kubejs:incomplete_wither_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:wither_eye', 0.80),
+        CreateItem.of('2x legendary_monsters:air_rune', 0.20)
+    ], 'irons_spellbooks:energized_core', [ 
+        event.recipes.createFilling(trans3, [trans3, Fluid.of('kubejs:cloud_fluid', 1000)]),
+        event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:mithril_weave']),
+        event.recipes.createFilling(trans3,  [trans3, Fluid.of('aeronautics:levitite_blend', 1000)]),
+        event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:cloud_rod']),
+        event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
+        event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:air_rune']),
+    ]).transitionalItem(trans3).loops(2)
 
     // Око Семи Морей
     event.shaped('endrem:exotic_eye', [
@@ -215,45 +214,47 @@ ServerEvents.recipes(event => {
     })
 
     // Око Адского Пламени
-    event.shaped('endrem:nether_eye', [
-        'MIV',
-        'NEN',
-        'VIM'
-    ], {
-        M: 'alexscaves:primal_magma',
-        I: 'cataclysm:ignitium_ingot',
-        N: 'minecraft:netherite_ingot',
-        E: 'ender_eye',
-        V: 'create:blaze_cake'
-    })
+    let trans1 = 'kubejs:incomplete_nether_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:nether_eye', 0.80),
+        CreateItem.of('2x cataclysm:ignitium_ingot', 0.19),
+        CreateItem.of('4x netherite_scrap', 0.01)
+    ], 'legendary_monsters:eye_of_magma', [ 
+        event.recipes.createDeploying(trans1, [trans1, 'cataclysm:ignitium_ingot']),
+        event.recipes.createFilling(trans1, [trans1, Fluid.of('create_wizardry:fire_ale', 1000)]),
+        event.recipes.createDeploying(trans1, [trans1, 'irons_spellbooks:cinderous_soulcaller']),
+        event.recipes.createDeploying(trans1, [trans1, 'alexscaves:primal_magma']),
+        event.recipes.createFilling(trans1,  [trans1, Fluid.of('lava', 1000)]),
+        event.recipes.createDeploying(trans1, [trans1, 'create:blaze_cake']),
+    ]).transitionalItem(trans1).loops(2)
 
     // Око Фрактального Краха
-    //event.recipes.createFilling(crypticTransitional, [crypticTransitional, Fluid.of('aerowarptics:rift_essence', 1000)]),
-    event.shaped('endrem:rogue_eye', [
-        'apr',
-        'mEm',
-        'rea'
-    ], {
-        a: 'legendary_monsters:bottle_of_annihilation',
-        p: 'legendary_monsters:portal_shard',
-        r: 'alexscaves:radon_bottle',
-        m: 'northstar:martian_steel_ingot',
-        E: 'ender_eye',
-        e: 'legendary_monsters:enderitium_ingot'
-    })
+        let trans2 = 'kubejs:incomplete_rogue_eye'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('endrem:rogue_eye', 0.80),
+        CreateItem.of('2x legendary_monsters:portal_shard', 0.2)
+    ], 'aerowarptics:singularity_core', [ 
+        event.recipes.createDeploying(trans2, [trans2, 'alexscaves:uranium']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
+        event.recipes.createDeploying(trans2, [trans2, 'aeronautics:end_stone_powder']),
+        event.recipes.createDeploying(trans2, [trans2, 'northstar:martian_steel_ingot']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('aerowarptics:rift_essence', 500)]),
+        event.recipes.createDeploying(trans2, [trans2, 'legendary_monsters:portal_shard']),
+    ]).transitionalItem(trans2).loops(2)
 
     // Око Непростительного Проклятия
     transitional = 'kubejs:incomplete_cursed_eye'
+    let lamp = ['born_in_chaos_v1:fel_lamp', 'born_in_chaos_v1:lord_pumpkinheads_lamp']
     event.recipes.create.sequenced_assembly([
         CreateItem.of('endrem:cursed_eye', 0.80),
         CreateItem.of('2x cataclysm:cursium_ingot', 0.20)
     ], 'minecraft:ender_eye', [
-        event.recipes.createDeploying(transitional, [transitional, 'cataclysm:cursium_ingot']),
-        event.recipes.createDeploying(transitional, [transitional, 'alexscaves:uranium']),
+        event.recipes.createDeploying(transitional, [transitional, 'irons_spellbooks:brazier_soul']),
+        event.recipes.createDeploying(transitional, [transitional, 'born_in_chaos_v1:smoldering_scorched_wood']),
         event.recipes.createFilling(transitional, [transitional, Fluid.of('fluid:haunting_fluid', 500)]),
-        event.recipes.createDeploying(transitional, [transitional, 'minecraft:spider_eye']),
+        event.recipes.createDeploying(transitional, [transitional, lamp]),
         event.recipes.createDeploying(transitional, [transitional, 'cataclysm:black_steel_ingot']),
-        event.recipes.createPressing(transitional, transitional)
+        event.recipes.createDeploying(transitional, [transitional, 'fermented_spider_eye']),
     ]).transitionalItem(transitional).loops(2)
 
 })
