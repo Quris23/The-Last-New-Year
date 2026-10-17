@@ -18,6 +18,7 @@
     "ImpactSoundRangeMixin",
     "ArtificerCaneGateMixin",
     "ShieldGeneratorFlavorTextMixin",
-    "RedstonelessMixin"
+    "RedstonelessMixin",
+    "HexCoreRenderMixin"
   ]
 }
