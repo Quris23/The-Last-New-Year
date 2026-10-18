@@ -331,8 +331,8 @@
 	quest.1B5DF1FD6AE9265B.title: "Липкая зона"
 	quest.1B7E78EB850BCF60.quest_desc: ["Спрячьтесь в полном комплекте картонной брони"]
 	quest.1B7E78EB850BCF60.title: "Тактическое упаковывание"
-	quest.1BA8B77D8CBA549E.quest_desc: ["Defeat The Obliterator"]
-	quest.1BA8B77D8CBA549E.title: "Obliteration for Obliterator"
+	quest.1BA8B77D8CBA549E.quest_desc: ["Победите Опустошителя"]
+	quest.1BA8B77D8CBA549E.title: "Аннигиляция для Опустошителя"
 	quest.1C3776B7BBA709E4.title: "Опора Долгих Лет"
 	quest.1CA6B40CEB25AD04.quest_desc: [
 		"Присвойте 26 или более частот клавишам на частотной пишущей машинке"
@@ -372,7 +372,7 @@
 	quest.1F4609E912C042F4.title: "Звёздный торговец"
 	quest.1F5EF62A21DA915F.quest_desc: ["Убейте одним выстрелом из арбалета пять разных мобов"]
 	quest.1F5EF62A21DA915F.title: "Арбаллистика"
-	quest.20D499CC86629B5A.quest_desc: ["Defeat the Wandering Eye"]
+	quest.20D499CC86629B5A.quest_desc: ["Победите Блуждающее Око"]
 	quest.20D499CC86629B5A.title: "Float f1"
 	quest.213DF4F73EF8C9FC.quest_desc: ["Опустошите рифт-разлом конденсатором портальной жидкости и запечатлите, как она навсегда закроется."]
 	quest.213DF4F73EF8C9FC.title: "Запечатано"
@@ -582,8 +582,8 @@
 	quest.32E9248BADBA8A0F.title: "Карусель, карусель..."
 	quest.338BA753B67D0EDE.quest_desc: ["Растяните верёвочную лебёдку на глубину более 200 блоков"]
 	quest.338BA753B67D0EDE.title: "Верёвка в никуда"
-	quest.33C0A1565E83ABCB.quest_desc: ["Defeat Annihilation Pursuer"]
-	quest.33C0A1565E83ABCB.title: "Slowing Down A Bit..."
+	quest.33C0A1565E83ABCB.quest_desc: ["Победите Преследователя Аннигиляции"]
+	quest.33C0A1565E83ABCB.title: "Немного притормозим..."
 	quest.33F505696652CF58.quest_desc: ["Съешьте кусок мыла. Не пытайтесь повторить это дома"]
 	quest.33F505696652CF58.title: "Всё ещё кипятите? Тогда мы идём к вам!"
 	quest.3411538ED86E2A62.quest_desc: ["Разместите латунную угловую передачу"]
@@ -745,8 +745,8 @@
 	quest.3EC0E7112ACE53DC.title: "Эхолокация"
 	quest.3ED7A18213D61ECB.quest_desc: ["Огненное существо. Надо бы взять с собой &cАдского Заклинателя&r."]
 	quest.3ED7A18213D61ECB.title: "Тайрос, Первый Огненосец"
-	quest.3F227346DA40697E.quest_desc: ["Locate the Space Station"]
-	quest.3F227346DA40697E.title: "The Place Of The Beginning"
+	quest.3F227346DA40697E.quest_desc: ["Найдите Космическую Станцию"]
+	quest.3F227346DA40697E.title: "Место Начала"
 	quest.3F7D3087DB8483DE.quest_desc: ["Создайте трансмутирующий эликсир"]
 	quest.3F7D3087DB8483DE.title: "Трансмутология"
 	quest.3F9C7D2A1B4E6081.quest_desc: [
@@ -866,8 +866,8 @@
 	quest.47DE18EF8259B79F.title: "Три закона големотехники"
 	quest.47F1ADC76FDD039E.quest_desc: ["Войдите в холод"]
 	quest.47F1ADC76FDD039E.title: "Холод"
-	quest.4806C44BAEA3BC8D.quest_desc: ["Defeat Flameborn Guard and Warrior"]
-	quest.4806C44BAEA3BC8D.title: "Flame Of The End"
+	quest.4806C44BAEA3BC8D.quest_desc: ["Победите Рождённого Пламенем Стража и Воина"]
+	quest.4806C44BAEA3BC8D.title: "Пламя Энда"
 	quest.483015D9314CF85B.quest_desc: ["Прикрепите паровой свисток к вашему поезду, и погудите в него!"]
 	quest.483015D9314CF85B.title: "Чу-чу!"
 	quest.48680DA5AFCA7AB2.quest_desc: ["ПКМ по &aживому&r существу."]
@@ -1072,7 +1072,7 @@
 	quest.5B6E18941C28F3F7.quest_desc: [
 		"Флакон с хаосом встречается в сундуках надгробий."
 		""
-		"Опустошив флакон, вы получите 75 mB жидкого хаоса; залив 250 mB жидкого хаоса (Create), наполните его снова."
+		"Опустошив флакон, вы получите 250 mB жидкого хаоса; залив 250 mB жидкого хаоса (Create), наполните его снова."
 	]
 	quest.5BBE3712155587A3.quest_desc: ["Сделайте текст на любом виде таблички светящимся"]
 	quest.5BBE3712155587A3.title: "Чтенье — свет!"
@@ -1141,13 +1141,13 @@
 	quest.62E099C44C866A43.quest_desc: [
 		"Конец ветки «Хаос»: Око Истинной Скверны."
 		""
-		"Собирается на линии сборки Create из Ока Эндера:"
-		"&e-&r Тёмное предсердие"
+		"Собирается на линии сборки Create из Ока Эндера по порядку:"
+		"&e-&r Сфера призывателя"
 		"&e-&r Жидкий хаос (500 mB)"
 		"&e-&r Тёмное яблоко"
+		"&e-&r Почва скверны"
 		"&e-&r Кровь (500 mB)"
-		"&e-&r Сфера призывателя"
-		"&e-&r Прессование"
+		"&e-&r Тёмное предсердие"
 		""
 		"Нужны и два глаза из раздела «Путь на край света»."
 	]
@@ -1378,8 +1378,8 @@
 	quest.78535F1B201B5FB4.title: "Gladstone Gander"
 	quest.78624CBBF49E6867.quest_desc: ["Создайте штуковину с буром, пилой или комбайном на борту"]
 	quest.78624CBBF49E6867.title: "Движение с целью"
-	quest.7885722AE51B2D69.quest_desc: ["Defeat The Flame Drifter"]
-	quest.7885722AE51B2D69.title: "Professional Drifter"
+	quest.7885722AE51B2D69.quest_desc: ["Победите Огненного Дрейфера"]
+	quest.7885722AE51B2D69.title: "Профессиональный Дрейфер"
 	quest.78B51BB9598DB307.title: "Невиданный шаблон"
 	quest.7908B0258AAEA431.quest_desc: ["Авторы: nova_wostra (основатель), walls (таблицы лута), badooga (достижения), xllifi (локализация)"]
 	quest.7908B0258AAEA431.title: "Добро пожаловать в Dungeons and Taverns"
@@ -1475,7 +1475,7 @@
 	task.09F9FFFAC15F9A3C.title: "Опытный утилизатор"
 	task.0A2F65F1155D4ACB.title: "Вертикальная логистика"
 	task.0A88F3375D7023C5.title: "The Castle"
-	task.0ABB830EFCFA3176.title: "Flame Of The End"
+	task.0ABB830EFCFA3176.title: "Пламя Энда"
 	task.0AFA45EF7E1064F4.title: "Ковка сигила"
 	task.0B16AEEB3F77CF3C.title: "Мегаполис неприкаянных душ"
 	task.0C0863B82F416010.title: "Просто попугаи"
@@ -1497,7 +1497,7 @@
 	task.1140CF976B3825AE.title: "Энд"
 	task.11C87FBD73C300C3.title: "Двух птиц одним выстрелом"
 	task.1275BB30CB511719.title: "А вы - фанат токсичных болот?"
-	task.1293DB02C7221E35.title: "Obliteration for Obliterator"
+	task.1293DB02C7221E35.title: "Аннигиляция для Опустошителя"
 	task.13B42B2FAFE9EB29.title: "Бесконечный цикл"
 	task.13C5F19D2359BD64.title: "Перекати-поле"
 	task.13DEB67CC68F2B74.title: "Прикосновение к мантии"
@@ -1520,7 +1520,7 @@
 	task.184A4E8E171D548A.title: "Хозяин подземелий"
 	task.18B61AC6A81BE5F5.title: "Кузнец своего стиля"
 	task.19498D63338F16B6.title: "Зов пустоты"
-	task.19CBD0530CECC79F.title: "Slowing Down A Bit..."
+	task.19CBD0530CECC79F.title: "Немного притормозим..."
 	task.19D2CBD1A09486D6.title: "Древняя гробница"
 	task.1A8DE172F729F469.title: "На крючке"
 	task.1AA55B596F652BBE.title: "Новая колея"
@@ -1616,7 +1616,7 @@
 	task.3650006B83ECFD27.title: "Горелко-трон"
 	task.365CF225A08970DD.title: "Любой свиток со заклинанием школы Лёд"
 	task.37B2BCDB95D8ED28.title: "До чего дошёл прогресс"
-	task.384AC71BB7C5CE8D.title: "Professional Drifter"
+	task.384AC71BB7C5CE8D.title: "Профессиональный Дрейфер"
 	task.39B20EE03D1ABA52.title: "Смерть всегда находит способ"
 	task.3A9779127E928930.title: "Как вы яхту назовёте..."
 	task.3B01BBD64EF6F9F2.title: "Амбициозные усилия"
@@ -1690,7 +1690,7 @@
 	task.4EB05D4316841E13.title: "Промышленное осушение"
 	task.4F097A2631196A49.title: "Взрывной темперамент"
 	task.4F37A1835A6A1E9D.title: "Чемпион катапульты"
-	task.4F6922CCD1A99F2C.title: "The Place Of The Beginning"
+	task.4F6922CCD1A99F2C.title: "Место Начала"
 	task.50B2DE8D9781B22E.title: "Тактическое упаковывание"
 	task.50F182DAB070826C.title: "Инженеры ненавидят простые решения!"
 	task.514188B1B91BD7C9.title: "Гавань путника"

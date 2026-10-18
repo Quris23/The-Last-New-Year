@@ -947,7 +947,7 @@
 	quest.5B6E18941C28F3F7.quest_desc: [
 		"A Chaos Component is found in tombstone chests."
 		""
-		"Emptying it gives 75 mB of liquid chaos; filling it with 250 mB of liquid chaos (Create) refills it."
+		"Emptying it gives 250 mB of liquid chaos; filling it with 250 mB of liquid chaos (Create) refills it."
 	]
 	quest.5BBE3712155587A3.quest_desc: ["Make the text of any kind of sign glow"]
 	quest.5BBE3712155587A3.title: "Glow and Behold!"
@@ -1016,13 +1016,13 @@
 	quest.62E099C44C866A43.quest_desc: [
 		"The end of the Chaos branch: the Eye of True Corruption."
 		""
-		"It is built on a Create assembly line from an Eye of Ender:"
-		"&e-&r Dark Atrium"
+		"It is built on a Create assembly line from an Eye of Ender, in this order:"
+		"&e-&r Orb of the Summoner"
 		"&e-&r Liquid Chaos (500 mB)"
 		"&e-&r Darkened Apple"
+		"&e-&r Fel Soil"
 		"&e-&r Blood (500 mB)"
-		"&e-&r Orb of the Summoner"
-		"&e-&r Pressing"
+		"&e-&r Dark Atrium"
 		""
 		"You also need the two eyes from \"The Way to the End\"."
 	]
