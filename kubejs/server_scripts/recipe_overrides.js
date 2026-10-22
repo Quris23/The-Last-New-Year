@@ -65,10 +65,47 @@ ServerEvents.recipes(event => {
 
     // Тёмная решётка
     event.shaped(Item.of('born_in_chaos_v1:dark_grid', 8), [
-    ' I ',
-    ' I ',
-    '   '
-  ], {
-    I: 'born_in_chaos_v1:dark_metal_ingot'
-  })
+        ' I ',
+        ' I ',
+        '   '
+    ], {
+        I: 'born_in_chaos_v1:dark_metal_ingot'
+    })
+    // Tentaworks
+        // Щупальце
+
+        // Медная установка
+    event.recipes.create.mechanical_crafting('tentaworks:copper_tentacle_rig', [
+        't   t',
+        'rspsr',
+        ' cbc ',
+        'rsmsr',
+        't   t'
+    ], {
+        t: 'tentaworks:tentacle',
+        r: 'createaddition:brass_rod',
+        s: 'createcasing:copper_shaft',
+        p: 'create:precision_mechanism',
+        c: 'create:copper_casing',
+        b: 'create:copper_backtank',
+        m: 'simulated:gyroscopic_mechanism'
+    })
+
+        // Незеритовая установка
+    let casing = ['dndesires:industrial_casing']
+    event.recipes.create.mechanical_crafting('tentaworks:netherite_tentacle_rig', [
+        't   t',
+        'rspsr',
+        ' cbc ',
+        'rsmsr',
+        't   t'
+    ], {
+        t: 'tentaworks:tentacle',
+        r: 'kubejs:black_steel_rod',
+        s: 'create:shaft',
+        p: 'create:precision_mechanism',
+        c: casing,
+        b: 'create:netherite_backtank',
+        m: 'simulated:gyroscopic_mechanism'
+    })
 })

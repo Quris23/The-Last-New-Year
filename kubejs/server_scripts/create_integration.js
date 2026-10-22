@@ -138,7 +138,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(Item.of('kubejs:dark_chorium_steel', 2), [
         'createcasing:chorium_ingot',
         'cataclysm:black_steel_ingot',
-        'create:shadow_steel'
+        'create:shadow_steel',
+        Fluid.of('create_dragons_plus:dragon_breath', 250)
     ]).superheated()
 
     // Осколок эха
@@ -182,5 +183,18 @@ ServerEvents.recipes(event => {
       ['aeronautics:levitite', 'aeronautics:pearlescent_levitite'],
       '4x minecraft:chorus_fruit'
     ]).superheated()
-    
+
+    // Варп-двигатель
+    let trwarp = 'kubejs:incomplete_warp_drive'
+    let tank = ['create:fluid_tank', 'createcasing:andesite_fluid_tank', 'createcasing:brass_fluid_tank', 'createcasing:zinc_fluid_tank']
+    event.recipes.create.sequenced_assembly([
+        'artifacts:warp_drive'
+    ], tank, [ 
+        event.recipes.createDeploying(trwarp, [trwarp, 'create:refined_radiance']),
+        event.recipes.createFilling(trwarp, [trwarp, Fluid.of('irons_spellbooks:timeless_slurry', 1000)]),
+        event.recipes.createDeploying(trwarp, [trwarp, 'aerowarptics:rift_lens']),
+        event.recipes.createFilling(trwarp, [trwarp, Fluid.of('aerowarptics:rift_essence', 250)]),
+        event.recipes.createDeploying(trwarp, [trwarp, 'sophisticatedcore:ender_linker']),
+    ]).transitionalItem(trwarp).loops(1)
+
 })

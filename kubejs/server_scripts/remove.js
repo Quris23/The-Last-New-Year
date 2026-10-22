@@ -116,4 +116,8 @@ ServerEvents.recipes(event => {
     // Вечная Говядина / Вечный Стейк (Artifacts)
     event.remove({ output: 'artifacts:eternal_steak' })
 
+    // Tentaworks
+    event.remove({ output: 'tentaworks:copper_tentacle_rig' })
+    event.remove({ output: 'tentaworks:netherite_tentacle_rig' })
+
 })

@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(dragonBook, [dragonBook, 'cataclysm:enderite_block']),
         event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:mithril_ingot']),
         event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:dragonskin']),
-        event.recipes.createFilling(dragonBook,  [dragonBook, Fluid.of('fluid:haunting_fluid', 435)]),
+        event.recipes.createFilling(dragonBook,  [dragonBook, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
         event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:dragonskin']),
         event.recipes.createPressing(dragonBook, dragonBook)
     ]).transitionalItem(dragonBook).loops(2)

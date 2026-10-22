@@ -2,7 +2,7 @@
 ServerEvents.recipes(event => {
 
     // Око меха
-    transitional = 'kubejs:incomplete_mech_eye'
+    let transitional = 'kubejs:incomplete_mech_eye'
     let ironBlocks = ['minecraft:iron_block', 'create:industrial_iron_block', 'create:weathered_iron_block']
     event.recipes.create.sequenced_assembly([
         CreateItem.of('cataclysm:mech_eye', 0.80),
@@ -168,19 +168,18 @@ ServerEvents.recipes(event => {
     })
 
     // Око Первого Разлома
-    let sea = ['alexscaves:pearl', 'alexscaves:magic_conch']
-    let ore = ['deepslate_diamond_ore', 'deepslate_emerald_ore']
+    let ore = ['deepslate_diamond_ore', 'deepslate_emerald_ore', 'createpropulsion:deepslate_platinum_ore']
     event.shaped('endrem:cold_eye', [
-        'rEr',
+        'dEd',
         'hCs',
-        'rdr'
+        'dId'
     ], {
-        r: 'cataclysm_spellbooks:abyssal_rune',
+        d: ore,
         E: 'cataclysm:abyssal_egg',
         h: 'heart_of_the_sea',
         C: 'ender_eye',
-        s: sea,
-        d: ore
+        s: 'alexscaves:magic_conch',
+        I: 'alexscaves:immortal_embryo'
     })
 
     // Око Вечных Бурь
@@ -229,32 +228,32 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(trans1).loops(2)
 
     // Око Фрактального Краха
-        let trans2 = 'kubejs:incomplete_rogue_eye'
+    let trans2 = 'kubejs:incomplete_rogue_eye'
     event.recipes.create.sequenced_assembly([
         CreateItem.of('endrem:rogue_eye', 0.80),
         CreateItem.of('2x legendary_monsters:portal_shard', 0.2)
     ], 'aerowarptics:singularity_core', [ 
-        event.recipes.createDeploying(trans2, [trans2, 'alexscaves:uranium']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
-        event.recipes.createDeploying(trans2, [trans2, 'aeronautics:end_stone_powder']),
+        event.recipes.createDeploying(trans2, [trans2, 'goingnuclear:raw_uranium']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('alexscaves:acid', 1000)]),
         event.recipes.createDeploying(trans2, [trans2, 'northstar:martian_steel_ingot']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('aerowarptics:rift_essence', 500)]),
         event.recipes.createDeploying(trans2, [trans2, 'legendary_monsters:portal_shard']),
     ]).transitionalItem(trans2).loops(2)
 
     // Око Непростительного Проклятия
-    let transitional = 'kubejs:incomplete_cursed_eye'
+    let transitional1 = 'kubejs:incomplete_cursed_eye'
     let lamp = ['born_in_chaos_v1:fel_lamp', 'born_in_chaos_v1:lord_pumpkinheads_lamp']
     event.recipes.create.sequenced_assembly([
         CreateItem.of('endrem:cursed_eye', 0.80),
         CreateItem.of('2x cataclysm:cursium_ingot', 0.20)
     ], 'minecraft:ender_eye', [
-        event.recipes.createDeploying(transitional, [transitional, 'irons_spellbooks:brazier_soul']),
-        event.recipes.createDeploying(transitional, [transitional, 'born_in_chaos_v1:smoldering_scorched_wood']),
-        event.recipes.createFilling(transitional, [transitional, Fluid.of('fluid:haunting_fluid', 500)]),
-        event.recipes.createDeploying(transitional, [transitional, lamp]),
-        event.recipes.createDeploying(transitional, [transitional, 'cataclysm:black_steel_ingot']),
-        event.recipes.createDeploying(transitional, [transitional, 'fermented_spider_eye']),
-    ]).transitionalItem(transitional).loops(2)
+        event.recipes.createDeploying(transitional1, [transitional1, 'irons_spellbooks:brazier_soul']),
+        event.recipes.createDeploying(transitional1, [transitional1, 'born_in_chaos_v1:smoldering_scorched_wood']),
+        event.recipes.createFilling(transitional1, [transitional1, Fluid.of('fluid:haunting_fluid', 500)]),
+        event.recipes.createDeploying(transitional1, [transitional1, lamp]),
+        event.recipes.createDeploying(transitional1, [transitional1, 'cataclysm:black_steel_ingot']),
+        event.recipes.createDeploying(transitional1, [transitional1, 'fermented_spider_eye']),
+    ]).transitionalItem(transitional1).loops(2)
 
 })
