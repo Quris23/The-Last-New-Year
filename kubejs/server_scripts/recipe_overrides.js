@@ -108,4 +108,17 @@ ServerEvents.recipes(event => {
         b: 'create:netherite_backtank',
         m: 'simulated:gyroscopic_mechanism'
     })
+
+        // Щупальце
+    let tentacleTrans = 'create:piston_extension_pole'
+    event.recipes.create.sequenced_assembly([
+        'tentaworks:tentacle'
+    ], tentacleTrans, [
+        event.recipes.createDeploying(tentacleTrans, [tentacleTrans, 'create:piston_extension_pole']),
+        event.recipes.createPressing(tentacleTrans, tentacleTrans),
+        event.recipes.createDeploying(tentacleTrans, [tentacleTrans, 'create:piston_extension_pole']),
+        event.recipes.createPressing(tentacleTrans, tentacleTrans),
+        event.recipes.createDeploying(tentacleTrans, [tentacleTrans, 'create:sticker']),
+    ]).transitionalItem(tentacleTrans).loops(3)
+
 })

@@ -234,8 +234,8 @@ ServerEvents.recipes(event => {
         CreateItem.of('2x legendary_monsters:portal_shard', 0.2)
     ], 'aerowarptics:singularity_core', [ 
         event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
-        event.recipes.createDeploying(trans2, [trans2, 'goingnuclear:raw_uranium']),
-        event.recipes.createFilling(trans2, [trans2, Fluid.of('alexscaves:acid', 1000)]),
+        event.recipes.createDeploying(trans2, [trans2, 'alexscaves:acidic_radrock']),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('goingnuclear:uranyl_nitrate', 1000)]),
         event.recipes.createDeploying(trans2, [trans2, 'northstar:martian_steel_ingot']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('aerowarptics:rift_essence', 500)]),
         event.recipes.createDeploying(trans2, [trans2, 'legendary_monsters:portal_shard']),

@@ -197,4 +197,18 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(trwarp, [trwarp, 'sophisticatedcore:ender_linker']),
     ]).transitionalItem(trwarp).loops(1)
 
+    // Чешуя дракона
+    let skinTrans1 = 'born_in_chaos_v1:monster_skin'
+    //'legendary_monsters:lava_eaters_skin']
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('quark:dragon_scale', 0.50),
+        CreateItem.of('born_in_chaos_v1:monster_skin', 0.50)
+    ], skinTrans1, [
+        event.recipes.createDeploying(skinTrans1, [skinTrans1, 'end_crystal']),
+        event.recipes.createFilling(skinTrans1,  [skinTrans1, Fluid.of('irons_spellbooks:timeless_slurry', 500)]),
+        event.recipes.createDeploying(skinTrans1, [skinTrans1, ['crying_obsidian', 'obsidian']]),
+        event.recipes.createFilling(skinTrans1,  [skinTrans1, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
+        event.recipes.createPressing(skinTrans1, skinTrans1)
+    ]).transitionalItem(skinTrans1).loops(3)
+
 })

@@ -146,4 +146,17 @@ ServerEvents.recipes(event => {
         E: 'irons_spellbooks:arcane_essence'
     })
 
+    // Шкура дракона
+    let skinTrans = 'phantom_membrane'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('irons_spellbooks:dragonskin', 0.50),
+        CreateItem.of('phantom_membrane', 0.50)
+    ], skinTrans, [
+        event.recipes.createDeploying(skinTrans, [skinTrans, 'end_crystal']),
+        event.recipes.createFilling(skinTrans,  [skinTrans, Fluid.of('irons_spellbooks:timeless_slurry', 500)]),
+        event.recipes.createDeploying(skinTrans, [skinTrans, ['crying_obsidian', 'obsidian']]),
+        event.recipes.createFilling(skinTrans,  [skinTrans, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
+        event.recipes.createPressing(skinTrans, skinTrans)
+    ]).transitionalItem(skinTrans).loops(3)
+
 })

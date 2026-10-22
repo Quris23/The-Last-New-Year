@@ -71,6 +71,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:villager_spell_book' })
 
     event.remove({ output: 'irons_spellbooks:portal_frame' })
+    
+    event.remove({ output: 'irons_spellbooks:dragonskin' })
 
     // Cataclysm Spellbooks
     event.remove({ output: 'irons_spellbooks:pyrium_staff' })
@@ -119,5 +121,6 @@ ServerEvents.recipes(event => {
     // Tentaworks
     event.remove({ output: 'tentaworks:copper_tentacle_rig' })
     event.remove({ output: 'tentaworks:netherite_tentacle_rig' })
+    event.remove({ output: 'tentaworks:tentacle'})
 
 })
