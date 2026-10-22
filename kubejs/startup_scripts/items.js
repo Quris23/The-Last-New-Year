@@ -31,6 +31,10 @@ StartupEvents.registry('item', event => {
     //event.create('bronze_ingot').displayName('Бронзовый слиток')
     //event.create('bronze_scrap').displayName('Бронзовый осколок')   
     
+    // Artifacts
+    event.create('incomplete_warp_drive', 'create:sequenced_assembly')
+    .displayName('Незавершенный варп-двигатель')
+
     // Iron's spell books
 
     event.create('incomplete_uportal_frame', 'create:sequenced_assembly')
@@ -71,6 +75,26 @@ StartupEvents.registry('item', event => {
 
     event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Непростительного Проклятия')
+
+    // Звезда Доминации
+    event.create('domination_star')
+        .displayName('§6§lЗвезда Доминации')
+        .tooltip('§7Источник абсолютной власти')
+        .tooltip('§8"Всё сущее подчинится её воле"')
+        .rarity('epic')
+        .glow(true)
+        .tag('kubejs:sovereign_artifacts')
+        .tag('kubejs:endgame_components');
+
+    // Абсолютный маяк
+    event.create('absolute_beacon')
+        .displayName('§5§lАбсолютный Маяк')
+        .tooltip('§7Воплощение тотального контроля')
+        .tooltip('§8"Реальность склоняется перед его светом"')
+        .rarity('epic')
+        .glow(true)
+        .tag('kubejs:sovereign_artifacts')
+        //.tag('kubejs:endgame_blocks');
 })
 
 StartupEvents.registry('fluid', event => {
@@ -93,6 +117,13 @@ StartupEvents.registry('fluid', event => {
       .displayName('Облачная жидкость')
       .stillTexture('kubejs:fluid/cloud_still')
       .flowingTexture('kubejs:fluid/cloud_flowing')
+      //.noBlock()
+
+    // Жидкость контроля 
+    event.create('control_fluid')
+      .displayName('Жидкость контроля')
+      .stillTexture('kubejs:fluid/control_fluid_still')
+      .flowingTexture('kubejs:fluid/control_fluid_flowing')
       //.noBlock()
 })
 
