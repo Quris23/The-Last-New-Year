@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:item_layers",
+  "textures": {
+    "layer0": "artifacts:item/warp_drive",
+    "layer1": "artifacts:item/warp_drive_glow"
+  },
+  "neoforge_data": {
+    "1": { "block_light": 15, "sky_light": 15 }
+  }
+}

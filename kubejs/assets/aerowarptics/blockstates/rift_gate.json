@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "aerowarptics:block/rift_gate",
+      "uvlock": true
+    },
+    "facing=down": {
+      "model": "aerowarptics:block/rift_gate",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=north": {
+      "model": "aerowarptics:block/rift_gate",
+      "x": 90,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "aerowarptics:block/rift_gate",
+      "x": 270,
+      "uvlock": true
+    },
+    "facing=east": {
+      "model": "aerowarptics:block/rift_gate",
+      "x": 90,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "aerowarptics:block/rift_gate",
+      "x": 90,
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}
