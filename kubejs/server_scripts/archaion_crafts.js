@@ -52,6 +52,4 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying(JugTrans3, [JugTrans3, 'cataclysm:enderite_block']),
   ]).transitionalItem(JugTrans3).loops(1)
 
-  
-  
 })

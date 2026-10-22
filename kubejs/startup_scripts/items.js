@@ -95,6 +95,7 @@ StartupEvents.registry('item', event => {
         .glow(true)
         .tag('kubejs:sovereign_artifacts')
         //.tag('kubejs:endgame_blocks');
+        
 })
 
 StartupEvents.registry('fluid', event => {

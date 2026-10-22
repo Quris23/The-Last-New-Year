@@ -176,5 +176,25 @@ ServerEvents.recipes(event => {
     b: 'cataclysm:koboleton_bone',
     x: 'cataclysm:bone_reptile_chestplate'
   })
+
+  // Codex of Malice smithing upgrade: base book swapped from Ancient Treatise (netherite_spell_book)
+  // to the Ice-Brand Spellbook (ice_spell_book).
+  event.remove({ output: 'cataclysm_spellbooks:codex_of_malice_spell_book' })
+
+  event.recipes.minecraft.smithing_transform(
+      'cataclysm_spellbooks:codex_of_malice_spell_book',
+      'cataclysm:cursium_upgrade_smithing_template',
+      'irons_spellbooks:ice_spell_book',
+      'cataclysm:cursium_ingot'
+  )
+
+  // Brontes (Cataclysm): фьюжн - добавка Twilight Gale вместо Астрапы (заклинание см. BrontesSpell.java)
+  event.remove({ output: 'cataclysm:brontes' })
+  event.custom({
+      type: 'cataclysm:weapon_fusion',
+      base: { item: 'cataclysm:infernal_forge' },
+      addition: { item: 'irons_spellbooks:twilight_gale' },
+      result: { id: 'cataclysm:brontes' }
+  })
   
 })

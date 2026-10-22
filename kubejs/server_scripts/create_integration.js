@@ -184,6 +184,33 @@ ServerEvents.recipes(event => {
       '4x minecraft:chorus_fruit'
     ]).superheated()
 
+    // Дробильные колёса (Create): Базальт -> 1 Соль (Northstar), всегда (вместо 2 + шансы 75%/25%).
+    event.remove({ id: 'northstar:crushing/basalt' });
+    event.recipes.create.crushing('northstar:salt', 'minecraft:basalt').processingTime(1000).id('generation:crushing/basalt_salt');
+
+    // Дробильные колёса (Create): Гравий -> Песок + 5% Глиняный шарик (убран шанс 10% на Кремень).
+    event.remove({ id: 'create:crushing/gravel' });
+    event.recipes.create.crushing([
+      'minecraft:sand',
+      CreateItem.of('minecraft:clay_ball', 0.05)
+    ], 'minecraft:gravel').processingTime(250).id('generation:crushing/gravel_no_flint');
+
+    // Гидравлический пресс (DnDesires) обрабатывает Зараженный камень так же, как обычный Пресс
+    // (повторяет create_enchantment_industry:compacting/infested_stone: 4 зараженных камня -> каменные кирпичи + самородок опыта).
+    event.custom({
+      type: 'dndesires:hydraulic_compacting',
+      ingredients: [
+        { item: 'minecraft:infested_stone' },
+        { item: 'minecraft:infested_stone' },
+        { item: 'minecraft:infested_stone' },
+        { item: 'minecraft:infested_stone' }
+      ],
+      results: [
+        { id: 'minecraft:stone_bricks' },
+        { id: 'create:experience_nugget' }
+      ]
+    }).id('generation:hydraulic_compacting/infested_stone');
+
     // Варп-двигатель
     let trwarp = 'kubejs:incomplete_warp_drive'
     let tank = ['create:fluid_tank', 'createcasing:andesite_fluid_tank', 'createcasing:brass_fluid_tank', 'createcasing:zinc_fluid_tank']

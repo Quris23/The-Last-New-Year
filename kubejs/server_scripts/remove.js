@@ -118,6 +118,12 @@ ServerEvents.recipes(event => {
     // Вечная Говядина / Вечный Стейк (Artifacts)
     event.remove({ output: 'artifacts:eternal_steak' })
 
+    // Hazentouvelib
+    event.remove({ output: 'hazentouvelib:radiance_rune' })
+    event.remove({ output: 'hazentouvelib:shadow_rune' })
+    event.remove({ output: 'hazentouvelib:radiance_upgrade_orb' })
+    event.remove({ output: 'hazentouvelib:shadow_upgrade_orb' })
+    
     // Tentaworks
     event.remove({ output: 'tentaworks:copper_tentacle_rig' })
     event.remove({ output: 'tentaworks:netherite_tentacle_rig' })

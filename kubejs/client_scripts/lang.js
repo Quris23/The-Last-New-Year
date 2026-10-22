@@ -14,7 +14,7 @@ ClientEvents.lang('ru_ru', event => {
     // Quark
     event.add('fluid_type.kubejs.cloud_fluid', 'Облачная жидкость')
     //event.add('block.kubejs.cloud_fluid', 'Облачная жидкость')
-    event.add('item.kubejs.annihilation_fluid_bucket', 'Ведро облачной жидкости')
+    event.add('item.kubejs.cloud_fluid_bucket', 'Ведро облачной жидкости')
 
     // event.renameItem('born_in_chaos_v1:permafrost_shard', 'Коготь вечной мерзлоты')
     // event.add('item.born_in_chaos_v1.permafrost_shard.description', '§7§oПринадлежит §8§oКрампусу\n§7§oОн является за игроками,\nдостигшими §8§oСотни шаловливости')
@@ -77,5 +77,13 @@ ClientEvents.lang('ru_ru', event => {
 
     // Curios slot names
     event.add('curios.identifier.talisman', 'Талисман')
+
+    // Жидкость Контроля
+    event.add('fluid_type.kubejs.control_fluid', 'Жидкость контроля')
+    event.add('item.kubejs.control_fluid_bucket', 'Ведро жидкости контроля')
+
+    // Звезда Доминации + Абсолютный Маяк
+    //"item.kubejs.domination_star": "Звезда Доминации"
+    //"item.kubejs.absolute_beacon": "Абсолютный Маяк"
 
 })

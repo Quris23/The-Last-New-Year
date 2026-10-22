@@ -152,22 +152,22 @@ ServerEvents.recipes(event => {
     let green = ['spore_blossom', 'mangrove_propagule', 'torchflower', 'alexscaves:flytrap']
 
     event.shaped('irons_spellbooks:druidic_spell_book', [
-    ' GM',
-    'BRA',
-    'MI '
-  ], {
-    G: green,
-    M: 'irons_spellbooks:magic_cloth',
-    B: bottles,
-    R: 'irons_spellbooks:rotten_spell_book',
-    A: druidShard,
-    I: 'glow_ink_sac'
-  })
+        ' GM',
+        'BRA',
+        'MI '
+    ], {
+        G: green,
+        M: 'irons_spellbooks:magic_cloth',
+        B: bottles,
+        R: 'irons_spellbooks:rotten_spell_book',
+        A: druidShard,
+        I: 'glow_ink_sac'
+    })
 
-  // Драконий кодекс
-  let dragonBook = 'irons_spellbooks:ruined_book'
+    // Драконий кодекс
+    let dragonBook = 'irons_spellbooks:ruined_book'
 
-  event.recipes.create.sequenced_assembly([
+    event.recipes.create.sequenced_assembly([
         'irons_spellbooks:dragonskin_spell_book'
     ], dragonBook, [
         event.recipes.createDeploying(dragonBook, [dragonBook, 'cataclysm:enderite_block']),
@@ -179,21 +179,19 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(dragonBook).loops(2)
 
     // Апокриф вампира
-
     event.shaped('irons_spellbooks:cursed_doll_spell_book', [
-    'VBI',
-    'BRB',
-    'IBV'
-  ], {
-    V: 'born_in_chaos_v1:elixir_of_vampirism',
-    B: 'irons_spellbooks:bloody_vellum',
-    I: 'irons_spellbooks:arcane_ingot',
-    R: ruinBook
-  })
+        'VBI',
+        'BRB',
+        'IBV'
+    ], {
+        V: 'born_in_chaos_v1:elixir_of_vampirism',
+        B: 'irons_spellbooks:bloody_vellum',
+        I: 'irons_spellbooks:arcane_ingot',
+        R: ruinBook
+    })
 
-  // Деревенская библия
-
-  event.recipes.create.sequenced_assembly([
+    // Деревенская библия
+    event.recipes.create.sequenced_assembly([
         'irons_spellbooks:villager_spell_book'
     ], ruinBook, [
         event.recipes.createDeploying(ruinBook, [ruinBook, 'irons_spellbooks:divine_pearl']),

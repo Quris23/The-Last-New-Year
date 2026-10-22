@@ -146,6 +146,47 @@ ServerEvents.recipes(event => {
         E: 'irons_spellbooks:arcane_essence'
     })
 
+    // Броня светоносца
+    event.remove({ id: 'irons_spellbooks:paladin_chestplate' })
+
+    const pieces = {
+      helmet: 'spellclasses:paladin_helmet',
+      chestplate: 'irons_spellbooks:paladin_chestplate',
+      leggings: 'spellclasses:paladin_leggings',
+      boots: 'spellclasses:paladin_boots'
+    }
+    Object.keys(pieces).forEach(piece => {
+      event.shaped(pieces[piece], [
+        'GDG',
+        'WAW',
+        'GWG'
+      ], {
+        G: '#c:ingots/gold',
+        D: 'irons_spellbooks:divine_soulshard',
+        W: 'irons_spellbooks:mithril_weave',
+        A: `irons_spellbooks:netherite_mage_${piece}`
+      }).id(`generation:paladin_${piece}`)
+    })
+
+    // Броня пугала
+    const recipes = {
+      helmet: [' C ', 'CNC', 'VPV'],
+      chestplate: ['HVH', 'CNC', 'C C'],
+      leggings: ['HNH', 'C C', 'V V'],
+      boots: ['HNH', 'C C', 'V V']
+    }
+    Object.keys(recipes).forEach(piece => {
+      event.remove({ id: `irons_spellbooks:pumpkin_${piece}` })
+      const key = {
+        C: 'irons_spellbooks:magic_cloth',
+        N: `irons_spellbooks:netherite_mage_${piece}`,
+        V: 'irons_spellbooks:blood_vial'
+      }
+      if (piece === 'helmet') key.P = 'minecraft:carved_pumpkin'
+      else key.H = 'minecraft:hay_block'
+      event.shaped(`irons_spellbooks:pumpkin_${piece}`, recipes[piece], key).id(`generation:pumpkin_${piece}`)
+    })
+    
     // Шкура дракона
     let skinTrans = 'phantom_membrane'
     event.recipes.create.sequenced_assembly([
@@ -159,4 +200,18 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(skinTrans, skinTrans)
     ]).transitionalItem(skinTrans).loops(3)
 
+    // Незеритовая броня боевого мага
+    const classRobes = ['priest', 'cultist', 'plagued', 'electromancer', 'pyromancer', 'cryomancer', 'shadowwalker']
+    const pieces = ['helmet', 'chestplate', 'leggings', 'boots']
+
+    pieces.forEach(piece => {
+        event.remove({ output: `irons_spellbooks:netherite_mage_${piece}` })
+        event.custom({
+            type: 'minecraft:smithing_transform',
+            template: { item: 'minecraft:netherite_upgrade_smithing_template' },
+            base: classRobes.map(robe => ({ item: `irons_spellbooks:${robe}_${piece}` })),
+            addition: { tag: 'c:ingots/netherite' },
+            result: { id: `irons_spellbooks:netherite_mage_${piece}`, count: 1 }
+        })
+    })
 })
