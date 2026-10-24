@@ -8,9 +8,26 @@
 	}
 	id: "3C257F92BA6FB832"
 	images: [ ]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
+		{
+			dependencies: ["7D96B88F2D2858E6"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "tentaworks:copper_tentacle_rig"
+			}
+			id: "4A1E00000000000B"
+			optional: true
+			tasks: [{
+				advancement: "tentaworks:doc_rig"
+				criterion: ""
+				id: "4A1F00000000000B"
+				type: "advancement"
+			}]
+			x: -19.5d
+			y: 15.0d
+		}
 		{
 			dependencies: ["09AE3E8E5DF28FB3"]
 			entity_vis_size: 1.0f
@@ -97,7 +114,7 @@
 		{
 			entity_vis_size: 1.0f
 			icon: {
-				id: "minecraft:grass_block"
+				id: "minecraft:crafting_table"
 			}
 			id: "18A9940A4E24B2B0"
 			preset: "goal"
@@ -1017,6 +1034,11 @@
 					item: { count: 1, id: "create:goggles" }
 					type: "item"
 				}
+				{
+					id: "47072052FBCA00C2"
+					item: { count: 1, id: "engineeringtable:engineering_table" }
+					type: "item"
+				}
 			]
 			x: -3.5d
 			y: 14.0d
@@ -1474,8 +1496,8 @@
 				id: "43366B5D05A43016"
 				type: "advancement"
 			}]
-			x: -20.5d
-			y: 12.0d
+			x: -18.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["0B07F72136698BA0"]
@@ -1660,8 +1682,8 @@
 				id: "094E5CFA3807CA73"
 				type: "advancement"
 			}]
-			x: -20.5d
-			y: 14.0d
+			x: -20.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6F2508600BF06E1A"]
@@ -4036,6 +4058,51 @@
 			}]
 			x: 3.0d
 			y: 25.0d
+		}
+		{
+			dependencies: ["4A1E00000000000B"]
+			entity_vis_size: 1.0f
+			id: "6472FF2E723ED655"
+			tasks: [{
+				id: "2873C0B2CD2CAD85"
+				item: { count: 1, id: "tentaworks:netherite_tentacle_rig" }
+				type: "item"
+			}]
+			x: -21.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"4A1E00000000000B"
+				"6472FF2E723ED655"
+			]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:enchanted_book"
+			}
+			id: "4A1E00000000000F"
+			tasks: [
+				{
+					advancement: "tentaworks:rig_books"
+					criterion: "has_far_reach"
+					id: "4A1E00000000000C"
+					type: "advancement"
+				}
+				{
+					advancement: "tentaworks:rig_books"
+					criterion: "has_swift"
+					id: "4A1E00000000000D"
+					type: "advancement"
+				}
+				{
+					advancement: "tentaworks:rig_books"
+					criterion: "has_thrift"
+					id: "4A1E00000000000E"
+					type: "advancement"
+				}
+			]
+			x: -23.0d
+			y: 12.0d
 		}
 	]
 }

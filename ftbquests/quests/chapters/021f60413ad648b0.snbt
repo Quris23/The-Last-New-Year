@@ -3,14 +3,25 @@
 	default_quest_shape: ""
 	filename: "021f60413ad648b0"
 	group: "2BBAFBD860BE8ADE"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "cataclysm:koboleton_bone"
+	}
 	id: "021F60413AD648B0"
 	images: [ ]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"72F522AF6B60F6A7"
+				"76AA412592018C75"
+				"3FE09F288C6C396B"
+			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "77C2030252BB5AD7"
+			preset: "goal"
 			tasks: [{
 				id: "02C4BF0E401E0E85"
 				item: { count: 1, id: "endrem:black_eye" }
@@ -20,8 +31,15 @@
 			y: -0.5d
 		}
 		{
+			dependencies: [
+				"51426C1B96D81E15"
+				"4B4AFC7068129E0D"
+				"3B4D4990EF275705"
+			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "2F7D9F30D5F4C028"
+			preset: "goal"
 			tasks: [{
 				id: "34E80FCB02F416E5"
 				item: { count: 1, id: "endrem:old_eye" }
@@ -32,6 +50,7 @@
 		}
 		{
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sculk"
 			}
@@ -43,12 +62,13 @@
 				id: "3DA1225BC4576106"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 7.125d
+			x: -3.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["517560E2A9B090DC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:deepslate_tiles"
 			}
@@ -60,12 +80,13 @@
 				id: "0B16AEEB3F77CF3C"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 7.125d
+			x: -4.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["2F02B8B9993124D7"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:heart_of_the_deep"
 			}
@@ -77,12 +98,13 @@
 				id: "36477A0D2590F012"
 				type: "advancement"
 			}]
-			x: 1.0d
-			y: 7.125d
+			x: -7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4607EEFDB1BEDEC2"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:reinforced_deepslate"
 			}
@@ -94,12 +116,13 @@
 				id: "0885E77230F671EE"
 				type: "advancement"
 			}]
-			x: 3.0d
-			y: 5.25d
+			x: -5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["4607EEFDB1BEDEC2"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:reinforced_echo_shard"
 			}
@@ -110,12 +133,13 @@
 				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.0d
+			x: -9.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["2F5F5B62AE38E682"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:warden_boots"
 			}
@@ -127,12 +151,13 @@
 				id: "7512DA2E3B140EFA"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2F5F5B62AE38E682"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:cut_sculk_stone"
 			}
@@ -144,12 +169,13 @@
 				id: "31FD8A0E66A20F97"
 				type: "advancement"
 			}]
-			x: 5.0d
+			x: -5.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2F5F5B62AE38E682"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:warden_sword"
 			}
@@ -161,12 +187,13 @@
 				id: "1C019699EC49E674"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 6.0d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2F5F5B62AE38E682"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:sonorous_staff"
 			}
@@ -177,12 +204,13 @@
 				item: { count: 1, id: "deeperdarker:sonorous_staff" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: -2.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["1E214A12F76331DC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:warden_chestplate"
 			}
@@ -194,12 +222,13 @@
 				id: "60C20A028595DF4B"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 9.0d
+			x: -10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["090111D346C8A35E"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "deeperdarker:sculk_transmitter"
 			}
@@ -210,11 +239,13 @@
 				item: { count: 1, id: "deeperdarker:sculk_transmitter" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["18FC4D0071A94CDA"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "cataclysm:sandstone_poison_dart_trap"
 			}
@@ -226,12 +257,13 @@
 				id: "26B124F596372E19"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 12.5d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["5109E68B4A16460E"]
+			dependencies: ["7589DCF47CE49F04"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "cataclysm:remnant_skull"
 			}
@@ -243,28 +275,12 @@
 				id: "39B20EE03D1ABA52"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 12.5d
+			x: 0.5d
+			y: -1.5d
 		}
 		{
 			entity_vis_size: 1.0f
-			icon: {
-				id: "archaion:reinforced_deepslate_bricks"
-			}
-			id: "4D9E158D8DF675F4"
-			optional: true
-			tasks: [{
-				advancement: "archaion:root"
-				criterion: ""
-				id: "3C147F71FA0EF4A4"
-				type: "advancement"
-			}]
-			x: -3.0d
-			y: 16.625d
-		}
-		{
-			dependencies: ["4D9E158D8DF675F4"]
-			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:filled_map"
 			}
@@ -276,12 +292,13 @@
 				id: "30A89671A008D828"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 16.625d
+			x: -10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["544789F9D1D90EB3"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:reinforced_deepslate_bricks"
 			}
@@ -293,12 +310,13 @@
 				id: "2B077B8D65CE299A"
 				type: "advancement"
 			}]
-			x: 1.0d
-			y: 16.625d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["62A2C557CE2E083C"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:brave_rod"
 			}
@@ -309,12 +327,13 @@
 				item: { count: 1, id: "archaion:brave_rod" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 15.5d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62A2C557CE2E083C"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:echo_key"
 			}
@@ -325,12 +344,13 @@
 				item: { count: 1, id: "archaion:echo_key" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 17.75d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4CA44AE5CE995071"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:impact_pearl"
 			}
@@ -341,12 +361,13 @@
 				item: { count: 1, id: "archaion:impact_pearl" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 15.5d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5B47BABA33892BED"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:echo_charge"
 			}
@@ -357,12 +378,13 @@
 				item: { count: 1, id: "archaion:echo_charge" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 17.75d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["00CA36367E6B161C"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:echos_grace"
 			}
@@ -373,12 +395,13 @@
 				item: { count: 1, id: "archaion:echos_grace" }
 				type: "item"
 			}]
-			x: 7.0d
-			y: 17.0d
+			x: -9.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["00CA36367E6B161C"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:last_of_deepslate_spawn_egg"
 			}
@@ -390,12 +413,13 @@
 				id: "5FE637D41B3AB19E"
 				type: "advancement"
 			}]
-			x: 7.0d
-			y: 18.5d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["72F522AF6B60F6A7"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "archaion:echo_mace"
 			}
@@ -406,11 +430,13 @@
 				item: { count: 1, id: "archaion:echo_mace" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: 18.5d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["4607EEFDB1BEDEC2"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sculk_catalyst"
 			}
@@ -422,11 +448,13 @@
 				id: "16378A2EF2850D34"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 21.5d
+			x: -8.5d
+			y: 10.0d
 		}
 		{
+			dependencies: ["517560E2A9B090DC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:sculk_sensor"
 			}
@@ -438,11 +466,13 @@
 				id: "3C1C0C5190F4314F"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 23.0d
+			x: -0.5d
+			y: 9.5d
 		}
 		{
+			dependencies: ["5109E68B4A16460E"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:brush"
 			}
@@ -454,12 +484,13 @@
 				id: "7DC6EEB53E6C79A8"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 24.5d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7E0A6F35EA2B2284"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:decorated_pot"
 			}
@@ -471,8 +502,414 @@
 				id: "5EADDFF7E21AD030"
 				type: "advancement"
 			}]
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["052C13258FBEA0BF"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "76AA412592018C75"
+			optional: true
+			tasks: [{
+				entity: "deeperdarker:stalker"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "3698CDFEFB47F917"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1B210BB3BA5C013E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "51426C1B96D81E15"
+			optional: true
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "20532790B43307A8"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["45ADAC5D25B72FBF"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "18FC4D0071A94CDA"
+			optional: true
+			tasks: [{
+				id: "658330DEF926190A"
+				item: { count: 1, id: "cataclysm:desert_eye" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["32BE2762947BE55C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "45ADAC5D25B72FBF"
+			optional: true
+			tasks: [{
+				entity: "legendary_monsters:dune_sentinel"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1D57E1CAF3782D41"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "32BE2762947BE55C"
+			optional: true
+			tasks: [{
+				id: "49AC50C0C741A89C"
+				item: { count: 1, id: "legendary_monsters:eye_of_sandstorm" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:primal_magma"
+			}
+			id: "5003E0188865437E"
+			optional: true
+			tasks: [{
+				id: "08F4B797F39E4D09"
+				optional_task: true
+				structure: "alexscaves:volcano"
+				type: "structure"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7E0A6F35EA2B2284"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7589DCF47CE49F04"
+			optional: true
+			tasks: [{
+				id: "6CB5A101088F7B00"
+				item: { count: 1, id: "cataclysm:necklace_of_the_desert" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4B4AFC7068129E0D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "0CB3B8CD4157AD36"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "5EA5BEAFBBD8F264"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "cataclysm_spellbooks:monolith_crash", index: 0, level: 5, locked: 1b }, { id: "cataclysm_spellbooks:sandstorm", index: 1, level: 3, locked: 1b }, { id: "cataclysm_spellbooks:thoths_witness", index: 2, level: 1, locked: 1b }, { id: "cataclysm_spellbooks:pharaohs_wrath", index: 3, level: 3, locked: 1b } ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:desert_spell_book" }
+				type: "item"
+			}]
 			x: -1.0d
-			y: 24.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["32BE2762947BE55C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "6E9E3222F89AC83B"
+			optional: true
+			tasks: [{
+				entity: "legendary_monsters:bomber"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1531312212DFF8C4"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["090111D346C8A35E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "052C13258FBEA0BF"
+			optional: true
+			tasks: [{
+				id: "48E18757089D3D1A"
+				item: { count: 1, id: "deeperdarker:ancient_vase" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4B4AFC7068129E0D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "333FF0B423EA1A6E"
+			optional: true
+			tasks: [{
+				id: "54DD9AA2859643DE"
+				item: { count: 1, id: "cataclysm:music_disc_ancient_remnant" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "1800039F1FAD7BF5"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:kobolediator"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "2C45E59D30C2CC7F"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "727EE55A50816BC6"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:koboleton"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7AA3D012F1A866E1"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "5167477A6374ADF1"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:wadjet"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "440ACB7FA3114D2C"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5167477A6374ADF1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "373E039AA6AE4924"
+			optional: true
+			tasks: [{
+				id: "0C953D4081AB15A0"
+				item: { count: 1, id: "cataclysm_spellbooks:fake_wudjets_staff" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1800039F1FAD7BF5"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "62EE8DCC91AFDCF0"
+			optional: true
+			tasks: [{
+				id: "6F4E5864ADFBD0CF"
+				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "cataclysm:kobolediator_skull" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"62EE8DCC91AFDCF0"
+				"727EE55A50816BC6"
+				"5167477A6374ADF1"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:bone_reptile_chestplate"
+			}
+			id: "3B4D4990EF275705"
+			optional: true
+			tasks: [
+				{
+					id: "2F37715B20488C54"
+					item: { count: 1, id: "cataclysm:bone_reptile_helmet" }
+					type: "item"
+				}
+				{
+					id: "0428C33B0F9193D0"
+					item: { count: 1, id: "cataclysm:bone_reptile_chestplate" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5003E0188865437E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:radiant_essence"
+			}
+			id: "1B210BB3BA5C013E"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/summon_luxtructosaurus"
+				criterion: ""
+				id: "3D09C3EA4D9BC8CE"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51426C1B96D81E15"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:heavy_bone"
+			}
+			id: "1AD2A8051D76D0EF"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/atlatitan_stomp"
+				criterion: ""
+				id: "345A5FB400C6541A"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51426C1B96D81E15"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:extinction_spear"
+			}
+			id: "1EFA897F4301F7A4"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/extinction_spear"
+				criterion: ""
+				id: "3330361719C017B5"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B4AFC7068129E0D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "712C36747AF7F975"
+			optional: true
+			tasks: [{
+				id: "6185A26A89697676"
+				item: { count: 1, id: "cataclysm:modern_remnant_bucket" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
 		}
 	]
 }

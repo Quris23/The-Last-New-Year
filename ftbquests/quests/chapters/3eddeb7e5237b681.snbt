@@ -5,7 +5,7 @@
 	group: "2BBAFBD860BE8ADE"
 	id: "3EDDEB7E5237B681"
 	images: [ ]
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -169,6 +169,75 @@
 			}]
 			x: 7.0d
 			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "7C0F676EB11950AF"
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "630A1E402D1BD64A"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "4CC87526EA4DE020"
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "7BDA2F03D4F49EA0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "57027B1039F310D8"
+			tasks: [{
+				entity: "legendary_monsters:the_obliterator"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "3EB2B0A857A6744C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: -2.0d
 		}
 	]
 }

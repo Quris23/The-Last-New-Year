@@ -521,6 +521,7 @@
 			]
 			entity_vis_size: 1.0f
 			id: "6D12DB21356575C2"
+			shape: "hexagon"
 			tasks: [{
 				id: "142DA20F83CAE1DB"
 				item: { count: 1, id: "legendary_monsters:the_great_frost" }
@@ -530,6 +531,7 @@
 			y: 12.0d
 		}
 		{
+			dependencies: ["302A6402ABB6528E"]
 			entity_vis_size: 1.0f
 			id: "5A328C6A6EE509AE"
 			shape: "square"
@@ -613,6 +615,17 @@
 			}]
 			x: 2.0d
 			y: 12.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "302A6402ABB6528E"
+			tasks: [{
+				id: "0E416EA8729D2794"
+				item: { count: 1, id: "legendary_monsters:eye_of_frost" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 13.5d
 		}
 	]
 }

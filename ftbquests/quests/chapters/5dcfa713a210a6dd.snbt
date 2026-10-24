@@ -12,6 +12,1807 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:acacia_blossom"
+			}
+			id: "5A1B000000000000"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/acacia_blossom"
+				criterion: ""
+				id: "5A1C000000000000"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A1B000000000010"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000001"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/alligator_snapping_turtle"
+				criterion: ""
+				id: "5A1C000000000001"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5A1B00000000001D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000002"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/bald_eagle_challenge"
+				criterion: ""
+				id: "5A1C000000000002"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:banana"
+			}
+			id: "5A1B000000000003"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/banana"
+				criterion: ""
+				id: "5A1C000000000003"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A1B000000000003"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000004"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/banana_slug"
+				criterion: ""
+				id: "5A1C000000000004"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000005"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/bison_spyglass"
+				criterion: ""
+				id: "5A1C000000000005"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5A1B00000000000D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:blood_sprayer"
+			}
+			id: "5A1B000000000006"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/blood_sprayer"
+				criterion: ""
+				id: "5A1C000000000006"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5A1B00000000002D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000007"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_anteater"
+				criterion: ""
+				id: "5A1C000000000007"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["5A1B000000000010"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:crocodile_egg"
+			}
+			id: "5A1B000000000008"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_crocodile"
+				criterion: ""
+				id: "5A1C000000000008"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5A1B000000000020"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000009"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_froststalker"
+				criterion: ""
+				id: "5A1C000000000009"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000000A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/breed_hummingbird"
+				criterion: ""
+				id: "5A1C00000000000A"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5A1B000000000019"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:capsid"
+			}
+			id: "5A1B00000000000B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/capsid"
+				criterion: ""
+				id: "5A1C00000000000B"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 13.25d
+		}
+		{
+			dependencies: ["5A1B00000000000B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:cosmic_cod"
+			}
+			id: "5A1B00000000000C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/cosmic_cod"
+				criterion: ""
+				id: "5A1C00000000000C"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000000D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crimson_mosquito"
+				criterion: ""
+				id: "5A1C00000000000D"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5A1B00000000000D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:mosquito_larva"
+			}
+			id: "5A1B00000000000E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crimson_mosquito_larva"
+				criterion: ""
+				id: "5A1C00000000000E"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5A1B00000000000D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B00000000000F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crimson_mosquito_sick"
+				criterion: ""
+				id: "5A1C00000000000F"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000010"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crocodile"
+				criterion: ""
+				id: "5A1C000000000010"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["5A1B000000000008"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:crocodile_chestplate"
+			}
+			id: "5A1B000000000011"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/crocodile_chestplate"
+				criterion: ""
+				id: "5A1C000000000011"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5A1B000000000054"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000012"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/devils_hole_pupfish_bucket"
+				criterion: ""
+				id: "5A1C000000000012"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5A1B000000000066"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000013"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/dimensional_carver"
+				criterion: ""
+				id: "5A1C000000000013"
+				type: "advancement"
+			}]
+			x: 23.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B00000000003E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:echolocator"
+			}
+			id: "5A1B000000000014"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/echolocator"
+				criterion: ""
+				id: "5A1C000000000014"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5A1B000000000059"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000015"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/elephant_swag"
+				criterion: ""
+				id: "5A1C000000000015"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A1B000000000029"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000016"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/emu"
+				criterion: ""
+				id: "5A1C000000000016"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["5A1B000000000016"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:blue_banner"
+			}
+			id: "5A1B000000000017"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/emu_dodge"
+				criterion: ""
+				id: "5A1C000000000017"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["5A1B000000000019"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:effect_item"
+			}
+			id: "5A1B000000000018"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/ender_flu"
+				criterion: ""
+				id: "5A1C000000000018"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000019"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/enderiophage"
+				criterion: ""
+				id: "5A1C000000000019"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 14.625d
+		}
+		{
+			dependencies: ["5A1B00000000000B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:enderiophage_rocket"
+			}
+			id: "5A1B00000000001A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/enderiophage_rocket"
+				criterion: ""
+				id: "5A1C00000000001A"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5A1B000000000014"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:endolocator"
+			}
+			id: "5A1B00000000001B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/endolocator"
+				criterion: ""
+				id: "5A1C00000000001B"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5A1B000000000056"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B00000000001C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/falconry_glove"
+				criterion: ""
+				id: "5A1C00000000001C"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["5A1B00000000001C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:falconry_hood"
+			}
+			id: "5A1B00000000001D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/falconry_hood"
+				criterion: ""
+				id: "5A1C00000000001D"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 42.0d
+		}
+		{
+			dependencies: ["5A1B000000000041"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000001E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/farseer"
+				criterion: ""
+				id: "5A1C00000000001E"
+				type: "advancement"
+			}]
+			x: 26.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B000000000042"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fish_bones"
+			}
+			id: "5A1B00000000001F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/fish_bones"
+				criterion: ""
+				id: "5A1C00000000001F"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5A1B000000000021"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:froststalker_helmet"
+			}
+			id: "5A1B000000000020"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/froststalker_helmet"
+				criterion: ""
+				id: "5A1C000000000020"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:froststalker_horn"
+			}
+			id: "5A1B000000000021"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/froststalker_kill"
+				criterion: ""
+				id: "5A1C000000000021"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["5A1B000000000065"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:ghostly_pickaxe"
+			}
+			id: "5A1B000000000022"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/ghostly_pickaxe"
+				criterion: ""
+				id: "5A1C000000000022"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 47.0d
+		}
+		{
+			dependencies: ["5A1B00000000004F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:gongylidia"
+			}
+			id: "5A1B000000000023"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/gongylidia"
+				criterion: ""
+				id: "5A1C000000000023"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 37.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000024"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/grizzly_bear"
+				criterion: ""
+				id: "5A1C000000000024"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000025"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/guster"
+				criterion: ""
+				id: "5A1C000000000025"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["5A1B000000000025"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:gustmaker"
+			}
+			id: "5A1B000000000026"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/gustmaker"
+				criterion: ""
+				id: "5A1C000000000026"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["5A1B000000000069"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000027"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/hemolymph_blaster"
+				criterion: ""
+				id: "5A1C000000000027"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5A1B00000000000A"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:hummingbird_feeder"
+			}
+			id: "5A1B000000000028"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/hummingbird_feeder"
+				criterion: ""
+				id: "5A1C000000000028"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000029"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/kangaroo"
+				criterion: ""
+				id: "5A1C000000000029"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["5A1B000000000031"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000002A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/la_cucaracha"
+				criterion: ""
+				id: "5A1C00000000002A"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 28.0d
+		}
+		{
+			dependencies: ["5A1B000000000050"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000002B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/laviathan_four_passengers"
+				criterion: ""
+				id: "5A1C00000000002B"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 38.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "5A1B00000000002C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/laviathan_spyglass"
+				criterion: ""
+				id: "5A1C00000000002C"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5A1B000000000023"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:leafcutter_ant_pupa"
+			}
+			id: "5A1B00000000002D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/leafcutter_ant_pupa"
+				criterion: ""
+				id: "5A1C00000000002D"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 37.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:lost_tentacle"
+			}
+			id: "5A1B00000000002E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/lost_tentacle"
+				criterion: ""
+				id: "5A1C00000000002E"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000002F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/maned_wolf_apple"
+				criterion: ""
+				id: "5A1C00000000002F"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 24.0d
+		}
+		{
+			dependencies: ["5A1B00000000005E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:water_bucket"
+			}
+			id: "5A1B000000000030"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/mantis_shrimp_bucket"
+				criterion: ""
+				id: "5A1C000000000030"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["5A1B000000000039"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:maraca"
+			}
+			id: "5A1B000000000031"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/maraca"
+				criterion: ""
+				id: "5A1C000000000031"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000032"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/murmur"
+				criterion: ""
+				id: "5A1C000000000032"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["5A1B00000000000B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:mysterious_worm"
+			}
+			id: "5A1B000000000033"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/mysterious_worm"
+				criterion: ""
+				id: "5A1C000000000033"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5A1B000000000043"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000034"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/novelty_hat"
+				criterion: ""
+				id: "5A1C000000000034"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 33.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000035"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/orcas_might"
+				criterion: ""
+				id: "5A1C000000000035"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["5A1B000000000025"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000036"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/pocket_sand"
+				criterion: ""
+				id: "5A1C000000000036"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["5A1B000000000038"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:rainbow_glass"
+			}
+			id: "5A1B000000000037"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rainbow_glass"
+				criterion: ""
+				id: "5A1C000000000037"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000038"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rainbow_jelly"
+				criterion: ""
+				id: "5A1C000000000038"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 27.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000039"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rattlesnake"
+				criterion: ""
+				id: "5A1C000000000039"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 28.0d
+		}
+		{
+			dependencies: ["5A1B00000000003C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:rocky_chestplate"
+			}
+			id: "5A1B00000000003A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rocky_chestplate"
+				criterion: ""
+				id: "5A1C00000000003A"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000003B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rocky_roller"
+				criterion: ""
+				id: "5A1C00000000003B"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 29.0d
+		}
+		{
+			dependencies: ["5A1B00000000003B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:rocky_shell"
+			}
+			id: "5A1B00000000003C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/rocky_shell"
+				criterion: ""
+				id: "5A1C00000000003C"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 29.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:animal_dictionary"
+			}
+			id: "5A1B00000000003D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/root"
+				criterion: ""
+				id: "5A1C00000000003D"
+				type: "advancement"
+			}]
+			x: 14.0d
+			y: 23.75d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000003E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+				criterion: ""
+				id: "5A1C00000000003E"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5A1B000000000044"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:sculk_boomer"
+			}
+			id: "5A1B00000000003F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/sculk_boomer"
+				criterion: ""
+				id: "5A1C00000000003F"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000040"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/seagull_steal"
+				criterion: ""
+				id: "5A1C000000000040"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 31.0d
+		}
+		{
+			dependencies: ["5A1B000000000013"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:shattered_dimensional_carver"
+			}
+			id: "5A1B000000000041"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/shattered_dimensional_carver"
+				criterion: ""
+				id: "5A1C000000000041"
+				type: "advancement"
+			}]
+			x: 24.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000042"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/skelewag"
+				criterion: ""
+				id: "5A1C000000000042"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["5A1B000000000042"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000043"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/skelewag_skull"
+				criterion: ""
+				id: "5A1C000000000043"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 33.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000044"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/skreecher"
+				criterion: ""
+				id: "5A1C000000000044"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 34.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000045"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/skunk"
+				criterion: ""
+				id: "5A1C000000000045"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["5A1B000000000057"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:fancy_item"
+			}
+			id: "5A1B000000000046"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/sopa_de_macaco"
+				criterion: ""
+				id: "5A1C000000000046"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A1B000000000048"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:soul_heart"
+			}
+			id: "5A1B000000000047"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/soul_heart"
+				criterion: ""
+				id: "5A1C000000000047"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000048"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/soul_vulture"
+				criterion: ""
+				id: "5A1C000000000048"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 36.0d
+		}
+		{
+			dependencies: ["5A1B000000000047"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000049"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/spectre"
+				criterion: ""
+				id: "5A1C000000000049"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 36.0d
+		}
+		{
+			dependencies: ["5A1B000000000001"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:spiked_scute"
+			}
+			id: "5A1B00000000004A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/spiked_scute"
+				criterion: ""
+				id: "5A1C00000000004A"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5A1B00000000004A"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:spiked_turtle_shell"
+			}
+			id: "5A1B00000000004B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/spiked_turtle_shell"
+				criterion: ""
+				id: "5A1C00000000004B"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5A1B00000000002E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:squid_grapple"
+			}
+			id: "5A1B00000000004C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/squid_grapple"
+				criterion: ""
+				id: "5A1C00000000004C"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["5A1B000000000045"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:stink_bottle"
+			}
+			id: "5A1B00000000004D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stink_bottle"
+				criterion: ""
+				id: "5A1C00000000004D"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["5A1B00000000004D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:stink_ray"
+			}
+			id: "5A1B00000000004E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stink_ray"
+				criterion: ""
+				id: "5A1C00000000004E"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000004F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stomp_leafcutter_anthill"
+				criterion: ""
+				id: "5A1C00000000004F"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 37.0d
+		}
+		{
+			dependencies: ["5A1B000000000052"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:straddle_saddle"
+			}
+			id: "5A1B000000000050"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/straddle_saddle"
+				criterion: ""
+				id: "5A1C000000000050"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["5A1B000000000052"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:straddleboard"
+			}
+			id: "5A1B000000000051"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/straddleboard"
+				criterion: ""
+				id: "5A1C000000000051"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 39.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000052"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/straddler"
+				criterion: ""
+				id: "5A1C000000000052"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 39.0d
+		}
+		{
+			dependencies: ["5A1B000000000052"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000053"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/stradpole_feed"
+				criterion: ""
+				id: "5A1C000000000053"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["5A1B00000000001F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:pupfish_locator"
+			}
+			id: "5A1B000000000054"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/strange_fish_finder"
+				criterion: ""
+				id: "5A1C000000000054"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 32.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000055"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/sunbird_blessing"
+				criterion: ""
+				id: "5A1C000000000055"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 41.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000056"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
+				criterion: ""
+				id: "5A1C000000000056"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 42.0d
+		}
+		{
+			dependencies: ["5A1B000000000003"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000057"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_capuchin"
+				criterion: ""
+				id: "5A1C000000000057"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5A1B00000000000C"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000058"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_cosmaw"
+				criterion: ""
+				id: "5A1C000000000058"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5A1B000000000000"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000059"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_elephant"
+				criterion: ""
+				id: "5A1C000000000059"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A1B000000000059"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000005A"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_elephant_tusked"
+				criterion: ""
+				id: "5A1C00000000005A"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000005B"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_flutter"
+				criterion: ""
+				id: "5A1C00000000005B"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 43.0d
+		}
+		{
+			dependencies: ["5A1B000000000003"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000005C"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_gorilla"
+				criterion: ""
+				id: "5A1C00000000005C"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A1B000000000024"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:salmon"
+			}
+			id: "5A1B00000000005D"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_grizzly_bear"
+				criterion: ""
+				id: "5A1C00000000005D"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B00000000005E"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
+				criterion: ""
+				id: "5A1C00000000005E"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 44.0d
+		}
+		{
+			dependencies: ["5A1B000000000061"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "5A1B00000000005F"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+				criterion: ""
+				id: "5A1C00000000005F"
+				type: "advancement"
+			}]
+			x: 17.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["5A1B00000000000E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000060"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tame_warped_toad"
+				criterion: ""
+				id: "5A1C000000000060"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000061"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tarantula_hawk"
+				criterion: ""
+				id: "5A1C000000000061"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 45.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000062"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/tigers_blessing"
+				criterion: ""
+				id: "5A1C000000000062"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 46.0d
+		}
+		{
+			dependencies: ["5A1B00000000001E"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:transmutation_table"
+			}
+			id: "5A1B000000000063"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/transmutation_table"
+				criterion: ""
+				id: "5A1C000000000063"
+				type: "advancement"
+			}]
+			x: 27.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B000000000063"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:transmutation_table"
+			}
+			id: "5A1B000000000064"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/transmute_1000_items"
+				criterion: ""
+				id: "5A1C000000000064"
+				type: "advancement"
+			}]
+			x: 29.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B00000000003D"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000065"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/underminer"
+				criterion: ""
+				id: "5A1C000000000065"
+				type: "advancement"
+			}]
+			x: 15.5d
+			y: 47.0d
+		}
+		{
+			dependencies: ["5A1B000000000068"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:void_worm_beak"
+			}
+			id: "5A1B000000000066"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_kill"
+				criterion: ""
+				id: "5A1C000000000066"
+				type: "advancement"
+			}]
+			x: 21.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A1B000000000068"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:void_worm_eye"
+			}
+			id: "5A1B000000000067"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_split"
+				criterion: ""
+				id: "5A1C000000000067"
+				type: "advancement"
+			}]
+			x: 21.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5A1B000000000033"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000068"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
+				id: "5A1C000000000068"
+				type: "advancement"
+			}]
+			x: 20.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["5A1B00000000000F"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "alexsmobs:tab_icon"
+			}
+			id: "5A1B000000000069"
+			optional: true
+			tasks: [{
+				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+				criterion: ""
+				id: "5A1C000000000069"
+				type: "advancement"
+			}]
+			x: 18.5d
+			y: 9.0d
+		}
+		{
 			entity_vis_size: 1.0f
 			icon: {
 				id: "artifacts:flame_pendant"
@@ -1131,23 +2932,6 @@
 		{
 			entity_vis_size: 1.0f
 			icon: {
-				id: "minecraft:netherite_boots"
-			}
-			id: "6206EDFFFBDA8AF2"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:root"
-				criterion: ""
-				id: "30453FB0CF25F2FB"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 85.25d
-		}
-		{
-			dependencies: ["6206EDFFFBDA8AF2"]
-			entity_vis_size: 1.0f
-			icon: {
 				id: "minecraft:leather_boots"
 			}
 			id: "47F1ADC76FDD039E"
@@ -1160,57 +2944,6 @@
 			}]
 			x: 2.0d
 			y: 81.5d
-		}
-		{
-			dependencies: ["6206EDFFFBDA8AF2"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:leather_boots"
-			}
-			id: "00417850A534B365"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:core"
-				criterion: ""
-				id: "6ACC0CAD81F481CE"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 83.75d
-		}
-		{
-			dependencies: ["6206EDFFFBDA8AF2"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:leather_boots"
-			}
-			id: "191C4C881F0C3DAC"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:dune"
-				criterion: ""
-				id: "4B3E6524B4C03783"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 86.0d
-		}
-		{
-			dependencies: ["6206EDFFFBDA8AF2"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:leather_boots"
-			}
-			id: "7AF4DDBF8A403AA2"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:plains"
-				criterion: ""
-				id: "68983B1C443728EB"
-				type: "advancement"
-			}]
-			x: 2.0d
-			y: 89.75d
 		}
 		{
 			dependencies: ["47F1ADC76FDD039E"]
@@ -1230,41 +2963,6 @@
 			y: 81.5d
 		}
 		{
-			dependencies: ["00417850A534B365"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:deepslate_gold_ore"
-			}
-			id: "1E679FB26D9CCB06"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:grot"
-				criterion: ""
-				id: "7C35F4F84CB9EA2E"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 83.0d
-		}
-		{
-			dependencies: ["00417850A534B365"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:diamond_pickaxe"
-			}
-			id: "3A4D8C0A5B664B45"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:quarry"
-				criterion: ""
-				id: "7EF2A9D4A9B15B63"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 84.5d
-		}
-		{
-			dependencies: ["191C4C881F0C3DAC"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:sand"
@@ -1281,7 +2979,6 @@
 			y: 86.0d
 		}
 		{
-			dependencies: ["7AF4DDBF8A403AA2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "create:track"
@@ -1298,7 +2995,6 @@
 			y: 87.5d
 		}
 		{
-			dependencies: ["7AF4DDBF8A403AA2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:rabbit_foot"
@@ -1313,40 +3009,6 @@
 			}]
 			x: 4.0d
 			y: 89.0d
-		}
-		{
-			dependencies: ["7AF4DDBF8A403AA2"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:cracked_stone_bricks"
-			}
-			id: "03B0528F60B6A7AD"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:ruin"
-				criterion: ""
-				id: "17FC8FC1DDBF8727"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 90.5d
-		}
-		{
-			dependencies: ["7AF4DDBF8A403AA2"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "create:andesite_pillar"
-			}
-			id: "6962E0BD72249655"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:the_castle"
-				criterion: ""
-				id: "0A88F3375D7023C5"
-				type: "advancement"
-			}]
-			x: 4.0d
-			y: 92.0d
 		}
 		{
 			dependencies: ["307E4B1BF9177D63"]
@@ -1366,24 +3028,6 @@
 			y: 89.0d
 		}
 		{
-			dependencies: ["6962E0BD72249655"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "create:deepslate_pillar"
-			}
-			id: "3E6EBFDCCC4152FC"
-			optional: true
-			tasks: [{
-				advancement: "create_ltab:kings_castle"
-				criterion: ""
-				id: "70248A9F4EF89D39"
-				type: "advancement"
-			}]
-			x: 6.0d
-			y: 92.0d
-		}
-		{
-			dependencies: ["3E6EBFDCCC4152FC"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:goat_horn"
@@ -1402,23 +3046,6 @@
 		{
 			entity_vis_size: 1.0f
 			icon: {
-				id: "minecraft:mossy_stone_bricks"
-			}
-			id: "60CE487A4E73E5E2"
-			optional: true
-			tasks: [{
-				advancement: "betterdungeons:root"
-				criterion: ""
-				id: "74815527D539F2CC"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 99.25d
-		}
-		{
-			dependencies: ["60CE487A4E73E5E2"]
-			entity_vis_size: 1.0f
-			icon: {
 				id: "minecraft:diamond_sword"
 			}
 			id: "2C86AD4DD1F49C1B"
@@ -1433,7 +3060,6 @@
 			y: 95.5d
 		}
 		{
-			dependencies: ["60CE487A4E73E5E2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:skeleton_skull"
@@ -1450,7 +3076,6 @@
 			y: 97.0d
 		}
 		{
-			dependencies: ["60CE487A4E73E5E2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:spawner"
@@ -1467,7 +3092,6 @@
 			y: 98.5d
 		}
 		{
-			dependencies: ["60CE487A4E73E5E2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:red_nether_bricks"
@@ -1484,7 +3108,6 @@
 			y: 100.0d
 		}
 		{
-			dependencies: ["60CE487A4E73E5E2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:string"
@@ -1501,7 +3124,6 @@
 			y: 101.5d
 		}
 		{
-			dependencies: ["60CE487A4E73E5E2"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:rotten_flesh"
@@ -1518,23 +3140,6 @@
 			y: 103.0d
 		}
 		{
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:chiseled_sandstone"
-			}
-			id: "24E717CFE8446F03"
-			optional: true
-			tasks: [{
-				advancement: "betterdeserttemples:root"
-				criterion: ""
-				id: "68D8594A7671A7F6"
-				type: "advancement"
-			}]
-			x: 0.0d
-			y: 106.5d
-		}
-		{
-			dependencies: ["24E717CFE8446F03"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "minecraft:golden_sword"

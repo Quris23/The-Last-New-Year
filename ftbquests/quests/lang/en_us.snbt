@@ -12,8 +12,6 @@
 	chapter.79667D19722FA0FB.title: "Эндер"
 	chapter.7A8AC9B64D5FD26A.title: "Друид"
 	chapter_group.3AC9C1A5395BF5C0.title: "Магия"
-	quest.00417850A534B365.quest_desc: ["Enter the Core"]
-	quest.00417850A534B365.title: "The Core"
 	quest.0062DEE86556FA71.quest_desc: ["Catch a Tadpole in a Bucket"]
 	quest.0062DEE86556FA71.title: "Bukkit Bukkit"
 	quest.00CA36367E6B161C.quest_desc: ["Unlock a Deepslate Vault and take its Echo Charge."]
@@ -34,8 +32,6 @@
 	quest.0346BDB14EE34145.title: "Exorcism"
 	quest.036F4C8DB6C45C1A.quest_desc: ["Equip a full set of Dark Metal Armor"]
 	quest.036F4C8DB6C45C1A.title: "Chaos Knight"
-	quest.03B0528F60B6A7AD.quest_desc: ["Find a Ruin"]
-	quest.03B0528F60B6A7AD.title: "They ruininit"
 	quest.04CF7D9E63AEBDF0.quest_desc: ["Extract or insert items into a container using a Funnel"]
 	quest.04CF7D9E63AEBDF0.title: "Airport Aesthetic"
 	quest.055A34FBA18F47C0.quest_desc: ["Get each Frog variant on a Lead"]
@@ -275,8 +271,6 @@
 		"{image:icons:textures/advancement/story/root.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.18A9940A4E24B2B0.title: "Minecraft"
-	quest.191C4C881F0C3DAC.quest_desc: ["advancements.create_ltab.dune.description"]
-	quest.191C4C881F0C3DAC.title: "Dune"
 	quest.19543DC9F2294C39.quest_desc: ["Craft a Dark Metal Ingot"]
 	quest.19543DC9F2294C39.title: "Dark Forging"
 	quest.19558BC184A072B2.quest_desc: ["Deal 50 hearts of damage in a single hit using the Mace"]
@@ -293,10 +287,14 @@
 	quest.19F97384874DB397.title: "Paradox Fusion"
 	quest.1A37DFE702393E0F.quest_desc: ["Obtain an Astrolabe, and see the ground before committing a hull to it"]
 	quest.1A37DFE702393E0F.title: "Dead Reckoning"
+	quest.1AD2A8051D76D0EF.quest_desc: ["After feeding an Atlatitan Serene Salad, ride it and use the stomp ability to level nearby terrain"]
+	quest.1AD2A8051D76D0EF.title: "Whole Lot of Shaking Going On"
 	quest.1B05E605335AE50F.quest_desc: ["Pest control the Spider Queen"]
 	quest.1B05E605335AE50F.title: "Detoxing the Toxic Lair"
 	quest.1B1956AFED3E8D8B.quest_desc: ["Kill a Forgotten underground and loot its hat"]
 	quest.1B1956AFED3E8D8B.title: "This Belongs in a Museum"
+	quest.1B210BB3BA5C013E.quest_desc: ["Summon a monstrous undead dinosaur by tossing the Ominous Catalyst into the top of a volcano"]
+	quest.1B210BB3BA5C013E.title: "The Beginning of the End"
 	quest.1B5DF1FD6AE9265B.quest_desc: ["Super Glue some blocks into a group"]
 	quest.1B5DF1FD6AE9265B.title: "Area of Connect"
 	quest.1B7E78EB850BCF60.quest_desc: ["Sneak around in full Cardboard Armor"]
@@ -323,8 +321,6 @@
 	quest.1E5C71A573ADCB34.title: "For Every Action..."
 	quest.1E5E9DF18D69958B.quest_desc: ["Merge two of the same item using a Blaze Forger"]
 	quest.1E5E9DF18D69958B.title: "Blazing Fusion"
-	quest.1E679FB26D9CCB06.quest_desc: ["Find the entrance to a Grot"]
-	quest.1E679FB26D9CCB06.title: "The Grot"
 	quest.1E7921D08D359691.quest_desc: ["Eat everything that is edible, even if it's not good for you"]
 	quest.1E7921D08D359691.title: "A Balanced Diet"
 	quest.1E7FFD60F660439C.quest_desc: [
@@ -333,6 +329,8 @@
 		"{image:icons:textures/advancement/nether/get_wither_skull.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.1E7FFD60F660439C.title: "advancements.nether.get_wither_skull.title"
+	quest.1EFA897F4301F7A4.quest_desc: ["Craft an Extinction Spear from the remains of the Luxtructosaurus"]
+	quest.1EFA897F4301F7A4.title: "Spear of Ages"
 	quest.1F02474A3473FEDB.quest_desc: ["Enter a shrine"]
 	quest.1F02474A3473FEDB.title: "A Major Trial Of Strengh"
 	quest.1F09E3C23A70B411.quest_desc: ["Pick up a Minecart Contraption with at least 200 attached blocks"]
@@ -385,8 +383,6 @@
 	quest.24B8CFEA14FAD371.title: "Wax Off"
 	quest.24DF8D1EA21E722B.quest_desc: ["Connect a Rope Connector or Rope Spool with Rope"]
 	quest.24DF8D1EA21E722B.title: "Learning the Ropes"
-	quest.24E717CFE8446F03.quest_desc: ["Somewhere deep in the desert..."]
-	quest.24E717CFE8446F03.title: "YUNG's Better Desert Temples"
 	quest.250CAB90FF0D687E.quest_desc: ["Kill two Phantoms with a piercing Arrow"]
 	quest.250CAB90FF0D687E.title: "Two Birds, One Arrow"
 	quest.2515D9705279AA13.quest_desc: ["Catch packages from your Chain Conveyor using a Frogport"]
@@ -589,6 +585,10 @@
 	quest.39AA000000000007.title: "Первый Гримуар"
 	quest.39AA00000000000F.title: "Броня Волшебника"
 	quest.39AA000000000013.title: "Незеритовая Броня Боевого Мага"
+	quest.39AC000000000001.quest_desc: ["locate the Mossy Temple"]
+	quest.39AC000000000001.title: "Covered in Moss"
+	quest.39AC000000000002.quest_desc: ["Defeat the Overgrown Colossus"]
+	quest.39AC000000000002.title: "The Mossy Beast"
 	quest.39D366E0C918528F.quest_desc: ["Sandpaper? I've got a better one"]
 	quest.39D366E0C918528F.title: "Grind to Polish"
 	quest.3A2E371885174327.quest_desc: [
@@ -597,8 +597,6 @@
 		"{image:icons:textures/advancement/nether/obtain_crying_obsidian.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.3A2E371885174327.title: "advancements.nether.obtain_crying_obsidian.title"
-	quest.3A4D8C0A5B664B45.quest_desc: ["Find an entrance to a quarry"]
-	quest.3A4D8C0A5B664B45.title: "As a child i yearned for the mines"
 	quest.3A66F32F67285A6E.quest_desc: ["Craft Spider Bite"]
 	quest.3A66F32F67285A6E.title: "Spider Warlord"
 	quest.3A9E2137A6B07A89.quest_desc: ["Jump into a Honey Block to break your fall"]
@@ -610,6 +608,12 @@
 	quest.3AED83B824E8AEBD.title: "No Pressure"
 	quest.3AF3A59A68C81A1A.quest_desc: ["Copy a Written Book using a Printer"]
 	quest.3AF3A59A68C81A1A.title: "Copiable Masterpiece"
+	quest.3B4D4990EF275705.quest_desc: [
+		"Craft the Bone Reptile Helmet and the Bone Reptile Chestplate."
+		""
+		"Both are made at the smithing table: a diamond helmet or chestplate + the Ancient upgrade smithing template (kubejs) + an Ancient Metal Ingot."
+	]
+	quest.3B4D4990EF275705.title: "Bone Reptile Armor"
 	quest.3B9A753369AA39CF.quest_desc: ["Make the Phantom Creeper split up by attacking it"]
 	quest.3B9A753369AA39CF.title: "Double Trouble"
 	quest.3BEF00C7CEB2B0E7.quest_desc: ["Kill the Skeleton Demoman"]
@@ -637,8 +641,6 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.3E30B9EC2FE989B1.title: "That Should Do For Now"
-	quest.3E6EBFDCCC4152FC.quest_desc: ["Find the kings castle"]
-	quest.3E6EBFDCCC4152FC.title: "The Kings Castle"
 	quest.3EAE06C6D966C592.quest_desc: ["Break down the gravestone of the immortalized person"]
 	quest.3EAE06C6D966C592.title: "Grave Ravager"
 	quest.3EC077F073C888FA.quest_desc: ["Obtain and place a Gimbal Sensor to help you keep balance"]
@@ -731,8 +733,6 @@
 	quest.461680966262CB35.title: "Thousand Runes"
 	quest.4692048A47B89FCD.quest_desc: ["Successfully trade with a Villager"]
 	quest.4692048A47B89FCD.title: "What a Deal!"
-	quest.46931F2C2B0A1459.quest_desc: ["Defeat the Ancient Guardian"]
-	quest.46931F2C2B0A1459.title: "Abysmally Ancient"
 	quest.46ACB3E702645AD0.quest_desc: ["Find a Small Nether Dungeon"]
 	quest.46ACB3E702645AD0.title: "A Special Addition"
 	quest.46CD4F1F1B496166.quest_desc: ["Place and power a Portable Engine"]
@@ -740,8 +740,6 @@
 	quest.46FE6CB159FFAB5C.quest_desc: ["Instruct a Train driver with a Train Schedule"]
 	quest.46FE6CB159FFAB5C.title: "Conductor Instructor"
 	quest.4713069E21E1259B.quest_desc: ["Зимогоры — заснеженный вариант скелета. Спавнятся в холодных биомах: Снежные равнины, Ледяные пики, Снежные склоны, Рощи, Ледяные шпили, Снежная тайга, Промёрзшие реки и океаны."]
-	quest.477CE9608EEFC4DC.quest_desc: ["New Challenges in the End!"]
-	quest.477CE9608EEFC4DC.title: "Legendary Monsters: End"
 	quest.477F1BD5BC6620E7.quest_desc: ["Strike a Villager with lightning"]
 	quest.477F1BD5BC6620E7.title: "Very Very Frightening"
 	quest.47CB79CF8394AD66.quest_desc: [
@@ -768,6 +766,14 @@
 	quest.49566C26131BA494.title: "Heavier Artillery"
 	quest.49FD8DD0C52D4245.quest_desc: ["Drink a suspicious stew"]
 	quest.49FD8DD0C52D4245.title: "When the Stew is Sus"
+	quest.4A1E000000000001.quest_desc: ["Locate the Cloudy Temple"]
+	quest.4A1E000000000001.title: "Made From Clouds..."
+	quest.4A1E000000000003.quest_desc: ["Find the Acropolis"]
+	quest.4A1E000000000003.title: "Why in the Sky?"
+	quest.4A1E000000000007.quest_desc: ["Kill an Clawdian"]
+	quest.4A1E000000000007.title: "Not so Shrimple Now"
+	quest.4A1E000000000009.quest_desc: ["Find the Sunken City"]
+	quest.4A1E000000000009.title: "Sunken in the Sea"
 	quest.4A2DDD9E4F0840F2.quest_desc: ["Use a Wind Charge to launch yourself upward 8 blocks"]
 	quest.4A2DDD9E4F0840F2.title: "Who Needs Rockets?"
 	quest.4A6656C90BD5482A.quest_desc: [
@@ -804,8 +810,6 @@
 	quest.4CA2AD6C7EFFB948.title: "The day of the Dead"
 	quest.4CA44AE5CE995071.quest_desc: ["Collect a Brave Rod from a fallen Brave."]
 	quest.4CA44AE5CE995071.title: "The not-so Brave"
-	quest.4D9E158D8DF675F4.quest_desc: ["Descend into the deep, where the Last sleeps."]
-	quest.4D9E158D8DF675F4.title: "Archaion"
 	quest.4E18D09CC1172BCD.quest_desc: ["Place and power a Redstone Magnet"]
 	quest.4E18D09CC1172BCD.title: "Opposites Attract"
 	quest.4E2FF9D6BD73E78E.quest_desc: ["Catch a Fish... without a Fishing Rod!"]
@@ -1001,12 +1005,8 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.600A8BD306C8B4C3.title: "OSHA Violation"
-	quest.60CE487A4E73E5E2.quest_desc: ["Adventure awaits..."]
-	quest.60CE487A4E73E5E2.title: "YUNG's Better Dungeons"
 	quest.60FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
 	quest.61FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
-	quest.6206EDFFFBDA8AF2.quest_desc: ["The beginning"]
-	quest.6206EDFFFBDA8AF2.title: "Let The Adventure Begin"
 	quest.623790036303EE97.quest_desc: ["Set yourself on fire to prevent freezing to death"]
 	quest.623790036303EE97.title: "Desperate Measures"
 	quest.624D2E0C989A1A89.quest_desc: ["Put a Cloud in a Bottle"]
@@ -1131,8 +1131,6 @@
 	quest.694E5EFAF89FC43C.title: "Hot Stuff"
 	quest.6958ECEC2F6849E8.quest_desc: ["Grab on to a Handle"]
 	quest.6958ECEC2F6849E8.title: "Get a Grip!"
-	quest.6962E0BD72249655.quest_desc: ["Find a pillager castle"]
-	quest.6962E0BD72249655.title: "The Castle"
 	quest.6A2AEEF527A6ED38.quest_desc: ["Fill an airtight Envelope structure with hot air"]
 	quest.6A2AEEF527A6ED38.title: "Head in the Clouds"
 	quest.6A2E2636D47ABFA2.quest_desc: ["Feed a Snifflet"]
@@ -1250,8 +1248,6 @@
 	quest.7A51B3B2A573BBF2.title: "Best Friends Forever"
 	quest.7A6B82ADD933B4E5.quest_desc: ["Kill a Corpse Fly with a Dark Warblade while under the effects of a stage 5 rampage."]
 	quest.7A6B82ADD933B4E5.title: "Excessive Fly Swatter"
-	quest.7AF4DDBF8A403AA2.quest_desc: ["Enter the Plains"]
-	quest.7AF4DDBF8A403AA2.title: "The Plains"
 	quest.7B5E84195216EABC.quest_desc: ["Assemble a windmill of maximum strength"]
 	quest.7B5E84195216EABC.title: "A strong Breeze"
 	quest.7B8340684AAAA9E2.quest_desc: ["Feed the Thornshell Crab rotten flesh or rotten fish"]
@@ -1308,7 +1304,6 @@
 	task.05236718C20D8FCD.title: "High Logistics"
 	task.054390CEF70D4264.title: "Full Steam"
 	task.059A93A1E6C05EEE.title: "Remote Activation"
-	task.059FF0F857397957.title: "Legendary Monsters: End"
 	task.05E49375DFE987F2.title: "DJ Mechanico"
 	task.0609C6FCB3EBB0F0.title: "A Balanced Diet"
 	task.068940BF39799591.title: "Is It a Plane?"
@@ -1318,7 +1313,6 @@
 	task.094E5CFA3807CA73.title: "Ready for the Depths"
 	task.09F9FFFAC15F9A3C.title: "Experienced Recycler"
 	task.0A2F65F1155D4ACB.title: "Vertical Logistics"
-	task.0A88F3375D7023C5.title: "The Castle"
 	task.0ABB830EFCFA3176.title: "Flame Of The End"
 	task.0AFA45EF7E1064F4.title: "Sigil Forging"
 	task.0B16AEEB3F77CF3C.title: "A Metropolis of Restless Souls"
@@ -1358,7 +1352,6 @@
 	task.177386548D0C3082.title: "Not Gonna Sugarcoat It"
 	task.177899E2977BF4B7.title: "Assembly Aesthetics"
 	task.1789316C003F926E.title: "Rope to Nowhere"
-	task.17FC8FC1DDBF8727.title: "They ruininit"
 	task.180A1CDC53F28FBE.title: "Shear Brilliance"
 	task.184A4E8E171D548A.title: "Dungeon Master"
 	task.18B61AC6A81BE5F5.title: "Smithing with Style"
@@ -1433,7 +1426,6 @@
 	task.2DA55CE98E379CAD.title: "Two by Two"
 	task.2E379EA841AFEBA1.title: "The City at the End of the Game"
 	task.2F7D314CAB1F0558.title: "Freezing Breeze"
-	task.30453FB0CF25F2FB.title: "Let The Adventure Begin"
 	task.30863802AE0113DA.title: "Lighten Up"
 	task.30A89671A008D828.title: "Whispers in the Ruins"
 	task.30F6B1FC4AFFB622.title: "Workout Session"
@@ -1445,8 +1437,10 @@
 	task.322B995542CC39A9.title: "Overpowered"
 	task.3271D11C0C424658.title: "Speed is Key"
 	task.32722D20F5CCEF34.title: "Artificial Intelligence"
+	task.3330361719C017B5.title: "Spear of Ages"
 	task.34137FBFB8EC9ED6.title: "Open for business"
 	task.343CF3D42B4F1C4B.title: "Copiable Mystery"
+	task.345A5FB400C6541A.title: "Whole Lot of Shaking Going On"
 	task.34757E5F2956B4E2.title: "Exorcism"
 	task.34862CA4443E3165.title: "Hungry hoppers"
 	task.35B625AE7F1B77BB.title: "The Andesite Age"
@@ -1466,11 +1460,11 @@
 	task.3B5E68501702C196.title: "Veggie Fireworks"
 	task.3B745B683CDADA4C.title: "Field Trip"
 	task.3BA43462C4DBBC67.title: "When the Squad Hops into Town"
-	task.3C147F71FA0EF4A4.title: "Archaion"
 	task.3C1C0C5190F4314F.title: "Sneak 100"
 	task.3C8AF0C385E9925C.title: "Thousand Runes"
 	task.3C96CF519763523F.title: "Take Aim"
 	task.3CC3943E4E2C1DC1.title: "Blazing Enchantment"
+	task.3D09C3EA4D9BC8CE.title: "The Beginning of the End"
 	task.3DA1225BC4576106.title: "Sculk Story"
 	task.3DB1469D996EE43B.title: "Airport Aesthetic"
 	task.3EA7F7C13E24E355.title: "Road to Tomorrow"
@@ -1517,7 +1511,6 @@
 	task.4AD0E8ADC40B5E84.title: "All Aboard!"
 	task.4B2ACE6A2D95B8BB.title: "Is it Time?"
 	task.4B33FFD23C3F0976.title: "Adventuring Time"
-	task.4B3E6524B4C03783.title: "Dune"
 	task.4B6B17EFCA92D349.title: "Bewitched"
 	task.4B8139197AC46674.title: "Sweet Dreams"
 	task.4BE83099E777A85B.title: "Wax On"
@@ -1592,12 +1585,9 @@
 	task.6714FD5031FF0986.title: "To Full Extent"
 	task.6797B0D8EAEA7C5B.title: "Whatever Floats Your Goat!"
 	task.6837CA457D0A463A.title: "Strong Arms"
-	task.68983B1C443728EB.title: "The Plains"
-	task.68D8594A7671A7F6.title: "YUNG's Better Desert Temples"
 	task.68DF0D4866E0EB55.title: "Miner Inconvenience"
 	task.69504E711925B2A7.title: "Spruce Cowboy In The Moonlight"
 	task.69CEB565E2CA033F.title: "Tactical Fishing"
-	task.6ACC0CAD81F481CE.title: "The Core"
 	task.6AE1B30F0BD0A059.title: "Thousandfold Everchant"
 	task.6B9E6358C59BF5B7.title: "Snap!"
 	task.6BD0FAA6FFDE2A30.title: "Supply Chain Refactor"
@@ -1614,7 +1604,6 @@
 	task.6FBD8429453529B0.title: "The End... Again..."
 	task.6FEE6467E80321B1.title: "The Tall Guy"
 	task.700A3D27DA2EFF6A.title: "Perfectly Stressed"
-	task.70248A9F4EF89D39.title: "The Kings Castle"
 	task.7088751F374F724F.title: "Crawling in my Bark"
 	task.7097210AF9B16703.title: "A Shower \"Experience\""
 	task.70ADB58A13142AB1.title: "Planting the Past"
@@ -1626,10 +1615,8 @@
 	task.72700AB16E7FF1A7.title: "Rollin' at the Speed of Sound"
 	task.727F1E1C0DEB706C.title: "The Pit of Fire"
 	task.72CB8C6D3D4679D1.title: "A Calculated Connection"
-	task.72D74F6DBF1FD5CC.title: "Abysmally Ancient"
 	task.73801D6D68060D10.title: "Bonk!"
 	task.747EEF4C8473BC29.title: "Remote Getaway"
-	task.74815527D539F2CC.title: "YUNG's Better Dungeons"
 	task.74C747E301999056.title: "The Light at the End of the Game"
 	task.74CC79BE8B8EA92A.title: "Order Up!"
 	task.7512DA2E3B140EFA.title: "Echolocation"
@@ -1654,14 +1641,281 @@
 	task.7B6162E9709C06F4.title: "Contraption o'Clock"
 	task.7B73D77138AB1D1A.title: "Track Factory"
 	task.7BEF722FB17806B0.title: "Processing by Particle"
-	task.7C35F4F84CB9EA2E.title: "The Grot"
 	task.7C52AC107F3CD2F9.title: "Double Trouble"
 	task.7D03592839A3BF11.title: "Arts and Crafts"
 	task.7D11B4E4292EC79A.title: "The Whole Pack"
 	task.7DC6EEB53E6C79A8.title: "Respecting the Remnants"
 	task.7EBA143F8E15B1E1.title: "Under Pressure"
 	task.7EE2B62C5B9CC678.title: "Revaulting"
-	task.7EF2A9D4A9B15B63.title: "As a child i yearned for the mines"
 	task.7F0AB6E8AFDCD6D9.title: "What's This?"
 	task.7F744BD184B28286.title: "Boioioing!"
+	quest.4A1E00000000000B.quest_desc: ["Get a Tentacle Rig: four Tentacles on a Backtank"]
+	quest.4A1E00000000000B.title: "Doc's Rig"
+	quest.5A1B000000000000.quest_desc: ["Obtain an Acacia Blossom from breaking Acacia Leaves"]
+	quest.5A1B000000000000.title: "Flowers of the Savanna"
+	quest.5A1B000000000001.quest_desc: ["Encounter an Alligator Snapping Turtle"]
+	quest.5A1B000000000001.title: "Alligator In Name Only"
+	quest.5A1B000000000002.quest_desc: ["Kill any creature from 100 blocks away with an eagle wearing a hood."]
+	quest.5A1B000000000002.title: "Winning Play"
+	quest.5A1B000000000003.quest_desc: ["Obtain a Banana"]
+	quest.5A1B000000000003.title: "Gone Bananas!"
+	quest.5A1B000000000004.quest_desc: ["Encounter a Banana Slug. Not so appetising."]
+	quest.5A1B000000000004.title: "Convergent Evolution..."
+	quest.5A1B000000000005.quest_desc: ["Observe a Bison through the lens of a Spyglass."]
+	quest.5A1B000000000005.title: "Perfect View in the Plains"
+	quest.5A1B000000000006.quest_desc: ["Craft a Blood Sprayer from the drops of a Crimson Mosquito"]
+	quest.5A1B000000000006.title: "Spray 'n Pray"
+	quest.5A1B000000000007.quest_desc: ["Breed two Anteaters by feeding them pupae."]
+	quest.5A1B000000000007.title: "Aunt Anteater"
+	quest.5A1B000000000008.quest_desc: ["Breed two crocodiles with rotten flesh. Careful not to trample their eggs!"]
+	quest.5A1B000000000008.title: "Crikey!"
+	quest.5A1B000000000009.quest_desc: ["Breed two Froststalkers with porkchops."]
+	quest.5A1B000000000009.title: "Undercover Under Covers"
+	quest.5A1B00000000000A.quest_desc: ["Breed two hummingbirds with flowers"]
+	quest.5A1B00000000000A.title: "Sugar Rush"
+	quest.5A1B00000000000B.quest_desc: ["Obtain a Capsid from a slain Enderiophage. Use it to display items or to transfer them upwards"]
+	quest.5A1B00000000000B.title: "Capsid-19"
+	quest.5A1B00000000000C.quest_desc: ["Create a Cosmic Cod by placing a Cod in a Capsid."]
+	quest.5A1B00000000000C.title: "Weird Fishes/Arpeggi"
+	quest.5A1B00000000000D.quest_desc: ["Encounter a crimson mosquito"]
+	quest.5A1B00000000000D.title: "Nightmare Fuel"
+	quest.5A1B00000000000E.quest_desc: ["Craft a Crimson Mosquito Larvae from a maggot and a special proboscis"]
+	quest.5A1B00000000000E.title: "Pest Control"
+	quest.5A1B00000000000F.quest_desc: ["Feed a Crimson Mosquito a strange, fungal creature covered in Warped Fungus. Watch as the Crimson Mosquito transforms!"]
+	quest.5A1B00000000000F.title: "Down with the Sickness"
+	quest.5A1B000000000010.quest_desc: ["Encounter a Crocodile"]
+	quest.5A1B000000000010.title: "Chompy"
+	quest.5A1B000000000011.quest_desc: ["Craft a crocodile chestplate from many crocodile scutes"]
+	quest.5A1B000000000011.title: "Cover me with... scutes?"
+	quest.5A1B000000000012.quest_desc: ["Capture the rarest fish in a bucket."]
+	quest.5A1B000000000012.title: "One Chunk Fish"
+	quest.5A1B000000000013.quest_desc: ["Using the drops of the Void Worm, create the Dimensional Carver, which allows you to dig through the fabric of reality to return home at any given point."]
+	quest.5A1B000000000013.title: "Break On Through..."
+	quest.5A1B000000000014.quest_desc: ["Craft an Echolocator, which can reveal nearby caves"]
+	quest.5A1B000000000014.title: "Echo-muh-cation!"
+	quest.5A1B000000000015.quest_desc: ["Place a colored carpet on an elephant"]
+	quest.5A1B000000000015.title: "Dressed to Impress"
+	quest.5A1B000000000016.quest_desc: ["Encounter an Emu. Exercise caution."]
+	quest.5A1B000000000016.title: "It's an Emu!!!"
+	quest.5A1B000000000017.quest_desc: ["See an emu dodge a launched projectile."]
+	quest.5A1B000000000017.title: "Begun, The Emu War Has"
+	quest.5A1B000000000018.quest_desc: ["Catch the Ender Flu effect. Cure it by eating many Chorus Fruit or drinking milk. Be sure not to let it run its toll!"]
+	quest.5A1B000000000018.title: "Race Against The Clock"
+	quest.5A1B000000000019.quest_desc: ["Encounter an Enderiophage, a giant biomechanical construct found in the End Midlands. Be careful not to catch Ender Flu!"]
+	quest.5A1B000000000019.title: "Ender Distancing"
+	quest.5A1B00000000001A.quest_desc: ["Craft an Enderiophage Rocket, which can be used in place of Firework Rockets when in the End."]
+	quest.5A1B00000000001A.title: "Ad End-stra"
+	quest.5A1B00000000001B.quest_desc: ["Craft an Endolocator, which can reveal nearby End Portal Frames"]
+	quest.5A1B00000000001B.title: "No End In Sight"
+	quest.5A1B00000000001C.quest_desc: ["Craft a Falconry Glove from Leather and Hair of Bear. Use it to pick up and launch tamed eagles!"]
+	quest.5A1B00000000001C.title: "Hand In Glove"
+	quest.5A1B00000000001D.quest_desc: ["Craft a Falconry Hood from Leather and a Roadrunner Feather. Eagles wearing one can be manually directed!"]
+	quest.5A1B00000000001D.title: "Blindsided"
+	quest.5A1B00000000001E.quest_desc: ["Encounter the Farseer, a monstrous defender of the world border."]
+	quest.5A1B00000000001E.title: "Farland Security"
+	quest.5A1B00000000001F.quest_desc: ["Obtain Fish Bones from a Skelewag."]
+	quest.5A1B00000000001F.title: "A Bone to Pick"
+	quest.5A1B000000000020.quest_desc: ["Craft a Froststalker Helmet to walk amongst Froststalkers undetected."]
+	quest.5A1B000000000020.title: "An Impostor Amoung Us"
+	quest.5A1B000000000021.quest_desc: ["Slay a Froststalker."]
+	quest.5A1B000000000021.title: "Ice Scream"
+	quest.5A1B000000000022.quest_desc: ["Obtain a Ghostly Pickaxe from an Underminer."]
+	quest.5A1B000000000022.title: "Ghost! Ghost! Toast?"
+	quest.5A1B000000000023.quest_desc: ["Harvest Gongylidia from a Leafcutter Ant Chamber underground. Place Shroomlight near the chamber to make sure you don't upset the locals"]
+	quest.5A1B000000000023.title: "Like a Truffle, with more Ant"
+	quest.5A1B000000000024.quest_desc: ["Encounter a Grizzly Bear"]
+	quest.5A1B000000000024.title: "Pic-A-Nic Basket?"
+	quest.5A1B000000000025.quest_desc: ["Encounter a Guster during a stormy day in the desert"]
+	quest.5A1B000000000025.title: "Eye of The Storm"
+	quest.5A1B000000000026.quest_desc: ["Craft a Gustmaker. Now you can make your own mini-storms!"]
+	quest.5A1B000000000026.title: "I Am Become Guster"
+	quest.5A1B000000000027.quest_desc: ["Craft a Hemolyph Blaster, the ultimate upgrade to the Blood Sprayer."]
+	quest.5A1B000000000027.title: "Blast from the... Future?"
+	quest.5A1B000000000028.quest_desc: ["Craft a Hummingbird Feeder in order to keep hummingbirds nearby"]
+	quest.5A1B000000000028.title: "Sugar... In Wator..."
+	quest.5A1B000000000029.quest_desc: ["Encounter a Kangaroo"]
+	quest.5A1B000000000029.title: "We do a little trolling..."
+	quest.5A1B00000000002A.quest_desc: ["Give a Maraca to a cockroach and enjoy the show. ¡La Cucaracha!"]
+	quest.5A1B00000000002A.title: "Mariachi!"
+	quest.5A1B00000000002B.quest_desc: ["Ride a Laviathan with three other passengers."]
+	quest.5A1B00000000002B.title: "Mass Transit"
+	quest.5A1B00000000002C.quest_desc: ["Observe a Laviathan through the lens of a Spyglass."]
+	quest.5A1B00000000002C.title: "Loch-Nether Monster!"
+	quest.5A1B00000000002D.quest_desc: ["Obtain a Leafcutter Ant Pupa, which can be placed on dirt to start a Leafcutter Ant colony."]
+	quest.5A1B00000000002D.title: "Ant Farm"
+	quest.5A1B00000000002E.quest_desc: ["Obtain a Lost Tentacle from a battle between two titans."]
+	quest.5A1B00000000002E.title: "A Small Price to Pay..."
+	quest.5A1B00000000002F.quest_desc: ["Feed a Maned Wolf an apple."]
+	quest.5A1B00000000002F.title: "Hungry For Apples?"
+	quest.5A1B000000000030.quest_desc: ["Sneak and give a tamed Mantis Shrimp a bucket of water so that it can live on land indefinitely"]
+	quest.5A1B000000000030.title: "A Fistful of Water"
+	quest.5A1B000000000031.quest_desc: ["Craft a Maraca with a Rattlesnake rattle"]
+	quest.5A1B000000000031.title: "Mariachi?"
+	quest.5A1B000000000032.quest_desc: ["Encounter the Murmur, which is not as it seems."]
+	quest.5A1B000000000032.title: "Flexible Schedule"
+	quest.5A1B000000000033.quest_desc: ["Create a Mysterious Worm by putting a Crimson Mosquito Larva in a Capsid."]
+	quest.5A1B000000000033.title: "Destroy The Child"
+	quest.5A1B000000000034.quest_desc: ["Obtain a Novelty Hat from a Skelewag."]
+	quest.5A1B000000000034.title: "He Was Number One!"
+	quest.5A1B000000000035.quest_desc: ["Be granted a blessing from a wild Orca"]
+	quest.5A1B000000000035.title: "Free Willy"
+	quest.5A1B000000000036.quest_desc: ["Craft a Pocket Of Sand. Sha-sha!"]
+	quest.5A1B000000000036.title: "Pocket Sand!"
+	quest.5A1B000000000037.quest_desc: ["Craft Rainbow Glass from Rainbow Jelly and Glass."]
+	quest.5A1B000000000037.title: "Rainbow Road"
+	quest.5A1B000000000038.quest_desc: ["Obtain Rainbow Jelly from a Comb Jelly. Use a sponge if you don't like what happens..."]
+	quest.5A1B000000000038.title: "Taste the Rainbow"
+	quest.5A1B000000000039.quest_desc: ["Encounter a Rattlesnake"]
+	quest.5A1B000000000039.title: "No Step on Snake"
+	quest.5A1B00000000003A.quest_desc: ["Craft a Rock Shell Chestplate to roll into a ball."]
+	quest.5A1B00000000003A.title: "You're too Slow!"
+	quest.5A1B00000000003B.quest_desc: ["Encounter a Rocky Roller in the dripstone caves."]
+	quest.5A1B00000000003B.title: "KEEP ROLLIN' ROLLIN' ROLLIN'"
+	quest.5A1B00000000003C.quest_desc: ["Obtain a Rocky Shell from slaying a Rocky Roller."]
+	quest.5A1B00000000003C.title: "Rocks Off!"
+	quest.5A1B00000000003D.quest_desc: ["Discover the unique creatures of the world"]
+	quest.5A1B00000000003D.title: "Alex's Mobs"
+	quest.5A1B00000000003E.quest_desc: ["Save a beached Cachalot Whale by pushing it into the water, and then have it reward you by coughing up some Ambergris"]
+	quest.5A1B00000000003E.title: "Save the Whales!"
+	quest.5A1B00000000003F.quest_desc: ["Craft a Sculk Boomer using the souls of a few Skreechers."]
+	quest.5A1B00000000003F.title: "Ok Boomer"
+	quest.5A1B000000000040.quest_desc: ["Have food stolen from your inventory by a seagull."]
+	quest.5A1B000000000040.title: "Mine? Mine? Mine?"
+	quest.5A1B000000000041.quest_desc: ["Shatter a Dimensional Carver by placing it in a Capsid. Instead of opening a portal home, it will now open a portal one million blocks in any direction."]
+	quest.5A1B000000000041.title: "Ticket to the End of the World"
+	quest.5A1B000000000042.quest_desc: ["Encounter a Skelewag near a sunken ship."]
+	quest.5A1B000000000042.title: "We Just Want our Hat Back"
+	quest.5A1B000000000043.quest_desc: ["Take a sword-like skull from a Skelewag."]
+	quest.5A1B000000000043.title: "Smitty WerbenJagerManJensen"
+	quest.5A1B000000000044.quest_desc: ["Encounter the Skreecher, a loud and obnoxious sculk monster."]
+	quest.5A1B000000000044.title: "Sculk Cymbal"
+	quest.5A1B000000000045.quest_desc: ["Get sprayed by a Skunk."]
+	quest.5A1B000000000045.title: "Hippie Smell"
+	quest.5A1B000000000046.quest_desc: ["Craft sopa de macaco with a banana peel"]
+	quest.5A1B000000000046.title: "Uma Delicia"
+	quest.5A1B000000000047.quest_desc: ["Obtain a soul heart from slaying a bloated Soul Vulture"]
+	quest.5A1B000000000047.title: "The Soul-ly Ghost"
+	quest.5A1B000000000048.quest_desc: ["Encounter a Soul Vulture in the nether"]
+	quest.5A1B000000000048.title: "Fetch Me Their Souls!"
+	quest.5A1B000000000049.quest_desc: ["Lure a Spectre in the end with a Soul Heart. Use a lead on them to hitch a ride!"]
+	quest.5A1B000000000049.title: "The Iron Curtain"
+	quest.5A1B00000000004A.quest_desc: ["Shear a moss-covered Alligator Snapping Turtle and obtain a Spiked Scute"]
+	quest.5A1B00000000004A.title: "Shear the Scute"
+	quest.5A1B00000000004B.quest_desc: ["Craft a Spiked Turtle Shell"]
+	quest.5A1B00000000004B.title: "Turtle-ology Majors Be Like"
+	quest.5A1B00000000004C.quest_desc: ["Craft a Grappling Squok from Lost Tentacles, a crossbow and copper ingots."]
+	quest.5A1B00000000004C.title: "... for Salvation"
+	quest.5A1B00000000004D.quest_desc: ["Capture skunk spray using a glass bottle."]
+	quest.5A1B00000000004D.title: "Gamer Skunk Bath Water"
+	quest.5A1B00000000004E.quest_desc: ["Craft a Stink Ray."]
+	quest.5A1B00000000004E.title: "I SAID DART GUN!"
+	quest.5A1B00000000004F.quest_desc: ["Stomp on a Leafcutter Anthill - beware the angry denizens within!"]
+	quest.5A1B00000000004F.title: "Ant-Agonizer"
+	quest.5A1B000000000050.quest_desc: ["Craft a Straddlite Saddle. Don't forget the trim!"]
+	quest.5A1B000000000050.title: "The Family Sedan"
+	quest.5A1B000000000051.quest_desc: ["Craft a Straddleboard from some Netherite and Straddlerite."]
+	quest.5A1B000000000051.title: "Surf Wax America"
+	quest.5A1B000000000052.quest_desc: ["Encounter a Straddler in the Basalt Deltas."]
+	quest.5A1B000000000052.title: "Straddle My Ol' Saddle"
+	quest.5A1B000000000053.quest_desc: ["Feed a Stradpole some Mosquito Larva, in hopes of turning it into a Straddler."]
+	quest.5A1B000000000053.title: "Like Father"
+	quest.5A1B000000000054.quest_desc: ["Craft a Strange Fish Finder from slimeballs, Fish Bones and an Echolocator."]
+	quest.5A1B000000000054.title: "The Quest for the Best"
+	quest.5A1B000000000055.quest_desc: ["Receive a blessing from the great and noble sunbird"]
+	quest.5A1B000000000055.title: "The Power of the Sun"
+	quest.5A1B000000000056.quest_desc: ["Tame a bald eagle with fish oil."]
+	quest.5A1B000000000056.title: "Freedom Intensifies"
+	quest.5A1B000000000057.quest_desc: ["Tame a capuchin monkey with bananas"]
+	quest.5A1B000000000057.title: "Monkey Business"
+	quest.5A1B000000000058.quest_desc: ["Tame a Cosmaw by feeding it Cosmic Cod."]
+	quest.5A1B000000000058.title: "Its a Fish? Its a Bug? What is it?"
+	quest.5A1B000000000059.quest_desc: ["Tame an elephant by feeding it Acacia Blossoms"]
+	quest.5A1B000000000059.title: "Stampy!"
+	quest.5A1B00000000005A.quest_desc: ["Tame a tusked elephant when it is a baby"]
+	quest.5A1B00000000005A.title: "The Biggest Land Mammal"
+	quest.5A1B00000000005B.quest_desc: ["Tame a Flutter by giving it multiple kinds of flowers."]
+	quest.5A1B00000000005B.title: "A Picky Fellow"
+	quest.5A1B00000000005C.quest_desc: ["Tame a gorilla with bananas"]
+	quest.5A1B00000000005C.title: "In Memoriam"
+	quest.5A1B00000000005D.quest_desc: ["Tame a Grizzly Bear by feeding it honey and salmon"]
+	quest.5A1B00000000005D.title: "Arcturus!"
+	quest.5A1B00000000005E.quest_desc: ["Tame a Mantis Shrimp with many feedings of Tropical Fish"]
+	quest.5A1B00000000005E.title: "Shrimp Friend"
+	quest.5A1B00000000005F.quest_desc: ["Tame a Tarantula Hawk by feeding it Spider Eyes."]
+	quest.5A1B00000000005F.title: "Big Iron"
+	quest.5A1B000000000060.quest_desc: ["Tame a Warped Toad, the perfect defense against any giant bug, with some larvae"]
+	quest.5A1B000000000060.title: "It Is Wednesday"
+	quest.5A1B000000000061.quest_desc: ["Encounter a Tarantula Hawk in a desert."]
+	quest.5A1B000000000061.title: "Rigged from the Start"
+	quest.5A1B000000000062.quest_desc: ["Receive a Tiger's Blessing after feeding it Porkchops, Chicken or other meats."]
+	quest.5A1B000000000062.title: "Eye of the Tiger"
+	quest.5A1B000000000063.quest_desc: ["Craft a Transmutation Table to convert materials into almost anything."]
+	quest.5A1B000000000063.title: "Reality Can Be Whatever I Want"
+	quest.5A1B000000000064.quest_desc: ["Transmute 1000 items using the same Transmutation Table."]
+	quest.5A1B000000000064.title: "Nonequivalent Exchange"
+	quest.5A1B000000000065.quest_desc: ["Break the block an Underminer is mining, revealing a hidden ore"]
+	quest.5A1B000000000065.title: "Who Undermines the Underminer?"
+	quest.5A1B000000000066.quest_desc: ["Destroy the Void Worm."]
+	quest.5A1B000000000066.title: "Wormy"
+	quest.5A1B000000000067.quest_desc: ["Split a void worm in half by attacking one of its body segments. More worms, more problems!"]
+	quest.5A1B000000000067.title: "Should've Gone for the Head"
+	quest.5A1B000000000068.quest_desc: ["Toss the Mysterious Worm into the void of the End, and prepare to meet the Void Worm."]
+	quest.5A1B000000000068.title: "A Soul for a Soul"
+	quest.5A1B000000000069.quest_desc: ["Slay the Warped Mosco, the swole defender of the Warped Forest."]
+	quest.5A1B000000000069.title: "Destroyer of Chads"
+	quest.4A1E00000000000F.quest_desc: [
+		"Obtain all three Tentacle Rig enchantment books."
+		""
+		"&6Far Reach&r: longer tentacles, the rig can grab, hang and climb from a greater distance."
+		"&6Swift&r: the rig carries you faster, raising speed and top speed."
+		"&6Thrift&r: the rig uses less air while holding, moving and climbing."
+	]
+	quest.4A1E00000000000F.title: "Doc's Books"
+	task.4A1E00000000000C.title: "Book of Far Reach"
+	task.4A1E00000000000D.title: "Book of Swift"
+	task.4A1E00000000000E.title: "Book of Thrift"
+	quest.4A2E000000000001.quest_desc: ["Enter the Abyssal Chasm"]
+	quest.4A2E000000000001.title: "Beyond the Sea"
+	quest.4A2E000000000002.quest_desc: ["Capture any abyssal sea creature in a bucket"]
+	quest.4A2E000000000002.title: "Buckets of Joy"
+	quest.4A2E000000000003.quest_desc: ["Obtain Bioluminesscence from a Gossamer Worm"]
+	quest.4A2E000000000003.title: "Another Kind of Slime"
+	quest.4A2E000000000004.quest_desc: ["Craft a torch that works underwater"]
+	quest.4A2E000000000004.title: "Glow Sticks"
+	quest.4A2E000000000005.quest_desc: ["Craft a Floater, which can quickly return you to above the waves"]
+	quest.4A2E000000000005.title: "Surface or Bust"
+	quest.4A2E000000000006.quest_desc: ["Craft a Deep Sea Sushi Roll"]
+	quest.4A2E000000000006.title: "Pass the Wasabi"
+	quest.4A2E000000000007.quest_desc: ["Discover the Deepsight Effect by brewing a Deepsight Potion with a Lanternfish"]
+	quest.4A2E000000000007.title: "A Lighthouse in Your Eyes"
+	quest.4A2E000000000008.quest_desc: ["Obtain Marine Snow from feeding a Sea Pig, which can rejuvenate coral"]
+	quest.4A2E000000000008.title: "Catching Flakes"
+	quest.4A2E000000000009.quest_desc: ["Find the one place in the deep that seems to have air inside..."]
+	quest.4A2E000000000009.title: "Shell City"
+	quest.4A2E00000000000A.quest_desc: ["Slay a Mine Guardian"]
+	quest.4A2E00000000000A.title: "Those Aren't Balloons..."
+	quest.4A2E00000000000B.quest_desc: ["Obtain the entire set of Diving Armor from the Drowned in the deep"]
+	quest.4A2E00000000000B.title: "The Cyclops"
+	quest.4A2E00000000000C.quest_desc: ["Take a ride in a Submarine"]
+	quest.4A2E00000000000C.title: "Captain Nemo"
+	quest.4A2E00000000000D.quest_desc: ["Repair a Submarine using Copper Ingots"]
+	quest.4A2E00000000000D.title: "Buff Out Those Scratches"
+	quest.4A2E00000000000E.quest_desc: ["Break a Mussel"]
+	quest.4A2E00000000000E.title: "Bring Forth The Mollusk"
+	quest.4A2E00000000000F.quest_desc: ["Cook a Mussel in a furnace"]
+	quest.4A2E00000000000F.title: "Slurp Up"
+	quest.4A2E000000000010.quest_desc: ["Obtain a Pearl from breaking a Mussel"]
+	quest.4A2E000000000010.title: "Diamonds of the Sea"
+	quest.4A2E000000000011.quest_desc: ["See something you weren't supposed to..."]
+	quest.4A2E000000000011.title: "The Shadow Over Mine's Craft"
+	quest.4A2E000000000012.quest_desc: ["Place a Pearl on an Abyssal Altar as an offering"]
+	quest.4A2E000000000012.title: "Order of Dagon"
+	quest.4A2E000000000013.quest_desc: ["Successfully trade with the Deep Ones"]
+	quest.4A2E000000000013.title: "An Understanding"
+	quest.4A2E000000000014.quest_desc: ["Trade so often with the Deep Ones that they no longer avoid your presence"]
+	quest.4A2E000000000014.title: "Nautical Neighbors"
+	quest.4A2E000000000015.quest_desc: ["Become so well-regarded amongst the Deep Ones that they occasionally come to your defense"]
+	quest.4A2E000000000015.title: "All Buddies Now"
+	quest.4A2E000000000016.quest_desc: ["Collect four different, powerful items from trading with the Deep Ones"]
+	quest.4A2E000000000016.title: "Powers of Poseidon"
 }

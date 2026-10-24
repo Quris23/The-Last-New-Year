@@ -3,25 +3,111 @@
 	default_quest_shape: ""
 	filename: "296bcbeaae93eff8"
 	group: "2BBAFBD860BE8ADE"
+	hide_quest_until_deps_complete: true
 	id: "296BCBEAAE93EFF8"
 	images: [ ]
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6E96C20F15B16B1D"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:stone_tiles"
+			}
+			id: "4A1E000000000009"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_sunken_city"
+				criterion: ""
+				id: "4A1F000000000009"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:lacrima"
+			}
+			id: "4A1E000000000003"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_acropolis"
+				criterion: ""
+				id: "4A1F000000000003"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A1E000000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:chitin_claw"
+			}
+			id: "4A1E000000000007"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:kill_clawdian"
+				criterion: ""
+				id: "4A1F000000000007"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:eye_of_air"
+			}
+			id: "4A1E000000000001"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_cloudy_temple"
+				criterion: ""
+				id: "4A1F000000000001"
+				type: "advancement"
+			}]
+			x: -0.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"12EB628103AC20A3"
+				"6BDC18F13351539C"
+				"4A2E000000000016"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "538B896949C66783"
+			preset: "goal"
 			tasks: [{
 				id: "5AABF525F1D47A88"
 				item: { count: 1, id: "endrem:cold_eye" }
 				type: "item"
 			}]
 			x: -0.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
+			dependencies: [
+				"7DC6A79C372BE90A"
+				"3F1D8F5CB02A64FC"
+				"18B684202A842173"
+				"4A2E000000000005"
+			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "0F3AFC67678479F6"
+			preset: "goal"
 			tasks: [{
 				id: "03C34C51FE4D46C0"
 				item: { count: 1, id: "endrem:exotic_eye" }
@@ -31,18 +117,26 @@
 			y: -2.0d
 		}
 		{
+			dependencies: [
+				"7F653D3AC997695F"
+				"2337EF1ECA052860"
+				"603C824DE0FF58CC"
+			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "7F4F8616DE5CB0F7"
+			preset: "goal"
 			tasks: [{
 				id: "3D86734817E96C6B"
 				item: { count: 1, id: "endrem:wither_eye" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:trident"
 			}
@@ -54,12 +148,13 @@
 				id: "2D701FC342B187FB"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 3.5d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["490FB13F04F110AC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:trident"
 			}
@@ -71,12 +166,13 @@
 				id: "71018B4C064D1152"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["490FB13F04F110AC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:trident"
 			}
@@ -88,48 +184,780 @@
 				id: "2B36CD1C2A806E91"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["72E188EBD6F3A789"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "minecraft:prismarine_shard"
-			}
-			id: "46931F2C2B0A1459"
-			optional: true
-			tasks: [{
-				advancement: "nova_structures:adventure/kill_guardian_boss"
-				criterion: ""
-				id: "72D74F6DBF1FD5CC"
-				type: "advancement"
-			}]
-			x: 1.0d
-			y: 5.0d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "6BB28019F37FEF02"
+			optional: true
 			tasks: [{
 				id: "1CD65AE49808682E"
 				item: { count: 1, id: "block_factorys_bosses:kraken_tooth" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6BB28019F37FEF02"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "71FF164748B3DA6C"
+			optional: true
 			tasks: [{
 				id: "5602D53C2D6F0015"
 				item: { count: 1, id: "block_factorys_bosses:kraken_trident" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4A1E000000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7F653D3AC997695F"
+			optional: true
+			tasks: [{
+				entity: "legendary_monsters:cloud_golem"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "0FD40E3B3C2C9D8F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["49968CC6F23AF24B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "3F1D8F5CB02A64FC"
+			optional: true
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "528A0752754A0313"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A1E000000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7DC6A79C372BE90A"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:scylla"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "5B4EE5E08A810D1E"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A733E5D9B2590DC"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "6BDC18F13351539C"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "1B53D355FAC27FC9"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7F653D3AC997695F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "10166DAB4C4332B7"
+			optional: true
+			tasks: [{
+				id: "53A1BE85A6351A1D"
+				item: { count: 1, id: "legendary_monsters:axe_of_lightning" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["7F653D3AC997695F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "1256C4389BA3767A"
+			optional: true
+			tasks: [{
+				id: "3310B2D96F2D59EF"
+				item: { count: 1, id: "legendary_monsters:wand_of_clouds" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "2337EF1ECA052860"
+			optional: true
+			tasks: [{
+				id: "7D8625DAA0BCE4A2"
+				item: { count: 1, id: "artifacts:cloud_in_a_bottle" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "603C824DE0FF58CC"
+			optional: true
+			tasks: [{
+				id: "6107115E2A2593CE"
+				item: { count: 1, id: "irons_spellbooks:lightning_bottle" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"7DC6A79C372BE90A"
+				"71FF164748B3DA6C"
+				"490FB13F04F110AC"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "48A240B00F3983A3"
+			optional: true
+			tasks: [{
+				id: "14AEAE5CFAAE19BC"
+				item: { count: 1, id: "cataclysm:astrape" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7DC6A79C372BE90A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "3C6DBD9A98672F33"
+			optional: true
+			tasks: [{
+				id: "3AE34F3AF169DCDB"
+				item: { count: 1, id: "cataclysm:ceraunus" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "12EB628103AC20A3"
+			optional: true
+			tasks: [{
+				id: "6340F07C774C1096"
+				item: { count: 1, id: "minecraft:heart_of_the_sea" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A1E000000000009"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "5B0DE582588B57E4"
+			optional: true
+			tasks: [{
+				id: "2DE45740FF3DE522"
+				item: { count: 1, id: "cataclysm:blessed_amethyst_crab_meat" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5B0DE582588B57E4"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "677626841CF252A6"
+			optional: true
+			tasks: [{
+				id: "362AAFC073250C37"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 12, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:abyss_spell_book" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"4A1E000000000009"
+				"34601D3BFD466468"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "3A733E5D9B2590DC"
+			optional: true
+			tasks: [{
+				id: "0D161578579B77A6"
+				item: { count: 1, id: "cataclysm:abyssal_sacrifice" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "6E96C20F15B16B1D"
+			optional: true
+			tasks: [{
+				id: "448B09332575FD24"
+				item: { count: 1, id: "cataclysm:abyss_eye" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3F1D8F5CB02A64FC"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "34601D3BFD466468"
+			optional: true
+			tasks: [{
+				id: "342389144BE28FC2"
+				item: { count: 1, id: "endrem:guardian_eye" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6BDC18F13351539C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "22AA5DC3286A1508"
+			optional: true
+			tasks: [{
+				id: "08D5261E1E0F3C3F"
+				item: { count: 1, id: "cataclysm:the_baby_leviathan_bucket" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6BDC18F13351539C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7DEBBD3F256B6024"
+			optional: true
+			tasks: [{
+				id: "393E817ABAD125A2"
+				item: { count: 1, id: "cataclysm:tidal_claws" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6ED217A97E180F01"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:prismarine"
+			}
+			id: "49968CC6F23AF24B"
+			optional: true
+			tasks: [{
+				id: "6321CCA3A68F1BA9"
+				structure: "betteroceanmonuments:ocean_monument"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["12EB628103AC20A3"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "18B684202A842173"
+			optional: true
+			tasks: [{
+				id: "08FA24DF28912937"
+				item: { count: 1, id: "minecraft:conduit" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "6ED217A97E180F01"
+			optional: true
+			tasks: [{
+				id: "533468B1AD62CBE8"
+				item: { count: 1, id: "minecraft:milk_bucket" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000001"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/discover_abyssal_chasm"
+				criterion: ""
+				id: "4A2F000000000001"
+				type: "advancement"
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A2E000000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:gossamer_worm_bucket"
+			}
+			id: "4A2E000000000002"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/abyssal_bucket"
+				criterion: ""
+				id: "4A2F000000000002"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A2E000000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:bioluminesscence"
+			}
+			id: "4A2E000000000003"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/bioluminesscence"
+				criterion: ""
+				id: "4A2F000000000003"
+				type: "advancement"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4A2E000000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:bioluminescent_torch"
+			}
+			id: "4A2E000000000004"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/bioluminescent_torch"
+				criterion: ""
+				id: "4A2F000000000004"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4A2E000000000003"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:floater"
+			}
+			id: "4A2E000000000005"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/floater"
+				criterion: ""
+				id: "4A2F000000000005"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4A2E000000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:deep_sea_sushi_roll"
+			}
+			id: "4A2E000000000006"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deep_sea_sushi_roll"
+				criterion: ""
+				id: "4A2F000000000006"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4A2E000000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:bioluminescent_torch"
+			}
+			id: "4A2E000000000007"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deepsight"
+				criterion: ""
+				id: "4A2F000000000007"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4A2E000000000002"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:marine_snow"
+			}
+			id: "4A2E000000000008"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/marine_snow"
+				criterion: ""
+				id: "4A2F000000000008"
+				type: "advancement"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4A2E000000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:metal_scaffolding"
+			}
+			id: "4A2E000000000009"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/discover_abyssal_ruins"
+				criterion: ""
+				id: "4A2F000000000009"
+				type: "advancement"
+			}]
+			x: -15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A2E000000000009"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:depth_charge"
+			}
+			id: "4A2E00000000000A"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defeat_mine_guardian"
+				criterion: ""
+				id: "4A2F00000000000A"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A2E000000000009"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:diving_helmet"
+			}
+			id: "4A2E00000000000B"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/diving_armor"
+				criterion: ""
+				id: "4A2F00000000000B"
+				type: "advancement"
+			}]
+			x: -17.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A2E000000000009"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:submarine"
+			}
+			id: "4A2E00000000000C"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/ride_submarine"
+				criterion: ""
+				id: "4A2F00000000000C"
+				type: "advancement"
+			}]
+			x: -15.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4A2E00000000000C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:copper_ingot"
+			}
+			id: "4A2E00000000000D"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/repair_submarine"
+				criterion: ""
+				id: "4A2F00000000000D"
+				type: "advancement"
+			}]
+			x: -15.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4A2E000000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:mussel"
+			}
+			id: "4A2E00000000000E"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/mussel"
+				criterion: ""
+				id: "4A2F00000000000E"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A2E00000000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:cooked_mussel"
+			}
+			id: "4A2E00000000000F"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/cooked_mussel"
+				criterion: ""
+				id: "4A2F00000000000F"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A2E00000000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000010"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/pearl"
+				criterion: ""
+				id: "4A2F000000000010"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A2E000000000010"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000011"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/stalked_by_deep_one"
+				criterion: ""
+				id: "4A2F000000000011"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A2E000000000011"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:abyssal_altar"
+			}
+			id: "4A2E000000000012"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/pearl_on_abyssal_altar"
+				criterion: ""
+				id: "4A2F000000000012"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A2E000000000012"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000013"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/trade_with_deep_one"
+				criterion: ""
+				id: "4A2F000000000013"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A2E000000000013"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000014"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deep_ones_become_neutral"
+				criterion: ""
+				id: "4A2F000000000014"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4A2E000000000014"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:pearl"
+			}
+			id: "4A2E000000000015"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deep_ones_become_helpful"
+				criterion: ""
+				id: "4A2F000000000015"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4A2E000000000015"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:magic_conch"
+			}
+			id: "4A2E000000000016"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/deep_one_items"
+				criterion: ""
+				id: "4A2F000000000016"
+				type: "advancement"
+			}]
+			x: -6.0d
+			y: 1.0d
 		}
 	]
 }

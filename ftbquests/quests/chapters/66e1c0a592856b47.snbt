@@ -5,7 +5,7 @@
 	group: "2BBAFBD860BE8ADE"
 	id: "66E1C0A592856B47"
 	images: [ ]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -28,6 +28,78 @@
 				type: "item"
 			}]
 			x: 2.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "525FCC965FC78D31"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:ignis"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "31FE8286D8D4A312"
+				type: "kill"
+				value: 1L
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "0BD8BD70505CDA14"
+			optional: true
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "65079C9F1A78427D"
+				type: "kill"
+				value: 1L
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "5F12726E79D49B13"
+			tasks: [{
+				entity: "legendary_monsters:posessed_paladin"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "061000DF08002069"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.0d
 			y: -2.0d
 		}
 	]

@@ -20,6 +20,24 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["024FBA54BEE1A005"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:mossy_chestplate"
+			}
+			id: "39AC000000000001"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_mossy_temple"
+				criterion: ""
+				id: "39AD000000000001"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
 			dependencies: ["22AD056AFC608014"]
 			entity_vis_size: 1.0f
 			id: "39AA000000000003"
@@ -560,7 +578,9 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["39AA00000000000C"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "024FBA54BEE1A005"
 			shape: "square"
 			tasks: [{
@@ -586,6 +606,7 @@
 		{
 			dependencies: ["024FBA54BEE1A005"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "54A17E2AFD57C6BD"
 			tasks: [{
 				id: "3CF870706A1357BE"
@@ -598,6 +619,7 @@
 		{
 			dependencies: ["024FBA54BEE1A005"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "5067BAB67384541A"
 			tasks: [{
 				id: "673273B9FA5E019F"
@@ -620,6 +642,19 @@
 			}]
 			x: -5.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["39AA00000000000E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "4BC6B2BEC7C53C16"
+			tasks: [{
+				id: "2445EC12DB26231F"
+				item: { count: 1, id: "cataclysm_spellbooks:fake_wudjets_staff" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.0d
 		}
 	]
 }

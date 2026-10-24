@@ -5,7 +5,7 @@
 	group: "2BBAFBD860BE8ADE"
 	id: "6BD0599DC22AA3A4"
 	images: [ ]
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
@@ -260,23 +260,6 @@
 		{
 			entity_vis_size: 1.0f
 			icon: {
-				id: "legendary_monsters:eye_of_shulker"
-			}
-			id: "477CE9608EEFC4DC"
-			optional: true
-			tasks: [{
-				advancement: "legendary_monsters:end_root"
-				criterion: ""
-				id: "059FF0F857397957"
-				type: "advancement"
-			}]
-			x: -0.5d
-			y: 16.5d
-		}
-		{
-			dependencies: ["477CE9608EEFC4DC"]
-			entity_vis_size: 1.0f
-			icon: {
 				id: "legendary_monsters:chorus_mask"
 			}
 			id: "0287C2D22E2BA6A1"
@@ -291,7 +274,6 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["477CE9608EEFC4DC"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:infected_chorus_fruit"
@@ -308,7 +290,6 @@
 			y: 16.5d
 		}
 		{
-			dependencies: ["477CE9608EEFC4DC"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:large_shulker_shell"
