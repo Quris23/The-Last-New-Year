@@ -3,45 +3,69 @@
 	default_quest_shape: ""
 	filename: "3eddeb7e5237b681"
 	group: "2BBAFBD860BE8ADE"
+	icon: {
+		components: {
+			"cold_sweat:armor_insulation": {
+				insulation: [ ]
+			}
+		}
+		id: "northstar:iron_space_suit_helmet"
+	}
 	id: "3EDDEB7E5237B681"
 	images: [ ]
 	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7C0F676EB11950AF"]
 			entity_vis_size: 1.0f
 			id: "68D519245B2F1227"
+			preset: "goal"
+			shape: "none"
 			tasks: [{
 				id: "58CF8E8859C38252"
 				item: { count: 1, id: "endrem:cursed_eye" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["57027B1039F310D8"]
 			entity_vis_size: 1.0f
 			id: "6830E7D102A6163D"
+			preset: "goal"
 			tasks: [{
 				id: "1E6BE1338773E858"
 				item: { count: 1, id: "endrem:rogue_eye" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: 10.5d
+			y: -7.5d
 		}
 		{
 			entity_vis_size: 1.0f
 			id: "0ADDF091CBFA0B09"
-			tasks: [{
-				id: "56A1436426CE3738"
-				item: { count: 1, id: "northstar:telescope" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.5d
+			tasks: [
+				{
+					id: "56A1436426CE3738"
+					item: { count: 1, id: "northstar:telescope" }
+					type: "item"
+				}
+				{
+					id: "7409F10FEB273E19"
+					item: { count: 1, id: "northstar:space_atlas" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 8.5d
 		}
 		{
+			dependencies: [
+				"72C9E130A7D9B46C"
+				"7EA1360958BF3F12"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "northstar:moon_sand"
@@ -52,10 +76,11 @@
 				id: "699684DB6ED8903C"
 				type: "dimension"
 			}]
-			x: -1.0d
-			y: 0.5d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["7B2CB8D721FD76CA"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "northstar:mars_sand"
@@ -66,10 +91,11 @@
 				id: "1DDD8363EBDEA66C"
 				type: "dimension"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 12.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["3DD5DB3226C2FEBF"]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:eye_of_annihilation"
@@ -82,8 +108,8 @@
 				id: "4F6922CCD1A99F2C"
 				type: "advancement"
 			}]
-			x: -3.0d
-			y: 3.5d
+			x: 14.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3F227346DA40697E"]
@@ -99,8 +125,8 @@
 				id: "3B056EAB7FCF772D"
 				type: "advancement"
 			}]
-			x: -1.0d
-			y: 3.5d
+			x: 14.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["20D499CC86629B5A"]
@@ -116,8 +142,8 @@
 				id: "384AC71BB7C5CE8D"
 				type: "advancement"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: 12.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7885722AE51B2D69"]
@@ -133,8 +159,8 @@
 				id: "0ABB830EFCFA3176"
 				type: "advancement"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 12.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4806C44BAEA3BC8D"]
@@ -150,27 +176,11 @@
 				id: "19CBD0530CECC79F"
 				type: "advancement"
 			}]
-			x: 5.0d
-			y: 3.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["33C0A1565E83ABCB"]
-			entity_vis_size: 1.0f
-			icon: {
-				id: "legendary_monsters:portal_shard"
-			}
-			id: "1BA8B77D8CBA549E"
-			optional: true
-			tasks: [{
-				advancement: "legendary_monsters:defeat_the_obliterator"
-				criterion: ""
-				id: "1293DB02C7221E35"
-				type: "advancement"
-			}]
-			x: 7.0d
-			y: 3.5d
-		}
-		{
+			dependencies: ["223E2F5539AF0368"]
 			entity_vis_size: 1.0f
 			id: "7C0F676EB11950AF"
 			tasks: [{
@@ -190,10 +200,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 1.5d
-			y: -2.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["5CD2E3A50D00C817"]
 			entity_vis_size: 1.0f
 			id: "4CC87526EA4DE020"
 			tasks: [{
@@ -213,10 +224,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 3.5d
+			x: 4.5d
 			y: -2.0d
 		}
 		{
+			dependencies: ["33C0A1565E83ABCB"]
 			entity_vis_size: 1.0f
 			id: "57027B1039F310D8"
 			tasks: [{
@@ -236,8 +248,888 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -5.5d
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5CD2E3A50D00C817"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:door_of_seal"
+			}
+			id: "223E2F5539AF0368"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_frosted_prison"
+				criterion: ""
+				id: "1F4FD9E0B4048D9A"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5783BFA3305EA4DC"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:chiseled_end_stone_bricks"
+			}
+			id: "050DF31762E47E3A"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_ruined_citadel"
+				criterion: ""
+				id: "75E3B1231ED581C5"
+				type: "advancement"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["050DF31762E47E3A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:void_core"
+			}
+			id: "5CD2E3A50D00C817"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:kill_ender_golem"
+				criterion: ""
+				id: "39915F3E5D95413C"
+				type: "advancement"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["68D519245B2F1227"]
+			entity_vis_size: 2.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:music_disc_the_cataclysmfarer"
+			}
+			id: "4AF2DF7CAB38DC89"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				advancement: "cataclysm:kill_all_bosses"
+				criterion: ""
+				id: "75D5D8442C865641"
+				type: "advancement"
+			}]
+			x: -2.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["4CC87526EA4DE020"]
+			entity_vis_size: 1.0f
+			id: "6900D134DADB8073"
+			tasks: [{
+				id: "32CE56047DCD9543"
+				item: { count: 1, id: "cataclysm:gauntlet_of_bulwark" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CC87526EA4DE020"]
+			entity_vis_size: 1.0f
+			id: "6F868F0B0071A968"
+			tasks: [{
+				id: "187C86A0EBF08A01"
+				item: { count: 1, id: "cataclysm:gauntlet_of_maelstrom" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5CD2E3A50D00C817"]
+			entity_vis_size: 1.0f
+			id: "542ECF9D3CE78E3C"
+			tasks: [{
+				id: "6AA3E9FE4405CC7A"
+				item: { count: 1, id: "cataclysm:void_forge" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5CD2E3A50D00C817"]
+			entity_vis_size: 1.0f
+			id: "0F6954ACD549F7C1"
+			tasks: [{
+				id: "4B8915BB8540C0AC"
+				item: { count: 1, id: "cataclysm:void_assault_shoulder_weapon" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0ADDF091CBFA0B09"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7B3D3A4377FDC89A"
+			tasks: [{
+				id: "69CA5C770B72D0B3"
+				item: { count: 1, id: "northstar:astronomy_table" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1AA8789F709976E7"]
+			entity_vis_size: 1.0f
+			id: "72C9E130A7D9B46C"
+			tasks: [
+				{
+					id: "6F397E7AB0C051FC"
+					item: { count: 1, id: "northstar:rocket_waypoint" }
+					type: "item"
+				}
+				{
+					id: "0F06AF774C6151BA"
+					item: { count: 1, id: "northstar:auto_lander" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["30288255CE8716F3"]
+			entity_vis_size: 1.0f
+			id: "1AA8789F709976E7"
+			tasks: [{
+				id: "18F9F9AB51FC000E"
+				item: { count: 1, id: "northstar:rocket_thruster" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7B3D3A4377FDC89A"]
+			entity_vis_size: 1.0f
+			id: "30288255CE8716F3"
+			tasks: [
+				{
+					id: "4BA503B4D95A0127"
+					item: { count: 1, id: "northstar:rocket_station" }
+					type: "item"
+				}
+				{
+					id: "62C1565A51385AE4"
+					item: { count: 1, id: "northstar:rocket_controls" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72C9E130A7D9B46C"]
+			entity_vis_size: 1.0f
+			id: "7B2CB8D721FD76CA"
+			tasks: [{
+				id: "3A1F420B62D81455"
+				item: { count: 1, id: "northstar:interplanetary_navigator" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["72C9E130A7D9B46C"]
+			entity_vis_size: 1.0f
+			id: "20691E25977CB14E"
+			tasks: [
+				{
+					id: "67331EFBFA499B54"
+					item: { count: 1, id: "northstar:targeting_computer" }
+					type: "item"
+				}
+				{
+					id: "6A4A4B5084ED4657"
+					item: { count: 1, id: "northstar:computer_rack" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["23F830FFB1B0BE0A"]
+			entity_vis_size: 1.0f
+			id: "7ADA011D67A094C6"
+			tasks: [{
+				id: "37617264B6794068"
+				item: { count: 1, id: "northstar:electrolysis_machine" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"7ADA011D67A094C6"
+				"02A1DCF457CB6596"
+			]
+			entity_vis_size: 1.0f
+			id: "4A62344CB92CCBD4"
+			tasks: [{
+				id: "5761F068DA4A0846"
+				item: { count: 1, id: "northstar:oxygen_filler" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7ADA011D67A094C6"]
+			entity_vis_size: 1.0f
+			id: "14D39CA7AB0AE81B"
+			tasks: [{
+				id: "60C1D125ADFD6FDD"
+				item: { count: 1, id: "northstar:combustion_engine" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["0ADDF091CBFA0B09"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "23F830FFB1B0BE0A"
+			tasks: [{
+				id: "1A870D7F810C47FC"
+				item: { count: 1, id: "northstar:solar_panel" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7ADA011D67A094C6"]
+			entity_vis_size: 1.0f
+			id: "7DC72F9CBDC844A4"
+			tasks: [{
+				id: "06467DA9977A32A9"
+				item: { count: 1, id: "northstar:oxygen_sealer" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7DC72F9CBDC844A4"]
+			entity_vis_size: 1.0f
+			id: "04D52E8FBC561522"
+			tasks: [{
+				id: "35303D030320ABEA"
+				item: { count: 1, id: "northstar:oxygen_detector" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7DC72F9CBDC844A4"]
+			entity_vis_size: 1.0f
+			id: "0AD141211BF81665"
+			tasks: [
+				{
+					id: "3C4F80F4EB1FEB8B"
+					item: { count: 1, id: "northstar:large_fan" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3DA5DAA04BB955D6"
+					item: { count: 1, id: "northstar:fan_blade" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0ADDF091CBFA0B09"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "02A1DCF457CB6596"
+			optional: true
+			tasks: [{
+				id: "69E191EA4E6D11FE"
+				item: { count: 1, id: "northstar:atmospheric_concentrator" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4A62344CB92CCBD4"]
+			entity_vis_size: 1.0f
+			id: "7EA1360958BF3F12"
+			tasks: [
+				{
+					id: "0BB2EE465C85AD1C"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:iron_space_suit_helmet" }
+					type: "item"
+				}
+				{
+					id: "24BE91B3F3C4EE1E"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:iron_space_suit_chestpiece" }
+					type: "item"
+				}
+				{
+					id: "321C41B53DBB2C29"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:iron_space_suit_leggings" }
+					type: "item"
+				}
+				{
+					id: "60FEDF3042698045"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:iron_space_suit_boots" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7DC72F9CBDC844A4"]
+			entity_vis_size: 1.0f
+			id: "247D743322A884E6"
+			tasks: [{
+				id: "095CA1BFE91420E1"
+				item: { count: 1, id: "northstar:temperature_regulator" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["241389BD1176153D"]
+			entity_vis_size: 1.0f
+			id: "3DD5DB3226C2FEBF"
+			tasks: [
+				{
+					id: "5B42BA09C5A0C3B0"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:martian_steel_space_suit_helmet" }
+					type: "item"
+				}
+				{
+					id: "64C993ACA68769D1"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:martian_steel_space_suit_chestpiece" }
+					type: "item"
+				}
+				{
+					id: "3B0A5C200970774C"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:martian_steel_space_suit_leggings" }
+					type: "item"
+				}
+				{
+					id: "56D1B67290715349"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "northstar:martian_steel_space_suit_boots" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: -1.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:toxic_paste"
+			}
+			id: "4FEC18EDCAD2C4E9"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/discover_toxic_caves"
+				criterion: ""
+				id: "44977723E4D0F737"
+				type: "advancement"
+			}]
+			x: -7.25d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4FEC18EDCAD2C4E9"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:acid_bucket"
+			}
+			id: "5AFC46AEE66A456A"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/enter_acid_with_armor"
+				criterion: ""
+				id: "22968AA28E392A9F"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5AFC46AEE66A456A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:rusty_barrel"
+			}
+			id: "1244777448801961"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/acid_create_rust"
+				criterion: ""
+				id: "23FA8F5A50E679D7"
+				type: "advancement"
+			}]
+			x: -15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5AFC46AEE66A456A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:radgill_bucket"
+			}
+			id: "1C558A047CD89C73"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/radgill_bucket"
+				criterion: ""
+				id: "1CBB058AD91550D7"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1C558A047CD89C73"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:radgill"
+			}
+			id: "61753C8DF0C85958"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/tame_raycat"
+				criterion: ""
+				id: "6655438AB5A1469C"
+				type: "advancement"
+			}]
+			x: -13.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["5AFC46AEE66A456A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:radon_bottle"
+			}
+			id: "1BF8C3B8217C4014"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/radon_bottle"
+				criterion: ""
+				id: "1B4B7EC90F12CF00"
+				type: "advancement"
+			}]
+			x: -11.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4FEC18EDCAD2C4E9"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:uranium"
+			}
+			id: "5A2986EC81D2EC93"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/uranium"
+				criterion: ""
+				id: "54513D250DD51967"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5A2986EC81D2EC93"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:uranium"
+			}
+			id: "60DFE55157B05BA8"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defeat_nucleeper"
+				criterion: ""
+				id: "3FDAB3A3B15B6660"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["60DFE55157B05BA8"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:uranium_rod"
+			}
+			id: "1420A1CB937B6311"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/uranium_rod"
+				criterion: ""
+				id: "58F93151ECEB6202"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1420A1CB937B6311"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:occult_gem"
+			}
+			id: "4EE074C0D6EEC06F"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defeat_brainiac"
+				criterion: ""
+				id: "2D74507D6705DAD0"
+				type: "advancement"
+			}]
+			x: -9.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["4EE074C0D6EEC06F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:nuclear_furnace_component"
+			}
+			id: "5B30E4A215D7067D"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/nuclear_furnace_component"
+				criterion: ""
+				id: "1E5BDF958B69565B"
+				type: "advancement"
+			}]
+			x: -9.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5B30E4A215D7067D"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:waste_drum"
+			}
+			id: "2262E7E08226084F"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/stop_nuclear_furnace_meltdown"
+				criterion: ""
+				id: "7F7A16B8F71AA825"
+				type: "advancement"
+			}]
+			x: -9.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["1420A1CB937B6311"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:nuclear_bomb"
+			}
+			id: "30E83C15DC756AF1"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/nuclear_bomb"
+				criterion: ""
+				id: "06E4342AC878A120"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["30E83C15DC756AF1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:shears"
+			}
+			id: "73DF12CCCAE63A2F"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/defuse_nuclear_bomb"
+				criterion: ""
+				id: "63113A9AB2041D0A"
+				type: "advancement"
+			}]
+			x: -7.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["30E83C15DC756AF1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:nuclear_bomb"
+			}
+			id: "4958F3A2BC29477B"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/ride_nuclear_bomb"
+				criterion: ""
+				id: "7DC21371C229B70E"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["30E83C15DC756AF1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:tremorzilla_egg"
+			}
+			id: "3060DF18E13B9655"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/tremorzilla_egg"
+				criterion: ""
+				id: "714FB61B48B2DC7A"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["3060DF18E13B9655"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:tremorzilla_egg"
+			}
+			id: "77BCF851B6FA5874"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/hatch_tremorzilla_egg"
+				criterion: ""
+				id: "17BFCA5492E24224"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["77BCF851B6FA5874"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:waste_drum"
+			}
+			id: "0153C37D0DE93C6A"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/tame_tremorzilla"
+				criterion: ""
+				id: "68807B676BDB6D7D"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0153C37D0DE93C6A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:radiant_essence"
+			}
+			id: "1885FCA76D72C6AC"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/tremorzilla_kill_beam"
+				criterion: ""
+				id: "2EEAA1CF96E24E7E"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["1420A1CB937B6311"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:raygun"
+			}
+			id: "52767CA3D6F13F79"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/raygun"
+				criterion: ""
+				id: "3D52AC12EF2962A3"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["5A2986EC81D2EC93"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:sulfur_dust"
+			}
+			id: "542BE79DFECAC48A"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/sulfur_dust"
+				criterion: ""
+				id: "3F6C5FE94806206D"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["542BE79DFECAC48A"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:slam"
+			}
+			id: "0241623846B04C23"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/eat_radiation_foods"
+				criterion: ""
+				id: "754380A117F9A9CA"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0241623846B04C23"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:spelunkie"
+			}
+			id: "0E06CD227805489C"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/feed_gammaroach"
+				criterion: ""
+				id: "7A8CC831B5FB1BDD"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0E06CD227805489C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:toxic_paste"
+			}
+			id: "09812238ADC7C150"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/toxic_paste"
+				criterion: ""
+				id: "188546382DA3670F"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["09812238ADC7C150"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:polymer_plate"
+			}
+			id: "3424C4E8D0D16A76"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/polymer_plate"
+				criterion: ""
+				id: "6F4B6F897AB660EC"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3424C4E8D0D16A76"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:hazmat_mask"
+			}
+			id: "06EE6C0056A692E5"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/hazmat_armor"
+				criterion: ""
+				id: "2F99B81984CD6697"
+				type: "advancement"
+			}]
+			x: 1.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["3424C4E8D0D16A76"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "alexscaves:remote_detonator"
+			}
+			id: "46FFCADD6DC54BDF"
+			optional: true
+			tasks: [{
+				advancement: "alexscaves:alexscaves/remote_detonation"
+				criterion: ""
+				id: "1A399FCBCC090CEB"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 26.0d
 		}
 	]
 }

@@ -228,22 +228,6 @@
 			dependencies: ["7A0C6D5146048701"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "minecraft:elytra"
-			}
-			id: "6B6C5C42B1E778CD"
-			optional: true
-			tasks: [{
-				id: "24F85C96D5C37249"
-				item: { count: 1, id: "minecraft:elytra" }
-				type: "item"
-			}]
-			x: 9.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A0C6D5146048701"]
-			entity_vis_size: 1.0f
-			icon: {
 				id: "minecraft:shulker_shell"
 			}
 			id: "670B34F382064BD5"

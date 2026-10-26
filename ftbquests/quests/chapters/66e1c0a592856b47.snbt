@@ -3,25 +3,32 @@
 	default_quest_shape: ""
 	filename: "66e1c0a592856b47"
 	group: "2BBAFBD860BE8ADE"
+	icon: {
+		id: "cataclysm:burning_ashes"
+	}
 	id: "66E1C0A592856B47"
 	images: [ ]
 	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5F12726E79D49B13"]
 			entity_vis_size: 1.0f
 			id: "4B523F6C2C36128D"
+			preset: "goal"
 			tasks: [{
 				id: "23700E5F92310CA1"
 				item: { count: 1, id: "endrem:undead_eye" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["525FCC965FC78D31"]
 			entity_vis_size: 1.0f
 			id: "6DF0CE715CCE77A3"
+			preset: "goal"
 			tasks: [{
 				id: "2AD78AF0C57A6619"
 				item: { count: 1, id: "endrem:nether_eye" }
@@ -31,6 +38,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["3A5B2519532B02E8"]
 			entity_vis_size: 1.0f
 			id: "525FCC965FC78D31"
 			optional: true
@@ -51,11 +59,13 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 5.0d
-			y: -2.0d
+			x: 4.5d
+			y: -0.5d
 		}
 		{
+			dependencies: ["45DC23587689ADD4"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "0BD8BD70505CDA14"
 			optional: true
 			tasks: [{
@@ -75,10 +85,11 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["464EF1616086AA5E"]
 			entity_vis_size: 1.0f
 			id: "5F12726E79D49B13"
 			tasks: [{
@@ -99,8 +110,360 @@
 				type: "kill"
 				value: 1L
 			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["12774A569334D070"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:gold_ingot"
+			}
+			id: "39901E66C7C964B6"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:nether/distract_piglin"
+				criterion: ""
+				id: "2A26F6A5510B31CB"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45DC23587689ADD4"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:polished_blackstone_bricks"
+			}
+			id: "12774A569334D070"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:nether/find_bastion"
+				criterion: ""
+				id: "3E5405E4C455431E"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12774A569334D070"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "71958B32E10B935D"
+			optional: true
+			tasks: [{
+				advancement: "minecraft:nether/loot_bastion"
+				criterion: ""
+				id: "4DA3770C8365137E"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["45DC23587689ADD4"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:warped_mushroom_cap_part"
+			}
+			id: "4BD2973C9C129F12"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_warped_fungussus"
+				criterion: ""
+				id: "63E4E6E0B08887C0"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["45DC23587689ADD4"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:dinosaur_bone"
+			}
+			id: "41FFCB5308139031"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_skeletosaurus_nest"
+				criterion: ""
+				id: "4EE65199C6EA63BD"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["41FFCB5308139031"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:dinosaur_bone_club"
+			}
+			id: "789D2AE86B0A4B6C"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_skeletosaurus"
+				criterion: ""
+				id: "3499C7809A37AE99"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["45DC23587689ADD4"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:withered_bone"
+			}
+			id: "37C93479F62B54F8"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_soul_fortress_remains"
+				criterion: ""
+				id: "111CD20BCC0B9725"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["37C93479F62B54F8"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:withered_scythe"
+			}
+			id: "0A4BCEA97E2CE62E"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_withered_abomination"
+				criterion: ""
+				id: "70DE4FAA3E35FF8A"
+				type: "advancement"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0BD8BD70505CDA14"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:altar_of_fire"
+			}
+			id: "6F260F401B562213"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_burning_arena"
+				criterion: ""
+				id: "5F26610551F2A1D1"
+				type: "advancement"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6F260F401B562213"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "cataclysm:burning_ashes"
+			}
+			id: "3A5B2519532B02E8"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:kill_revenant"
+				criterion: ""
+				id: "7F6B0B2D73586104"
+				type: "advancement"
+			}]
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:blackstone"
+			}
+			id: "45DC23587689ADD4"
+			optional: true
+			tasks: [{
+				advancement: "cataclysm:find_soul_black_smith"
+				criterion: ""
+				id: "7BAE0C6DA2F35AA8"
+				type: "advancement"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BD8BD70505CDA14"]
+			entity_vis_size: 1.0f
+			id: "04CD23142BF1724A"
+			tasks: [{
+				id: "4968AEE1B2C17AAA"
+				item: { count: 1, id: "cataclysm:netherite_ministrosity_bucket" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:eye_of_ghost"
+			}
+			id: "610E415F6C956CA5"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_abandoned_crypt"
+				criterion: ""
+				id: "5E38BAE6664D2962"
+				type: "advancement"
+			}]
 			x: -3.0d
-			y: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["610E415F6C956CA5"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:golden_halbert"
+			}
+			id: "68B56516E7793475"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_haunted_guard"
+				criterion: ""
+				id: "4C5577652CEAFDB9"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["68B56516E7793475"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:shattered_greatsword"
+			}
+			id: "70F7968156C9F287"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_fractured"
+				criterion: ""
+				id: "253CAA57171BD1BB"
+				type: "advancement"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["70F7968156C9F287"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:corrupted_soul"
+			}
+			id: "5BAA37B0E894D027"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_fractured_apostle"
+				criterion: ""
+				id: "4DEABF9B9FE2243B"
+				type: "advancement"
+			}]
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["610E415F6C956CA5"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:knights_sword"
+			}
+			id: "19B2D5390FBA42CF"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_haunted_knight"
+				criterion: ""
+				id: "1EE3B6D5B2C33EFF"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["19B2D5390FBA42CF"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:somber_key_ring"
+			}
+			id: "52EF6C839655D99F"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_resurrected_knight"
+				criterion: ""
+				id: "42E6843CC3B3DAD0"
+				type: "advancement"
+			}]
+			x: 0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["52EF6C839655D99F"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:somber_key_blade"
+			}
+			id: "464EF1616086AA5E"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_beheaded_knight"
+				criterion: ""
+				id: "52D5AA9BE9719844"
+				type: "advancement"
+			}]
+			x: 2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["464EF1616086AA5E"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:somber_key"
+			}
+			id: "42FFBD910692DAD5"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_haunted_duo"
+				criterion: ""
+				id: "40772B5861D78CE8"
+				type: "advancement"
+			}]
+			x: 5.0d
+			y: -9.0d
 		}
 	]
 }

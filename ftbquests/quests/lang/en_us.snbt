@@ -18,10 +18,14 @@
 	quest.00CA36367E6B161C.title: "Riches of the Forgotten"
 	quest.0132D0707C415288.quest_desc: ["Read the power signal of a Chiseled Bookshelf using a Comparator"]
 	quest.0132D0707C415288.title: "The Power of Books"
+	quest.0153C37D0DE93C6A.quest_desc: ["Tame a Tremorzilla by feeding it massive amounts of Nuclear Waste"]
+	quest.0153C37D0DE93C6A.title: "King of Monsters"
 	quest.0176E693C47F3684.quest_desc: ["Be under the effects of Intoxication and Stimulation at the same time"]
 	quest.0176E693C47F3684.title: "Shake and Mix"
 	quest.01AD23C876DA2BF5.quest_desc: ["Hold the Dragon Egg"]
 	quest.01AD23C876DA2BF5.title: "The Next Generation"
+	quest.0241623846B04C23.quest_desc: ["Eat all foods that can heal you when inflicted with radiation"]
+	quest.0241623846B04C23.title: "Shelf Life"
 	quest.0287C2D22E2BA6A1.quest_desc: ["Defeat the chorusling"]
 	quest.0287C2D22E2BA6A1.title: "The Chorus Infection"
 	quest.02DBF377F63507BA.quest_desc: ["Equip a full set of Nightmare Armor"]
@@ -34,6 +38,8 @@
 	quest.036F4C8DB6C45C1A.title: "Chaos Knight"
 	quest.04CF7D9E63AEBDF0.quest_desc: ["Extract or insert items into a container using a Funnel"]
 	quest.04CF7D9E63AEBDF0.title: "Airport Aesthetic"
+	quest.050DF31762E47E3A.quest_desc: ["Find the Ruined Citadel"]
+	quest.050DF31762E47E3A.title: "Another Stronghold?!"
 	quest.055A34FBA18F47C0.quest_desc: ["Get each Frog variant on a Lead"]
 	quest.055A34FBA18F47C0.title: "When the Squad Hops into Town"
 	quest.059A38BE8FAECB32.quest_desc: ["Hit something with a Bamboo Mat"]
@@ -49,6 +55,8 @@
 	quest.06902412BC7929D0.title: "Dynamic Timetables"
 	quest.06E6EA59421B362C.quest_desc: ["Assemble a Control Chip"]
 	quest.06E6EA59421B362C.title: "Precise Fabrication"
+	quest.06EE6C0056A692E5.quest_desc: ["Craft the entire set of Hazmat Armor"]
+	quest.06EE6C0056A692E5.title: "The One Who Knocks"
 	quest.06F1429ED3F03DD7.quest_desc: ["Use a Totem of Undying to cheat death"]
 	quest.06F1429ED3F03DD7.title: "Postmortal"
 	quest.08157DDD25EAF57D.quest_desc: ["How did all these treasures get here?"]
@@ -62,6 +70,8 @@
 	quest.090111D346C8A35E.title: "Abyssal Descent"
 	quest.0956ECD7D077BD50.quest_desc: ["Feed Beetroot Seeds to a Parrot and toss the egg it lays"]
 	quest.0956ECD7D077BD50.title: "Just the Parrots"
+	quest.09812238ADC7C150.quest_desc: ["Obtain Toxic Paste from slaying a Gammaroach"]
+	quest.09812238ADC7C150.title: "THE OOOOOOOOZE"
 	quest.09AE3E8E5DF28FB3.quest_desc: ["Walk into a dialled Rift Gate and come out somewhere else"]
 	quest.09AE3E8E5DF28FB3.title: "Step Through"
 	quest.09D9EDB915B3D59B.quest_desc: ["Hit someone with monster flesh"]
@@ -70,6 +80,8 @@
 	quest.09F7B7FBC7873D4F.title: "Forever Young"
 	quest.0A3ABF0DB88F1A92.quest_desc: ["Inspect a Contraption Diagram"]
 	quest.0A3ABF0DB88F1A92.title: "Measure Once, Build Twice"
+	quest.0A4BCEA97E2CE62E.quest_desc: ["Defeat the Withered Abomination"]
+	quest.0A4BCEA97E2CE62E.title: "The Soul Eater"
 	quest.0AC4EE7F6C432638.quest_desc: ["Obtain and place a Navigation Table to point you in the right direction"]
 	quest.0AC4EE7F6C432638.title: "Thataway!"
 	quest.0AF47F492D549DC4.quest_desc: ["Craft a Rift Drive Mk III."]
@@ -100,6 +112,8 @@
 	quest.0BF421501D518019.title: "Hot Tourist Destinations"
 	quest.0C16E1B72F34BE4C.quest_desc: ["Shoot something with an Arrow"]
 	quest.0C16E1B72F34BE4C.title: "Take Aim"
+	quest.0C1789EDFA0408C8.quest_desc: ["Melt a reactor down during a prompt critical excursion at four times full power. The odds of that happening are... well."]
+	quest.0C1789EDFA0408C8.title: "Resonance Cascade"
 	quest.0C44F6226C4E4FC9.quest_desc: ["Kill the dark vortex"]
 	quest.0C44F6226C4E4FC9.title: "The Wind Darkening"
 	quest.0C57667294C7010D.quest_desc: [
@@ -111,6 +125,12 @@
 	quest.0C9685CFA6FCF7ED.title: "The Powerhouse"
 	quest.0CA7AED64865E04A.quest_desc: ["Assemble a Propeller Bearing to generate more Thrust"]
 	quest.0CA7AED64865E04A.title: "In Thrust We Trust"
+	quest.0D26E46E229449DC.quest_desc: [
+		"Have every effect applied at the same time"
+		""
+		"{image:icons:textures/advancement/nether/all_effects.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.0D26E46E229449DC.title: "How Did We Get Here?"
 	quest.0D57B4187E96DE3D.quest_desc: ["Aproach the lone citadel"]
 	quest.0D57B4187E96DE3D.title: "Frozen Remnants"
 	quest.0D95FC2B9C08201B.quest_desc: ["Get your own player head from a named Snow Golem killed by a Witch"]
@@ -122,6 +142,10 @@
 	quest.0DB08205137A476C.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.0DB4D4FECC49E2C1.quest_desc: ["Use a Display Link to visualise information"]
 	quest.0DB4D4FECC49E2C1.title: "Big Data"
+	quest.0E06CD227805489C.quest_desc: ["Feed a Spelunkie to a Gammaroach"]
+	quest.0E06CD227805489C.title: "Apocalypse-Proof"
+	quest.0E1FEEB0363D7B21.quest_desc: ["Crush the ore in Crushing Wheels, then purify the dust in a Sequenced Assembly: nitric acid from a Spout, a Mechanical Press, bone meal from a Deployer, pressed again. The result is yellowcake, still radioactive dust."]
+	quest.0E1FEEB0363D7B21.title: "Yellowcake"
 	quest.0E46FDE0E8647A63.quest_desc: ["Breed all the animals!"]
 	quest.0E46FDE0E8647A63.title: "Two by Two"
 	quest.0E49FAC5112E096B.quest_desc: ["Defeat the Chorusent"]
@@ -208,6 +232,8 @@
 		"&7&oОно лишает прощения и отравляет &8&oДушу"
 	]
 	quest.1157E0000000000C.title: "&3Око Непростительного Проклятия"
+	quest.11A01A203B2CEB2C.quest_desc: ["locate the Ancient Stronghold"]
+	quest.11A01A203B2CEB2C.title: "Dripstone Everywhere"
 	quest.11B9B4F91F4AA4E9.quest_desc: [
 		"Get a 100% readout from a Stressometer"
 		"&7(Hidden Advancement)"
@@ -215,6 +241,14 @@
 	quest.11B9B4F91F4AA4E9.title: "Perfectly Stressed"
 	quest.121AFEB3B6260FBD.quest_desc: ["Do enough mischief to make Krampus come for you"]
 	quest.121AFEB3B6260FBD.title: "Naughty Child"
+	quest.1244777448801961.quest_desc: ["Rust a metal block by placing it next to acid"]
+	quest.1244777448801961.title: "Rust-eze!"
+	quest.12774A569334D070.quest_desc: [
+		"Enter a Bastion Remnant"
+		""
+		"{image:icons:textures/advancement/nether/find_bastion.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.12774A569334D070.title: "Those Were the Days"
 	quest.12BBC04C16377D97.quest_desc: ["Find a Sand Ruin"]
 	quest.12BBC04C16377D97.title: "Hidden in the Sand"
 	quest.12DCE931175A4789.quest_desc: ["Use Honey Glue to connect a group of blocks for assembly"]
@@ -224,6 +258,12 @@
 		""
 		"The Supreme Bonescaller (stage 2) always drops it, the Missioner sometimes, ordinary Bonescallers rarely."
 	]
+	quest.137D51FDC1F8CE50.quest_desc: [
+		"Use a Compass on a Lodestone"
+		""
+		"{image:icons:textures/advancement/nether/use_lodestone.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.137D51FDC1F8CE50.title: "Country Lode, Take Me Home"
 	quest.13F89D65F0382D73.quest_desc: ["Use an upright Mechanical Saw to process materials"]
 	quest.13F89D65F0382D73.title: "Workshop's Most Feared"
 	quest.13FA3B6C8D2E4F51.quest_desc: [
@@ -235,8 +275,18 @@
 		"&e-&r Дроп с босса &bЛевиафана&r"
 	]
 	quest.13FA3B6C8D2E4F51.title: "Разблокировка свитка Tidal Grab"
+	quest.1420A1CB937B6311.quest_desc: ["Craft a Uranium Rod"]
+	quest.1420A1CB937B6311.title: "Hot Rod"
 	quest.1426DD6971D9A7B8.quest_desc: ["Use a Printer 1,000 times"]
 	quest.1426DD6971D9A7B8.title: "Great Publisher"
+	quest.144B1D5624D3C6AC.quest_desc: [
+		"Use the Nether to travel 7 km in the Overworld"
+		""
+		"{image:icons:textures/advancement/nether/fast_travel.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.144B1D5624D3C6AC.title: "Subspace Bubble"
+	quest.1468FF401EE898B6.quest_desc: ["Defeat the Ancient Guardian"]
+	quest.1468FF401EE898B6.title: "The One - Armed Monster"
 	quest.153314B90D4BDCC7.quest_desc: ["Build a Singularity drive, and buy its reach with an unsteady arrival"]
 	quest.153314B90D4BDCC7.title: "Point of No Return"
 	quest.1535BA20C6ABACB8.title: "Броня Волшебника"
@@ -257,10 +307,14 @@
 	quest.1613732BCF9AE96D.title: "Freezing Breeze"
 	quest.16702EAD50B5B638.quest_desc: ["Craft Rift Infused Goggles. There is something in this world that nothing else will show you"]
 	quest.16702EAD50B5B638.title: "Second Sight"
+	quest.16AD58F33664C56A.quest_desc: ["The reactor boils its own water: steam leaves the Hot Leg nozzle. Pipe it with Lead Pipes and a pump into a Lead Tank and on to Steam Turbines."]
+	quest.16AD58F33664C56A.title: "First Steam"
 	quest.1734E7D71ADD2949.quest_desc: ["Good luck"]
 	quest.1734E7D71ADD2949.title: "Free the End"
 	quest.184F44B5E8E202DA.quest_desc: ["Toss an Ender Pearl to the tip of a line of Myalite Crystals to travel through them"]
 	quest.184F44B5E8E202DA.title: "Chase Me"
+	quest.1885FCA76D72C6AC.quest_desc: ["Kill 20 Monsters with a single beam attack whilst riding a Tremorzilla"]
+	quest.1885FCA76D72C6AC.title: "Destroy All Monsters"
 	quest.1898746A565E0F35.quest_desc: ["Obtain Super Experience"]
 	quest.1898746A565E0F35.title: "Lightning Catalysis"
 	quest.189B315025DA2409.quest_desc: ["Catch an Axolotl in a Bucket"]
@@ -277,8 +331,12 @@
 	quest.19558BC184A072B2.title: "Over-Overkill"
 	quest.195C322DFC464A07.quest_desc: ["Boost your Rail Grinding by eating Chocolate"]
 	quest.195C322DFC464A07.title: "Blasting with Sonic Speed"
+	quest.1996FDD01897A750.quest_desc: ["Uranium ore is very rare: one tiny vein per chunk at most, only between Y -64 and -40. You need an iron pickaxe. Raw uranium is radioactive: do not carry stacks of it around!"]
+	quest.1996FDD01897A750.title: "Prospecting"
 	quest.19A58820D8D01370.quest_desc: ["Obtain a Rift Probe, and stop being limited to places you have already walked"]
 	quest.19A58820D8D01370.title: "Uncharted"
+	quest.19B2D5390FBA42CF.quest_desc: ["Defeat the Haunted Knight"]
+	quest.19B2D5390FBA42CF.title: "Living Armor"
 	quest.19B3D5A3C436086C.quest_desc: ["Obtain a Gyroscopic Mechanism"]
 	quest.19B3D5A3C436086C.title: "Convoluted Circumvolutions"
 	quest.19B86705CB8DCDD5.quest_desc: ["Kill the Lifestealer: its bones are needed for the Dark Atrium."]
@@ -299,8 +357,10 @@
 	quest.1B5DF1FD6AE9265B.title: "Area of Connect"
 	quest.1B7E78EB850BCF60.quest_desc: ["Sneak around in full Cardboard Armor"]
 	quest.1B7E78EB850BCF60.title: "Full Stealth"
-	quest.1BA8B77D8CBA549E.quest_desc: ["Defeat The Obliterator"]
-	quest.1BA8B77D8CBA549E.title: "Obliteration for Obliterator"
+	quest.1BF8C3B8217C4014.quest_desc: ["Bottle some Radon from a Geothermal Vent spewing green gas"]
+	quest.1BF8C3B8217C4014.title: "Gassed Up"
+	quest.1C558A047CD89C73.quest_desc: ["Capture a Radgill in a bucket"]
+	quest.1C558A047CD89C73.title: "Three Eyes on Every Fish"
 	quest.1CA6B40CEB25AD04.quest_desc: [
 		"Bind 26 or more keys to frequencies on the Linked Typewriter"
 		"&7(Hidden Advancement)"
@@ -351,8 +411,12 @@
 	quest.21A6C882289AE5BD.title: "Bypassing the Expiration Date"
 	quest.21DD86FE0423AA64.quest_desc: ["Apply Andesite Alloy to stripped wood, creating a basic casing for your machines"]
 	quest.21DD86FE0423AA64.title: "The Andesite Age"
+	quest.223E2F5539AF0368.quest_desc: ["Find the Frosted Prison"]
+	quest.223E2F5539AF0368.title: "Jail of Cold"
 	quest.22518AA107F174CB.quest_desc: ["Obtain a Warp Anchor. An airship can only be sent somewhere that has been marked"]
 	quest.22518AA107F174CB.title: "You Are Here"
+	quest.2262E7E08226084F.quest_desc: ["Return a Nuclear Furnace from criticality by barreling the waste stored inside"]
+	quest.2262E7E08226084F.title: "Total Meltdown"
 	quest.226B9B84F6060F48.quest_desc: ["Shoot a Crossbow"]
 	quest.226B9B84F6060F48.title: "Ol' Betsy"
 	quest.2287E227EA439EEA.quest_desc: ["Assemble a Sturdy Sheet by refining Powdered Obsidian"]
@@ -392,8 +456,12 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.25305153BD2DBBCD.title: "Arts and Crafts"
+	quest.2560D651C7B833FF.quest_desc: ["The Dosimeter shows the dose you have collected, in millisievert. Under 100 mSv nothing happens, then weakness and nausea, over 1 Sv vomiting and no healing, over 4 Sv acute radiation syndrome. The body only heals slowly."]
+	quest.2560D651C7B833FF.title: "Keeping Count"
 	quest.25ABA04332A6DB4F.quest_desc: ["Get the Spirit Guide Sombrero"]
 	quest.25ABA04332A6DB4F.title: "Cultural Attribute"
+	quest.261AB66CFE5A970A.quest_desc: ["A SCRAM drops all control rods at once. Power the Reactor Controller with redstone, press SCRAM on the control desk, or let the automatic protection do it. The core keeps producing decay heat for a long time, so keep the coolant flowing!"]
+	quest.261AB66CFE5A970A.title: "Emergency Stop"
 	quest.2636132760664FDE.quest_desc: ["Kill the evoker king"]
 	quest.2636132760664FDE.title: "Long live the king"
 	quest.2657388381FC3DEA.quest_desc: ["Enter an Woodland Mansion"]
@@ -432,6 +500,12 @@
 		"&e-&r Modules are placed on them to set up the controls"
 	]
 	quest.2B91E0C7A5D4F368.title: "Control Element"
+	quest.2BB6F3F49229B906.quest_desc: [
+		"Destroy a Ghast with a fireball"
+		""
+		"{image:icons:textures/advancement/nether/return_to_sender.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.2BB6F3F49229B906.title: "Return to Sender"
 	quest.2BE80DDDC5822D79.quest_desc: ["Forge the Echo Mace from a Mace, an Echo Shard, and its template."]
 	quest.2BE80DDDC5822D79.title: "Echoing Wrath"
 	quest.2C05ED064CBB9BAF.quest_desc: ["Create Chocolate Glazed Berries, a Honeyed Apple, and a Sweet Roll all from the same Spout"]
@@ -465,6 +539,10 @@
 	quest.2E41B7D903C5A682.title: "Storm Class"
 	quest.2EE6BE26F534DD8C.quest_desc: ["Assemble a structure mounted on a Clockwork Bearing"]
 	quest.2EE6BE26F534DD8C.title: "Contraption o'Clock"
+	quest.2EF7716130A05B1F.quest_desc: ["Separate plutonium from spent fuel in a reprocessing plant."]
+	quest.2EF7716130A05B1F.title: "Breeding Season"
+	quest.2F01AAA8350772FB.quest_desc: ["Let a reactor melt down. You were warned about the containment."]
+	quest.2F01AAA8350772FB.title: "Not Great, Not Terrible"
 	quest.2F02B8B9993124D7.quest_desc: ["Find an Ancient City"]
 	quest.2F02B8B9993124D7.title: "A Metropolis of Restless Souls"
 	quest.2F47F6F6E507DC1C.quest_desc: ["Use an Encased Fan to process materials"]
@@ -485,14 +563,20 @@
 	quest.3011CA965B132FA4.title: "Tapping the Mantle"
 	quest.3033B64F46422599.quest_desc: ["Place and power some Mechanical Crafters"]
 	quest.3033B64F46422599.title: "Automated Assembly"
+	quest.3060DF18E13B9655.quest_desc: ["Craft a Tremorzilla Egg"]
+	quest.3060DF18E13B9655.title: "Century Egg"
 	quest.307E4B1BF9177D63.quest_desc: ["Consume a potion of luck"]
 	quest.307E4B1BF9177D63.title: "Get Lucky"
 	quest.3080B9DE181CC911.quest_desc: ["Kill the Nightmare Stalker"]
 	quest.3080B9DE181CC911.title: "Fighting Nightmares"
+	quest.30B5A939B6B5EADD.quest_desc: ["Build a sealed 5 by 5 box of Reactor Casing, six layers high, as the Ponder scene shows layer by layer. Inside: Fuel Channel columns on the floor, Graphite and Control Rods above the fuel. Reactor Nozzles are the only openings: Hot and Cold Leg under the head, Fuel and Relief in the head, Waste in the floor. Create Goggles on the Controller tell you what is still wrong."]
+	quest.30B5A939B6B5EADD.title: "Reactor Vessel"
 	quest.30C47FEEEFCA7CDD.quest_desc: ["Create some sheets in a Mechanical Press"]
 	quest.30C47FEEEFCA7CDD.title: "Bonk!"
 	quest.30CC45CC659FBEDE.quest_desc: ["Charge a Kinetic Battery to full"]
 	quest.30CC45CC659FBEDE.title: "Fully Charged"
+	quest.30E83C15DC756AF1.quest_desc: ["Craft a Nuclear Bomb"]
+	quest.30E83C15DC756AF1.title: "I Am Become Death"
 	quest.30EBA30C694DE69B.quest_desc: ["Name a Simulated Contraption using a Nameplate"]
 	quest.30EBA30C694DE69B.title: "I Declare Thee..."
 	quest.310BBE6327462B6D.quest_desc: [
@@ -501,6 +585,8 @@
 		"{image:icons:textures/advancement/nether/summon_wither.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.310BBE6327462B6D.title: "advancements.nether.summon_wither.title"
+	quest.312B129AA5E43A66.quest_desc: ["Pipe the spent fuel from the Waste nozzle into a Spent Fuel Pool and keep it full of water: the water cools the decay heat and shields the radiation. Once the short-lived isotopes have decayed, a Dry Cask next to the pool takes the waste for good."]
+	quest.312B129AA5E43A66.title: "Years of Cooling"
 	quest.3149E634C778A96A.quest_desc: ["Kill Sir Pumpkinhead"]
 	quest.3149E634C778A96A.title: "Pumpkin Sir"
 	quest.31692520E6FBBBAE.quest_desc: ["Place a Water Wheel and use it to generate torque"]
@@ -524,16 +610,22 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.32AD4D8BD60A92F7.title: "Road Kill"
+	quest.32C24F2ABB1B652C.quest_desc: ["Pump enriched solution into the Fuel nozzle and water into the Cold Leg. Then pull the rods out slowly at the control desk. Watch k-effective: at 1.000 the chain reaction sustains itself, above 1 the power grows. Never pull the rods fast."]
+	quest.32C24F2ABB1B652C.title: "Going Critical"
 	quest.32E9248BADBA8A0F.quest_desc: ["Assemble a Simulated Contraption using a Swivel Bearing"]
 	quest.32E9248BADBA8A0F.title: "You Spin Me Right Round"
 	quest.338BA753B67D0EDE.quest_desc: ["Extend a Rope Pulley over 200 blocks deep"]
 	quest.338BA753B67D0EDE.title: "Rope to Nowhere"
+	quest.339980F6D46D7477.quest_desc: ["Seal vitrified waste in a deep geological repository. See you in a hundred thousand years."]
+	quest.339980F6D46D7477.title: "Deep Time"
 	quest.33C0A1565E83ABCB.quest_desc: ["Defeat Annihilation Pursuer"]
 	quest.33C0A1565E83ABCB.title: "Slowing Down A Bit..."
 	quest.33F505696652CF58.quest_desc: ["Eat a bar of soap. Don't try this at home"]
 	quest.33F505696652CF58.title: "Tide Pod Challenge"
 	quest.3411538ED86E2A62.quest_desc: ["Place down a Brass Gearbox"]
 	quest.3411538ED86E2A62.title: "Serious Organization"
+	quest.3424C4E8D0D16A76.quest_desc: ["Craft a Polymer Plate"]
+	quest.3424C4E8D0D16A76.title: "Toxic Alloy"
 	quest.349BF56DE6F5FE9A.quest_desc: ["Make a Decorated Pot out of 4 Pottery Sherds"]
 	quest.349BF56DE6F5FE9A.title: "Careful Restoration"
 	quest.34E568AF5D94E7E4.quest_desc: ["Kill any hostile monster"]
@@ -556,6 +648,8 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.37C44F2FFE6F57F8.title: "Desperate Measures"
+	quest.37C93479F62B54F8.quest_desc: ["locate the soul fortress remains"]
+	quest.37C93479F62B54F8.title: "The Soul Fortress"
 	quest.37D78B2D4F7E69B6.quest_desc: ["Produce more than 1000 Train Tracks with the same Mechanical Press"]
 	quest.37D78B2D4F7E69B6.title: "Track Factory"
 	quest.37FCB8BA5A9CFAB5.quest_desc: ["Enter a Fortress of the Undead"]
@@ -577,6 +671,12 @@
 	quest.39424870BBA20B2B.title: "Unlucky Hunter"
 	quest.397A2530CE2ECECA.quest_desc: ["Collect all hats from Born in Chaos"]
 	quest.397A2530CE2ECECA.title: "Hatman"
+	quest.39901E66C7C964B6.quest_desc: [
+		"Distract Piglins with gold"
+		""
+		"{image:icons:textures/advancement/nether/distract_piglin.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.39901E66C7C964B6.title: "Oh Shiny"
 	quest.399BE610D29A29EA.quest_desc: [
 		"Dual-wield Extendo Grips for superhuman reach"
 		"&7(Hidden Advancement)"
@@ -597,6 +697,8 @@
 		"{image:icons:textures/advancement/nether/obtain_crying_obsidian.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.3A2E371885174327.title: "advancements.nether.obtain_crying_obsidian.title"
+	quest.3A5B2519532B02E8.quest_desc: ["Kill an Ignited Revenant"]
+	quest.3A5B2519532B02E8.title: "Imperfect thing"
 	quest.3A66F32F67285A6E.quest_desc: ["Craft Spider Bite"]
 	quest.3A66F32F67285A6E.title: "Spider Warlord"
 	quest.3A9E2137A6B07A89.quest_desc: ["Jump into a Honey Block to break your fall"]
@@ -614,6 +716,12 @@
 		"Both are made at the smithing table: a diamond helmet or chestplate + the Ancient upgrade smithing template (kubejs) + an Ancient Metal Ingot."
 	]
 	quest.3B4D4990EF275705.title: "Bone Reptile Armor"
+	quest.3B78F076EAD0B86C.quest_desc: [
+		"Brew a Potion"
+		""
+		"{image:icons:textures/advancement/nether/brew_potion.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.3B78F076EAD0B86C.title: "Local Brewery"
 	quest.3B9A753369AA39CF.quest_desc: ["Make the Phantom Creeper split up by attacking it"]
 	quest.3B9A753369AA39CF.title: "Double Trouble"
 	quest.3BEF00C7CEB2B0E7.quest_desc: ["Kill the Skeleton Demoman"]
@@ -647,6 +755,8 @@
 	quest.3EC077F073C888FA.title: "The Definition of \"Up\""
 	quest.3EC0E7112ACE53DC.quest_desc: ["Explore all Otherside biomes"]
 	quest.3EC0E7112ACE53DC.title: "Echolocation"
+	quest.3EF5928924C7EC23.quest_desc: ["Lead ore generates in the deepslate. Smelt the raw lead into ingots. Lead is the best radiation shield: a few centimetres of it stop gamma rays that concrete needs a wall for."]
+	quest.3EF5928924C7EC23.title: "Heavy Metal"
 	quest.3F227346DA40697E.quest_desc: ["Locate the Space Station"]
 	quest.3F227346DA40697E.title: "The Place Of The Beginning"
 	quest.3F7D3087DB8483DE.quest_desc: ["Create Transmuting Elixir"]
@@ -684,6 +794,10 @@
 	quest.40BA3503A711A4D7.title: "Call of the Void"
 	quest.40E53FA5FC25558A.quest_desc: ["Keep warm and you'll be fine"]
 	quest.40E53FA5FC25558A.title: "Thermometer"
+	quest.413B5CDD37D5E9E6.quest_desc: ["Find an abandoned nuclear plant. Bring a dosimeter, and do not stay long."]
+	quest.413B5CDD37D5E9E6.title: "Exclusion Zone"
+	quest.41FFCB5308139031.quest_desc: ["locate the skeletosaurus nest"]
+	quest.41FFCB5308139031.title: "Long Time Ago"
 	quest.4228D9BD6E571782.quest_desc: ["Put on the Damned Demoman Hat"]
 	quest.4228D9BD6E571782.title: "Explosive Temper"
 	quest.426458E2392ADA19.quest_desc: ["Watch a fluid-containing item be filled by a Spout"]
@@ -695,6 +809,8 @@
 	quest.42C320FA8505013B.quest_desc: ["Kill the Forsaken in Alex's Caves: it leaves Pure Darkness for the Darkened Apple."]
 	quest.42C9C8CB69687207.quest_desc: ["Find a Snow Fort"]
 	quest.42C9C8CB69687207.title: "The Fort"
+	quest.42FFBD910692DAD5.quest_desc: ["Defeat the Haunted Duo"]
+	quest.42FFBD910692DAD5.title: "The Power Of Friendship"
 	quest.432084C804E903E7.quest_desc: ["Cause Potato Cannon projectiles of different types to collide with each other"]
 	quest.432084C804E903E7.title: "Veggie Fireworks"
 	quest.432B87427FF61B5C.quest_desc: ["Craft a trimmed armor at a Smithing Table"]
@@ -725,20 +841,34 @@
 	quest.459DE24D09FFB423.title: "Huddle Close"
 	quest.45B58EFD9E5AFE38.quest_desc: ["Build a Rift Gate controller. On its own it goes nowhere - there has to be another"]
 	quest.45B58EFD9E5AFE38.title: "Open the Door"
+	quest.45DC23587689ADD4.quest_desc: ["Find the Soul Forge"]
+	quest.45DC23587689ADD4.title: "Where the Monstrous be Forged"
 	quest.4607EEFDB1BEDEC2.quest_desc: ["Slay the Warden and take its heart"]
 	quest.4607EEFDB1BEDEC2.title: "Phantom Thief"
 	quest.460C0068A55C8004.quest_desc: ["Apply these smithing templates at least once: Spire, Snout, Rib, Ward, Silence, Vex, Tide, Wayfinder"]
 	quest.460C0068A55C8004.title: "Smithing with Style"
 	quest.461680966262CB35.quest_desc: ["Use a Blaze Enchanter 1,000 times"]
 	quest.461680966262CB35.title: "Thousand Runes"
+	quest.464EF1616086AA5E.quest_desc: ["Defeat the Beheaded Knight"]
+	quest.464EF1616086AA5E.title: "Headless KnightMan"
+	quest.466FBE090452F49E.quest_desc: [
+		"Take a Strider for a loooong ride on a lava lake in the Overworld"
+		""
+		"{image:icons:textures/advancement/nether/ride_strider_in_overworld_lava.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.466FBE090452F49E.title: "Feels Like Home"
 	quest.4692048A47B89FCD.quest_desc: ["Successfully trade with a Villager"]
 	quest.4692048A47B89FCD.title: "What a Deal!"
 	quest.46ACB3E702645AD0.quest_desc: ["Find a Small Nether Dungeon"]
 	quest.46ACB3E702645AD0.title: "A Special Addition"
+	quest.46ADB085D776EBB4.quest_desc: ["Defeat the Spiky Worm"]
+	quest.46ADB085D776EBB4.title: "A Disgusting Worm"
 	quest.46CD4F1F1B496166.quest_desc: ["Place and power a Portable Engine"]
 	quest.46CD4F1F1B496166.title: "Steamless Engine"
 	quest.46FE6CB159FFAB5C.quest_desc: ["Instruct a Train driver with a Train Schedule"]
 	quest.46FE6CB159FFAB5C.title: "Conductor Instructor"
+	quest.46FFCADD6DC54BDF.quest_desc: ["Using a Remote Detonator, activate explosives from over 100 blocks away"]
+	quest.46FFCADD6DC54BDF.title: "The Big Red Button"
 	quest.4713069E21E1259B.quest_desc: ["Зимогоры — заснеженный вариант скелета. Спавнятся в холодных биомах: Снежные равнины, Ледяные пики, Снежные склоны, Рощи, Ледяные шпили, Снежная тайга, Промёрзшие реки и океаны."]
 	quest.477F1BD5BC6620E7.quest_desc: ["Strike a Villager with lightning"]
 	quest.477F1BD5BC6620E7.title: "Very Very Frightening"
@@ -764,6 +894,10 @@
 	quest.490FB13F04F110AC.title: "A Throwaway Joke"
 	quest.49566C26131BA494.quest_desc: ["Fire a vegetable from a Mounted Potato Cannon"]
 	quest.49566C26131BA494.title: "Heavier Artillery"
+	quest.4958F3A2BC29477B.quest_desc: ["Ride a Nuclear Bomb right before it detonates. Yee-haw!"]
+	quest.4958F3A2BC29477B.title: "We'll Meet Again"
+	quest.4980B7D78F984816.quest_desc: ["Natural uranium has 0.7 percent U-235, far too little for a reactor. Stack Gas Centrifuges, spin them at 128 RPM or more and feed the solution into the lowest one. Every stage enriches a bit: about seven stages give 4 percent. The enriched product comes out of the top, depleted uranium out of the bottom."]
+	quest.4980B7D78F984816.title: "Separative Work"
 	quest.49FD8DD0C52D4245.quest_desc: ["Drink a suspicious stew"]
 	quest.49FD8DD0C52D4245.title: "When the Stew is Sus"
 	quest.4A1E000000000001.quest_desc: ["Locate the Cloudy Temple"]
@@ -774,14 +908,70 @@
 	quest.4A1E000000000007.title: "Not so Shrimple Now"
 	quest.4A1E000000000009.quest_desc: ["Find the Sunken City"]
 	quest.4A1E000000000009.title: "Sunken in the Sea"
+	quest.4A1E00000000000B.quest_desc: ["Get a Tentacle Rig: four Tentacles on a Backtank"]
+	quest.4A1E00000000000B.title: "Doc's Rig"
+	quest.4A1E00000000000F.quest_desc: [
+		"Obtain all three Tentacle Rig enchantment books."
+		""
+		"&6Far Reach&r: longer tentacles, the rig can grab, hang and climb from a greater distance."
+		"&6Swift&r: the rig carries you faster, raising speed and top speed."
+		"&6Thrift&r: the rig uses less air while holding, moving and climbing."
+	]
+	quest.4A1E00000000000F.title: "Doc's Books"
 	quest.4A2DDD9E4F0840F2.quest_desc: ["Use a Wind Charge to launch yourself upward 8 blocks"]
 	quest.4A2DDD9E4F0840F2.title: "Who Needs Rockets?"
+	quest.4A2E000000000001.quest_desc: ["Enter the Abyssal Chasm"]
+	quest.4A2E000000000001.title: "Beyond the Sea"
+	quest.4A2E000000000002.quest_desc: ["Capture any abyssal sea creature in a bucket"]
+	quest.4A2E000000000002.title: "Buckets of Joy"
+	quest.4A2E000000000003.quest_desc: ["Obtain Bioluminesscence from a Gossamer Worm"]
+	quest.4A2E000000000003.title: "Another Kind of Slime"
+	quest.4A2E000000000004.quest_desc: ["Craft a torch that works underwater"]
+	quest.4A2E000000000004.title: "Glow Sticks"
+	quest.4A2E000000000005.quest_desc: ["Craft a Floater, which can quickly return you to above the waves"]
+	quest.4A2E000000000005.title: "Surface or Bust"
+	quest.4A2E000000000006.quest_desc: ["Craft a Deep Sea Sushi Roll"]
+	quest.4A2E000000000006.title: "Pass the Wasabi"
+	quest.4A2E000000000007.quest_desc: ["Discover the Deepsight Effect by brewing a Deepsight Potion with a Lanternfish"]
+	quest.4A2E000000000007.title: "A Lighthouse in Your Eyes"
+	quest.4A2E000000000008.quest_desc: ["Obtain Marine Snow from feeding a Sea Pig, which can rejuvenate coral"]
+	quest.4A2E000000000008.title: "Catching Flakes"
+	quest.4A2E000000000009.quest_desc: ["Find the one place in the deep that seems to have air inside..."]
+	quest.4A2E000000000009.title: "Shell City"
+	quest.4A2E00000000000A.quest_desc: ["Slay a Mine Guardian"]
+	quest.4A2E00000000000A.title: "Those Aren't Balloons..."
+	quest.4A2E00000000000B.quest_desc: ["Obtain the entire set of Diving Armor from the Drowned in the deep"]
+	quest.4A2E00000000000B.title: "The Cyclops"
+	quest.4A2E00000000000C.quest_desc: ["Take a ride in a Submarine"]
+	quest.4A2E00000000000C.title: "Captain Nemo"
+	quest.4A2E00000000000D.quest_desc: ["Repair a Submarine using Copper Ingots"]
+	quest.4A2E00000000000D.title: "Buff Out Those Scratches"
+	quest.4A2E00000000000E.quest_desc: ["Break a Mussel"]
+	quest.4A2E00000000000E.title: "Bring Forth The Mollusk"
+	quest.4A2E00000000000F.quest_desc: ["Cook a Mussel in a furnace"]
+	quest.4A2E00000000000F.title: "Slurp Up"
+	quest.4A2E000000000010.quest_desc: ["Obtain a Pearl from breaking a Mussel"]
+	quest.4A2E000000000010.title: "Diamonds of the Sea"
+	quest.4A2E000000000011.quest_desc: ["See something you weren't supposed to..."]
+	quest.4A2E000000000011.title: "The Shadow Over Mine's Craft"
+	quest.4A2E000000000012.quest_desc: ["Place a Pearl on an Abyssal Altar as an offering"]
+	quest.4A2E000000000012.title: "Order of Dagon"
+	quest.4A2E000000000013.quest_desc: ["Successfully trade with the Deep Ones"]
+	quest.4A2E000000000013.title: "An Understanding"
+	quest.4A2E000000000014.quest_desc: ["Trade so often with the Deep Ones that they no longer avoid your presence"]
+	quest.4A2E000000000014.title: "Nautical Neighbors"
+	quest.4A2E000000000015.quest_desc: ["Become so well-regarded amongst the Deep Ones that they occasionally come to your defense"]
+	quest.4A2E000000000015.title: "All Buddies Now"
+	quest.4A2E000000000016.quest_desc: ["Collect four different, powerful items from trading with the Deep Ones"]
+	quest.4A2E000000000016.title: "Powers of Poseidon"
 	quest.4A6656C90BD5482A.quest_desc: [
 		"Smelt an iron ingot"
 		""
 		"{image:icons:textures/advancement/story/smelt_iron.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.4A6656C90BD5482A.title: "Acquire Hardware"
+	quest.4AF2DF7CAB38DC89.quest_desc: ["You have reached the summit of Cataclysm!"]
+	quest.4AF2DF7CAB38DC89.title: "The Cataclysmfarer"
 	quest.4B0E7153BF7C3706.quest_desc: [
 		"Mine stone with your new pickaxe"
 		""
@@ -792,6 +982,8 @@
 	quest.4B3A24E80CDF7CDA.title: "Part and Parcel"
 	quest.4B4AFC7068129E0D.quest_desc: ["Excavate from the suspicious sand within the cursed pyramid to wake up and knock down the Ancient Remnant"]
 	quest.4B4AFC7068129E0D.title: "Death finds a Way"
+	quest.4BD2973C9C129F12.quest_desc: ["Defeat the Warped Fungussus"]
+	quest.4BD2973C9C129F12.title: "It's Teleporting!"
 	quest.4C1ED0AE5A905C28.quest_desc: ["Slay the End Castle's Haunting"]
 	quest.4C1ED0AE5A905C28.title: "Afraid of Heights?"
 	quest.4C1FCDC7B3E7443D.quest_desc: [
@@ -810,6 +1002,8 @@
 	quest.4CA2AD6C7EFFB948.title: "The day of the Dead"
 	quest.4CA44AE5CE995071.quest_desc: ["Collect a Brave Rod from a fallen Brave."]
 	quest.4CA44AE5CE995071.title: "The not-so Brave"
+	quest.4D7D46D5115695C4.quest_desc: ["Defeat the Cloud Golem"]
+	quest.4D7D46D5115695C4.title: "Against The Gods"
 	quest.4E18D09CC1172BCD.quest_desc: ["Place and power a Redstone Magnet"]
 	quest.4E18D09CC1172BCD.title: "Opposites Attract"
 	quest.4E2FF9D6BD73E78E.quest_desc: ["Catch a Fish... without a Fishing Rod!"]
@@ -828,6 +1022,8 @@
 		"{image:icons:textures/advancement/story/shiny_gear.png width:100 height:100 align:center click_action:none:}"
 	]
 	quest.4E3B91D26AB4A829.title: "Cover Me with Diamonds"
+	quest.4E4651CE11D3D6BE.quest_desc: ["Mine rare uranium, process it with Create machines, enrich it, build a reactor and power your machines. The advancements in this tab are a step by step guide."]
+	quest.4E4651CE11D3D6BE.title: "Going Nuclear"
 	quest.4E57C7C25F5F7B61.quest_desc: [
 		"Watch a Spring item bounce a great distance"
 		"&7(Hidden Advancement)"
@@ -837,12 +1033,16 @@
 	quest.4E897A7FADC53AC8.title: "Hat for dark affairs"
 	quest.4EC1C2C9E5380790.quest_desc: ["Place and power an Encased Fan"]
 	quest.4EC1C2C9E5380790.title: "Wind Maker"
+	quest.4EE074C0D6EEC06F.quest_desc: ["Defeat a Brainiac, a hulking monster mutated by radiation"]
+	quest.4EE074C0D6EEC06F.title: "Brains and Brawn"
 	quest.4EE087904AF65FA1.quest_desc: ["Find an Artifact"]
 	quest.4EE087904AF65FA1.title: "Amateur Archaeologist"
 	quest.4F05FF9733077E22.quest_desc: ["Team up with an Axolotl and win a fight"]
 	quest.4F05FF9733077E22.title: "The Healing Power of Friendship!"
 	quest.4F3990A25D0AB769.quest_desc: ["Get to the X in a Pathfinder Map"]
 	quest.4F3990A25D0AB769.title: "Road to Tomorrow"
+	quest.4FEC18EDCAD2C4E9.quest_desc: ["Enter the Toxic Caves"]
+	quest.4FEC18EDCAD2C4E9.title: "Radiation Vibe"
 	quest.502E57871915277C.quest_desc: ["Kill the zombie clown"]
 	quest.502E57871915277C.title: "Life turned out to be a comedy"
 	quest.503929968D2F7A7A.quest_desc: ["Kill one of every Sculk monster"]
@@ -871,6 +1071,10 @@
 	quest.520AF2A84F7809C9.title: "Traffic Control"
 	quest.5228EFC78039CA85.quest_desc: ["Craft any dark metal weapon"]
 	quest.5228EFC78039CA85.title: "Dark Blacksmith"
+	quest.52767CA3D6F13F79.quest_desc: ["Craft a Raygun"]
+	quest.52767CA3D6F13F79.title: "Revive Me, I Have a Raygun"
+	quest.52EF6C839655D99F.quest_desc: ["Defeat the Resurrected Knight"]
+	quest.52EF6C839655D99F.title: "My Head Is Back!"
 	quest.5325A538987C5FA5.quest_desc: ["Move a Bee Nest, with 3 Bees inside, using Silk Touch"]
 	quest.5325A538987C5FA5.title: "Total Beelocation"
 	quest.533AFC99EC264A48.quest_desc: [
@@ -882,6 +1086,8 @@
 	quest.53C92A45C2D1D67C.title: "Brand Registry"
 	quest.53D84505644D5F96.quest_desc: ["Save yourself from a lethal fall by catching onto Rails"]
 	quest.53D84505644D5F96.title: "Talk about Low Budget Flights"
+	quest.542BE79DFECAC48A.quest_desc: ["Obtain Sulfur Dust from Sulfur Clusters"]
+	quest.542BE79DFECAC48A.title: "Smelly Situation"
 	quest.544789F9D1D90EB3.quest_desc: ["Find an Ancient Keep map in an Ancient City."]
 	quest.544789F9D1D90EB3.title: "Whispers in the Ruins"
 	quest.545B22EC006F8D23.quest_desc: [
@@ -900,6 +1106,8 @@
 	quest.5589F74CC3F3A0ED.quest_desc: ["Get all the Born in Chaos music discs"]
 	quest.5589F74CC3F3A0ED.title: "Symphony of Chaos"
 	quest.55EB3157FA6A253E.quest_desc: ["Discover the &bEldritch spells&r"]
+	quest.55F5296878C3545B.quest_desc: ["Load MOX fuel into a reactor. Mind the delayed neutrons: there are fewer of them now."]
+	quest.55F5296878C3545B.title: "Second Helping"
 	quest.55F7F1A917731905.quest_desc: ["Stun someone with the Skullbreaker Hammer"]
 	quest.55F7F1A917731905.title: "Bonk!"
 	quest.56912F9CE47E1122.quest_desc: ["Get every Trumpet Sapling"]
@@ -932,725 +1140,6 @@
 	quest.59D77E0263A99B13.title: "The End"
 	quest.59DEFAC595EA782E.quest_desc: ["Get Lord Pumpkinhead Hat"]
 	quest.59DEFAC595EA782E.title: "Infernal Musketeer"
-	quest.5A2D8E4C90B31775.quest_desc: [
-		"Некоторые заклинания Маледиктуса нельзя сразу скрафтить в виде свитка на Кузне Свитков — игра пишет, что заклинание нужно сначала изучить."
-		""
-		"На самом деле ничего изучать не нужно: достаточно, чтобы в инвентаре (не обязательно в руке) лежал &bПроклятый слиток&r — тогда крафт свитка разблокируется."
-		""
-		"Как получить Проклятый слиток:"
-		"&e-&r Убить босса &bМаледиктуса&r — гарантированно выпадает 3-4 слитка"
-		"&e-&r Крафта из других предметов нет, только дроп с босса"
-	]
-	quest.5A2D8E4C90B31775.title: "Разблокировка свитков Маледиктуса"
-	quest.5A8D06E26E900F6D.quest_desc: ["Watch a fluid-containing item be emptied by an Item Drain"]
-	quest.5A8D06E26E900F6D.title: "Tumble Draining"
-	quest.5B47BABA33892BED.quest_desc: ["Claim an Echo Key from a Deepslate Spawner."]
-	quest.5B47BABA33892BED.title: "Unlocking the Deep"
-	quest.5B5845FF4938681A.quest_desc: ["Obtain some Andesite Alloy, Create's most important resource"]
-	quest.5B5845FF4938681A.title: "Sturdier Rocks"
-	quest.5B6E18941C28F3F7.quest_desc: [
-		"A Chaos Component is found in tombstone chests."
-		""
-		"Emptying it gives 250 mB of liquid chaos; filling it with 250 mB of liquid chaos (Create) refills it."
-	]
-	quest.5BBE3712155587A3.quest_desc: ["Make the text of any kind of sign glow"]
-	quest.5BBE3712155587A3.title: "Glow and Behold!"
-	quest.5BCAD9B245BDC199.quest_desc: ["Using a Heart of the Sea, craft a Soulspring Lamp, a vital tool against the Nether's inferno"]
-	quest.5BCAD9B245BDC199.title: "Soul of the Sea"
-	quest.5BCC2FD6FAD650A2.quest_desc: ["Use a Printer to change a package's address"]
-	quest.5BCC2FD6FAD650A2.title: "Supply Chain Refactor"
-	quest.5BED2CF3DFC8DF07.quest_desc: ["Craft a Rift Drive Mk II."]
-	quest.5BED2CF3DFC8DF07.title: "Somewhere Else"
-	quest.5C0DBC0E15637EBB.quest_desc: [
-		"Acquire diamonds"
-		""
-		"{image:icons:textures/advancement/story/mine_diamond.png width:100 height:100 align:center click_action:none:}"
-	]
-	quest.5C0DBC0E15637EBB.title: "Diamonds!"
-	quest.5C213CE26EB26F99.quest_desc: [
-		"Use a Hand Crank until fully exhausted"
-		"&7(Hidden Advancement)"
-	]
-	quest.5C213CE26EB26F99.title: "Workout Session"
-	quest.5C3A9E17B2D40F86.quest_desc: [
-		"Craft an Empty Fan Catalyst from brass ingots and iron bars."
-		""
-		"&e-&r The base for fan catalysts: with it an encased fan can process items, not just move air"
-	]
-	quest.5C3A9E17B2D40F86.title: "Catalyst"
-	quest.5CDE580FB901A3BB.quest_desc: ["Make the Meadows come alive with the sound of music from a Jukebox"]
-	quest.5CDE580FB901A3BB.title: "Sound of Music"
-	quest.5D752704D509297F.quest_desc: ["Find an upgraded Monster Room"]
-	quest.5D752704D509297F.title: "Quite the Renovation"
-	quest.5DA43C69F8B33C3A.quest_desc: ["Rip open Glutton Fish Stomach"]
-	quest.5DA43C69F8B33C3A.title: "Disgusting Lootbox"
-	quest.5E75F6B1CC94EB9F.quest_desc: ["Use a Campfire to collect Honey from a Beehive using a Glass Bottle without aggravating the Bees"]
-	quest.5E75F6B1CC94EB9F.title: "Bee Our Guest"
-	quest.5E85E6B5E5AB3350.quest_desc: ["Enchant an unenchanted item using a Blaze Enchanter"]
-	quest.5E85E6B5E5AB3350.title: "Blazing Enchantment"
-	quest.5F7A3D7A073E9174.quest_desc: ["Sleep in a Bed to change your respawn point"]
-	quest.5F7A3D7A073E9174.title: "Sweet Dreams"
-	quest.5FA92E75A8114046.title: "Полный сет брони Криоманта"
-	quest.5FBC0EFBD930F744.quest_desc: ["Stand next to a sea of lava"]
-	quest.5FBC0EFBD930F744.title: "The Pit of Fire"
-	quest.5FBD5E7ACC865D74.quest_desc: ["Craft a Phantom Bomb"]
-	quest.5FBD5E7ACC865D74.title: "Double Bang"
-	quest.5FBDE7F12491251A.quest_desc: [
-		"Run a red Train Signal"
-		"&7(Hidden Advancement)"
-	]
-	quest.5FBDE7F12491251A.title: "Expert Driver"
-	quest.600A8BD306C8B4C3.quest_desc: [
-		"You should NOT have let this happen!!!"
-		"&7(Hidden Advancement)"
-	]
-	quest.600A8BD306C8B4C3.title: "OSHA Violation"
-	quest.60FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
-	quest.61FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
-	quest.623790036303EE97.quest_desc: ["Set yourself on fire to prevent freezing to death"]
-	quest.623790036303EE97.title: "Desperate Measures"
-	quest.624D2E0C989A1A89.quest_desc: ["Put a Cloud in a Bottle"]
-	quest.624D2E0C989A1A89.title: "Cloud Storage"
-	quest.62A2C557CE2E083C.quest_desc: ["Step inside the Ancient Keep."]
-	quest.62A2C557CE2E083C.title: "Breaching the Keep"
-	quest.62E099C44C866A43.quest_desc: [
-		"The end of the Chaos branch: the Eye of True Corruption."
-		""
-		"It is built on a Create assembly line from an Eye of Ender, in this order:"
-		"&e-&r Orb of the Summoner"
-		"&e-&r Liquid Chaos (500 mB)"
-		"&e-&r Darkened Apple"
-		"&e-&r Fel Soil"
-		"&e-&r Blood (500 mB)"
-		"&e-&r Dark Atrium"
-		""
-		"You also need the two eyes from \"The Way to the End\"."
-	]
-	quest.62F685EA316A18A1.quest_desc: ["Power a Laser Pointer. Please do not stare directly into the Laser Pointer"]
-	quest.62F685EA316A18A1.title: "Big Beam"
-	quest.633C76656771FEA3.quest_desc: ["Obtain Rail Grinding Boots with a special speedster's likeness"]
-	quest.633C76656771FEA3.title: "Rollin' at the Speed of Sound"
-	quest.6348A8DB9ED8109D.quest_desc: ["Discover the &bEldritch spells&r"]
-	quest.63D8235E891DEAA0.quest_desc: [
-		"Witness a Train crash as a passenger"
-		"&7(Hidden Advancement)"
-	]
-	quest.63D8235E891DEAA0.title: "Terrible Service"
-	quest.6411FA644D35DB41.quest_desc: [
-		"Deflect a projectile with a Shield"
-		""
-		"{image:icons:textures/advancement/story/deflect_arrow.png width:100 height:100 align:center click_action:none:}"
-	]
-	quest.6411FA644D35DB41.title: "Not Today, Thank You"
-	quest.641B5A9906119357.quest_desc: ["Transport some items by Chute"]
-	quest.641B5A9906119357.title: "Vertical Logistics"
-	quest.646DA90612BBEB83.quest_desc: ["Obtain 1,000,000 mB of Liquid Experience from Mechanical Grindstones"]
-	quest.646DA90612BBEB83.title: "Experienced Recycler"
-	quest.648CE59E6190FD83.quest_desc: ["How is this possible? Enchantment level caps don't exist?"]
-	quest.648CE59E6190FD83.title: "Transcendent Overclock"
-	quest.649E33ACBD702D05.quest_desc: ["Obtain and place an Optical Sensor to show you what's right there"]
-	quest.649E33ACBD702D05.title: "Nearsighted"
-	quest.64C05492E7369E1C.quest_desc: ["Obtain a Physics Assembler, the heart of every Simulated Contraption"]
-	quest.64C05492E7369E1C.title: "Applied Kinematics"
-	quest.651A2A5D337C8F19.quest_desc: ["Successfully defend a village from a raid"]
-	quest.651A2A5D337C8F19.title: "Hero of the Village"
-	quest.653BA7E8E21C93E2.quest_desc: ["Locate an Illager Manor"]
-	quest.653BA7E8E21C93E2.title: "Mind Your Manors"
-	quest.657E0A86A5449DE3.quest_desc: ["Craft Eternal Candy"]
-	quest.657E0A86A5449DE3.title: "Your satiety will be Eternal!"
-	quest.65A2F416F41C225E.quest_desc: ["Fuel the soulspring lamp by clicking it with fuel in your inventory"]
-	quest.65A2F416F41C225E.title: "Borrowed Time"
-	quest.65A702192EC1E344.quest_desc: ["Kill the Missioner: it drops charms and the missionary hat."]
-	quest.65A702192EC1E344.title: "Dark Creator"
-	quest.65DFE7A4719662B0.quest_desc: ["Aproach an Pillager Outpost"]
-	quest.65DFE7A4719662B0.title: "Intruder Alert"
-	quest.65EE68CFA20771A4.quest_desc: [
-		"advancements.nether.create_beacon.description"
-		""
-		"{image:icons:textures/advancement/nether/create_beacon.png width:100 height:100 align:center click_action:none:}"
-	]
-	quest.65EE68CFA20771A4.title: "advancements.nether.create_beacon.title"
-	quest.65FD649AE123511F.quest_desc: ["Aproach the toxic lair"]
-	quest.65FD649AE123511F.title: "Poison Swamp Enjoyer Rejoice"
-	quest.66180493CD96ED8E.quest_desc: ["Kill a Phantom using a Mounted Potato Cannon"]
-	quest.66180493CD96ED8E.title: "Ghostbuster"
-	quest.662DB3879A398EA1.quest_desc: ["Place and power a Mechanical Pump"]
-	quest.662DB3879A398EA1.title: "Under Pressure"
-	quest.6698014EFB68FEFD.quest_desc: ["Take a vehicle through a Rift Gate. Both ends have to be wide enough for it"]
-	quest.6698014EFB68FEFD.title: "Freight Forward"
-	quest.66FB06F86A95B6DE.quest_desc: ["Attempt to take a dive in lava with your netherite diving gear"]
-	quest.66FB06F86A95B6DE.title: "Swimming with the Striders"
-	quest.670B34F382064BD5.quest_desc: ["Levitate up 50 blocks from the attacks of a Shulker"]
-	quest.670B34F382064BD5.title: "Great View From Up Here"
-	quest.671E237C9A65B145.quest_desc: ["Get a five-kill streak with the Great Reaper Ax in a short period of time"]
-	quest.671E237C9A65B145.title: "RAMPAGE!"
-	quest.6755F6BC66F721A7.quest_desc: ["Protect yourself with a full set of Warden Armor"]
-	quest.6755F6BC66F721A7.title: "Cover Me with Sculk"
-	quest.67A8AE67CB4309E8.quest_desc: ["Plant a seed and watch it grow"]
-	quest.67A8AE67CB4309E8.title: "A Seedy Place"
-	quest.67E20C8BC1459495.quest_desc: ["Watch your Mechanical Arm transport its first item"]
-	quest.67E20C8BC1459495.title: "Busy Hands"
-	quest.67EE1635BDFA21A4.quest_desc: ["Conquer a Badlands Miner Outpost"]
-	quest.67EE1635BDFA21A4.title: "Miner Inconvenience"
-	quest.67F2DF4244DE4C6F.quest_desc: ["Sneak near a Sculk Sensor or Warden to prevent it from detecting you"]
-	quest.67F2DF4244DE4C6F.title: "Sneak 100"
-	quest.680F9F4EEB370555.quest_desc: [
-		"Break a Fluid Pipe and bathe in the leaked experience"
-		"&7(Hidden Advancement)"
-	]
-	quest.680F9F4EEB370555.title: "A Shower \"Experience\""
-	quest.683FF421BFACCE9F.quest_desc: ["Watch a Torsion Spring unwind to its original position"]
-	quest.683FF421BFACCE9F.title: "Rewind Time"
-	quest.6841CEC088594585.quest_desc: ["Operate a pair of Crushing Wheels at maximum speed"]
-	quest.6841CEC088594585.title: "Crushing It"
-	quest.68585662233756DD.quest_desc: ["Successfully align and connect two Docking Connectors"]
-	quest.68585662233756DD.title: "A Calculated Connection"
-	quest.685C524E44006655.quest_desc: [
-		"Construct a better Pickaxe"
-		""
-		"{image:icons:textures/advancement/story/upgrade_tools.png width:100 height:100 align:center click_action:none:}"
-	]
-	quest.685C524E44006655.title: "Getting an Upgrade"
-	quest.6866C9553CCFF21F.quest_desc: [
-		"Crash into another Train while driving backwards"
-		"&7(Hidden Advancement)"
-	]
-	quest.6866C9553CCFF21F.title: "Blind Spot"
-	quest.687B8D941879B36A.quest_desc: ["Discover a Spider Cave"]
-	quest.687B8D941879B36A.title: "Cobweb Entanglement"
-	quest.687E25CA0A853B1C.quest_desc: ["Obtain some Nuggets of Experience"]
-	quest.687E25CA0A853B1C.title: "Experienced Engineer"
-	quest.692BAE4F20C4A08B.quest_desc: ["Craft a Plunger Launcher"]
-	quest.692BAE4F20C4A08B.title: "Stuck Together"
-	quest.69330C094A44679D.title: "Магическая ткань"
-	quest.694E5EFAF89FC43C.quest_desc: [
-		"Fill a bucket with lava"
-		""
-		"{image:icons:textures/advancement/story/lava_bucket.png width:100 height:100 align:center click_action:none:}"
-	]
-	quest.694E5EFAF89FC43C.title: "Hot Stuff"
-	quest.6958ECEC2F6849E8.quest_desc: ["Grab on to a Handle"]
-	quest.6958ECEC2F6849E8.title: "Get a Grip!"
-	quest.6A2AEEF527A6ED38.quest_desc: ["Fill an airtight Envelope structure with hot air"]
-	quest.6A2AEEF527A6ED38.title: "Head in the Clouds"
-	quest.6A2E2636D47ABFA2.quest_desc: ["Feed a Snifflet"]
-	quest.6A2E2636D47ABFA2.title: "Little Sniffs"
-	quest.6A675805832339DB.quest_desc: ["Collect all types of Charms in your inventory"]
-	quest.6A675805832339DB.title: "Charm Collector"
-	quest.6AF03C8358A3D36E.quest_desc: ["Obtain a bucket of molten chocolate"]
-	quest.6AF03C8358A3D36E.title: "A World of Imagination"
-	quest.6B202A4F4BAE9B1B.quest_desc: [
-		"A fallen player becomes a ghost. To bring them back, the altar needs:"
-		""
-		"&e-&r &b1000 mB of Mana&r"
-		"&e-&r &c1000 mB of Blood&r"
-		"&e-&r the &6Head of the Dead&r, placed on the altar"
-	]
-	quest.6B22B0EA18978627.quest_desc: ["Amass some Copper Ingots for your exploits in fluid manipulation"]
-	quest.6B22B0EA18978627.title: "Cuprum Bokum"
-	quest.6B395F6B9A89F23F.quest_desc: ["Acquire a Sculk Transmitter"]
-	quest.6B395F6B9A89F23F.title: "Remote Storage"
-	quest.6B6C5C42B1E778CD.quest_desc: ["Find Elytra"]
-	quest.6B6C5C42B1E778CD.title: "Sky's the Limit"
-	quest.6C20BD34910F3C97.quest_desc: ["Defeat an enemy with your Potato Cannon"]
-	quest.6C20BD34910F3C97.title: "Fwoomp!"
-	quest.6CA1B8751B327515.quest_desc: ["Employ a mob at your stock ticker and make your first requests"]
-	quest.6CA1B8751B327515.title: "Order Up!"
-	quest.6CB3277C659FF86D.quest_desc: ["Walk on Powder Snow... without sinking in it"]
-	quest.6CB3277C659FF86D.title: "Light as a Rabbit"
-	quest.6CF34A193A79309C.quest_desc: [
-		"Make two Belt-mounted Funnels kiss"
-		"&7(Hidden Advancement)"
-	]
-	quest.6CF34A193A79309C.title: "The Parrots and the Flaps"
-	quest.6D2EE8FF9E748DEE.title: "Броня Волшебника"
-	quest.6DCB0E80BA3B17E1.quest_desc: ["Use pipes to pull honey from a Bee Nest or Beehive"]
-	quest.6DCB0E80BA3B17E1.title: "Autonomous Bee-Keeping"
-	quest.6DE9E3AB57355B0B.quest_desc: [
-		"Break a very long fall by grabbing on to a Handle"
-		"&7(Hidden Advancement)"
-	]
-	quest.6DE9E3AB57355B0B.title: "Got a Grip!"
-	quest.6E1225AFDCE82C3D.quest_desc: ["Look at a Ghast through a Spyglass"]
-	quest.6E1225AFDCE82C3D.title: "Is It a Balloon?"
-	quest.6E8D4913FE2BCE82.quest_desc: ["Place and power a set of Crushing Wheels"]
-	quest.6E8D4913FE2BCE82.title: "Wheels of Destruction"
-	quest.6EA60E59F470308D.quest_desc: ["Sneak up to a Stoneling underground and break its shell to get its Heart"]
-	quest.6EA60E59F470308D.title: "Shape of My Heart"
-	quest.6EFF0669900D5E13.quest_desc: ["Look at a Parrot through a Spyglass"]
-	quest.6EFF0669900D5E13.title: "Is It a Bird?"
-	quest.6F23ED44D9D0B816.quest_desc: ["Trade with a Tavern Cartographer to gain access to a quest map"]
-	quest.6F23ED44D9D0B816.title: "Call for Adventure"
-	quest.6F2508600BF06E1A.quest_desc: ["Activate a Steam Whistle"]
-	quest.6F2508600BF06E1A.title: "Voice of an Angel"
-	quest.6F6A45DCB2B80867.quest_desc: ["Look at the Ender Dragon through a Spyglass"]
-	quest.6F6A45DCB2B80867.title: "Is It a Plane?"
-	quest.6F7BEDC559E2E079.quest_desc: ["Unlock an Ominous Vault with an Ominous Trial Key"]
-	quest.6F7BEDC559E2E079.title: "Revaulting"
-	quest.6F7C6CE362448397.quest_desc: ["Grab and spin a Steering Wheel"]
-	quest.6F7C6CE362448397.title: "Unpowered Steering"
-	quest.6F91BFB75C5332D3.quest_desc: ["Use a Netherite Ingot to upgrade a Hoe, and then reevaluate your life choices"]
-	quest.6F91BFB75C5332D3.title: "Serious Dedication"
-	quest.7088504AE84BF982.quest_desc: ["Step foot in a Trial Chamber"]
-	quest.7088504AE84BF982.title: "Minecraft: Trial(s) Edition"
-	quest.70AF19A207C55230.quest_desc: [
-		"Watch two fluids meet in your pipe network"
-		"&7(Hidden Advancement)"
-	]
-	quest.70AF19A207C55230.title: "Don't Cross the Streams!"
-	quest.71E630A7002C686D.title: "Первый Гримуар"
-	quest.71F9F93392EE45A5.quest_desc: ["Use a Mechanical Press and a Basin to create fewer items from more"]
-	quest.71F9F93392EE45A5.title: "Compactification"
-	quest.7271BBFD0F548F21.title: "Книга на 16 заклинаний"
-	quest.72E188EBD6F3A789.quest_desc: ["Take a deep breath and enter the Trident Trial Monument"]
-	quest.72E188EBD6F3A789.title: "Breathtaking"
-	quest.72F522AF6B60F6A7.quest_desc: ["Defeat the Last of Deepslate, guardian of the Ancient Keep."]
-	quest.72F522AF6B60F6A7.title: "The Last of Deepslate"
-	quest.732CCC07E40D9FFC.quest_desc: ["Place down a Sequenced Pulse Generator"]
-	quest.732CCC07E40D9FFC.title: "Computational Supremacy"
-	quest.736BC05CAD30DC71.quest_desc: ["Spin a globe at ludicrous speed"]
-	quest.736BC05CAD30DC71.title: "You Spin Me Right Round Baby"
-	quest.740A502BACAFC579.quest_desc: ["Find a place that's too hot or cold to survive"]
-	quest.740A502BACAFC579.title: "Inhospitable"
-	quest.742DF9E687B620B4.quest_desc: ["Watch an enchanted item be disenchanted by a Mechanical Grindstone"]
-	quest.742DF9E687B620B4.title: "Gone with the Foil"
-	quest.74DCCF5EA5D83D94.quest_desc: ["Tame all Cat variants!"]
-	quest.74DCCF5EA5D83D94.title: "A Complete Catalogue"
-	quest.74F40AA97D0361C6.quest_desc: ["Mine a wild Oretoise with a Pickaxe"]
-	quest.74F40AA97D0361C6.title: "Mine Turtle!"
-	quest.756D46E781A9A16E.quest_desc: ["Craft the Bonescaller Staff"]
-	quest.756D46E781A9A16E.title: "Compact Necromancy"
-	quest.77600624B5135EF5.quest_desc: [
-		"Keep a network running at speed with a powered brake attached"
-		"&7(Hidden Advancement)"
-	]
-	quest.77600624B5135EF5.title: "Overpowered"
-	quest.78535F1B201B5FB4.quest_desc: ["Upgrade a potion of luck with a rabbit's foot"]
-	quest.78535F1B201B5FB4.title: "Gladstone Gander"
-	quest.78624CBBF49E6867.quest_desc: ["Create a Contraption with drills, saws, or harvesters on board"]
-	quest.78624CBBF49E6867.title: "Moving with Purpose"
-	quest.7885722AE51B2D69.quest_desc: ["Defeat The Flame Drifter"]
-	quest.7885722AE51B2D69.title: "Professional Drifter"
-	quest.7908B0258AAEA431.quest_desc: ["Lead developer: Nova Wostra. Developers: Walls, Whity and Konci. Contributors: badooga and хлифи"]
-	quest.7908B0258AAEA431.title: "Welcome to Dungeons and Taverns"
-	quest.798000843668E628.quest_desc: ["Leave a Train Seat over 5000 blocks away from where you started travelling"]
-	quest.798000843668E628.title: "Field Trip"
-	quest.7996CEDAFBCAD12B.quest_desc: ["Run a boiler at the maximum level of power"]
-	quest.7996CEDAFBCAD12B.title: "Full Steam"
-	quest.79B9E561A53A0BEA.quest_desc: ["Copy an Enchanted Book using a Printer"]
-	quest.79B9E561A53A0BEA.title: "Copiable Mystery"
-	quest.79C04E52F8349C54.quest_desc: ["Find the End Lighthouse"]
-	quest.79C04E52F8349C54.title: "The Light at the End of the Game"
-	quest.7A0C6D5146048701.quest_desc: ["Go on in, what could happen?"]
-	quest.7A0C6D5146048701.title: "The City at the End of the Game"
-	quest.7A2FC9A09A1C2C5C.title: "Первый Гримуар"
-	quest.7A51B3B2A573BBF2.quest_desc: ["Tame an animal"]
-	quest.7A51B3B2A573BBF2.title: "Best Friends Forever"
-	quest.7A6B82ADD933B4E5.quest_desc: ["Kill a Corpse Fly with a Dark Warblade while under the effects of a stage 5 rampage."]
-	quest.7A6B82ADD933B4E5.title: "Excessive Fly Swatter"
-	quest.7B5E84195216EABC.quest_desc: ["Assemble a windmill of maximum strength"]
-	quest.7B5E84195216EABC.title: "A strong Breeze"
-	quest.7B8340684AAAA9E2.quest_desc: ["Feed the Thornshell Crab rotten flesh or rotten fish"]
-	quest.7B8340684AAAA9E2.title: "Waste Recycler"
-	quest.7BB0742EC33054C3.quest_desc: ["Acquire a Sonorous Staff"]
-	quest.7BB0742EC33054C3.title: "Noise Complaint"
-	quest.7BD7F6F0F68780B3.quest_desc: ["Have an Allay drop a Cake at a Note Block"]
-	quest.7BD7F6F0F68780B3.title: "Birthday Song"
-	quest.7BDBF98335610F74.quest_desc: ["Equip a full set of Spiny Shell Armor"]
-	quest.7BDBF98335610F74.title: "Shell Warrior"
-	quest.7BE56EE627078F90.quest_desc: ["Discover a Better Desert Temple"]
-	quest.7BE56EE627078F90.title: "An Ancient Tomb"
-	quest.7CBDE09894FDC02D.quest_desc: ["Breed two animals together"]
-	quest.7CBDE09894FDC02D.title: "The Parrots and the Bats"
-	quest.7D3E0B072BB5B634.quest_desc: ["Free fall from the top of the world (build limit) to the bottom of the world and survive"]
-	quest.7D3E0B072BB5B634.title: "Caves & Cliffs"
-	quest.7D96B88F2D2858E6.quest_desc: ["Create a Copper Backtank and make it accumulate air pressure"]
-	quest.7D96B88F2D2858E6.title: "Pressure to Go"
-	quest.7DA201123EF5D71A.quest_desc: [
-		"Watch a Mechanical Arm operate your Jukebox"
-		"&7(Hidden Advancement)"
-	]
-	quest.7DA201123EF5D71A.title: "DJ Mechanico"
-	quest.7DA28997C1305AA7.quest_desc: ["Kill Glutton Fish"]
-	quest.7DA28997C1305AA7.title: "Horror of the Depths"
-	quest.7DB8AAE3F019C8F5.quest_desc: ["Obtain a pair of Aviator's Goggles"]
-	quest.7DB8AAE3F019C8F5.title: "High Fashion"
-	quest.7DD7A8C84D1F9494.quest_desc: ["Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer"]
-	quest.7DD7A8C84D1F9494.title: "Real Alloys"
-	quest.7E0A6F35EA2B2284.quest_desc: ["Brush a Suspicious block to obtain a Pottery Sherd"]
-	quest.7E0A6F35EA2B2284.title: "Respecting the Remnants"
-	quest.7E9A02E0F1591CAB.quest_desc: ["Use a Portable Storage Interface to take or insert items into a Contraption"]
-	quest.7E9A02E0F1591CAB.title: "Drive-by Exchange"
-	quest.7FC92FA727F49E26.quest_desc: [
-		"Watch an item move across a row of Item Drains"
-		"&7(Hidden Advancement)"
-	]
-	quest.7FC92FA727F49E26.title: "On a Roll"
-	quest.7FFB554B6550FDD0.quest_desc: ["Escape the island"]
-	quest.7FFB554B6550FDD0.title: "Remote Getaway"
-	task.0085B9C6FF41B945.title: "Engineer Gaming"
-	task.00EA18F36C74510E.title: "TATAMI GAESHI!"
-	task.00FA986FAD97C9A2.title: "Can We Get Much Higher?"
-	task.015DF41B9350611A.title: "Paradox Fusion"
-	task.01ACCEFC55094E8C.title: "Disgusting Lootbox"
-	task.01C4CF9DDBDF6375.title: "Heavier Artillery"
-	task.02B4FF8009619034.title: "Autonomous Bee-Keeping"
-	task.02F0F543C430F4FF.title: "The Chorus Infection"
-	task.031A28ADBC2FAE2D.title: "Good as New"
-	task.039FA96B782DC715.title: "Trouble is Brewing"
-	task.03D6AD46374C7CB3.title: "Little Sniffs"
-	task.04517E9198DED5DA.title: "I Paid for the Whole Typewriter"
-	task.0467A00A3EF7F902.title: "You've Got a Friend in Me"
-	task.05236718C20D8FCD.title: "High Logistics"
-	task.054390CEF70D4264.title: "Full Steam"
-	task.059A93A1E6C05EEE.title: "Remote Activation"
-	task.05E49375DFE987F2.title: "DJ Mechanico"
-	task.0609C6FCB3EBB0F0.title: "A Balanced Diet"
-	task.068940BF39799591.title: "Is It a Plane?"
-	task.07C6D98963619CB1.title: "A Bone to Pick"
-	task.0885E77230F671EE.title: "Below the Bedrock"
-	task.0886349260CDE1F2.title: "Hide And Seek"
-	task.094E5CFA3807CA73.title: "Ready for the Depths"
-	task.09F9FFFAC15F9A3C.title: "Experienced Recycler"
-	task.0A2F65F1155D4ACB.title: "Vertical Logistics"
-	task.0ABB830EFCFA3176.title: "Flame Of The End"
-	task.0AFA45EF7E1064F4.title: "Sigil Forging"
-	task.0B16AEEB3F77CF3C.title: "A Metropolis of Restless Souls"
-	task.0C0863B82F416010.title: "Just the Parrots"
-	task.0C3606087A2F8663.title: "Birthday Song"
-	task.0CB20A2B57EB2AC8.title: "Mine Turtle!"
-	task.0CC46F5A5C81781D.title: "The Powerhouse"
-	task.0CF519BE39C54817.title: "Blazing Centurion"
-	task.0D56DDFE6DB342B1.title: "The Cutest Predator"
-	task.0D56EFFBBBD49F6B.title: "With Our Powers Combined!"
-	task.0D6D0AF0E274D169.title: "The Parrots and the Flaps"
-	task.0D717265A2F2F8CE.title: "Hero of the Village"
-	task.0DF18A5253061122.title: "The Power of Books"
-	task.0DF233B81EECEBA9.title: "Hired Help"
-	task.0E7B55E280B5B7F0.title: "Crabtured"
-	task.0EA8493043635B04.title: "Head in the Clouds"
-	task.1049FD5E77975E24.title: "Best Friends Forever"
-	task.1070DCFC1726C88A.title: "Wind Maker"
-	task.1140CF976B3825AE.title: "The End"
-	task.11C87FBD73C300C3.title: "Two Birds, One Arrow"
-	task.1275BB30CB511719.title: "Poison Swamp Enjoyer Rejoice"
-	task.1293DB02C7221E35.title: "Obliteration for Obliterator"
-	task.13B42B2FAFE9EB29.title: "Infinite Loop"
-	task.13C5F19D2359BD64.title: "On a Roll"
-	task.13DEB67CC68F2B74.title: "Tapping the Mantle"
-	task.14992AAE93FBEDE0.title: "Moving with Purpose"
-	task.150611C82643708B.title: "Call for Adventure"
-	task.152236F1AD55AB8F.title: "Blowback"
-	task.1522A45EE74BE474.title: "Desperate Measures"
-	task.152ADB72417CC1D9.title: "Measure Once, Build Twice"
-	task.15793B9D76EC4FD9.title: "Dark Blacksmith"
-	task.15993641F400FA74.title: "Monster Hunter"
-	task.162A9DDEEF18249A.title: "Sound of Music"
-	task.16378A2EF2850D34.title: "It Spreads"
-	task.16DCDE8A3C39313D.title: "Traffic Control"
-	task.1713846C567BADD9.title: "Blazing Fusion"
-	task.177386548D0C3082.title: "Not Gonna Sugarcoat It"
-	task.177899E2977BF4B7.title: "Assembly Aesthetics"
-	task.1789316C003F926E.title: "Rope to Nowhere"
-	task.180A1CDC53F28FBE.title: "Shear Brilliance"
-	task.184A4E8E171D548A.title: "Dungeon Master"
-	task.18B61AC6A81BE5F5.title: "Smithing with Style"
-	task.19498D63338F16B6.title: "Call of the Void"
-	task.19CBD0530CECC79F.title: "Slowing Down A Bit..."
-	task.19D2CBD1A09486D6.title: "An Ancient Tomb"
-	task.1A8DE172F729F469.title: "Fishy Business"
-	task.1AA55B596F652BBE.title: "A New Gauge"
-	task.1ADCD6ACB12EA8D3.title: "The Definition of \"Up\""
-	task.1B1397D382384CAE.title: "Hot Tourist Destinations"
-	task.1B53B973B3ED0F65.title: "advancements.nether.create_beacon.title"
-	task.1B56E5A6CE372E70.title: "Workshop's Most Feared"
-	task.1B56F70C74375C56.title: "Deceived Hopes"
-	task.1B759BE5BA995B01.title: "Automated Assembly"
-	task.1BC830FFACA11672.title: "The Copper Age"
-	task.1C019699EC49E674.title: "Sculk Slayer"
-	task.1C5CC90512DD6194.title: "Great Publisher"
-	task.1CB00FC21C7F731D.title: "Don't Cross the Streams!"
-	task.1CCC546C5440E3F1.title: "advancements.nether.summon_wither.title"
-	task.1CF0DB24D2F863C3.title: "A Seedy Place"
-	task.1D0FE2311A1827EB.title: "Freshen Your Breath"
-	task.1E66709CBF99FF9C.title: "Potato, Potato"
-	task.1EAFB4A08B0B7F31.title: "Shape of My Heart"
-	task.1F011681F0BCD5AE.title: "My Eye!"
-	task.1F8EC29785000639.title: "Nothing but net"
-	task.1FB958951274DC8D.title: "Bukkit Bukkit"
-	task.1FDD61211634F727.title: "Spiritual Return"
-	task.2026330BF442AC3A.title: "Organize-o-Tron"
-	task.204A12D0AA53BA1D.title: "Monsters Hunted"
-	task.208EAF2C8604182C.title: "Got a Grip!"
-	task.20B2802D708063FD.title: "There Is No Gravity Here!"
-	task.22335F75AFEBC50F.title: "Spied Eye"
-	task.22BEE89C143F8DDE.title: "Circuit Breaker"
-	task.23156F6A2D563E57.title: "Thataway!"
-	task.231D48061526CB0F.title: "Nearsighted"
-	task.232200749B3380A3.title: "Serious Organization"
-	task.23463C3AD7129AB4.title: "Shadow Sense"
-	task.249300646DA05CFF.title: "Detoxing the Toxic Lair"
-	task.24B639D1FCA5322D.title: "Self-Driving Cart"
-	task.24D0FD4E9DA98C51.title: "Intruder Alert"
-	task.24E84F0B882D0EA4.title: "Voice of an Angel"
-	task.24EFAD12D01F5256.title: "Ol' Betsy"
-	task.25187981100D4372.title: "Road Kill"
-	task.2520940448E757BA.title: "A mild Breeze"
-	task.25499AB99E6C87AB.title: "Shell Warrior"
-	task.2592D353620D7686.title: "Steamless Engine"
-	task.25E2DFBAE3AB9FF9.title: "Get Lucky"
-	task.269F668B91E2E4BC.title: "Sigil Casting"
-	task.26B124F596372E19.title: "Cursed Pyramid"
-	task.280A1EE661189457.title: "Blacksmith Artillery"
-	task.2837553FC13638AC.title: "Is It a Balloon?"
-	task.284DEC46F277991F.title: "The Parrots and the Bats"
-	task.28A6B20BCA005339.title: "Who Needs Rockets?"
-	task.28AC614432F6A597.title: "Voluntary Exile"
-	task.28AE3227EF8E2F70.title: "For Every Action..."
-	task.28DEAA93118CD1F4.title: "Blasting with Sonic Speed"
-	task.28EFFF091BEFF361.title: "Angry Birds"
-	task.29439290C6FBFB06.title: "What a Deal!"
-	task.29778D3D8B4A22EE.title: "Long live the king"
-	task.2A91A1E6647BC148.title: "advancements.nether.charge_respawn_anchor.title"
-	task.2B024E0E65DDD9E4.title: "Swimming with the Striders"
-	task.2B077B8D65CE299A.title: "Breaching the Keep"
-	task.2B0B34737DDA63F1.title: "Bit Fruity"
-	task.2B36CD1C2A806E91.title: "Breathtaking"
-	task.2BDDE155B22DCB21.title: "Total Beelocation"
-	task.2C4CA80E5916BDB6.title: "Sniper Duel"
-	task.2CBA49B4C54ABFE6.title: "This Must be a Sign!"
-	task.2CEF6F305222EBA1.title: "A Complete Catalogue"
-	task.2D701FC342B187FB.title: "A Throwaway Joke"
-	task.2D7A707EA36F5EDE.title: "Gone with the Foil"
-	task.2D9A3A0C96F4E76D.title: "You Spin Me Right Round"
-	task.2DA55CE98E379CAD.title: "Two by Two"
-	task.2E379EA841AFEBA1.title: "The City at the End of the Game"
-	task.2F7D314CAB1F0558.title: "Freezing Breeze"
-	task.30863802AE0113DA.title: "Lighten Up"
-	task.30A89671A008D828.title: "Whispers in the Ruins"
-	task.30F6B1FC4AFFB622.title: "Workout Session"
-	task.3115387262F34694.title: "Grind to Polish"
-	task.31292D271F1FBA3F.title: "Frozen Remnants"
-	task.316B0F3443C0B5E6.title: "Wax Off"
-	task.31EC4E793E48DDA6.title: "Fwoomp!"
-	task.31FD8A0E66A20F97.title: "Abyssal Descent"
-	task.322B995542CC39A9.title: "Overpowered"
-	task.3271D11C0C424658.title: "Speed is Key"
-	task.32722D20F5CCEF34.title: "Artificial Intelligence"
-	task.3330361719C017B5.title: "Spear of Ages"
-	task.34137FBFB8EC9ED6.title: "Open for business"
-	task.343CF3D42B4F1C4B.title: "Copiable Mystery"
-	task.345A5FB400C6541A.title: "Whole Lot of Shaking Going On"
-	task.34757E5F2956B4E2.title: "Exorcism"
-	task.34862CA4443E3165.title: "Hungry hoppers"
-	task.35B625AE7F1B77BB.title: "The Andesite Age"
-	task.35BD320458201D5C.title: "Is It a Bird?"
-	task.361CF9E54A7A73E7.title: "The Fort"
-	task.36477A0D2590F012.title: "Phantom Thief"
-	task.3650006B83ECFD27.title: "Combust-o-Tron"
-	task.365CF225A08970DD.title: "Любой свиток со заклинанием школы Лёд"
-	task.37B2BCDB95D8ED28.title: "Crafters Crafting Crafters"
-	task.384AC71BB7C5CE8D.title: "Professional Drifter"
-	task.39B20EE03D1ABA52.title: "Death finds a Way"
-	task.3A9779127E928930.title: "I Declare Thee..."
-	task.3B01BBD64EF6F9F2.title: "Ambitious Endeavours"
-	task.3B056EAB7FCF772D.title: "Float f1"
-	task.3B334D177BEB8C72.title: "Shifting Gears"
-	task.3B4F3AF1E061FC7E.title: "Area of Connect"
-	task.3B5E68501702C196.title: "Veggie Fireworks"
-	task.3B745B683CDADA4C.title: "Field Trip"
-	task.3BA43462C4DBBC67.title: "When the Squad Hops into Town"
-	task.3C1C0C5190F4314F.title: "Sneak 100"
-	task.3C8AF0C385E9925C.title: "Thousand Runes"
-	task.3C96CF519763523F.title: "Take Aim"
-	task.3CC3943E4E2C1DC1.title: "Blazing Enchantment"
-	task.3D09C3EA4D9BC8CE.title: "The Beginning of the End"
-	task.3DA1225BC4576106.title: "Sculk Story"
-	task.3DB1469D996EE43B.title: "Airport Aesthetic"
-	task.3EA7F7C13E24E355.title: "Road to Tomorrow"
-	task.3F5497E628E13A37.title: "Choo Choo!"
-	task.3F5CEC952D7B8C76.title: "Blossoming"
-	task.3FC991776378AB99.title: "We're Rich!"
-	task.40186D6D2EFF6030.title: "Drive-by Exchange"
-	task.403B9CE132A10D51.title: "Bypassing the Expiration Date"
-	task.409D9501121F6A35.title: "The Locomotive Age"
-	task.40AA6B252433285A.title: "Cloud Storage"
-	task.40B769F905BA4FF0.title: "Magma Wheel"
-	task.40D691801F6C017F.title: "Get a Grip!"
-	task.40D6FA8A914E5BE1.title: "The Brass Age"
-	task.4111789ADE068ED9.title: "Terrible Service"
-	task.41BA4D5A107F6015.title: "Dynamic Timetables"
-	task.41C54C9C0ED99C4D.title: "Amateur Archaeologist"
-	task.41E1B5B3C34EBE85.title: "Mind Your Manors"
-	task.422139E1DF2D9071.title: "Young Dreamer"
-	task.43058BE796F00D6E.title: "Copiable Masterpiece"
-	task.43366B5D05A43016.title: "Industrial Spillage"
-	task.4349A15503C1584E.title: "advancements.nether.create_full_beacon.title"
-	task.43903274C0753099.title: "Extreme Gear"
-	task.43FE72629186E362.title: "...Must Come Up"
-	task.444305BC255728AE.title: "Gladstone Gander"
-	task.45C2F1A205172858.title: "Paint The Town"
-	task.45CDC7DBADB2E9CC.title: "Desperate Measures"
-	task.464446F63A09A362.title: "Free the End"
-	task.46A6BD0428D655A5.title: "Excessive Fly Swatter"
-	task.4722AB1AAE340EE7.title: "Mr. Decoction"
-	task.4782F1A7F95AE5E6.title: "Infernal Medicine"
-	task.47884B65E3C144E2.title: "The Healing Power of Friendship!"
-	task.47C671768DF7B044.title: "Spirit-Taking"
-	task.48267B8B1B3E471D.title: "Pressure to Go"
-	task.486C6916B21EB545.title: "Professional Dungeoneer"
-	task.488D366F2B7A4923.title: "Crushing It"
-	task.48AD007FE7702380.title: "Balanced Diet"
-	task.48C50AB4061B7C2A.title: "Omni-Enchanter"
-	task.4924A85B71EC1F19.title: "The Cold"
-	task.4990F7FF0819637E.title: "Crafting a New Look"
-	task.49A719588AE95555.title: "A strong Breeze"
-	task.49BCC41CBB964BB4.title: "Arbalistic"
-	task.4A7D2C91E5B03F86.title: "Any control element"
-	task.4AAA9BCC4CC064C8.title: "Over-Overkill"
-	task.4AD0E8ADC40B5E84.title: "All Aboard!"
-	task.4B2ACE6A2D95B8BB.title: "Is it Time?"
-	task.4B33FFD23C3F0976.title: "Adventuring Time"
-	task.4B6B17EFCA92D349.title: "Bewitched"
-	task.4B8139197AC46674.title: "Sweet Dreams"
-	task.4BE83099E777A85B.title: "Wax On"
-	task.4C4BE2A30D2867B0.title: "Waste Recycler"
-	task.4CA7DFE845B228F4.title: "Transcendent Overclock"
-	task.4DA4C54F7A2A08DB.title: "Scarecrow"
-	task.4DB30B35BFB1D66B.title: "Learning the Ropes"
-	task.4E3FA8679E153CC2.title: "Caves & Cliffs"
-	task.4EB05D4316841E13.title: "Tumble Draining"
-	task.4F097A2631196A49.title: "Explosive Temper"
-	task.4F37A1835A6A1E9D.title: "Springboard Champion"
-	task.4F6922CCD1A99F2C.title: "The Place Of The Beginning"
-	task.50B2DE8D9781B22E.title: "Full Stealth"
-	task.50F182DAB070826C.title: "Engineers hate this simple trick!"
-	task.514188B1B91BD7C9.title: "Safe Haven"
-	task.519D86F50F9D39B8.title: "Afraid of Heights?"
-	task.51AA00EE0FF7D36B.title: "Rewind Time"
-	task.523EFAFE18E66F06.title: "OSHA Violation"
-	task.525E2D56FB1B5F96.title: "Adventurous Eater"
-	task.52D0A6A570BDB779.title: "Bonk!"
-	task.52E30630317353FF.title: "Eternal Slumber"
-	task.5346933DDA6E82EE.title: "Huddle Close"
-	task.534A0BEBF18452B0.title: "Light as a Rabbit"
-	task.53D1C12D90AA58BA.title: "The Ill Manored"
-	task.5465865C496D4F85.title: "Harnessed Hydraulics"
-	task.54697989FD47DCE6.title: "Cobweb Entanglement"
-	task.5517B528F3B25F25.title: "Probability Spike"
-	task.55ABF227FB25CF81.title: "Quite the Renovation"
-	task.55C5BFF397A965E9.title: "Computational Supremacy"
-	task.55D5CBD348A1117B.title: "Forever Young"
-	task.5636D41062820F38.title: "Bee Our Guest"
-	task.56E03826842C1BDD.title: "This Belongs in a Museum"
-	task.57BCDDC2EBDC4CC4.title: "Getting Ahead"
-	task.5815D3821316364F.title: "Mixing It Up"
-	task.581D0E1E2E9A4701.title: "In Transit"
-	task.58B2BFC05BE4A5A0.title: "Postmortal"
-	task.5A0F359B1D9B7D65.title: "Подтвердить"
-	task.5A7756C44EA77EA3.title: "Isn't It Scute?"
-	task.5ACDF36E7BC29226.title: "In Thrust We Trust"
-	task.5AFD8180CBA96C82.title: "Conductor Instructor"
-	task.5B66A1CF156E0046.title: "Under Lock and Key"
-	task.5B6C68EE5445C140.title: "Ghostbuster"
-	task.5C1D6F4078F98963.title: "How the Turn Tables"
-	task.5C9511264FD4D7CB.title: "Magic Unbinding"
-	task.5CE9E3D2A434C72E.title: "Sweet Battle"
-	task.5DC08D92438EF215.title: "Far Away From Home"
-	task.5DCF472E3506672D.title: "Minecraft: Trial(s) Edition"
-	task.5DE9853C7A0D9773.title: "Chase Me"
-	task.5E4DE1BCCC439E1A.title: "Glow and Behold!"
-	task.5E612B33F4C8FD74.title: "Talk about Low Budget Flights"
-	task.5E9176E9EF426DDF.title: "Compactification"
-	task.5EADDFF7E21AD030.title: "Careful Restoration"
-	task.5F6157665416053E.title: "Puddle Collector"
-	task.5FB9ACB17432B3FA.title: "Surge Protector"
-	task.5FE637D41B3AB19E.title: "The Last of Deepslate"
-	task.6029B18854BCF379.title: "Flow Discovery"
-	task.6078A1C1F68E592C.title: "Big Data"
-	task.60C20A028595DF4B.title: "Cover Me with Sculk"
-	task.612EDC7FC04FE55B.title: "Kelp Drive"
-	task.613A2B71B5008CC7.title: "Star Trader"
-	task.61AC2A28E23AEAE9.title: "You Spin Me Right Round Baby"
-	task.62EC1628B0BBEDF4.title: "A Special Addition"
-	task.64096CF2A7DC34FB.title: "Deep in the Dark Woodland"
-	task.644F01F2EAA0546A.title: "RAMPAGE!"
-	task.6503B580B9CD73B9.title: "Fully Charged"
-	task.654C1CC6F01EA68D.title: "Expert Driver"
-	task.65C7D27F0ADC2D04.title: "No Pressure"
-	task.66AA9B53C36505A8.title: "Wheels of Destruction"
-	task.66E6085C2160796D.title: "Post Production"
-	task.66E8886A671A8744.title: "Welcome to Dungeons and Taverns"
-	task.66F71C981E027AA6.title: "Sticky Situation"
-	task.6714FD5031FF0986.title: "To Full Extent"
-	task.6797B0D8EAEA7C5B.title: "Whatever Floats Your Goat!"
-	task.6837CA457D0A463A.title: "Strong Arms"
-	task.68DF0D4866E0EB55.title: "Miner Inconvenience"
-	task.69504E711925B2A7.title: "Spruce Cowboy In The Moonlight"
-	task.69CEB565E2CA033F.title: "Tactical Fishing"
-	task.6AE1B30F0BD0A059.title: "Thousandfold Everchant"
-	task.6B9E6358C59BF5B7.title: "Snap!"
-	task.6BD0FAA6FFDE2A30.title: "Supply Chain Refactor"
-	task.6BFEF43ED40C98E5.title: "Grave Ravager"
-	task.6C218BC368F3BA0B.title: "Hidden in the Sand"
-	task.6C28091E5090A894.title: "Busy Hands"
-	task.6CA240EF82615035.title: "Embrace the Grind"
-	task.6CB696F15A0254D2.title: "Naughty Child"
-	task.6CCF8D5D73A7E77D.title: "Borrowed Time"
-	task.6D9C427CC87290E2.title: "When the Stew is Sus"
-	task.6DAA358A092C11CF.title: "Blind Spot"
-	task.6DD990EA41B63511.title: "Shake and Mix"
-	task.6E21B483019C36AB.title: "The Pipe Organ"
-	task.6FBD8429453529B0.title: "The End... Again..."
-	task.6FEE6467E80321B1.title: "The Tall Guy"
-	task.700A3D27DA2EFF6A.title: "Perfectly Stressed"
-	task.7088751F374F724F.title: "Crawling in my Bark"
-	task.7097210AF9B16703.title: "A Shower \"Experience\""
-	task.70ADB58A13142AB1.title: "Planting the Past"
-	task.70F98175B96FD7C2.title: "Unity with Darkness"
-	task.71018B4C064D1152.title: "Very Very Frightening"
-	task.714D93716B60AAD8.title: "Great View From Up Here"
-	task.71A41C73EA5C10A7.title: "Bullseye"
-	task.72585988994E3488.title: "Stress for Nerds"
-	task.72700AB16E7FF1A7.title: "Rollin' at the Speed of Sound"
-	task.727F1E1C0DEB706C.title: "The Pit of Fire"
-	task.72CB8C6D3D4679D1.title: "A Calculated Connection"
-	task.73801D6D68060D10.title: "Bonk!"
-	task.747EEF4C8473BC29.title: "Remote Getaway"
-	task.74C747E301999056.title: "The Light at the End of the Game"
-	task.74CC79BE8B8EA92A.title: "Order Up!"
-	task.7512DA2E3B140EFA.title: "Echolocation"
-	task.751488987863408E.title: "Pound It, Bro!"
-	task.754BD5B14628FEA3.title: "Big Beam"
-	task.758148B7BBD27BB0.title: "Unpowered Steering"
-	task.7583684456468D03.title: "Unlucky Hunter"
-	task.75E6C3983B05D032.title: "Sploosh"
-	task.75F92F768F9A100A.title: "A Major Trial Of Strengh"
-	task.768830DB6AE6BE1A.title: "Opposites Attract"
-	task.76CBA95FE11B2607.title: "Food Fight"
-	task.776F3BBDEDBFFFF4.title: "Inhospitable"
-	task.7805F2A54FB13608.title: "Brand Registry"
-	task.78070EE2F45172E6.title: "That Should Do For Now"
-	task.786A82A1822705A7.title: "Far From Home"
-	task.78BBDC568CADA950.title: "Who's the Pillager Now?"
-	task.78D2AEAA0C3AA211.title: "Tide Pod Challenge"
-	task.792929EE682FF1DE.title: "Chest Slayer"
-	task.792DC7DF7B7BE7DF.title: "When in Rome"
-	task.79F95572967EB8ED.title: "Chaos Knight"
-	task.7B27F52851D158C3.title: "Spooky Scary Shulker Box"
-	task.7B6162E9709C06F4.title: "Contraption o'Clock"
-	task.7B73D77138AB1D1A.title: "Track Factory"
-	task.7BEF722FB17806B0.title: "Processing by Particle"
-	task.7C52AC107F3CD2F9.title: "Double Trouble"
-	task.7D03592839A3BF11.title: "Arts and Crafts"
-	task.7D11B4E4292EC79A.title: "The Whole Pack"
-	task.7DC6EEB53E6C79A8.title: "Respecting the Remnants"
-	task.7EBA143F8E15B1E1.title: "Under Pressure"
-	task.7EE2B62C5B9CC678.title: "Revaulting"
-	task.7F0AB6E8AFDCD6D9.title: "What's This?"
-	task.7F744BD184B28286.title: "Boioioing!"
-	quest.4A1E00000000000B.quest_desc: ["Get a Tentacle Rig: four Tentacles on a Backtank"]
-	quest.4A1E00000000000B.title: "Doc's Rig"
 	quest.5A1B000000000000.quest_desc: ["Obtain an Acacia Blossom from breaking Acacia Leaves"]
 	quest.5A1B000000000000.title: "Flowers of the Savanna"
 	quest.5A1B000000000001.quest_desc: ["Encounter an Alligator Snapping Turtle"]
@@ -1863,59 +1352,1053 @@
 	quest.5A1B000000000068.title: "A Soul for a Soul"
 	quest.5A1B000000000069.quest_desc: ["Slay the Warped Mosco, the swole defender of the Warped Forest."]
 	quest.5A1B000000000069.title: "Destroyer of Chads"
-	quest.4A1E00000000000F.quest_desc: [
-		"Obtain all three Tentacle Rig enchantment books."
+	quest.5A2986EC81D2EC93.quest_desc: ["Mine Uranium Ore"]
+	quest.5A2986EC81D2EC93.title: "Uranium Fever"
+	quest.5A2D8E4C90B31775.quest_desc: [
+		"Некоторые заклинания Маледиктуса нельзя сразу скрафтить в виде свитка на Кузне Свитков — игра пишет, что заклинание нужно сначала изучить."
 		""
-		"&6Far Reach&r: longer tentacles, the rig can grab, hang and climb from a greater distance."
-		"&6Swift&r: the rig carries you faster, raising speed and top speed."
-		"&6Thrift&r: the rig uses less air while holding, moving and climbing."
+		"На самом деле ничего изучать не нужно: достаточно, чтобы в инвентаре (не обязательно в руке) лежал &bПроклятый слиток&r — тогда крафт свитка разблокируется."
+		""
+		"Как получить Проклятый слиток:"
+		"&e-&r Убить босса &bМаледиктуса&r — гарантированно выпадает 3-4 слитка"
+		"&e-&r Крафта из других предметов нет, только дроп с босса"
 	]
-	quest.4A1E00000000000F.title: "Doc's Books"
+	quest.5A2D8E4C90B31775.title: "Разблокировка свитков Маледиктуса"
+	quest.5A8D06E26E900F6D.quest_desc: ["Watch a fluid-containing item be emptied by an Item Drain"]
+	quest.5A8D06E26E900F6D.title: "Tumble Draining"
+	quest.5AFC46AEE66A456A.quest_desc: ["Enter acid while wearing armor, which will recieve the majority of the damage instead"]
+	quest.5AFC46AEE66A456A.title: "Bath Bomb"
+	quest.5B30E4A215D7067D.quest_desc: ["Craft 8 Nuclear Furnace Components, which can be placed in a cube to create a Nuclear Furnace"]
+	quest.5B30E4A215D7067D.title: "3.6 Roentgen"
+	quest.5B47BABA33892BED.quest_desc: ["Claim an Echo Key from a Deepslate Spawner."]
+	quest.5B47BABA33892BED.title: "Unlocking the Deep"
+	quest.5B5845FF4938681A.quest_desc: ["Obtain some Andesite Alloy, Create's most important resource"]
+	quest.5B5845FF4938681A.title: "Sturdier Rocks"
+	quest.5B6E18941C28F3F7.quest_desc: [
+		"A Chaos Component is found in tombstone chests."
+		""
+		"Emptying it gives 250 mB of liquid chaos; filling it with 250 mB of liquid chaos (Create) refills it."
+	]
+	quest.5BAA37B0E894D027.quest_desc: ["Defeat the Fractured Apostle"]
+	quest.5BAA37B0E894D027.title: "Mage Class Detected"
+	quest.5BBE3712155587A3.quest_desc: ["Make the text of any kind of sign glow"]
+	quest.5BBE3712155587A3.title: "Glow and Behold!"
+	quest.5BCAD9B245BDC199.quest_desc: ["Using a Heart of the Sea, craft a Soulspring Lamp, a vital tool against the Nether's inferno"]
+	quest.5BCAD9B245BDC199.title: "Soul of the Sea"
+	quest.5BCC2FD6FAD650A2.quest_desc: ["Use a Printer to change a package's address"]
+	quest.5BCC2FD6FAD650A2.title: "Supply Chain Refactor"
+	quest.5BED2CF3DFC8DF07.quest_desc: ["Craft a Rift Drive Mk II."]
+	quest.5BED2CF3DFC8DF07.title: "Somewhere Else"
+	quest.5C0DBC0E15637EBB.quest_desc: [
+		"Acquire diamonds"
+		""
+		"{image:icons:textures/advancement/story/mine_diamond.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.5C0DBC0E15637EBB.title: "Diamonds!"
+	quest.5C213CE26EB26F99.quest_desc: [
+		"Use a Hand Crank until fully exhausted"
+		"&7(Hidden Advancement)"
+	]
+	quest.5C213CE26EB26F99.title: "Workout Session"
+	quest.5C3A9E17B2D40F86.quest_desc: [
+		"Craft an Empty Fan Catalyst from brass ingots and iron bars."
+		""
+		"&e-&r The base for fan catalysts: with it an encased fan can process items, not just move air"
+	]
+	quest.5C3A9E17B2D40F86.title: "Catalyst"
+	quest.5CD2E3A50D00C817.quest_desc: ["Kill an Ender Golem"]
+	quest.5CD2E3A50D00C817.title: "Palette Swap"
+	quest.5CDE580FB901A3BB.quest_desc: ["Make the Meadows come alive with the sound of music from a Jukebox"]
+	quest.5CDE580FB901A3BB.title: "Sound of Music"
+	quest.5D238A7490E7A08F.quest_desc: ["A lead-lined suit shields gamma rays as well, but each piece slows you down. Wear it near a running reactor."]
+	quest.5D238A7490E7A08F.title: "Lead Lined"
+	quest.5D752704D509297F.quest_desc: ["Find an upgraded Monster Room"]
+	quest.5D752704D509297F.title: "Quite the Renovation"
+	quest.5DA43C69F8B33C3A.quest_desc: ["Rip open Glutton Fish Stomach"]
+	quest.5DA43C69F8B33C3A.title: "Disgusting Lootbox"
+	quest.5E75F6B1CC94EB9F.quest_desc: ["Use a Campfire to collect Honey from a Beehive using a Glass Bottle without aggravating the Bees"]
+	quest.5E75F6B1CC94EB9F.title: "Bee Our Guest"
+	quest.5E85E6B5E5AB3350.quest_desc: ["Enchant an unenchanted item using a Blaze Enchanter"]
+	quest.5E85E6B5E5AB3350.title: "Blazing Enchantment"
+	quest.5F7A3D7A073E9174.quest_desc: ["Sleep in a Bed to change your respawn point"]
+	quest.5F7A3D7A073E9174.title: "Sweet Dreams"
+	quest.5FA92E75A8114046.title: "Полный сет брони Криоманта"
+	quest.5FBC0EFBD930F744.quest_desc: ["Stand next to a sea of lava"]
+	quest.5FBC0EFBD930F744.title: "The Pit of Fire"
+	quest.5FBD5E7ACC865D74.quest_desc: ["Craft a Phantom Bomb"]
+	quest.5FBD5E7ACC865D74.title: "Double Bang"
+	quest.5FBDE7F12491251A.quest_desc: [
+		"Run a red Train Signal"
+		"&7(Hidden Advancement)"
+	]
+	quest.5FBDE7F12491251A.title: "Expert Driver"
+	quest.600A8BD306C8B4C3.quest_desc: [
+		"You should NOT have let this happen!!!"
+		"&7(Hidden Advancement)"
+	]
+	quest.600A8BD306C8B4C3.title: "OSHA Violation"
+	quest.60DFE55157B05BA8.quest_desc: ["Defeat a Nucleeper before it erupts into an atomic fireball"]
+	quest.60DFE55157B05BA8.title: "Crisis Adverted"
+	quest.60FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
+	quest.610E415F6C956CA5.quest_desc: ["Locate The Collapsed Kingdom"]
+	quest.610E415F6C956CA5.title: "The Echo Of Past Battle"
+	quest.61753C8DF0C85958.quest_desc: ["Tame a Raycat by feeding it Radgill. It can help keep you radiation-free!"]
+	quest.61753C8DF0C85958.title: "The Ray Cat Solution"
+	quest.61FA3B6C8D2E4F51.title: "Незеритовая Броня Боевого Мага"
+	quest.623790036303EE97.quest_desc: ["Set yourself on fire to prevent freezing to death"]
+	quest.623790036303EE97.title: "Desperate Measures"
+	quest.624D2E0C989A1A89.quest_desc: ["Put a Cloud in a Bottle"]
+	quest.624D2E0C989A1A89.title: "Cloud Storage"
+	quest.6261E8152CAF9716.quest_desc: ["Dissolve yellowcake in nitric acid in a heated Mixer. The uranyl nitrate solution is not a dust any more, so it does not irradiate you while it stays in tanks, pipes and bottles. If it leaks, it contaminates the ground!"]
+	quest.6261E8152CAF9716.title: "Safe in Solution"
+	quest.62A2C557CE2E083C.quest_desc: ["Step inside the Ancient Keep."]
+	quest.62A2C557CE2E083C.title: "Breaching the Keep"
+	quest.62E099C44C866A43.quest_desc: [
+		"The end of the Chaos branch: the Eye of True Corruption."
+		""
+		"It is built on a Create assembly line from an Eye of Ender, in this order:"
+		"&e-&r Orb of the Summoner"
+		"&e-&r Liquid Chaos (500 mB)"
+		"&e-&r Darkened Apple"
+		"&e-&r Fel Soil"
+		"&e-&r Blood (500 mB)"
+		"&e-&r Dark Atrium"
+		""
+		"You also need the two eyes from \"The Way to the End\"."
+	]
+	quest.62F685EA316A18A1.quest_desc: ["Power a Laser Pointer. Please do not stare directly into the Laser Pointer"]
+	quest.62F685EA316A18A1.title: "Big Beam"
+	quest.633C76656771FEA3.quest_desc: ["Obtain Rail Grinding Boots with a special speedster's likeness"]
+	quest.633C76656771FEA3.title: "Rollin' at the Speed of Sound"
+	quest.6348A8DB9ED8109D.quest_desc: ["Discover the &bEldritch spells&r"]
+	quest.63D8235E891DEAA0.quest_desc: [
+		"Witness a Train crash as a passenger"
+		"&7(Hidden Advancement)"
+	]
+	quest.63D8235E891DEAA0.title: "Terrible Service"
+	quest.6411FA644D35DB41.quest_desc: [
+		"Deflect a projectile with a Shield"
+		""
+		"{image:icons:textures/advancement/story/deflect_arrow.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.6411FA644D35DB41.title: "Not Today, Thank You"
+	quest.641B5A9906119357.quest_desc: ["Transport some items by Chute"]
+	quest.641B5A9906119357.title: "Vertical Logistics"
+	quest.646DA90612BBEB83.quest_desc: ["Obtain 1,000,000 mB of Liquid Experience from Mechanical Grindstones"]
+	quest.646DA90612BBEB83.title: "Experienced Recycler"
+	quest.648CE59E6190FD83.quest_desc: ["How is this possible? Enchantment level caps don't exist?"]
+	quest.648CE59E6190FD83.title: "Transcendent Overclock"
+	quest.6498573A67879AA3.quest_desc: [
+		"Get a full suit of Netherite armor"
+		""
+		"{image:icons:textures/advancement/nether/netherite_armor.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.6498573A67879AA3.title: "Cover Me in Debris"
+	quest.649E33ACBD702D05.quest_desc: ["Obtain and place an Optical Sensor to show you what's right there"]
+	quest.649E33ACBD702D05.title: "Nearsighted"
+	quest.64C05492E7369E1C.quest_desc: ["Obtain a Physics Assembler, the heart of every Simulated Contraption"]
+	quest.64C05492E7369E1C.title: "Applied Kinematics"
+	quest.651A2A5D337C8F19.quest_desc: ["Successfully defend a village from a raid"]
+	quest.651A2A5D337C8F19.title: "Hero of the Village"
+	quest.653BA7E8E21C93E2.quest_desc: ["Locate an Illager Manor"]
+	quest.653BA7E8E21C93E2.title: "Mind Your Manors"
+	quest.657E0A86A5449DE3.quest_desc: ["Craft Eternal Candy"]
+	quest.657E0A86A5449DE3.title: "Your satiety will be Eternal!"
+	quest.65A2F416F41C225E.quest_desc: ["Fuel the soulspring lamp by clicking it with fuel in your inventory"]
+	quest.65A2F416F41C225E.title: "Borrowed Time"
+	quest.65A702192EC1E344.quest_desc: ["Kill the Missioner: it drops charms and the missionary hat."]
+	quest.65A702192EC1E344.title: "Dark Creator"
+	quest.65DFE7A4719662B0.quest_desc: ["Aproach an Pillager Outpost"]
+	quest.65DFE7A4719662B0.title: "Intruder Alert"
+	quest.65EE68CFA20771A4.quest_desc: [
+		"advancements.nether.create_beacon.description"
+		""
+		"{image:icons:textures/advancement/nether/create_beacon.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.65EE68CFA20771A4.title: "advancements.nether.create_beacon.title"
+	quest.65FD649AE123511F.quest_desc: ["Aproach the toxic lair"]
+	quest.65FD649AE123511F.title: "Poison Swamp Enjoyer Rejoice"
+	quest.66180493CD96ED8E.quest_desc: ["Kill a Phantom using a Mounted Potato Cannon"]
+	quest.66180493CD96ED8E.title: "Ghostbuster"
+	quest.662DB3879A398EA1.quest_desc: ["Place and power a Mechanical Pump"]
+	quest.662DB3879A398EA1.title: "Under Pressure"
+	quest.6698014EFB68FEFD.quest_desc: ["Take a vehicle through a Rift Gate. Both ends have to be wide enough for it"]
+	quest.6698014EFB68FEFD.title: "Freight Forward"
+	quest.66FB06F86A95B6DE.quest_desc: ["Attempt to take a dive in lava with your netherite diving gear"]
+	quest.66FB06F86A95B6DE.title: "Swimming with the Striders"
+	quest.670B34F382064BD5.quest_desc: ["Levitate up 50 blocks from the attacks of a Shulker"]
+	quest.670B34F382064BD5.title: "Great View From Up Here"
+	quest.671E237C9A65B145.quest_desc: ["Get a five-kill streak with the Great Reaper Ax in a short period of time"]
+	quest.671E237C9A65B145.title: "RAMPAGE!"
+	quest.6755F6BC66F721A7.quest_desc: ["Protect yourself with a full set of Warden Armor"]
+	quest.6755F6BC66F721A7.title: "Cover Me with Sculk"
+	quest.67A8AE67CB4309E8.quest_desc: ["Plant a seed and watch it grow"]
+	quest.67A8AE67CB4309E8.title: "A Seedy Place"
+	quest.67E20C8BC1459495.quest_desc: ["Watch your Mechanical Arm transport its first item"]
+	quest.67E20C8BC1459495.title: "Busy Hands"
+	quest.67EE1635BDFA21A4.quest_desc: ["Conquer a Badlands Miner Outpost"]
+	quest.67EE1635BDFA21A4.title: "Miner Inconvenience"
+	quest.67F2DF4244DE4C6F.quest_desc: ["Sneak near a Sculk Sensor or Warden to prevent it from detecting you"]
+	quest.67F2DF4244DE4C6F.title: "Sneak 100"
+	quest.680F9F4EEB370555.quest_desc: [
+		"Break a Fluid Pipe and bathe in the leaked experience"
+		"&7(Hidden Advancement)"
+	]
+	quest.680F9F4EEB370555.title: "A Shower \"Experience\""
+	quest.683FF421BFACCE9F.quest_desc: ["Watch a Torsion Spring unwind to its original position"]
+	quest.683FF421BFACCE9F.title: "Rewind Time"
+	quest.6841CEC088594585.quest_desc: ["Operate a pair of Crushing Wheels at maximum speed"]
+	quest.6841CEC088594585.title: "Crushing It"
+	quest.68585662233756DD.quest_desc: ["Successfully align and connect two Docking Connectors"]
+	quest.68585662233756DD.title: "A Calculated Connection"
+	quest.685C524E44006655.quest_desc: [
+		"Construct a better Pickaxe"
+		""
+		"{image:icons:textures/advancement/story/upgrade_tools.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.685C524E44006655.title: "Getting an Upgrade"
+	quest.6866C9553CCFF21F.quest_desc: [
+		"Crash into another Train while driving backwards"
+		"&7(Hidden Advancement)"
+	]
+	quest.6866C9553CCFF21F.title: "Blind Spot"
+	quest.687B8D941879B36A.quest_desc: ["Discover a Spider Cave"]
+	quest.687B8D941879B36A.title: "Cobweb Entanglement"
+	quest.687E25CA0A853B1C.quest_desc: ["Obtain some Nuggets of Experience"]
+	quest.687E25CA0A853B1C.title: "Experienced Engineer"
+	quest.68B56516E7793475.quest_desc: ["Defeat the Haunted Guard"]
+	quest.68B56516E7793475.title: "A Lost Guard"
+	quest.692BAE4F20C4A08B.quest_desc: ["Craft a Plunger Launcher"]
+	quest.692BAE4F20C4A08B.title: "Stuck Together"
+	quest.69330C094A44679D.title: "Магическая ткань"
+	quest.694E5EFAF89FC43C.quest_desc: [
+		"Fill a bucket with lava"
+		""
+		"{image:icons:textures/advancement/story/lava_bucket.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.694E5EFAF89FC43C.title: "Hot Stuff"
+	quest.6958ECEC2F6849E8.quest_desc: ["Grab on to a Handle"]
+	quest.6958ECEC2F6849E8.title: "Get a Grip!"
+	quest.6A2AEEF527A6ED38.quest_desc: ["Fill an airtight Envelope structure with hot air"]
+	quest.6A2AEEF527A6ED38.title: "Head in the Clouds"
+	quest.6A2E2636D47ABFA2.quest_desc: ["Feed a Snifflet"]
+	quest.6A2E2636D47ABFA2.title: "Little Sniffs"
+	quest.6A675805832339DB.quest_desc: ["Collect all types of Charms in your inventory"]
+	quest.6A675805832339DB.title: "Charm Collector"
+	quest.6A6B6BFECEDC2E1C.quest_desc: ["Craft a Geiger Counter and hold it. It clicks faster the more radiation there is and shows the dose rate in microsievert per second. Radiation gets weaker with the square of the distance."]
+	quest.6A6B6BFECEDC2E1C.title: "Click Click Click"
+	quest.6AF03C8358A3D36E.quest_desc: ["Obtain a bucket of molten chocolate"]
+	quest.6AF03C8358A3D36E.title: "A World of Imagination"
+	quest.6B22B0EA18978627.quest_desc: ["Amass some Copper Ingots for your exploits in fluid manipulation"]
+	quest.6B22B0EA18978627.title: "Cuprum Bokum"
+	quest.6B395F6B9A89F23F.quest_desc: ["Acquire a Sculk Transmitter"]
+	quest.6B395F6B9A89F23F.title: "Remote Storage"
+	quest.6BBBFDB83B71B0A8.quest_desc: [
+		"Have every potion effect applied at the same time"
+		""
+		"{image:icons:textures/advancement/nether/all_potions.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.6BBBFDB83B71B0A8.title: "A Furious Cocktail"
+	quest.6C20BD34910F3C97.quest_desc: ["Defeat an enemy with your Potato Cannon"]
+	quest.6C20BD34910F3C97.title: "Fwoomp!"
+	quest.6CA1B8751B327515.quest_desc: ["Employ a mob at your stock ticker and make your first requests"]
+	quest.6CA1B8751B327515.title: "Order Up!"
+	quest.6CB3277C659FF86D.quest_desc: ["Walk on Powder Snow... without sinking in it"]
+	quest.6CB3277C659FF86D.title: "Light as a Rabbit"
+	quest.6CF34A193A79309C.quest_desc: [
+		"Make two Belt-mounted Funnels kiss"
+		"&7(Hidden Advancement)"
+	]
+	quest.6CF34A193A79309C.title: "The Parrots and the Flaps"
+	quest.6D2EE8FF9E748DEE.title: "Броня Волшебника"
+	quest.6DCB0E80BA3B17E1.quest_desc: ["Use pipes to pull honey from a Bee Nest or Beehive"]
+	quest.6DCB0E80BA3B17E1.title: "Autonomous Bee-Keeping"
+	quest.6DE9E3AB57355B0B.quest_desc: [
+		"Break a very long fall by grabbing on to a Handle"
+		"&7(Hidden Advancement)"
+	]
+	quest.6DE9E3AB57355B0B.title: "Got a Grip!"
+	quest.6E1225AFDCE82C3D.quest_desc: ["Look at a Ghast through a Spyglass"]
+	quest.6E1225AFDCE82C3D.title: "Is It a Balloon?"
+	quest.6E8D4913FE2BCE82.quest_desc: ["Place and power a set of Crushing Wheels"]
+	quest.6E8D4913FE2BCE82.title: "Wheels of Destruction"
+	quest.6EA60E59F470308D.quest_desc: ["Sneak up to a Stoneling underground and break its shell to get its Heart"]
+	quest.6EA60E59F470308D.title: "Shape of My Heart"
+	quest.6EFF0669900D5E13.quest_desc: ["Look at a Parrot through a Spyglass"]
+	quest.6EFF0669900D5E13.title: "Is It a Bird?"
+	quest.6F23ED44D9D0B816.quest_desc: ["Trade with a Tavern Cartographer to gain access to a quest map"]
+	quest.6F23ED44D9D0B816.title: "Call for Adventure"
+	quest.6F2508600BF06E1A.quest_desc: ["Activate a Steam Whistle"]
+	quest.6F2508600BF06E1A.title: "Voice of an Angel"
+	quest.6F260F401B562213.quest_desc: ["Find the Burning Arena"]
+	quest.6F260F401B562213.title: "A Massive Arena"
+	quest.6F6A45DCB2B80867.quest_desc: ["Look at the Ender Dragon through a Spyglass"]
+	quest.6F6A45DCB2B80867.title: "Is It a Plane?"
+	quest.6F7BEDC559E2E079.quest_desc: ["Unlock an Ominous Vault with an Ominous Trial Key"]
+	quest.6F7BEDC559E2E079.title: "Revaulting"
+	quest.6F7C6CE362448397.quest_desc: ["Grab and spin a Steering Wheel"]
+	quest.6F7C6CE362448397.title: "Unpowered Steering"
+	quest.6F91BFB75C5332D3.quest_desc: ["Use a Netherite Ingot to upgrade a Hoe, and then reevaluate your life choices"]
+	quest.6F91BFB75C5332D3.title: "Serious Dedication"
+	quest.7088504AE84BF982.quest_desc: ["Step foot in a Trial Chamber"]
+	quest.7088504AE84BF982.title: "Minecraft: Trial(s) Edition"
+	quest.70AF19A207C55230.quest_desc: [
+		"Watch two fluids meet in your pipe network"
+		"&7(Hidden Advancement)"
+	]
+	quest.70AF19A207C55230.title: "Don't Cross the Streams!"
+	quest.70F7968156C9F287.quest_desc: ["Defeat the Fractured"]
+	quest.70F7968156C9F287.title: "No Body, Yet Still Alive"
+	quest.71958B32E10B935D.quest_desc: [
+		"Loot a Chest in a Bastion Remnant"
+		""
+		"{image:icons:textures/advancement/nether/loot_bastion.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.71958B32E10B935D.title: "War Pigs"
+	quest.71E630A7002C686D.title: "Первый Гримуар"
+	quest.71F9F93392EE45A5.quest_desc: ["Use a Mechanical Press and a Basin to create fewer items from more"]
+	quest.71F9F93392EE45A5.title: "Compactification"
+	quest.7271BBFD0F548F21.title: "Книга на 16 заклинаний"
+	quest.72E188EBD6F3A789.quest_desc: ["Take a deep breath and enter the Trident Trial Monument"]
+	quest.72E188EBD6F3A789.title: "Breathtaking"
+	quest.72F522AF6B60F6A7.quest_desc: ["Defeat the Last of Deepslate, guardian of the Ancient Keep."]
+	quest.72F522AF6B60F6A7.title: "The Last of Deepslate"
+	quest.732CCC07E40D9FFC.quest_desc: ["Place down a Sequenced Pulse Generator"]
+	quest.732CCC07E40D9FFC.title: "Computational Supremacy"
+	quest.735B34B1E326D1D1.quest_desc: ["Surround the reactor with concrete or lead blocks into a sealed dome with a floor on solid ground. If the primary circuit ruptures or hydrogen explodes, the dome keeps the release inside. The control desk shows the containment pressure."]
+	quest.735B34B1E326D1D1.title: "Containment"
+	quest.736BC05CAD30DC71.quest_desc: ["Spin a globe at ludicrous speed"]
+	quest.736BC05CAD30DC71.title: "You Spin Me Right Round Baby"
+	quest.739DD892CA35C2E5.quest_desc: ["Defeat the Ambusher"]
+	quest.739DD892CA35C2E5.title: "An Imposter"
+	quest.73D77DE7AA8D6D1D.quest_desc: [
+		"Rescue a Ghast from the Nether, bring it safely home to the Overworld... and then kill it"
+		""
+		"{image:icons:textures/advancement/nether/uneasy_alliance.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.73D77DE7AA8D6D1D.title: "Uneasy Alliance"
+	quest.73DF12CCCAE63A2F.quest_desc: ["Defuse a Nuclear Bomb using shears"]
+	quest.73DF12CCCAE63A2F.title: "Cut the Red Wire"
+	quest.740A502BACAFC579.quest_desc: ["Find a place that's too hot or cold to survive"]
+	quest.740A502BACAFC579.title: "Inhospitable"
+	quest.742DF9E687B620B4.quest_desc: ["Watch an enchanted item be disenchanted by a Mechanical Grindstone"]
+	quest.742DF9E687B620B4.title: "Gone with the Foil"
+	quest.74CC3D4F64DA5F5D.quest_desc: ["Build a graphite-moderated channel reactor. Keep your operational reactivity margin."]
+	quest.74CC3D4F64DA5F5D.title: "RBMK-1000"
+	quest.74DCCF5EA5D83D94.quest_desc: ["Tame all Cat variants!"]
+	quest.74DCCF5EA5D83D94.title: "A Complete Catalogue"
+	quest.74F40AA97D0361C6.quest_desc: ["Mine a wild Oretoise with a Pickaxe"]
+	quest.74F40AA97D0361C6.title: "Mine Turtle!"
+	quest.756D46E781A9A16E.quest_desc: ["Craft the Bonescaller Staff"]
+	quest.756D46E781A9A16E.title: "Compact Necromancy"
+	quest.77600624B5135EF5.quest_desc: [
+		"Keep a network running at speed with a powered brake attached"
+		"&7(Hidden Advancement)"
+	]
+	quest.77600624B5135EF5.title: "Overpowered"
+	quest.77BCF851B6FA5874.quest_desc: ["Hatch a Tremorzilla Egg using nuclear hellfire"]
+	quest.77BCF851B6FA5874.title: "The Folly of Man"
+	quest.78535F1B201B5FB4.quest_desc: ["Upgrade a potion of luck with a rabbit's foot"]
+	quest.78535F1B201B5FB4.title: "Gladstone Gander"
+	quest.78624CBBF49E6867.quest_desc: ["Create a Contraption with drills, saws, or harvesters on board"]
+	quest.78624CBBF49E6867.title: "Moving with Purpose"
+	quest.7885722AE51B2D69.quest_desc: ["Defeat The Flame Drifter"]
+	quest.7885722AE51B2D69.title: "Professional Drifter"
+	quest.789D2AE86B0A4B6C.quest_desc: ["Defeat the Skeletosaurus"]
+	quest.789D2AE86B0A4B6C.title: "The Ancient Skeleton"
+	quest.7908B0258AAEA431.quest_desc: ["Lead developer: Nova Wostra. Developers: Walls, Whity and Konci. Contributors: badooga and хлифи"]
+	quest.7908B0258AAEA431.title: "Welcome to Dungeons and Taverns"
+	quest.798000843668E628.quest_desc: ["Leave a Train Seat over 5000 blocks away from where you started travelling"]
+	quest.798000843668E628.title: "Field Trip"
+	quest.7996CEDAFBCAD12B.quest_desc: ["Run a boiler at the maximum level of power"]
+	quest.7996CEDAFBCAD12B.title: "Full Steam"
+	quest.79B9E561A53A0BEA.quest_desc: ["Copy an Enchanted Book using a Printer"]
+	quest.79B9E561A53A0BEA.title: "Copiable Mystery"
+	quest.79C04E52F8349C54.quest_desc: ["Find the End Lighthouse"]
+	quest.79C04E52F8349C54.title: "The Light at the End of the Game"
+	quest.7A0C6D5146048701.quest_desc: ["Go on in, what could happen?"]
+	quest.7A0C6D5146048701.title: "The City at the End of the Game"
+	quest.7A2FC9A09A1C2C5C.title: "Первый Гримуар"
+	quest.7A51B3B2A573BBF2.quest_desc: ["Tame an animal"]
+	quest.7A51B3B2A573BBF2.title: "Best Friends Forever"
+	quest.7A6B82ADD933B4E5.quest_desc: ["Kill a Corpse Fly with a Dark Warblade while under the effects of a stage 5 rampage."]
+	quest.7A6B82ADD933B4E5.title: "Excessive Fly Swatter"
+	quest.7B5E84195216EABC.quest_desc: ["Assemble a windmill of maximum strength"]
+	quest.7B5E84195216EABC.title: "A strong Breeze"
+	quest.7B8340684AAAA9E2.quest_desc: ["Feed the Thornshell Crab rotten flesh or rotten fish"]
+	quest.7B8340684AAAA9E2.title: "Waste Recycler"
+	quest.7BB0742EC33054C3.quest_desc: ["Acquire a Sonorous Staff"]
+	quest.7BB0742EC33054C3.title: "Noise Complaint"
+	quest.7BD7F6F0F68780B3.quest_desc: ["Have an Allay drop a Cake at a Note Block"]
+	quest.7BD7F6F0F68780B3.title: "Birthday Song"
+	quest.7BDBF98335610F74.quest_desc: ["Equip a full set of Spiny Shell Armor"]
+	quest.7BDBF98335610F74.title: "Shell Warrior"
+	quest.7BE56EE627078F90.quest_desc: ["Discover a Better Desert Temple"]
+	quest.7BE56EE627078F90.title: "An Ancient Tomb"
+	quest.7BFA21CEF4643392.quest_desc: [
+		"Ride a Strider with a Warped Fungus on a Stick"
+		""
+		"{image:icons:textures/advancement/nether/ride_strider.png width:100 height:100 align:center click_action:none:}"
+	]
+	quest.7BFA21CEF4643392.title: "This Boat Has Legs"
+	quest.7CBDE09894FDC02D.quest_desc: ["Breed two animals together"]
+	quest.7CBDE09894FDC02D.title: "The Parrots and the Bats"
+	quest.7D3E0B072BB5B634.quest_desc: ["Free fall from the top of the world (build limit) to the bottom of the world and survive"]
+	quest.7D3E0B072BB5B634.title: "Caves & Cliffs"
+	quest.7D96B88F2D2858E6.quest_desc: ["Create a Copper Backtank and make it accumulate air pressure"]
+	quest.7D96B88F2D2858E6.title: "Pressure to Go"
+	quest.7D9A3C30F801437D.quest_desc: ["Craft Reactor Casing. It forms the sealed vessel of the reactor: floor, walls, roof and all edges. Casing, glass and graphite connect to each other visually."]
+	quest.7D9A3C30F801437D.title: "Pressure Vessel"
+	quest.7DA201123EF5D71A.quest_desc: [
+		"Watch a Mechanical Arm operate your Jukebox"
+		"&7(Hidden Advancement)"
+	]
+	quest.7DA201123EF5D71A.title: "DJ Mechanico"
+	quest.7DA28997C1305AA7.quest_desc: ["Kill Glutton Fish"]
+	quest.7DA28997C1305AA7.title: "Horror of the Depths"
+	quest.7DB8AAE3F019C8F5.quest_desc: ["Obtain a pair of Aviator's Goggles"]
+	quest.7DB8AAE3F019C8F5.title: "High Fashion"
+	quest.7DD7A8C84D1F9494.quest_desc: ["Create Brass Ingots by alloying Copper and Zinc Ingots in your Blaze-heated Mechanical Mixer"]
+	quest.7DD7A8C84D1F9494.title: "Real Alloys"
+	quest.7E0A6F35EA2B2284.quest_desc: ["Brush a Suspicious block to obtain a Pottery Sherd"]
+	quest.7E0A6F35EA2B2284.title: "Respecting the Remnants"
+	quest.7E724AFC3A5D91A5.quest_desc: ["Craft a Hazmat suit. It stops alpha and beta radiation and dust, but hardly any gamma. Each piece adds a quarter. Hazmat suits protect against uranium dust, not against a reactor core."]
+	quest.7E724AFC3A5D91A5.title: "Dress Code"
+	quest.7E9A02E0F1591CAB.quest_desc: ["Use a Portable Storage Interface to take or insert items into a Contraption"]
+	quest.7E9A02E0F1591CAB.title: "Drive-by Exchange"
+	quest.7FC92FA727F49E26.quest_desc: [
+		"Watch an item move across a row of Item Drains"
+		"&7(Hidden Advancement)"
+	]
+	quest.7FC92FA727F49E26.title: "On a Roll"
+	quest.7FFB554B6550FDD0.quest_desc: ["Escape the island"]
+	quest.7FFB554B6550FDD0.title: "Remote Getaway"
+	quest.8B208F5D636ECDAD.quest_desc: ["Summon and Defeat the Ignis"]
+	quest.8B208F5D636ECDAD.title: "The Extinguished Fire"
+	quest.92423C15B82B4997.quest_desc: ["Enter a Bastion Remnant"]
+	quest.92423C15B82B4997.title: "Those Were the Days"
+	quest.94950D12FBD58AA8.quest_desc: ["Take a Strider for a loooong ride on a lava lake in the Overworld"]
+	quest.94950D12FBD58AA8.title: "Feels Like Home"
+	quest.98452CF40B3CF746.quest_desc: ["Defeat the Warped Fungussus"]
+	quest.98452CF40B3CF746.title: "It's Teleporting!"
+	quest.9F6613D695296FCE.quest_desc: ["Destroy a Ghast with a fireball"]
+	quest.9F6613D695296FCE.title: "Return to Sender"
+	quest.A00070C263A95297.quest_desc: ["Get a full suit of Netherite armor"]
+	quest.A00070C263A95297.title: "Cover Me in Debris"
+	quest.AC7213039F455F1C.quest_desc: ["You have reached the summit of Cataclysm!"]
+	quest.AC7213039F455F1C.title: "The Cataclysmfarer"
+	quest.AD225F813222F881.quest_desc: ["Use the Nether to travel 7 km in the Overworld"]
+	quest.AD225F813222F881.title: "Subspace Bubble"
+	quest.AF52A99505145FA5.quest_desc: ["Find the Burning Arena"]
+	quest.AF52A99505145FA5.title: "A Massive Arena"
+	quest.B1CDD85515394011.quest_desc: ["Rescue a Ghast from the Nether, bring it safely home to the Overworld... and then kill it"]
+	quest.B1CDD85515394011.title: "Uneasy Alliance"
+	quest.C43ECA2124EEA118.quest_desc: ["Brew a Potion"]
+	quest.C43ECA2124EEA118.title: "Local Brewery"
+	quest.D10798BE1272C9F4.quest_desc: ["Break your way into a Nether Fortress"]
+	quest.D10798BE1272C9F4.title: "A Terrible Fortress"
+	quest.D3FD0972EE1B719E.quest_desc: ["New Challenges in the Nether!"]
+	quest.D3FD0972EE1B719E.title: "Legendary Monsters: Nether"
+	quest.EB9CB058A22279CD.quest_desc: ["Find The Lava Eater's Nest"]
+	quest.EB9CB058A22279CD.title: "A Voltanic Place"
+	quest.ECC9238EB0840072.quest_desc: ["Have every potion effect applied at the same time"]
+	quest.ECC9238EB0840072.title: "A Furious Cocktail"
+	quest.F10929C45D112F05.quest_desc: ["Relieve a Blaze of its rod"]
+	quest.F10929C45D112F05.title: "Into Fire"
+	quest.F510ABD4A79559F7.quest_desc: ["Find the Ruined Citadel"]
+	quest.F510ABD4A79559F7.title: "Another Stronghold?!"
+	task.0085B9C6FF41B945.title: "Engineer Gaming"
+	task.00EA18F36C74510E.title: "TATAMI GAESHI!"
+	task.00FA986FAD97C9A2.title: "Can We Get Much Higher?"
+	task.015DF41B9350611A.title: "Paradox Fusion"
+	task.01ACCEFC55094E8C.title: "Disgusting Lootbox"
+	task.01C4CF9DDBDF6375.title: "Heavier Artillery"
+	task.021D47DFDA0901E3.title: "Against The Gods"
+	task.02B4FF8009619034.title: "Autonomous Bee-Keeping"
+	task.02F0F543C430F4FF.title: "The Chorus Infection"
+	task.031A28ADBC2FAE2D.title: "Good as New"
+	task.039FA96B782DC715.title: "Trouble is Brewing"
+	task.03D6AD46374C7CB3.title: "Little Sniffs"
+	task.04517E9198DED5DA.title: "I Paid for the Whole Typewriter"
+	task.0467A00A3EF7F902.title: "You've Got a Friend in Me"
+	task.05236718C20D8FCD.title: "High Logistics"
+	task.054390CEF70D4264.title: "Full Steam"
+	task.059A93A1E6C05EEE.title: "Remote Activation"
+	task.05E49375DFE987F2.title: "DJ Mechanico"
+	task.0609C6FCB3EBB0F0.title: "A Balanced Diet"
+	task.068940BF39799591.title: "Is It a Plane?"
+	task.06E4342AC878A120.title: "I Am Become Death"
+	task.07C6D98963619CB1.title: "A Bone to Pick"
+	task.0885E77230F671EE.title: "Below the Bedrock"
+	task.0886349260CDE1F2.title: "Hide And Seek"
+	task.0908920AB53B186E.title: "Going Critical"
+	task.094E5CFA3807CA73.title: "Ready for the Depths"
+	task.09F9FFFAC15F9A3C.title: "Experienced Recycler"
+	task.0A2F65F1155D4ACB.title: "Vertical Logistics"
+	task.0A6F8883E81D6EA0.title: "How Did We Get Here?"
+	task.0ABB830EFCFA3176.title: "Flame Of The End"
+	task.0AFA45EF7E1064F4.title: "Sigil Forging"
+	task.0B16AEEB3F77CF3C.title: "A Metropolis of Restless Souls"
+	task.0C0863B82F416010.title: "Just the Parrots"
+	task.0C3606087A2F8663.title: "Birthday Song"
+	task.0CB20A2B57EB2AC8.title: "Mine Turtle!"
+	task.0CC46F5A5C81781D.title: "The Powerhouse"
+	task.0CF519BE39C54817.title: "Blazing Centurion"
+	task.0D56DDFE6DB342B1.title: "The Cutest Predator"
+	task.0D56EFFBBBD49F6B.title: "With Our Powers Combined!"
+	task.0D6D0AF0E274D169.title: "The Parrots and the Flaps"
+	task.0D717265A2F2F8CE.title: "Hero of the Village"
+	task.0DEC5B07A3AE52D3.title: "A Disgusting Worm"
+	task.0DF18A5253061122.title: "The Power of Books"
+	task.0DF233B81EECEBA9.title: "Hired Help"
+	task.0E7B55E280B5B7F0.title: "Crabtured"
+	task.0EA8493043635B04.title: "Head in the Clouds"
+	task.1049FD5E77975E24.title: "Best Friends Forever"
+	task.1070DCFC1726C88A.title: "Wind Maker"
+	task.111CD20BCC0B9725.title: "The Soul Fortress"
+	task.1140CF976B3825AE.title: "The End"
+	task.11C87FBD73C300C3.title: "Two Birds, One Arrow"
+	task.1275BB30CB511719.title: "Poison Swamp Enjoyer Rejoice"
+	task.13B42B2FAFE9EB29.title: "Infinite Loop"
+	task.13C5F19D2359BD64.title: "On a Roll"
+	task.13DEB67CC68F2B74.title: "Tapping the Mantle"
+	task.14992AAE93FBEDE0.title: "Moving with Purpose"
+	task.14FCE0608CEFA7FD.title: "An Imposter"
+	task.150611C82643708B.title: "Call for Adventure"
+	task.152236F1AD55AB8F.title: "Blowback"
+	task.1522A45EE74BE474.title: "Desperate Measures"
+	task.152ADB72417CC1D9.title: "Measure Once, Build Twice"
+	task.15793B9D76EC4FD9.title: "Dark Blacksmith"
+	task.15993641F400FA74.title: "Monster Hunter"
+	task.162A9DDEEF18249A.title: "Sound of Music"
+	task.16378A2EF2850D34.title: "It Spreads"
+	task.16DCDE8A3C39313D.title: "Traffic Control"
+	task.1713846C567BADD9.title: "Blazing Fusion"
+	task.177386548D0C3082.title: "Not Gonna Sugarcoat It"
+	task.177899E2977BF4B7.title: "Assembly Aesthetics"
+	task.1789316C003F926E.title: "Rope to Nowhere"
+	task.17AE5DADD6F58B75.title: "The One - Armed Monster"
+	task.17BFCA5492E24224.title: "The Folly of Man"
+	task.180A1CDC53F28FBE.title: "Shear Brilliance"
+	task.184A4E8E171D548A.title: "Dungeon Master"
+	task.188546382DA3670F.title: "THE OOOOOOOOZE"
+	task.18B61AC6A81BE5F5.title: "Smithing with Style"
+	task.19498D63338F16B6.title: "Call of the Void"
+	task.19672AE7A19002C2.title: "Pressure Vessel"
+	task.19CBD0530CECC79F.title: "Slowing Down A Bit..."
+	task.19D2CBD1A09486D6.title: "An Ancient Tomb"
+	task.1A399FCBCC090CEB.title: "The Big Red Button"
+	task.1A8DE172F729F469.title: "Fishy Business"
+	task.1AA55B596F652BBE.title: "A New Gauge"
+	task.1AAC18D6E685D946.title: "Emergency Stop"
+	task.1ADCD6ACB12EA8D3.title: "The Definition of \"Up\""
+	task.1B1397D382384CAE.title: "Hot Tourist Destinations"
+	task.1B4B7EC90F12CF00.title: "Gassed Up"
+	task.1B53B973B3ED0F65.title: "advancements.nether.create_beacon.title"
+	task.1B56E5A6CE372E70.title: "Workshop's Most Feared"
+	task.1B56F70C74375C56.title: "Deceived Hopes"
+	task.1B759BE5BA995B01.title: "Automated Assembly"
+	task.1B964743AF32C893.title: "Freight Forward"
+	task.1BC830FFACA11672.title: "The Copper Age"
+	task.1C019699EC49E674.title: "Sculk Slayer"
+	task.1C5CC90512DD6194.title: "Great Publisher"
+	task.1CB00FC21C7F731D.title: "Don't Cross the Streams!"
+	task.1CBB058AD91550D7.title: "Three Eyes on Every Fish"
+	task.1CCC546C5440E3F1.title: "advancements.nether.summon_wither.title"
+	task.1CF0DB24D2F863C3.title: "A Seedy Place"
+	task.1D0FE2311A1827EB.title: "Freshen Your Breath"
+	task.1E24868CE10BE9D9.title: "Yellowcake"
+	task.1E5BDF958B69565B.title: "3.6 Roentgen"
+	task.1E66709CBF99FF9C.title: "Potato, Potato"
+	task.1EAFB4A08B0B7F31.title: "Shape of My Heart"
+	task.1EE3B6D5B2C33EFF.title: "Living Armor"
+	task.1F011681F0BCD5AE.title: "My Eye!"
+	task.1F4FD9E0B4048D9A.title: "Jail of Cold"
+	task.1F8EC29785000639.title: "Nothing but net"
+	task.1FB958951274DC8D.title: "Bukkit Bukkit"
+	task.1FDD61211634F727.title: "Spiritual Return"
+	task.2026330BF442AC3A.title: "Organize-o-Tron"
+	task.204A12D0AA53BA1D.title: "Monsters Hunted"
+	task.208EAF2C8604182C.title: "Got a Grip!"
+	task.20B2802D708063FD.title: "There Is No Gravity Here!"
+	task.22335F75AFEBC50F.title: "Spied Eye"
+	task.223F9144E769CA8A.title: "Separative Work"
+	task.22968AA28E392A9F.title: "Bath Bomb"
+	task.22BEE89C143F8DDE.title: "Circuit Breaker"
+	task.2309465CA8A9CB7A.title: "Breeding Season"
+	task.23156F6A2D563E57.title: "Thataway!"
+	task.231D48061526CB0F.title: "Nearsighted"
+	task.232200749B3380A3.title: "Serious Organization"
+	task.23463C3AD7129AB4.title: "Shadow Sense"
+	task.23FA8F5A50E679D7.title: "Rust-eze!"
+	task.249300646DA05CFF.title: "Detoxing the Toxic Lair"
+	task.24B639D1FCA5322D.title: "Self-Driving Cart"
+	task.24D0FD4E9DA98C51.title: "Intruder Alert"
+	task.24E84F0B882D0EA4.title: "Voice of an Angel"
+	task.24EFAD12D01F5256.title: "Ol' Betsy"
+	task.25187981100D4372.title: "Road Kill"
+	task.2520940448E757BA.title: "A mild Breeze"
+	task.253CAA57171BD1BB.title: "No Body, Yet Still Alive"
+	task.25499AB99E6C87AB.title: "Shell Warrior"
+	task.2592D353620D7686.title: "Steamless Engine"
+	task.25D4BE9084345689.title: "Lead Lined"
+	task.25E2DFBAE3AB9FF9.title: "Get Lucky"
+	task.269E4A9014705629.title: "Cover Me in Debris"
+	task.269F668B91E2E4BC.title: "Sigil Casting"
+	task.26B124F596372E19.title: "Cursed Pyramid"
+	task.280A1EE661189457.title: "Blacksmith Artillery"
+	task.2837553FC13638AC.title: "Is It a Balloon?"
+	task.284DEC46F277991F.title: "The Parrots and the Bats"
+	task.28A6B20BCA005339.title: "Who Needs Rockets?"
+	task.28AC614432F6A597.title: "Voluntary Exile"
+	task.28AE3227EF8E2F70.title: "For Every Action..."
+	task.28DEAA93118CD1F4.title: "Blasting with Sonic Speed"
+	task.28EFFF091BEFF361.title: "Angry Birds"
+	task.29439290C6FBFB06.title: "What a Deal!"
+	task.29778D3D8B4A22EE.title: "Long live the king"
+	task.2A26F6A5510B31CB.title: "Oh Shiny"
+	task.2A91A1E6647BC148.title: "advancements.nether.charge_respawn_anchor.title"
+	task.2B024E0E65DDD9E4.title: "Swimming with the Striders"
+	task.2B077B8D65CE299A.title: "Breaching the Keep"
+	task.2B0B34737DDA63F1.title: "Bit Fruity"
+	task.2B36CD1C2A806E91.title: "Breathtaking"
+	task.2BDDE155B22DCB21.title: "Total Beelocation"
+	task.2C4CA80E5916BDB6.title: "Sniper Duel"
+	task.2CBA49B4C54ABFE6.title: "This Must be a Sign!"
+	task.2CEF6F305222EBA1.title: "A Complete Catalogue"
+	task.2D701FC342B187FB.title: "A Throwaway Joke"
+	task.2D74507D6705DAD0.title: "Brains and Brawn"
+	task.2D7A707EA36F5EDE.title: "Gone with the Foil"
+	task.2D96DEACA2B4DD9B.title: "First Steam"
+	task.2D9A3A0C96F4E76D.title: "You Spin Me Right Round"
+	task.2DA55CE98E379CAD.title: "Two by Two"
+	task.2E379EA841AFEBA1.title: "The City at the End of the Game"
+	task.2ED83E1A3937A883.title: "Feels Like Home"
+	task.2EEAA1CF96E24E7E.title: "Destroy All Monsters"
+	task.2F03E7914C0F87F1.title: "Not Today, Thank You"
+	task.2F7D314CAB1F0558.title: "Freezing Breeze"
+	task.2F99B81984CD6697.title: "The One Who Knocks"
+	task.30863802AE0113DA.title: "Lighten Up"
+	task.30A89671A008D828.title: "Whispers in the Ruins"
+	task.30EF22F23D179395.title: "This Boat Has Legs"
+	task.30F6B1FC4AFFB622.title: "Workout Session"
+	task.3115387262F34694.title: "Grind to Polish"
+	task.31292D271F1FBA3F.title: "Frozen Remnants"
+	task.316B0F3443C0B5E6.title: "Wax Off"
+	task.31EC4E793E48DDA6.title: "Fwoomp!"
+	task.31FD8A0E66A20F97.title: "Abyssal Descent"
+	task.322B995542CC39A9.title: "Overpowered"
+	task.3271D11C0C424658.title: "Speed is Key"
+	task.32722D20F5CCEF34.title: "Artificial Intelligence"
+	task.3330361719C017B5.title: "Spear of Ages"
+	task.34137FBFB8EC9ED6.title: "Open for business"
+	task.343CF3D42B4F1C4B.title: "Copiable Mystery"
+	task.345A5FB400C6541A.title: "Whole Lot of Shaking Going On"
+	task.34757E5F2956B4E2.title: "Exorcism"
+	task.34862CA4443E3165.title: "Hungry hoppers"
+	task.3499C7809A37AE99.title: "The Ancient Skeleton"
+	task.3511D95144E5DACA.title: "Keeping Count"
+	task.35B625AE7F1B77BB.title: "The Andesite Age"
+	task.35BD320458201D5C.title: "Is It a Bird?"
+	task.361CF9E54A7A73E7.title: "The Fort"
+	task.36477A0D2590F012.title: "Phantom Thief"
+	task.3650006B83ECFD27.title: "Combust-o-Tron"
+	task.365CF225A08970DD.title: "Любой свиток со заклинанием школы Лёд"
+	task.3742EFBE55515DF7.title: "Heavy Metal"
+	task.377A07BB0D3803BA.title: "Country Lode, Take Me Home"
+	task.37B2BCDB95D8ED28.title: "Crafters Crafting Crafters"
+	task.384AC71BB7C5CE8D.title: "Professional Drifter"
+	task.39915F3E5D95413C.title: "Palette Swap"
+	task.39AD000000000001.title: "Covered in Moss"
+	task.39B20EE03D1ABA52.title: "Death finds a Way"
+	task.3A9779127E928930.title: "I Declare Thee..."
+	task.3B01BBD64EF6F9F2.title: "Ambitious Endeavours"
+	task.3B056EAB7FCF772D.title: "Float f1"
+	task.3B334D177BEB8C72.title: "Shifting Gears"
+	task.3B4F3AF1E061FC7E.title: "Area of Connect"
+	task.3B5E68501702C196.title: "Veggie Fireworks"
+	task.3B745B683CDADA4C.title: "Field Trip"
+	task.3BA43462C4DBBC67.title: "When the Squad Hops into Town"
+	task.3C1C0C5190F4314F.title: "Sneak 100"
+	task.3C8AF0C385E9925C.title: "Thousand Runes"
+	task.3C96CF519763523F.title: "Take Aim"
+	task.3CC3943E4E2C1DC1.title: "Blazing Enchantment"
+	task.3D09C3EA4D9BC8CE.title: "The Beginning of the End"
+	task.3D52AC12EF2962A3.title: "Revive Me, I Have a Raygun"
+	task.3DA1225BC4576106.title: "Sculk Story"
+	task.3DB1469D996EE43B.title: "Airport Aesthetic"
+	task.3E5405E4C455431E.title: "Those Were the Days"
+	task.3EA7F7C13E24E355.title: "Road to Tomorrow"
+	task.3F275414B32B4976.title: "Going Nuclear"
+	task.3F5497E628E13A37.title: "Choo Choo!"
+	task.3F5CEC952D7B8C76.title: "Blossoming"
+	task.3F6C5FE94806206D.title: "Smelly Situation"
+	task.3FC991776378AB99.title: "We're Rich!"
+	task.3FDAB3A3B15B6660.title: "Crisis Adverted"
+	task.40186D6D2EFF6030.title: "Drive-by Exchange"
+	task.403B9CE132A10D51.title: "Bypassing the Expiration Date"
+	task.40772B5861D78CE8.title: "The Power Of Friendship"
+	task.409D9501121F6A35.title: "The Locomotive Age"
+	task.40AA6B252433285A.title: "Cloud Storage"
+	task.40B769F905BA4FF0.title: "Magma Wheel"
+	task.40D691801F6C017F.title: "Get a Grip!"
+	task.40D6FA8A914E5BE1.title: "The Brass Age"
+	task.4111789ADE068ED9.title: "Terrible Service"
+	task.41BA4D5A107F6015.title: "Dynamic Timetables"
+	task.41C54C9C0ED99C4D.title: "Amateur Archaeologist"
+	task.41E1B5B3C34EBE85.title: "Mind Your Manors"
+	task.422139E1DF2D9071.title: "Young Dreamer"
+	task.42E6843CC3B3DAD0.title: "My Head Is Back!"
+	task.43058BE796F00D6E.title: "Copiable Masterpiece"
+	task.43366B5D05A43016.title: "Industrial Spillage"
+	task.4349A15503C1584E.title: "advancements.nether.create_full_beacon.title"
+	task.43903274C0753099.title: "Extreme Gear"
+	task.43FE72629186E362.title: "...Must Come Up"
+	task.444305BC255728AE.title: "Gladstone Gander"
+	task.44977723E4D0F737.title: "Radiation Vibe"
+	task.45C2F1A205172858.title: "Paint The Town"
+	task.45CDC7DBADB2E9CC.title: "Desperate Measures"
+	task.464446F63A09A362.title: "Free the End"
+	task.46A6BD0428D655A5.title: "Excessive Fly Swatter"
+	task.4722AB1AAE340EE7.title: "Mr. Decoction"
+	task.47387E7E3A610795.title: "Click Click Click"
+	task.4782F1A7F95AE5E6.title: "Infernal Medicine"
+	task.47884B65E3C144E2.title: "The Healing Power of Friendship!"
+	task.47C671768DF7B044.title: "Spirit-Taking"
+	task.48267B8B1B3E471D.title: "Pressure to Go"
+	task.486C6916B21EB545.title: "Professional Dungeoneer"
+	task.488D366F2B7A4923.title: "Crushing It"
+	task.48AD007FE7702380.title: "Balanced Diet"
+	task.48C50AB4061B7C2A.title: "Omni-Enchanter"
+	task.4924A85B71EC1F19.title: "The Cold"
+	task.4990F7FF0819637E.title: "Crafting a New Look"
+	task.49A719588AE95555.title: "A strong Breeze"
+	task.49BCC41CBB964BB4.title: "Arbalistic"
 	task.4A1E00000000000C.title: "Book of Far Reach"
 	task.4A1E00000000000D.title: "Book of Swift"
 	task.4A1E00000000000E.title: "Book of Thrift"
-	quest.4A2E000000000001.quest_desc: ["Enter the Abyssal Chasm"]
-	quest.4A2E000000000001.title: "Beyond the Sea"
-	quest.4A2E000000000002.quest_desc: ["Capture any abyssal sea creature in a bucket"]
-	quest.4A2E000000000002.title: "Buckets of Joy"
-	quest.4A2E000000000003.quest_desc: ["Obtain Bioluminesscence from a Gossamer Worm"]
-	quest.4A2E000000000003.title: "Another Kind of Slime"
-	quest.4A2E000000000004.quest_desc: ["Craft a torch that works underwater"]
-	quest.4A2E000000000004.title: "Glow Sticks"
-	quest.4A2E000000000005.quest_desc: ["Craft a Floater, which can quickly return you to above the waves"]
-	quest.4A2E000000000005.title: "Surface or Bust"
-	quest.4A2E000000000006.quest_desc: ["Craft a Deep Sea Sushi Roll"]
-	quest.4A2E000000000006.title: "Pass the Wasabi"
-	quest.4A2E000000000007.quest_desc: ["Discover the Deepsight Effect by brewing a Deepsight Potion with a Lanternfish"]
-	quest.4A2E000000000007.title: "A Lighthouse in Your Eyes"
-	quest.4A2E000000000008.quest_desc: ["Obtain Marine Snow from feeding a Sea Pig, which can rejuvenate coral"]
-	quest.4A2E000000000008.title: "Catching Flakes"
-	quest.4A2E000000000009.quest_desc: ["Find the one place in the deep that seems to have air inside..."]
-	quest.4A2E000000000009.title: "Shell City"
-	quest.4A2E00000000000A.quest_desc: ["Slay a Mine Guardian"]
-	quest.4A2E00000000000A.title: "Those Aren't Balloons..."
-	quest.4A2E00000000000B.quest_desc: ["Obtain the entire set of Diving Armor from the Drowned in the deep"]
-	quest.4A2E00000000000B.title: "The Cyclops"
-	quest.4A2E00000000000C.quest_desc: ["Take a ride in a Submarine"]
-	quest.4A2E00000000000C.title: "Captain Nemo"
-	quest.4A2E00000000000D.quest_desc: ["Repair a Submarine using Copper Ingots"]
-	quest.4A2E00000000000D.title: "Buff Out Those Scratches"
-	quest.4A2E00000000000E.quest_desc: ["Break a Mussel"]
-	quest.4A2E00000000000E.title: "Bring Forth The Mollusk"
-	quest.4A2E00000000000F.quest_desc: ["Cook a Mussel in a furnace"]
-	quest.4A2E00000000000F.title: "Slurp Up"
-	quest.4A2E000000000010.quest_desc: ["Obtain a Pearl from breaking a Mussel"]
-	quest.4A2E000000000010.title: "Diamonds of the Sea"
-	quest.4A2E000000000011.quest_desc: ["See something you weren't supposed to..."]
-	quest.4A2E000000000011.title: "The Shadow Over Mine's Craft"
-	quest.4A2E000000000012.quest_desc: ["Place a Pearl on an Abyssal Altar as an offering"]
-	quest.4A2E000000000012.title: "Order of Dagon"
-	quest.4A2E000000000013.quest_desc: ["Successfully trade with the Deep Ones"]
-	quest.4A2E000000000013.title: "An Understanding"
-	quest.4A2E000000000014.quest_desc: ["Trade so often with the Deep Ones that they no longer avoid your presence"]
-	quest.4A2E000000000014.title: "Nautical Neighbors"
-	quest.4A2E000000000015.quest_desc: ["Become so well-regarded amongst the Deep Ones that they occasionally come to your defense"]
-	quest.4A2E000000000015.title: "All Buddies Now"
-	quest.4A2E000000000016.quest_desc: ["Collect four different, powerful items from trading with the Deep Ones"]
-	quest.4A2E000000000016.title: "Powers of Poseidon"
+	task.4A1F000000000001.title: "Made From Clouds..."
+	task.4A1F000000000003.title: "Why in the Sky?"
+	task.4A1F000000000007.title: "Not so Shrimple Now"
+	task.4A1F000000000009.title: "Sunken in the Sea"
+	task.4A1F00000000000B.title: "Doc's Rig"
+	task.4A2F000000000001.title: "Beyond the Sea"
+	task.4A2F000000000002.title: "Buckets of Joy"
+	task.4A2F000000000003.title: "Another Kind of Slime"
+	task.4A2F000000000004.title: "Glow Sticks"
+	task.4A2F000000000005.title: "Surface or Bust"
+	task.4A2F000000000006.title: "Pass the Wasabi"
+	task.4A2F000000000007.title: "A Lighthouse in Your Eyes"
+	task.4A2F000000000008.title: "Catching Flakes"
+	task.4A2F000000000009.title: "Shell City"
+	task.4A2F00000000000A.title: "Those Aren't Balloons..."
+	task.4A2F00000000000B.title: "The Cyclops"
+	task.4A2F00000000000C.title: "Captain Nemo"
+	task.4A2F00000000000D.title: "Buff Out Those Scratches"
+	task.4A2F00000000000E.title: "Bring Forth The Mollusk"
+	task.4A2F00000000000F.title: "Slurp Up"
+	task.4A2F000000000010.title: "Diamonds of the Sea"
+	task.4A2F000000000011.title: "The Shadow Over Mine's Craft"
+	task.4A2F000000000012.title: "Order of Dagon"
+	task.4A2F000000000013.title: "An Understanding"
+	task.4A2F000000000014.title: "Nautical Neighbors"
+	task.4A2F000000000015.title: "All Buddies Now"
+	task.4A2F000000000016.title: "Powers of Poseidon"
+	task.4A50F8A8E9BB8BDB.title: "Stone Age"
+	task.4A7D2C91E5B03F86.title: "Any control element"
+	task.4AAA9BCC4CC064C8.title: "Over-Overkill"
+	task.4AD0E8ADC40B5E84.title: "All Aboard!"
+	task.4B29046CBBD0A219.title: "Second Helping"
+	task.4B2ACE6A2D95B8BB.title: "Is it Time?"
+	task.4B33FFD23C3F0976.title: "Adventuring Time"
+	task.4B6B17EFCA92D349.title: "Bewitched"
+	task.4B8139197AC46674.title: "Sweet Dreams"
+	task.4BE83099E777A85B.title: "Wax On"
+	task.4C36504287F4D51D.title: "Return to Sender"
+	task.4C4BE2A30D2867B0.title: "Waste Recycler"
+	task.4C5577652CEAFDB9.title: "A Lost Guard"
+	task.4CA7DFE845B228F4.title: "Transcendent Overclock"
+	task.4DA3770C8365137E.title: "War Pigs"
+	task.4DA4C54F7A2A08DB.title: "Scarecrow"
+	task.4DB30B35BFB1D66B.title: "Learning the Ropes"
+	task.4DEABF9B9FE2243B.title: "Mage Class Detected"
+	task.4E3FA8679E153CC2.title: "Caves & Cliffs"
+	task.4EB05D4316841E13.title: "Tumble Draining"
+	task.4EE65199C6EA63BD.title: "Long Time Ago"
+	task.4F097A2631196A49.title: "Explosive Temper"
+	task.4F37A1835A6A1E9D.title: "Springboard Champion"
+	task.4F6922CCD1A99F2C.title: "The Place Of The Beginning"
+	task.50B2DE8D9781B22E.title: "Full Stealth"
+	task.50F182DAB070826C.title: "Engineers hate this simple trick!"
+	task.514188B1B91BD7C9.title: "Safe Haven"
+	task.517D3A9147DC9845.title: "Containment"
+	task.519D86F50F9D39B8.title: "Afraid of Heights?"
+	task.51AA00EE0FF7D36B.title: "Rewind Time"
+	task.523EFAFE18E66F06.title: "OSHA Violation"
+	task.525E2D56FB1B5F96.title: "Adventurous Eater"
+	task.52D0A6A570BDB779.title: "Bonk!"
+	task.52D5AA9BE9719844.title: "Headless KnightMan"
+	task.52E30630317353FF.title: "Eternal Slumber"
+	task.5346933DDA6E82EE.title: "Huddle Close"
+	task.534A0BEBF18452B0.title: "Light as a Rabbit"
+	task.53B03D9CDDA368B9.title: "Exclusion Zone"
+	task.53D1C12D90AA58BA.title: "The Ill Manored"
+	task.54513D250DD51967.title: "Uranium Fever"
+	task.5465865C496D4F85.title: "Harnessed Hydraulics"
+	task.54697989FD47DCE6.title: "Cobweb Entanglement"
+	task.54766DF3B4EC1497.title: "Safe in Solution"
+	task.54EA6D08E892E90C.title: "Deep Time"
+	task.5517B528F3B25F25.title: "Probability Spike"
+	task.55ABF227FB25CF81.title: "Quite the Renovation"
+	task.55C5BFF397A965E9.title: "Computational Supremacy"
+	task.55D5CBD348A1117B.title: "Forever Young"
+	task.5636D41062820F38.title: "Bee Our Guest"
+	task.56E03826842C1BDD.title: "This Belongs in a Museum"
+	task.57BCDDC2EBDC4CC4.title: "Getting Ahead"
+	task.5815D3821316364F.title: "Mixing It Up"
+	task.581D0E1E2E9A4701.title: "In Transit"
+	task.58B2BFC05BE4A5A0.title: "Postmortal"
+	task.58F93151ECEB6202.title: "Hot Rod"
+	task.5A0F359B1D9B7D65.title: "Подтвердить"
+	task.5A1C000000000000.title: "Flowers of the Savanna"
+	task.5A1C000000000001.title: "Alligator In Name Only"
+	task.5A1C000000000002.title: "Winning Play"
+	task.5A1C000000000003.title: "Gone Bananas!"
+	task.5A1C000000000004.title: "Convergent Evolution..."
+	task.5A1C000000000005.title: "Perfect View in the Plains"
+	task.5A1C000000000006.title: "Spray 'n Pray"
+	task.5A1C000000000007.title: "Aunt Anteater"
+	task.5A1C000000000008.title: "Crikey!"
+	task.5A1C000000000009.title: "Undercover Under Covers"
+	task.5A1C00000000000A.title: "Sugar Rush"
+	task.5A1C00000000000B.title: "Capsid-19"
+	task.5A1C00000000000C.title: "Weird Fishes/Arpeggi"
+	task.5A1C00000000000D.title: "Nightmare Fuel"
+	task.5A1C00000000000E.title: "Pest Control"
+	task.5A1C00000000000F.title: "Down with the Sickness"
+	task.5A1C000000000010.title: "Chompy"
+	task.5A1C000000000011.title: "Cover me with... scutes?"
+	task.5A1C000000000012.title: "One Chunk Fish"
+	task.5A1C000000000013.title: "Break On Through..."
+	task.5A1C000000000014.title: "Echo-muh-cation!"
+	task.5A1C000000000015.title: "Dressed to Impress"
+	task.5A1C000000000016.title: "It's an Emu!!!"
+	task.5A1C000000000017.title: "Begun, The Emu War Has"
+	task.5A1C000000000018.title: "Race Against The Clock"
+	task.5A1C000000000019.title: "Ender Distancing"
+	task.5A1C00000000001A.title: "Ad End-stra"
+	task.5A1C00000000001B.title: "No End In Sight"
+	task.5A1C00000000001C.title: "Hand In Glove"
+	task.5A1C00000000001D.title: "Blindsided"
+	task.5A1C00000000001E.title: "Farland Security"
+	task.5A1C00000000001F.title: "A Bone to Pick"
+	task.5A1C000000000020.title: "An Impostor Amoung Us"
+	task.5A1C000000000021.title: "Ice Scream"
+	task.5A1C000000000022.title: "Ghost! Ghost! Toast?"
+	task.5A1C000000000023.title: "Like a Truffle, with more Ant"
+	task.5A1C000000000024.title: "Pic-A-Nic Basket?"
+	task.5A1C000000000025.title: "Eye of The Storm"
+	task.5A1C000000000026.title: "I Am Become Guster"
+	task.5A1C000000000027.title: "Blast from the... Future?"
+	task.5A1C000000000028.title: "Sugar... In Wator..."
+	task.5A1C000000000029.title: "We do a little trolling..."
+	task.5A1C00000000002A.title: "Mariachi!"
+	task.5A1C00000000002B.title: "Mass Transit"
+	task.5A1C00000000002C.title: "Loch-Nether Monster!"
+	task.5A1C00000000002D.title: "Ant Farm"
+	task.5A1C00000000002E.title: "A Small Price to Pay..."
+	task.5A1C00000000002F.title: "Hungry For Apples?"
+	task.5A1C000000000030.title: "A Fistful of Water"
+	task.5A1C000000000031.title: "Mariachi?"
+	task.5A1C000000000032.title: "Flexible Schedule"
+	task.5A1C000000000033.title: "Destroy The Child"
+	task.5A1C000000000034.title: "He Was Number One!"
+	task.5A1C000000000035.title: "Free Willy"
+	task.5A1C000000000036.title: "Pocket Sand!"
+	task.5A1C000000000037.title: "Rainbow Road"
+	task.5A1C000000000038.title: "Taste the Rainbow"
+	task.5A1C000000000039.title: "No Step on Snake"
+	task.5A1C00000000003A.title: "You're too Slow!"
+	task.5A1C00000000003B.title: "KEEP ROLLIN' ROLLIN' ROLLIN'"
+	task.5A1C00000000003C.title: "Rocks Off!"
+	task.5A1C00000000003D.title: "Alex's Mobs"
+	task.5A1C00000000003E.title: "Save the Whales!"
+	task.5A1C00000000003F.title: "Ok Boomer"
+	task.5A1C000000000040.title: "Mine? Mine? Mine?"
+	task.5A1C000000000041.title: "Ticket to the End of the World"
+	task.5A1C000000000042.title: "We Just Want our Hat Back"
+	task.5A1C000000000043.title: "Smitty WerbenJagerManJensen"
+	task.5A1C000000000044.title: "Sculk Cymbal"
+	task.5A1C000000000045.title: "Hippie Smell"
+	task.5A1C000000000046.title: "Uma Delicia"
+	task.5A1C000000000047.title: "The Soul-ly Ghost"
+	task.5A1C000000000048.title: "Fetch Me Their Souls!"
+	task.5A1C000000000049.title: "The Iron Curtain"
+	task.5A1C00000000004A.title: "Shear the Scute"
+	task.5A1C00000000004B.title: "Turtle-ology Majors Be Like"
+	task.5A1C00000000004C.title: "... for Salvation"
+	task.5A1C00000000004D.title: "Gamer Skunk Bath Water"
+	task.5A1C00000000004E.title: "I SAID DART GUN!"
+	task.5A1C00000000004F.title: "Ant-Agonizer"
+	task.5A1C000000000050.title: "The Family Sedan"
+	task.5A1C000000000051.title: "Surf Wax America"
+	task.5A1C000000000052.title: "Straddle My Ol' Saddle"
+	task.5A1C000000000053.title: "Like Father"
+	task.5A1C000000000054.title: "The Quest for the Best"
+	task.5A1C000000000055.title: "The Power of the Sun"
+	task.5A1C000000000056.title: "Freedom Intensifies"
+	task.5A1C000000000057.title: "Monkey Business"
+	task.5A1C000000000058.title: "Its a Fish? Its a Bug? What is it?"
+	task.5A1C000000000059.title: "Stampy!"
+	task.5A1C00000000005A.title: "The Biggest Land Mammal"
+	task.5A1C00000000005B.title: "A Picky Fellow"
+	task.5A1C00000000005C.title: "In Memoriam"
+	task.5A1C00000000005D.title: "Arcturus!"
+	task.5A1C00000000005E.title: "Shrimp Friend"
+	task.5A1C00000000005F.title: "Big Iron"
+	task.5A1C000000000060.title: "It Is Wednesday"
+	task.5A1C000000000061.title: "Rigged from the Start"
+	task.5A1C000000000062.title: "Eye of the Tiger"
+	task.5A1C000000000063.title: "Reality Can Be Whatever I Want"
+	task.5A1C000000000064.title: "Nonequivalent Exchange"
+	task.5A1C000000000065.title: "Who Undermines the Underminer?"
+	task.5A1C000000000066.title: "Wormy"
+	task.5A1C000000000067.title: "Should've Gone for the Head"
+	task.5A1C000000000068.title: "A Soul for a Soul"
+	task.5A1C000000000069.title: "Destroyer of Chads"
+	task.5A51935483B4AF34.title: "Uneasy Alliance"
+	task.5A7756C44EA77EA3.title: "Isn't It Scute?"
+	task.5AA3C933FFD7399B.title: "Dripstone Everywhere"
+	task.5ACDF36E7BC29226.title: "In Thrust We Trust"
+	task.5AFD8180CBA96C82.title: "Conductor Instructor"
+	task.5B66A1CF156E0046.title: "Under Lock and Key"
+	task.5B6C68EE5445C140.title: "Ghostbuster"
+	task.5C1D6F4078F98963.title: "How the Turn Tables"
+	task.5C9511264FD4D7CB.title: "Magic Unbinding"
+	task.5CE9E3D2A434C72E.title: "Sweet Battle"
+	task.5D1529B8430691CC.title: "Nobody Has Been Here"
+	task.5D30C9990CE3DCBD.title: "Years of Cooling"
+	task.5DC08D92438EF215.title: "Far Away From Home"
+	task.5DCF472E3506672D.title: "Minecraft: Trial(s) Edition"
+	task.5DDE3226CB7E2CEA.title: "A Furious Cocktail"
+	task.5DE9853C7A0D9773.title: "Chase Me"
+	task.5E38BAE6664D2962.title: "The Echo Of Past Battle"
+	task.5E4DE1BCCC439E1A.title: "Glow and Behold!"
+	task.5E612B33F4C8FD74.title: "Talk about Low Budget Flights"
+	task.5E9176E9EF426DDF.title: "Compactification"
+	task.5EADDFF7E21AD030.title: "Careful Restoration"
+	task.5F26610551F2A1D1.title: "A Massive Arena"
+	task.5F6157665416053E.title: "Puddle Collector"
+	task.5FB9ACB17432B3FA.title: "Surge Protector"
+	task.5FE637D41B3AB19E.title: "The Last of Deepslate"
+	task.5FF37BEB222F9875.title: "Step Through"
+	task.60052C0D45411E51.title: "RBMK-1000"
+	task.6029B18854BCF379.title: "Flow Discovery"
+	task.6078A1C1F68E592C.title: "Big Data"
+	task.60C20A028595DF4B.title: "Cover Me with Sculk"
+	task.60D6F4DC7F05CB30.title: "Reactor Vessel"
+	task.612EDC7FC04FE55B.title: "Kelp Drive"
+	task.613A2B71B5008CC7.title: "Star Trader"
+	task.61AC2A28E23AEAE9.title: "You Spin Me Right Round Baby"
+	task.62EC1628B0BBEDF4.title: "A Special Addition"
+	task.63113A9AB2041D0A.title: "Cut the Red Wire"
+	task.63E4E6E0B08887C0.title: "It's Teleporting!"
+	task.64096CF2A7DC34FB.title: "Deep in the Dark Woodland"
+	task.644F01F2EAA0546A.title: "RAMPAGE!"
+	task.6503B580B9CD73B9.title: "Fully Charged"
+	task.654C1CC6F01EA68D.title: "Expert Driver"
+	task.65BC65978DD95E89.title: "Local Brewery"
+	task.65C7D27F0ADC2D04.title: "No Pressure"
+	task.660FDB505A45030B.title: "Sealed Over"
+	task.6655438AB5A1469C.title: "The Ray Cat Solution"
+	task.66AA9B53C36505A8.title: "Wheels of Destruction"
+	task.66D15B016CEFD560.title: "Resonance Cascade"
+	task.66E6085C2160796D.title: "Post Production"
+	task.66E8886A671A8744.title: "Welcome to Dungeons and Taverns"
+	task.66F71C981E027AA6.title: "Sticky Situation"
+	task.6714FD5031FF0986.title: "To Full Extent"
+	task.6797B0D8EAEA7C5B.title: "Whatever Floats Your Goat!"
+	task.6837CA457D0A463A.title: "Strong Arms"
+	task.68807B676BDB6D7D.title: "King of Monsters"
+	task.68DF0D4866E0EB55.title: "Miner Inconvenience"
+	task.69504E711925B2A7.title: "Spruce Cowboy In The Moonlight"
+	task.696037B3BD87FD79.title: "Prospecting"
+	task.69CEB565E2CA033F.title: "Tactical Fishing"
+	task.6AE1B30F0BD0A059.title: "Thousandfold Everchant"
+	task.6B9E6358C59BF5B7.title: "Snap!"
+	task.6BD0FAA6FFDE2A30.title: "Supply Chain Refactor"
+	task.6BFEF43ED40C98E5.title: "Grave Ravager"
+	task.6C218BC368F3BA0B.title: "Hidden in the Sand"
+	task.6C28091E5090A894.title: "Busy Hands"
+	task.6CA240EF82615035.title: "Embrace the Grind"
+	task.6CB696F15A0254D2.title: "Naughty Child"
+	task.6CCF8D5D73A7E77D.title: "Borrowed Time"
+	task.6D9C427CC87290E2.title: "When the Stew is Sus"
+	task.6DAA358A092C11CF.title: "Blind Spot"
+	task.6DD990EA41B63511.title: "Shake and Mix"
+	task.6E21B483019C36AB.title: "The Pipe Organ"
+	task.6F4B6F897AB660EC.title: "Toxic Alloy"
+	task.6F642B0C3A4ACDD7.title: "Cover Me with Diamonds"
+	task.6FBD8429453529B0.title: "The End... Again..."
+	task.6FEE6467E80321B1.title: "The Tall Guy"
+	task.700A3D27DA2EFF6A.title: "Perfectly Stressed"
+	task.7088751F374F724F.title: "Crawling in my Bark"
+	task.7097210AF9B16703.title: "A Shower \"Experience\""
+	task.70ADB58A13142AB1.title: "Planting the Past"
+	task.70DE4FAA3E35FF8A.title: "The Soul Eater"
+	task.70F98175B96FD7C2.title: "Unity with Darkness"
+	task.71018B4C064D1152.title: "Very Very Frightening"
+	task.714D93716B60AAD8.title: "Great View From Up Here"
+	task.714FB61B48B2DC7A.title: "Century Egg"
+	task.71A41C73EA5C10A7.title: "Bullseye"
+	task.72585988994E3488.title: "Stress for Nerds"
+	task.72700AB16E7FF1A7.title: "Rollin' at the Speed of Sound"
+	task.727F1E1C0DEB706C.title: "The Pit of Fire"
+	task.72CB8C6D3D4679D1.title: "A Calculated Connection"
+	task.73801D6D68060D10.title: "Bonk!"
+	task.747EEF4C8473BC29.title: "Remote Getaway"
+	task.74C747E301999056.title: "The Light at the End of the Game"
+	task.74CC79BE8B8EA92A.title: "Order Up!"
+	task.7512DA2E3B140EFA.title: "Echolocation"
+	task.751488987863408E.title: "Pound It, Bro!"
+	task.754380A117F9A9CA.title: "Shelf Life"
+	task.754BD5B14628FEA3.title: "Big Beam"
+	task.758148B7BBD27BB0.title: "Unpowered Steering"
+	task.7583684456468D03.title: "Unlucky Hunter"
+	task.75D5D8442C865641.title: "The Cataclysmfarer"
+	task.75E3B1231ED581C5.title: "Another Stronghold?!"
+	task.75E6C3983B05D032.title: "Sploosh"
+	task.75F92F768F9A100A.title: "A Major Trial Of Strengh"
+	task.768830DB6AE6BE1A.title: "Opposites Attract"
+	task.76CBA95FE11B2607.title: "Food Fight"
+	task.7769FCFCFDD9E1A4.title: "Not Great, Not Terrible"
+	task.776F3BBDEDBFFFF4.title: "Inhospitable"
+	task.7805F2A54FB13608.title: "Brand Registry"
+	task.78070EE2F45172E6.title: "That Should Do For Now"
+	task.786A82A1822705A7.title: "Far From Home"
+	task.78BBDC568CADA950.title: "Who's the Pillager Now?"
+	task.78D2AEAA0C3AA211.title: "Tide Pod Challenge"
+	task.792929EE682FF1DE.title: "Chest Slayer"
+	task.792DC7DF7B7BE7DF.title: "When in Rome"
+	task.79F95572967EB8ED.title: "Chaos Knight"
+	task.79FCC589F8D0A9F9.title: "Suit Up"
+	task.7A8CC831B5FB1BDD.title: "Apocalypse-Proof"
+	task.7AC58BD19FF052AC.title: "Subspace Bubble"
+	task.7B27F52851D158C3.title: "Spooky Scary Shulker Box"
+	task.7B6162E9709C06F4.title: "Contraption o'Clock"
+	task.7B73D77138AB1D1A.title: "Track Factory"
+	task.7BAE0C6DA2F35AA8.title: "Where the Monstrous be Forged"
+	task.7BEF722FB17806B0.title: "Processing by Particle"
+	task.7C52AC107F3CD2F9.title: "Double Trouble"
+	task.7C99DA2C7F1D7FAB.title: "Dress Code"
+	task.7D03592839A3BF11.title: "Arts and Crafts"
+	task.7D11B4E4292EC79A.title: "The Whole Pack"
+	task.7DC21371C229B70E.title: "We'll Meet Again"
+	task.7DC6EEB53E6C79A8.title: "Respecting the Remnants"
+	task.7EBA143F8E15B1E1.title: "Under Pressure"
+	task.7EE2B62C5B9CC678.title: "Revaulting"
+	task.7F0AB6E8AFDCD6D9.title: "What's This?"
+	task.7F6B0B2D73586104.title: "Imperfect thing"
+	task.7F744BD184B28286.title: "Boioioing!"
+	task.7F7A16B8F71AA825.title: "Total Meltdown"
 }

@@ -3211,5 +3211,97 @@
 			x: -0.5d
 			y: 53.0d
 		}
+		{
+			dependencies: ["4A1E000000000001"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:axe_of_lightning"
+			}
+			id: "4D7D46D5115695C4"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_cloud_golem"
+				criterion: ""
+				id: "021D47DFDA0901E3"
+				type: "advancement"
+			}]
+			x: -10.0d
+			y: 110.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:ancient_dripstone_bricks"
+			}
+			id: "11A01A203B2CEB2C"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:locate_ancient_stronghold"
+				criterion: ""
+				id: "5AA3C933FFD7399B"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 110.0d
+		}
+		{
+			dependencies: ["11A01A203B2CEB2C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:missing_item": "legendary_monsters:ancient_dripstone_shard"
+				}
+				id: "ftbquests:missing_item"
+			}
+			id: "739DD892CA35C2E5"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_ambusher"
+				criterion: ""
+				id: "14FCE0608CEFA7FD"
+				type: "advancement"
+			}]
+			x: -2.0d
+			y: 112.0d
+		}
+		{
+			dependencies: ["11A01A203B2CEB2C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:ancient_spike"
+			}
+			id: "46ADB085D776EBB4"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_spiky_bug"
+				criterion: ""
+				id: "0DEC5B07A3AE52D3"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 112.0d
+		}
+		{
+			dependencies: ["11A01A203B2CEB2C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			icon: {
+				id: "legendary_monsters:monstrous_anchor"
+			}
+			id: "1468FF401EE898B6"
+			optional: true
+			tasks: [{
+				advancement: "legendary_monsters:defeat_the_ancient_guardian"
+				criterion: ""
+				id: "17AE5DADD6F58B75"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 112.0d
+		}
 	]
 }

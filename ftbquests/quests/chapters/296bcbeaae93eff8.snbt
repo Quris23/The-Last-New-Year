@@ -4,6 +4,9 @@
 	filename: "296bcbeaae93eff8"
 	group: "2BBAFBD860BE8ADE"
 	hide_quest_until_deps_complete: true
+	icon: {
+		id: "minecraft:brain_coral"
+	}
 	id: "296BCBEAAE93EFF8"
 	images: [ ]
 	order_index: 5
@@ -265,7 +268,7 @@
 				value: 1L
 			}]
 			x: -3.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4A1E000000000003"]

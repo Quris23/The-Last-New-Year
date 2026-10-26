@@ -700,7 +700,7 @@
 		{
 			dependencies: ["4B4AFC7068129E0D"]
 			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			id: "333FF0B423EA1A6E"
 			optional: true
 			tasks: [{
@@ -900,7 +900,7 @@
 		{
 			dependencies: ["4B4AFC7068129E0D"]
 			entity_vis_size: 1.0f
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			id: "712C36747AF7F975"
 			optional: true
 			tasks: [{
