@@ -202,9 +202,9 @@ ServerEvents.recipes(event => {
 
     // Незеритовая броня боевого мага
     const classRobes = ['priest', 'cultist', 'plagued', 'electromancer', 'pyromancer', 'cryomancer', 'shadowwalker']
-    const pieces = ['helmet', 'chestplate', 'leggings', 'boots']
+    const pieces1 = ['helmet', 'chestplate', 'leggings', 'boots']
 
-    pieces.forEach(piece => {
+    pieces1.forEach(piece => {
         event.remove({ output: `irons_spellbooks:netherite_mage_${piece}` })
         event.custom({
             type: 'minecraft:smithing_transform',

@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'born_in_chaos_v1:dark_atrium' })
     event.remove({ output: 'born_in_chaos_v1:death_totem' })
     event.remove({ output: 'born_in_chaos_v1:dark_grid' })
+    event.remove({ output: 'born_in_chaos_v1:dark_metal_armor_helmet' })
     
 
     // Cataclysm
@@ -20,6 +21,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cataclysm:void_eye' })
     event.remove({ output: 'cataclysm:cursed_eye' })
     event.remove({ output: 'cataclysm:desert_eye' })
+    event.remove({ output: 'cataclysm:monstrous_eye' })
+    event.remove({ output: 'cataclysm:storm_eye' })
     event.remove({ output: 'cataclysm:burning_ashes' })
     event.remove({ output: 'cataclysm:flame_eye' })
 

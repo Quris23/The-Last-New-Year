@@ -71,6 +71,14 @@ ServerEvents.recipes(event => {
     ], {
         I: 'born_in_chaos_v1:dark_metal_ingot'
     })
+
+    // Шлем из тёмного металла
+    event.recipes.minecraft.smithing_transform(
+    'born_in_chaos_v1:dark_metal_armor_helmet',
+    'born_in_chaos_v1:dark_upgrade',
+    'cataclysm:monstrous_helm',
+    'born_in_chaos_v1:armor_plate_from_dark_metal'
+  )
     // Tentaworks
         // Щупальце
 

@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem(transitional).loops(4)
 
     // Око Пустыни
+    let flesh = ['born_in_chaos_v1:smoked_flesh', 'born_in_chaos_v1:smoked_monster_flesh']
     event.shaped('cataclysm:desert_eye', [
         'GCM',
         'DEK',
@@ -27,19 +28,48 @@ ServerEvents.recipes(event => {
         B: 'legendary_monsters:dinosaur_bone',
         E: 'minecraft:ender_eye',
         D: 'minecraft:dead_bush',
-        K: 'minecraft:cactus',
-        R: 'minecraft:rotten_flesh'
+        K: 'quark:cactus_block',
+        R: flesh
+    })
+
+    // Око чудовища
+    event.shaped('cataclysm:monstrous_eye', [
+        'bsb',
+        'dEd',
+        'bsb'
+    ], {
+        b: 'lava_bucket',
+        s: 'netherite_scrap',
+        d: 'born_in_chaos_v1:fire_dust',
+        E: 'ender_eye'
     })
 
     // Око Глубины
     event.shaped('cataclysm:abyss_eye', [
-        'OAO',
+        'Oeo',
         'AEA',
-        'OAO'
+        'oeO'
     ], {
         O: 'crying_obsidian',
+        e: 'born_in_chaos_v1:sea_terror_eye',
+        o: 'obsidian',
         A: 'alexscaves:abyssmarine',
         E: 'ender_eye'
+    })
+
+    // Око Бури
+    event.shaped('cataclysm:storm_eye', [
+        'src',
+        'dEd',
+        'SbS'
+    ], {
+        s: 'prismarine_shard',
+        r: 'lightning_rod',
+        c: 'prismarine_crystals',
+        d: 'northstar:polished_diamond',
+        E: 'minecraft:ender_eye',
+        S: 'born_in_chaos_v1:spiny_shell',
+        b: 'water_bucket'
     })
 
     // Око Огня
@@ -98,7 +128,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         CreateItem.of('endrem:lost_eye', 0.80),
         CreateItem.of('born_in_chaos_v1:orbofthe_summoner', 0.07),
-        CreateItem.of('born_in_chaos_v1:dark_atrium', 0.07),
+        CreateItem.of('born_in_chaos_v1:transformative_flower', 0.07),
         CreateItem.of('alexscaves:darkened_apple', 0.06)
     ], 'minecraft:ender_eye', [
         event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:orbofthe_summoner']),
@@ -106,7 +136,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(trans, [trans, 'alexscaves:darkened_apple']),
         event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:fel_soil']),
         event.recipes.createFilling(trans,  [trans, Fluid.of('irons_spellbooks:blood', 500)]),
-        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:dark_atrium']),
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:transformative_flower']),
     ]).transitionalItem(trans).loops(1)
 
     // Око Потерянной Технологии

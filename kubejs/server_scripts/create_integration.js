@@ -67,7 +67,6 @@ ServerEvents.recipes(event => {
         'minecraft:iron_ingot',
         coals,
         coals,
-        
     ]).heated()
 
     // Аурумитовый слиток
@@ -237,5 +236,11 @@ ServerEvents.recipes(event => {
         event.recipes.createFilling(skinTrans1,  [skinTrans1, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
         event.recipes.createPressing(skinTrans1, skinTrans1)
     ]).transitionalItem(skinTrans1).loops(3)
+
+    // Фантомный порох
+    event.recipes.create.mixing('born_in_chaos_v1:phantom_powder', [
+        Item.of('gunpowder', 4),
+        'phantom_membrane'
+    ]).heated()
 
 })

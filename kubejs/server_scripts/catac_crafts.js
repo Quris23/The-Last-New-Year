@@ -298,10 +298,8 @@ ServerEvents.recipes(event => {
   let upgrTransitional = 'kubejs:incomplete_cursium_upgrade_smithing_template'
   event.recipes.create.sequenced_assembly([
     CreateItem.of('cataclysm:cursium_upgrade_smithing_template', 0.70),
-    CreateItem.of('minecraft:gold_ingot', 0.15),
-    CreateItem.of('cataclysm:black_steel_ingot', 0.10),
-    CreateItem.of('minecraft:netherite_upgrade_smithing_template', 0.05)
-  ], 'minecraft:netherite_upgrade_smithing_template', [
+    CreateItem.of('born_in_chaos_v1:dark_upgrade', 0.30)
+  ], 'born_in_chaos_v1:dark_upgrade', [
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'kubejs:aurumite_ingot']),
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'cataclysm:black_steel_ingot']),
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'kubejs:aurumite_ingot']),
@@ -385,10 +383,8 @@ ServerEvents.recipes(event => {
   let upgrTransit = 'kubejs:incomplete_ignitium_upgrade_smithing_template'
   event.recipes.create.sequenced_assembly([
     CreateItem.of('cataclysm:ignitium_upgrade_smithing_template', 0.70),
-    CreateItem.of('minecraft:nether_brick', 0.15),
-    CreateItem.of('netherite_scrap', 0.10),
-    CreateItem.of('minecraft:netherite_upgrade_smithing_template', 0.05)
-  ], 'minecraft:netherite_upgrade_smithing_template', [
+    CreateItem.of('born_in_chaos_v1:dark_upgrade', 0.30)
+  ], 'born_in_chaos_v1:dark_upgrade', [
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'blaze_powder']),
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'netherite_scrap']),
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'nether_brick']),
