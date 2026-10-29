@@ -22,9 +22,9 @@
 				"1375956687662C80"
 				"5B6E18941C28F3F7"
 				"08D0724665A2E053"
-				"0BD41BEFA7356F1A"
 				"156C707701FEBB97"
 				"0AFF8EFCB98B2B97"
+				"210ACE08AF569C86"
 			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
@@ -852,6 +852,7 @@
 			}
 			id: "0BD41BEFA7356F1A"
 			optional: true
+			preset: "normal"
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -859,8 +860,8 @@
 				item: { count: 1, id: "born_in_chaos_v1:dark_atrium" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7DA28997C1305AA7"]
@@ -1728,6 +1729,19 @@
 			}]
 			x: -5.0d
 			y: 2.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "210ACE08AF569C86"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "503C241A8479DE00"
+				item: { count: 1, id: "born_in_chaos_v1:transformative_flower" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
 		}
 	]
 }
