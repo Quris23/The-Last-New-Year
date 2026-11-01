@@ -1,0 +1,229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4357215960f6f6ce"
+	group: "3AC9C1A5395BF5C0"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 13
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "discerning_the_eldritch:the_apocrypha_spellbook"
+	}
+	id: "4357215960F6F6CE"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"64965EC0667A52BE"
+				"06C3D299FDEB7A69"
+			]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "72F78F7A18F72822"
+			optional: true
+			preset: "goal"
+			tasks: [{
+				id: "20977503E462418D"
+				item: { count: 1, id: "irons_spellbooks:eldritch_manuscript" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "64965EC0667A52BE"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "79F18B9D3E1454D5"
+				item: { count: 1, id: "irons_spellbooks:ancient_knowledge_fragment" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["06C3D299FDEB7A69"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "3E67B83448050DE7"
+			optional: true
+			tasks: [{
+				id: "0CE7415B9BE64BAD"
+				item: { count: 1, id: "arcanerunes:eldritch_rune" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3E67B83448050DE7"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7701304042013987"
+			optional: true
+			tasks: [{
+				id: "497F85C3F1B65AC8"
+				item: { count: 1, id: "discerning_the_eldritch:eldritch_upgrade_orb" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "06C3D299FDEB7A69"
+			optional: true
+			tasks: [{
+				id: "345F406BA50A0786"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["64965EC0667A52BE"]
+			entity_vis_size: 1.0f
+			id: "78B5205C5B557412"
+			optional: true
+			tasks: [{
+				id: "024EF001B640DFC3"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 13, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:the_apocrypha_spellbook" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["590A79FA15CB5519"]
+			entity_vis_size: 1.0f
+			id: "05B84D7C531947EF"
+			optional: true
+			tasks: [{
+				id: "2A00F94E2893DD06"
+				item: { count: 1, id: "discerning_the_eldritch:rift_ripper_emblem" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06C3D299FDEB7A69"]
+			entity_vis_size: 1.0f
+			id: "5AFC93123E4CC37F"
+			optional: true
+			tasks: [{
+				id: "0FCBB6CCFB85BAA3"
+				item: { count: 1, id: "discerning_the_eldritch:fading_sculk_lantern" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["590A79FA15CB5519"]
+			entity_vis_size: 1.0f
+			id: "050E4852DAA62D81"
+			optional: true
+			tasks: [{
+				id: "0D62FA9117DDF375"
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "discerning_the_eldritch:conjure_gaoler", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:amulet_of_sculk_treasure" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["06C3D299FDEB7A69"]
+			entity_vis_size: 1.0f
+			id: "590A79FA15CB5519"
+			optional: true
+			tasks: [{
+				id: "530F8C5D9464AB50"
+				item: { count: 1, id: "discerning_the_eldritch:echo_vibration_ring" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06C3D299FDEB7A69"]
+			entity_vis_size: 1.0f
+			id: "13C5F481CEF2ECC4"
+			optional: true
+			tasks: [{
+				id: "150D584E1F8793D8"
+				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "irons_spellbooks:planar_sight", index: 0, level: 4, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:deep_greatsword" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06C3D299FDEB7A69"]
+			entity_vis_size: 1.0f
+			id: "36913D30F5AB5491"
+			optional: true
+			tasks: [{
+				id: "2CF868EC61E53640"
+				item: { components: { "irons_spellbooks:spell_container": { data: [ { id: "discerning_the_eldritch:soul_slice", index: 0, level: 1, locked: 1b }, { id: "discerning_the_eldritch:soul_set_ablaze", index: 1, level: 1, locked: 1b } ], maxSpells: 2, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:soul_fire_scythe" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6871740F8CF2D716"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "4CE1D17C00000001"
+			optional: true
+			tasks: [
+				{
+					id: "4CE1D17C00000002"
+					item: { components: { "azurelib:az_id": [I; -1564087879, 632112578, -2011532541, -616404030 ], "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:eldritch_warlock_hood" }
+					type: "item"
+				}
+				{
+					id: "4CE1D17C00000003"
+					item: { components: { "azurelib:az_id": [I; -194915711, -670938738, -1467914518, -438406707 ], "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "discerning_the_eldritch:eldritch_warlock_robes" }
+					type: "item"
+				}
+				{
+					id: "4CE1D17C00000004"
+					item: { components: { "azurelib:az_id": [I; 1452103971, 162087891, -2075208603, -886523716 ], "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "discerning_the_eldritch:eldritch_warlock_leggings" }
+					type: "item"
+				}
+				{
+					id: "4CE1D17C00000005"
+					item: { components: { "azurelib:az_id": [I; 396145744, -510573598, -1838164101, 428600057 ], "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "discerning_the_eldritch:eldritch_warlock_greaves" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3E67B83448050DE7"]
+			entity_vis_size: 1.0f
+			id: "6871740F8CF2D716"
+			tasks: [{
+				id: "717CEE285C1C571B"
+				item: { count: 1, id: "discerning_the_eldritch:eldritch_upgrade_template" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -6.0d
+		}
+	]
+}

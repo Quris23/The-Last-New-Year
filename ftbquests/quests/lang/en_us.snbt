@@ -1,9 +1,8 @@
 {
-	chapter.1664C24717D25B6D.title: "Чародей Бездны"
+	chapter.01DDFC38B356D586.title: "Гидромант"
 	chapter.2F6921C81B308D38.title: "Вампир"
 	chapter.2FADCD87CDAFAD07.title: "Священник"
-	chapter.373774E94F304EFC.title: "Штормовой Волшебник"
-	chapter.38F2814B10280935.title: "Заклинатель Песков"
+	chapter.373774E94F304EFC.title: "Исследователь Хекстека"
 	chapter.4B1570A10000C001.title: "История"
 	chapter.52A3E9D65E86AFC4.title: "Ледяной Маг"
 	chapter.5DCFA713A210A6DD.title: "Thirst for Adventure"
@@ -114,6 +113,7 @@
 	quest.0C16E1B72F34BE4C.title: "Take Aim"
 	quest.0C44F6226C4E4FC9.quest_desc: ["Kill the dark vortex"]
 	quest.0C44F6226C4E4FC9.title: "The Wind Darkening"
+	quest.0C4E0800EAA2A859.title: "Полный сет брони Гидроманта"
 	quest.0C57667294C7010D.quest_desc: [
 		"Set a Navigation Table's target to a location over 5000 blocks away"
 		"&7(Hidden Advancement)"
@@ -137,7 +137,6 @@
 	quest.0DA19DF426166AB6.title: "Circuit Breaker"
 	quest.0DACF2B913208F76.quest_desc: ["Kill a mob near a Sculk Catalyst"]
 	quest.0DACF2B913208F76.title: "It Spreads"
-	quest.0DB08205137A476C.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.0DB4D4FECC49E2C1.quest_desc: ["Use a Display Link to visualise information"]
 	quest.0DB4D4FECC49E2C1.title: "Big Data"
 	quest.0E06CD227805489C.quest_desc: ["Feed a Spelunkie to a Gammaroach"]
@@ -154,7 +153,6 @@
 	quest.0FC7253D957CDB20.title: "Scarecrow"
 	quest.0FD5B556F8D998EB.quest_desc: ["Eat an Enchanted Fruit with over 100 levels on you"]
 	quest.0FD5B556F8D998EB.title: "Bit Fruity"
-	quest.103248E575D0A8BE.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.1089C97F610C1AB6.quest_desc: ["Fine-tune your Contraption with a Rotation Speed Controller"]
 	quest.1089C97F610C1AB6.title: "Engineers hate this simple trick!"
 	quest.1092A1B0E7655166.quest_desc: ["Obtain a Blaze Burner"]
@@ -262,15 +260,6 @@
 	quest.137D51FDC1F8CE50.title: "Country Lode, Take Me Home"
 	quest.13F89D65F0382D73.quest_desc: ["Use an upright Mechanical Saw to process materials"]
 	quest.13F89D65F0382D73.title: "Workshop's Most Feared"
-	quest.13FA3B6C8D2E4F51.quest_desc: [
-		"Почти все заклинания Бездны крафтятся в свиток без каких-либо условий."
-		""
-		"Исключение — &bTidal Grab&r: чтобы скрафтить его свиток, нужно держать &bПриливные когти&r именно в основной руке в момент крафта (просто лежать в инвентаре недостаточно)."
-		""
-		"Как получить Приливные когти:"
-		"&e-&r Дроп с босса &bЛевиафана&r"
-	]
-	quest.13FA3B6C8D2E4F51.title: "Разблокировка свитка Tidal Grab"
 	quest.1420A1CB937B6311.quest_desc: ["Craft a Uranium Rod"]
 	quest.1420A1CB937B6311.title: "Hot Rod"
 	quest.1426DD6971D9A7B8.quest_desc: ["Use a Printer 1,000 times"]
@@ -341,6 +330,8 @@
 	quest.1AD2A8051D76D0EF.title: "Whole Lot of Shaking Going On"
 	quest.1B05E605335AE50F.quest_desc: ["Pest control the Spider Queen"]
 	quest.1B05E605335AE50F.title: "Detoxing the Toxic Lair"
+	quest.1B100C0000000001.quest_desc: ["Craft a scroll of any Occult spell at the rune table."]
+	quest.1B100C0000000001.title: "Occult Spells"
 	quest.1B1956AFED3E8D8B.quest_desc: ["Kill a Forgotten underground and loot its hat"]
 	quest.1B1956AFED3E8D8B.title: "This Belongs in a Museum"
 	quest.1B210BB3BA5C013E.quest_desc: ["Summon a monstrous undead dinosaur by tossing the Ominous Catalyst into the top of a volcano"]
@@ -364,7 +355,6 @@
 	quest.1D040C3BF4F53B95.title: "Eternal Slumber"
 	quest.1D359497EC4ABD65.quest_desc: ["Use a Wrench to rotate a block"]
 	quest.1D359497EC4ABD65.title: "Engineer Gaming"
-	quest.1D5A09496FDBB757.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.1D5B8A3C70E94F26.quest_desc: ["Obtain Levitite or Pearlescent Levitite."]
 	quest.1D5B8A3C70E94F26.title: "Levitite"
 	quest.1E214A12F76331DC.quest_desc: ["Reinforce an Echo Shard"]
@@ -448,6 +438,7 @@
 		"&7(Hidden Advancement)"
 	]
 	quest.25305153BD2DBBCD.title: "Arts and Crafts"
+	quest.253428B1BE997171.title: "Книга на 16 заклинаний"
 	quest.25ABA04332A6DB4F.quest_desc: ["Get the Spirit Guide Sombrero"]
 	quest.25ABA04332A6DB4F.title: "Cultural Attribute"
 	quest.2636132760664FDE.quest_desc: ["Kill the evoker king"]
@@ -472,7 +463,6 @@
 	quest.28B3CDDF5F49EF38.title: "The Brass Age"
 	quest.29105F3CCB426907.quest_desc: ["Use your Wrench on a pipe that contains a fluid"]
 	quest.29105F3CCB426907.title: "Flow Discovery"
-	quest.297AECF71EBA8D3A.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.2A102AFFD9B14E3C.quest_desc: ["Assemble your first Train"]
 	quest.2A102AFFD9B14E3C.title: "All Aboard!"
 	quest.2A5B8FD896CBF51D.quest_desc: ["Use a Printer to change a package's pattern"]
@@ -718,6 +708,7 @@
 	quest.3D4E020E267318B4.title: "Ship's Papers"
 	quest.3D8B3E73A24402E7.quest_desc: ["Shine a laser into a Laser Sensor and activate it"]
 	quest.3D8B3E73A24402E7.title: "My Eye!"
+	quest.3DDFD46EFFADFCD3.title: "Первый Гримуар"
 	quest.3DFA857DEBEC8A43.quest_desc: ["Kill the Dire Hound Leader"]
 	quest.3DFA857DEBEC8A43.title: "Big Boy"
 	quest.3E30B9EC2FE989B1.quest_desc: [
@@ -735,22 +726,13 @@
 	quest.3F227346DA40697E.title: "The Place Of The Beginning"
 	quest.3F7D3087DB8483DE.quest_desc: ["Create Transmuting Elixir"]
 	quest.3F7D3087DB8483DE.title: "Transmutalogy"
-	quest.3F9C7D2A1B4E6081.quest_desc: [
-		"Некоторые заклинания Игниса (например Bone Storm, Incineration, Ashen Breath) нельзя сразу скрафтить в виде свитка на Кузне Свитков — игра пишет, что заклинание нужно сначала изучить."
-		""
-		"На самом деле ничего изучать не нужно: достаточно, чтобы в инвентаре (не обязательно в руке) лежал &6Пылающий пепел&r — тогда крафт свитка разблокируется."
-		""
-		"Как получить Пылающий пепел:"
-		"&e-&r Скрафтить из 4x &6Угасающего пепла&r в сетке 2х2"
-		"&e-&r Либо подобрать как дроп с &6Огненного ревенанта&r"
-	]
-	quest.3F9C7D2A1B4E6081.title: "Разблокировка свитков Игниса"
 	quest.3FE09F288C6C396B.quest_desc: ["Craft an Impact Pearl."]
 	quest.3FE09F288C6C396B.title: "A Pearl of Courage"
 	quest.403496060E78D24A.quest_desc: ["Set foot in a Catacomb"]
 	quest.403496060E78D24A.title: "When in Rome"
 	quest.405F6A984F27D25D.quest_desc: ["Use a Blaze Forger 1,000 times"]
 	quest.405F6A984F27D25D.title: "Blazing Centurion"
+	quest.40719DB8BBCF7C03.title: "Магическая ткань"
 	quest.40A29B9FA5FF5180.quest_desc: [
 		"Upgrade your Pickaxe"
 		""
@@ -774,6 +756,7 @@
 	quest.4228D9BD6E571782.title: "Explosive Temper"
 	quest.426458E2392ADA19.quest_desc: ["Watch a fluid-containing item be filled by a Spout"]
 	quest.426458E2392ADA19.title: "Sploosh"
+	quest.4299420D93B84D3E.title: "Незеритовая Броня Боевого Мага"
 	quest.429BD2C8D6A4F060.quest_desc: ["Locate the ancient tower remains"]
 	quest.429BD2C8D6A4F060.title: "Far Away From Home"
 	quest.42A50E765EB435F4.quest_desc: ["Kill a Mimic"]
@@ -978,12 +961,6 @@
 	quest.4E18D09CC1172BCD.title: "Opposites Attract"
 	quest.4E2FF9D6BD73E78E.quest_desc: ["Catch a Fish... without a Fishing Rod!"]
 	quest.4E2FF9D6BD73E78E.title: "Tactical Fishing"
-	quest.4E33EE2ABFBFCE64.quest_desc: [
-		"Creatures boiled in a cauldron over a campfire, or in an alchemist cauldron filled with water, turn into blood."
-		""
-		"&e-&r Fill a glass bottle with it to get a blood vial"
-	]
-	quest.4E33EE2ABFBFCE64.title: "Blood from the Cauldron"
 	quest.4E384215B18BF870.quest_desc: ["Kill a Breeze with a deflected Breeze-shot Wind Charge"]
 	quest.4E384215B18BF870.title: "Blowback"
 	quest.4E3B91D26AB4A829.quest_desc: [
@@ -1073,7 +1050,6 @@
 	quest.5585EA39F525D702.title: "Self-Driving Cart"
 	quest.5589F74CC3F3A0ED.quest_desc: ["Get all the Born in Chaos music discs"]
 	quest.5589F74CC3F3A0ED.title: "Symphony of Chaos"
-	quest.55EB3157FA6A253E.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.55F7F1A917731905.quest_desc: ["Stun someone with the Skullbreaker Hammer"]
 	quest.55F7F1A917731905.title: "Bonk!"
 	quest.56912F9CE47E1122.quest_desc: ["Get every Trumpet Sapling"]
@@ -1102,6 +1078,7 @@
 	quest.595249F512C17B8E.title: "Suit Up"
 	quest.597A88EDA88069A6.quest_desc: ["Obtain and place a Velocity Sensor to satiate your need for speed"]
 	quest.597A88EDA88069A6.title: "Speed is Key"
+	quest.59D3255A6D87173E.title: "Броня Волшебника"
 	quest.59D77E0263A99B13.quest_desc: ["Or the beginning?"]
 	quest.59D77E0263A99B13.title: "The End"
 	quest.59DEFAC595EA782E.quest_desc: ["Get Lord Pumpkinhead Hat"]
@@ -1320,16 +1297,6 @@
 	quest.5A1B000000000069.title: "Destroyer of Chads"
 	quest.5A2986EC81D2EC93.quest_desc: ["Mine Uranium Ore"]
 	quest.5A2986EC81D2EC93.title: "Uranium Fever"
-	quest.5A2D8E4C90B31775.quest_desc: [
-		"Некоторые заклинания Маледиктуса нельзя сразу скрафтить в виде свитка на Кузне Свитков — игра пишет, что заклинание нужно сначала изучить."
-		""
-		"На самом деле ничего изучать не нужно: достаточно, чтобы в инвентаре (не обязательно в руке) лежал &bПроклятый слиток&r — тогда крафт свитка разблокируется."
-		""
-		"Как получить Проклятый слиток:"
-		"&e-&r Убить босса &bМаледиктуса&r — гарантированно выпадает 3-4 слитка"
-		"&e-&r Крафта из других предметов нет, только дроп с босса"
-	]
-	quest.5A2D8E4C90B31775.title: "Разблокировка свитков Маледиктуса"
 	quest.5A8D06E26E900F6D.quest_desc: ["Watch a fluid-containing item be emptied by an Item Drain"]
 	quest.5A8D06E26E900F6D.title: "Tumble Draining"
 	quest.5AFC46AEE66A456A.quest_desc: ["Enter acid while wearing armor, which will recieve the majority of the damage instead"]
@@ -1432,7 +1399,6 @@
 	quest.62F685EA316A18A1.title: "Big Beam"
 	quest.633C76656771FEA3.quest_desc: ["Obtain Rail Grinding Boots with a special speedster's likeness"]
 	quest.633C76656771FEA3.title: "Rollin' at the Speed of Sound"
-	quest.6348A8DB9ED8109D.quest_desc: ["Discover the &bEldritch spells&r"]
 	quest.63D8235E891DEAA0.quest_desc: [
 		"Witness a Train crash as a passenger"
 		"&7(Hidden Advancement)"
@@ -1500,6 +1466,7 @@
 	quest.67E20C8BC1459495.title: "Busy Hands"
 	quest.67EE1635BDFA21A4.quest_desc: ["Conquer a Badlands Miner Outpost"]
 	quest.67EE1635BDFA21A4.title: "Miner Inconvenience"
+	quest.67F09ACA84627ACD.title: "Свиток класса Аква"
 	quest.67F2DF4244DE4C6F.quest_desc: ["Sneak near a Sculk Sensor or Warden to prevent it from detecting you"]
 	quest.67F2DF4244DE4C6F.title: "Sneak 100"
 	quest.680F9F4EEB370555.quest_desc: [
@@ -1906,6 +1873,7 @@
 	task.2B024E0E65DDD9E4.title: "Swimming with the Striders"
 	task.2B077B8D65CE299A.title: "Breaching the Keep"
 	task.2B0B34737DDA63F1.title: "Bit Fruity"
+	task.2B100C0000000001.title: "Occult Spells"
 	task.2B36CD1C2A806E91.title: "Breathtaking"
 	task.2BDDE155B22DCB21.title: "Total Beelocation"
 	task.2C4CA80E5916BDB6.title: "Sniper Duel"
@@ -2232,6 +2200,7 @@
 	task.612EDC7FC04FE55B.title: "Kelp Drive"
 	task.613A2B71B5008CC7.title: "Star Trader"
 	task.61AC2A28E23AEAE9.title: "You Spin Me Right Round Baby"
+	task.61F813EDD6177D77.title: "Подтвердить"
 	task.62EC1628B0BBEDF4.title: "A Special Addition"
 	task.63113A9AB2041D0A.title: "Cut the Red Wire"
 	task.63E4E6E0B08887C0.title: "It's Teleporting!"
@@ -2329,4 +2298,5 @@
 	task.7F6B0B2D73586104.title: "Imperfect thing"
 	task.7F744BD184B28286.title: "Boioioing!"
 	task.7F7A16B8F71AA825.title: "Total Meltdown"
+	task.7FA2CFF2440105C5.title: "Любой свиток со заклинанием школы Аква"
 }
