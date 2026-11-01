@@ -1,0 +1,13 @@
+{
+ "parent": "legendary_monsters:locate_mossy_temple",
+ "criteria": {
+  "colossus": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "legendary_monsters:overgrown_colossus"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/crimson_mosquito",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:mosquito_sick"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

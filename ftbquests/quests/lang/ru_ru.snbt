@@ -1,5 +1,5 @@
 {
-	chapter.01DDFC38B356D586.title: "Гидромант"
+	chapter.01DDFC38B356D586.title: "Атлант"
 	chapter.021F60413AD648B0.title: "Акт 3: Легенды о Древних"
 	chapter.296BCBEAAE93EFF8.title: "Акт 4: Облака над Морским дном"
 	chapter.2F6921C81B308D38.title: "Вампир"
@@ -9,10 +9,10 @@
 	chapter.3EDDEB7E5237B681.title: "Акт 6: Среди звёзд"
 	chapter.4357215960F6F6CE.title: "По ту сторону"
 	chapter.4B1570A10000C001.title: "Путь на край света"
-	chapter.52A3E9D65E86AFC4.title: "Ледяной Маг"
+	chapter.52A3E9D65E86AFC4.title: "Лич"
 	chapter.5C68A55E22912FB1.title: "Акт 2: Безумие и Хаос"
 	chapter.5DCFA713A210A6DD.title: "Жажда Приключений"
-	chapter.6056220CF06A0917.title: "Адский Заклинатель"
+	chapter.6056220CF06A0917.title: "Горящая Душа"
 	chapter.66E1C0A592856B47.title: "Акт 5: Раскалённые души"
 	chapter.6BD0599DC22AA3A4.title: "Акт 7: Конец?"
 	chapter.786780887B963A8C.title: "Сельское Хозяйство"
@@ -44,7 +44,7 @@
 	quest.0304EB6021B3C06B.title: "Куда подует ветер"
 	quest.0346BDB14EE34145.quest_desc: ["Убейте моба, одержимого духом хаоса."]
 	quest.0346BDB14EE34145.title: "Экзорцизм"
-	quest.036108B6DDDAD7BE.quest_desc: ["Может стоить рассказать &cАдскому Заклинателю&r о том, что я найду в хранилище?"]
+	quest.036108B6DDDAD7BE.quest_desc: ["Может стоить рассказать &cГорящей Душе&r о том, что я найду в хранилище?"]
 	quest.036108B6DDDAD7BE.title: "Ключ?"
 	quest.036F4C8DB6C45C1A.quest_desc: ["Наденьте полный комплект брони из темного металла"]
 	quest.036F4C8DB6C45C1A.title: "Рыцарь Хаоса"
@@ -140,7 +140,7 @@
 	quest.0C16E1B72F34BE4C.title: "Точно в цель"
 	quest.0C44F6226C4E4FC9.quest_desc: ["Убейте темный вихрь"]
 	quest.0C44F6226C4E4FC9.title: "Ветер темнеет"
-	quest.0C4E0800EAA2A859.title: "Облачение Гидроманта"
+	quest.0C4E0800EAA2A859.title: "Облачение Атланта"
 	quest.0C57667294C7010D.quest_desc: [
 		"Установите цель навигационного стола на расстоянии более 5000 блоков"
 		"&7(Секретное достижение)"
@@ -874,7 +874,7 @@
 	quest.3EC077F073C888FA.title: "Верховный датчик"
 	quest.3EC0E7112ACE53DC.quest_desc: ["Исследуйте все биомы Потусторонья"]
 	quest.3EC0E7112ACE53DC.title: "Эхолокация"
-	quest.3ED7A18213D61ECB.quest_desc: ["Огненное существо. Надо бы взять с собой &cАдского Заклинателя&r."]
+	quest.3ED7A18213D61ECB.quest_desc: ["Огненное существо. Надо бы взять с собой &cГорящую Душу&r."]
 	quest.3ED7A18213D61ECB.title: "Тайрос, Первый Огненосец"
 	quest.3F1D8F5CB02A64FC.quest_desc: ["Одолейте &zДревнего Стража&r в Подводном Монументе"]
 	quest.3F1D8F5CB02A64FC.title: "Древний Страж"

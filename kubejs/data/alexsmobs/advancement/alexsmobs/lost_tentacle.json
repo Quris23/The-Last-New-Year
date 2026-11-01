@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "capsid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:lost_tentacle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/skelewag_skull",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:novelty_hat"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

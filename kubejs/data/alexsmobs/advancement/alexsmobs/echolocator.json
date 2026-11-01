@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/save_cachalot_whale",
+  "criteria": {
+    "echolocator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:echolocator"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

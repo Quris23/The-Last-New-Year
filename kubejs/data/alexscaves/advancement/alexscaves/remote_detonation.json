@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/polymer_plate",
+ "criteria": {
+  "stalked_by_deep_one": {
+   "trigger": "alexscaves:remote_detonation"
+  }
+ }
+}

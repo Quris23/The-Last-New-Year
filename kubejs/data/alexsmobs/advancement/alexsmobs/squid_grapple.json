@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/lost_tentacle",
+  "criteria": {
+    "capsid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:squid_grapple"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

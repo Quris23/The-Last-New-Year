@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/spiked_scute",
+  "criteria": {
+    "spiked_turtle_shell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:spiked_turtle_shell"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

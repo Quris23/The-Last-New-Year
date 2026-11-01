@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/froststalker_kill",
+  "criteria": {
+    "froststalker_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:froststalker_helmet"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

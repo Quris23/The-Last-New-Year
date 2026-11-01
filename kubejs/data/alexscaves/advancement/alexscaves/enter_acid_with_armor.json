@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/discover_toxic_caves",
+ "criteria": {
+  "enter_acid_with_armor": {
+   "trigger": "alexscaves:enter_acid_with_armor"
+  }
+ }
+}

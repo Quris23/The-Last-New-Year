@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(trans, [trans, 'alexscaves:darkened_apple']),
         event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:fel_soil']),
         event.recipes.createFilling(trans,  [trans, Fluid.of('irons_spellbooks:blood', 500)]),
-        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:dark_atrium']),
+        event.recipes.createDeploying(trans, [trans, 'born_in_chaos_v1:transformative_flower']),
     ]).transitionalItem(trans).loops(1)
 
     // Око Потерянной Технологии
@@ -168,26 +168,24 @@ ServerEvents.recipes(event => {
     })
 
     // Око Первого Разлома
-    let sea = ['alexscaves:pearl', 'alexscaves:magic_conch']
-    let ore = ['deepslate_diamond_ore', 'deepslate_emerald_ore']
+    let ore = ['deepslate_diamond_ore', 'deepslate_emerald_ore', 'createpropulsion:deepslate_platinum_ore']
     event.shaped('endrem:cold_eye', [
-        'rEr',
+        'dEd',
         'hCs',
-        'rdr'
+        'dId'
     ], {
-        r: 'cataclysm_spellbooks:abyssal_rune',
+        d: ore,
         E: 'cataclysm:abyssal_egg',
         h: 'heart_of_the_sea',
         C: 'ender_eye',
-        s: sea,
-        d: ore
+        s: 'alexscaves:magic_conch',
+        I: 'alexscaves:immortal_embryo'
     })
 
     // Око Вечных Бурь
     let trans3 = 'kubejs:incomplete_wither_eye'
     event.recipes.create.sequenced_assembly([
-        CreateItem.of('endrem:wither_eye', 0.80),
-        CreateItem.of('2x legendary_monsters:air_rune', 0.20)
+        CreateItem.of('endrem:wither_eye', 1.0)
     ], 'irons_spellbooks:energized_core', [ 
         event.recipes.createFilling(trans3, [trans3, Fluid.of('kubejs:cloud_fluid', 1000)]),
         event.recipes.createDeploying(trans3, [trans3, 'irons_spellbooks:mithril_weave']),
@@ -195,7 +193,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:cloud_rod']),
         event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
         event.recipes.createDeploying(trans3, [trans3, 'legendary_monsters:air_rune']),
-    ]).transitionalItem(trans3).loops(2)
+    ]).transitionalItem(trans3).loops(1)
 
     // Око Семи Морей
     event.shaped('endrem:exotic_eye', [

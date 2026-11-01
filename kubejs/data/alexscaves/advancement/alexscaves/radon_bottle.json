@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/enter_acid_with_armor",
+ "criteria": {
+  "radon_bottle": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:radon_bottle"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

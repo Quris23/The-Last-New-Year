@@ -1,0 +1,18 @@
+{
+ "parent": "alexscaves:alexscaves/ride_submarine",
+ "criteria": {
+  "interact": {
+   "trigger": "minecraft:player_interacted_with_entity",
+   "conditions": {
+    "item": {
+     "items": [
+      "minecraft:copper_ingot"
+     ]
+    },
+    "entity": {
+     "type": "alexscaves:submarine"
+    }
+   }
+  }
+ }
+}

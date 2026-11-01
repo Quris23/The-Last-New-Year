@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/uranium_rod",
+ "criteria": {
+  "raygun": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:raygun"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

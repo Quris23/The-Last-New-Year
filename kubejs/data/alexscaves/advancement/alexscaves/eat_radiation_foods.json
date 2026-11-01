@@ -1,0 +1,35 @@
+{
+ "parent": "alexscaves:alexscaves/sulfur_dust",
+ "criteria": {
+  "spelunkie": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "alexscaves:spelunkie"
+     ]
+    }
+   }
+  },
+  "slam": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "alexscaves:slam"
+     ]
+    }
+   }
+  },
+  "green_soylent": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "alexscaves:green_soylent"
+     ]
+    }
+   }
+  }
+ }
+}

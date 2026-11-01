@@ -1,0 +1,14 @@
+{
+  "parent": "alexsmobs:alexsmobs/tame_elephant",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "alexsmobs:elephant",
+          "nbt": "{Tusked:true}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/straddler",
+  "criteria": {
+    "straddleboard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:straddle_saddle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

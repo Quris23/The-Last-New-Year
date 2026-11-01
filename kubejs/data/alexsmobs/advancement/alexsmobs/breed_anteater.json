@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/leafcutter_ant_pupa",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "alexsmobs:anteater"
+        }
+      }
+    }
+  }
+}

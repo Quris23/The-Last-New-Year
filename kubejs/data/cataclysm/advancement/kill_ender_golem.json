@@ -1,0 +1,13 @@
+{
+ "parent": "cataclysm:find_ruined_citadel",
+ "criteria": {
+  "endergolem": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "cataclysm:ender_golem"
+    }
+   }
+  }
+ }
+}

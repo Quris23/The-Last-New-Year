@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/uranium_rod",
+ "criteria": {
+  "nuclear_bomb": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:nuclear_bomb"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "alexsmobs:alexsmobs/maraca",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "alexsmobs:maraca"
+          ]
+        },
+        "entity": {
+          "type": "alexsmobs:cockroach"
+        }
+      }
+    }
+  }
+}

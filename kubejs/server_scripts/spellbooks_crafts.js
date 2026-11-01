@@ -146,54 +146,66 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(enchBook).loops(2)
 
+    // Том Новатора - Штормовой Атлас, пластина, пресс, ядро, провода и жидкая молния
+    let stormAtlas = 'spellclasses:storm_atlas'
+
+    event.recipes.create.sequenced_assembly([
+        'discerning_the_eldritch:tempestuous_tome'
+    ], stormAtlas, [
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'create:copper_sheet']),
+        event.recipes.createPressing(stormAtlas, stormAtlas),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'irons_spellbooks:energized_core']),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'createaddition:copper_wire']),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'createaddition:electrum_wire']),
+        event.recipes.createFilling(stormAtlas, [stormAtlas, Fluid.of('create_wizardry:lightning', 250)])
+    ]).transitionalItem(stormAtlas).loops(1)
+
     // Рукопись друидов
     let druidShard = ['small_amethyst_bud', 'medium_amethyst_bud', 'large_amethyst_bud', 'amethyst_cluster', 'amethyst_shard']
     let bottles = ['honey_bottle', 'alexscaves:hot_chocolate_bottle', 'alexscaves:purple_soda_bottle']
     let green = ['spore_blossom', 'mangrove_propagule', 'torchflower', 'alexscaves:flytrap']
 
     event.shaped('irons_spellbooks:druidic_spell_book', [
-    ' GM',
-    'BRA',
-    'MI '
-  ], {
-    G: green,
-    M: 'irons_spellbooks:magic_cloth',
-    B: bottles,
-    R: 'irons_spellbooks:rotten_spell_book',
-    A: druidShard,
-    I: 'glow_ink_sac'
-  })
+        ' GM',
+        'BRA',
+        'MI '
+    ], {
+        G: green,
+        M: 'irons_spellbooks:magic_cloth',
+        B: bottles,
+        R: 'irons_spellbooks:rotten_spell_book',
+        A: druidShard,
+        I: 'glow_ink_sac'
+    })
 
-  // Драконий кодекс
-  let dragonBook = 'irons_spellbooks:ruined_book'
+    // Драконий кодекс
+    let dragonBook = 'irons_spellbooks:ruined_book'
 
-  event.recipes.create.sequenced_assembly([
+    event.recipes.create.sequenced_assembly([
         'irons_spellbooks:dragonskin_spell_book'
     ], dragonBook, [
         event.recipes.createDeploying(dragonBook, [dragonBook, 'cataclysm:enderite_block']),
         event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:mithril_ingot']),
-        event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:dragonskin']),
+        event.recipes.createDeploying(dragonBook, [dragonBook, 'quark:dragon_scale']),
         event.recipes.createFilling(dragonBook,  [dragonBook, Fluid.of('fluid:haunting_fluid', 435)]),
         event.recipes.createDeploying(dragonBook, [dragonBook, 'irons_spellbooks:dragonskin']),
         event.recipes.createPressing(dragonBook, dragonBook)
     ]).transitionalItem(dragonBook).loops(2)
 
     // Апокриф вампира
-
     event.shaped('irons_spellbooks:cursed_doll_spell_book', [
-    'VBI',
-    'BRB',
-    'IBV'
-  ], {
-    V: 'born_in_chaos_v1:elixir_of_vampirism',
-    B: 'irons_spellbooks:bloody_vellum',
-    I: 'irons_spellbooks:arcane_ingot',
-    R: ruinBook
-  })
+        'VBI',
+        'BRB',
+        'IBV'
+    ], {
+        V: 'born_in_chaos_v1:elixir_of_vampirism',
+        B: 'irons_spellbooks:bloody_vellum',
+        I: 'irons_spellbooks:arcane_ingot',
+        R: ruinBook
+    })
 
-  // Деревенская библия
-
-  event.recipes.create.sequenced_assembly([
+    // Деревенская библия
+    event.recipes.create.sequenced_assembly([
         'irons_spellbooks:villager_spell_book'
     ], ruinBook, [
         event.recipes.createDeploying(ruinBook, [ruinBook, 'irons_spellbooks:divine_pearl']),
@@ -203,5 +215,17 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(ruinBook, [ruinBook, 'irons_spellbooks:magic_cloth']),
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(ruinBook).loops(2)
+
+    // Евангелие рассвета (осталась только 3-я версия): из Деревенской библии вместо Золотой книги заклинаний
+    event.shaped('somakespells:dawnlit_gospel_3_spell_book', [
+        'ABB',
+        'DCC',
+        'ABB'
+    ], {
+        A: 'irons_spellbooks:holy_rune',
+        B: 'irons_spellbooks:arcane_ingot',
+        C: 'irons_spellbooks:hogskin',
+        D: 'irons_spellbooks:villager_spell_book'
+    })
 
 })

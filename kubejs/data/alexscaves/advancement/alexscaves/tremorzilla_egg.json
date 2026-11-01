@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/nuclear_bomb",
+ "criteria": {
+  "quarry": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:tremorzilla_egg"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

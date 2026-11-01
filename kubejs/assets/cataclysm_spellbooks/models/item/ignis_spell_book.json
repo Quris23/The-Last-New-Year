@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "somakespells:item/burning_magma_3_spell_book_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "somakespells:item/burning_magma_3_spell_book"
+      }
+    },
+    "head": {
+      "parent": "somakespells:item/burning_magma_3_spell_book_model"
+    }
+  }
+}

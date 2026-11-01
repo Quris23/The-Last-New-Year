@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/guster",
+  "criteria": {
+    "rat_upgrade_basic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:pocket_sand"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "banana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#alexsmobs:bananas"
+          }
+        ]
+      }
+    }
+  }
+}

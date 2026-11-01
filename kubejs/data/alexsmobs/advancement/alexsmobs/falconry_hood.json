@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/falconry_glove",
+  "criteria": {
+    "falconry_hood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:falconry_hood"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

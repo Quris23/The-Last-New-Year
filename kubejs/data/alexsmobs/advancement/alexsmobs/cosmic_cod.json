@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/capsid",
+  "criteria": {
+    "capsid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:cosmic_cod"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

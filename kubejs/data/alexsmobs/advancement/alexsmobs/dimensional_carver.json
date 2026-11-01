@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/void_worm_kill",
+  "criteria": {
+    "dimensional_carver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:dimensional_carver"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

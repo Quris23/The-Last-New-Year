@@ -1,0 +1,13 @@
+{
+ "parent": "alexscaves:alexscaves/hatch_tremorzilla_egg",
+ "criteria": {
+  "killed": {
+   "trigger": "minecraft:tame_animal",
+   "conditions": {
+    "entity": {
+     "type": "alexscaves:tremorzilla"
+    }
+   }
+  }
+ }
+}

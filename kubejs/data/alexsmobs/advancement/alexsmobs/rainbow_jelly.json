@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "gustmaker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:rainbow_jelly"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

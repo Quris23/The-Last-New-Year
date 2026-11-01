@@ -1,0 +1,26 @@
+{
+ "parent": "cataclysm:root",
+ "criteria": {
+  "citadel": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "cataclysm:ruined_citadel"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "citadel"
+  ]
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "alexscaves:alexscaves/nuclear_bomb",
+ "criteria": {
+  "ride_nuclear_bomb": {
+   "trigger": "minecraft:started_riding",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "vehicle": {
+        "type": "alexscaves:nuclear_bomb"
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}

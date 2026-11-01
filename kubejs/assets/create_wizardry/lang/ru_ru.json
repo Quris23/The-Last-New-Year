@@ -68,6 +68,7 @@
   "create_wizardry.tooltip.spell": "Заклинание: %s",
   "create_wizardry.tooltip.spell_incompatible": "(Несовместимо с огненным заклинателем)",
   "effect.create_wizardry.depletion": "Истощение",
+  "effect.create_wizardry.mana_depletion": "Истощение маны",
   "effect.create_wizardry.siphon_lock": "Блокировка сифона",
   "fluid_type.create_wizardry.fire_ale_type": "Огненный эль",
   "fluid_type.create_wizardry.lightning_type": "Жидкая молния",

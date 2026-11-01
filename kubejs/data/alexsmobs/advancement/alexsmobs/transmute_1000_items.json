@@ -1,0 +1,14 @@
+{
+  "frame": "challenge",
+  "parent": "alexsmobs:alexsmobs/transmutation_table",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:transmute_1000_items"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

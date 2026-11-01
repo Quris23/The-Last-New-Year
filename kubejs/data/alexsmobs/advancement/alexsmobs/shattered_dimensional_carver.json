@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/dimensional_carver",
+  "criteria": {
+    "dimensional_carver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:shattered_dimensional_carver"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

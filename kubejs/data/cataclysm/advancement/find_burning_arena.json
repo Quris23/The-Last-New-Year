@@ -1,0 +1,26 @@
+{
+ "parent": "cataclysm:root",
+ "criteria": {
+  "arena": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "cataclysm:burning_arena"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "arena"
+  ]
+ ]
+}

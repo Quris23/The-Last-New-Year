@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/breed_crocodile",
+  "criteria": {
+    "crocodile_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:crocodile_chestplate"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

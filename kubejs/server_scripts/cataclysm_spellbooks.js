@@ -197,4 +197,12 @@ ServerEvents.recipes(event => {
       result: { id: 'cataclysm:brontes' }
   })
 
+  // Книга Р'льеха: вместо Разрушенной книги - Книга заклинаний гидроманта
+  event.remove({ id: 'cataclysm_spellbooks:amethyst_bless/abyss_spell_book' })
+  event.custom({
+    type: 'cataclysm:amethyst_bless',
+    ingredient: { item: 'somakespells:aquamancer_spell_book' },
+    result: { id: 'cataclysm_spellbooks:abyss_spell_book' },
+    time: 250
+  })
 })

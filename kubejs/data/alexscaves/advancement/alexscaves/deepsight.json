@@ -1,0 +1,13 @@
+{
+ "parent": "alexscaves:alexscaves/abyssal_bucket",
+ "criteria": {
+  "all_effects": {
+   "trigger": "minecraft:effects_changed",
+   "conditions": {
+    "effects": {
+     "alexscaves:deepsight": {}
+    }
+   }
+  }
+ }
+}

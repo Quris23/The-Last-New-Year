@@ -1,0 +1,26 @@
+{
+ "parent": "legendary_monsters:legendary_monsters_root",
+ "criteria": {
+  "ruined_pyramid": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "legendary_monsters:ruined_pyramid"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "ruined_pyramid"
+  ]
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "all_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "alexsmobs:orcas_might": {}
+        }
+      }
+    }
+  }
+}

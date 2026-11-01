@@ -1,0 +1,26 @@
+{
+ "parent": "cataclysm:root",
+ "criteria": {
+  "prison": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "cataclysm:frosted_prison"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "prison"
+  ]
+ ]
+}

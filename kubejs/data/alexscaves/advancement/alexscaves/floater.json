@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/bioluminesscence",
+ "criteria": {
+  "floater": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:floater"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/capsid",
+  "criteria": {
+    "enderiophage_rocket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:enderiophage_rocket"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

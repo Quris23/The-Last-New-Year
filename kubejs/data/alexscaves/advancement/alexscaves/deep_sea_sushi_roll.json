@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/abyssal_bucket",
+ "criteria": {
+  "deep_sea_sushi_roll": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:deep_sea_sushi_roll"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

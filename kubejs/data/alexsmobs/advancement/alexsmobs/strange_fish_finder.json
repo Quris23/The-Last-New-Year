@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/fish_bones",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:pupfish_locator"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

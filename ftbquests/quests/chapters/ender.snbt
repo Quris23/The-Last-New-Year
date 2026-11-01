@@ -216,8 +216,8 @@
 				item: { count: 1, id: "irons_spellbooks:lesser_spell_slot_upgrade" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 4.011904761904766d
+			y: 6.0238095238095255d
 		}
 		{
 			dependencies: ["38AA000000000002"]

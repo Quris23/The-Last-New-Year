@@ -1,0 +1,13 @@
+{
+ "parent": "legendary_monsters:locate_cloudy_temple",
+ "criteria": {
+  "cloud_golem": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "legendary_monsters:cloud_golem"
+    }
+   }
+  }
+ }
+}

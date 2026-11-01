@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/void_worm_summon",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:void_worm_kill"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

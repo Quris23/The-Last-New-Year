@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/emu",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:emu_dodge"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

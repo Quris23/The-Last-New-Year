@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/enter_acid_with_armor",
+ "criteria": {
+  "radgill_bucket": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:radgill_bucket"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

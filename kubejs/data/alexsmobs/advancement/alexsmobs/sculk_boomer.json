@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/skreecher",
+  "criteria": {
+    "capsid": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:sculk_boomer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

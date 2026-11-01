@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/defeat_nucleeper",
+ "criteria": {
+  "limestone": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:uranium_rod"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

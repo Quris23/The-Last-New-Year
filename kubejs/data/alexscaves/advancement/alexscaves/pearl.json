@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/mussel",
+ "criteria": {
+  "pearl": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:pearl"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

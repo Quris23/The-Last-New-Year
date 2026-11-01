@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/stomp_leafcutter_anthill",
+  "criteria": {
+    "gongylidia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:gongylidia"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

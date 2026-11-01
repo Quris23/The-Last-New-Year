@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "acacia_blossom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:acacia_blossom"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

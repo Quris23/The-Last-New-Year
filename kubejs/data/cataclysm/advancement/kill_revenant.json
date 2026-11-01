@@ -1,0 +1,13 @@
+{
+ "parent": "cataclysm:find_burning_arena",
+ "criteria": {
+  "endergolem": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "cataclysm:ignited_revenant"
+    }
+   }
+  }
+ }
+}

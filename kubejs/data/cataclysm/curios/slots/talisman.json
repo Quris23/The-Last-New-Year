@@ -1,0 +1,9 @@
+{
+  "size": 1,
+  "order": 180,
+  "icon": "cataclysm:item/empty_talisman_slot",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": true,
+  "drop_rule": "DEFAULT"
+}

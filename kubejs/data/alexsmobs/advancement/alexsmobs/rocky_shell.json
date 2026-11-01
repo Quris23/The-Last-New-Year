@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/rocky_roller",
+  "criteria": {
+    "soul_heart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:rocky_shell"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

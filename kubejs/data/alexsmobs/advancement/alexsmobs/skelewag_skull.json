@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/skelewag",
+  "criteria": {
+    "skull": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:skelewag_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

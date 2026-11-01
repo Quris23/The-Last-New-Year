@@ -1,0 +1,67 @@
+{
+  "parent": "tentaworks:doc_rig",
+  "criteria": {
+    "has_far_reach": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_book",
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "tentaworks:far_reach"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "has_swift": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_book",
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "tentaworks:swift"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "has_thrift": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:enchanted_book",
+            "predicates": {
+              "minecraft:stored_enchantments": [
+                {
+                  "enchantments": "tentaworks:thrift"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_far_reach"
+    ],
+    [
+      "has_swift"
+    ],
+    [
+      "has_thrift"
+    ]
+  ]
+}

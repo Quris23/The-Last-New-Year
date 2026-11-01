@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/tame_tremorzilla",
+ "criteria": {
+  "tremorzilla_kill_beam": {
+   "trigger": "alexscaves:tremorzilla_kill_beam"
+  }
+ }
+}

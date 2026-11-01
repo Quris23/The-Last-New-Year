@@ -1,0 +1,26 @@
+{
+  "parent": "cataclysm:root",
+  "criteria": {
+    "factory": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cataclysm:sunken_city"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "factory"
+    ]
+  ]
+}

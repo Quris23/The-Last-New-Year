@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/mussel",
+ "criteria": {
+  "mussel": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:cooked_mussel"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

@@ -21,6 +21,10 @@ const SCROLL_SCHOOL_CHECKS = {
     '365CF225A08970DD': { school: 'irons_spellbooks:ice', rarity: null }, // Q3: any Ice scroll
     // Infernal (Fire)
     '7DCAC4D5F483CB03': { school: 'irons_spellbooks:fire', rarity: null }, // Q3: any Fire scroll
+    // Vampire: Occult (Discerning The Eldritch) spells are crafted on the rune table
+    '2B100C0000000001': { school: 'discerning_the_eldritch:ritual', rarity: null }, // any Occult scroll
+    // Water Warlock (Somake Spells Aqua)
+    '7FA2CFF2440105C5': { school: 'somakespells:aqua', rarity: null }, // any Aqua scroll
 }
 
 function hexId(task) {
@@ -35,6 +39,11 @@ function hexId(task) {
 // no native "one item out of a list" item task, so this is the same custom-task workaround).
 const ANY_ITEM_CHECKS = {
     '5A0F359B1D9B7D65': [ // Ice Mage: any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '61F813EDD6177D77': [ // Water Warlock: any grimoire
         'irons_spellbooks:copper_spell_book',
         'irons_spellbooks:iron_spell_book',
         'irons_spellbooks:gold_spell_book',

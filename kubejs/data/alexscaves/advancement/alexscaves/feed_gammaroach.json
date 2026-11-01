@@ -1,0 +1,18 @@
+{
+ "parent": "alexscaves:alexscaves/eat_radiation_foods",
+ "criteria": {
+  "interact": {
+   "trigger": "minecraft:player_interacted_with_entity",
+   "conditions": {
+    "item": {
+     "items": [
+      "alexscaves:spelunkie"
+     ]
+    },
+    "entity": {
+     "type": "alexscaves:gammaroach"
+    }
+   }
+  }
+ }
+}

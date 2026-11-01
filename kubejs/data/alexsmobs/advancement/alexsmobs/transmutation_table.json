@@ -1,0 +1,18 @@
+{
+  "frame": "goal",
+  "parent": "alexsmobs:alexsmobs/farseer",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:transmutation_table"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

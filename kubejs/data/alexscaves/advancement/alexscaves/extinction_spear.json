@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/defeat_luxtructosaurus",
+ "criteria": {
+  "dreadbow": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:extinction_spear"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

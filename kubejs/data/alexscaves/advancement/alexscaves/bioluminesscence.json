@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/abyssal_bucket",
+ "criteria": {
+  "bioluminesscence": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:bioluminesscence"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

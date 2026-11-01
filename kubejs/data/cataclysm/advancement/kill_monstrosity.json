@@ -1,0 +1,13 @@
+{
+ "parent": "cataclysm:find_soul_black_smith",
+ "criteria": {
+  "netheritemonstrosity": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": {
+     "type": "cataclysm:netherite_monstrosity"
+    }
+   }
+  }
+ }
+}

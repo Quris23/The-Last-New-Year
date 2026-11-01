@@ -1,0 +1,26 @@
+{
+  "parent": "cataclysm:root",
+  "criteria": {
+    "acropolis": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "cataclysm:acropolis"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "acropolis"
+    ]
+  ]
+}

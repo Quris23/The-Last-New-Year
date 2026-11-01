@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/skelewag",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:fish_bones"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

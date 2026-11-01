@@ -225,5 +225,17 @@
 			x: -7.5d
 			y: -6.0d
 		}
+		{
+			dependencies: ["5AFC93123E4CC37F"]
+			entity_vis_size: 1.0f
+			id: "6E29948B5C6F8FEA"
+			tasks: [{
+				id: "41CE8E7822051E9D"
+				item: { count: 1, id: "somakespells:sculkborne_axe" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.0d
+		}
 	]
 }

@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/echolocator",
+  "criteria": {
+    "endolocator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:endolocator"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

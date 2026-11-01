@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/falconry_hood",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:bald_eagle_challenge"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

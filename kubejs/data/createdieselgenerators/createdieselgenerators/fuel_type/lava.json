@@ -1,0 +1,8 @@
+{
+  "fluid": ["minecraft:lava", "minecraft:flowing_lava"],
+  "sound_pitch": 0.8,
+  "normal": { "speed": 1.0, "strength": 0.0, "burn_rate": 0.05 },
+  "modular": { "speed": 1.0, "strength": 0.0, "burn_rate": 0.05 },
+  "huge": { "speed": 1.0, "strength": 0.0, "burn_rate": 0.05 },
+  "burner_multiplier": 0.9
+}

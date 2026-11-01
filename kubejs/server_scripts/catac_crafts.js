@@ -411,4 +411,22 @@ ServerEvents.recipes(event => {
     event.recipes.createPressing(endTransit, endTransit)
   ]).transitionalItem(endTransit).loops(3)
   
+
+  // Жертвоприношение Бездне: вместо сердца моря нужно Око Глубинного Стража (endrem:guardian_eye).
+  // У мода два рецепта (с кристаллизованным кораллом и с осколком коралла); оба переписаны.
+  event.remove({ id: 'cataclysm:abyssal_sacrifice' })
+  event.remove({ id: 'cataclysm:abyssal_sacrifice2' })
+  for (let coral of ['cataclysm:crystallized_coral', 'cataclysm:coral_chunk']) {
+    event.shapeless('cataclysm:abyssal_sacrifice', [
+      'minecraft:nautilus_shell',
+      'cataclysm:athame',
+      coral,
+      'minecraft:diamond_block',
+      'endrem:guardian_eye',
+      'minecraft:emerald_block',
+      'minecraft:iron_block',
+      'minecraft:amethyst_block',
+      'minecraft:gold_block'
+    ])
+  }
 })

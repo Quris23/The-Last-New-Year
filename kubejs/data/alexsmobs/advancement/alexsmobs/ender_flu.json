@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/enderiophage",
+  "criteria": {
+    "all_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "alexsmobs:ender_flu": {}
+        }
+      }
+    }
+  }
+}

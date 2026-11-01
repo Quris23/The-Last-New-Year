@@ -1,0 +1,13 @@
+{
+  "parent": "cataclysm:kill_clawdian",
+  "criteria": {
+    "endergolem": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "cataclysm:scylla"
+        }
+      }
+    }
+  }
+}

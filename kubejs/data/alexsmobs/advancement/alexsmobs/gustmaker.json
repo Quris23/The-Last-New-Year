@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/guster",
+  "criteria": {
+    "gustmaker": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:gustmaker"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

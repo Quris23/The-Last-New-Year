@@ -1,0 +1,21 @@
+{
+  "parent": "alexsmobs:alexsmobs/tame_mantis_shrimp",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": "minecraft:water_bucket"
+        },
+        "entity": {
+          "type": "alexsmobs:mantis_shrimp"
+        },
+        "player": {
+          "flags": {
+            "is_sneaking": true
+          }
+        }
+      }
+    }
+  }
+}

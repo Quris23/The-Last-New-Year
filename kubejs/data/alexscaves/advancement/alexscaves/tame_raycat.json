@@ -1,0 +1,13 @@
+{
+ "parent": "alexscaves:alexscaves/radgill_bucket",
+ "criteria": {
+  "killed": {
+   "trigger": "minecraft:tame_animal",
+   "conditions": {
+    "entity": {
+     "type": "alexscaves:raycat"
+    }
+   }
+  }
+ }
+}

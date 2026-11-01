@@ -1,12 +1,12 @@
 {
-	chapter.01DDFC38B356D586.title: "Гидромант"
+	chapter.01DDFC38B356D586.title: "Атлант"
 	chapter.2F6921C81B308D38.title: "Вампир"
 	chapter.2FADCD87CDAFAD07.title: "Священник"
 	chapter.373774E94F304EFC.title: "Исследователь Хекстека"
 	chapter.4B1570A10000C001.title: "История"
-	chapter.52A3E9D65E86AFC4.title: "Ледяной Маг"
+	chapter.52A3E9D65E86AFC4.title: "Лич"
 	chapter.5DCFA713A210A6DD.title: "Thirst for Adventure"
-	chapter.6056220CF06A0917.title: "Адский Заклинатель"
+	chapter.6056220CF06A0917.title: "Горящая Душа"
 	chapter.786780887B963A8C.title: "Husbandry"
 	chapter.79667D19722FA0FB.title: "Эндер"
 	chapter.7A8AC9B64D5FD26A.title: "Друид"
@@ -113,7 +113,7 @@
 	quest.0C16E1B72F34BE4C.title: "Take Aim"
 	quest.0C44F6226C4E4FC9.quest_desc: ["Kill the dark vortex"]
 	quest.0C44F6226C4E4FC9.title: "The Wind Darkening"
-	quest.0C4E0800EAA2A859.title: "Полный сет брони Гидроманта"
+	quest.0C4E0800EAA2A859.title: "Полный сет брони Атланта"
 	quest.0C57667294C7010D.quest_desc: [
 		"Set a Navigation Table's target to a location over 5000 blocks away"
 		"&7(Hidden Advancement)"

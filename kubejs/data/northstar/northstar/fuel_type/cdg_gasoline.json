@@ -1,0 +1,6 @@
+{
+  "fluids": "createdieselgenerators:flowing_gasoline",
+  "gj_per_mb": 1.0,
+  "combustion_engine_rpm": 32.0,
+  "combustion_engine_use": 0.04
+}

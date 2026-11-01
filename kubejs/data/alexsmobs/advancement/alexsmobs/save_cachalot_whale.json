@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "ambergris": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:ambergris"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

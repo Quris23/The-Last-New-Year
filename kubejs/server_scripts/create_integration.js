@@ -1,4 +1,16 @@
 // kubejs/server_scripts/create_integration.js
+
+// Облако в бутылке: ПКМ стеклянной бутылкой на высоте облаков (Y от 191 до 196, как у Quark) даёт артефакт,
+// а не бутылочку Quark. Quark-модуль "Bottled Cloud" выключен в конфиге, бутылочка Quark забанена (itembans).
+ItemEvents.rightClicked('minecraft:glass_bottle', event => {
+    const player = event.player
+    if (player.y > 191 && player.y < 196) {
+        event.item.shrink(1)
+        player.give('artifacts:cloud_in_a_bottle')
+        event.cancel()
+    }
+})
+
 ServerEvents.recipes(event => {
 
     // Жидкий Хаос
@@ -39,7 +51,7 @@ ServerEvents.recipes(event => {
     event.custom({
     type: 'create:emptying',
     ingredients: [
-        { item: 'quark:bottled_cloud' }
+        { item: 'artifacts:cloud_in_a_bottle' }
     ],
     results: [
         { id: 'minecraft:glass_bottle' },
@@ -47,7 +59,7 @@ ServerEvents.recipes(event => {
     ]
     })
 
-    event.recipes.createFilling('quark:bottled_cloud', [
+    event.recipes.createFilling('artifacts:cloud_in_a_bottle', [
         'minecraft:glass_bottle',
         Fluid.of('kubejs:cloud_fluid', 250)
     ])
@@ -209,5 +221,87 @@ ServerEvents.recipes(event => {
         { id: 'create:experience_nugget' }
       ]
     }).id('generation:hydraulic_compacting/infested_stone');
+
+    // Варп-двигатель
+    let trwarp = 'kubejs:incomplete_warp_drive'
+    let tank = ['create:fluid_tank', 'createcasing:andesite_fluid_tank', 'createcasing:brass_fluid_tank', 'createcasing:zinc_fluid_tank']
+    event.recipes.create.sequenced_assembly([
+        'artifacts:warp_drive'
+    ], tank, [ 
+        event.recipes.createDeploying(trwarp, [trwarp, 'create:refined_radiance']),
+        event.recipes.createFilling(trwarp, [trwarp, Fluid.of('irons_spellbooks:timeless_slurry', 1000)]),
+        event.recipes.createDeploying(trwarp, [trwarp, 'aerowarptics:rift_lens']),
+        event.recipes.createFilling(trwarp, [trwarp, Fluid.of('aerowarptics:rift_essence', 250)]),
+        event.recipes.createDeploying(trwarp, [trwarp, 'sophisticatedcore:ender_linker']),
+    ]).transitionalItem(trwarp).loops(1)
+
+    // Чешуя дракона
+    let skinTrans1 = 'born_in_chaos_v1:monster_skin'
+    //'legendary_monsters:lava_eaters_skin']
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('quark:dragon_scale', 0.50),
+        CreateItem.of('born_in_chaos_v1:monster_skin', 0.50)
+    ], skinTrans1, [
+        event.recipes.createDeploying(skinTrans1, [skinTrans1, 'end_crystal']),
+        event.recipes.createFilling(skinTrans1,  [skinTrans1, Fluid.of('irons_spellbooks:timeless_slurry', 500)]),
+        event.recipes.createDeploying(skinTrans1, [skinTrans1, ['crying_obsidian', 'obsidian']]),
+        event.recipes.createFilling(skinTrans1,  [skinTrans1, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
+        event.recipes.createPressing(skinTrans1, skinTrans1)
+    ]).transitionalItem(skinTrans1).loops(3)
+
+    // Кристалл Аркейна из одной маны: 100 мБ в чаше под прессом, на сверхнагреве
+    event.custom({
+        type: 'create:compacting',
+        heat_requirement: 'superheated',
+        ingredients: [
+            { type: 'neoforge:single', amount: 100, fluid: 'create_wizardry:mana' }
+        ],
+        results: [
+            { id: 'arcanerunes:arcane_crystal' }
+        ]
+    }).id('generation:compacting/arcane_crystal_superheated')
+
+    // Хекс-кристалл (любой свиток) в чаше на сверхнагреве под миксером превращается в 60 мБ маны
+    event.recipes.create.mixing(Fluid.of('create_wizardry:mana', 60), [
+        'irons_spellbooks:scroll'
+    ]).superheated()
+
+    // Кристалл Аркейна обратно в 100 мБ маны: чаша на сверхнагреве под миксером
+    event.recipes.create.mixing(Fluid.of('create_wizardry:mana', 100), [
+        'arcanerunes:arcane_crystal'
+    ]).superheated()
+
+    // Рунический стол (Arcane Runes): механическая сборка на Тайном корпусе.
+    // Любая руна школы - пресс - 50 мБ маны; затем кристаллический дисплей; готовый предмет эндерируется вентилятором
+    event.remove({ id: 'arcanerunes:rune_table' })
+    let anyRune = [
+        'irons_spellbooks:fire_rune', 'irons_spellbooks:ice_rune', 'irons_spellbooks:lightning_rune',
+        'wind_spellbooks:wind_rune', 'irons_spellbooks:nature_rune', 'irons_spellbooks:ender_rune',
+        'irons_spellbooks:blood_rune', 'irons_spellbooks:holy_rune', 'irons_spellbooks:evocation_rune',
+        'arcanerunes:eldritch_rune', 'arcanerunes:sand_rune', 'cataclysm_spellbooks:abyssal_rune',
+        'hazentouvelib:cosmic_rune', 'discerning_the_eldritch:ritual_rune', 'somakespells:aqua_rune'
+    ]
+    let tableCasing = 'create_wizardry:arcane_casing'
+    let tableSteps = []
+    for (let n = 0; n < 1; n++) {
+        tableSteps.push(
+            event.recipes.createDeploying(tableCasing, [tableCasing, anyRune]),
+            event.recipes.createPressing(tableCasing, tableCasing),
+            event.recipes.createFilling(tableCasing, [tableCasing, Fluid.of('create_wizardry:mana', 50)])
+        )
+    }
+    tableSteps.push(
+        event.recipes.createDeploying(tableCasing, [tableCasing, 'supplementaries:crystal_display'])
+    )
+    event.recipes.create.sequenced_assembly([
+        'kubejs:unendered_rune_table'
+    ], tableCasing, tableSteps).transitionalItem(tableCasing).loops(3)
+
+    // ...и последний шаг: эндерирование вентилятором над дыханием дракона (Create Dragons Plus)
+    event.custom({
+        type: 'create_dragons_plus:ending',
+        ingredients: [{ item: 'kubejs:unendered_rune_table' }],
+        results: [{ id: 'arcanerunes:rune_table', chance: 0.9 }]
+    }).id('generation:ending/rune_table')
 
 })

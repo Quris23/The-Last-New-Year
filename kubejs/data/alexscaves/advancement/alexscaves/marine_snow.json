@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/abyssal_bucket",
+ "criteria": {
+  "marine_snow": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:marine_snow"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

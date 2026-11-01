@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:seagull_steal"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

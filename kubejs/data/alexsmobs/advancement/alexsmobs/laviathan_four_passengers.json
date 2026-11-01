@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/straddle_saddle",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:laviathan_four_passengers"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

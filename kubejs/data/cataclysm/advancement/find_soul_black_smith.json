@@ -1,0 +1,26 @@
+{
+ "parent": "cataclysm:root",
+ "criteria": {
+  "blacksmith": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "cataclysm:soul_black_smith"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "blacksmith"
+  ]
+ ]
+}

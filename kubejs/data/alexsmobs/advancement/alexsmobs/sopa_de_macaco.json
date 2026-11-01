@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/tame_capuchin",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:sopa_de_macaco"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

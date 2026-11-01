@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/strange_fish_finder",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:devils_hole_pupfish_bucket"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

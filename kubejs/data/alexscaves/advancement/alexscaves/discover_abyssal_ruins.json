@@ -1,0 +1,24 @@
+{
+ "parent": "alexscaves:alexscaves/discover_abyssal_chasm",
+ "criteria": {
+  "abyssal_ruins": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": [
+         "alexscaves:abyssal_ruins"
+        ]
+       }
+      }
+     }
+    ]
+   }
+  }
+ },
+ "sends_telemetry_event": true
+}

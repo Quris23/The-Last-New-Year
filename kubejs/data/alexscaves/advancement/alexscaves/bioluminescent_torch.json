@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/bioluminesscence",
+ "criteria": {
+  "bioluminescent_torch": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:bioluminescent_torch"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

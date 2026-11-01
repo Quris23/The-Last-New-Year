@@ -1,0 +1,17 @@
+{
+ "parent": "alexscaves:alexscaves/toxic_paste",
+ "criteria": {
+  "cooked_dinosaur_chop": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "alexscaves:polymer_plate"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

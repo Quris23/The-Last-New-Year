@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/warped_mosco_kill",
+  "criteria": {
+    "hemolymph_blaster": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:hemolymph_blaster"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

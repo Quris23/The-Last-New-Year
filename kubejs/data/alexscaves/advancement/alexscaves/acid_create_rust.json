@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/enter_acid_with_armor",
+ "criteria": {
+  "rust": {
+   "trigger": "alexscaves:acid_create_rust"
+  }
+ }
+}

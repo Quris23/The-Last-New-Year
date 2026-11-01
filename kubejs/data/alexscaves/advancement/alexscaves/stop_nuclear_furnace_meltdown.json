@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/nuclear_furnace_component",
+ "criteria": {
+  "stop_nuclear_furnace_meltdown": {
+   "trigger": "alexscaves:stop_nuclear_furnace_meltdown"
+  }
+ }
+}

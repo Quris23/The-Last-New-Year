@@ -1,0 +1,8 @@
+{
+ "parent": "alexscaves:alexscaves/defeat_luxtructosaurus",
+ "criteria": {
+  "atlatitan_stomp": {
+   "trigger": "alexscaves:atlatitan_stomp"
+  }
+ }
+}

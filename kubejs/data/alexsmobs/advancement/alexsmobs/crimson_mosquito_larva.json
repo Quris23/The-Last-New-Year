@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/crimson_mosquito",
+  "criteria": {
+    "rat_upgrade_basic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:mosquito_larva"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

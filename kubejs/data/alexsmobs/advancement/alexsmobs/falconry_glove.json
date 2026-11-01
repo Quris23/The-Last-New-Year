@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/tame_bald_eagle",
+  "criteria": {
+    "falconry_glove": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:falconry_glove"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

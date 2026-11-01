@@ -1,0 +1,18 @@
+{
+  "parent": "alexsmobs:alexsmobs/straddler",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "alexsmobs:mosquito_larva"
+          ]
+        },
+        "entity": {
+          "type": "alexsmobs:stradpole"
+        }
+      }
+    }
+  }
+}

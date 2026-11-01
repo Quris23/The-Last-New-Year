@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/alligator_snapping_turtle",
+  "criteria": {
+    "spiked_scute": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:spiked_scute"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

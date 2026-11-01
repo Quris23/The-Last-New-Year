@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/froststalker_helmet",
+  "criteria": {
+    "tame": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": {
+          "type": "alexsmobs:froststalker"
+        }
+      }
+    }
+  }
+}

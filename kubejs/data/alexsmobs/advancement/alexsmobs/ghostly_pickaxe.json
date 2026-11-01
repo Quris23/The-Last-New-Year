@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/underminer",
+  "criteria": {
+    "ghostly_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:ghostly_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

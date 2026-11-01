@@ -1,0 +1,13 @@
+{
+  "parent": "alexsmobs:alexsmobs/root",
+  "criteria": {
+    "ex": {
+      "trigger": "alexsmobs:undermine_underminer"
+    }
+  },
+  "requirements": [
+    [
+      "ex"
+    ]
+  ]
+}

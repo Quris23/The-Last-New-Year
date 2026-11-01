@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/soul_vulture",
+  "criteria": {
+    "soul_heart": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:soul_heart"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

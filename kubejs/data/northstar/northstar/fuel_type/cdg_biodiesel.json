@@ -1,0 +1,6 @@
+{
+  "fluids": "createdieselgenerators:flowing_biodiesel",
+  "gj_per_mb": 0.5,
+  "combustion_engine_rpm": 16.0,
+  "combustion_engine_use": 0.04
+}

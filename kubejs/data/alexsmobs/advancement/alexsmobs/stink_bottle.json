@@ -1,0 +1,17 @@
+{
+  "parent": "alexsmobs:alexsmobs/skunk",
+  "criteria": {
+    "sopa_de_macaco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:stink_bottle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
