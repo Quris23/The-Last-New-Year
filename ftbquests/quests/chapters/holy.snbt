@@ -404,32 +404,7 @@
 			y: 4.0d
 		}
 		{
-			entity_vis_size: 1.0f
-			id: "3ED7A18213D61ECB"
-			optional: true
-			shape: "square"
-			tasks: [{
-				entity: "irons_spellbooks:fire_boss"
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "345AD840EE739989"
-				type: "kill"
-				value: 1L
-			}]
-			x: -9.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["3ED7A18213D61ECB"]
+			dependencies: ["643CE42DA0DBA9E0"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "036108B6DDDAD7BE"
@@ -574,6 +549,17 @@
 			}]
 			x: 3.0d
 			y: 8.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "643CE42DA0DBA9E0"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "7701530421E62D37"
+				type: "dimension"
+			}]
+			x: -8.0d
+			y: 10.0d
 		}
 	]
 }

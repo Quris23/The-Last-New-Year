@@ -20,6 +20,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["114B9B738DD2EFFC"]
 			entity_vis_size: 1.0f
 			id: "27AB4040B1770DBA"
 			optional: true
@@ -41,8 +42,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 6.0d
-			y: 8.0d
+			x: 4.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["27AB4040B1770DBA"]
@@ -169,7 +170,7 @@
 				id: "0428702D1AFA1817"
 				type: "custom"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 6.0d
 		}
 		{
@@ -279,7 +280,10 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["60FA3B6C8D2E4F51"]
+			dependencies: [
+				"60FA3B6C8D2E4F51"
+				"704AE5D7CD51E82C"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "70FA3B6C8D2E4F51"
@@ -308,8 +312,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 12.0d
+			x: -6.0d
+			y: 11.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -338,7 +342,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["64D925C549B1B635"]
+			dependencies: [
+				"64D925C549B1B635"
+				"3385B7487A8DE011"
+			]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6A48847C3B4E85E2"
@@ -353,7 +360,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["6A48847C3B4E85E2"]
+			dependencies: ["7B4B8A8838CE3E2D"]
 			entity_vis_size: 1.0f
 			id: "0690B9F0ACD5F409"
 			optional: true
@@ -364,7 +371,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 12.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["0690B9F0ACD5F409"]
@@ -379,7 +386,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 12.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["6A48847C3B4E85E2"]
@@ -393,8 +400,8 @@
 				item: { count: 1, id: "irons_spellbooks:keeper_flamberge" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 14.0d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -402,6 +409,7 @@
 				"29EACCAB6866CDBE"
 			]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "40FA3B6C8D2E4F51"
 			optional: true
 			shape: "square"
@@ -410,8 +418,8 @@
 				item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "cataclysm_spellbooks:tectonic_tremble", index: 0, level: 1, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 1b } }, count: 1, id: "cataclysm_spellbooks:monstrous_flamberge" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 14.0d
+			x: -2.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["3F5B63F23F6E4DF4"]
@@ -570,7 +578,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["313FED81B6DBA3E0"]
+			dependencies: ["7B4B8A8838CE3E2D"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2674658AEABDDAB9"
@@ -580,8 +588,8 @@
 				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] }, "irons_spellbooks:spell_container": { data: [ ], maxSpells: 1, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:infernal_sorcerer_chestplate" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 8.0d
+			x: 6.0d
+			y: 14.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -605,8 +613,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.0d
-			y: 16.0d
+			x: -2.0d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -630,8 +638,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 4.0d
-			y: 10.0d
+			x: -6.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["4E12FAA86984B46D"]
@@ -643,8 +651,8 @@
 				item: { count: 1, id: "legendary_monsters:fiery_jaw" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: 10.0d
+			x: -4.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["01FA3B6C8D2E4F51"]
@@ -659,13 +667,13 @@
 					type: "item"
 				}
 				{
-					id: "1CA372A5EB1869F1"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "irons_spellbooks:fire_arrow", index: 0, level: 10, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
+					id: "3F8CA405A4E25F92"
+					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "somakespells:firestorm_vortex", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
 					type: "item"
 				}
 				{
-					id: "3F8CA405A4E25F92"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "somakespells:firestorm_vortex", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
+					id: "5FFE72097EB28CAF"
+					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "somakespells:apocalyptic_burst", index: 0, level: 10, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
 					type: "item"
 				}
 			]
@@ -673,7 +681,10 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["6A48847C3B4E85E2"]
+			dependencies: [
+				"6A48847C3B4E85E2"
+				"2969C7F1C9D37FE6"
+			]
 			entity_vis_size: 1.0f
 			id: "7561CB0764E2BE79"
 			tasks: [{
@@ -682,19 +693,112 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7561CB0764E2BE79"]
 			entity_vis_size: 1.0f
 			id: "16C0E207999982B9"
+			preset: "goal"
 			tasks: [{
 				id: "73465A0C94E73F68"
 				item: { count: 1, id: "somakespells:core_splitter" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 13.5d
+			x: 0.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["114B9B738DD2EFFC"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "7B4B8A8838CE3E2D"
+			tasks: [{
+				entity: "irons_spellbooks:fire_boss"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "05A531C3D8533445"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["7B4B8A8838CE3E2D"]
+			entity_vis_size: 1.0f
+			id: "3385B7487A8DE011"
+			tasks: [{
+				id: "52778E2FF76E105B"
+				item: { count: 1, id: "irons_spellbooks:decrepit_key" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "704AE5D7CD51E82C"
+			tasks: [{
+				entity: "cataclysm:ignis"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "44160777A4EE6E8E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["704AE5D7CD51E82C"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "2969C7F1C9D37FE6"
+			tasks: [{
+				id: "7B16810B3E4B1297"
+				item: { count: 1, id: "somakespells:fire" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "114B9B738DD2EFFC"
+			tasks: [
+				{
+					id: "478164457CF56F1F"
+					item: { count: 1, id: "irons_spellbooks:furled_map_citadel" }
+					type: "item"
+				}
+				{
+					id: "4BCEE4B22D618F4C"
+					item: { count: 1, id: "irons_spellbooks:cinderous_soulcaller" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 12.0d
 		}
 	]
 }
