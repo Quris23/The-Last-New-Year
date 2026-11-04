@@ -274,8 +274,8 @@
 				item: { count: 1, id: "irons_spellbooks:lightning_upgrade_orb" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 8.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["37AA00000000000F"]
@@ -621,6 +621,18 @@
 			]
 			x: 6.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["37AA000000000004"]
+			entity_vis_size: 1.0f
+			id: "00C6F9676B4A8FBA"
+			tasks: [{
+				id: "041521DFEDD75034"
+				item: { count: 1, id: "arcanerunes:spell_guide" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
 		}
 	]
 }

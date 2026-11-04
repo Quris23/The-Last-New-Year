@@ -533,5 +533,17 @@
 			x: -10.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["38AA000000000004"]
+			entity_vis_size: 1.0f
+			id: "46A44BE94107EC73"
+			tasks: [{
+				id: "653ABA2E45EF0DCB"
+				item: { count: 1, id: "arcanerunes:spell_guide" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
 	]
 }

@@ -639,8 +639,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -6.0d
-			y: 14.0d
+			x: 5.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4E12FAA86984B46D"]
@@ -652,8 +652,8 @@
 				item: { count: 1, id: "legendary_monsters:fiery_jaw" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 14.0d
+			x: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["01FA3B6C8D2E4F51"]
@@ -685,6 +685,7 @@
 			dependencies: [
 				"6A48847C3B4E85E2"
 				"2969C7F1C9D37FE6"
+				"1C6540732E3D7724"
 			]
 			entity_vis_size: 1.0f
 			id: "7561CB0764E2BE79"
@@ -706,8 +707,8 @@
 				item: { count: 1, id: "somakespells:core_splitter" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 16.5d
+			x: -3.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["114B9B738DD2EFFC"]
@@ -780,8 +781,8 @@
 				item: { count: 1, id: "somakespells:fire" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 14.0d
+			x: -2.5d
+			y: 13.5d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -812,6 +813,29 @@
 			}]
 			x: -6.0d
 			y: 8.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "1C6540732E3D7724"
+			tasks: [{
+				entity: "block_factorys_bosses:infernal_dragon"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "79EC0EE348602588"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: 16.0d
 		}
 	]
 }
