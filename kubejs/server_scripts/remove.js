@@ -216,5 +216,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'tentaworks:netherite_tentacle_rig' })
     event.remove({ output: 'tentaworks:tentacle'})
 
+    // Chromeware: вырезанные импланты (из JEI и креатива прячет client_scripts/hide_items.js и itembans)
+    event.remove({ output: 'chromeware:reflex_tuner' })
+    event.remove({ output: 'chromeware:revulsor' })
+    event.remove({ output: 'chromeware:monowire' })
 
 })

@@ -1,0 +1,57 @@
+// Все правки мода Somake's Spells. Новые правки к Somake писать сюда.
+// Атрибуты Somake-оружия пересобираются целиком: у оружия задаются урон, скорость и нужные статы заклинаний.
+
+const ItemAttributeModifiers = Java.loadClass('net.minecraft.world.item.component.ItemAttributeModifiers')
+const AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
+const Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
+const EquipmentSlotGroup = Java.loadClass('net.minecraft.world.entity.EquipmentSlotGroup')
+const BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+const ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
+const ISpellContainer = Java.loadClass('io.redspace.ironsspellbooks.api.spells.ISpellContainer')
+const ComponentRegistry = Java.loadClass('io.redspace.ironsspellbooks.registries.ComponentRegistry')
+const SpellRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.SpellRegistry')
+
+// attribute: id атрибута; id: id модификатора; amount; op: 'add' | 'mul'
+function attr(attribute, id, amount, op) {
+    return { attribute: attribute, id: id, amount: amount, op: op || 'add' }
+}
+
+function buildAttributes(list) {
+    let builder = ItemAttributeModifiers.builder()
+    list.forEach(a => {
+        let holder = BuiltInRegistries.ATTRIBUTE.getHolder(ResourceLocation.parse(a.attribute)).get()
+        let operation = a.op == 'mul' ? Operation.ADD_MULTIPLIED_BASE : Operation.ADD_VALUE
+        builder.add(holder, new AttributeModifier(ResourceLocation.parse(a.id), a.amount, operation), EquipmentSlotGroup.MAINHAND)
+    })
+    return builder.build()
+}
+
+ItemEvents.modification(event => {
+    // Глефа из визерита: урон 15, скорость -2.5, дальность +0.5; +15% огня, +10% сокращение чтения, +5% сила заклинаний
+    event.modify('somakespells:witherite_glaive', item => {
+        item.override(DataComponents.ATTRIBUTE_MODIFIERS, buildAttributes([
+            attr('minecraft:generic.attack_damage', 'minecraft:base_attack_damage', 15),
+            attr('minecraft:generic.attack_speed', 'minecraft:base_attack_speed', -2.5),
+            attr('minecraft:player.entity_interaction_range', 'somakespells:witherite_glaive_modifier', 0.5),
+            attr('irons_spellbooks:fire_spell_power', 'kubejs:witherite_glaive_fire', 0.15, 'mul'),
+            attr('irons_spellbooks:cast_time_reduction', 'kubejs:witherite_glaive_cast', 0.10, 'mul'),
+            attr('irons_spellbooks:spell_power', 'kubejs:witherite_glaive_power', 0.05, 'mul')
+        ]))
+    })
+
+    // Раскалыватель ядер: урон 17, скорость -2.3; +25% огня, +20% сокращение чтения, +10% сила заклинаний;
+    // высеченное заклинание - Огненная стрела 5
+    event.modify('somakespells:core_splitter', item => {
+        item.override(DataComponents.ATTRIBUTE_MODIFIERS, buildAttributes([
+            attr('minecraft:generic.attack_damage', 'minecraft:base_attack_damage', 17),
+            attr('minecraft:generic.attack_speed', 'minecraft:base_attack_speed', -2.3),
+            attr('irons_spellbooks:fire_spell_power', 'kubejs:core_splitter_fire', 0.25, 'mul'),
+            attr('irons_spellbooks:cast_time_reduction', 'kubejs:core_splitter_cast', 0.20, 'mul'),
+            attr('irons_spellbooks:spell_power', 'kubejs:core_splitter_power', 0.10, 'mul')
+        ]))
+        let container = ISpellContainer.create(1, true, false).mutableCopy()
+        container.addSpell(SpellRegistry.FIREBOLT_SPELL.get(), 5, true)
+        item.override(ComponentRegistry.SPELL_CONTAINER.get(), container.toImmutable())
+    })
+})

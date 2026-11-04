@@ -1912,7 +1912,10 @@
 			dependencies: ["10CE4E2CCD1CA611"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "create:rotation_speed_controller"
+				components: {
+					"ftbquests:missing_item": "create:rotation_speed_controller"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "1089C97F610C1AB6"
 			optional: true
@@ -1980,7 +1983,10 @@
 			dependencies: ["67E20C8BC1459495"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "create:mechanical_crafter"
+				components: {
+					"ftbquests:missing_item": "create:mechanical_crafter"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "3033B64F46422599"
 			optional: true
@@ -2014,7 +2020,10 @@
 			dependencies: ["3033B64F46422599"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "create:mechanical_crafter"
+				components: {
+					"ftbquests:missing_item": "create:mechanical_crafter"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "37C44F2FFE6F57F8"
 			optional: true

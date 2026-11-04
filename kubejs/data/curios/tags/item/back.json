@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "tentaworks:copper_tentacle_rig",
-    "tentaworks:netherite_tentacle_rig",
     "create:copper_backtank",
     "create:netherite_backtank"
   ]

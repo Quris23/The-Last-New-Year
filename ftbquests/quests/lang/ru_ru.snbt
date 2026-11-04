@@ -1,7 +1,7 @@
 {
 	chapter.01DDFC38B356D586.title: "Атлант"
-	chapter.021F60413AD648B0.title: "Акт 3: Легенды о Древних"
-	chapter.296BCBEAAE93EFF8.title: "Акт 4: Облака над Морским дном"
+	chapter.021F60413AD648B0.title: "Акт 4: Легенды о Древних"
+	chapter.296BCBEAAE93EFF8.title: "Акт 3: Облака над Морским дном"
 	chapter.2F6921C81B308D38.title: "Вампир"
 	chapter.2FADCD87CDAFAD07.title: "Священник"
 	chapter.373774E94F304EFC.title: "Исследователь Хекстека"
@@ -1180,6 +1180,7 @@
 	quest.4EE087904AF65FA1.title: "Археолог-любитель"
 	quest.4F05FF9733077E22.quest_desc: ["Скооперируйтесь с аксолотлем и выиграйте бой"]
 	quest.4F05FF9733077E22.title: "Дружба — это чудо!"
+	quest.4F268CB5FBF6FAC4.title: "Основа Магии"
 	quest.4F3990A25D0AB769.quest_desc: ["Доберитесь до метки X на карте следопыта"]
 	quest.4F3990A25D0AB769.title: "Дорога в завтрашний день"
 	quest.4FEC18EDCAD2C4E9.quest_desc: ["Войдите в токсичные пещеры"]

@@ -22,6 +22,7 @@
 		{
 			dependencies: ["114B9B738DD2EFFC"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "27AB4040B1770DBA"
 			optional: true
 			shape: "octagon"
@@ -170,7 +171,7 @@
 				id: "0428702D1AFA1817"
 				type: "custom"
 			}]
-			x: 2.5d
+			x: 2.0d
 			y: 6.0d
 		}
 		{
@@ -799,6 +800,18 @@
 			]
 			x: 4.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["0F695FF1EAE0C94B"]
+			entity_vis_size: 1.0f
+			id: "0C37EF0E9CA87C18"
+			tasks: [{
+				id: "136EBD758073FB69"
+				item: { count: 1, id: "arcanerunes:spell_guide" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
 		}
 	]
 }

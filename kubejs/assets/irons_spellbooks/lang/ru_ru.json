@@ -272,5 +272,7 @@
   "tooltip.irons_spellbooks.ink_tooltip": "Рунический катализатор, способный создать %s Хекс-кристалл",
   "ui.irons_spellbooks.ink_rarity_error": "Нужен более качественный катализатор",
   "advancements.irons_spellbooks.ink_root.description": "Получите любой рунический катализатор.",
-  "advancements.irons_spellbooks.ink_legendary.description": "Получите легендарный рунический катализатор."
+  "advancements.irons_spellbooks.ink_legendary.description": "Получите легендарный рунический катализатор.",
+  "spell.irons_spellbooks.eldritch_blast": "Зольтраак",
+  "entity.irons_spellbooks.eldritch_blast": "Зольтраак"
 }

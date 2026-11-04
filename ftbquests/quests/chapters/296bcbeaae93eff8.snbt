@@ -9,7 +9,7 @@
 	}
 	id: "296BCBEAAE93EFF8"
 	images: [ ]
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -31,6 +31,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
@@ -66,6 +67,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
@@ -138,6 +140,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {
@@ -191,6 +194,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6BB28019F37FEF02"
@@ -353,6 +357,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "2337EF1ECA052860"
@@ -366,6 +371,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "603C824DE0FF58CC"
@@ -411,6 +417,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "12EB628103AC20A3"
@@ -469,6 +476,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6E96C20F15B16B1D"
@@ -555,6 +563,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "6ED217A97E180F01"
@@ -568,6 +577,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["1157E00000000003"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			icon: {

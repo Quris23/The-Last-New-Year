@@ -110,18 +110,6 @@ ServerEvents.recipes(event => {
         R: 'irons_spellbooks:blank_rune'
     })
 
-    // Топор, рождённый скалком: усиленные осколки эха, угасающий скалковый фонарь и костяная рукоять
-    event.remove({ output: 'somakespells:sculkborne_axe' })
-    event.shaped('somakespells:sculkborne_axe', [
-        'ALA',
-        'AH ',
-        ' H '
-    ], {
-        A: 'deeperdarker:reinforced_echo_shard',
-        L: 'discerning_the_eldritch:fading_sculk_lantern',
-        H: 'born_in_chaos_v1:bone_handle'
-    })
-
     // Нуклеат осколка души: полированный аметист (Northstar) + Божественный осколок души -> 2 нуклеата
     event.shapeless('2x kubejs:soulshard_nucleate', [
         'northstar:polished_amethyst',

@@ -9,6 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"1157E0000000000C"
+				"1157E0000000000A"
+			]
 			entity_vis_size: 1.0f
 			id: "076C026E3B55C236"
 			tasks: [{
@@ -242,6 +246,10 @@
 			y: 4.5d
 		}
 		{
+			dependencies: [
+				"1157E0000000000C"
+				"1157E0000000000A"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:chorus_mask"
@@ -258,6 +266,10 @@
 			y: 15.0d
 		}
 		{
+			dependencies: [
+				"1157E0000000000C"
+				"1157E0000000000A"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:infected_chorus_fruit"
@@ -274,6 +286,10 @@
 			y: 16.5d
 		}
 		{
+			dependencies: [
+				"1157E0000000000C"
+				"1157E0000000000A"
+			]
 			entity_vis_size: 1.0f
 			icon: {
 				id: "legendary_monsters:large_shulker_shell"

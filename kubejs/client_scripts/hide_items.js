@@ -2,6 +2,11 @@
 // Полностью убирает предметы из JEI и креативных вкладок (не только рецепт - см. server_scripts/remove.js)
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
     event.remove([
+        // Chromeware
+        'chromeware:reflex_tuner',
+        'chromeware:revulsor',
+        'chromeware:monowire',
+
         // Somake's Spells
         'somakespells:burning_magma_spell_book',
         'somakespells:burning_magma_2_spell_book',

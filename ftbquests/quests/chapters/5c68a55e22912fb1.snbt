@@ -18,7 +18,6 @@
 		{
 			dependencies: [
 				"1157E00000000001"
-				"1157E00000000004"
 				"1375956687662C80"
 				"5B6E18941C28F3F7"
 				"08D0724665A2E053"
@@ -122,6 +121,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -195,6 +195,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -289,6 +290,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -446,6 +448,7 @@
 			y: 14.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1507,6 +1510,7 @@
 			y: -2.25d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			hide_until_deps_complete: true
 			id: "08D0724665A2E053"
@@ -1592,6 +1596,7 @@
 			y: 2.25d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "4CEC6B1C2B8B4ACD"
 			optional: true
@@ -1616,6 +1621,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "3F40BBAA3C08F269"
 			tasks: [{
@@ -1639,6 +1645,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "44DABDB224F30AAC"
 			tasks: [{
@@ -1662,6 +1669,7 @@
 			y: 6.5d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "602948E3AE2283D0"
 			tasks: [{
@@ -1685,6 +1693,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "28EF4F22F43548B9"
 			tasks: [{
@@ -1708,6 +1717,7 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "58E3A5A871F12157"
 			tasks: [{
@@ -1731,6 +1741,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1157E00000000001"]
 			entity_vis_size: 1.0f
 			id: "210ACE08AF569C86"
 			shape: "hexagon"
