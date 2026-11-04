@@ -16,7 +16,7 @@
 	}
 	id: "79667D19722FA0FB"
 	images: [ ]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -532,63 +532,6 @@
 			}]
 			x: -10.0d
 			y: 10.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "3F14213CF0188D76"
-			tasks: [{
-				id: "46858352A3B3D7E3"
-				item: { count: 1, id: "hazentouvelib:cosmic_rune" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["3F14213CF0188D76"]
-			entity_vis_size: 1.0f
-			id: "7DB2098AFDD37FB6"
-			preset: "goal"
-			tasks: [
-				{
-					id: "1D64BA1C6ED3D876"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "echoing_magic:collapse", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
-					type: "item"
-				}
-				{
-					id: "346C0097D34E9DE0"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "echoing_magic:echoing_slam", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
-					type: "item"
-				}
-				{
-					id: "177078D5C41A03F7"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "echoing_magic:echoing_explosion", index: 0, level: 8, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
-					type: "item"
-				}
-				{
-					id: "4539A0057F754DE6"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "echoing_magic:echo_blast", index: 0, level: 5, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
-					type: "item"
-				}
-				{
-					id: "503352AC51C29957"
-					item: { components: { "irons_spellbooks:spell_container": { data: [{ id: "echoing_magic:echo_star", index: 0, level: 10, locked: 1b }], maxSpells: 1, mustEquip: 0b, spellWheel: 0b } }, count: 1, id: "irons_spellbooks:scroll" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: 13.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "1EB0DE6B23214248"
-			tasks: [{
-				id: "2E668019EC8BCE33"
-				item: { count: 1, id: "archaion:echo_mace" }
-				type: "item"
-			}]
-			x: -4.0d
-			y: 12.0d
 		}
 	]
 }

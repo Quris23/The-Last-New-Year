@@ -1,0 +1,349 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steampunk"
+	group: "3AC9C1A5395BF5C0"
+	icon: {
+		id: "chromeware:surgery_chair"
+	}
+	id: "5A5C000000000001"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			entity_vis_size: 1.0f
+			hide_lock_icon: true
+			icon: {
+				id: "chromeware:surgery_chair"
+			}
+			id: "0AFFCBBC27D2F80B"
+			invisible: true
+			tasks: [{
+				id: "5A5B000000000001"
+				type: "custom"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0AFFCBBC27D2F80B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:cyber_leg"
+			}
+			id: "385A4E9A9C484A65"
+			tasks: [
+				{
+					id: "63C477C0EBBE26E8"
+					item: { count: 1, id: "chromeware:cyber_torso" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7380A87FC87D9106"
+					item: { count: 1, id: "chromeware:cyber_arm" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "608BFC2CFF4F8F98"
+					item: { count: 1, id: "chromeware:cyber_leg" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["385A4E9A9C484A65"]
+			entity_vis_size: 1.0f
+			id: "7A33A03CB9AF35CD"
+			tasks: [{
+				id: "28A2A8EAF94C1A67"
+				item: { count: 1, id: "chromeware:zetatech_berserk" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0AFFCBBC27D2F80B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:kiroshi_optics"
+			}
+			id: "629D16579319AD9B"
+			tasks: [{
+				id: "5A5B000000000007"
+				type: "custom"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["629D16579319AD9B"]
+			entity_vis_size: 1.0f
+			id: "536D982FCC355CD1"
+			tasks: [{
+				id: "2021AE6A182A14EA"
+				item: { count: 1, id: "chromeware:cyberdeck" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["385A4E9A9C484A65"]
+			entity_vis_size: 1.0f
+			id: "7AA99CAA62BA3887"
+			tasks: [{
+				id: "77DCC04D1E7E2C23"
+				item: { count: 1, id: "chromeware:sandevistan" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5A5A000000000001"]
+			entity_vis_size: 1.0f
+			id: "289A6226A5A07301"
+			tasks: [{
+				id: "4D5A283D1B67AA33"
+				item: { count: 1, id: "chromeware:standard_grade_immunosuppressant" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["289A6226A5A07301"]
+			entity_vis_size: 1.0f
+			id: "2D99AEBF25F2AC0F"
+			tasks: [{
+				id: "3B13CF19718900D6"
+				item: { count: 1, id: "chromeware:military_grade_immunosuppressant" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0AFFCBBC27D2F80B"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "minecraft:beef"
+			}
+			id: "32599DA648E40204"
+			tasks: [
+				{
+					count: 2L
+					id: "18D0268B9305D882"
+					item: { count: 1, id: "sophisticatedbackpacks:tank_upgrade" }
+					type: "item"
+				}
+				{
+					id: "29D1A7ED4D78EB86"
+					item: { count: 1, id: "spellclasses:blood_pump_upgrade" }
+					type: "item"
+				}
+				{
+					id: "27623DF6DDA2CD07"
+					item: { count: 1, id: "spellclasses:mana_pump_upgrade" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["385A4E9A9C484A65"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:cyber_torso"
+			}
+			id: "5A5A000000000001"
+			tasks: [{
+				id: "5A5B000000000002"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A5A000000000001"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:cyber_torso"
+			}
+			id: "5A5A000000000002"
+			tasks: [{
+				id: "5A5B000000000003"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A5A000000000002"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:cyber_torso"
+			}
+			id: "5A5A000000000003"
+			tasks: [{
+				id: "5A5B000000000004"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["536D982FCC355CD1"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:cyberdeck"
+			}
+			id: "5A5A000000000004"
+			tasks: [{
+				id: "5A5B000000000005"
+				type: "custom"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["385A4E9A9C484A65"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:mantis_blades"
+			}
+			id: "5A5A000000000005"
+			optional: true
+			tasks: [{
+				id: "5A5B000000000006"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["536D982FCC355CD1"]
+			entity_vis_size: 1.0f
+			id: "154FEF20B90F3F53"
+			tasks: [{
+				id: "2CD5A2BA8CA2AAC6"
+				item: { count: 1, id: "chromeware:quickhack_system_collapse" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["629D16579319AD9B"]
+			entity_vis_size: 1.0f
+			id: "72779297A0384B9D"
+			tasks: [{
+				id: "4E691A909833E1D4"
+				item: { count: 1, id: "chromeware:the_oracle" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72779297A0384B9D"]
+			entity_vis_size: 1.0f
+			id: "6763884A6680EB94"
+			tasks: [{
+				id: "5C3A9D7A64ED2FB1"
+				item: { count: 1, id: "chromeware:cockatrice" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A5A000000000005"]
+			entity_vis_size: 1.0f
+			id: "3AB63868608D9028"
+			tasks: [{
+				id: "2D3C395465CEECEF"
+				item: { count: 1, id: "tentaworks:copper_tentacle_rig" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3AB63868608D9028"]
+			entity_vis_size: 1.0f
+			id: "2076A6483815EE58"
+			tasks: [{
+				id: "3840D5384A5A6870"
+				item: { count: 1, id: "tentaworks:netherite_tentacle_rig" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["385A4E9A9C484A65"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:chrome_compressor"
+			}
+			id: "5A5A000000000006"
+			tasks: [{
+				id: "5A5B000000000008"
+				type: "custom"
+			}]
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5A5A000000000006"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:chrome_compressor"
+			}
+			id: "5A5A000000000007"
+			tasks: [{
+				id: "5A5B000000000009"
+				type: "custom"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5A5A000000000007"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:chrome_compressor"
+			}
+			id: "5A5A000000000008"
+			tasks: [{
+				id: "5A5B00000000000A"
+				type: "custom"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5A5A000000000008"]
+			entity_vis_size: 1.0f
+			icon: {
+				id: "chromeware:chrome_compressor"
+			}
+			id: "5A5A000000000009"
+			invisible: true
+			tasks: [{
+				id: "5A5B00000000000B"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+}
