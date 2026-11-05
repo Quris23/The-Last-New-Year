@@ -1,0 +1,378 @@
+{
+ "credit": "Aquamancer Tome",
+ "texture_size": [
+  64,
+  64
+ ],
+ "textures": {
+  "0": "spellclasses:item/spell_book_models/aquamancer_spell_book",
+  "particle": "spellclasses:item/spell_book_models/aquamancer_spell_book"
+ },
+ "elements": [
+  {
+   "name": "cover_front",
+   "from": [
+    9,
+    0,
+    3
+   ],
+   "to": [
+    10,
+    7,
+    13
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      0.0,
+      0.0,
+      5.0,
+      3.5
+     ],
+     "texture": "#0"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      0.0,
+      10.5,
+      3.5
+     ],
+     "texture": "#0"
+    },
+    "north": {
+     "uv": [
+      2.5,
+      8.5,
+      3.0,
+      12.0
+     ],
+     "texture": "#0"
+    },
+    "south": {
+     "uv": [
+      1.5,
+      8.5,
+      2.0,
+      12.0
+     ],
+     "texture": "#0"
+    },
+    "up": {
+     "uv": [
+      12.5,
+      0.0,
+      13.0,
+      5.0
+     ],
+     "texture": "#0"
+    },
+    "down": {
+     "uv": [
+      6.5,
+      8.5,
+      7.0,
+      13.5
+     ],
+     "texture": "#0"
+    }
+   }
+  },
+  {
+   "name": "cover_back",
+   "from": [
+    6,
+    0,
+    3
+   ],
+   "to": [
+    7,
+    7,
+    13
+   ],
+   "faces": {
+    "west": {
+     "uv": [
+      5.5,
+      0.0,
+      10.5,
+      3.5
+     ],
+     "texture": "#0"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      0.0,
+      10.5,
+      3.5
+     ],
+     "texture": "#0"
+    },
+    "north": {
+     "uv": [
+      4.0,
+      8.5,
+      4.5,
+      12.0
+     ],
+     "texture": "#0"
+    },
+    "south": {
+     "uv": [
+      0.0,
+      8.5,
+      0.5,
+      12.0
+     ],
+     "texture": "#0"
+    },
+    "up": {
+     "uv": [
+      11.0,
+      0.0,
+      11.5,
+      5.0
+     ],
+     "texture": "#0"
+    },
+    "down": {
+     "uv": [
+      5.0,
+      8.5,
+      5.5,
+      13.5
+     ],
+     "texture": "#0"
+    }
+   }
+  },
+  {
+   "name": "spine",
+   "from": [
+    7,
+    6,
+    3
+   ],
+   "to": [
+    9,
+    7,
+    13
+   ],
+   "faces": {
+    "up": {
+     "uv": [
+      11.5,
+      0.0,
+      12.5,
+      5.0
+     ],
+     "texture": "#0"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      8.5,
+      6.5,
+      13.5
+     ],
+     "texture": "#0"
+    },
+    "north": {
+     "uv": [
+      3.0,
+      8.5,
+      4.0,
+      9.0
+     ],
+     "texture": "#0"
+    },
+    "south": {
+     "uv": [
+      0.5,
+      8.5,
+      1.5,
+      9.0
+     ],
+     "texture": "#0"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      0.0,
+      10.5,
+      0.5
+     ],
+     "texture": "#0"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      0.0,
+      10.5,
+      0.5
+     ],
+     "texture": "#0"
+    }
+   }
+  },
+  {
+   "name": "pages",
+   "from": [
+    7,
+    1,
+    4
+   ],
+   "to": [
+    9,
+    6,
+    12
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3.0,
+      9.0,
+      4.0,
+      11.5
+     ],
+     "texture": "#0"
+    },
+    "south": {
+     "uv": [
+      0.5,
+      9.0,
+      1.5,
+      11.5
+     ],
+     "texture": "#0"
+    },
+    "down": {
+     "uv": [
+      5.5,
+      9.0,
+      6.5,
+      13.0
+     ],
+     "texture": "#0"
+    },
+    "up": {
+     "uv": [
+      3.0,
+      4.0,
+      4.0,
+      8.0
+     ],
+     "texture": "#0"
+    },
+    "east": {
+     "uv": [
+      5.5,
+      0.0,
+      9.5,
+      2.5
+     ],
+     "texture": "#0"
+    },
+    "west": {
+     "uv": [
+      5.5,
+      0.0,
+      9.5,
+      2.5
+     ],
+     "texture": "#0"
+    }
+   }
+  }
+ ],
+ "display": {
+  "thirdperson_righthand": {
+   "rotation": [
+    90,
+    -180,
+    0
+   ],
+   "translation": [
+    0,
+    -2,
+    2
+   ],
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ]
+  },
+  "thirdperson_lefthand": {
+   "rotation": [
+    90,
+    -180,
+    0
+   ],
+   "translation": [
+    0,
+    -2,
+    2
+   ],
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    -137,
+    10,
+    90
+   ],
+   "translation": [
+    -4.25,
+    2,
+    -3.75
+   ]
+  },
+  "firstperson_lefthand": {
+   "rotation": [
+    -137,
+    10,
+    -90
+   ],
+   "translation": [
+    4.25,
+    2,
+    -3.25
+   ]
+  },
+  "ground": {
+   "rotation": [
+    -89,
+    0,
+    0
+   ],
+   "translation": [
+    0,
+    0,
+    -4
+   ],
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ]
+  },
+  "head": {
+   "rotation": [
+    0,
+    0,
+    -90
+   ],
+   "translation": [
+    4,
+    8.5,
+    0
+   ]
+  }
+ }
+}

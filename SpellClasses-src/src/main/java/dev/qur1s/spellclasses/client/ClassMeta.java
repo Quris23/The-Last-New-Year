@@ -13,7 +13,7 @@ public final class ClassMeta {
     public record Entry(int color, ResourceLocation icon) {
     }
 
-    /** Display order for the selection grid: 4 in the first row, 3 in the second. */
+    /** Display order for the selection grid: 4 in each row. */
     public static final Map<String, Entry> BY_SCHOOL_PATH = new LinkedHashMap<>();
 
     static {
@@ -24,6 +24,7 @@ public final class ClassMeta {
         BY_SCHOOL_PATH.put("ender", new Entry(0x9C27B0, ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "dragonskin_spell_book")));
         BY_SCHOOL_PATH.put("blood", new Entry(0xB71C1C, ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "cursed_doll_spell_book")));
         BY_SCHOOL_PATH.put("holy", new Entry(0xFFD54F, ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "villager_spell_book")));
+        BY_SCHOOL_PATH.put("aqua", new Entry(0x26C6DA, ResourceLocation.fromNamespaceAndPath("somakespells", "aquamancer_spell_book")));
     }
 
     public static Entry get(ResourceLocation school) {

@@ -38,7 +38,8 @@ public class LightShieldRenderer extends EntityRenderer<LightShieldEntity> {
         float fade = Math.min(1f, Math.min(age / 6f, remaining / 20f));
         if (fade <= 0f) return;
         float pulse = 0.85f + 0.15f * (float) Math.sin(age * 0.2f);
-        int alpha = (int) (46 * fade * pulse);
+        // (the sphere is drawn additively, near and far surface on top of the caster: more than a faint veil washes the player out)
+        int alpha = (int) (16 * fade * pulse);
         int r = (int) (COLOR[0] * 255), g = (int) (COLOR[1] * 255), b = (int) (COLOR[2] * 255);
 
         poseStack.pushPose();

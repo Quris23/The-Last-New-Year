@@ -4,6 +4,8 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import io.redspace.ironsspellbooks.api.spells.CastResult;
 import io.redspace.ironsspellbooks.api.spells.CastSource;
+import io.redspace.ironsspellbooks.api.spells.SchoolType;
+import net.acetheeldritchking.cataclysm_spellbooks.registries.CSSchoolRegistry;
 import io.redspace.ironsspellbooks.spells.blood.BloodSlashSpell;
 import io.redspace.ironsspellbooks.spells.blood.RayOfSiphoningSpell;
 import net.acetheeldritchking.cataclysm_spellbooks.spells.holy.ConjureKoboldiatorSpell;
@@ -44,6 +46,18 @@ public abstract class AbstractSpellOverridesMixin {
         }
     }
 
+    /** Fire Arrow costs a flat 750 mana at any level. */
+    @Inject(method = "getManaCost", at = @At("RETURN"), cancellable = true)
+    private void spellclasses$fireArrowMana(int spellLevel, CallbackInfoReturnable<Integer> cir) {
+        if ((Object) this instanceof io.redspace.ironsspellbooks.spells.fire.FireArrowSpell) {
+            cir.setReturnValue(750);
+        } else if ((Object) this instanceof io.redspace.ironsspellbooks.spells.evocation.ShieldSpell) {
+            cir.setReturnValue(10);
+        } else if ((Object) this instanceof io.redspace.ironsspellbooks.spells.eldritch.EldritchBlastSpell) {
+            cir.setReturnValue(50);
+        }
+    }
+
     @Inject(method = "getSpellPower", at = @At("RETURN"), cancellable = true)
     private void spellclasses$bloodSlashDamageCurve(int spellLevel, @Nullable Entity sourceEntity, CallbackInfoReturnable<Float> cir) {
         if ((Object) this instanceof BloodSlashSpell) {
@@ -60,8 +74,15 @@ public abstract class AbstractSpellOverridesMixin {
     private void spellclasses$bloodSlashCooldown(CallbackInfoReturnable<Integer> cir) {
         if ((Object) this instanceof BloodSlashSpell) {
             cir.setReturnValue(BLOOD_SLASH_COOLDOWN_TICKS);
+        } else if ((Object) this instanceof io.redspace.ironsspellbooks.spells.fire.FireArrowSpell) {
+            cir.setReturnValue(FIRE_ARROW_COOLDOWN_TICKS);
+        } else if ((Object) this instanceof io.redspace.ironsspellbooks.spells.evocation.ShieldSpell) {
+            cir.setReturnValue(0);
         }
     }
+
+    /** Fire Arrow (Огненная стрела): cooldown 60 minutes (in ticks). */
+    private static final int FIRE_ARROW_COOLDOWN_TICKS = 60 * 60 * 20;
 
     /** Ray of Siphoning (Истощающий луч): twice the damage (and so twice the self-heal, which is 100% of damage dealt). */
     private static final float RAY_OF_SIPHONING_POWER_MULTIPLIER = 2.0f;
@@ -111,8 +132,7 @@ public abstract class AbstractSpellOverridesMixin {
 
     /**
      * Cataclysm: Spellbooks' Thoth's Witness already requires Pharaoh Mage armor worn to cast;
-     * apply a full-set requirement to every Sand-school spell, and the equivalent Abyssal Warlock
-     * full set to every Abyssal-school spell (neither school had this hardcoded elsewhere).
+     * apply a full-set requirement to every Sand-school spell. Abyssal-school spells need no armor.
      */
     @Inject(method = "canBeCastedBy", at = @At("RETURN"), cancellable = true)
     private void spellclasses$schoolArmorRequirement(int spellLevel, CastSource castSource, MagicData playerMagicData, Player player, CallbackInfoReturnable<CastResult> cir) {
@@ -130,9 +150,6 @@ public abstract class AbstractSpellOverridesMixin {
                 || self instanceof ConjureKoboldiatorSpell || self instanceof ConjureKoboletonSpell) {
             requiredSet = PHARAOH_MAGE_SET;
             messageKey = "spellclasses.message.requires_pharaoh_armor";
-        } else if (schoolId.equals(ABYSSAL_SCHOOL)) {
-            requiredSet = ABYSSAL_WARLOCK_SET;
-            messageKey = "spellclasses.message.requires_abyssal_armor";
         } else {
             return;
         }
@@ -140,6 +157,20 @@ public abstract class AbstractSpellOverridesMixin {
         if (!wearingFullSet(player, requiredSet)) {
             cir.setReturnValue(new CastResult(CastResult.Type.FAILURE,
                     Component.translatable(messageKey).withStyle(ChatFormatting.RED)));
+        }
+    }
+
+    /**
+     * Thoth's Witness, Conjure Koboldiator and Conjure Koboleton are Pharaoh/Sand spells that the mod registers under
+     * Iron's Spellbooks' holy school. Report the Sand school instead, so they are shown, scaled (Sand's spell power) and
+     * gated as Sand spells and not as Light ones.
+     */
+    @Inject(method = "getSchoolType", at = @At("HEAD"), cancellable = true)
+    private void spellclasses$pharaohSpellsAreSand(CallbackInfoReturnable<SchoolType> cir) {
+        AbstractSpell self = (AbstractSpell) (Object) this;
+        if (self instanceof ThothsWitnessSpell || self instanceof ConjureKoboldiatorSpell
+                || self instanceof ConjureKoboletonSpell) {
+            cir.setReturnValue(CSSchoolRegistry.SAND.get());
         }
     }
 }

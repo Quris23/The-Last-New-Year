@@ -9,11 +9,13 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-/** Fire Arrow: 10-block explosion radius (was 3), double the cast time (was 20 ticks), triple damage. */
+/**
+ * Fire Arrow: 30-block radius (was 3; the explosion animation scales with it), cast time 135 ticks (was 20; 27 slowed down five times), 750 mana, triple damage.
+ */
 @Mixin(value = FireArrowSpell.class, remap = false)
 public abstract class FireArrowMixin {
-    private static final float NEW_RADIUS = 10.0f;
-    private static final int NEW_CAST_TIME = 40;
+    private static final float NEW_RADIUS = 30.0f;
+    private static final int NEW_CAST_TIME = 135;
     private static final float DAMAGE_MULTIPLIER = 3.0f;
 
     @ModifyConstant(method = "<init>", constant = @Constant(intValue = 20))

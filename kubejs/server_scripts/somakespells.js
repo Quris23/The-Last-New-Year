@@ -1,5 +1,30 @@
-
+// Все правки мода Somake's Spells, которые делаются в KubeJS (рецепты и т.п.). Новые правки к Somake писать сюда.
+// Атрибуты оружия Somake и высеченные заклинания делаются в Java (SpellClasses): Somake строит их лениво, KubeJS их не видит.
 ServerEvents.recipes(event => {
+    // Глеф из Пирия (бывшая Глефа из Визерита): механическая сборка
+    event.remove({ output: 'somakespells:witherite_glaive' })
+    event.recipes.create.mechanical_crafting('somakespells:witherite_glaive', [
+        ' P',
+        'CP',
+        'SI',
+        'R '
+    ], {
+        P: 'minecraft:redstone_block',
+        C: 'somakespells:fire',
+        S: 'irons_spellbooks:pyrium_staff',
+        I: 'cataclysm:ignitium_ingot',
+        R: 'block_factorys_bosses:dragon_bone'
+    })
+    // Пронзатель приливов: эссенция шторма, две руны гидро и коралловый бердыш (взамен рецепта мода, который требовал другой мод)
+    event.remove({ output: 'somakespells:tide_piercer' })
+    event.shaped('somakespells:tide_piercer', [
+        ' E ',
+        'RBR'
+    ], {
+        E: 'cataclysm:essence_of_the_storm',
+        R: 'somakespells:aqua_rune',
+        B: 'cataclysm:coral_bardiche'
+    })
 
     // Медная перчатка
     event.remove({ output: 'somakespells:copper_glove' })
@@ -66,5 +91,4 @@ ServerEvents.recipes(event => {
         addition: { item: 'kubejs:dark_chorium_steel' },
         result: { id: 'somakespells:forbidden_hammer' }
     })
-
 })

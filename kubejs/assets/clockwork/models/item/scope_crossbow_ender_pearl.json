@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "clockwork:item/scope_crossbow_ender_pearl"
+  }
+}

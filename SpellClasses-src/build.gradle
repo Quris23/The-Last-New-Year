@@ -63,6 +63,8 @@ dependencies {
     compileOnly files("libs/quark.jar")
     compileOnly files("libs/zeta.jar")
     compileOnly files("libs/jei.jar")
+    compileOnly files("libs/cinematic.jar")
+    compileOnly files("libs/neo_language_reload.jar")
     compileOnly files("libs/born_in_chaos.jar")
     compileOnly files("libs/cataclysm.jar")
     compileOnly files("libs/cataclysm_spellbooks.jar")
@@ -84,6 +86,9 @@ dependencies {
     compileOnly files("libs/wind_spellbooks.jar")
     compileOnly files("libs/supplementaries.jar")
     compileOnly files("libs/moonlight.jar")
+    compileOnly files("libs/sophisticatedcore.jar")
+    compileOnly files("libs/sophisticatedbackpacks.jar")
+    compileOnly files("libs/chromeware.jar")
 }
 
 tasks.withType(ProcessResources).configureEach {

@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "born_in_chaos_v1:item/darckswordan"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/sharpened_dark_metal_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/darckswordan"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/darckswordan"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/darckswordan"
+      }
+    }
+  }
+}

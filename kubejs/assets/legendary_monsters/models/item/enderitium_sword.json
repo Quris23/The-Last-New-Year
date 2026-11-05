@@ -1,0 +1,24 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "legendary_monsters:item/enderitium_sword"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/enderitium_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": { "layer0": "legendary_monsters:item/enderitium_sword" }
+    },
+    "ground": {
+      "parent": "item/generated",
+      "textures": { "layer0": "legendary_monsters:item/enderitium_sword" }
+    },
+    "fixed": {
+      "parent": "item/handheld",
+      "textures": { "layer0": "legendary_monsters:item/enderitium_sword" }
+    }
+  }
+}

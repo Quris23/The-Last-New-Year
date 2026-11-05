@@ -29,38 +29,38 @@ ServerEvents.recipes(event => {
     C: coral,
     R: 'irons_spellbooks:blank_rune'
   })
-  // event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
-  //   'NR',
-  //   'E '
-  // ], {
-  //   N: 'irons_spellbooks:netherite_mage_helmet',
-  //   R: 'cataclysm_spellbooks:abyssal_rune',
-  //   E: 'irons_spellbooks:arcane_essence'
-  // })
-  // event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
-  //   'NR',
-  //   'E '
-  // ], {
-  //   N: 'irons_spellbooks:netherite_mage_chestplate',
-  //   R: 'cataclysm_spellbooks:abyssal_rune',
-  //   E: 'irons_spellbooks:arcane_essence'
-  // })
-  // event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
-  //   'NR',
-  //   'E '
-  // ], {
-  //   N: 'irons_spellbooks:netherite_mage_leggings',
-  //   R: 'cataclysm_spellbooks:abyssal_rune',
-  //   E: 'irons_spellbooks:arcane_essence'
-  // })
-  // event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
-  //   'NR',
-  //   'E '
-  // ], {
-  //   N: 'irons_spellbooks:netherite_mage_boots',
-  //   R: 'cataclysm_spellbooks:abyssal_rune',
-  //   E: 'irons_spellbooks:arcane_essence'
-  // })
+  event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
+    'NR',
+    'E '
+  ], {
+    N: 'irons_spellbooks:netherite_mage_helmet',
+    R: 'cataclysm_spellbooks:abyssal_rune',
+    E: 'irons_spellbooks:arcane_essence'
+  })
+  event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
+    'NR',
+    'E '
+  ], {
+    N: 'irons_spellbooks:netherite_mage_chestplate',
+    R: 'cataclysm_spellbooks:abyssal_rune',
+    E: 'irons_spellbooks:arcane_essence'
+  })
+  event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
+    'NR',
+    'E '
+  ], {
+    N: 'irons_spellbooks:netherite_mage_leggings',
+    R: 'cataclysm_spellbooks:abyssal_rune',
+    E: 'irons_spellbooks:arcane_essence'
+  })
+  event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
+    'NR',
+    'E '
+  ], {
+    N: 'irons_spellbooks:netherite_mage_boots',
+    R: 'cataclysm_spellbooks:abyssal_rune',
+    E: 'irons_spellbooks:arcane_essence'
+  })
 
   // Броня цветущего камня
   event.custom({
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     CreateItem.of('irons_spellbooks:netherite_mage_helmet', 0.10)
     ], 'irons_spellbooks:netherite_mage_helmet', [ 
       event.recipes.createDeploying(trans3, [trans3, cogwheel]),
-      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'legendary_spellbooks:tempest_upgrade_template']),
       event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
       event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
       event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     CreateItem.of('irons_spellbooks:netherite_mage_chestplate', 0.10)
     ], 'irons_spellbooks:netherite_mage_chestplate', [ 
       event.recipes.createDeploying(trans3, [trans3, cogwheel]),
-      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'legendary_spellbooks:tempest_upgrade_template']),
       event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
       event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
       event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
     CreateItem.of('irons_spellbooks:netherite_mage_leggings', 0.10)
     ], 'irons_spellbooks:netherite_mage_leggings', [ 
       event.recipes.createDeploying(trans3, [trans3, cogwheel]),
-      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'legendary_spellbooks:tempest_upgrade_template']),
       event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
       event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
       event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
     CreateItem.of('irons_spellbooks:netherite_mage_boots', 0.10)
     ], 'irons_spellbooks:netherite_mage_boots', [ 
       event.recipes.createDeploying(trans3, [trans3, cogwheel]),
-      event.recipes.createDeploying(trans3, [trans3, 'cataclysm:essence_of_the_storm']),
+      event.recipes.createDeploying(trans3, [trans3, 'legendary_spellbooks:tempest_upgrade_template']),
       event.recipes.createDeploying(trans3, [trans3, 'kubejs:mithridium_ingot']),
       event.recipes.createFilling(trans3,  [trans3, Fluid.of('create_wizardry:lightning', 500)]),
       event.recipes.createDeploying(trans3, [trans3, 'railways:remote_lens']),
@@ -196,5 +196,13 @@ ServerEvents.recipes(event => {
       addition: { item: 'irons_spellbooks:twilight_gale' },
       result: { id: 'cataclysm:brontes' }
   })
-  
+
+  // Книга Р'льеха: вместо Разрушенной книги - Книга заклинаний гидроманта
+  event.remove({ id: 'cataclysm_spellbooks:amethyst_bless/abyss_spell_book' })
+  event.custom({
+    type: 'cataclysm:amethyst_bless',
+    ingredient: { item: 'somakespells:aquamancer_spell_book' },
+    result: { id: 'cataclysm_spellbooks:abyss_spell_book' },
+    time: 250
+  })
 })

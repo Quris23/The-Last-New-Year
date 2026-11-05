@@ -1,0 +1,20 @@
+{
+  "values": [
+    { "id": "cataclysm:wither_assault_shoulder_weapon", "required": false },
+    { "id": "cataclysm:void_assault_shoulder_weapon", "required": false },
+    { "id": "cataclysm:gauntlet_of_bulwark", "required": false },
+    { "id": "cataclysm:gauntlet_of_maelstrom", "required": false },
+    { "id": "cataclysm:bulwark_of_the_flame", "required": false },
+    { "id": "cataclysm:the_incinerator", "required": false },
+    { "id": "cataclysm:soul_render", "required": false },
+    { "id": "cataclysm:the_annihilator", "required": false },
+    { "id": "cataclysm:the_immolator", "required": false },
+    { "id": "cataclysm:astrape", "required": false },
+    { "id": "cataclysm:ceraunus", "required": false },
+    { "id": "cataclysm:void_forge", "required": false },
+    { "id": "cataclysm:infernal_forge", "required": false },
+    { "id": "legendary_monsters:the_tesseract", "required": false },
+    { "id": "legendary_monsters:soul_great_sword", "required": false },
+    { "id": "legendary_monsters:axe_of_lightning", "required": false }
+  ]
+}

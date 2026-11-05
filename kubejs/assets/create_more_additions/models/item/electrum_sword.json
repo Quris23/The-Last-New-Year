@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "create_more_additions:item/electrum_sword"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/electrum_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "create_more_additions:item/electrum_sword"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "create_more_additions:item/electrum_sword"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "create_more_additions:item/electrum_sword"
+      }
+    }
+  }
+}

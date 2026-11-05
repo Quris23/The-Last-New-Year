@@ -28,6 +28,7 @@ public final class FtbQuestsClassGate {
         CLASS_CHAPTERS.put(Long.parseUnsignedLong("79667D19722FA0FB", 16), school("ender"));
         CLASS_CHAPTERS.put(Long.parseUnsignedLong("2F6921C81B308D38", 16), school("blood"));
         CLASS_CHAPTERS.put(Long.parseUnsignedLong("2FADCD87CDAFAD07", 16), school("holy"));
+        CLASS_CHAPTERS.put(Long.parseUnsignedLong("01DDFC38B356D586", 16), ResourceLocation.fromNamespaceAndPath("somakespells", "aqua"));
     }
 
     /** The shared "История" chapter: progress is the same for every player on the server. */
@@ -37,6 +38,15 @@ public final class FtbQuestsClassGate {
     public static final long ACT_THREE_CHAPTER = 0x021F60413AD648B0L;
     /** «Око Истинной Скверны» в «Пути на край света»: Акт 3 закрыт, пока оно не выполнено. */
     public static final long ACT_THREE_GATE_QUEST = 0x1157E00000000003L;
+    public static final long ACT_FOUR_CHAPTER = 0x296BCBEAAE93EFF8L;
+    /** «Око Забытой Древности» и «Око Абсолютной Тишины» в «Пути на край света»: Акт 4 закрыт, пока оба не выполнены. */
+    public static final long ACT_FIVE_CHAPTER = 0x66E1C0A592856B47L;
+    /**
+     * Акт 5 opens once three eye quests in "История" (the chapter with the 12 eyes) are done: Eye of the First Rift
+     * (cold eye), Eye of Seven Seas, Eye of Eternal Storms: the same eyes that are the "Goal" quests of Акт 4.
+     */
+    public static final long[] ACT_FIVE_GATE_QUESTS = {0x1157E00000000006L, 0x1157E00000000009L, 0x1157E00000000008L};
+    public static final long[] ACT_FOUR_GATE_QUESTS = {0x1157E00000000005L, 0x1157E00000000002L};
     public static final long[] ACT_TWO_GATE_QUESTS = {0x1157E00000000001L, 0x1157E00000000004L};
 
     /** Chapters where optional dependencies don't block and a quest shows up once it is reached (Акт 1, Акт 2). */

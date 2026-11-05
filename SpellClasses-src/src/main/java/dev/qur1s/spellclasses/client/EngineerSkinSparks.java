@@ -28,6 +28,25 @@ public final class EngineerSkinSparks {
     private EngineerSkinSparks() {
     }
 
+    public static int variantCount() {
+        return VARIANTS;
+    }
+
+    public static ResourceLocation skin(int variant) {
+        return SKINS[variant];
+    }
+
+    public static ResourceLocation glowmask(int variant) {
+        return ResourceLocation.fromNamespaceAndPath("spellclasses", "textures/models/armor/engineer_armor_s" + variant + "_glowmask.png");
+    }
+
+    /** index of the spark variant of the current moment (0 = the plain glow) */
+    public static int variantIndexNow() {
+        var level = Minecraft.getInstance().level;
+        if (level == null) return 0;
+        return TIMELINE[(int) (Math.floorMod(level.getGameTime(), CYCLE) / TICKS_PER_FRAME)];
+    }
+
     /** the spark variant worn right now, or null while the plain skin is worn */
     public static ResourceLocation variantNow() {
         var level = Minecraft.getInstance().level;

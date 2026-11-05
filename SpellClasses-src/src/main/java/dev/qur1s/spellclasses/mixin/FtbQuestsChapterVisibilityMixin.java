@@ -46,6 +46,30 @@ public abstract class FtbQuestsChapterVisibilityMixin {
             return;
         }
 
+        if (chapterId == FtbQuestsClassGate.ACT_FIVE_CHAPTER) {
+            // Акт 5 stays closed until all eye quests of Акт 4 are completed
+            for (long questId : FtbQuestsClassGate.ACT_FIVE_GATE_QUESTS) {
+                var quest = data.getFile().getQuest(questId);
+                if (quest == null || !data.isCompleted(quest)) {
+                    cir.setReturnValue(false);
+                    return;
+                }
+            }
+            return;
+        }
+
+        if (chapterId == FtbQuestsClassGate.ACT_FOUR_CHAPTER) {
+            // Акт 4 stays closed until both eye quests (Forgotten Antiquity, Absolute Silence) in "История" are completed
+            for (long questId : FtbQuestsClassGate.ACT_FOUR_GATE_QUESTS) {
+                var quest = data.getFile().getQuest(questId);
+                if (quest == null || !data.isCompleted(quest)) {
+                    cir.setReturnValue(false);
+                    return;
+                }
+            }
+            return;
+        }
+
         if (chapterId == FtbQuestsClassGate.ACT_THREE_CHAPTER) {
             // Акт 3 stays closed until the Eye of True Corruption quest in "История" is completed
             var quest = data.getFile().getQuest(FtbQuestsClassGate.ACT_THREE_GATE_QUEST);

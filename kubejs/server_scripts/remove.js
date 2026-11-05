@@ -10,19 +10,103 @@ ServerEvents.recipes(event => {
     // Born in Chaos
     event.remove({ output: 'born_in_chaos_v1:bone_heart' })
     event.remove({ output: 'born_in_chaos_v1:dark_atrium' })
+    event.remove({ output: 'born_in_chaos_v1:dark_metal_armor_helmet' })
     event.remove({ output: 'born_in_chaos_v1:death_totem' })
     event.remove({ output: 'born_in_chaos_v1:dark_grid' })
-    event.remove({ output: 'born_in_chaos_v1:dark_metal_armor_helmet' })
     
+
+
+    // Somake's Spells: вырезанные предметы (рецепты; из JEI и креатива прячет client_scripts/hide_items.js)
+    event.remove({ output: 'somakespells:infernal_fire_rune' })
+    event.remove({ output: 'somakespells:soul_fire_rune' })
+    event.remove({ output: 'somakespells:eldritch_rune' })
+    event.remove({ output: 'somakespells:red_soul_lantern' })
+    event.remove({ output: 'somakespells:dormant_grimoire' })
+    event.remove({ output: 'somakespells:profane_grimoire' })
+    event.remove({ output: 'somakespells:sanctum_grimoire' })
+    event.remove({ output: 'somakespells:eldritch_upgrade_orb' })
+    event.remove({ output: 'somakespells:soul_fire_upgrade_orb' })
+    event.remove({ output: 'somakespells:infernal_fire_upgrade_orb' })
+    event.remove({ output: 'somakespells:ignitium_staff' })
+    event.remove({ output: 'somakespells:soul_fire_ignitium_staff' })
+    event.remove({ output: 'somakespells:infernal_fire_ignitium_staff' })
+    event.remove({ output: 'somakespells:archangels_staff' })
+    event.remove({ output: 'somakespells:hallow_sword' })
+    event.remove({ output: 'somakespells:glacium_greataxe' })
+    event.remove({ output: 'somakespells:fragmented_sword_1' })
+    event.remove({ output: 'somakespells:fragmented_sword_2' })
+    event.remove({ output: 'somakespells:fragmented_sword_3' })
+    event.remove({ output: 'somakespells:last_mourning' })
+    event.remove({ output: 'somakespells:mirrored_edge' })
+    event.remove({ output: 'somakespells:radiant_judgment' })
+    event.remove({ output: 'somakespells:totem_dagger' })
+    event.remove({ output: 'somakespells:ruined_blade' })
+    event.remove({ output: 'somakespells:boltcutter_dagger' })
+    event.remove({ output: 'somakespells:infernal_fire' })
+    event.remove({ output: 'somakespells:soul_fire' })
+    event.remove({ output: 'somakespells:upgrade_forge' })
+    event.remove({ output: 'somakespells:pedestal_of_fire' })
+    event.remove({ output: 'somakespells:infernal_fire_necklace' })
+    event.remove({ output: 'somakespells:soul_fire_necklace' })
+    event.remove({ output: 'somakespells:infernal_blaze_powder' })
+    event.remove({ output: 'somakespells:infernal_blaze_rod' })
+    event.remove({ output: 'somakespells:soul_blaze_powder' })
+    event.remove({ output: 'somakespells:soul_blaze_rod' })
+    event.remove({ output: 'somakespells:tormented_spirit' })
+    event.remove({ output: 'somakespells:elder_guardian_eye' })
+    event.remove({ output: 'somakespells:magmarium_plate' })
+    event.remove({ output: 'somakespells:witherite_star' })
+    event.remove({ output: 'somakespells:ceranium_upgrade_smithing_template' })
+    event.remove({ output: 'somakespells:ceranium_ingot' })
+    event.remove({ output: 'somakespells:abyssium_upgrade_smithing_template' })
+    event.remove({ output: 'somakespells:abyssium_ingot' })
+    event.remove({ output: 'somakespells:cursium_core' })
+    event.remove({ output: 'somakespells:storm_scriptures_spell_book' })
+    event.remove({ output: 'somakespells:ceranium_plate' })
+    event.remove({ output: 'somakespells:abyssium_core' })
+    event.remove({ output: 'somakespells:abyssium_plate' })
+    event.remove({ output: 'somakespells:cursium_plate' })
+    event.remove({ output: 'somakespells:ignitium_plate' })
+    event.remove({ output: 'somakespells:abyssium_helmet' })
+    event.remove({ output: 'somakespells:abyssium_chestplate' })
+    event.remove({ output: 'somakespells:abyssium_leggings' })
+    event.remove({ output: 'somakespells:abyssium_boots' })
+    event.remove({ output: 'somakespells:ceranium_helmet' })
+    event.remove({ output: 'somakespells:ceranium_chestplate' })
+    event.remove({ output: 'somakespells:ceranium_leggings' })
+    event.remove({ output: 'somakespells:ceranium_boots' })
+    event.remove({ output: 'somakespells:tidebound_spell_book' })
+    event.remove({ output: 'somakespells:tidebound_2_spell_book' })
+    event.remove({ output: 'somakespells:tidebound_3_spell_book' })
+    event.remove({ output: 'somakespells:verdant_testament_spell_book' })
+    event.remove({ output: 'somakespells:verdant_testament_2_spell_book' })
+    event.remove({ output: 'somakespells:verdant_testament_3_spell_book' })
+    event.remove({ output: 'somakespells:invoker_canon_spell_book' })
+    event.remove({ output: 'somakespells:invoker_canon_2_spell_book' })
+    event.remove({ output: 'somakespells:dawnlit_gospel_spell_book' })
+    event.remove({ output: 'somakespells:dawnlit_gospel_2_spell_book' })
+    event.remove({ output: 'somakespells:stormcaller_lexicon_spell_book' })
+    event.remove({ output: 'somakespells:stormcaller_lexicon_2_spell_book' })
+    event.remove({ output: 'somakespells:sanguine_testament_spell_book' })
+    event.remove({ output: 'somakespells:sanguine_testament_2_spell_book' })
+
+    event.remove({ output: 'somakespells:voidbound_codex_spell_book' })
+    event.remove({ output: 'somakespells:voidbound_codex_2_spell_book' })
+
+    event.remove({ output: 'somakespells:burning_magma_spell_book' })
+    event.remove({ output: 'somakespells:burning_magma_2_spell_book' })
+    event.remove({ output: 'somakespells:burning_magma_3_spell_book' })
+    event.remove({ output: 'somakespells:sanguine_testament_3_spell_book' })
+    event.remove({ output: 'somakespells:stormcaller_lexicon_3_spell_book' })
 
     // Cataclysm
     event.remove({ output: 'cataclysm:mech_eye' })
+    event.remove({ output: 'cataclysm:monstrous_eye' })
+    event.remove({ output: 'cataclysm:storm_eye' })
     event.remove({ output: 'cataclysm:abyss_eye' })
     event.remove({ output: 'cataclysm:void_eye' })
     event.remove({ output: 'cataclysm:cursed_eye' })
     event.remove({ output: 'cataclysm:desert_eye' })
-    event.remove({ output: 'cataclysm:monstrous_eye' })
-    event.remove({ output: 'cataclysm:storm_eye' })
     event.remove({ output: 'cataclysm:burning_ashes' })
     event.remove({ output: 'cataclysm:flame_eye' })
 
@@ -76,6 +160,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:portal_frame' })
     
     event.remove({ output: 'irons_spellbooks:dragonskin' })
+    // Кузня свитков заменена Руническим столом (Arcane Runes)
+    event.remove({ output: 'irons_spellbooks:scroll_forge' })
 
     // Cataclysm Spellbooks
     event.remove({ output: 'irons_spellbooks:pyrium_staff' })
@@ -93,6 +179,19 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'cataclysm_spellbooks:engineer_suit' })
     event.remove({ output: 'cataclysm_spellbooks:engineer_leggings' })
     event.remove({ output: 'cataclysm_spellbooks:engineer_boots' })
+
+    // Legendary Spellbooks: Гримуар Скованной бури и броня Штормомага вырезаны
+    ;[
+        'legendary_spellbooks:stormbound_grimoire',
+        'legendary_spellbooks:stormmancer_hood',
+        'legendary_spellbooks:stormmancer_robe',
+        'legendary_spellbooks:stormmancer_leggings',
+        'legendary_spellbooks:stormmancer_boots',
+        'legendary_spellbooks:oblivionmancer_robe',
+        'legendary_spellbooks:oblivionmancer_hat',
+        'legendary_spellbooks:oblivionmancer_leggings',
+        'legendary_spellbooks:oblivionmancer_boots'
+    ].forEach(id => event.remove({ output: id }))
 
     event.remove({ output: 'cataclysm_spellbooks:abyssal_rune' })
     event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_helmet' })
@@ -123,8 +222,7 @@ ServerEvents.recipes(event => {
 
     // Hazentouvelib
     event.remove({ output: 'hazentouvelib:radiance_rune' })
-    //event.remove({ output: 'hazentouvelib:shadow_rune' })
-    //event.remove({ output: 'hazentouvelib:radiance_upgrade_orb' })
+    event.remove({ output: 'hazentouvelib:shadow_rune' })
     event.remove({ output: 'hazentouvelib:shadow_upgrade_orb' })
     
     // Tentaworks
@@ -132,25 +230,30 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'tentaworks:netherite_tentacle_rig' })
     event.remove({ output: 'tentaworks:tentacle'})
 
-    // Supplementaries: ведро светона на верстаке (и его копия в смешивателе) и старый рецепт 2 ягоды -> 250 мВ;
+    // Chromeware: вырезанные импланты (из JEI и креатива прячет client_scripts/hide_items.js и itembans)
+    event.remove({ output: 'chromeware:reflex_tuner' })
+    event.remove({ output: 'chromeware:revulsor' })
+    event.remove({ output: 'chromeware:monowire' })
+
+    // Supplementaries: ведро светона на верстаке (и его копия в смешивателе) и старый рецепт убраны:
     // светон теперь только 8 ягод -> 1000 мВ в смешивателе (create_integration.js)
     event.remove({ id: 'supplementaries:lumisene_bucket' })
     event.remove({ id: 'supplementaries:integration/lumisene_mixing' })
 
 })
 
-// Лут: глаза End Remastered добываются только крафтами kubejs (eye_crafts.js), незеритовый горн — только крафтами (catac_crafts.js)
-LootJS.lootTables(event => {
+// Лут: глаза End Remastered добываются только крафтами kubejs (eye_crafts.js), незеритовый горн не падает с Незеритового чудовища.
+// Нужен мод LootJS; без него блок пропускается.
+if (typeof LootJS !== 'undefined') {
+    LootJS.lootTables(event => {
+        // Endrem подмешивает свой "eye_pool" в сундуки и мобов; вычищаем глаза из всех таблиц
+        let eyes = [
+            'black_eye', 'cold_eye', 'corrupted_eye', 'cryptic_eye', 'cursed_eye', 'evil_eye', 'exotic_eye', 'guardian_eye',
+            'lost_eye', 'magical_eye', 'nether_eye', 'old_eye', 'rogue_eye', 'undead_eye', 'witch_eye', 'wither_eye'
+        ].map(eye => 'endrem:' + eye)
+        event.forEachTable(table => table.removeItem(eyes))
 
-    // Endrem подмешивает свой "eye_pool" в сундуки и мобов (Визер, древний страж, вызыватель, ведьма и т.д.);
-    // вычищаем глаза из всех таблиц, включая его собственные — пул остаётся, но пустой
-    let eyes = [
-        'black_eye', 'cold_eye', 'corrupted_eye', 'cryptic_eye', 'cursed_eye', 'evil_eye', 'exotic_eye', 'guardian_eye',
-        'lost_eye', 'magical_eye', 'nether_eye', 'old_eye', 'rogue_eye', 'undead_eye', 'witch_eye', 'wither_eye'
-    ].map(eye => 'endrem:' + eye)
-    event.forEachTable(table => table.removeItem(eyes))
-
-    // Незеритовое чудовище
-    event.getLootTable('cataclysm:entities/netherite_monstrosity').removeItem('cataclysm:infernal_forge')
-
-})
+        // Незеритовое чудовище
+        event.getLootTable('cataclysm:entities/netherite_monstrosity').removeItem('cataclysm:infernal_forge')
+    })
+}

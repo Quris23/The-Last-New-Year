@@ -121,6 +121,6 @@ public final class GateEvents {
 
         ColdSweatCompat.syncResistance(player, ClassManager.chosenSchool(player));
         if (ClassManager.hasChosen(player) || ClassManager.bookGiven(player)) return;
-        ClassManager.giveClassBook(player);
+        ClassManager.giveStarterKit(player);
     }
 }

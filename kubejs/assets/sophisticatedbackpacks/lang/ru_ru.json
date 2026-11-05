@@ -1,0 +1,5 @@
+{
+  "item.sophisticatedbackpacks.stack_upgrade_tier_2.tooltip": "Умножает количество стаков, помещаемых в слот, на 2,5",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_3.tooltip": "Умножает количество стаков, помещаемых в слот, на 3",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_4.tooltip": "Умножает количество стаков, помещаемых в слот, на 4"
+}

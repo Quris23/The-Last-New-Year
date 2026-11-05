@@ -1,4 +1,16 @@
 // kubejs/server_scripts/create_integration.js
+
+// Облако в бутылке: ПКМ стеклянной бутылкой на высоте облаков (Y от 191 до 196, как у Quark) даёт артефакт,
+// а не бутылочку Quark. Quark-модуль "Bottled Cloud" выключен в конфиге, бутылочка Quark забанена (itembans).
+ItemEvents.rightClicked('minecraft:glass_bottle', event => {
+    const player = event.player
+    if (player.y > 191 && player.y < 196) {
+        event.item.shrink(1)
+        player.give('artifacts:cloud_in_a_bottle')
+        event.cancel()
+    }
+})
+
 ServerEvents.recipes(event => {
 
     // Жидкий Хаос
@@ -47,7 +59,7 @@ ServerEvents.recipes(event => {
     event.custom({
     type: 'create:emptying',
     ingredients: [
-        { item: 'quark:bottled_cloud' }
+        { item: 'artifacts:cloud_in_a_bottle' }
     ],
     results: [
         { id: 'minecraft:glass_bottle' },
@@ -55,7 +67,7 @@ ServerEvents.recipes(event => {
     ]
     })
 
-    event.recipes.createFilling('quark:bottled_cloud', [
+    event.recipes.createFilling('artifacts:cloud_in_a_bottle', [
         'minecraft:glass_bottle',
         Fluid.of('kubejs:cloud_fluid', 250)
     ])
@@ -77,6 +89,7 @@ ServerEvents.recipes(event => {
         'minecraft:iron_ingot',
         coals,
         coals,
+        
     ]).heated()
 
     // Аурумитовый слиток
@@ -187,7 +200,7 @@ ServerEvents.recipes(event => {
         'createpropulsion:platinum_ingot'
     ]).superheated()
 
-    // Портальная жидкость
+    // Портальная жидкость (Rift Essence) - Леветит + 4 Хоруса в Смешивателе при супернагреве
     event.recipes.createMixing(Fluid.of('aerowarptics:rift_essence', 1000), [
       ['aeronautics:levitite', 'aeronautics:pearlescent_levitite'],
       '4x minecraft:chorus_fruit'
@@ -247,6 +260,72 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(skinTrans1, skinTrans1)
     ]).transitionalItem(skinTrans1).loops(3)
 
+    // Кристалл Аркейна из одной маны: 100 мБ в чаше под прессом, на сверхнагреве
+    event.custom({
+        type: 'create:compacting',
+        heat_requirement: 'superheated',
+        ingredients: [
+            { type: 'neoforge:single', amount: 100, fluid: 'create_wizardry:mana' }
+        ],
+        results: [
+            { id: 'arcanerunes:arcane_crystal' }
+        ]
+    }).id('generation:compacting/arcane_crystal_superheated')
+
+    // Хекс-кристалл (любой свиток) в чаше на сверхнагреве под миксером превращается в 60 мБ маны
+    event.recipes.create.mixing(Fluid.of('create_wizardry:mana', 60), [
+        'irons_spellbooks:scroll'
+    ]).superheated()
+
+    // Кристалл Аркейна обратно в 100 мБ маны: чаша на сверхнагреве под миксером
+    event.recipes.create.mixing(Fluid.of('create_wizardry:mana', 100), [
+        'arcanerunes:arcane_crystal'
+    ]).superheated()
+
+    // Рунический стол (Arcane Runes): механическая сборка на Тайном корпусе.
+    // Любая руна школы - пресс - 50 мБ маны; затем кристаллический дисплей; готовый предмет эндерируется вентилятором
+    event.remove({ id: 'arcanerunes:rune_table' })
+    let anyRune = [
+        'irons_spellbooks:fire_rune', 'irons_spellbooks:ice_rune', 'irons_spellbooks:lightning_rune',
+        'wind_spellbooks:wind_rune', 'irons_spellbooks:nature_rune', 'irons_spellbooks:ender_rune',
+        'irons_spellbooks:blood_rune', 'irons_spellbooks:holy_rune', 'irons_spellbooks:evocation_rune',
+        'arcanerunes:eldritch_rune', 'arcanerunes:sand_rune', 'cataclysm_spellbooks:abyssal_rune',
+        'hazentouvelib:cosmic_rune', 'discerning_the_eldritch:ritual_rune', 'somakespells:aqua_rune'
+    ]
+    let tableCasing = 'create_wizardry:arcane_casing'
+    let tableSteps = []
+    for (let n = 0; n < 1; n++) {
+        tableSteps.push(
+            event.recipes.createDeploying(tableCasing, [tableCasing, anyRune]),
+            event.recipes.createPressing(tableCasing, tableCasing),
+            event.recipes.createFilling(tableCasing, [tableCasing, Fluid.of('create_wizardry:mana', 50)])
+        )
+    }
+    tableSteps.push(
+        event.recipes.createDeploying(tableCasing, [tableCasing, 'supplementaries:crystal_display'])
+    )
+    event.recipes.create.sequenced_assembly([
+        'kubejs:unendered_rune_table'
+    ], tableCasing, tableSteps).transitionalItem(tableCasing).loops(3)
+
+    // ...и последний шаг: эндерирование вентилятором над дыханием дракона (Create Dragons Plus)
+    event.custom({
+        type: 'create_dragons_plus:ending',
+        ingredients: [{ item: 'kubejs:unendered_rune_table' }],
+        results: [{ id: 'arcanerunes:rune_table', chance: 0.9 }]
+    }).id('generation:ending/rune_table')
+
+    // Оптика Kiroshi «Голографическое яблоко» (SpellClasses, имплант для лица): показывает размещённые схемы Create из всего инвентаря
+    event.shaped('spellclasses:holographic_apple', [
+        'PSP',
+        'III'
+    ], {
+        P: 'create:placard',
+        S: 'create:empty_schematic',
+        I: 'create:iron_sheet'
+    })
+
+    // ---- Из версии друга (06.11.2026) ----
     // Фантомный порох
     event.recipes.create.mixing('born_in_chaos_v1:phantom_powder', [
         Item.of('gunpowder', 4),
@@ -281,6 +360,16 @@ ServerEvents.recipes(event => {
         ]
     }).id('generation:mixing/control_fluid')
 
+    // Чёрный аргилит
+    event.remove({ output: 'born_in_chaos_v1:black_argillite' })
+    // бесформенный: Create сам берёт такие рецепты в смешиватель (allowShapelessInMixer)
+    event.shapeless('born_in_chaos_v1:black_argillite', [
+        'quartz',
+        'cobbled_deepslate',
+        'cobbled_deepslate',
+        'blackstone'
+    ])
+
     // Многомерный куб
     let trdice = 'kubejs:incomplete_multidimensional_dice'
     event.recipes.create.sequenced_assembly([
@@ -293,16 +382,6 @@ ServerEvents.recipes(event => {
         event.recipes.createFilling(trdice, [trdice, Fluid.of('supplementaries:lumisene', 1000)]),
         event.recipes.createDeploying(trdice, [trdice, 'irons_spellbooks:mithril_ingot'])
     ]).transitionalItem(trdice).loops(1)
-
-    // Чёрный аргилит
-    event.remove({ output: 'born_in_chaos_v1:black_argillite' })
-    // бесформенный: Create сам берёт такие рецепты в смешиватель (allowShapelessInMixer)
-    event.shapeless('born_in_chaos_v1:black_argillite', [
-        'quartz',
-        'cobbled_deepslate',
-        'cobbled_deepslate',
-        'blackstone'
-    ])
 
     // Заражённый чёрный аргиллит
     event.recipes.create.haunting('kubejs:infested_black_argillite', 'born_in_chaos_v1:black_argillite')

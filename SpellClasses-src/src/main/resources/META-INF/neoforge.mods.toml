@@ -58,3 +58,11 @@ config="spellclasses.debug.mixins.json"
     versionRange="[0,)"
     ordering="AFTER"
     side="BOTH"
+
+# The Aquamancer spell book is redrawn (animated); loading after Soma Makes Spells makes our model and textures win.
+[[dependencies.${mod_id}]]
+    modId="somakespells"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"

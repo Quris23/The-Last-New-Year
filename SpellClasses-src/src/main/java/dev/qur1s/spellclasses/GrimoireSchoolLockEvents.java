@@ -14,7 +14,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import java.util.Map;
 
 /**
- * Заклинания школ Бездны и Песка (cataclysm_spellbooks) можно вписать в Инкрустационном столе только
+ * Заклинания школ Бездны и Песка (cataclysm_spellbooks) и Аннигиляции (legendary_spellbooks) можно вписать в Инкрустационном столе только
  * в их собственные гримуары - никуда больше. Всё остальное (другие школы, другие книги) не трогаем.
  */
 @EventBusSubscriber(modid = "spellclasses", bus = EventBusSubscriber.Bus.GAME)
@@ -26,7 +26,9 @@ public final class GrimoireSchoolLockEvents {
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "abyssal"),
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "abyss_spell_book"),
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "sand"),
-            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "desert_spell_book")
+            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "desert_spell_book"),
+            ResourceLocation.fromNamespaceAndPath("legendary_spellbooks", "annihilation"),
+            ResourceLocation.fromNamespaceAndPath("legendary_spellbooks", "annihilators_protocol")
     );
 
     @SubscribeEvent

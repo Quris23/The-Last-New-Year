@@ -1,0 +1,5 @@
+{
+  "item.sophisticatedbackpacks.stack_upgrade_tier_2.tooltip": "Multiplies the number of stacks that can fit in a slot by 2.5",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_3.tooltip": "Multiplies the number of stacks that can fit in a slot by 3",
+  "item.sophisticatedbackpacks.stack_upgrade_tier_4.tooltip": "Multiplies the number of stacks that can fit in a slot by 4"
+}

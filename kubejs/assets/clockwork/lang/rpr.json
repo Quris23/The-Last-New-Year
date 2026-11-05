@@ -1,0 +1,28 @@
+{
+  "packet.clockwork.client_message.is_flying": "%1$s теперь летитъ",
+  "packet.clockwork.client_message.is_walking": "%1$s теперь идётъ",
+
+  "key.clockwork.toggle_dragonfly_flight": "Переключить полётъ стрекозы",
+  "key.categories.clockwork": "Clockwork",
+
+  "creativetab.clockwork.title": "Clockwork",
+
+  "item.clockwork.clockwork_gear": "Заводная шестерня",
+  "item.clockwork.crossbow_barrel": "Арбалетный барабанъ",
+  "item.clockwork.clockwork_arrow": "Заводная стрѣла",
+  "item.clockwork.barrel_crossbow": "Автоматическiй арбалетъ",
+  "item.clockwork.scope_crossbow": "Арбалетъ съ прицѣломъ",
+  "item.clockwork.clockwork_potion_sprayer": "Распылитель зелiй",
+  "item.clockwork.clockwork_flamethrower": "Огнемётъ",
+  "item.clockwork.clockwork_wings": "Заводныя крылья",
+  "item.clockwork.clockwork_drill": "Заводной буръ",
+  "item.clockwork.dragonfly_spawn_egg": "Яйцо призыва стрекозы",
+  "item.clockwork.broken_dragonfly_spawn_egg": "Яйцо призыва сломанной стрекозы",
+
+  "entity.clockwork.dragonfly": "Стрекоза",
+  "entity.clockwork.broken_dragonfly": "Сломанная стрекоза",
+  "entity.clockwork.clockwork_drill": "Заводной буръ",
+
+  "message.clockwork.broken_drill": "Для починки заводного бура нужно заводныхъ шестерней: %1$d",
+  "message.clockwork.broken_drill_repaired": "Заводной буръ успѣшно починенъ!"
+}

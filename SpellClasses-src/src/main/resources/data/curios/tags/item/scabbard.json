@@ -4,5 +4,14 @@
     "#minecraft:swords",
     "#minecraft:axes",
     "#irons_spellbooks:staff"
+  ],
+  "remove": [
+    "somakespells:copper_glove",
+    "cataclysm:gauntlet_of_guard",
+    "cataclysm:gauntlet_of_bulwark",
+    "cataclysm:gauntlet_of_maelstrom",
+    "block_factorys_bosses:ice_gauntlet",
+    "block_factorys_bosses:sandworm_gauntlet",
+    "legendary_monsters:fiery_jaw"
   ]
 }

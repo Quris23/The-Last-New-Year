@@ -48,7 +48,12 @@ public final class PresetWeaponSpells {
             // Жезл Шторма (lightning_rod) - высеченное заклинание Гроза (Thunderstorm) 5 (раньше было Торнадо)
             new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "lightning_rod"), SpellRegistry.THUNDERSTORM_SPELL, 5),
             // Трость Изобретателя (artificer_cane) - тоже высеченная Гроза 5
-            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "artificer_cane"), SpellRegistry.THUNDERSTORM_SPELL, 5)
+            new Preset(ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "artificer_cane"), SpellRegistry.THUNDERSTORM_SPELL, 5),
+            // Раскалыватель ядер (Somake) - высеченная Огненная стрела
+            new Preset(ResourceLocation.fromNamespaceAndPath("somakespells", "core_splitter"), SpellRegistry.FIRE_ARROW_SPELL, 10),
+            // Оплот Пламени (щит из игнитовых слитков) - высеченный Щит Игниса (Somake) 3
+            new Preset(ResourceLocation.fromNamespaceAndPath("cataclysm", "bulwark_of_the_flame"),
+                    () -> SpellRegistry.getSpell(ResourceLocation.fromNamespaceAndPath("somakespells", "ignis_shield")), 3)
     };
 
     private static final int CHECK_INTERVAL_TICKS = 40;
@@ -70,6 +75,7 @@ public final class PresetWeaponSpells {
             if (!stack.is(BuiltInRegistries.ITEM.get(preset.item()))) continue;
 
             AbstractSpell expected = preset.spell().get();
+            if (expected == null || SpellRegistry.none().equals(expected)) return;
             if (ISpellContainer.isSpellContainer(stack)) {
                 var current = ISpellContainer.get(stack).getSpellAtIndex(0);
                 if (current.getSpell() == expected && current.getLevel() == preset.level()) {

@@ -1,3 +1,14 @@
+// Все правки атрибутов (Fake Wadjet's Staff, Bloom Stone Staff, Desert Spellbook, Полное
+// Одеяние Фараона, Трость Изобретателя, Броня Инженера) перенесены на чистую Java -
+// см. SpellClasses/StaffAttributeOverrides.java.
+//
+// KubeJS-путь (item.setAttributeModifiers/addAttributeModifier через ItemEvents.modification)
+// оказался ненадёжным: он ломает отображение тултипа предмета (пустая карточка без статов),
+// и что важнее - выполняется НЕЗАВИСИМО от Java-фикса, так что оставленный здесь дублирующий
+// код продолжал перетирать корректно выставленные Java'ой атрибуты обратно в битое состояние
+// каждую загрузку игры. Ничего в этом файле больше не нужно - не добавляйте сюда новые правки
+// атрибутов, делайте их в StaffAttributeOverrides.java.
+
 //.minecraft/kubejs/start_scripts/items.js
 StartupEvents.registry('item', event => {
 
@@ -18,6 +29,11 @@ StartupEvents.registry('item', event => {
     event.create('black_steel_rod').displayName('Черностальной стержень')
 
     event.create('cursium_sheet').displayName('Проклятый лист')
+
+    event.create('soulshard_nucleate').displayName('Нуклеат осколка души')
+
+    // Промежуточный предмет сборки Рунического стола: эндерируется вентилятором над дыханием дракона
+    event.create('unendered_rune_table').displayName('Неэндерированный рунический стол').parentModel('arcanerunes:block/rune_table')
 
     event.create('aurumite_ingot').displayName('Аурумитовый слиток').rarity('uncommon')
     event.create('aurumite_scrap').displayName('Аурумитовый лом')
@@ -76,13 +92,32 @@ StartupEvents.registry('item', event => {
     event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
     .displayName('Незавершенное Око Непростительного Проклятия')
 
+    // Звезда Доминации
+    event.create('domination_star')
+        .displayName('§6§lЗвезда Доминации')
+        .tooltip('§7Источник абсолютной власти')
+        .tooltip('§8"Всё сущее подчинится её воле"')
+        .rarity('epic')
+        .glow(true)
+        .tag('kubejs:sovereign_artifacts')
+        .tag('kubejs:endgame_components');
+
+    // Абсолютный маяк
+    event.create('absolute_beacon')
+        .displayName('§5§lАбсолютный Маяк')
+        .tooltip('§7Воплощение тотального контроля')
+        .tooltip('§8"Реальность склоняется перед его светом"')
+        .rarity('epic')
+        .glow(true)
+        .tag('kubejs:sovereign_artifacts')
+        //.tag('kubejs:endgame_blocks');
+
     // Многомерный куб (witherstormmod:multidimensional_dice): промежуточный предмет конвейерной сборки.
     // Модель - куб без свечения, переливания и анимации, иероглифы бледные (assets/kubejs/models/item/incomplete_multidimensional_dice_full.json)
     event.create('incomplete_multidimensional_dice', 'create:sequenced_assembly')
     .displayName('Незавершенный многомерный куб')
     .parentModel('kubejs:item/incomplete_multidimensional_dice_full')
-        
-        
+
 })
 
 StartupEvents.registry('fluid', event => {
@@ -333,4 +368,14 @@ StartupEvents.registry('block', event => {
     .soundType('deepslate')
     .tagBlock('minecraft:mineable/pickaxe')
     .noDrops() // лут-таблица своя, см. kubejs/data/kubejs/loot_table/blocks/infested_black_argillite.json
+})
+
+// Командные блоки: ломаются алмазной киркой (теги и лут - kubejs/data/minecraft) и двигаются
+// поршнями (Quark: «Pistons Move Tile Entities», в чёрный список они не входят; ванильный
+// запрет был только из-за твёрдости -1).
+BlockEvents.modification(event => {
+    event.modify(['minecraft:command_block', 'minecraft:chain_command_block', 'minecraft:repeating_command_block'], block => {
+        block.destroySpeed = 25.0
+        block.requiresTool = true
+    })
 })

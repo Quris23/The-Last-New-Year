@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * Every player's progress on the class-gated ("Магия") chapters is tracked in their own private
  * {@link dev.qur1s.spellclasses.data.PersonalQuestData} attachment instead of the shared party
- * {@link TeamData}, so one player finishing "Ледяной Маг" doesn't finish it for teammates - even
+ * {@link TeamData}, so one player finishing "Лич" doesn't finish it for teammates - even
  * though everyone is in the same FTB Team. Everything outside those chapters (the Lore chapter
  * etc.) is untouched and stays fully shared, as before.
  * <p>

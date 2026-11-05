@@ -94,13 +94,13 @@ ServerEvents.recipes(event => {
         r: 'createaddition:brass_rod',
         s: 'createcasing:copper_shaft',
         p: 'create:precision_mechanism',
-        c: 'create:copper_casing',
+        c: 'create:mechanical_pump', // медная помпа вместо корпуса
         b: 'create:copper_backtank',
         m: 'simulated:gyroscopic_mechanism'
     })
 
         // Незеритовая установка
-    let casing = ['dndesires:industrial_casing']
+    let casing = ['createcasing:zinc_mechanical_pump'] // цинковая помпа вместо промышленного корпуса
     event.recipes.create.mechanical_crafting('tentaworks:netherite_tentacle_rig', [
         't   t',
         'rspsr',
@@ -128,5 +128,10 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(tentacleTrans, tentacleTrans),
         event.recipes.createDeploying(tentacleTrans, [tentacleTrans, 'create:sticker']),
     ]).transitionalItem(tentacleTrans).loops(3)
+
+    // Потусторонняя руна: остаётся только руна ArcaneRunes (с прочностью), руна Discerning The Eldritch убрана
+    event.remove({ output: 'discerning_the_eldritch:eldritch_rune' })
+    event.replaceInput({ input: 'discerning_the_eldritch:eldritch_rune' },
+        'discerning_the_eldritch:eldritch_rune', 'arcanerunes:eldritch_rune')
 
 })

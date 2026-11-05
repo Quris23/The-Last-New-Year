@@ -21,6 +21,10 @@ const SCROLL_SCHOOL_CHECKS = {
     '365CF225A08970DD': { school: 'irons_spellbooks:ice', rarity: null }, // Q3: any Ice scroll
     // Infernal (Fire)
     '7DCAC4D5F483CB03': { school: 'irons_spellbooks:fire', rarity: null }, // Q3: any Fire scroll
+    // Vampire: Occult (Discerning The Eldritch) spells are crafted on the rune table
+    '2B100C0000000001': { school: 'discerning_the_eldritch:ritual', rarity: null }, // any Occult scroll
+    // Water Warlock (Somake Spells Aqua)
+    '7FA2CFF2440105C5': { school: 'somakespells:aqua', rarity: null }, // any Aqua scroll
 }
 
 function hexId(task) {
@@ -35,6 +39,11 @@ function hexId(task) {
 // no native "one item out of a list" item task, so this is the same custom-task workaround).
 const ANY_ITEM_CHECKS = {
     '5A0F359B1D9B7D65': [ // Ice Mage: any grimoire
+        'irons_spellbooks:copper_spell_book',
+        'irons_spellbooks:iron_spell_book',
+        'irons_spellbooks:gold_spell_book',
+    ],
+    '61F813EDD6177D77': [ // Water Warlock: any grimoire
         'irons_spellbooks:copper_spell_book',
         'irons_spellbooks:iron_spell_book',
         'irons_spellbooks:gold_spell_book',
@@ -85,11 +94,9 @@ function hasMatchingScroll(player, config) {
 CustomTaskEvent.EVENT.register(event => {
     const task = event.getTask()
     const id = hexId(task)
-    console.log('[ftbquests_scroll_checks] CustomTaskEvent fired for task ' + id)
 
     const scrollConfig = SCROLL_SCHOOL_CHECKS[id]
     if (scrollConfig) {
-        console.log('[ftbquests_scroll_checks] wiring scroll check for ' + id + ' -> ' + JSON.stringify(scrollConfig))
         task.setCheck((data, player) => {
             if (data.getProgress() > 0) return
             if (hasMatchingScroll(player, scrollConfig)) {
@@ -101,7 +108,6 @@ CustomTaskEvent.EVENT.register(event => {
 
     const itemList = ANY_ITEM_CHECKS[id]
     if (itemList) {
-        console.log('[ftbquests_scroll_checks] wiring any-item check for ' + id)
         task.setCheck((data, player) => {
             if (data.getProgress() > 0) return
             if (hasAnyItem(player, itemList)) {
@@ -169,4 +175,103 @@ CustomTaskEventAct1.EVENT.register(event => {
         })
     }
     return EventResultAct1.pass()
+})
+
+// FTB Quests: глава «Паровой Панк» (Chromeware). Кастомные задачи:
+//  - сесть в хирургическое кресло (открывает всю главу),
+//  - человечность упала до 60 / 45 / 30,
+//  - убить существо квикхаком,
+//  - получить любое из орудий для рук.
+const CustomTaskEventSteam = Java.loadClass('dev.ftb.mods.ftbquests.events.CustomTaskEvent')
+const BuiltInRegistriesSteam = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+const JLongSteam = Java.loadClass('java.lang.Long')
+const EventResultSteam = Java.loadClass('dev.architectury.event.EventResult')
+const HumanitySteam = Java.loadClass('com.chromeware.humanity.Humanity')
+const PlayerSteam = Java.loadClass('net.minecraft.world.entity.player.Player')
+
+// Убийства квикхаками (все девять смертельных) учитывает мод SpellClasses: QuickhackKills.take(игрок) вернёт true один раз после убийства.
+const QuickhackKillsSteam = Java.loadClass('dev.qur1s.spellclasses.implant.QuickhackKills')
+
+const STEAM_HUMANITY = {
+    '5A5B000000000002': 60,
+    '5A5B000000000003': 45,
+    '5A5B000000000004': 30,
+}
+const STEAM_EYES = ['chromeware:kiroshi_optics', 'chromeware:stalker', 'chromeware:sentry', 'chromeware:clairvoyant', 'chromeware:doomsayer'] // без Оракула и Василиска
+const STEAM_CAPACITY = { '5A5B000000000008': 100, '5A5B000000000009': 200, '5A5B00000000000A': 300, '5A5B00000000000B': 400 }
+const CyberwareCapacitySteam = Java.loadClass('com.chromeware.cyberware.CyberwareCapacity')
+const STEAM_ARM_ITEMS = ['chromeware:mantis_blades', 'chromeware:gorilla_arms', 'chromeware:projectile_launch_system']
+
+function steamWireSit(task) {
+    task.setCheckTimer(10)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        const v = player.getVehicle()
+        // по имени класса из toString (getClass в KubeJS закрыт, а тип сущности здесь определяется как pig)
+        if (v != null && String(v).startsWith('SurgerySeat')) data.setProgress(1)
+    })
+}
+
+function steamWireHumanity(task, steamLimit) {
+    task.setCheckTimer(20)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        const loss = HumanitySteam.state(player).loss()
+        if (100 - loss <= steamLimit) data.setProgress(1)
+    })
+}
+
+function steamWireQuickhack(task) {
+    task.setCheckTimer(5)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        if (QuickhackKillsSteam.take(player)) data.setProgress(1)
+    })
+}
+
+function steamWireEyes(task) {
+    task.setCheckTimer(20)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        const items = player.getInventory().items
+        for (let i = 0; i < items.size(); i++) {
+            const s = items.get(i)
+            if (!s.isEmpty() && STEAM_EYES.includes(String(BuiltInRegistriesSteam.ITEM.getKey(s.getItem())))) { data.setProgress(1); return }
+        }
+    })
+}
+
+function steamWireCapacity(task, need) {
+    task.setCheckTimer(40)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        const cap = CyberwareCapacitySteam.limit(player)
+        if (cap >= need) data.setProgress(1)
+    })
+}
+
+function steamWireArms(task) {
+    task.setCheckTimer(20)
+    task.setCheck((data, player) => {
+        if (data.getProgress() > 0) return
+        const items = player.getInventory().items
+        for (let i = 0; i < items.size(); i++) {
+            const s = items.get(i)
+            if (!s.isEmpty() && STEAM_ARM_ITEMS.includes(String(BuiltInRegistriesSteam.ITEM.getKey(s.getItem())))) { data.setProgress(1); return }
+        }
+    })
+}
+
+CustomTaskEventSteam.EVENT.register(event => {
+    const task = event.getTask()
+    let hex = String(JLongSteam.toHexString(task.getId())).toUpperCase()
+    while (hex.length < 16) hex = '0' + hex
+    if (!hex.startsWith('5A5B')) return EventResultSteam.pass()
+    if (hex === '5A5B000000000001') steamWireSit(task)
+    else if (STEAM_HUMANITY[hex] !== undefined) steamWireHumanity(task, STEAM_HUMANITY[hex])
+    else if (hex === '5A5B000000000005') steamWireQuickhack(task)
+    else if (hex === '5A5B000000000006') steamWireArms(task)
+    else if (hex === '5A5B000000000007') steamWireEyes(task)
+    else if (STEAM_CAPACITY[hex] !== undefined) steamWireCapacity(task, STEAM_CAPACITY[hex])
+    return EventResultSteam.pass()
 })

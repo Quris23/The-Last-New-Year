@@ -146,6 +146,20 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(enchBook).loops(2)
 
+    // Том Новатора - Штормовой Атлас, пластина, пресс, ядро, провода и жидкая молния
+    let stormAtlas = 'spellclasses:storm_atlas'
+
+    event.recipes.create.sequenced_assembly([
+        'discerning_the_eldritch:tempestuous_tome'
+    ], stormAtlas, [
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'create:copper_sheet']),
+        event.recipes.createPressing(stormAtlas, stormAtlas),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'irons_spellbooks:energized_core']),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'createaddition:copper_wire']),
+        event.recipes.createDeploying(stormAtlas, [stormAtlas, 'createaddition:electrum_wire']),
+        event.recipes.createFilling(stormAtlas, [stormAtlas, Fluid.of('create_wizardry:lightning', 250)])
+    ]).transitionalItem(stormAtlas).loops(1)
+
     // Рукопись друидов
     let druidShard = ['small_amethyst_bud', 'medium_amethyst_bud', 'large_amethyst_bud', 'amethyst_cluster', 'amethyst_shard']
     let bottles = ['honey_bottle', 'alexscaves:hot_chocolate_bottle', 'alexscaves:purple_soda_bottle']
@@ -201,5 +215,17 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(ruinBook, [ruinBook, 'irons_spellbooks:magic_cloth']),
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(ruinBook).loops(2)
+
+    // Евангелие рассвета (осталась только 3-я версия): из Деревенской библии вместо Золотой книги заклинаний
+    event.shaped('somakespells:dawnlit_gospel_3_spell_book', [
+        'ABB',
+        'DCC',
+        'ABB'
+    ], {
+        A: 'irons_spellbooks:holy_rune',
+        B: 'irons_spellbooks:arcane_ingot',
+        C: 'irons_spellbooks:hogskin',
+        D: 'irons_spellbooks:villager_spell_book'
+    })
 
 })

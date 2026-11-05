@@ -17,6 +17,8 @@ import top.theillusivec4.curios.api.type.inventory.IDynamicStackHandler;
  */
 public final class Scabbard {
     public static final String SLOT = "scabbard";
+    private static final net.minecraft.tags.TagKey<net.minecraft.world.item.Item> EXTRA = net.minecraft.tags.TagKey.create(
+            net.minecraft.core.registries.Registries.ITEM, net.minecraft.resources.ResourceLocation.parse("curios:scabbard"));
 
     private Scabbard() {
     }
@@ -24,7 +26,11 @@ public final class Scabbard {
     /** A weapon (anything that hits for damage, tools other than axes excluded) or any spell staff. */
     public static boolean accepts(ItemStack stack) {
         if (stack.isEmpty()) return false;
+        // the Copper Glove lives in the hands slot, never in the scabbard
+        if (CopperGloveTweak.isHandWeapon(stack)) return false;
         if (stack.getItem() instanceof StaffItem) return true;
+        // anything a pack puts in the curios:scabbard tag (e.g. the Eldritch sheath knives, which deal no damage themselves)
+        if (stack.is(EXTRA)) return true;
         // Mining tools are not weapons - except Cataclysm's "forges", which are weapons built on PickaxeItem.
         boolean miningTool = stack.is(ItemTags.PICKAXES) || stack.is(ItemTags.SHOVELS) || stack.is(ItemTags.HOES);
         if (miningTool && !isWeaponModItem(stack)) return false;

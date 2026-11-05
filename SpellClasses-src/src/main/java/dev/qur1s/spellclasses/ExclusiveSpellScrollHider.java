@@ -22,7 +22,7 @@ import java.util.function.Supplier;
  * These spells are each baked permanently into one specific preset weapon (see
  * PresetWeaponSpells, VoidStaffPortalSpell, and the vanilla items' own built-in preset spells:
  * Spellbreaker/Amethyst Rapier/Boreal Blade/Twilight Gale/Hellrazor/Monstrous Flamberge/
- * Hither-Thither Wand/Bloom Stone Staff/Soul Brazier). Their scrolls are hidden from the creative menu so nobody can put the
+ * Hither-Thither Wand/Bloom Stone Staff/Soul Brazier/Core Splitter's Fire Arrow). Their scrolls are hidden from the creative menu so nobody can put the
  * spell into a regular grimoire - the weapon is the only source. Scroll Forge crafting and JEI's
  * recipe listing for them are separately disabled via the "allow_crafting" spell config overlay
  * (kubejs/data/<mod_id>/irons_spellbooks_spell_config/<spell_id>.json); JEI's own item list
@@ -36,25 +36,18 @@ public final class ExclusiveSpellScrollHider {
     private static final List<Supplier<AbstractSpell>> HIDDEN_SPELLS = List.of(
             SpellRegistry.VOLT_STRIKE_SPELL,
             SpellRegistry.ARCANE_SHACKLE_SPELL,
-            SpellRegistry.COUNTERSPELL_SPELL,
             SpellRegistry.ECHOING_STRIKES_SPELL,
             SpellRegistry.FROSTBITE_SPELL,
             SpellRegistry.RAISE_HELL_SPELL,
             SpellRegistry.PORTAL_SPELL,
             SpellRegistry.THUNDERSTORM_SPELL,
+            SpellRegistry.FIRE_ARROW_SPELL,
             SpellRegistries.TECTONIC_TREMBLE,
-            SpellRegistries.CONJURE_AMETHYST_CRAB,
-            SpellRegistries.CONJURE_THRALL
+            SpellRegistries.CONJURE_AMETHYST_CRAB
     );
 
-    /** Cosmic school spells (Echoing Magic) cut from the pack; no compile dependency, so by id. */
+    /** Spells cut from the pack (Wind, Ascension); no compile dependency, so by id. The Cosmic (Echoing Magic) spells are available again. */
     private static final List<ResourceLocation> HIDDEN_SPELL_IDS = List.of(
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echo_star"),
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echo_blast"),
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echoing_explosion"),
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "echoing_slam"),
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "collapse"),
-            ResourceLocation.fromNamespaceAndPath("echoing_magic", "summon_brave"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "iron_slash"),
             ResourceLocation.fromNamespaceAndPath("wind_spellbooks", "aeropic"),
             ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "ascension"),

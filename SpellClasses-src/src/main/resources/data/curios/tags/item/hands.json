@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "somakespells:copper_glove",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:ice_gauntlet",
+      "required": false
+    },
+    {
+      "id": "block_factorys_bosses:sandworm_gauntlet",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:fiery_jaw",
+      "required": false
+    }
+  ],
+  "remove": [
+    "cataclysm:gauntlet_of_guard",
+    "cataclysm:gauntlet_of_bulwark",
+    "cataclysm:gauntlet_of_maelstrom"
+  ]
+}

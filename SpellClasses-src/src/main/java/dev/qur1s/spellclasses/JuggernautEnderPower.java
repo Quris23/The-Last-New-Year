@@ -16,13 +16,14 @@ import java.util.ArrayList;
 
 /**
  * Cosmic spells are cut from the pack, and the Reinforced Juggernaut armor (Echoing Magic) is an Ender-class piece:
- * its Cosmic spell power and its all-spells spell power both become Ender spell power - same amount, same operation,
- * same slot. Every piece also has +1 armor.
+ * its Cosmic spell power becomes Ender spell power and its all-spells spell power becomes Annihilation spell power - same amount,
+ * same operation, same slot. Every piece also has +1 armor.
  */
 @EventBusSubscriber(modid = "spellclasses")
 public final class JuggernautEnderPower {
     private static final ResourceLocation COSMIC = ResourceLocation.fromNamespaceAndPath("hazentouvelib", "cosmic_spell_power");
     private static final ResourceLocation ALL_SPELLS = ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "spell_power");
+    private static final ResourceLocation ANNIHILATION = ResourceLocation.fromNamespaceAndPath("legendary_spellbooks", "annihilation_spell_power");
     private static final ResourceLocation ENDER = ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "ender_spell_power");
 
     private JuggernautEnderPower() {
@@ -36,6 +37,7 @@ public final class JuggernautEnderPower {
             return;
         }
         Holder<Attribute> ender = BuiltInRegistries.ATTRIBUTE.getHolder(ENDER).orElse(null);
+        Holder<Attribute> annihilation = BuiltInRegistries.ATTRIBUTE.getHolder(ANNIHILATION).orElse(null);
         for (var entry : new ArrayList<>(event.getModifiers())) {
             // Each piece gets one more point of armor than it has.
             if (entry.attribute().equals(Attributes.ARMOR)) {
@@ -48,7 +50,15 @@ public final class JuggernautEnderPower {
             if (ender == null) {
                 continue;
             }
-            if (entry.attribute().unwrapKey().map(k -> k.location().equals(COSMIC) || k.location().equals(ALL_SPELLS)).orElse(false)) {
+            // the all-spells bonus (5%) becomes Annihilation spell power
+            if (annihilation != null && entry.attribute().unwrapKey().map(k -> k.location().equals(ALL_SPELLS)).orElse(false)) {
+                event.removeModifier(entry.attribute(), entry.modifier().id());
+                event.addModifier(annihilation,
+                        new AttributeModifier(entry.modifier().id(), entry.modifier().amount(), entry.modifier().operation()),
+                        entry.slot());
+                continue;
+            }
+            if (entry.attribute().unwrapKey().map(k -> k.location().equals(COSMIC)).orElse(false)) {
                 event.removeModifier(entry.attribute(), entry.modifier().id());
                 event.addModifier(ender,
                         new AttributeModifier(entry.modifier().id(), entry.modifier().amount(), entry.modifier().operation()),

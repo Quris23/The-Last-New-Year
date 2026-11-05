@@ -23,17 +23,17 @@ public final class ClassSchools {
     );
 
     /**
-     * Schools added by addons (Cataclysm: Spellbooks, Ace's Spell Utils) that everyone can cast
+     * Schools added by addons (Cataclysm: Spellbooks, Ace's Spell Utils, Discerning The Eldritch) that everyone can cast
      * regardless of chosen class - not part of the class system, just extra spell schools.
      */
     public static final Set<ResourceLocation> ADDON_FREE_SCHOOLS = Set.of(
-            ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "abyssal"),
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "technomancy"),
             ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "sand"),
             ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "ritual"),
             ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "hydro"),
             ResourceLocation.fromNamespaceAndPath("aces_spell_utils", "technomancy"),
-            ResourceLocation.fromNamespaceAndPath("hazentouvelib", "cosmic")
+            ResourceLocation.fromNamespaceAndPath("hazentouvelib", "cosmic"),
+            ResourceLocation.fromNamespaceAndPath("discerning_the_eldritch", "ritual")
     );
 
     /** Schools cut from the pack (Hazen's Touve Lib): not selectable as a class, items/recipes removed in KubeJS. */
@@ -41,6 +41,12 @@ public final class ClassSchools {
             ResourceLocation.fromNamespaceAndPath("hazentouvelib", "radiance"),
             ResourceLocation.fromNamespaceAndPath("hazentouvelib", "shadow")
     );
+
+    /** Abyssal spells belong to the Atlantean (Aqua) class: not a class of their own, castable only by the Aqua class. */
+    public static final ResourceLocation ABYSSAL_SCHOOL = ResourceLocation.fromNamespaceAndPath("cataclysm_spellbooks", "abyssal");
+    /** Annihilation spells (Legendary Spellbooks) belong to the Ender class: not a class of their own, castable only by the Ender class. */
+    public static final ResourceLocation ANNIHILATION_SCHOOL = ResourceLocation.fromNamespaceAndPath("legendary_spellbooks", "annihilation");
+    public static final ResourceLocation AQUA_SCHOOL = ResourceLocation.fromNamespaceAndPath("somakespells", "aqua");
 
     /**
      * The Wind school (Wind's Spellbooks) is part of Storm: not a class of its own, castable by exactly
@@ -59,7 +65,8 @@ public final class ClassSchools {
         for (SchoolType school : SchoolRegistry.REGISTRY) {
             ResourceLocation id = school.getId();
             if (!FREE_SCHOOLS.contains(id) && !ADDON_FREE_SCHOOLS.contains(id)
-                    && !REMOVED_SCHOOLS.contains(id) && !WIND_SCHOOL.equals(id)) result.add(id);
+                    && !REMOVED_SCHOOLS.contains(id) && !WIND_SCHOOL.equals(id) && !ABYSSAL_SCHOOL.equals(id)
+                    && !ANNIHILATION_SCHOOL.equals(id)) result.add(id);
         }
         return result;
     }
@@ -68,12 +75,16 @@ public final class ClassSchools {
     public static Component className(ResourceLocation school) {
         // Wind is folded into Storm (see WIND_SCHOOL): it has no class name of its own, the message names the Storm class
         if (WIND_SCHOOL.equals(school)) school = SchoolRegistry.LIGHTNING_RESOURCE;
+        if (ABYSSAL_SCHOOL.equals(school)) school = AQUA_SCHOOL;
+        if (ANNIHILATION_SCHOOL.equals(school)) school = SchoolRegistry.ENDER_RESOURCE;
         return Component.translatable("spellclasses.class." + school.getPath());
     }
 
     /** Whether {@code school} is castable by a player whose chosen class is {@code chosenSchool} (may be null/unset). */
     public static boolean isAllowed(ResourceLocation school, ResourceLocation chosenSchool) {
         if (WIND_SCHOOL.equals(school)) school = SchoolRegistry.LIGHTNING_RESOURCE;
+        if (ABYSSAL_SCHOOL.equals(school)) school = AQUA_SCHOOL;
+        if (ANNIHILATION_SCHOOL.equals(school)) school = SchoolRegistry.ENDER_RESOURCE;
         if (FREE_SCHOOLS.contains(school)) return true;
         if (!restrictedSchools().contains(school)) return true; // unknown/modded school: don't gate it
         return school.equals(chosenSchool);

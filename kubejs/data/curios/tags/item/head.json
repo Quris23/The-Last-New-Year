@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "aeronautics:aviators_goggles", "required": false },
+    { "id": "create_submarine:pressure_goggles", "required": false },
+    { "id": "aerowarptics:rift_goggles", "required": false },
+    { "id": "irons_spellbooks:tarnished_helmet", "required": false }
+  ]
+}

@@ -28,6 +28,26 @@ public final class NetworkHandler {
                 context.enqueueWork(() -> {
                     if (context.player() instanceof ServerPlayer player) dev.qur1s.spellclasses.Scabbard.swap(player);
                 }));
+        registrar.playToClient(SymptomPayload.TYPE, SymptomPayload.STREAM_CODEC, (payload, context) ->
+                context.enqueueWork(() -> dev.qur1s.spellclasses.client.CyberpsychosisKeys.trigger(payload.mask())));
+        registrar.playToServer(TidePiercerPayload.TYPE, TidePiercerPayload.STREAM_CODEC, (payload, context) ->
+                context.enqueueWork(() -> {
+                    if (context.player() instanceof ServerPlayer player) dev.qur1s.spellclasses.TidePiercerDrink.held(player);
+                }));
+        registrar.playToServer(NightVisionPayload.TYPE, NightVisionPayload.STREAM_CODEC, (payload, context) ->
+                context.enqueueWork(() -> {
+                    if (context.player() instanceof ServerPlayer player
+                            && net.neoforged.fml.ModList.get().isLoaded("chromeware")) {
+                        if (payload.which() == 1) dev.qur1s.spellclasses.implant.FaceImplants.toggleApple(player);
+                        else dev.qur1s.spellclasses.implant.FaceImplants.toggleGoggles(player);
+                    }
+                }));
+        registrar.playToServer(ImplantUpgradePayload.TYPE, ImplantUpgradePayload.STREAM_CODEC, (payload, context) ->
+                context.enqueueWork(() -> {
+                    if (!(context.player() instanceof ServerPlayer player)
+                            || !net.neoforged.fml.ModList.get().isLoaded("sophisticatedbackpacks")) return;
+                    dev.qur1s.spellclasses.implant.ImplantBackpack.act(player, payload.category(), payload.socket(), payload.action());
+                }));
     }
 
     private static void removeOneClassBook(ServerPlayer player) {

@@ -22,10 +22,9 @@ public final class FtbQuestsUniversalGate {
     private static final Map<Long, ResourceLocation> UNIVERSAL_CHAPTERS = new HashMap<>();
 
     static {
-        // Abyssal - Book o' R'lyeh
-        UNIVERSAL_CHAPTERS.put(Long.parseUnsignedLong("1664C24717D25B6D", 16), item("cataclysm_spellbooks", "abyss_spell_book"));
-        // Sand - Desert Spellbook
-        UNIVERSAL_CHAPTERS.put(Long.parseUnsignedLong("38F2814B10280935", 16), item("cataclysm_spellbooks", "desert_spell_book"));
+        // Abyssal (Чародей Бездны) is no longer universal: it moved into the Aqua class (see FtbQuestsClassGate)
+        // Sand is no longer universal either: its quests moved into the Druid (nature) chapter; Sand spells stay
+        // castable by everyone in the full Pharaoh set (see AbstractSpellOverridesMixin)
         // Eldritch - not an item: the chapter opens once the player has held anything carrying an Eldritch spell
         // (see UniversalItemPickupEvents), recorded under this marker id
         UNIVERSAL_CHAPTERS.put(Long.parseUnsignedLong("3F788E6395D396F6", 16), ELDRITCH_MARKER);
@@ -35,7 +34,7 @@ public final class FtbQuestsUniversalGate {
         return ResourceLocation.fromNamespaceAndPath(namespace, path);
     }
 
-    /** True for the universal chapters (Abyssal, Sand, Eldritch): shown only once a quest in them is completed. */
+    /** True for the universal chapters (Eldritch): shown only once a quest in them is completed. */
     public static boolean isUniversalChapter(long chapterId) {
         return UNIVERSAL_CHAPTERS.containsKey(chapterId);
     }

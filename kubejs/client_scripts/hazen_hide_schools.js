@@ -4,7 +4,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     event.remove([
         'hazentouvelib:radiance_rune',
         'hazentouvelib:shadow_rune',
-        'hazentouvelib:radiance_upgrade_orb',
         'hazentouvelib:shadow_upgrade_orb',
         'echoing_magic:echoed_manuscript'
     ])

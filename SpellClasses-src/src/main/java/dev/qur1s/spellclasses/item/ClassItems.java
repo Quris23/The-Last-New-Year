@@ -50,6 +50,10 @@ public final class ClassItems {
                             new AttributeContainer(SlotAttribute.getOrCreate("talisman"), 3.0, AttributeModifier.Operation.ADD_VALUE),
                             new AttributeContainer(Attributes.ARMOR, 2.0, AttributeModifier.Operation.ADD_VALUE)));
 
+    /** Face implant: shows every placed Create schematic of the inventory (see HologramSchematics). */
+    public static final DeferredHolder<Item, Item> HOLOGRAPHIC_APPLE = ITEMS.register("holographic_apple",
+            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+
     public static void register(IEventBus modBus) {
         ITEMS.register(modBus);
     }

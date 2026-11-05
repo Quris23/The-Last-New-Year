@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "deeperdarker:item/resonarium_sword"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/resonarium_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "deeperdarker:item/resonarium_sword"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "deeperdarker:item/resonarium_sword"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "deeperdarker:item/resonarium_sword"
+      }
+    }
+  }
+}

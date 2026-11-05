@@ -76,7 +76,45 @@ public final class ClassManager {
                 player.getData(ClassAttachments.PLAYER_CLASS).withChosenSchool(school.toString()));
         GlobalClassData.get(player.serverLevel()).addMember(school.toString(), player.getUUID());
         ColdSweatCompat.syncResistance(player, Optional.of(school));
+        ClassSpawns.teleport(player, school);
         return true;
+    }
+
+    /** What every new player begins with: the novice book, a scroll of Arrow Volley, 16 bread and the class book. */
+    public static void giveStarterKit(ServerPlayer player) {
+        give(player, new net.minecraft.world.item.ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(
+                net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("irons_spellbooks", "copper_spell_book"))));
+        var scroll = new net.minecraft.world.item.ItemStack(io.redspace.ironsspellbooks.registries.ItemRegistry.SCROLL.get());
+        io.redspace.ironsspellbooks.api.spells.ISpellContainer.set(scroll,
+                io.redspace.ironsspellbooks.api.spells.ISpellContainer.createScrollContainer(
+                        io.redspace.ironsspellbooks.api.registry.SpellRegistry.ARROW_VOLLEY_SPELL.get(), 1, scroll));
+        give(player, scroll);
+        give(player, new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BREAD, 16));
+        giveObservatoryCompass(player);
+        giveClassBook(player);
+    }
+
+    /**
+     * A compass that points at the Abandoned Observatory (the Ender class's structure), building the structure first
+     * if this is the first time anyone needs it. It tracks a position, not a lodestone block.
+     */
+    public static boolean giveObservatoryCompass(ServerPlayer player) {
+        var overworld = player.server.overworld();
+        var spawn = ClassSpawns.spawnFor(overworld, io.redspace.ironsspellbooks.api.registry.SchoolRegistry.ENDER_RESOURCE);
+        if (spawn.isEmpty()) return false;
+        var compass = new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.COMPASS);
+        compass.set(net.minecraft.core.component.DataComponents.LODESTONE_TRACKER,
+                new net.minecraft.world.item.component.LodestoneTracker(
+                        Optional.of(net.minecraft.core.GlobalPos.of(net.minecraft.world.level.Level.OVERWORLD, spawn.get())), false));
+        compass.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,
+                net.minecraft.network.chat.Component.translatable("item.spellclasses.observatory_compass")
+                        .withStyle(style -> style.withItalic(false)));
+        give(player, compass);
+        return true;
+    }
+
+    private static void give(ServerPlayer player, net.minecraft.world.item.ItemStack stack) {
+        if (!player.getInventory().add(stack)) player.drop(stack, false);
     }
 
     public static void giveClassBook(ServerPlayer player) {

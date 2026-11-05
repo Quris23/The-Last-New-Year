@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
   // Броня Джаггернаута
-  let rune = ['irons_spellbooks:ender_rune', 'hazentouvelib:cosmic_rune']
+  let rune = ['legendary_spellbooks:annihilation_rune', 'hazentouvelib:cosmic_rune']
   let ingot = ['createcasing:chorium_ingot', 'create:shadow_steel']
 
   let JugTrans0 = 'kubejs:incomplete_unbreakable_skull'

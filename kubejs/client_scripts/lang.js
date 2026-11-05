@@ -61,6 +61,7 @@ ClientEvents.lang('ru_ru', event => {
     //event.rename('create_wizard:mana', 'Мана')
     event.add('fluid_type.create_wizard.mana', 'Мана')
 
+
     // Legendary monsters
     
     event.renameItem('kubejs:lunar_enderitium_ore', 'Лунная эндеритиумовая руда')

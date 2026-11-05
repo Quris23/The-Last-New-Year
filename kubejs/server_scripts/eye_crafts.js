@@ -275,6 +275,7 @@ ServerEvents.recipes(event => {
         CreateItem.of('endrem:rogue_eye', 0.80),
         CreateItem.of('2x legendary_monsters:portal_shard', 0.2)
     ], 'aerowarptics:singularity_core', [ 
+        event.recipes.createDeploying(trans2, [trans2, 'alexscaves:uranium']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
         event.recipes.createDeploying(trans2, [trans2, 'alexscaves:acidic_radrock']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('createnuclear:uranium', 1000)]),

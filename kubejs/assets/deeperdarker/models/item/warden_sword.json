@@ -1,0 +1,20 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "deeperdarker:item/warden_sword_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "deeperdarker:item/warden_sword_gui"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "deeperdarker:item/warden_sword_gui"
+      }
+    }
+  }
+}
