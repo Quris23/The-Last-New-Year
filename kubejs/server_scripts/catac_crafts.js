@@ -120,21 +120,28 @@ ServerEvents.recipes(event => {
   })
 
   // Незеритовыый горн
-  let blackstone = ['blackstone', 'gilded_blackstone', 'polished_blackstone']
-  event.recipes.create.mechanical_crafting('cataclysm:infernal_forge', [
-    'snnnm',
-    'sbhb ',
-    '  H  ',
-    '  H  ',
-    '  H  '
-  ], {
-    s: blackstone,
-    n: 'netherite_scrap',
-    m: 'cataclysm:monstrous_horn',
-    b: 'cataclysm:lava_power_cell',
-    h: 'born_in_chaos_v1:skullbreaker_hammer',
-    H: 'born_in_chaos_v1:bone_handle'
+  event.custom({
+    type: 'cataclysm:weapon_fusion',
+    base: { item: 'born_in_chaos_v1:skullbreaker_hammer' },
+    addition: { item: 'cataclysm:monstrous_horn' },
+    result: { id: 'cataclysm:infernal_forge' }
   })
+
+  // let blackstone = ['blackstone', 'gilded_blackstone', 'polished_blackstone']
+  // event.recipes.create.mechanical_crafting('cataclysm:infernal_forge', [
+  //   'snnnm',
+  //   'sbhb ',
+  //   '  H  ',
+  //   '  H  ',
+  //   '  H  '
+  // ], {
+  //   s: blackstone,
+  //   n: 'netherite_scrap',
+  //   m: 'cataclysm:monstrous_horn',
+  //   b: 'cataclysm:lava_power_cell',
+  //   h: 'born_in_chaos_v1:skullbreaker_hammer',
+  //   H: 'born_in_chaos_v1:bone_handle'
+  // })
 
   // Древний металл
   event.shaped('cataclysm:khopesh', [

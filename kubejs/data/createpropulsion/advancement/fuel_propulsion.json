@@ -1,0 +1,22 @@
+{
+ "parent": "minecraft:story/root",
+ "criteria": {
+  "has_thruster": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createpropulsion:thruster"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "has_thruster"
+  ]
+ ]
+}

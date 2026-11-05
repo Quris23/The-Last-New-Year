@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:thataway",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:far_from_home_builtin",
+   "trigger": "simulated:far_from_home_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

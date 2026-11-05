@@ -1,0 +1,21 @@
+{
+ "parent": "deeperdarker:main/enter_otherside",
+ "criteria": {
+  "sonorous_staff": {
+   "conditions": {
+    "items": [
+     {
+      "items": "deeperdarker:sonorous_staff"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "sonorous_staff"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

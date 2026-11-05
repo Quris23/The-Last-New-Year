@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "handbook": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:handbook"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "handbook"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:root"
+}

@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:applied_kinematics",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:opposite_attract_builtin",
+   "trigger": "simulated:opposite_attract_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

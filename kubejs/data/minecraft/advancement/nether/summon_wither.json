@@ -1,0 +1,25 @@
+{
+ "parent": "minecraft:nether/get_wither_skull",
+ "criteria": {
+  "summoned": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "minecraft:wither"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:summoned_entity"
+  }
+ },
+ "requirements": [
+  [
+   "summoned"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

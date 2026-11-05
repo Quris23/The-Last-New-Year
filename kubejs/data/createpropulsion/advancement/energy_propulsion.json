@@ -1,0 +1,22 @@
+{
+ "parent": "createpropulsion:fuel_propulsion",
+ "criteria": {
+  "has_ion_thruster": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createpropulsion:ion_thruster"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "has_ion_thruster"
+  ]
+ ]
+}

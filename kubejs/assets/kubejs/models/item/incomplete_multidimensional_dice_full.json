@@ -1,0 +1,15 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "kubejs:item/incomplete_multidimensional_dice_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "kubejs:item/incomplete_multidimensional_dice"
+      }
+    }
+  }
+}

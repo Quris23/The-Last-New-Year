@@ -1,0 +1,14 @@
+{
+ "parent": "create:cardboard",
+ "criteria": {
+  "0": {
+   "trigger": "create:packager_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

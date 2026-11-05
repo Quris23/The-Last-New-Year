@@ -1,0 +1,14 @@
+{
+ "parent": "create:rose_quartz",
+ "criteria": {
+  "0": {
+   "trigger": "create:deployer_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

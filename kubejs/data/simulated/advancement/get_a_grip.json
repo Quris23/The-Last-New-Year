@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:applied_kinematics",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:get_a_grip_builtin",
+   "trigger": "simulated:get_a_grip_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

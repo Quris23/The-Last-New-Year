@@ -1,0 +1,34 @@
+{
+ "parent": "nova_structures:end/find_end_castle",
+ "criteria": {
+  "kill_phantom_boss": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:any_of",
+      "terms": [
+       {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+         "type": "minecraft:phantom",
+         "nbt": "{Tags:[\"phantom_boss\"]}"
+        }
+       },
+       {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+         "type": "minecraft:phantom",
+         "nbt": "{Tags:[\"phantom_boss_ominous\"]}"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "sends_telemetry_event": false
+}

@@ -1,0 +1,20 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/root",
+ "criteria": {
+  "requirement": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:graybeard_staff",
+       "irons_spellbooks:ice_staff",
+       "irons_spellbooks:artificer_cane",
+       "irons_spellbooks:blood_staff"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "criteria": {
+  "warped": {
+   "trigger": "aerowarptics:warp_completed",
+   "conditions": {}
+  }
+ },
+ "requirements": [
+  [
+   "warped"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:rift_drive"
+}

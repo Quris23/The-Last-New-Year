@@ -1,0 +1,19 @@
+{
+ "parent": "quark:content/mine_toretoise",
+ "criteria": {
+  "mine_fed_toretoise": {
+   "trigger": "quark:mine_fed_toretoise"
+  }
+ },
+ "requirements": [
+  [
+   "mine_fed_toretoise"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "toretoise_regrow"
+  }
+ ]
+}

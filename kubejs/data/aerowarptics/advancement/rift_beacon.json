@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "rift_beacon": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_beacon"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_beacon"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:first_warp"
+}

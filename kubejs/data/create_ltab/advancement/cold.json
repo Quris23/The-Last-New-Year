@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "snowblock": {
+   "trigger": "minecraft:enter_block",
+   "conditions": {
+    "block": "minecraft:snow"
+   }
+  }
+ },
+ "parent": "create_ltab:root"
+}

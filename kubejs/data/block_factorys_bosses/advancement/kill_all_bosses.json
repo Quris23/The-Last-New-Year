@@ -1,0 +1,96 @@
+{
+ "parent": "block_factorys_bosses:kill_boss_under_minute",
+ "criteria": {
+  "kill_dragon": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:infernal_dragon"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  },
+  "kill_knight": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:underworld_knight"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  },
+  "kill_kraken": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:kraken"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  },
+  "kill_worm": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:sandworm"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  },
+  "kill_yeti": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "block_factorys_bosses:yeti"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  }
+ },
+ "requirements": [
+  [
+   "kill_yeti"
+  ],
+  [
+   "kill_dragon"
+  ],
+  [
+   "kill_knight"
+  ],
+  [
+   "kill_worm"
+  ],
+  [
+   "kill_kraken"
+  ]
+ ],
+ "rewards": {
+  "experience": 1000
+ },
+ "sends_telemetry_event": true
+}

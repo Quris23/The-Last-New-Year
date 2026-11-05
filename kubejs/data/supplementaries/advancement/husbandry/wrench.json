@@ -1,0 +1,31 @@
+{
+ "parent": "minecraft:husbandry/root",
+ "criteria": {
+  "wrench": {
+   "trigger": "minecraft:item_used_on_block",
+   "conditions": {
+    "location": [
+     {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+       "items": [
+        "supplementaries:wrench"
+       ]
+      }
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "wrench"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "wrench"
+  }
+ ]
+}

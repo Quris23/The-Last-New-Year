@@ -1,0 +1,27 @@
+{
+ "parent": "nova_structures:adventure/find_all_illager_structures",
+ "criteria": {
+  "nova_structures:illager_manor": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "nova_structures:illager_manor"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "nova_structures:illager_manor"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

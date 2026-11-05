@@ -1,0 +1,14 @@
+{
+ "parent": "create:track_crafting_factory",
+ "criteria": {
+  "0": {
+   "trigger": "create:long_train_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

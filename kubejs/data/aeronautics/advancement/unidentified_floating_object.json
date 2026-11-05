@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:head_in_the_clouds",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:unidentified_floating_object_builtin",
+   "trigger": "aeronautics:unidentified_floating_object_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

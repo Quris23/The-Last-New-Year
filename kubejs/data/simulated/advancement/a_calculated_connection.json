@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:opposite_attract",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:a_calculated_connection_builtin",
+   "trigger": "simulated:a_calculated_connection_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "create:andesite_alloy",
+ "criteria": {
+  "0": {
+   "trigger": "create:water_wheel_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

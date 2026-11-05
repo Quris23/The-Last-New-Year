@@ -1,0 +1,14 @@
+{
+ "parent": "create:stock_ticker",
+ "criteria": {
+  "0": {
+   "trigger": "create:frogport_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

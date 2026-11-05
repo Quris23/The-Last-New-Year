@@ -1,0 +1,88 @@
+{
+	"format_version": "26.3",
+	"credit": "Block Factory's Bosses warrior sword, converted from its Java entity model",
+	"texture_size": [32, 32],
+	"textures": {
+		"2": "kubejs:item/swords/diamond_sword",
+		"particle": "kubejs:item/swords/diamond_sword"
+	},
+	"elements": [
+		{
+			"name": "guard_wings",
+			"from": [8, -4.5, 3],
+			"to": [8, -0.5, 13],
+			"faces": {
+				"east": {"uv": [8, 0, 3, 2], "texture": "#2"},
+				"west": {"uv": [3, 0, 8, 2], "texture": "#2"}
+			}
+		},
+		{
+			"name": "grip",
+			"from": [7, -12.5, 7],
+			"to": [9, -2.5, 9],
+			"faces": {
+				"north": {"uv": [4, 3, 3, 8], "texture": "#2"},
+				"east": {"uv": [5, 3, 4, 8], "texture": "#2"},
+				"south": {"uv": [6, 3, 5, 8], "texture": "#2"},
+				"west": {"uv": [7, 3, 6, 8], "texture": "#2"},
+				"up": {"uv": [4, 3, 5, 2], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [6, 3, 5, 2], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "guard",
+			"from": [7, -2.5, 5],
+			"to": [9, -0.5, 11],
+			"faces": {
+				"north": {"uv": [8, 3, 7, 4], "texture": "#2"},
+				"east": {"uv": [11, 3, 8, 4], "texture": "#2"},
+				"south": {"uv": [12, 3, 11, 4], "texture": "#2"},
+				"west": {"uv": [15, 3, 12, 4], "texture": "#2"},
+				"up": {"uv": [8, 3, 11, 2], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [14, 3, 11, 2], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "blade",
+			"from": [8, -0.5, 6.5],
+			"to": [8, 28.5, 9.5],
+			"faces": {
+				"east": {"uv": [1.5, 0, 0, 14.5], "texture": "#2"},
+				"west": {"uv": [0, 0, 1.5, 14.5], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7.5, -0.5, 7.5],
+			"to": [8.5, 15.5, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, -0.5, 6.5]},
+			"faces": {
+				"north": {"uv": [0.5, 6.5, 1, 14.5], "texture": "#2"},
+				"east": {"uv": [0.5, 6.5, 1, 14.5], "texture": "#2"},
+				"south": {"uv": [0.5, 6.5, 1, 14.5], "texture": "#2"},
+				"west": {"uv": [0.5, 6.5, 1, 14.5], "texture": "#2"},
+				"up": {"uv": [0.5, 6.5, 1, 7], "texture": "#2"},
+				"down": {"uv": [1, 6, 1.5, 6.5], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 13.125, 1.6],
+			"scale": [1.05, 1.05, 1.05]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 13.125, 1.6],
+			"scale": [1.05, 1.05, 1.05]
+		},
+		"firstperson_righthand": {
+			"rotation": [23.1801, 3.6536, 3.666],
+			"translation": [8.0977, 7.5054, -5.942],
+			"scale": [1.155, 1.155, 1.155]
+		},
+		"firstperson_lefthand": {
+			"rotation": [23.1801, -3.6536, -3.666],
+			"translation": [10.3823, 7.5054, -5.942],
+			"scale": [1.155, 1.155, 1.155]
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "minecraft:item/handheld_mace",
+    "textures": {
+      "layer0": "archaion:item/echo_mace"
+    }
+  },
+  "perspectives": {
+    "firstperson_righthand": {
+      "parent": "archaion:item/3d_echo_mace"
+    },
+    "firstperson_lefthand": {
+      "parent": "archaion:item/3d_echo_mace"
+    },
+    "thirdperson_righthand": {
+      "parent": "archaion:item/3d_echo_mace"
+    },
+    "thirdperson_lefthand": {
+      "parent": "archaion:item/3d_echo_mace"
+    },
+    "head": {
+      "parent": "archaion:item/3d_echo_mace"
+    }
+  }
+}

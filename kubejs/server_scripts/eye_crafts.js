@@ -84,6 +84,18 @@ ServerEvents.recipes(event => {
         S: ['minecraft:soul_sand', 'minecraft:soul_soil']
     })
 
+    // Око Эшлорда (ищет Драконью башню)
+    event.shaped('kubejs:ashlord_eye', [
+        'BCB',
+        'FEF',
+        'BCB'
+    ], {
+        B: 'minecraft:blaze_rod',
+        C: 'minecraft:magma_cream',
+        F: 'born_in_chaos_v1:fire_dust',
+        E: 'minecraft:ender_eye'
+    })
+
     // Око Пустоты
     event.shaped('cataclysm:void_eye', [
         'PLP',
@@ -265,7 +277,7 @@ ServerEvents.recipes(event => {
     ], 'aerowarptics:singularity_core', [ 
         event.recipes.createFilling(trans2, [trans2, Fluid.of('kubejs:annihilation_fluid', 1000)]),
         event.recipes.createDeploying(trans2, [trans2, 'alexscaves:acidic_radrock']),
-        event.recipes.createFilling(trans2, [trans2, Fluid.of('goingnuclear:uranyl_nitrate', 1000)]),
+        event.recipes.createFilling(trans2, [trans2, Fluid.of('createnuclear:uranium', 1000)]),
         event.recipes.createDeploying(trans2, [trans2, 'northstar:martian_steel_ingot']),
         event.recipes.createFilling(trans2, [trans2, Fluid.of('aerowarptics:rift_essence', 500)]),
         event.recipes.createDeploying(trans2, [trans2, 'legendary_monsters:portal_shard']),

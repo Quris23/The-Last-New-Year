@@ -123,13 +123,34 @@ ServerEvents.recipes(event => {
 
     // Hazentouvelib
     event.remove({ output: 'hazentouvelib:radiance_rune' })
-    event.remove({ output: 'hazentouvelib:shadow_rune' })
-    event.remove({ output: 'hazentouvelib:radiance_upgrade_orb' })
+    //event.remove({ output: 'hazentouvelib:shadow_rune' })
+    //event.remove({ output: 'hazentouvelib:radiance_upgrade_orb' })
     event.remove({ output: 'hazentouvelib:shadow_upgrade_orb' })
     
     // Tentaworks
     event.remove({ output: 'tentaworks:copper_tentacle_rig' })
     event.remove({ output: 'tentaworks:netherite_tentacle_rig' })
     event.remove({ output: 'tentaworks:tentacle'})
+
+    // Supplementaries: ведро светона на верстаке (и его копия в смешивателе) и старый рецепт 2 ягоды -> 250 мВ;
+    // светон теперь только 8 ягод -> 1000 мВ в смешивателе (create_integration.js)
+    event.remove({ id: 'supplementaries:lumisene_bucket' })
+    event.remove({ id: 'supplementaries:integration/lumisene_mixing' })
+
+})
+
+// Лут: глаза End Remastered добываются только крафтами kubejs (eye_crafts.js), незеритовый горн — только крафтами (catac_crafts.js)
+LootJS.lootTables(event => {
+
+    // Endrem подмешивает свой "eye_pool" в сундуки и мобов (Визер, древний страж, вызыватель, ведьма и т.д.);
+    // вычищаем глаза из всех таблиц, включая его собственные — пул остаётся, но пустой
+    let eyes = [
+        'black_eye', 'cold_eye', 'corrupted_eye', 'cryptic_eye', 'cursed_eye', 'evil_eye', 'exotic_eye', 'guardian_eye',
+        'lost_eye', 'magical_eye', 'nether_eye', 'old_eye', 'rogue_eye', 'undead_eye', 'witch_eye', 'wither_eye'
+    ].map(eye => 'endrem:' + eye)
+    event.forEachTable(table => table.removeItem(eyes))
+
+    // Незеритовое чудовище
+    event.getLootTable('cataclysm:entities/netherite_monstrosity').removeItem('cataclysm:infernal_forge')
 
 })

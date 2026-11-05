@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:nether/create_beacon",
+ "criteria": {
+  "redirect_beacon": {
+   "trigger": "quark:redirect_beacon"
+  }
+ },
+ "requirements": [
+  [
+   "redirect_beacon"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "beacon_redirection"
+  }
+ ]
+}

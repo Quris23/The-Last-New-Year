@@ -1,0 +1,9 @@
+{
+  "order": 6,
+  "size": 0,
+  "icon": "aces_spell_utils:slot/sheath",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": false,
+  "drop_rule": "DEFAULT"
+}

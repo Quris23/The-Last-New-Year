@@ -1,0 +1,17 @@
+{
+ "parent": "create_ltab:plains",
+ "criteria": {
+  "lucky": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "minecraft:potion"
+     ],
+     "potion": "minecraft:luck",
+     "nbt": "{Tags:{lucky:true}}"
+    }
+   }
+  }
+ }
+}

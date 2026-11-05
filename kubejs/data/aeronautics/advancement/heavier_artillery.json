@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:root",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:heavier_artillery_builtin",
+   "trigger": "aeronautics:heavier_artillery_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

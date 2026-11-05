@@ -14,6 +14,12 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'cataclysm_spellbooks:ignis_chestplate_elytra',
         'cataclysm_spellbooks:cursium_mage_elytra',
         'artifacts:everlasting_beef',
-        'artifacts:eternal_steak'
+        'artifacts:eternal_steak',
+        'clockwork:clockwork_gear',
+        'clockwork:clockwork_drill',
+        'clockwork:clockwork_flamethrower',
+        'clockwork:clockwork_potion_sprayer',
+        'clockwork:dragonfly_spawn_egg',
+        'clockwork:broken_dragonfly_spawn_egg'
     ])
 })

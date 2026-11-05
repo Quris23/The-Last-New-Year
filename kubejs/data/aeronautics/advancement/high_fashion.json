@@ -1,0 +1,21 @@
+{
+ "parent": "aeronautics:root",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "aeronautics:aviators_goggles"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

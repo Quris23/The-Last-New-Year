@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "rift_gate": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_gate"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_gate"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:root"
+}

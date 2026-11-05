@@ -1,0 +1,22 @@
+{
+ "parent": "minecraft:husbandry/plant_seed",
+ "criteria": {
+  "ancient_apple_overlevel": {
+   "trigger": "quark:ancient_fruit_overlevel"
+  }
+ },
+ "rewards": {
+  "experience": 100
+ },
+ "requirements": [
+  [
+   "ancient_apple_overlevel"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "ancient_fruit_xp"
+  }
+ ]
+}

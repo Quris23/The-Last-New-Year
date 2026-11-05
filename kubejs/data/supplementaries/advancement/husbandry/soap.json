@@ -1,0 +1,26 @@
+{
+ "parent": "minecraft:husbandry/root",
+ "criteria": {
+  "stew": {
+   "trigger": "minecraft:consume_item",
+   "conditions": {
+    "item": {
+     "items": [
+      "supplementaries:soap"
+     ]
+    }
+   }
+  }
+ },
+ "requirements": [
+  [
+   "stew"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "soap"
+  }
+ ]
+}

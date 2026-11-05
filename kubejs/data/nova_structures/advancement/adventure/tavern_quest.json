@@ -1,0 +1,19 @@
+{
+ "parent": "nova_structures:adventure/find_tavern",
+ "criteria": {
+  "trade_quest": {
+   "trigger": "minecraft:villager_trade",
+   "conditions": {
+    "villager": {
+     "nbt": "{Tags:[\"dnt_quest_trader\"]}"
+    }
+   }
+  }
+ },
+ "requirements": [
+  [
+   "trade_quest"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

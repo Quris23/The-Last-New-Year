@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:channeler",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:shocking"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

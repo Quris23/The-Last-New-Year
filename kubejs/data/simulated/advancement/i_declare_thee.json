@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:not_gonna_sugarcoat_it",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:i_declare_thee_builtin",
+   "trigger": "simulated:i_declare_thee_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

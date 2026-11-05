@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:steamless_engine",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:that_should_do_for_now_builtin",
+   "trigger": "simulated:that_should_do_for_now_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

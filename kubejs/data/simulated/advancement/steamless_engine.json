@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:unpowered_steering",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:steamless_engine_builtin",
+   "trigger": "simulated:steamless_engine_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,17 @@
+{
+ "criteria": {
+  "aboard": {
+   "trigger": "aerowarptics:gate_travel",
+   "conditions": {
+    "vehicle": true
+   }
+  }
+ },
+ "requirements": [
+  [
+   "aboard"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:gate_traveller"
+}

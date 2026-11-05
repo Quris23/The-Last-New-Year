@@ -1,0 +1,14 @@
+{
+ "parent": "create:potato_cannon_collide",
+ "criteria": {
+  "0": {
+   "trigger": "create:self_deploying_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

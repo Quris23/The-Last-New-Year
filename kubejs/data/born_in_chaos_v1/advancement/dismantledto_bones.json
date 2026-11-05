@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "dismantledto_bones_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 25
+ },
+ "parent": "born_in_chaos_v1:junior_summoner"
+}

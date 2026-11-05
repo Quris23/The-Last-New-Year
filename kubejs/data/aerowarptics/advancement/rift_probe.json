@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "rift_probe": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_probe"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_probe"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:spatial_siphon"
+}

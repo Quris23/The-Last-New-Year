@@ -1,0 +1,14 @@
+{
+ "parent": "create:foods",
+ "criteria": {
+  "0": {
+   "trigger": "create:diving_suit_lava_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,117 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create_enchantment_industry"
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "create_more_additions:totem_base"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "minecraft:totem_of_undying"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:cutting",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        },
+        {
+          "item": "minecraft:end_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 500,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        },
+        {
+          "item": "minecraft:emerald"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_more_additions:incomplete_totem"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 27,
+          "fluid": "create_enchantment_industry:experience"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_more_additions:incomplete_totem"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_more_additions:incomplete_totem"
+  }
+}

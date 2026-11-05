@@ -1,0 +1,461 @@
+{
+ "meta": {
+  "format_version": "4.10",
+  "model_format": "modded_entity",
+  "box_uv": true
+ },
+ "name": "sonar_goggles",
+ "model_identifier": "sonar_goggles",
+ "modded_entity_entity_class": "",
+ "modded_entity_version": "1.17",
+ "modded_entity_flip_y": true,
+ "visible_box": [
+  1,
+  1,
+  0
+ ],
+ "variable_placeholders": "",
+ "variable_placeholder_buttons": [],
+ "timeline_setups": [],
+ "unhandled_root_fields": {},
+ "resolution": {
+  "width": 32,
+  "height": 32
+ },
+ "elements": [
+  {
+   "name": "strap",
+   "box_uv": true,
+   "rescale": false,
+   "locked": false,
+   "light_emission": 0,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "from": [
+    -4.0,
+    24.0,
+    -4.0
+   ],
+   "to": [
+    4.0,
+    32.0,
+    4.0
+   ],
+   "autouv": 0,
+   "color": 0,
+   "inflate": 0.51,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "uv_offset": [
+    0,
+    0
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      0,
+      8,
+      8,
+      16
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      16,
+      8,
+      24,
+      16
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      16,
+      8,
+      8,
+      0
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      24,
+      0,
+      16,
+      8
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      24,
+      8,
+      32,
+      16
+     ],
+     "texture": 0
+    },
+    "north": {
+     "uv": [
+      8,
+      8,
+      16,
+      16
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "c275884e-5b97-4390-9409-ab3294f31b5a"
+  },
+  {
+   "name": "band",
+   "box_uv": true,
+   "rescale": false,
+   "locked": false,
+   "light_emission": 0,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "from": [
+    -4.0,
+    26.0,
+    -4.95
+   ],
+   "to": [
+    4.0,
+    30.0,
+    -3.95
+   ],
+   "autouv": 0,
+   "color": 0,
+   "inflate": 0.0,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "uv_offset": [
+    0,
+    21
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      0,
+      22,
+      1,
+      26
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      9,
+      22,
+      10,
+      26
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      9,
+      22,
+      1,
+      21
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      17,
+      21,
+      9,
+      22
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      10,
+      22,
+      18,
+      26
+     ],
+     "texture": 0
+    },
+    "north": {
+     "uv": [
+      1,
+      22,
+      9,
+      26
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "8549abf9-b0ba-458e-bf15-0c8d0a7ea60b"
+  },
+  {
+   "name": "left_lens",
+   "box_uv": true,
+   "rescale": false,
+   "locked": false,
+   "light_emission": 0,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.5,
+    27.0,
+    -7.95
+   ],
+   "to": [
+    -1.5,
+    29.0,
+    -4.95
+   ],
+   "autouv": 0,
+   "color": 0,
+   "inflate": 0.0,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "uv_offset": [
+    0,
+    16
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      0,
+      19,
+      3,
+      21
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      5,
+      19,
+      8,
+      21
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      5,
+      19,
+      3,
+      16
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      7,
+      16,
+      5,
+      19
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      8,
+      19,
+      10,
+      21
+     ],
+     "texture": 0
+    },
+    "north": {
+     "uv": [
+      3,
+      19,
+      5,
+      21
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "bea06db0-ed9a-4751-8cc2-ea59c812fa80"
+  },
+  {
+   "name": "right_lens",
+   "box_uv": true,
+   "rescale": false,
+   "locked": false,
+   "light_emission": 0,
+   "render_order": "default",
+   "allow_mirror_modeling": true,
+   "from": [
+    1.5,
+    27.0,
+    -7.95
+   ],
+   "to": [
+    3.5,
+    29.0,
+    -4.95
+   ],
+   "autouv": 0,
+   "color": 0,
+   "inflate": 0.0,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "uv_offset": [
+    10,
+    16
+   ],
+   "faces": {
+    "east": {
+     "uv": [
+      10,
+      19,
+      13,
+      21
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      15,
+      19,
+      18,
+      21
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      15,
+      19,
+      13,
+      16
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      17,
+      16,
+      15,
+      19
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      18,
+      19,
+      20,
+      21
+     ],
+     "texture": 0
+    },
+    "north": {
+     "uv": [
+      13,
+      19,
+      15,
+      21
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "a2f801d8-b19b-42c3-b18d-a4e3b542e441"
+  }
+ ],
+ "outliner": [
+  {
+   "name": "head",
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "color": 0,
+   "uuid": "1e651096-81ad-476d-8f03-00064b9e0c44",
+   "export": true,
+   "mirror_uv": false,
+   "isOpen": true,
+   "locked": false,
+   "visibility": true,
+   "autouv": 0,
+   "children": [
+    "c275884e-5b97-4390-9409-ab3294f31b5a",
+    "8549abf9-b0ba-458e-bf15-0c8d0a7ea60b",
+    "bea06db0-ed9a-4751-8cc2-ea59c812fa80",
+    "a2f801d8-b19b-42c3-b18d-a4e3b542e441"
+   ]
+  }
+ ],
+ "textures": [
+  {
+   "path": "C:\\Users\\\u042f\u0440\u043e\u0441\u043b\u0430\u0432\\AppData\\Roaming\\ModrinthApp\\profiles\\Last New Year\\kubejs\\assets\\echoblind\\textures\\entity\\sonar_goggles.png",
+   "name": "sonar_goggles.png",
+   "folder": "",
+   "namespace": "",
+   "id": "0",
+   "width": 32,
+   "height": 32,
+   "uv_width": 32,
+   "uv_height": 32,
+   "particle": false,
+   "use_as_default": false,
+   "layers_enabled": false,
+   "sync_to_project": "",
+   "render_mode": "default",
+   "render_sides": "auto",
+   "frame_time": 1,
+   "frame_order_type": "loop",
+   "frame_order": "",
+   "frame_interpolate": false,
+   "visible": true,
+   "internal": false,
+   "saved": true,
+   "uuid": "98eaeb22-d6c4-498d-a94e-0c72703e1df4",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA2klEQVR4nO2SzQrCMAzHW+1BqjAGe4C+wY6edve9fQDx7KVvIENXdnB0ZJBRSudaPyZCfocuSf9J2i6MEQRBED+GK6VslmWsrusxCD6AMa01DyWHcv0ayFR9gYYxZhSALaWcPT3o3DzMwbhfA7X4jelBfB3uOnlZ2Ye5D7aQO3Y9H4PDF6uLQbjOerMN2j6xuv8gLytb7A/Wj0MM9lJ1qQj8lz5d2zB3L1aXCocldDMoPNccuV1Orw9hEWj+6SZPD9C1zTDJ7o1d3nneGFawTDVfArH0jQmCYB49pkN3pIwBMgAAAAAASUVORK5CYII="
+  },
+  {
+   "path": "C:\\Users\\\u042f\u0440\u043e\u0441\u043b\u0430\u0432\\AppData\\Roaming\\ModrinthApp\\profiles\\Last New Year\\kubejs\\assets\\echoblind\\textures\\entity\\sonar_goggles_overlay.png",
+   "name": "sonar_goggles_overlay.png",
+   "folder": "",
+   "namespace": "",
+   "id": "1",
+   "width": 32,
+   "height": 32,
+   "uv_width": 32,
+   "uv_height": 32,
+   "particle": false,
+   "use_as_default": false,
+   "layers_enabled": false,
+   "sync_to_project": "",
+   "render_mode": "default",
+   "render_sides": "auto",
+   "frame_time": 1,
+   "frame_order_type": "loop",
+   "frame_order": "",
+   "frame_interpolate": false,
+   "visible": true,
+   "internal": false,
+   "saved": true,
+   "uuid": "a4df2bd2-83b8-4f9e-bd39-15e6c02ed082",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAU0lEQVR4nGNgGAWjYBSMglEwCkbBKBjpgBGZ43np///zz9+D2X+e3Wd4k2iMIk+qOmIAE7KhyBL4LCdGHbGABcZA9hE+QKy6UTAKRsEoGAVDBgAAC2coCFVVfzgAAAAASUVORK5CYII="
+  }
+ ]
+}

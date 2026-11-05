@@ -1,0 +1,21 @@
+{
+ "parent": "archaion:obtain_echo_key",
+ "criteria": {
+  "has_echo_charge": {
+   "conditions": {
+    "items": [
+     {
+      "items": "archaion:echo_charge"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_echo_charge"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

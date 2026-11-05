@@ -1,0 +1,22 @@
+{
+ "parent": "createpropulsion:energy_propulsion",
+ "criteria": {
+  "has_vector_thruster": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createpropulsion:vector_thruster"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "has_vector_thruster"
+  ]
+ ]
+}

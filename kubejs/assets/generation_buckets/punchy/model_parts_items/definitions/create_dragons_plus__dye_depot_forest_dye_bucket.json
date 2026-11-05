@@ -1,0 +1,28 @@
+{
+  "items": [
+    "create_dragons_plus:dye_depot_forest_dye_bucket"
+  ],
+  "geo": "generation_buckets:punchy/model_parts_items/geo/bucket_generic.geo.json",
+  "texture": "minecraft:punchy/model_parts_items/textures/baldes",
+  "bone_textures": [
+    {
+      "texture": "generation_buckets:punchy/model_parts_items/textures/create_dragons_plus__dye_depot_forest_dye_bucket",
+      "bones": [
+        "honey"
+      ]
+    }
+  ],
+  "bone_texture_anim": {
+    "honey": {
+      "frames": 32,
+      "frametime": 2,
+      "frame_height": 16
+    }
+  },
+  "modelPartsAnimation": [
+    {
+      "type": "idle",
+      "disable_swim_animation": true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "minecraft:item/netherite_sword"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/netherite_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "minecraft:item/netherite_sword"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "minecraft:item/netherite_sword"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "minecraft:item/netherite_sword"
+      }
+    }
+  }
+}

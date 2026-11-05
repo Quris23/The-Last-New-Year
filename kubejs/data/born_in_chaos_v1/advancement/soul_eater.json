@@ -1,0 +1,24 @@
+{
+ "criteria": {
+  "soul_eater_0": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "born_in_chaos_v1:ethereal_spirit"
+      ],
+      "count": {
+       "min": 64,
+       "max": 64
+      }
+     }
+    ]
+   }
+  }
+ },
+ "rewards": {
+  "experience": 25
+ },
+ "parent": "born_in_chaos_v1:bornin_chaos"
+}

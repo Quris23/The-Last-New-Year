@@ -1,0 +1,19 @@
+{
+ "parent": "create_ltab:root",
+ "criteria": {
+  "gugu": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": {
+     "stepping_on": {
+      "block": {
+       "blocks": [
+        "minecraft:stone"
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "born_in_chaos_v1:item/soul_saber"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/soul_cutlass"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/soul_saber"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/soul_saber"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/soul_saber"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+ "parent": "cold_sweat:huddle_close",
+ "criteria": {
+  "near_lava": {
+   "trigger": "cold_sweat:block_affects_temperature",
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "dimension": "minecraft:the_nether"
+       }
+      }
+     }
+    ],
+    "total_effect": 6,
+    "blocks": {
+     "blocks": [
+      "minecraft:lava"
+     ]
+    }
+   }
+  }
+ }
+}

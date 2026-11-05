@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/ink_root",
+ "criteria": {
+  "requirement": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:legendary_ink"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

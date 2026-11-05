@@ -1,0 +1,14 @@
+{
+ "parent": "create:glass_pipe",
+ "criteria": {
+  "0": {
+   "trigger": "create:water_supply_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

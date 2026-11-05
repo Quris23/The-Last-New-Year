@@ -1,0 +1,22 @@
+{
+ "parent": "createpropulsion:feed_the_fire_621",
+ "criteria": {
+  "has_tempered_wing": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createpropulsion:tempered_wing"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "has_tempered_wing"
+  ]
+ ]
+}

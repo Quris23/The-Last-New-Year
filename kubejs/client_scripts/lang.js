@@ -64,6 +64,7 @@ ClientEvents.lang('ru_ru', event => {
     // Legendary monsters
     
     event.renameItem('kubejs:lunar_enderitium_ore', 'Лунная эндеритиумовая руда')
+    event.renameItem('kubejs:infested_black_argillite', 'Заражённый чёрный аргилит')
     event.renameEntity('legendary_monsters:the_obliterator', 'Опустошитель')
     event.renameItem('create_more_additions:electrum_jewel', 'Пластина электрума')
     event.renameItem('legendary_monsters:eye_of_annihilation', 'Око аннигиляции')

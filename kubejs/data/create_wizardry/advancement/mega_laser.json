@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:i_cast_fireball",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:mega_laser"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

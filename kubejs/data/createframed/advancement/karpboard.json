@@ -1,0 +1,23 @@
+{
+ "parent": "createframed:dyed_cardboard",
+ "criteria": {
+  "has_karpboard_block": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createframed:karpboard_block",
+       "createframed:shiny_karpboard_block"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_karpboard_block"
+  ]
+ ]
+}

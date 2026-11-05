@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "mr_decoction_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 8
+ },
+ "parent": "born_in_chaos_v1:lifeturnedouttobeacomedy"
+}

@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:husbandry/breed_an_animal",
+ "criteria": {
+  "poison_baby": {
+   "trigger": "quark:poison_baby"
+  }
+ },
+ "requirements": [
+  [
+   "poison_baby"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "poison_potato_usage"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "cold_sweat:root",
+ "criteria": {
+  "requirement": {
+   "trigger": "cold_sweat:armor_insulated"
+  }
+ }
+}

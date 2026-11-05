@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "born_in_chaos_v1:item/dark_warblade"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/darkwarblade"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/dark_warblade"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/dark_warblade"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "born_in_chaos_v1:item/dark_warblade"
+      }
+    }
+  }
+}

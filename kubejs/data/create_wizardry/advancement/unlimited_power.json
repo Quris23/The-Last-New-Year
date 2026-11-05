@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:shocking",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:unlimited_power"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

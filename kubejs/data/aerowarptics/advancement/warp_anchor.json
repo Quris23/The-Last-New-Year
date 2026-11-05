@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "warp_anchor": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:warp_anchor"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "warp_anchor"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:root"
+}

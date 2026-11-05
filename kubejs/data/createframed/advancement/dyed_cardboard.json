@@ -1,0 +1,20 @@
+{
+ "parent": "createframed:pulp_block",
+ "criteria": {
+  "has_dyed_cardboard_block": {
+   "conditions": {
+    "items": [
+     {
+      "items": "#createframed:dyed_cardboard_blocks"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_dyed_cardboard_block"
+  ]
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "criteria": {
+  "one_explosion_is_good_two_is_better_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "parent": "born_in_chaos_v1:double_trouble"
+}

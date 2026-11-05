@@ -1,0 +1,14 @@
+{
+ "parent": "create:frogport",
+ "criteria": {
+  "0": {
+   "trigger": "create:table_cloth_shop_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

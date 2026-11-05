@@ -29,38 +29,38 @@ ServerEvents.recipes(event => {
     C: coral,
     R: 'irons_spellbooks:blank_rune'
   })
-  event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
-    'NR',
-    'E '
-  ], {
-    N: 'irons_spellbooks:netherite_mage_helmet',
-    R: 'cataclysm_spellbooks:abyssal_rune',
-    E: 'irons_spellbooks:arcane_essence'
-  })
-  event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
-    'NR',
-    'E '
-  ], {
-    N: 'irons_spellbooks:netherite_mage_chestplate',
-    R: 'cataclysm_spellbooks:abyssal_rune',
-    E: 'irons_spellbooks:arcane_essence'
-  })
-  event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
-    'NR',
-    'E '
-  ], {
-    N: 'irons_spellbooks:netherite_mage_leggings',
-    R: 'cataclysm_spellbooks:abyssal_rune',
-    E: 'irons_spellbooks:arcane_essence'
-  })
-  event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
-    'NR',
-    'E '
-  ], {
-    N: 'irons_spellbooks:netherite_mage_boots',
-    R: 'cataclysm_spellbooks:abyssal_rune',
-    E: 'irons_spellbooks:arcane_essence'
-  })
+  // event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
+  //   'NR',
+  //   'E '
+  // ], {
+  //   N: 'irons_spellbooks:netherite_mage_helmet',
+  //   R: 'cataclysm_spellbooks:abyssal_rune',
+  //   E: 'irons_spellbooks:arcane_essence'
+  // })
+  // event.shaped('cataclysm_spellbooks:abyssal_warlock_chestplate', [
+  //   'NR',
+  //   'E '
+  // ], {
+  //   N: 'irons_spellbooks:netherite_mage_chestplate',
+  //   R: 'cataclysm_spellbooks:abyssal_rune',
+  //   E: 'irons_spellbooks:arcane_essence'
+  // })
+  // event.shaped('cataclysm_spellbooks:abyssal_warlock_leggings', [
+  //   'NR',
+  //   'E '
+  // ], {
+  //   N: 'irons_spellbooks:netherite_mage_leggings',
+  //   R: 'cataclysm_spellbooks:abyssal_rune',
+  //   E: 'irons_spellbooks:arcane_essence'
+  // })
+  // event.shaped('cataclysm_spellbooks:abyssal_warlock_boots', [
+  //   'NR',
+  //   'E '
+  // ], {
+  //   N: 'irons_spellbooks:netherite_mage_boots',
+  //   R: 'cataclysm_spellbooks:abyssal_rune',
+  //   E: 'irons_spellbooks:arcane_essence'
+  // })
 
   // Броня цветущего камня
   event.custom({

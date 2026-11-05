@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:splash_guard_on",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:aura_monster"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

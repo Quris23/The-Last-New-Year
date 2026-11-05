@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:husbandry/root",
+ "criteria": {
+  "unlock": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "requirements": [
+  [
+   "unlock"
+  ]
+ ],
+ "conditions": [
+  {
+   "type": "supplementaries:flag",
+   "flag": "turn_table"
+  }
+ ]
+}

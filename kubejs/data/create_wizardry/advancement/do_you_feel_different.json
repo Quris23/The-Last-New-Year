@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:root",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:do_you_feel_different"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

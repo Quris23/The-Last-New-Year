@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/make_inscription_table",
+ "criteria": {
+  "scroll_forge": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:scroll_forge"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

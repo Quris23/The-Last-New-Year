@@ -1,0 +1,19 @@
+{
+ "parent": "quark:content/get_diamond_heart",
+ "criteria": {
+  "make_stoneling": {
+   "trigger": "quark:make_stoneling"
+  }
+ },
+ "requirements": [
+  [
+   "make_stoneling"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "stoneling_drop_diamond_heart"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "criteria": {
+  "rift_drive": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "aerowarptics:rift_drive_mk_i",
+       "aerowarptics:rift_drive_mk_ii",
+       "aerowarptics:rift_drive_mk_iii",
+       "aerowarptics:rift_drive_singularity"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "rift_drive"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:root"
+}

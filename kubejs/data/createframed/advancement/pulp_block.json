@@ -1,0 +1,22 @@
+{
+ "parent": "create:cardboard",
+ "criteria": {
+  "has_pulp_block": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "createframed:pulp_block"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_pulp_block"
+  ]
+ ]
+}

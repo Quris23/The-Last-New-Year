@@ -1,0 +1,11 @@
+{
+	"match": {
+		"items": [
+			"spellclasses:paladin_helmet",
+			"irons_spellbooks:paladin_chestplate",
+			"spellclasses:paladin_leggings",
+			"spellclasses:paladin_boots"
+		]
+	},
+	"luminance": 14
+}

@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:husbandry/tame_an_animal",
+ "criteria": {
+  "shiba_help": {
+   "trigger": "quark:shiba_help"
+  }
+ },
+ "requirements": [
+  [
+   "shiba_help"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "shiba"
+  }
+ ]
+}

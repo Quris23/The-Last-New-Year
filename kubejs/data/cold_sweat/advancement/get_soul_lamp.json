@@ -1,0 +1,17 @@
+{
+ "parent": "cold_sweat:extreme_temps",
+ "criteria": {
+  "requirement": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "cold_sweat:soulspring_lamp"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "parent": "create_ltab:plains",
+ "criteria": {
+  "Structure": {
+   "trigger": "minecraft:location",
+   "conditions": {
+    "player": {
+     "location": {
+      "structure": "create_ltab:ruins"
+     }
+    }
+   }
+  }
+ }
+}

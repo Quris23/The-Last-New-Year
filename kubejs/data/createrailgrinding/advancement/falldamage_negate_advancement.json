@@ -1,0 +1,14 @@
+{
+ "parent": "createrailgrinding:railgrind_advancement",
+ "criteria": {
+  "negate_lethal_fall": {
+   "trigger": "createrailgrinding:falldamage_negate"
+  }
+ },
+ "requirements": [
+  [
+   "negate_lethal_fall"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "create:crusher_maxed_0000",
+ "criteria": {
+  "0": {
+   "trigger": "create:arm_many_targets_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

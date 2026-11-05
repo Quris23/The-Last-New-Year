@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "spatial_siphon": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:spatial_siphon"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "spatial_siphon"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:first_warp"
+}

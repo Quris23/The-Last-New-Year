@@ -1,0 +1,14 @@
+{
+ "parent": "create:track_0",
+ "criteria": {
+  "rode_rails": {
+   "trigger": "createrailgrinding:rail_grind"
+  }
+ },
+ "requirements": [
+  [
+   "rode_rails"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

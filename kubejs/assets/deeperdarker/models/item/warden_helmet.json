@@ -1,68 +1,58 @@
 {
-  "parent": "minecraft:item/generated",
-  "overrides": [
-    {
-      "model": "deeperdarker:item/warden_helmet_quartz_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.1
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_iron_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.2
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_netherite_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.3
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_redstone_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.4
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_copper_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.5
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_gold_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.6
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_emerald_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.7
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_diamond_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.8
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_lapis_trim",
-      "predicate": {
-        "minecraft:trim_type": 0.9
-      }
-    },
-    {
-      "model": "deeperdarker:item/warden_helmet_amethyst_trim",
-      "predicate": {
-        "minecraft:trim_type": 1.0
-      }
-    }
-  ],
-  "textures": {
-    "layer0": "deeperdarker:item/warden_helmet"
-  }
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"1": "create:item/goggles_model"
+	},
+	"elements": [
+		{
+			"name": "r_lense",
+			"from": [8.75, 5.5, 2.75],
+			"to": [12.75, 9.5, 4.75],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [10.75, 7.5, 3.75]},
+			"faces": {
+				"north": {"uv": [3, 9.5, 1, 11.5], "texture": "#1"},
+				"east": {"uv": [4, 9.5, 3, 11.5], "texture": "#1"},
+				"south": {"uv": [6, 9.5, 4, 11.5], "texture": "#1"},
+				"west": {"uv": [1, 9.5, 0, 11.5], "texture": "#1"},
+				"up": {"uv": [1, 9.5, 3, 8.5], "texture": "#1"},
+				"down": {"uv": [3, 8.5, 5, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "l_lense",
+			"from": [3.25, 5.5, 2.75],
+			"to": [7.25, 9.5, 4.75],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [5.25, 7.5, 3.75]},
+			"faces": {
+				"north": {"uv": [7.5, 9.5, 9.5, 11.5], "texture": "#1"},
+				"east": {"uv": [6.5, 9.5, 7.5, 11.5], "texture": "#1"},
+				"south": {"uv": [10.5, 9.5, 12.5, 11.5], "texture": "#1"},
+				"west": {"uv": [9.5, 9.5, 10.5, 11.5], "texture": "#1"},
+				"up": {"uv": [9.5, 9.5, 7.5, 8.5], "texture": "#1"},
+				"down": {"uv": [11.5, 8.5, 9.5, 9.5], "texture": "#1"}
+			}
+		},
+		{
+			"name": "belt",
+			"from": [3.75, 3.75, 3.75],
+			"to": [12.25, 8.25, 12.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 8, 6], "texture": "#1"},
+				"east": {"uv": [0, 4, 4, 6], "texture": "#1"},
+				"south": {"uv": [12, 4, 16, 6], "texture": "#1"},
+				"west": {"uv": [8, 4, 12, 6], "texture": "#1"},
+				"up": {"uv": [8, 4, 4, 0], "texture": "#1"},
+				"down": {"uv": [12, 0, 8, 4], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, 6.5, 0],
+			"scale": [1.65, 1.65, 1.65]
+		}
+	}
 }

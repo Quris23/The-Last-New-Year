@@ -1,0 +1,28 @@
+{
+ "parent": "minecraft:adventure/root",
+ "criteria": {
+  "get_bottled_cloud": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "quark:bottled_cloud"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "get_bottled_cloud"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "bottled_cloud"
+  }
+ ]
+}

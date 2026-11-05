@@ -1,0 +1,14 @@
+{
+ "parent": "create:sturdy_sheet",
+ "criteria": {
+  "0": {
+   "trigger": "create:track_crafting_factory_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

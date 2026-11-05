@@ -1,0 +1,19 @@
+{
+ "parent": "artifacts:amateur_archaeologist",
+ "criteria": {
+  "eat_artifact": {
+   "conditions": {
+    "item": {
+     "items": "artifacts:onion_ring"
+    }
+   },
+   "trigger": "minecraft:consume_item"
+  }
+ },
+ "requirements": [
+  [
+   "eat_artifact"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

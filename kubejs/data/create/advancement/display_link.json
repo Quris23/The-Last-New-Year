@@ -1,0 +1,14 @@
+{
+ "parent": "create:clockwork_bearing",
+ "criteria": {
+  "0": {
+   "trigger": "create:display_link_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

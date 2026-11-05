@@ -1,0 +1,14 @@
+{
+ "parent": "create_connected:shear_pin",
+ "criteria": {
+  "0": {
+   "trigger": "create_connected:overstress_clutch_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

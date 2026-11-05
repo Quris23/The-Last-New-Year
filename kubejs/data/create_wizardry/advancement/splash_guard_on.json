@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:sploink",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:splash_guard_on"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

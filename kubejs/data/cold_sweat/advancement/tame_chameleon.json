@@ -1,0 +1,19 @@
+{
+ "parent": "cold_sweat:root",
+ "criteria": {
+  "requirement": {
+   "trigger": "minecraft:thrown_item_picked_up_by_entity",
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "cold_sweat:chameleon"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

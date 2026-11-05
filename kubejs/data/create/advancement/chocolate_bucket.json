@@ -1,0 +1,21 @@
+{
+ "parent": "create:hose_pulley",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "create:chocolate_bucket"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,15 @@
+{
+ "parent": "aeronautics:root",
+ "criteria": {
+  "0": {
+   "conditions": "aeronautics:head_in_the_clouds_builtin",
+   "trigger": "aeronautics:head_in_the_clouds_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

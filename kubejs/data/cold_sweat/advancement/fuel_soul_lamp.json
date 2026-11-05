@@ -1,0 +1,9 @@
+{
+ "parent": "cold_sweat:get_soul_lamp",
+ "criteria": {
+  "requirement": {
+   "trigger": "cold_sweat:soulspring_lamp_fueled",
+   "conditions": {}
+  }
+ }
+}

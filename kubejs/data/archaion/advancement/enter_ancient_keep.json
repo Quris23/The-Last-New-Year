@@ -1,0 +1,27 @@
+{
+ "parent": "archaion:obtain_map",
+ "criteria": {
+  "enter_ancient_keep": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "#archaion:on_ancient_keep_maps"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "enter_ancient_keep"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

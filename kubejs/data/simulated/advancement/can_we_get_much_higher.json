@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:no_pressure",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:can_we_get_much_higher_builtin",
+   "trigger": "simulated:can_we_get_much_higher_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

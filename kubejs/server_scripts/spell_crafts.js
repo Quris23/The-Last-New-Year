@@ -214,4 +214,39 @@ ServerEvents.recipes(event => {
             result: { id: `irons_spellbooks:netherite_mage_${piece}`, count: 1 }
         })
     })
+
+    // Руна сияния
+    event.shaped('hazentouvelib:radiance_rune', [
+        'GGG',
+        'GRG',
+        'GGG'
+    ], {
+        G: 'minecraft:glowstone_dust',
+        R: 'irons_spellbooks:blank_rune'
+    }).id('generation:radiance_rune')
+
+    // Амулет телепортации
+    event.remove({ output: 'irons_spellbooks:teleportation_amulet' })
+    event.shaped('irons_spellbooks:teleportation_amulet', [
+        ' H ',
+        'm m',
+        ' e '
+    ], {
+        e: 'ender_pearl',
+        m: 'create_wizardry:mithril_nugget',
+        H: 'irons_spellbooks:heavy_chain_necklace'
+    })
+
+    // Амулет скрытого сокровища
+    event.shaped('discerning_the_eldritch:amulet_of_sculk_treasure', [
+        'NBN',
+        'mHB',
+        'smN'
+    ], {
+        s: 'echo_shard',
+        m: 'create_wizardry:mithril_nugget',
+        H: 'irons_spellbooks:heavy_chain_necklace',
+        B: 'cataclysm:black_steel_ingot',
+        N: 'cataclysm:black_steel_nugget'
+    })
 })

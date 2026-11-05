@@ -1,0 +1,17 @@
+{
+ "parent": "block_factorys_bosses:die_boss",
+ "criteria": {
+  "kill_boss_under_minute_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "requirements": [
+  [
+   "kill_boss_under_minute_0"
+  ]
+ ],
+ "rewards": {
+  "experience": 200
+ },
+ "sends_telemetry_event": true
+}

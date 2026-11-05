@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/root",
+ "criteria": {
+  "inscription_table": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:wayward_compass"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

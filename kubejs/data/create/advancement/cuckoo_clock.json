@@ -1,0 +1,14 @@
+{
+ "parent": "create:stressometer",
+ "criteria": {
+  "0": {
+   "trigger": "create:cuckoo_clock_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

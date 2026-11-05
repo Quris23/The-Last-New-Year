@@ -1,0 +1,26 @@
+{
+ "parent": "legendary_monsters:end_root",
+ "criteria": {
+  "tower": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "legendary_monsters:shulker_tower"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "tower"
+  ]
+ ]
+}

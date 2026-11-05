@@ -1,0 +1,21 @@
+{
+ "parent": "deeperdarker:main/kill_warden",
+ "criteria": {
+  "reinforced_echo_shard": {
+   "conditions": {
+    "items": [
+     {
+      "items": "deeperdarker:reinforced_echo_shard"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "reinforced_echo_shard"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

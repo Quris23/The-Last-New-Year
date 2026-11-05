@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "spruce_cowboyinthe_moonlight_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 300
+ },
+ "parent": "born_in_chaos_v1:explosive_temper"
+}

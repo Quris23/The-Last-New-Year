@@ -1,0 +1,27 @@
+{
+ "neoforge:conditions": [
+  {
+   "type": "create_dragons_plus:config_feature",
+   "feature": "create_enchantment_industry:processing/classic_blaze_enchanter"
+  }
+ ],
+ "parent": "create_enchantment_industry:legacy_ignition",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "type": "minecraft:custom",
+    "bounds": {
+     "min": 1000
+    },
+    "value": "create_enchantment_industry:classic_enchant"
+   },
+   "trigger": "create_dragons_plus:stat"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

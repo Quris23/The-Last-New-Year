@@ -1,0 +1,30 @@
+{
+  "loader": "neoforge:separate_transforms",
+  "gui_light": "front",
+  "textures": {
+    "particle": "cataclysm:item/black_steel_sword"
+  },
+  "base": {
+    "parent": "kubejs:item/swords/black_steel_sword"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "cataclysm:item/black_steel_sword"
+      }
+    },
+    "ground": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "cataclysm:item/black_steel_sword"
+      }
+    },
+    "fixed": {
+      "parent": "minecraft:item/generated",
+      "textures": {
+        "layer0": "cataclysm:item/black_steel_sword"
+      }
+    }
+  }
+}

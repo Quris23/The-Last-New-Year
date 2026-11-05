@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "freshen_your_breath_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 12
+ },
+ "parent": "born_in_chaos_v1:bornin_chaos"
+}

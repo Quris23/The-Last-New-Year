@@ -1,0 +1,31 @@
+{
+ "parent": "archaion:open_deepslate_vault",
+ "criteria": {
+  "kill_last_of_deepslate": {
+   "conditions": {
+    "entity": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "type": "archaion:last_of_deepslate"
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:player_killed_entity"
+  }
+ },
+ "requirements": [
+  [
+   "kill_last_of_deepslate"
+  ]
+ ],
+ "rewards": {
+  "experience": 100,
+  "recipes": [
+   "archaion:echo_mace_upgrade_smithing"
+  ]
+ },
+ "sends_telemetry_event": true
+}

@@ -18,6 +18,10 @@ ServerEvents.recipes(event => {
         Fluid.of('kubejs:chaos_fluid', 250)
     ])
 
+    event.recipes.create.mixing(Fluid.of('kubejs:chaos_fluid', 750), [
+        'born_in_chaos_v1:seedof_chaos'
+    ])
+
     // Жидкость аннигиляции
     event.custom({
     type: 'create:emptying',
@@ -33,6 +37,10 @@ ServerEvents.recipes(event => {
     event.recipes.createFilling('legendary_monsters:bottle_of_annihilation', [
         'minecraft:glass_bottle',
         Fluid.of('kubejs:annihilation_fluid', 250)
+    ])
+
+    event.recipes.create.mixing(Fluid.of('kubejs:annihilation_fluid', 2000), [
+        'minecraft:ender_eye'
     ])
 
     // Облако
@@ -52,13 +60,15 @@ ServerEvents.recipes(event => {
         Fluid.of('kubejs:cloud_fluid', 250)
     ])
 
-    // Черная сталь
-    event.shaped(Item.of('kubejs:black_steel_rod', 4), [
-        ' I ',
-        ' I ',
-        '   '
-    ], {
-        I: 'cataclysm:black_steel_ingot'
+    // Черная сталь: стержни на прокатном станке, как железные и медные
+    event.custom({
+    type: 'createaddition:rolling',
+    ingredients: [
+        { item: 'cataclysm:black_steel_ingot' }
+    ],
+    results: [
+        { id: 'kubejs:black_steel_rod', count: 2 }
+    ]
     })
 
     let coals = ['minecraft:coal', 'minecraft:charcoal']
@@ -242,5 +252,110 @@ ServerEvents.recipes(event => {
         Item.of('gunpowder', 4),
         'phantom_membrane'
     ]).heated()
+
+    // Светон: 8 светящихся ягод -> 1000 мВ в смешивателе (старые рецепты убраны в remove.js)
+    event.recipes.create.mixing(Fluid.of('supplementaries:lumisene', 1000), [
+        Item.of('minecraft:glow_berries', 8)
+    ])
+
+    // Жидкость контроля
+    event.custom({
+        type: 'create:mixing',
+        heat_requirement: 'superheated',
+        ingredients: [
+            { type: 'neoforge:tag', tag: 'kubejs:control_fluid/chaos', amount: 500 },
+            { type: 'neoforge:tag', tag: 'kubejs:control_fluid/annihilation', amount: 500 },
+            [
+                { item: 'born_in_chaos_v1:smoldering_infernal_ember' },
+                { item: 'deeperdarker:soul_dust' },
+                { item: 'witherstormmod:tainted_dust' }
+            ],
+            [
+                { item: 'born_in_chaos_v1:smoldering_infernal_ember' },
+                { item: 'deeperdarker:soul_dust' },
+                { item: 'witherstormmod:tainted_dust' }
+            ]
+        ],
+        results: [
+            { id: 'kubejs:control_fluid', amount: 500 }
+        ]
+    }).id('generation:mixing/control_fluid')
+
+    // Многомерный куб
+    let trdice = 'kubejs:incomplete_multidimensional_dice'
+    event.recipes.create.sequenced_assembly([
+        CreateItem.of('witherstormmod:multidimensional_dice', 0.50),
+        CreateItem.of('create:refined_radiance', 0.50)
+    ], 'create:refined_radiance', [
+        event.recipes.createDeploying(trdice, [trdice, 'hazentouvelib:radiance_upgrade_orb']),
+        event.recipes.createFilling(trdice, [trdice, Fluid.of('kubejs:control_fluid', 1000)]),
+        event.recipes.createDeploying(trdice, [trdice, 'createnuclear:lead_ingot']),
+        event.recipes.createFilling(trdice, [trdice, Fluid.of('supplementaries:lumisene', 1000)]),
+        event.recipes.createDeploying(trdice, [trdice, 'irons_spellbooks:mithril_ingot'])
+    ]).transitionalItem(trdice).loops(1)
+
+    // Чёрный аргилит
+    event.remove({ output: 'born_in_chaos_v1:black_argillite' })
+    // бесформенный: Create сам берёт такие рецепты в смешиватель (allowShapelessInMixer)
+    event.shapeless('born_in_chaos_v1:black_argillite', [
+        'quartz',
+        'cobbled_deepslate',
+        'cobbled_deepslate',
+        'blackstone'
+    ])
+
+    // Заражённый чёрный аргиллит
+    event.recipes.create.haunting('kubejs:infested_black_argillite', 'born_in_chaos_v1:black_argillite')
+
+    
+    // Тёмный металл
+    event.recipes.create.crushing([
+        CreateItem.of('born_in_chaos_v1:black_argillite', 0.33),
+        CreateItem.of('born_in_chaos_v1:dark_metal_nugget', 0.01),
+        CreateItem.of('born_in_chaos_v1:pileof_dark_metal', 0.005)
+    ], 'kubejs:infested_black_argillite').processingTime(350)
+
+    // Улучшения-помпы рюкзаков: опыт, кровь, мана
+    let pump = ['create:mechanical_pump', 'createcasing:andesite_mechanical_pump', 'createcasing:brass_mechanical_pump', 'createcasing:zinc_mechanical_pump']
+    event.remove({ output: 'sophisticatedbackpacks:xp_pump_upgrade' })
+    event.shaped('sophisticatedbackpacks:xp_pump_upgrade', [
+        'rpr',
+        'bub',
+        'rpr'
+    ], {
+        r: 'redstone',
+        p: pump,
+        b: 'experience_bottle',
+        u: 'sophisticatedbackpacks:advanced_pump_upgrade'
+    })
+    event.shaped('spellclasses:blood_pump_upgrade', [
+        'rpr',
+        'bub',
+        'rpr'
+    ], {
+        r: 'redstone',
+        p: pump,
+        b: 'irons_spellbooks:blood_vial',
+        u: 'sophisticatedbackpacks:advanced_pump_upgrade'
+    })
+    event.shaped('spellclasses:mana_pump_upgrade', [
+        'rpr',
+        'bub',
+        'rsr'
+    ], {
+        r: 'redstone',
+        p: 'create_wizardry:smart_arcane_pipe',
+        b: 'irons_spellbooks:arcane_essence',
+        u: 'sophisticatedbackpacks:advanced_pump_upgrade',
+        s: 'create_wizardry:mana_siphon'
+    })
+})
+
+// Жидкости для жидкости контроля: любая из пары подходит
+ServerEvents.tags('fluid', event => {
+    // Хаос / кровь / драконье дыхание / портальная (пространственная) жидкость
+    event.add('kubejs:control_fluid/chaos', ['kubejs:chaos_fluid', 'irons_spellbooks:blood', 'create_wizardry:blood', 'create_dragons_plus:dragon_breath', 'aerowarptics:rift_essence'])
+    // Аннигиляция / опыт / уран / мана
+    event.add('kubejs:control_fluid/annihilation', ['kubejs:annihilation_fluid', 'create_enchantment_industry:experience', 'createnuclear:uranium', 'create_wizardry:mana'])
 
 })

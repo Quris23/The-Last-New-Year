@@ -1,0 +1,14 @@
+{
+ "parent": "create_wizardry:root",
+ "criteria": {
+  "builtin": {
+   "trigger": "create_wizardry:a_devastating_loss"
+  }
+ },
+ "requirements": [
+  [
+   "builtin"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,19 @@
+{
+ "parent": "cold_sweat:root",
+ "criteria": {
+  "requirement": {
+   "trigger": "cold_sweat:temperature_changed",
+   "conditions": {
+    "temperature": [
+     {
+      "trait": "world",
+      "range": {
+       "below": "min_habitable",
+       "above": "max_habitable"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

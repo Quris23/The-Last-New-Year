@@ -1,0 +1,21 @@
+{
+ "criteria": {
+  "singularity": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "aerowarptics:rift_drive_singularity"
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "singularity"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:long_haul"
+}

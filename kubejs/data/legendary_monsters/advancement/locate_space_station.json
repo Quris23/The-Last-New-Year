@@ -1,0 +1,26 @@
+{
+ "parent": "legendary_monsters:end_root",
+ "criteria": {
+  "space_station": {
+   "conditions": {
+    "player": [
+     {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+       "location": {
+        "structures": "legendary_monsters:space_station"
+       }
+      }
+     }
+    ]
+   },
+   "trigger": "minecraft:location"
+  }
+ },
+ "requirements": [
+  [
+   "space_station"
+  ]
+ ]
+}

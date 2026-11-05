@@ -1,0 +1,17 @@
+{
+ "parent": "irons_spellbooks:irons_spellbooks/spell_book_rotten",
+ "criteria": {
+  "requirement": {
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "irons_spellbooks:druidic_spell_book"
+      ]
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ }
+}

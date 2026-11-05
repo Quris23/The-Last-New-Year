@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:what_goes_down",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:must_come_up_builtin",
+   "trigger": "simulated:must_come_up_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

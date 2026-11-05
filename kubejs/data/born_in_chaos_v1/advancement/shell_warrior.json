@@ -1,0 +1,11 @@
+{
+ "criteria": {
+  "shell_warrior_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "rewards": {
+  "experience": 20
+ },
+ "parent": "born_in_chaos_v1:waste_recycler"
+}

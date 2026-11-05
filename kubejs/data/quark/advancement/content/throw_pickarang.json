@@ -1,0 +1,19 @@
+{
+ "parent": "minecraft:story/mine_diamond",
+ "criteria": {
+  "throw_pickarang": {
+   "trigger": "quark:throw_pickarang"
+  }
+ },
+ "requirements": [
+  [
+   "throw_pickarang"
+  ]
+ ],
+ "neoforge:conditions": [
+  {
+   "type": "zeta:flag",
+   "flag": "pickarang"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "parent": "createrailgrinding:railgrind_advancement",
+ "criteria": {
+  "railgrind_with_effect": {
+   "trigger": "createrailgrinding:railgrind_effect"
+  }
+ },
+ "requirements": [
+  [
+   "railgrind_with_effect"
+  ]
+ ],
+ "sends_telemetry_event": false
+}

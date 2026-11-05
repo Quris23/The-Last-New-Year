@@ -1,0 +1,26 @@
+{
+ "parent": "archaion:open_deepslate_vault",
+ "criteria": {
+  "has_echos_grace": {
+   "conditions": {
+    "items": [
+     {
+      "items": "archaion:echos_grace"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "has_echos_grace"
+  ]
+ ],
+ "rewards": {
+  "recipes": [
+   "archaion:echos_grace_upgrade_smithing"
+  ]
+ },
+ "sends_telemetry_event": true
+}

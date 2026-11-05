@@ -1,0 +1,17 @@
+{
+ "parent": "deeperdarker:main/kill_warden",
+ "criteria": {
+  "otherside": {
+   "conditions": {
+    "to": "deeperdarker:otherside"
+   },
+   "trigger": "minecraft:changed_dimension"
+  }
+ },
+ "requirements": [
+  [
+   "otherside"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

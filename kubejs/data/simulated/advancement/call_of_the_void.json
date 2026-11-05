@@ -1,0 +1,15 @@
+{
+ "parent": "simulated:applied_kinematics",
+ "criteria": {
+  "0": {
+   "conditions": "simulated:call_of_the_void_builtin",
+   "trigger": "simulated:call_of_the_void_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

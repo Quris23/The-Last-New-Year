@@ -1,0 +1,17 @@
+{
+ "parent": "block_factorys_bosses:kill_underworld_knight",
+ "criteria": {
+  "no_hit_underworld_knight_0": {
+   "trigger": "minecraft:impossible"
+  }
+ },
+ "requirements": [
+  [
+   "no_hit_underworld_knight_0"
+  ]
+ ],
+ "rewards": {
+  "experience": 500
+ },
+ "sends_telemetry_event": true
+}

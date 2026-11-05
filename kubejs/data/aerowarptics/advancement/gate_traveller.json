@@ -1,0 +1,17 @@
+{
+ "criteria": {
+  "on_foot": {
+   "trigger": "aerowarptics:gate_travel",
+   "conditions": {
+    "vehicle": false
+   }
+  }
+ },
+ "requirements": [
+  [
+   "on_foot"
+  ]
+ ],
+ "sends_telemetry_event": false,
+ "parent": "aerowarptics:rift_gate"
+}

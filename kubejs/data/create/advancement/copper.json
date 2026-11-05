@@ -1,0 +1,21 @@
+{
+ "parent": "create:burner",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "minecraft:copper_ingot"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}
