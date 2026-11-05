@@ -234,7 +234,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 9.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["40719DB8BBCF7C03"]
@@ -528,7 +528,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["0C4E0800EAA2A859"]
+			dependencies: ["7F446F4E5BD6B20D"]
 			entity_vis_size: 1.0f
 			id: "0EDB414276379F7B"
 			tasks: [{
@@ -536,8 +536,8 @@
 				item: { count: 1, id: "cataclysm:ceraunus" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 7.5d
+			x: -7.0d
+			y: 10.0d
 		}
 		{
 			entity_vis_size: 1.0f
@@ -573,6 +573,42 @@
 			}]
 			x: -6.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["2C846DA9928EA938"]
+			entity_vis_size: 1.0f
+			id: "7F446F4E5BD6B20D"
+			tasks: [{
+				entity: "cataclysm:scylla"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "191B87A953D3BCC2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7F446F4E5BD6B20D"]
+			entity_vis_size: 1.0f
+			id: "66395CC20FD485B7"
+			tasks: [{
+				id: "437B2EDAF02A95B0"
+				item: { count: 1, id: "cataclysm:astrape" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 10.0d
 		}
 	]
 }

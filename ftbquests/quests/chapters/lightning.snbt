@@ -475,7 +475,7 @@
 		{
 			dependencies: [
 				"37AA000000000012"
-				"283D6F9589D60CF8"
+				"1D96D0D19A7DA5DF"
 			]
 			entity_vis_size: 1.0f
 			id: "37AA000000000019"
@@ -518,32 +518,8 @@
 				item: { count: 1, id: "cataclysm:brontes" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: 1.0d
-		}
-		{
-			entity_vis_size: 1.0f
-			id: "283D6F9589D60CF8"
-			optional: true
-			tasks: [{
-				entity: "cataclysm:scylla"
-				entity_vis_idle_mode: "USE_GLOBAL"
-				entity_vis_offset_x: 0.0f
-				entity_vis_offset_y: 0.0f
-				entity_vis_rotation: 0.0f
-				entity_vis_silhouette_mode: "NONE"
-				entity_vis_size: 1.0f
-				entity_vis_spin_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_mode: "USE_GLOBAL"
-				entity_vis_tag_cycle_seconds: 0.0f
-				entity_vis_use_as_quest_icon: false
-				entity_vis_walk_mode: "USE_GLOBAL"
-				id: "557C613E4ABDB13C"
-				type: "kill"
-				value: 1L
-			}]
-			x: -2.0d
-			y: 12.0d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["76860364B8C33AC7"]
@@ -633,6 +609,66 @@
 			}]
 			x: -6.0d
 			y: 8.0d
+		}
+		{
+			entity_vis_size: 1.0f
+			id: "32B1671C91E12A67"
+			tasks: [{
+				entity: "legendary_monsters:cloud_golem"
+				entity_vis_idle_mode: "USE_GLOBAL"
+				entity_vis_offset_x: 0.0f
+				entity_vis_offset_y: 0.0f
+				entity_vis_rotation: 0.0f
+				entity_vis_silhouette_mode: "NONE"
+				entity_vis_size: 1.0f
+				entity_vis_spin_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_mode: "USE_GLOBAL"
+				entity_vis_tag_cycle_seconds: 0.0f
+				entity_vis_use_as_quest_icon: false
+				entity_vis_walk_mode: "USE_GLOBAL"
+				id: "67CEB07D2512E242"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["32B1671C91E12A67"]
+			entity_vis_size: 1.0f
+			id: "1D96D0D19A7DA5DF"
+			tasks: [{
+				count: 4L
+				id: "4A9D0D50EBA8DD42"
+				item: { count: 1, id: "legendary_spellbooks:tempest_upgrade_template" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["32B1671C91E12A67"]
+			entity_vis_size: 1.0f
+			id: "74BEE7FFA9C30E85"
+			tasks: [{
+				id: "58209C7346F3CE12"
+				item: { count: 1, id: "legendary_monsters:axe_of_lightning" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["32B1671C91E12A67"]
+			entity_vis_size: 1.0f
+			id: "6BEA8C298FA22D46"
+			tasks: [{
+				id: "4DDFBE595AA2479C"
+				item: { count: 1, id: "legendary_monsters:wand_of_clouds" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 14.0d
 		}
 	]
 }

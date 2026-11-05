@@ -2226,7 +2226,10 @@
 			dependencies: ["32291B0CAC1605EA"]
 			entity_vis_size: 1.0f
 			icon: {
-				id: "create:track_station"
+				components: {
+					"ftbquests:missing_item": "create:track_station"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "2A102AFFD9B14E3C"
 			optional: true

@@ -707,8 +707,8 @@
 				id: "23FA8F5A50E679D7"
 				type: "advancement"
 			}]
-			x: 8.5d
-			y: -7.5d
+			x: 10.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5AFC46AEE66A456A"]

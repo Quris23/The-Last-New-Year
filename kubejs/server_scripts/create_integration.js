@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
     ], {
         r: 'redstone',
         p: pump,
-        b: 'irons_spellbooks:blood_vial',
+        b: 'chromeware:empty_syringe',
         u: 'sophisticatedbackpacks:advanced_pump_upgrade'
     })
     event.shaped('spellclasses:mana_pump_upgrade', [

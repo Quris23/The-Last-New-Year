@@ -29,6 +29,7 @@
 		{
 			dependencies: ["0AFFCBBC27D2F80B"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:cyber_leg"
 			}
@@ -58,6 +59,7 @@
 		{
 			dependencies: ["385A4E9A9C484A65"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "7A33A03CB9AF35CD"
 			tasks: [{
 				id: "28A2A8EAF94C1A67"
@@ -70,6 +72,7 @@
 		{
 			dependencies: ["0AFFCBBC27D2F80B"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:kiroshi_optics"
 			}
@@ -84,6 +87,7 @@
 		{
 			dependencies: ["629D16579319AD9B"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "536D982FCC355CD1"
 			tasks: [{
 				id: "2021AE6A182A14EA"
@@ -96,6 +100,7 @@
 		{
 			dependencies: ["385A4E9A9C484A65"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "7AA99CAA62BA3887"
 			tasks: [{
 				id: "77DCC04D1E7E2C23"
@@ -108,6 +113,7 @@
 		{
 			dependencies: ["5A5A000000000001"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "289A6226A5A07301"
 			tasks: [{
 				id: "4D5A283D1B67AA33"
@@ -120,6 +126,7 @@
 		{
 			dependencies: ["289A6226A5A07301"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "2D99AEBF25F2AC0F"
 			tasks: [{
 				id: "3B13CF19718900D6"
@@ -132,6 +139,7 @@
 		{
 			dependencies: ["0AFFCBBC27D2F80B"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:beef"
 			}
@@ -160,6 +168,7 @@
 		{
 			dependencies: ["385A4E9A9C484A65"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:cyber_torso"
 			}
@@ -174,6 +183,7 @@
 		{
 			dependencies: ["5A5A000000000001"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:cyber_torso"
 			}
@@ -188,6 +198,7 @@
 		{
 			dependencies: ["5A5A000000000002"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:cyber_torso"
 			}
@@ -202,10 +213,12 @@
 		{
 			dependencies: ["536D982FCC355CD1"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:cyberdeck"
 			}
 			id: "5A5A000000000004"
+			invisible: true
 			tasks: [{
 				id: "5A5B000000000005"
 				type: "custom"
@@ -216,6 +229,7 @@
 		{
 			dependencies: ["385A4E9A9C484A65"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:mantis_blades"
 			}
@@ -231,18 +245,21 @@
 		{
 			dependencies: ["536D982FCC355CD1"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "154FEF20B90F3F53"
+			invisible: true
 			tasks: [{
 				id: "2CD5A2BA8CA2AAC6"
 				item: { count: 1, id: "chromeware:quickhack_system_collapse" }
 				type: "item"
 			}]
 			x: -10.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["629D16579319AD9B"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "72779297A0384B9D"
 			tasks: [{
 				id: "4E691A909833E1D4"
@@ -255,6 +272,7 @@
 		{
 			dependencies: ["72779297A0384B9D"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "6763884A6680EB94"
 			tasks: [{
 				id: "5C3A9D7A64ED2FB1"
@@ -267,6 +285,7 @@
 		{
 			dependencies: ["5A5A000000000005"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "3AB63868608D9028"
 			tasks: [{
 				id: "2D3C395465CEECEF"
@@ -279,6 +298,7 @@
 		{
 			dependencies: ["3AB63868608D9028"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			id: "2076A6483815EE58"
 			tasks: [{
 				id: "3840D5384A5A6870"
@@ -291,6 +311,7 @@
 		{
 			dependencies: ["385A4E9A9C484A65"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:chrome_compressor"
 			}
@@ -300,11 +321,12 @@
 				type: "custom"
 			}]
 			x: -6.0d
-			y: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5A5A000000000006"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:chrome_compressor"
 			}
@@ -313,12 +335,13 @@
 				id: "5A5B000000000009"
 				type: "custom"
 			}]
-			x: -4.0d
-			y: 7.5d
+			x: -6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5A5A000000000007"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:chrome_compressor"
 			}
@@ -327,12 +350,13 @@
 				id: "5A5B00000000000A"
 				type: "custom"
 			}]
-			x: -2.0d
-			y: 7.5d
+			x: -6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["5A5A000000000008"]
 			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
 			icon: {
 				id: "chromeware:chrome_compressor"
 			}
@@ -342,8 +366,35 @@
 				id: "5A5B00000000000B"
 				type: "custom"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: -6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["629D16579319AD9B"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "485FDC3618C6A073"
+			tasks: [{
+				id: "2F0D9D4D72966415"
+				item: { count: 1, id: "spellclasses:holographic_apple" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["536D982FCC355CD1"]
+			entity_vis_size: 1.0f
+			hide_until_deps_complete: true
+			id: "25AC7C6F0F80486C"
+			invisible: true
+			tasks: [{
+				id: "23AE11FB7E97F8B1"
+				item: { count: 1, id: "chromeware:quickhack_cyberpsychosis" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
 		}
 	]
 }
