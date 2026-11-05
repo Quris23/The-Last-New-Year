@@ -18,7 +18,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(targets = "com.chromeware.client.cyberware.CustomizePage", remap = false)
 public abstract class CustomizeColorValueMixin {
     private static final int NUM_X = 384;
-    private static final int HEX_X = 336;
+    private static final int HEX_X = 334;
     private static final int HEX_W = 76;
 
     @Shadow(remap = false)
@@ -64,7 +64,7 @@ public abstract class CustomizeColorValueMixin {
         String part = this.part();
         if (part != null && this.custom) {
             int ey = this.editorY();
-            if (mx >= HEX_X && mx <= HEX_X + HEX_W && my >= ey + 1 && my <= ey + 14) {
+            if (mx >= HEX_X && mx <= HEX_X + HEX_W && my >= ey + 75 && my <= ey + 89) {
                 String implant = ImplantColors.IMPLANTS.get(this.selectedImplant);
                 ColorValueEdit.start(ColorValueEdit.HEX, this.currentColor(implant, part) & 0xFFFFFF, this.selectedImplant, this.selectedPart);
                 ColorValueEdit.buffer = String.format("%06X", this.currentColor(implant, part) & 0xFFFFFF);
@@ -138,9 +138,9 @@ public abstract class CustomizeColorValueMixin {
         String hexText = editHex
                 ? "#" + ColorValueEdit.buffer + ((System.currentTimeMillis() / 500 & 1) == 0 ? "_" : "")
                 : String.format("#%06X", this.currentColor(implant, this.part()) & 0xFFFFFF);
-        g.fill(HEX_X, ey + 2, HEX_X + HEX_W, ey + 13, editHex ? 0xF0101018 : 0x66000000);
-        g.renderOutline(HEX_X, ey + 2, HEX_W, 11, editHex ? 0xFFE0B040 : 0x66FFFFFF);
-        g.drawString(font, hexText, HEX_X + 4, ey + 3, 0xFFFFFFFF, false);
+        g.fill(HEX_X, ey + 76, HEX_X + HEX_W, ey + 88, editHex ? 0xF0101018 : 0x66000000);
+        g.renderOutline(HEX_X, ey + 76, HEX_W, 12, editHex ? 0xFFE0B040 : 0x66FFFFFF);
+        g.drawString(font, hexText, HEX_X + 4, ey + 78, 0xFFFFFFFF, false);
         if (!ColorValueEdit.active || editHex) return;
         int y = ey + 26 + ColorValueEdit.channel * 16;
         g.fill(NUM_X - 2, y - 4, NUM_X + 26, y + 8, 0xF0101018);

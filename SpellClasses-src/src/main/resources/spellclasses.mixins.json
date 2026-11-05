@@ -151,6 +151,19 @@
     "QuestButtonRefreshMixin",
     "FtbCompletionPlaqueMixin",
     "QuestIngredientHideMixin",
-    "QuestHideUntilPreviousMixin"
+    "QuestHideUntilPreviousMixin",
+    "rig.MixinChromewareImplantColors",
+    "rig.MixinOctoArmsRigSettingsScreen",
+    "rig.MixinOctoArmsTentacleLayer",
+    "rig.MixinCreateBacktankLayer",
+    "rig.MixinOctoArmsTentacleRenderer",
+    "rig.MixinChromewareCustomize$Page",
+    "rig.MixinChromewareCustomize$Preview",
+    "rig.MixinChromewareCustomize$Tint",
+    "rig.MixinPunchyChromewareArms",
+    "rig.MixinEmfChromewareFirstPerson",
+    "rig.IMixinBufferBuilder",
+    "rig.MixinChromewareLimbCutouts$Clipped",
+    "rig.MixinChromewareLimbCutouts$Wrist"
   ]
 }
