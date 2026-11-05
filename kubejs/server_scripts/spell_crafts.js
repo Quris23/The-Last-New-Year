@@ -110,51 +110,6 @@ ServerEvents.recipes(event => {
         R: 'irons_spellbooks:blank_rune'
     })
 
-    // Нуклеат осколка души: полированный аметист (Northstar) + Божественный осколок души -> 2 нуклеата
-    event.shapeless('2x kubejs:soulshard_nucleate', [
-        'northstar:polished_amethyst',
-        'irons_spellbooks:divine_soulshard'
-    ])
-    // ...а нуклеат под вентилятором над обогащающим огнём (Create Nuclear) снова становится осколком души
-    event.custom({
-        type: 'createnuclear:enriched',
-        ingredients: [{ item: 'kubejs:soulshard_nucleate' }],
-        results: [{ id: 'irons_spellbooks:divine_soulshard' }]
-    })
-
-    // Руна оккультизма: 8 осколков злобы вокруг пустой руны
-    event.shaped('discerning_the_eldritch:ritual_rune', [
-        'SSS',
-        'SRS',
-        'SSS'
-    ], {
-        S: 'discerning_the_eldritch:shard_of_malice',
-        R: 'irons_spellbooks:blank_rune'
-    })
-
-    // Карта «Штаб культистов»: пустая карта в центре, магическая ткань по бокам, осколки злобы по углам
-    event.remove({ id: 'discerning_the_eldritch:cultist_base_map' })
-    event.custom({
-        type: 'minecraft:crafting_shaped',
-        pattern: ['SCS', 'CMC', 'SCS'],
-        key: {
-            S: { item: 'discerning_the_eldritch:shard_of_malice' },
-            C: { item: 'irons_spellbooks:magic_cloth' },
-            M: { item: 'minecraft:map' }
-        },
-        result: {
-            id: 'irons_spellbooks:furled_map_ancient',
-            components: {
-                'irons_spellbooks:furled_map_data': {
-                    destination: 'discerning_the_eldritch:cultist_base',
-                    dimension: 'minecraft:overworld',
-                    descriptionOverride: { translate: 'item.discerning_the_eldritch.cultist_base_map' }
-                },
-                'minecraft:lore': ['{"translate":"item.irons_spellbooks.furled_map_descriptor_framing","color":"gold","with":[{"translate":"item.discerning_the_eldritch.cultist_base_map"}]}']
-            }
-        }
-    })
-
     event.shaped('cataclysm_spellbooks:abyssal_warlock_helmet', [
         'NR',
         'E '
@@ -191,8 +146,7 @@ ServerEvents.recipes(event => {
         E: 'irons_spellbooks:arcane_essence'
     })
 
-    // Броня светоносца (Lightbringer): нагрудник теперь делается из Незеритового нагрудника мага (раньше - из нагрудника жреца),
-    // шлем, поножи и ботинки (spellclasses:paladin_*) - тем же рецептом из соответствующих частей незеритовой брони мага.
+    // Броня светоносца
     event.remove({ id: 'irons_spellbooks:paladin_chestplate' })
 
     const pieces = {
@@ -214,8 +168,7 @@ ServerEvents.recipes(event => {
       }).id(`generation:paladin_${piece}`)
     })
 
-    // Броня пугала (irons_spellbooks:pumpkin_*): в рецептах кожа и кожаный шлем убраны, добавлены Роба волшебника
-    // соответствующей части и Флакон с кровью. Остальное (магическая ткань, сено, тыква) осталось как в оригинале.
+    // Броня пугала
     const recipes = {
       helmet: [' C ', 'CNC', 'VPV'],
       chestplate: ['HVH', 'CNC', 'C C'],
@@ -226,7 +179,7 @@ ServerEvents.recipes(event => {
       event.remove({ id: `irons_spellbooks:pumpkin_${piece}` })
       const key = {
         C: 'irons_spellbooks:magic_cloth',
-        N: `irons_spellbooks:wizard_${piece}`,
+        N: `irons_spellbooks:netherite_mage_${piece}`,
         V: 'irons_spellbooks:blood_vial'
       }
       if (piece === 'helmet') key.P = 'minecraft:carved_pumpkin'
@@ -249,34 +202,51 @@ ServerEvents.recipes(event => {
 
     // Незеритовая броня боевого мага
     const classRobes = ['priest', 'cultist', 'plagued', 'electromancer', 'pyromancer', 'cryomancer', 'shadowwalker']
-    const mageSlots = ['helmet', 'chestplate', 'leggings', 'boots']
+    const pieces1 = ['helmet', 'chestplate', 'leggings', 'boots']
 
-    mageSlots.forEach(piece => {
+    pieces1.forEach(piece => {
         event.remove({ output: `irons_spellbooks:netherite_mage_${piece}` })
         event.custom({
             type: 'minecraft:smithing_transform',
             template: { item: 'minecraft:netherite_upgrade_smithing_template' },
-            base: classRobes.map(robe => ({ item: `irons_spellbooks:${robe}_${piece}` }))
-                .concat([{ item: `somakespells:aquamancer_${piece}` }]),
+            base: classRobes.map(robe => ({ item: `irons_spellbooks:${robe}_${piece}` })),
             addition: { tag: 'c:ingots/netherite' },
             result: { id: `irons_spellbooks:netherite_mage_${piece}`, count: 1 }
         })
     })
 
-    // Руна Гидро (Somake): осколки призмарина вместо раковин наутилуса
-    event.remove({ id: 'somakespells:aqua_rune' })
-    event.shaped('somakespells:aqua_rune', [
-        'PPP',
-        'PRP',
-        'PPP'
+    // Руна сияния
+    event.shaped('hazentouvelib:radiance_rune', [
+        'GGG',
+        'GRG',
+        'GGG'
     ], {
-        P: 'minecraft:prismarine_shard',
+        G: 'minecraft:glowstone_dust',
         R: 'irons_spellbooks:blank_rune'
-    })
-})
+    }).id('generation:radiance_rune')
 
-// Реагент школы Космоса: Эхо-эссенция. Тег hazentouvelib:focus/cosmic_focus в моде пуст, из-за чего не крафтилась
-// Руна космоса (cosmic_rune.json: 8 реагентов вокруг пустой руны) и не работала Кузница свитков для Космоса
-ServerEvents.tags('item', event => {
-    event.get('hazentouvelib:focus/cosmic_focus').add('echoing_magic:echoing_essence')
+    // Амулет телепортации
+    event.remove({ output: 'irons_spellbooks:teleportation_amulet' })
+    event.shaped('irons_spellbooks:teleportation_amulet', [
+        ' H ',
+        'm m',
+        ' e '
+    ], {
+        e: 'ender_pearl',
+        m: 'create_wizardry:mithril_nugget',
+        H: 'irons_spellbooks:heavy_chain_necklace'
+    })
+
+    // Амулет скрытого сокровища
+    event.shaped('discerning_the_eldritch:amulet_of_sculk_treasure', [
+        'NBN',
+        'mHB',
+        'smN'
+    ], {
+        s: 'echo_shard',
+        m: 'create_wizardry:mithril_nugget',
+        H: 'irons_spellbooks:heavy_chain_necklace',
+        B: 'cataclysm:black_steel_ingot',
+        N: 'cataclysm:black_steel_nugget'
+    })
 })

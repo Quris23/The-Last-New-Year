@@ -120,21 +120,28 @@ ServerEvents.recipes(event => {
   })
 
   // Незеритовыый горн
-  let blackstone = ['blackstone', 'gilded_blackstone', 'polished_blackstone']
-  event.recipes.create.mechanical_crafting('cataclysm:infernal_forge', [
-    'snnnm',
-    'sbhb ',
-    '  H  ',
-    '  H  ',
-    '  H  '
-  ], {
-    s: blackstone,
-    n: 'netherite_scrap',
-    m: 'cataclysm:monstrous_horn',
-    b: 'cataclysm:lava_power_cell',
-    h: 'born_in_chaos_v1:skullbreaker_hammer',
-    H: 'born_in_chaos_v1:bone_handle'
+  event.custom({
+    type: 'cataclysm:weapon_fusion',
+    base: { item: 'born_in_chaos_v1:skullbreaker_hammer' },
+    addition: { item: 'cataclysm:monstrous_horn' },
+    result: { id: 'cataclysm:infernal_forge' }
   })
+
+  // let blackstone = ['blackstone', 'gilded_blackstone', 'polished_blackstone']
+  // event.recipes.create.mechanical_crafting('cataclysm:infernal_forge', [
+  //   'snnnm',
+  //   'sbhb ',
+  //   '  H  ',
+  //   '  H  ',
+  //   '  H  '
+  // ], {
+  //   s: blackstone,
+  //   n: 'netherite_scrap',
+  //   m: 'cataclysm:monstrous_horn',
+  //   b: 'cataclysm:lava_power_cell',
+  //   h: 'born_in_chaos_v1:skullbreaker_hammer',
+  //   H: 'born_in_chaos_v1:bone_handle'
+  // })
 
   // Древний металл
   event.shaped('cataclysm:khopesh', [
@@ -298,10 +305,8 @@ ServerEvents.recipes(event => {
   let upgrTransitional = 'kubejs:incomplete_cursium_upgrade_smithing_template'
   event.recipes.create.sequenced_assembly([
     CreateItem.of('cataclysm:cursium_upgrade_smithing_template', 0.70),
-    CreateItem.of('minecraft:gold_ingot', 0.15),
-    CreateItem.of('cataclysm:black_steel_ingot', 0.10),
-    CreateItem.of('minecraft:netherite_upgrade_smithing_template', 0.05)
-  ], 'minecraft:netherite_upgrade_smithing_template', [
+    CreateItem.of('born_in_chaos_v1:dark_upgrade', 0.30)
+  ], 'born_in_chaos_v1:dark_upgrade', [
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'kubejs:aurumite_ingot']),
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'cataclysm:black_steel_ingot']),
     event.recipes.createDeploying(upgrTransitional, [upgrTransitional, 'kubejs:aurumite_ingot']),
@@ -385,10 +390,8 @@ ServerEvents.recipes(event => {
   let upgrTransit = 'kubejs:incomplete_ignitium_upgrade_smithing_template'
   event.recipes.create.sequenced_assembly([
     CreateItem.of('cataclysm:ignitium_upgrade_smithing_template', 0.70),
-    CreateItem.of('minecraft:nether_brick', 0.15),
-    CreateItem.of('netherite_scrap', 0.10),
-    CreateItem.of('minecraft:netherite_upgrade_smithing_template', 0.05)
-  ], 'minecraft:netherite_upgrade_smithing_template', [
+    CreateItem.of('born_in_chaos_v1:dark_upgrade', 0.30)
+  ], 'born_in_chaos_v1:dark_upgrade', [
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'blaze_powder']),
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'netherite_scrap']),
     event.recipes.createDeploying(upgrTransit, [upgrTransit, 'nether_brick']),
@@ -399,34 +402,15 @@ ServerEvents.recipes(event => {
   // Эндеритовый блок
   let endTransit = 'crying_obsidian'
   event.recipes.create.sequenced_assembly([
-    CreateItem.of('cataclysm:enderite_block', 0.80),
-    CreateItem.of('crying_obsidian', 0.10),
-    CreateItem.of('cataclysm:polished_obsidian', 0.10),
+    CreateItem.of('cataclysm:enderite_block', 0.30),
+    CreateItem.of('crying_obsidian', 0.70)
   ], 'crying_obsidian', [
     event.recipes.createDeploying(endTransit, [endTransit, 'ender_pearl']),
     event.recipes.createPressing(endTransit, endTransit),
-    event.recipes.createDeploying(endTransit, [endTransit, 'cataclysm:void_jaw']),
+    event.recipes.createFilling(endTransit, [endTransit, Fluid.of('create_dragons_plus:dragon_breath', 250)]),
     event.recipes.createPressing(endTransit, endTransit),
-    event.recipes.createDeploying(endTransit, [endTransit, 'glow_ink_sac']),
+    event.recipes.createDeploying(endTransit, [endTransit, 'cataclysm:void_jaw']),
     event.recipes.createPressing(endTransit, endTransit)
-  ]).transitionalItem(endTransit).loops(3)
+  ]).transitionalItem(endTransit).loops(4)
   
-
-  // Жертвоприношение Бездне: вместо сердца моря нужно Око Глубинного Стража (endrem:guardian_eye).
-  // У мода два рецепта (с кристаллизованным кораллом и с осколком коралла); оба переписаны.
-  event.remove({ id: 'cataclysm:abyssal_sacrifice' })
-  event.remove({ id: 'cataclysm:abyssal_sacrifice2' })
-  for (let coral of ['cataclysm:crystallized_coral', 'cataclysm:coral_chunk']) {
-    event.shapeless('cataclysm:abyssal_sacrifice', [
-      'minecraft:nautilus_shell',
-      'cataclysm:athame',
-      coral,
-      'minecraft:diamond_block',
-      'endrem:guardian_eye',
-      'minecraft:emerald_block',
-      'minecraft:iron_block',
-      'minecraft:amethyst_block',
-      'minecraft:gold_block'
-    ])
-  }
 })
