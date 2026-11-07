@@ -129,4 +129,47 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(tentacleTrans, [tentacleTrans, 'create:sticker']),
     ]).transitionalItem(tentacleTrans).loops(3)
 
+    // Макска химзащиты
+    event.remove({ output: 'alexscaves:hazmat_mask' })
+    event.recipes.create.mechanical_crafting('alexscaves:hazmat_mask', [
+        'ppppp',
+        'ppppp',
+        'pp pp',
+        'ppppp',
+        'ppppp'
+    ], {
+        p: 'alexscaves:polymer_plate'
+    })
+
+    // Иммунодепрессанты
+    event.remove({ id: 'chromeware:mixing/standard_immunosuppressant' })
+    event.remove({ id: 'chromeware:mixing/military_immunosuppressant' })
+    event.remove({ id: 'chromeware:mixing/military_immunosuppressant_from_awkward' })
+    // Стандартный
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [
+            { item: 'minecraft:golden_carrot' },
+            {
+                type: 'neoforge:components',
+                amount: 1000,
+                components: {
+                    'create:potion_fluid_bottle_type': 'regular',
+                    'minecraft:potion_contents': { potion: 'minecraft:awkward' }
+                },
+                fluids: 'create:potion'
+            }
+        ],
+        results: [{ id: 'chromeware:standard_immunosuppressant', amount: 1000 }]
+    }).id('kubejs:mixing/standard_immunosuppressant')
+    // Военный
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [
+            { item: 'minecraft:golden_apple' },
+            { type: 'neoforge:single', fluid: 'chromeware:standard_immunosuppressant', amount: 1000 }
+        ],
+        results: [{ id: 'chromeware:military_immunosuppressant', amount: 1000 }]
+    }).id('kubejs:mixing/military_immunosuppressant')
+
 })

@@ -202,4 +202,19 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(ruinBook).loops(2)
 
+    // Кодекс, скованный пустотой
+    event.remove({ output: 'somakespells:voidbound_codex_3_spell_book' })
+    let dragonBook1 = 'irons_spellbooks:dragonskin_spell_book'
+    event.recipes.create.sequenced_assembly([
+        'somakespells:voidbound_codex_3_spell_book'
+    ], dragonBook1, [
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'kubejs:ending_armor_plate_from_dark_chorium_steel']),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'born_in_chaos_v1:phantom_powder']),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'irons_spellbooks:ender_upgrade_orb']),
+        event.recipes.createFilling(dragonBook1,  [dragonBook1, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'cataclysm:void_core']),
+        event.recipes.createPressing(dragonBook1, dragonBook1)
+    ]).transitionalItem(dragonBook1).loops(1)
+
+
 })

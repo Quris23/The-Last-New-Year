@@ -137,6 +137,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'supplementaries:lumisene_bucket' })
     event.remove({ id: 'supplementaries:integration/lumisene_mixing' })
 
+    // Legendary monsters
+    event.remove({ output: 'legendary_monsters:bottle_of_annihilation' })
+
+    // Alex's Caves: костюм химзащиты (маска остаётся)
+    event.remove({ output: 'alexscaves:hazmat_chestplate' })
+    event.remove({ output: 'alexscaves:hazmat_leggings' })
+    event.remove({ output: 'alexscaves:hazmat_boots' })
+
 })
 
 // Лут: глаза End Remastered добываются только крафтами kubejs (eye_crafts.js), незеритовый горн — только крафтами (catac_crafts.js)

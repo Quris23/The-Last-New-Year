@@ -75,5 +75,9 @@
   "echoing_magic:reinforced_juggernaut_helmet": "kubejs:dark_chorium_steel",
   "echoing_magic:reinforced_juggernaut_chestplate": "kubejs:dark_chorium_steel",
   "echoing_magic:reinforced_juggernaut_leggings": "kubejs:dark_chorium_steel",
-  "echoing_magic:reinforced_juggernaut_boots": "kubejs:dark_chorium_steel"
+  "echoing_magic:reinforced_juggernaut_boots": "kubejs:dark_chorium_steel",
+  "witherstormmod:enderitium_juggernaut_helmet": "kubejs:dark_chorium_steel",
+  "witherstormmod:enderitium_juggernaut_chestplate": "kubejs:dark_chorium_steel",
+  "witherstormmod:enderitium_juggernaut_leggings": "kubejs:dark_chorium_steel",
+  "witherstormmod:enderitium_juggernaut_boots": "kubejs:dark_chorium_steel"
 }

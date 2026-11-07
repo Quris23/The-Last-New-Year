@@ -1,87 +1,92 @@
 //.minecraft/kubejs/start_scripts/items.js
 StartupEvents.registry('item', event => {
 
-    //event.create('echo_ender_rune').displayName('Руна эхо-эндера')
-    event.create('dark_chorium_steel').displayName('Тёмно-хориевая сталь')
+  event.create('ancient_upgrade_smithing_template', 'smithing_template')
+  .displayName('Кузнечный шаблон: Улучшение костей рептилии')
+  .appliesTo('§9Алмазному снаряжению')
+  .ingredients('§9Слиток древнего металла')
+  
+  //event.create('ancient_upgrade_smithing_template', 'smithing_template').displayName('Кузнечный шаблон')//.tooltip('§7§oУлучшение костей рептилии')
+  //event.create('ancient_upgrade_smithing_template').displayName('Кузнечный шаблон').tooltip('§7§oУлучшение костей рептилии')
 
-    event.create('ancient_upgrade_smithing_template', 'smithing_template')
-    .displayName('Кузнечный шаблон: Улучшение костей рептилии')
-    .appliesTo('§9Алмазному снаряжению')
-    .ingredients('§9Слиток древнего металла')
-    
-    //event.create('ancient_upgrade_smithing_template', 'smithing_template').displayName('Кузнечный шаблон')//.tooltip('§7§oУлучшение костей рептилии')
-    //event.create('ancient_upgrade_smithing_template').displayName('Кузнечный шаблон').tooltip('§7§oУлучшение костей рептилии')
+  event.create('incomplete_unbreakable_skull', 'create:sequenced_assembly')
+  .displayName('Незавершенный неразрушаемый череп')
 
-    event.create('incomplete_unbreakable_skull', 'create:sequenced_assembly')
-    .displayName('Незавершенный неразрушаемый череп')
+  event.create('black_steel_rod').displayName('Черностальной стержень')
 
-    event.create('black_steel_rod').displayName('Черностальной стержень')
+  event.create('cursium_sheet').displayName('Проклятый лист')
 
-    event.create('cursium_sheet').displayName('Проклятый лист')
+  event.create('aurumite_ingot').displayName('Аурумитовый слиток').rarity('uncommon')
+  event.create('aurumite_scrap').displayName('Аурумитовый лом')
 
-    event.create('aurumite_ingot').displayName('Аурумитовый слиток').rarity('uncommon')
-    event.create('aurumite_scrap').displayName('Аурумитовый лом')
+  event.create('mithridium_ingot').displayName('Мифридиновый слиток').rarity('uncommon')
 
-    event.create('mithridium_ingot').displayName('Мифридиновый слиток').rarity('uncommon')
+  event.create('incomplete_cursium_upgrade_smithing_template', 'create:sequenced_assembly')
+  .displayName('Незавершенный кузнечный шаблон')
+  event.create('incomplete_ignitium_upgrade_smithing_template', 'create:sequenced_assembly')
+  .displayName('Незавершенный кузнечный шаблон')
+  //event.create('bronze_ingot').displayName('Бронзовый слиток')
+  //event.create('bronze_scrap').displayName('Бронзовый осколок')   
+  
+  // Artifacts
+  event.create('incomplete_warp_drive', 'create:sequenced_assembly')
+  .displayName('Незавершенный варп-двигатель')
 
-    event.create('incomplete_cursium_upgrade_smithing_template', 'create:sequenced_assembly')
-    .displayName('Незавершенный кузнечный шаблон')
-    event.create('incomplete_ignitium_upgrade_smithing_template', 'create:sequenced_assembly')
-    .displayName('Незавершенный кузнечный шаблон')
-    //event.create('bronze_ingot').displayName('Бронзовый слиток')
-    //event.create('bronze_scrap').displayName('Бронзовый осколок')   
-    
-    // Artifacts
-    event.create('incomplete_warp_drive', 'create:sequenced_assembly')
-    .displayName('Незавершенный варп-двигатель')
+  // Тёмно-хориевая сталь
+  event.create('dark_chorium_steel').displayName('Тёмно-хориевая сталь')
+  // Эндерированная кожа Дракона
+  event.create('ending_dragonskin').displayName('Эндерировання шкура дракона')
+  // Эндерировання чешуя Дракона
+  event.create('ending_dragon_scale').displayName('Эндерировання чешуя дракона')
+  // Эндерированная бронепластина тёмно-хориевой стали
+  event.create('ending_armor_plate_from_dark_chorium_steel').displayName('Эндерировання бронепластина тёмно-хориевой стали')
 
-    // Iron's spell books
+  // Iron's spell books
 
-    event.create('incomplete_uportal_frame', 'create:sequenced_assembly')
-    .displayName('Незавершенная рамка портала')
+  event.create('incomplete_uportal_frame', 'create:sequenced_assembly')
+  .displayName('Незавершенная рамка портала')
 
-    event.create('nethertitanium_ingot').displayName('Слиток незер-титана')
+  event.create('nethertitanium_ingot').displayName('Слиток незер-титана')
 
-    event.create('chorium_jewel').displayName('Пластина хориума')
+  event.create('chorium_jewel').displayName('Пластина хориума')
 
-    event.create('incomplete_enchanted_apple', 'create:sequenced_assembly')
-    .displayName('Незавершенное зачарованное золотое Яблоко')
+  event.create('incomplete_enchanted_apple', 'create:sequenced_assembly')
+  .displayName('Незавершенное зачарованное золотое Яблоко')
 
-    event.create('incomplete_death_totem', 'create:sequenced_assembly')
-    .displayName('Незавершенный Тотем смерти')
+  event.create('incomplete_death_totem', 'create:sequenced_assembly')
+  .displayName('Незавершенный Тотем смерти')
 
-    event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
-    .displayName('Незавершенный Тотем хоруса')
+  event.create('incomplete_chorus_totem', 'create:sequenced_assembly')
+  .displayName('Незавершенный Тотем хоруса')
 
-    // Endrem + Cataclysm
+  // Endrem + Cataclysm
 
-    event.create('incomplete_mech_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око меха')
+  event.create('incomplete_mech_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око меха')
 
-    event.create('incomplete_cryptic_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Безграничного Знания')
+  event.create('incomplete_cryptic_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Безграничного Знания')
 
-    event.create('incomplete_lost_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Истинной Скверны')
+  event.create('incomplete_lost_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Истинной Скверны')
 
-    event.create('incomplete_wither_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Вечных Бурь')
+  event.create('incomplete_wither_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Вечных Бурь')
 
-    event.create('incomplete_nether_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Адского Пламени')
+  event.create('incomplete_nether_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Адского Пламени')
 
-    event.create('incomplete_rogue_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Фрактального Краха')
+  event.create('incomplete_rogue_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Фрактального Краха')
 
-    event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
-    .displayName('Незавершенное Око Непростительного Проклятия')
+  event.create('incomplete_cursed_eye', 'create:sequenced_assembly')
+  .displayName('Незавершенное Око Непростительного Проклятия')
 
-    // Многомерный куб (witherstormmod:multidimensional_dice): промежуточный предмет конвейерной сборки.
-    // Модель - куб без свечения, переливания и анимации, иероглифы бледные (assets/kubejs/models/item/incomplete_multidimensional_dice_full.json)
-    event.create('incomplete_multidimensional_dice', 'create:sequenced_assembly')
-    .displayName('Незавершенный многомерный куб')
-    .parentModel('kubejs:item/incomplete_multidimensional_dice_full')
-        
+  // Многомерный куб
+  event.create('incomplete_multidimensional_dice', 'create:sequenced_assembly')
+  .displayName('Незавершенный многомерный куб')
+  .parentModel('kubejs:item/incomplete_multidimensional_dice_full')
+      
         
 })
 
@@ -223,6 +228,14 @@ ItemEvents.modification(event => {
   event.modify('echoing_magic:reinforced_juggernaut_leggings', item => {
     item.maxDamage = 750; item.damage = 0; item.remove('minecraft:unbreakable')  })
   event.modify('echoing_magic:reinforced_juggernaut_boots', item => {
+    item.maxDamage = 650; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_helmet', item => {
+    item.maxDamage = 550; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_chestplate', item => {
+    item.maxDamage = 800; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_leggings', item => {
+    item.maxDamage = 750; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_boots', item => {
     item.maxDamage = 650; item.damage = 0; item.remove('minecraft:unbreakable')  })
   
   // Оплот пламени

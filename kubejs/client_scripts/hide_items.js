@@ -20,6 +20,9 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'clockwork:clockwork_flamethrower',
         'clockwork:clockwork_potion_sprayer',
         'clockwork:dragonfly_spawn_egg',
-        'clockwork:broken_dragonfly_spawn_egg'
+        'clockwork:broken_dragonfly_spawn_egg',
+        'alexscaves:hazmat_chestplate',
+        'alexscaves:hazmat_leggings',
+        'alexscaves:hazmat_boots'
     ])
 })
