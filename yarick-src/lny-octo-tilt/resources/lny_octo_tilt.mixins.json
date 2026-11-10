@@ -1,0 +1,25 @@
+{
+	"required": false,
+	"package": "lny.octotilt.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"RigServerMixin",
+		"gun.GunImplantMixins$Install",
+		"gun.GunImplantMixins$Key",
+		"gun.GunImplantMixins$Retract",
+		"gun.GunImplantMixins$Colors"
+	],
+	"client": [
+		"BodyTiltMixin",
+		"rig.TentacleLayerMixin",
+		"rig.TentacleRendererMixin",
+		"rig.TentacleCameraCutMixin",
+		"rig.BacktankLayerMixin",
+		"rig.RigSettingsScreenMixin",
+		"rig.ImplantColorsMixin",
+		"rig.CustomizeMixin$Page",
+		"rig.CustomizeMixin$Preview",
+		"rig.CustomizeMixin$Tint"
+	],
+	"minVersion": "0.8"
+}

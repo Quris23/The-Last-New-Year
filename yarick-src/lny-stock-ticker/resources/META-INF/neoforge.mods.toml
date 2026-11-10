@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All rights reserved"
+
+[[mods]]
+modId="lny_stock_ticker"
+version="1.0.0"
+displayName="Stock Ticker Implant"
+authors="yarick"
+description='''Create: Mobile Packages' portable stock ticker as a Chromeware implant: worn in a hands socket, opened with the arm hardware key, sliding out of the right wrist, painted with the implant colours. Made for the Last New Year modpack.'''
+
+[[mixins]]
+config="lny_stock_ticker.mixins.json"
+
+[[dependencies.lny_stock_ticker]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.lny_stock_ticker]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.lny_stock_ticker]]
+    modId="chromeware"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.lny_stock_ticker]]
+    modId="create_mobile_packages"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"

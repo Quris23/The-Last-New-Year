@@ -1,0 +1,7 @@
+{
+  "name": "lny_gun_implants.gun.crane",
+  "display": "lny_gun_implants:crane_display",
+  "data": "lny_gun_implants:crane_data",
+  "type": "rifle",
+  "sort": 351
+}

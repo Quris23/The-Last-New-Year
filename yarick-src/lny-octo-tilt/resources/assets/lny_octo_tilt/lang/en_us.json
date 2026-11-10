@@ -1,0 +1,20 @@
+{
+  "screen.chromeware.part.tentacle_rig.brass": "Shell",
+  "screen.chromeware.part.tentacle_rig.copper": "Collars",
+  "screen.chromeware.part.tentacle_rig.steel": "Rods",
+  "screen.chromeware.part.tentacle_rig.dark": "Frame",
+  "screen.chromeware.part.tentacle_rig.lights": "Lights",
+  "screen.chromeware.part.tentacle_rig.wire": "Pads",
+  "item.lny_octo_tilt.crane_implant": "Implant: \"Crane\" Assault Rifle",
+  "item.lny_octo_tilt.crane_implant.slot": "Fitted into an arm as arm hardware",
+  "item.lny_octo_tilt.crane_implant.use": "Slides out on the arm hardware key",
+  "message.lny_octo_tilt.gun_implant.arm": "The arm is busy or missing",
+  "screen.chromeware.part.crane_implant.receiver": "Receiver",
+  "screen.chromeware.part.crane_implant.handguard": "Handguard",
+  "screen.chromeware.part.crane_implant.barrel": "Barrel",
+  "screen.chromeware.part.crane_implant.sights": "Sights",
+  "screen.chromeware.part.crane_implant.handle": "Handle",
+  "screen.chromeware.part.crane_implant.lights": "Lights",
+  "screen.chromeware.part.crane_implant.hull": "Hull",
+  "screen.chromeware.part.crane_implant.fittings": "Fittings"
+}

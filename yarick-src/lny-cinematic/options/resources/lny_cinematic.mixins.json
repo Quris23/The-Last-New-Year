@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "lny.cinematicoptions.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MixinOptionsLoadingScreenVolume",
+		"MixinSoundOptionsScreen"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

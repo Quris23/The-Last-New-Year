@@ -1,0 +1,12 @@
+modLoader = "lowcodefml"
+loaderVersion = "[1,)"
+license = "All rights reserved"
+
+[[mods]]
+modId = "lny_cinematic"
+version = "1.0.0"
+displayName = "LNY Cinematic"
+description = "The Last New Year loading screen trailer: its volume slider among Minecraft's sound options."
+
+[[mixins]]
+config = "lny_cinematic.mixins.json"

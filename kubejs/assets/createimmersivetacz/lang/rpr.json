@@ -1,0 +1,17 @@
+{
+  "item.createimmersivetacz.gun_barrel": "Стволъ",
+  "item.createimmersivetacz.gun_trigger": "Спусковой механизмъ",
+  "fluid_type.createimmersivetacz.gunpowder_fluid": "Жидкій порохъ",
+  "fluid_type.createimmersivetacz.nitropowder_fluid": "Жидкій нитропорохъ",
+  "item.createimmersivetacz.slap_casing": "Гильза SLAP",
+  "item.createimmersivetacz.rimmed_blunt_ap_casing": "Гильза бронебойнаго тупоконечнаго патрона съ закраиной",
+  "item.createimmersivetacz.pneumatic_pistol_casing": "Гильза пневматическаго пистолетнаго патрона",
+  "item.createimmersivetacz.grenade_casing": "Корпусъ пневматической гранаты",
+  "item.createimmersivetacz.40mmhe_casing": "Гильза 40-мм осколочно-фугаснаго снаряда",
+  "item.createimmersivetacz.twelve_gauge_shell": "Патронъ 12-го калибра",
+  "item.createimmersivetacz.gunpowder_bucket": "Ведро жидкаго пороха",
+  "item.createimmersivetacz.nitropowder_bucket": "Ведро жидкаго нитропороха",
+  "item.createimmersivetacz.primer": "Капсюль",
+  "item.createimmersivetacz.firing_mechanism": "Ударно-спусковой механизмъ",
+  "creativetab.create_immersive_tacz_tab": "Create: Immersive TaCZ"
+}

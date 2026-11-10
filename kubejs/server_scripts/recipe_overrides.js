@@ -172,4 +172,20 @@ ServerEvents.recipes(event => {
         results: [{ id: 'chromeware:military_immunosuppressant', amount: 1000 }]
     }).id('kubejs:mixing/military_immunosuppressant')
 
+    // TaCZ: оружейные станки стандартного пака без рецептов (шаг Extra руководства Create Armorer).
+    // Оружие делается через Create (Create Immersive TaCZ), сами станки крафтятся как раньше
+    event.remove({ type: 'tacz:gun_smith_table_crafting', id: /^tacz:/ })
+
+    // Create Armorer: в сборке только «Моментъ», «Кранъ», «Катокъ», «Камень», «Подшипникъ», «Рукоятка», «Саламандра», «Маховикъ».
+    // Остальные пушки, патроны и обвесы, которые не подходят ни к одной из них, без рецептов
+    // (fluid_pipe_* и special_melee_atomic делают предметы, которых нет в этой версии пака; unmelee_wrench превращал любую пушку в ключ Create).
+    // Скрыты в JEI: witherstormmod client/jei/TaczHiddenItems и client_scripts/hide_items.js
+    ;[
+        'guns/grenade_launcher', 'guns/pistol', 'guns/semi_rifle', 'guns/sniper',
+        'guns/melee_wrench', 'guns/unmelee_wrench', 'guns/special_melee_atomic',
+        'ammo/grenade_casing', 'ammo/grenade_casing_fill',
+        'attachments/ap_projectile', 'attachments/wrench_iron_spike', 'attachments/muzzle_refit_energy_blade',
+        'attachments/fluid_pipe_grip', 'attachments/fluid_pipe_muzzle', 'attachments/fluid_pipe_scope'
+    ].forEach(id => event.remove({ id: `createimmersivetacz:${id}` }))
+
 })

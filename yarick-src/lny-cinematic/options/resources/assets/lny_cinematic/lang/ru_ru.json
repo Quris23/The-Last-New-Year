@@ -1,0 +1,4 @@
+{
+  "options.lny_cinematic.loadingScreenVolume": "Заставка",
+  "options.lny_cinematic.loadingScreenVolume.tooltip": "Громкость ролика во время загрузки игры. Применится при следующем запуске."
+}

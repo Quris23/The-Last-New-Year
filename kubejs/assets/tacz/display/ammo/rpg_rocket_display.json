@@ -1,0 +1,20 @@
+{
+  "model": "lny_ammo:ammo/rpg_rocket",
+  "texture": "lny_ammo:ammo/uv/rpg_rocket",
+  "slot": "tacz:ammo/slot/rpg_rocket",
+  "entity": {
+    "model": "tacz:ammo_entity/rpg_rocket",
+    "texture": "tacz:ammo_entity/rpg_rocket"
+  },
+  "particle": {
+    "name": "campfire_signal_smoke",
+    "delta": [
+      0,
+      0,
+      0
+    ],
+    "speed": 0.005,
+    "life_time": 100,
+    "count": 10
+  }
+}

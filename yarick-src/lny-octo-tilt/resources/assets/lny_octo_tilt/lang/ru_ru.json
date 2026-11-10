@@ -1,0 +1,20 @@
+{
+  "screen.chromeware.part.tentacle_rig.brass": "Корпус",
+  "screen.chromeware.part.tentacle_rig.copper": "Муфты",
+  "screen.chromeware.part.tentacle_rig.steel": "Стержни",
+  "screen.chromeware.part.tentacle_rig.dark": "Каркас",
+  "screen.chromeware.part.tentacle_rig.lights": "Огни",
+  "screen.chromeware.part.tentacle_rig.wire": "Присоски",
+  "item.lny_octo_tilt.crane_implant": "Имплант: штурмовая винтовка «Кран»",
+  "item.lny_octo_tilt.crane_implant.slot": "Ставится в руку как оружие рук",
+  "item.lny_octo_tilt.crane_implant.use": "Выдвигается клавишей оружия рук",
+  "message.lny_octo_tilt.gun_implant.arm": "Рука занята или отсутствует",
+  "screen.chromeware.part.crane_implant.receiver": "Коробка",
+  "screen.chromeware.part.crane_implant.handguard": "Цевьё",
+  "screen.chromeware.part.crane_implant.barrel": "Ствол",
+  "screen.chromeware.part.crane_implant.sights": "Прицел",
+  "screen.chromeware.part.crane_implant.handle": "Рукоять",
+  "screen.chromeware.part.crane_implant.lights": "Подсветка",
+  "screen.chromeware.part.crane_implant.hull": "Корпус",
+  "screen.chromeware.part.crane_implant.fittings": "Крепёж"
+}

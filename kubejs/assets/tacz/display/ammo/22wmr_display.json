@@ -1,0 +1,10 @@
+{
+  "model": "lny_ammo:ammo/22wmr",
+  "texture": "lny_ammo:ammo/uv/22wmr",
+  "slot": "tacz:ammo/slot/22wmr",
+  "shell": {
+    "model": "tacz:shell/22wmr_shell",
+    "texture": "tacz:shell/22wmr_shell"
+  },
+  "tracer_color": "#ffe09e"
+}

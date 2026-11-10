@@ -1,0 +1,4 @@
+{
+  "options.lny_cinematic.loadingScreenVolume": "Loading Screen",
+  "options.lny_cinematic.loadingScreenVolume.tooltip": "Volume of the trailer while the game loads. Applies from the next launch."
+}

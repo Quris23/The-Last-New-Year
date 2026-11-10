@@ -1,0 +1,63 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All rights reserved"
+
+[[mods]]
+modId="lny_octo_tilt"
+version="1.3.0"
+displayName="Octo Arms Camera Tilt"
+authors="yarick"
+description='''While Create: Octo Arms' tentacle rig carries you, you lean to the surfaces its tentacles grip, the way Aeronautics Camera Sync leans you on an uneven Sable deck: the camera, and with aero_player_tilt the body and hitbox by the same angle (all of it client side). On the server it keeps the rig from folding mid-climb after a server stall. Made for the Last New Year modpack.'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[mixins]]
+config="lny_octo_tilt.mixins.json"
+
+[[dependencies.lny_octo_tilt]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="aero_cam_sync"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="tentaworks"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="aero_player_tilt"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="chromeware"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.lny_octo_tilt]]
+    modId="tacz"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="BOTH"

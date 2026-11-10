@@ -23,6 +23,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'clockwork:broken_dragonfly_spawn_egg',
         'alexscaves:hazmat_chestplate',
         'alexscaves:hazmat_leggings',
-        'alexscaves:hazmat_boots'
+        'alexscaves:hazmat_boots',
+        // корпус гранаты «Опустошителя» (пушки нет в сборке)
+        'createimmersivetacz:grenade_casing'
     ])
 })

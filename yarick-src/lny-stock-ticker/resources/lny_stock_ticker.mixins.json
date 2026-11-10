@@ -1,0 +1,23 @@
+{
+	"required": false,
+	"package": "lny.stockticker.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"TickerImplantMixins$Rule",
+		"TickerImplantMixins$Key",
+		"TickerImplantMixins$Find",
+		"TickerImplantColorsMixin"
+	],
+	"client": [
+		"TickerImplantMixins$Crouch",
+		"TickerArmMixins$Hardware",
+		"TickerArmMixins$Launcher",
+		"TickerArmMixins$Monowire",
+		"TickerArmMixins$Extendo",
+		"TickerArmMixins$Blade",
+		"TickerCustomizeMixins$Page",
+		"TickerCustomizeMixins$Preview",
+		"TickerCustomizeMixins$Tint"
+	],
+	"minVersion": "0.8"
+}
