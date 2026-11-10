@@ -182,6 +182,8 @@ ServerEvents.recipes(event => {
     // Скрыты в JEI: witherstormmod client/jei/TaczHiddenItems и client_scripts/hide_items.js
     ;[
         'guns/grenade_launcher', 'guns/pistol', 'guns/semi_rifle', 'guns/sniper',
+        'guns/assault_rifle', // «Кранъ» только имплантом (lny_octo_tilt:crane_implant)
+        'guns/double_barrel_shotgun', // «Камень» только имплантом (lny_octo_tilt:stone_implant)
         'guns/melee_wrench', 'guns/unmelee_wrench', 'guns/special_melee_atomic',
         'ammo/grenade_casing', 'ammo/grenade_casing_fill',
         'attachments/ap_projectile', 'attachments/wrench_iron_spike', 'attachments/muzzle_refit_energy_blade',

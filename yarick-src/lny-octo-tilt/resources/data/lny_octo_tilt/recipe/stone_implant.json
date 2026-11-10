@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    { "type": "neoforge:mod_loaded", "modid": "create" },
+    { "type": "neoforge:mod_loaded", "modid": "chromeware" },
+    { "type": "neoforge:mod_loaded", "modid": "tacz" },
+    { "type": "neoforge:mod_loaded", "modid": "createimmersivetacz" }
+  ],
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "B": { "item": "createimmersivetacz:gun_barrel" },
+    "C": { "item": "create:brass_block" },
+    "F": { "item": "createimmersivetacz:firing_mechanism" },
+    "T": { "item": "createimmersivetacz:gun_trigger" },
+    "W": { "tag": "minecraft:planks" },
+    "A": { "item": "create:sturdy_sheet" },
+    "R": { "item": "chromeware:handle_wrap" },
+    "Z": { "item": "create:iron_sheet" },
+    "P": { "item": "create:precision_mechanism" },
+    "E": { "item": "create:brass_sheet" },
+    "S": { "item": "create:shaft" }
+  },
+  "pattern": [
+    "BCF",
+    "BTW",
+    "ARA",
+    "ZPZ",
+    "ESE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lny_octo_tilt:stone_implant"
+  },
+  "show_notification": false
+}

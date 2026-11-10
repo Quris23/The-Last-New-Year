@@ -44,6 +44,30 @@ public class GunImplantMixins {
       }
    }
 
+   // The surgery chair sorts what it is handed: arm hardware goes into an arm, anything else into an implant socket
+   @Pseudo
+   @Mixin(targets = "com.chromeware.surgery.Surgery", remap = false)
+   public static class Chair {
+      @Inject(method = "armHardware", at = @At("HEAD"), cancellable = true, remap = false)
+      private static void octotilt$gunArmHardware(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+         if (GunImplants.isImplant(stack)) {
+            cir.setReturnValue(true);
+         }
+      }
+   }
+
+   // What an implant takes of the implant capacity: the gun implants weigh as Chromeware's own arm weapons
+   @Pseudo
+   @Mixin(targets = "com.chromeware.cyberware.CyberwareStats", remap = false)
+   public static class Stats {
+      @Inject(method = "get", at = @At("HEAD"), cancellable = true, remap = false)
+      private static void octotilt$gunCapacity(ItemStack item, CallbackInfoReturnable<com.chromeware.cyberware.CyberwareStats.Stats> cir) {
+         if (GunImplants.isImplant(item)) {
+            cir.setReturnValue(new com.chromeware.cyberware.CyberwareStats.Stats(GunImplants.CAPACITY, 0));
+         }
+      }
+   }
+
    // The key that deploys arm hardware. With nothing out, an implanted gun comes first: it slides out alone. The stock
    // ticker's mixin (default priority) is applied after this one, so its own use of the key is asked before
    @Pseudo
@@ -92,8 +116,8 @@ public class GunImplantMixins {
    public static class Colors {
       @Inject(method = "valid", at = @At("HEAD"), cancellable = true, remap = false)
       private static void octotilt$gunColors(String key, CallbackInfoReturnable<Boolean> cir) {
-         String prefix = GunImplants.CRANE + ":";
-         if (key.startsWith(prefix) && GunImplants.PARTS.contains(key.substring(prefix.length()))) {
+         int split = key.indexOf(':');
+         if (split > 0 && GunImplants.byKey(key.substring(0, split)) != null && GunImplants.PARTS.contains(key.substring(split + 1))) {
             cir.setReturnValue(true);
          }
       }

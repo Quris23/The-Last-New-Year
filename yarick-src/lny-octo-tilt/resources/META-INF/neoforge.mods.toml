@@ -4,7 +4,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="lny_octo_tilt"
-version="1.3.0"
+version="1.4.0"
 displayName="Octo Arms Camera Tilt"
 authors="yarick"
 description='''While Create: Octo Arms' tentacle rig carries you, you lean to the surfaces its tentacles grip, the way Aeronautics Camera Sync leans you on an uneven Sable deck: the camera, and with aero_player_tilt the body and hitbox by the same angle (all of it client side). On the server it keeps the rig from folding mid-climb after a server stall. Made for the Last New Year modpack.'''

@@ -2,28 +2,32 @@
   "neoforge:conditions": [
     { "type": "neoforge:mod_loaded", "modid": "create" },
     { "type": "neoforge:mod_loaded", "modid": "chromeware" },
-    { "type": "neoforge:mod_loaded", "modid": "tacz" }
+    { "type": "neoforge:mod_loaded", "modid": "tacz" },
+    { "type": "neoforge:mod_loaded", "modid": "createimmersivetacz" }
   ],
   "type": "create:mechanical_crafting",
-  "accept_mirrored": true,
+  "accept_mirrored": false,
   "category": "misc",
   "key": {
-    "A": { "item": "create:sturdy_sheet" },
-    "W": { "item": "chromeware:handle_wrap" },
-    "C": { "item": "create:cogwheel" },
-    "G": { "type": "lny_octo_tilt:tacz_gun", "gun": "create_armorer:rifle_assult_crane" },
-    "I": { "item": "create:iron_sheet" },
+    "B": { "item": "createimmersivetacz:gun_barrel" },
     "P": { "item": "create:precision_mechanism" },
-    "B": { "item": "create:brass_sheet" },
+    "F": { "item": "createimmersivetacz:firing_mechanism" },
+    "I": { "item": "minecraft:iron_ingot" },
+    "T": { "item": "createimmersivetacz:gun_trigger" },
+    "W": { "tag": "minecraft:planks" },
+    "A": { "item": "create:sturdy_sheet" },
+    "R": { "item": "chromeware:handle_wrap" },
+    "C": { "item": "create:cogwheel" },
+    "Z": { "item": "create:iron_sheet" },
     "S": { "item": "create:shaft" },
-    "F": { "item": "create:andesite_alloy" }
+    "E": { "item": "create:brass_sheet" }
   },
   "pattern": [
-    "AWA",
-    "CGC",
-    "IPI",
-    "BSB",
-    " F "
+    "BPFI",
+    " TW ",
+    "ARCA",
+    "ZPSZ",
+    " EE "
   ],
   "result": {
     "count": 1,

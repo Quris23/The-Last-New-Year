@@ -60,7 +60,9 @@ public class CustomizeMixin {
                );
                implants.add("tentacle_rig");
                if (GunImplants.active()) {
-                  implants.add(GunImplants.CRANE);
+                  for (GunImplants.Kind kind : GunImplants.kinds()) {
+                     implants.add(kind.key());
+                  }
                }
                octotilt$implants = List.copyOf(implants);
             } catch (ReflectiveOperationException var21) {
@@ -243,8 +245,8 @@ public class CustomizeMixin {
          remap = false
       )
       private static void octotilt$rigItem(String implant, CallbackInfoReturnable<ItemStack> cir) {
-         if (implant.equals(GunImplants.CRANE)) {
-            cir.setReturnValue(GunImplantColors.icon());
+         if (GunImplants.byKey(implant) != null) {
+            cir.setReturnValue(GunImplantColors.icon(implant));
             return;
          }
          if (RigColors.isRigRow(implant)) {
@@ -259,8 +261,8 @@ public class CustomizeMixin {
          remap = false
       )
       private void octotilt$rigInstalled(String implant, CallbackInfoReturnable<Boolean> cir) {
-         if (implant.equals(GunImplants.CRANE)) {
-            cir.setReturnValue(GunImplantColors.installed(Minecraft.getInstance().player));
+         if (GunImplants.byKey(implant) != null) {
+            cir.setReturnValue(GunImplantColors.installed(Minecraft.getInstance().player, implant));
             return;
          }
          if (RigColors.isRigRow(implant)) {
@@ -284,8 +286,8 @@ public class CustomizeMixin {
       private static void octotilt$rigPreview(
          GuiGraphics graphics, String implant, @Coerce Object colors, float x, float y, float size, float yaw, float pitch, float seconds, CallbackInfo ci
       ) {
-         if (implant.equals(GunImplants.CRANE)) {
-            GunImplantColors.preview(graphics, colors, x, y, size, yaw, pitch);
+         if (GunImplants.byKey(implant) != null) {
+            GunImplantColors.preview(graphics, implant, colors, x, y, size, yaw, pitch);
             ci.cancel();
             return;
          }
@@ -302,7 +304,7 @@ public class CustomizeMixin {
          remap = false
       )
       private static void octotilt$rigYaw(String implant, CallbackInfoReturnable<Float> cir) {
-         if (implant.equals(GunImplants.CRANE)) {
+         if (GunImplants.byKey(implant) != null) {
             cir.setReturnValue(35.0F);
             return;
          }
@@ -325,9 +327,9 @@ public class CustomizeMixin {
          remap = false
       )
       private static void octotilt$rigParts(String implant, CallbackInfoReturnable<List<String>> cir) {
-         GunImplantColors.compactRows = implant.equals(GunImplants.CRANE);
+         GunImplantColors.compactRows = GunImplants.byKey(implant) != null;
          if (GunImplantColors.compactRows) {
-            cir.setReturnValue(GunImplantColors.parts());
+            cir.setReturnValue(GunImplantColors.parts(implant));
             return;
          }
          if (RigColors.isRigRow(implant)) {
@@ -342,8 +344,8 @@ public class CustomizeMixin {
          remap = false
       )
       private static void octotilt$rigColor(String implant, String part, CallbackInfoReturnable<Integer> cir) {
-         if (implant.equals(GunImplants.CRANE)) {
-            cir.setReturnValue(GunImplantColors.defaultColor(part));
+         if (GunImplants.byKey(implant) != null) {
+            cir.setReturnValue(GunImplantColors.defaultColor(implant, part));
             return;
          }
          if (RigColors.isRigRow(implant)) {

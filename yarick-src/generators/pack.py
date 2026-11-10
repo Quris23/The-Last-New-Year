@@ -35,9 +35,10 @@ dump(os.path.join(D, "index", "guns", "crane.json"), {
     "name": NS + ".gun.crane", "display": NS + ":crane_display", "data": NS + ":crane_data", "type": "rifle", "sort": 351})
 dump(os.path.join(D, "tacz_tags", "attachments", "allow_attachments", "crane.json"),
      ["#tacz:muzzle", "#create_armorer:create_armorer_extended_mag", "create_armorer:muzzle_refit_lava_perfusion_bottle", "#tacz:scope"])
+STONE = {"ru_ru": "Имплант: дробовик «Камень»", "rpr": "Имплантъ: дробовикъ «Камень»", "en_us": "Implant: \"Stone\" Shotgun"}
 for lang, name in (("ru_ru", "Имплант: штурмовая винтовка «Кран»"), ("rpr", "Имплантъ: штурмовая винтовка «Кранъ»"),
                    ("en_us", "Implant: \"Crane\" Assault Rifle")):
-    dump(os.path.join(A, "lang", lang + ".json"), {NS + ".gun.crane": name})
+    dump(os.path.join(A, "lang", lang + ".json"), {NS + ".gun.crane": name, NS + ".gun.stone": STONE[lang]})
 
 for kind, src in (("assets", A), ("data", D)):
     dst = os.path.join(kjs, kind, NS)

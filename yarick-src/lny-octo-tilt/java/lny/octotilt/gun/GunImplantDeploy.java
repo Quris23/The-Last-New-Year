@@ -102,8 +102,12 @@ public final class GunImplantDeploy {
       ItemStack implant = ArmImplants.get(player, side).item();
       CompoundTag tag = GunImplants.data(implant);
       ItemStack gun = tag.contains(GunImplants.GUN) ? ItemStack.parseOptional(player.registryAccess(), tag.getCompound(GunImplants.GUN)) : ItemStack.EMPTY;
-      if (gun.isEmpty() || !TaczGuns.is(gun, GunImplants.CRANE_GUN)) {
-         gun = TaczGuns.create(GunImplants.CRANE_GUN, player.registryAccess());
+      GunImplants.Kind kind = GunImplants.of(implant);
+      if (kind == null) {
+         return false;
+      }
+      if (gun.isEmpty() || !TaczGuns.is(gun, kind.gun())) {
+         gun = TaczGuns.create(kind.gun(), player.registryAccess());
       }
       if (gun.isEmpty()) {
          return false;

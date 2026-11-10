@@ -5,12 +5,16 @@
 	"mixins": [
 		"RigServerMixin",
 		"gun.GunImplantMixins$Install",
+		"gun.GunImplantMixins$Stats",
+		"gun.GunImplantMixins$Chair",
 		"gun.GunImplantMixins$Key",
 		"gun.GunImplantMixins$Retract",
 		"gun.GunImplantMixins$Colors"
 	],
 	"client": [
 		"BodyTiltMixin",
+		"gun.GunAttachmentMixins$Render",
+		"gun.GunAttachmentMixins$Texture",
 		"rig.TentacleLayerMixin",
 		"rig.TentacleRendererMixin",
 		"rig.TentacleCameraCutMixin",

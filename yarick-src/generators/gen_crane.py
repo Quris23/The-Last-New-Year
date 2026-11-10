@@ -122,11 +122,12 @@ HAND_END_Z = -5.75               # z of the knuckles (end face of the arm)
 SHOULDER = [0.5, 0.0, 13.0]      # pivot of the "right" bone (arm + implant swing around it)
 
 BRACER_Z = [-5.4, 3.6]           # bracer length along the forearm
-BRACER_W = 2.5                   # half width (arm is 2)
-BRACER_T = 0.6                   # thickness of the top doors
+BRACER_W = 2.27                  # half width (arm is 2)
+BRACER_T = 0.27                  # thickness of the top doors
 STOW = [0.0, -4.9, 3.6]          # rifle offset inside the arm when folded
 LIFT_Z = (-3.4, 0.9)             # z of the two lift rods under the rifle
 DOOR_INSET = 1.0                 # rim left between the hull edge and the door hinge
+TP_SHIFT = [0.0, 0.15, 8.25]     # third person (bind pose): the hull sits back on the real forearm, the rifle stays where the hand-held Crane is
 DOOR_REST = 118.0  # deployed door angle (bind pose); closed = 0
 RELOAD_LIFT = 2.6                # the rifle rises on the lift for the reload so its rear can drop
 
@@ -319,6 +320,7 @@ def main():
             box(SW_BRASS_DARK, [2.0 if sx > 0 else -w, bot, zc], [wall, 4.0, 0.35])
         box(SW_BRASS_DARK, [-hx, top, zc], [2 * hx, 0.12, 0.35])
         box(SW_BRASS_DARK, [-w, bot - T, zc], [2 * w, T, 0.35])
+    box(SW_BRASS_DARK, [-2.0, bot, z0 - 1.1], [4.0, 4.0, 0.75])                            # front plate
     for zz in (z0 + 1.2, z0 + L * 0.55):  # copper bands: straps around the hull, 0.06 proud of it on every side
         for sx in (-1, 1):
             box(SW_COPPER, [hx - 0.01 if sx > 0 else -w - 0.06, bot - T - 0.06, zz], [w - hx + 0.07, H + 0.12, 0.45])
@@ -385,8 +387,8 @@ def main():
     bone("refit_scope_view", "view", [-7, 8, 3], rotation=[0, 60, 0])
     bone("refit_muzzle_view", "view", [-6, 5, -13], rotation=[0, 107.5, 0])
     bone("positioning", None, [0, 0, 0])
-    # third person: the hand's item anchor is the end of the real arm, on its front face; ours goes there
-    bone("thirdperson_hand", "positioning", [0, ARM_TOP, HAND_END_Z])
+    # third person: the Crane held in the hand has its anchor at z 2.5 (muzzle 11 px ahead); the implant sticks out 75% of that
+    bone("thirdperson_hand", "positioning", [0, 3.5, 2.5])
     bone("ground", "positioning", [0, 0, 1])
     bone("fixed", "positioning", [1, 4, 1], rotation=[0, -90, 0])
     bone("camera", None, EYE)
@@ -400,6 +402,15 @@ def main():
             "bones": bones}]}
     gdir = os.path.join(out, "assets", NS, "geo_models", "gun")
     os.makedirs(gdir, exist_ok=True)
+    # Bind pose = third person and GUI (TaCZ draws those without animations): the hull and the lift are moved back
+    # onto the forearm. In first person static_idle moves them forward again, under the rifle.
+    for b in bones:
+        if b["name"] in ("bracer", "status_light_illuminated", "door_l", "door_r", "door_bottom_l", "door_bottom_r", "carriage"):
+            b["pivot"] = [r5(b["pivot"][i] + TP_SHIFT[i]) for i in range(3)]
+            for c in b.get("cubes", []):
+                c["origin"] = [r5(c["origin"][i] + TP_SHIFT[i]) for i in range(3)]
+                if "pivot" in c:
+                    c["pivot"] = [r5(c["pivot"][i] + TP_SHIFT[i]) for i in range(3)]
     ATLAS.finalize()
     json.dump(new_geo, open(os.path.join(gdir, f"{NAME}_geo.json"), "w", encoding="utf-8"), indent=1)
     json.dump({"palette": PALETTE, "rects": ATLAS.paint}, open(os.path.join(out, "paint.json"), "w", encoding="utf-8"), indent=1)
@@ -440,6 +451,8 @@ def write_animations(out, O, R):
         "righthand_pos": {"scale": ARM_SCALE},
         "lefthand_pos": {"scale": ARM_SCALE},
         "left": {"position": rest_l_pos, "rotation": rest_l_rot},
+        "bracer": {"position": [-TP_SHIFT[0], -TP_SHIFT[1], -TP_SHIFT[2]]},
+        "carriage": {"position": [-TP_SHIFT[0], -TP_SHIFT[1], -TP_SHIFT[2]]},
     }}
 
     # rifle offsets are in the parent (implant) frame, bedrock x

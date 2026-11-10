@@ -6,8 +6,6 @@
   "screen.chromeware.part.tentacle_rig.lights": "Lights",
   "screen.chromeware.part.tentacle_rig.wire": "Pads",
   "item.lny_octo_tilt.crane_implant": "Implant: \"Crane\" Assault Rifle",
-  "item.lny_octo_tilt.crane_implant.slot": "Fitted into an arm as arm hardware",
-  "item.lny_octo_tilt.crane_implant.use": "Slides out on the arm hardware key",
   "message.lny_octo_tilt.gun_implant.arm": "The arm is busy or missing",
   "screen.chromeware.part.crane_implant.receiver": "Receiver",
   "screen.chromeware.part.crane_implant.handguard": "Handguard",
@@ -16,5 +14,14 @@
   "screen.chromeware.part.crane_implant.handle": "Handle",
   "screen.chromeware.part.crane_implant.lights": "Lights",
   "screen.chromeware.part.crane_implant.hull": "Hull",
-  "screen.chromeware.part.crane_implant.fittings": "Fittings"
+  "screen.chromeware.part.crane_implant.fittings": "Fittings",
+  "item.lny_octo_tilt.stone_implant": "Implant: \"Stone\" Shotgun",
+  "screen.chromeware.part.stone_implant.receiver": "Brass",
+  "screen.chromeware.part.stone_implant.handguard": "Handguard",
+  "screen.chromeware.part.stone_implant.barrel": "Barrels",
+  "screen.chromeware.part.stone_implant.sights": "Breech",
+  "screen.chromeware.part.stone_implant.handle": "Trigger",
+  "screen.chromeware.part.stone_implant.lights": "Lights",
+  "screen.chromeware.part.stone_implant.hull": "Hull",
+  "screen.chromeware.part.stone_implant.fittings": "Fittings"
 }

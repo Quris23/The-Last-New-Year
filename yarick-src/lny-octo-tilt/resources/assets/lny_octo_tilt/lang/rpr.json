@@ -6,8 +6,6 @@
   "screen.chromeware.part.tentacle_rig.lights": "Огни",
   "screen.chromeware.part.tentacle_rig.wire": "Присоски",
   "item.lny_octo_tilt.crane_implant": "Имплантъ: штурмовая винтовка «Кранъ»",
-  "item.lny_octo_tilt.crane_implant.slot": "Ставится въ руку какъ оружіе рукъ",
-  "item.lny_octo_tilt.crane_implant.use": "Выдвигается клавишей оружія рукъ",
   "message.lny_octo_tilt.gun_implant.arm": "Рука занята или отсутствуетъ",
   "screen.chromeware.part.crane_implant.receiver": "Коробка",
   "screen.chromeware.part.crane_implant.handguard": "Цевьё",
@@ -16,5 +14,14 @@
   "screen.chromeware.part.crane_implant.handle": "Рукоять",
   "screen.chromeware.part.crane_implant.lights": "Подсвѣтка",
   "screen.chromeware.part.crane_implant.hull": "Корпусъ",
-  "screen.chromeware.part.crane_implant.fittings": "Крѣпежъ"
+  "screen.chromeware.part.crane_implant.fittings": "Крѣпежъ",
+  "item.lny_octo_tilt.stone_implant": "Имплантъ: дробовикъ «Камень»",
+  "screen.chromeware.part.stone_implant.receiver": "Латунь",
+  "screen.chromeware.part.stone_implant.handguard": "Цевьё",
+  "screen.chromeware.part.stone_implant.barrel": "Стволы",
+  "screen.chromeware.part.stone_implant.sights": "Колодка",
+  "screen.chromeware.part.stone_implant.handle": "Спускъ",
+  "screen.chromeware.part.stone_implant.lights": "Подсвѣтка",
+  "screen.chromeware.part.stone_implant.hull": "Корпусъ",
+  "screen.chromeware.part.stone_implant.fittings": "Крѣпежъ"
 }

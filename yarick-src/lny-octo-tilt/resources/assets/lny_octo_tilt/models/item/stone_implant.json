@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lny_octo_tilt:item/stone_implant"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "lny_gun_implants.gun.stone",
+  "display": "lny_gun_implants:stone_display",
+  "data": "lny_gun_implants:stone_data",
+  "type": "shotgun",
+  "sort": 352
+}
