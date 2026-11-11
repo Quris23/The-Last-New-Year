@@ -1,0 +1,11 @@
+{
+ "parent": "tacz:root",
+ "criteria": {
+  "craft": {
+   "trigger": "minecraft:recipe_crafted",
+   "conditions": {
+    "recipe_id": "tacz:attachment_workbench"
+   }
+  }
+ }
+}

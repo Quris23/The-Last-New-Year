@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
     ])
 
     event.recipes.create.mixing(Fluid.of('kubejs:annihilation_fluid', 2000), [
+        'legendary_monsters:enderitium_gem',
         'minecraft:ender_eye'
     ])
 
@@ -72,9 +73,20 @@ ServerEvents.recipes(event => {
         Fluid.of('kubejs:cloud_fluid', 250)
     ])
 
-    // Черная сталь: стержни на прокатном станке, как железные и медные
+    // Черная сталь прокатном станке
     event.custom({
     type: 'createaddition:rolling',
+    ingredients: [
+        { item: 'cataclysm:black_steel_ingot' }
+    ],
+    results: [
+        { id: 'kubejs:black_steel_rod', count: 2 }
+    ]
+    })
+
+    // Черная сталь кусачками
+    event.custom({
+    type: 'createdieselgenerators:wire_cutting',
     ingredients: [
         { item: 'cataclysm:black_steel_ingot' }
     ],
@@ -386,13 +398,26 @@ ServerEvents.recipes(event => {
     // Заражённый чёрный аргиллит
     event.recipes.create.haunting('kubejs:infested_black_argillite', 'born_in_chaos_v1:black_argillite')
 
-    
     // Тёмный металл
     event.recipes.create.crushing([
         CreateItem.of('born_in_chaos_v1:black_argillite', 0.33),
         CreateItem.of('born_in_chaos_v1:dark_metal_nugget', 0.01),
         CreateItem.of('born_in_chaos_v1:pileof_dark_metal', 0.005)
     ], 'kubejs:infested_black_argillite').processingTime(350)
+
+    // Эндеритиум
+    event.recipes.create.mixing('legendary_monsters:enderitium_gem', [
+        'popped_chorus_fruit',
+        'born_in_chaos_v1:dark_metal_nugget',
+        Fluid.of('aeronautics:levitite_blend', 20)
+    ]).superheated()
+
+    // Слиток эндеритиума
+    event.recipes.create.mixing('legendary_monsters:enderitium_ingot', [
+        Item.of('popped_chorus_fruit', 9),
+        'born_in_chaos_v1:dark_metal_ingot',
+        Fluid.of('aeronautics:levitite_blend', 180)
+    ]).superheated()
 
     // Улучшения-помпы рюкзаков: опыт, кровь, мана
     let pump = ['create:mechanical_pump', 'createcasing:andesite_mechanical_pump', 'createcasing:brass_mechanical_pump', 'createcasing:zinc_mechanical_pump']
@@ -427,6 +452,39 @@ ServerEvents.recipes(event => {
         b: 'irons_spellbooks:arcane_essence',
         u: 'sophisticatedbackpacks:advanced_pump_upgrade',
         s: 'create_wizardry:mana_siphon'
+    })
+
+    // Эндерированная кожа Дракона
+    event.custom({
+        type: 'create_dragons_plus:ending',
+        ingredients: [{ item: 'irons_spellbooks:dragonskin' }],
+        results: [{ id: 'kubejs:ending_dragonskin' }]
+    })
+    // Эндерированная драконья чешуя
+    event.custom({
+        type: 'create_dragons_plus:ending',
+        ingredients: [{ item: 'quark:dragon_scale' }],
+        results: [{ id: 'kubejs:ending_dragon_scale' }]
+    })
+
+    // Эндерированная бронепластина тёмно-хориевой стали
+    event.shaped('kubejs:ending_armor_plate_from_dark_chorium_steel', [
+        'Ssi',
+        'iii',
+        'isS'
+    ], {
+        S: 'kubejs:ending_dragonskin',
+        s: 'kubejs:ending_dragon_scale',
+        i: 'kubejs:dark_chorium_steel'
+    })
+    event.shaped('kubejs:ending_armor_plate_from_dark_chorium_steel', [
+        'Ssi',
+        'iii',
+        'isS'
+    ], {
+        s: 'kubejs:ending_dragonskin',
+        S: 'kubejs:ending_dragon_scale',
+        i: 'kubejs:dark_chorium_steel'
     })
 })
 

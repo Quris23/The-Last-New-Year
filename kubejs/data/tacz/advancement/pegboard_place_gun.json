@@ -1,0 +1,31 @@
+{
+ "parent": "tacz:arms_exhibition",
+ "criteria": {
+  "dye": {
+   "trigger": "minecraft:recipe_crafted",
+   "conditions": {
+    "recipe_id": "tacz:gun_pegboard_dye"
+   }
+  },
+  "vanilla_dye": {
+   "trigger": "minecraft:recipe_crafted",
+   "conditions": {
+    "recipe_id": "minecraft:armor_dye",
+    "ingredients": [
+     {
+      "items": [
+       "tacz:gun_pegboard",
+       "tacz:glow_gun_pegboard"
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "requirements": [
+  [
+   "dye",
+   "vanilla_dye"
+  ]
+ ]
+}

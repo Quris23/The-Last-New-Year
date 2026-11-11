@@ -14,6 +14,12 @@ StartupEvents.registry('item', event => {
 
     //event.create('echo_ender_rune').displayName('Руна эхо-эндера')
     event.create('dark_chorium_steel').displayName('Тёмно-хориевая сталь')
+    // Эндерированная кожа Дракона
+    event.create('ending_dragonskin').displayName('Эндерировання шкура дракона')
+    // Эндерировання чешуя Дракона
+    event.create('ending_dragon_scale').displayName('Эндерировання чешуя дракона')
+    // Эндерированная бронепластина тёмно-хориевой стали
+    event.create('ending_armor_plate_from_dark_chorium_steel').displayName('Эндерировання бронепластина тёмно-хориевой стали')
 
     event.create('ancient_upgrade_smithing_template', 'smithing_template')
     .displayName('Кузнечный шаблон: Улучшение костей рептилии')
@@ -258,6 +264,14 @@ ItemEvents.modification(event => {
   event.modify('echoing_magic:reinforced_juggernaut_leggings', item => {
     item.maxDamage = 750; item.damage = 0; item.remove('minecraft:unbreakable')  })
   event.modify('echoing_magic:reinforced_juggernaut_boots', item => {
+    item.maxDamage = 650; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_helmet', item => {
+    item.maxDamage = 550; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_chestplate', item => {
+    item.maxDamage = 800; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_leggings', item => {
+    item.maxDamage = 750; item.damage = 0; item.remove('minecraft:unbreakable')  })
+  event.modify('witherstormmod:enderitium_juggernaut_boots', item => {
     item.maxDamage = 650; item.damage = 0; item.remove('minecraft:unbreakable')  })
   
   // Оплот пламени

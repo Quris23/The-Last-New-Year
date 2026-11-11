@@ -1,0 +1,20 @@
+{
+ "parent": "tacz:craft_first_gun",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:modern_kinetic_gun"
+      ],
+      "predicates": {
+       "minecraft:custom_data": "{GunId:\"tacz:timeless50\"}"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

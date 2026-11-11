@@ -134,4 +134,65 @@ ServerEvents.recipes(event => {
     event.replaceInput({ input: 'discerning_the_eldritch:eldritch_rune' },
         'discerning_the_eldritch:eldritch_rune', 'arcanerunes:eldritch_rune')
 
+    // Макска химзащиты
+    event.remove({ output: 'alexscaves:hazmat_mask' })
+    event.recipes.create.mechanical_crafting('alexscaves:hazmat_mask', [
+        'ppppp',
+        'ppppp',
+        'pp pp',
+        'ppppp',
+        'ppppp'
+    ], {
+        p: 'alexscaves:polymer_plate'
+    })
+
+    // Иммунодепрессанты
+    event.remove({ id: 'chromeware:mixing/standard_immunosuppressant' })
+    event.remove({ id: 'chromeware:mixing/military_immunosuppressant' })
+    event.remove({ id: 'chromeware:mixing/military_immunosuppressant_from_awkward' })
+    // Стандартный
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [
+            { item: 'minecraft:golden_carrot' },
+            {
+                type: 'neoforge:components',
+                amount: 1000,
+                components: {
+                    'create:potion_fluid_bottle_type': 'regular',
+                    'minecraft:potion_contents': { potion: 'minecraft:awkward' }
+                },
+                fluids: 'create:potion'
+            }
+        ],
+        results: [{ id: 'chromeware:standard_immunosuppressant', amount: 1000 }]
+    }).id('kubejs:mixing/standard_immunosuppressant')
+    // Военный
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [
+            { item: 'minecraft:golden_apple' },
+            { type: 'neoforge:single', fluid: 'chromeware:standard_immunosuppressant', amount: 1000 }
+        ],
+        results: [{ id: 'chromeware:military_immunosuppressant', amount: 1000 }]
+    }).id('kubejs:mixing/military_immunosuppressant')
+
+    // TaCZ: оружейные станки стандартного пака без рецептов (шаг Extra руководства Create Armorer).
+    // Оружие делается через Create (Create Immersive TaCZ), сами станки крафтятся как раньше
+    event.remove({ type: 'tacz:gun_smith_table_crafting', id: /^tacz:/ })
+
+    // Create Armorer: в сборке только «Моментъ», «Кранъ», «Катокъ», «Камень», «Подшипникъ», «Рукоятка», «Саламандра», «Маховикъ».
+    // Остальные пушки, патроны и обвесы, которые не подходят ни к одной из них, без рецептов
+    // (fluid_pipe_* и special_melee_atomic делают предметы, которых нет в этой версии пака; unmelee_wrench превращал любую пушку в ключ Create).
+    // Скрыты в JEI: witherstormmod client/jei/TaczHiddenItems и client_scripts/hide_items.js
+    ;[
+        'guns/grenade_launcher', 'guns/pistol', 'guns/semi_rifle', 'guns/sniper',
+        'guns/melee_wrench', 'guns/unmelee_wrench', 'guns/special_melee_atomic',
+        'ammo/grenade_casing', 'ammo/grenade_casing_fill',
+        'attachments/ap_projectile', 'attachments/wrench_iron_spike', 'attachments/muzzle_refit_energy_blade',
+        'attachments/fluid_pipe_grip', 'attachments/fluid_pipe_muzzle', 'attachments/fluid_pipe_scope',
+        'guns/assault_rifle', // «Кранъ» только имплантом (lny_octo_tilt:crane_implant)
+        'guns/double_barrel_shotgun' // «Камень» только имплантом (lny_octo_tilt:stone_implant)
+    ].forEach(id => event.remove({ id: `createimmersivetacz:${id}` }))
+
 })

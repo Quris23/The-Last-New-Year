@@ -1,0 +1,13 @@
+{
+ "parent": "tacz:range_time",
+ "criteria": {
+  "hit_target": {
+   "trigger": "tacz:target_hit",
+   "conditions": {
+    "distance": {
+     "min": 128
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "parent": "tacz:attachment_workbench",
+ "criteria": {
+  "refit": {
+   "trigger": "tacz:gun_refit"
+  }
+ }
+}

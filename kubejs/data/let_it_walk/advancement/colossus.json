@@ -1,0 +1,8 @@
+{
+ "parent": "let_it_walk:first_step",
+ "criteria": {
+  "done": {
+   "trigger": "minecraft:impossible"
+  }
+ }
+}

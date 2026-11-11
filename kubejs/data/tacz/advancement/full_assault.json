@@ -1,0 +1,20 @@
+{
+ "parent": "tacz:craft_first_attachment",
+ "criteria": {
+  "equip": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:modern_kinetic_gun"
+      ],
+      "predicates": {
+       "minecraft:custom_data": "{AttachmentSCOPE:{components:{\"minecraft:custom_data\":{}}},AttachmentMUZZLE:{components:{\"minecraft:custom_data\":{}}},AttachmentSTOCK:{components:{\"minecraft:custom_data\":{}}},AttachmentGRIP:{components:{\"minecraft:custom_data\":{}}},AttachmentLASER:{components:{\"minecraft:custom_data\":{}}},AttachmentEXTENDED_MAG:{components:{\"minecraft:custom_data\":{}}}}"
+      }
+     }
+    ]
+   }
+  }
+ }
+}

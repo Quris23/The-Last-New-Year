@@ -1,0 +1,14 @@
+{
+ "criteria": {
+  "has_core": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": "let_it_walk:walker_core"
+     }
+    ]
+   }
+  }
+ }
+}

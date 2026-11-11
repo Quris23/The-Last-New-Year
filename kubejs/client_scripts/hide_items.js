@@ -2,6 +2,11 @@
 // Полностью убирает предметы из JEI и креативных вкладок (не только рецепт - см. server_scripts/remove.js)
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
     event.remove([
+        // Alex's Caves: химзащита (кроме маски)
+        'alexscaves:hazmat_chestplate',
+        'alexscaves:hazmat_leggings',
+        'alexscaves:hazmat_boots',
+
         // Chromeware
         'chromeware:reflex_tuner',
         'chromeware:revulsor',
@@ -107,5 +112,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         'clockwork:dragonfly_spawn_egg',
         'clockwork:broken_dragonfly_spawn_egg',
         'irons_spellbooks:scroll_forge' // заменена Руническим столом
+        // 'createimmersivetacz:grenade_casing' (правка yarick) не добавлен: мода Create Immersive TaCZ в сборке нет,
+        // а несуществующий предмет ломает весь список
     ])
 })

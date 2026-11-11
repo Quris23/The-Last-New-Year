@@ -1,0 +1,21 @@
+{
+ "parent": "pipeorgans:pipe_base",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "pipeorgans:brass_reed"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

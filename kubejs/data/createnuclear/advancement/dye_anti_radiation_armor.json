@@ -1,0 +1,14 @@
+{
+ "parent": "createnuclear:anti_radiation_armor",
+ "criteria": {
+  "0": {
+   "trigger": "createnuclear:dye_anti_radiation_armor_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "createnuclear:uranium_liquid",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "createnuclear:yellowcake"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

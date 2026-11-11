@@ -1,0 +1,21 @@
+{
+ "parent": "createnuclear:chemistry_101",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "createnuclear:nitrogen_concentrate"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

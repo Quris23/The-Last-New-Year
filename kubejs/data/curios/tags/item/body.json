@@ -1,0 +1,5 @@
+{
+  "replace": false,
+  "values": [],
+  "remove": ["create_mobile_packages:portable_stock_ticker"]
+}

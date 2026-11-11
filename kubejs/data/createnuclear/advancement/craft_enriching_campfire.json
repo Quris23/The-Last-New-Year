@@ -1,0 +1,28 @@
+{
+ "parent": "createnuclear:root",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "ingredients": [
+     {
+      "items": "createnuclear:enriched_soul_soil"
+     },
+     {
+      "items": "#minecraft:logs"
+     },
+     {
+      "items": "#c:rods/wooden"
+     }
+    ],
+    "recipe_id": "createnuclear:crafting/enriching_campfire"
+   },
+   "trigger": "minecraft:recipe_crafted"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

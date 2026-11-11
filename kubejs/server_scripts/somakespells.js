@@ -91,4 +91,76 @@ ServerEvents.recipes(event => {
         addition: { item: 'kubejs:dark_chorium_steel' },
         result: { id: 'somakespells:forbidden_hammer' }
     })
+
+    // Канон призывателя: механическая сборка (Create), один проход.
+    // Основа - Зачарованная книга заклинаний; костный блок -> пресс -> зелье ветрового заряда -> пресс.
+    // остался только III (бывшие I и II забанены, его название - «Канон призывателя»): старые рецепты (кузница улучшений) убираем
+    event.remove({ output: 'somakespells:invoker_canon_3_spell_book' })
+    const BOOK = 'irons_spellbooks:diamond_spell_book'
+    event.custom({
+        type: 'create:sequenced_assembly',
+        ingredient: { item: BOOK },
+        results: [{ id: 'somakespells:invoker_canon_3_spell_book' }],
+        loops: 1,
+        sequence: [
+            {
+                type: 'create:deploying',
+                ingredients: [{ item: BOOK }, { item: 'minecraft:bone_block' }],
+                results: [{ id: BOOK }]
+            },
+            {
+                type: 'create:pressing',
+                ingredients: [{ item: BOOK }],
+                results: [{ id: BOOK }]
+            },
+            {
+                type: 'create:deploying',
+                ingredients: [
+                    { item: BOOK },
+                    { type: 'neoforge:components', items: 'minecraft:potion', components: { 'minecraft:potion_contents': { potion: 'minecraft:wind_charged' } } }
+                ],
+                results: [{ id: BOOK }]
+            },
+            {
+                type: 'create:pressing',
+                ingredients: [{ item: BOOK }],
+                results: [{ id: BOOK }]
+            }
+        ],
+        transitional_item: { id: BOOK }
+    }).id('kubejs:sequenced/invoker_canon')
+
+    // Евангелие рассвета: механическая сборка (Create), 3 цикла. Остался только III (I и II забанены), его название - «Евангелие рассвета».
+    // Основа - Деревенская библия; в цикле: золотой лист, осколок души, пресс, светон 250 мБ (Supplementaries).
+    event.remove({ output: 'somakespells:dawnlit_gospel_3_spell_book' })
+    const VBOOK = 'irons_spellbooks:villager_spell_book'
+    event.custom({
+        type: 'create:sequenced_assembly',
+        ingredient: { item: VBOOK },
+        results: [{ id: 'somakespells:dawnlit_gospel_3_spell_book' }],
+        loops: 3,
+        sequence: [
+            {
+                type: 'create:deploying',
+                ingredients: [{ item: VBOOK }, { item: 'create:golden_sheet' }],
+                results: [{ id: VBOOK }]
+            },
+            {
+                type: 'create:deploying',
+                ingredients: [{ item: VBOOK }, { item: 'irons_spellbooks:divine_soulshard' }],
+                results: [{ id: VBOOK }]
+            },
+            {
+                type: 'create:pressing',
+                ingredients: [{ item: VBOOK }],
+                results: [{ id: VBOOK }]
+            },
+            {
+                type: 'create:filling',
+                ingredients: [{ item: VBOOK }, { type: 'neoforge:single', amount: 250, fluid: 'supplementaries:lumisene' }],
+                results: [{ id: VBOOK }]
+            }
+        ],
+        transitional_item: { id: VBOOK }
+    }).id('kubejs:sequenced/dawnlit_gospel')
 })

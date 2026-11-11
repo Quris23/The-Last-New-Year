@@ -1,14 +1,14 @@
 {
-  "item.endrem.old_eye": "§5Око Забытой Древности",
+  "item.endrem.old_eye": "Око Забытой Древности",
   "item.endrem.old_eye.description": "§7§oОставшееся со времён §8§oВеликой Цивилизации\n§7§oОно видело §8§oЭпоху Распада§7§o и ощущает §8§oБиение Мира",
 
-  "item.endrem.rogue_eye": "§aОко Фрактального Краха",
+  "item.endrem.rogue_eye": "Око Фрактального Краха",
   "item.endrem.rogue_eye.description": "§7§oСобранное из тысяч §8§oОсколков Реальности§7§o, рассыпанных во Вселенной\n§7§oОно видит грядущий §8§oРаспад Пространства",
 
-  "item.endrem.nether_eye": "§6Око Адского Пламени",
+  "item.endrem.nether_eye": "Око Адского Пламени",
   "item.endrem.nether_eye.description": "§7§oВпервые зажжённое в §8§oГорниле Семи Преисподних\n§7§oОно не смотрит, а сжигает в огне §8§oАпокалипсиса",
 
-  "item.endrem.cold_eye": "§dОко Первого Разлома",
+  "item.endrem.cold_eye": "Око Первого Разлома",
   "item.endrem.cold_eye.description": "§7§oРождённое в §8§oБездне Океана§7§o, где не светит Солнце\n§7§oОно, со дна, дышит §8§oХолодом Тьмы",
 
   "item.endrem.magical_eye": "§dОко Первородной Магии",
@@ -17,31 +17,31 @@
   "item.endrem.black_eye": "§1Око Абсолютной Тишины",
   "item.endrem.black_eye.description": "§7§oСозданное в тиши самой §8§oГлубинной Тьмы\n§7§oОно поглощает любые звуки и вибрации, засасывая их в §8§oБездну",
 
-  "item.endrem.lost_eye": "§4Око Истинной Скверны",
+  "item.endrem.lost_eye": "Око Истинной Скверны",
   "item.endrem.lost_eye.description": "§7§oСкованное из §8§oГибели§7§o и пропитанное §8§oСмертью\n§7§oОно впитывает мёртвые души и источает §8§oШёпот Забвенья",
 
-  "item.endrem.wither_eye": "§7Око Вечных Бурь",
+  "item.endrem.wither_eye": "Око Вечных Бурь",
   "item.endrem.wither_eye.description": "§7§oЗастывшее в эпицентре §8§oТысячи Гроз§7§o, где разверзается небо\n§7§oОно слышит §8§oГром Богов§7§o и видит весь §8§oМир",
 
   "item.endrem.guardian_eye": "§3Око Глубинного Стража",
   "item.endrem.guardian_eye.description": "§7§oСвидетель бесчисленных кораблекрушений и §8§oУтонувших Надежд\n§7§oОно хранит секреты тех, кто не смог вернуться с §8§oМорского Дна",
 
-  "item.endrem.cursed_eye": "§3Око Непростительного Проклятия",
+  "item.endrem.cursed_eye": "Око Непростительного Проклятия",
   "item.endrem.cursed_eye.description": "§7§oСодержащее §8§oНенависть§7§o, источающее §8§oГрех\n§7§oОно лишает прощения и отравляет §8§oДушу",
 
-  "item.endrem.exotic_eye": "§1Око Семи Морей",
+  "item.endrem.exotic_eye": "Око Семи Морей",
   "item.endrem.exotic_eye.description": "§7§oЗалитое §8§oДевятым Валом§7§o Айвазовского, что бушует вечно\n§7§oОно хранит §8§oТайны Семи Морей§7§o и поет о §8§oПлаче Океана",
 
   "item.endrem.evil_eye": "§8Око Рокового Предзнаменования",
   "item.endrem.evil_eye.description": "§7§oТалисман, что не защищает от неудач, а §8§oПитается Ими\n§7§oКаждое спасение требует всё более §8§oСтрашной Жертвы",
 
-  "item.endrem.undead_eye": "§eОко Слепой Одержимости",
+  "item.endrem.undead_eye": "Око Слепой Одержимости",
   "item.endrem.undead_eye.description": "§7§oВыкованное из §8§oПавшей Души§7§o клятвопреступника\n§7§oОно — тяжкий §8§oОбет§7§o, лишающий §8§oРассудка",
 
-  "item.endrem.cryptic_eye": "§bОко Безграничного Знания",
+  "item.endrem.cryptic_eye": "Око Безграничного Знания",
   "item.endrem.cryptic_eye.description": "§7§oХранящее как §8§oВысшую Истину§7§o, так и §8§oБезумие\n§7§oОно — танец §8§oЗлобного Гения",
 
-  "item.endrem.corrupted_eye": "§cОко Потерянной Технологии",
+  "item.endrem.corrupted_eye": "Око Потерянной Технологии",
   "item.endrem.corrupted_eye.description": "§7§oСпроектированное §8§oДревним Инженером§7§o по §8§oАлгоритму\n§7§oОно стремится к §8§oВечному Двигателю",
 
   "item.endrem.witch_eye": "§5Око Ведьминого Котла",

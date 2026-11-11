@@ -1,0 +1,18 @@
+{
+ "parent": "tacz:root",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:target",
+       "tacz:target_minecart"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

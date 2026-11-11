@@ -274,6 +274,16 @@ ServerEvents.recipes(event => {
         R: 'irons_spellbooks:blank_rune'
     })
 
+    // Руна сияния (Hazentouvelib): 8 светопыли вокруг пустой руны (рецепт из ветки yarick; remove.js убирает оригинальный)
+    event.shaped('hazentouvelib:radiance_rune', [
+        'GGG',
+        'GRG',
+        'GGG'
+    ], {
+        G: 'minecraft:glowstone_dust',
+        R: 'irons_spellbooks:blank_rune'
+    }).id('generation:radiance_rune')
+
     // Амулет телепортации
     event.remove({ output: 'irons_spellbooks:teleportation_amulet' })
     event.shaped('irons_spellbooks:teleportation_amulet', [

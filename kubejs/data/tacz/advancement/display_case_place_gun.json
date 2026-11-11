@@ -1,0 +1,27 @@
+{
+ "parent": "tacz:arms_exhibition",
+ "criteria": {
+  "place": {
+   "trigger": "minecraft:item_used_on_block",
+   "conditions": {
+    "location": [
+     {
+      "condition": "minecraft:location_check",
+      "predicate": {
+       "block": {
+        "blocks": [
+         "tacz:gun_display_case"
+        ]
+       }
+      }
+     }
+    ],
+    "item": {
+     "items": [
+      "tacz:modern_kinetic_gun"
+     ]
+    }
+   }
+  }
+ }
+}

@@ -193,6 +193,13 @@ ServerEvents.recipes(event => {
         'legendary_spellbooks:oblivionmancer_boots'
     ].forEach(id => event.remove({ output: id }))
 
+    // Химзащита Alex's Caves: остаётся только маска (она ставится как имплант), остальные части вырезаны
+    ;[
+        'alexscaves:hazmat_chestplate',
+        'alexscaves:hazmat_leggings',
+        'alexscaves:hazmat_boots'
+    ].forEach(id => event.remove({ output: id }))
+
     event.remove({ output: 'cataclysm_spellbooks:abyssal_rune' })
     event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_helmet' })
     event.remove({ output: 'cataclysm_spellbooks:abyssal_warlock_chestplate' })
@@ -224,6 +231,14 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'hazentouvelib:radiance_rune' })
     event.remove({ output: 'hazentouvelib:shadow_rune' })
     event.remove({ output: 'hazentouvelib:shadow_upgrade_orb' })
+    event.remove({ output: 'hazentouvelib:steel_ingot' })
+    event.remove({ output: 'hazentouvelib:steel_nugget' })
+    event.remove({ output: 'hazentouvelib:soul_igniter' })
+
+    // Hazen N' Stuff: весь контент заблокирован (itembans), рецепты убраны. Оставлены только Посох Фрирен, Мурамаса, Чакрам Шрамов,
+    // Умбранова; крафт Астралитового секача и Посоха Фрирен удалён. Заклинания мода не затронуты.
+    const HAZEN_KEEP = ['muramasa', 'thorn_chakram', 'umbranova_dormant']
+    event.remove({ mod: 'hazennstuff', not: { or: HAZEN_KEEP.map(id => ({ output: 'hazennstuff:' + id })) } })
     
     // Tentaworks
     event.remove({ output: 'tentaworks:copper_tentacle_rig' })
@@ -240,6 +255,14 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'supplementaries:lumisene_bucket' })
     event.remove({ id: 'supplementaries:integration/lumisene_mixing' })
 
+    // Legendary monsters
+    event.remove({ output: 'legendary_monsters:bottle_of_annihilation' })
+
+    // Alex's Caves: костюм химзащиты (маска остаётся)
+    event.remove({ output: 'alexscaves:hazmat_chestplate' })
+    event.remove({ output: 'alexscaves:hazmat_leggings' })
+    event.remove({ output: 'alexscaves:hazmat_boots' })
+
 })
 
 // Лут: глаза End Remastered добываются только крафтами kubejs (eye_crafts.js), незеритовый горн не падает с Незеритового чудовища.
@@ -255,5 +278,10 @@ if (typeof LootJS !== 'undefined') {
 
         // Незеритовое чудовище
         event.getLootTable('cataclysm:entities/netherite_monstrosity').removeItem('cataclysm:infernal_forge')
+
+        // Части химзащиты вырезаны, остаётся только маска
+        event.forEachTable(table => table.removeItem([
+            'alexscaves:hazmat_chestplate', 'alexscaves:hazmat_leggings', 'alexscaves:hazmat_boots'
+        ]))
     })
 }

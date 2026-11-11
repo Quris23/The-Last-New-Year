@@ -1,0 +1,21 @@
+{
+ "parent": "createnuclear:lead_ingot",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "createnuclear:reinforced_glass"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

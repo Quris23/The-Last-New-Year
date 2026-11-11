@@ -216,16 +216,36 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(ruinBook, ruinBook)
     ]).transitionalItem(ruinBook).loops(2)
 
-    // Евангелие рассвета (осталась только 3-я версия): из Деревенской библии вместо Золотой книги заклинаний
-    event.shaped('somakespells:dawnlit_gospel_3_spell_book', [
-        'ABB',
-        'DCC',
-        'ABB'
-    ], {
-        A: 'irons_spellbooks:holy_rune',
-        B: 'irons_spellbooks:arcane_ingot',
-        C: 'irons_spellbooks:hogskin',
-        D: 'irons_spellbooks:villager_spell_book'
-    })
+    // Евангелие рассвета: крафт на верстаке убран, остался только механический (somakespells.js)
 
+    // Кодекс, скованный пустотой
+    event.remove({ output: 'somakespells:voidbound_codex_3_spell_book' })
+    let dragonBook1 = 'irons_spellbooks:dragonskin_spell_book'
+    event.recipes.create.sequenced_assembly([
+        'somakespells:voidbound_codex_3_spell_book'
+    ], dragonBook1, [
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'kubejs:ending_armor_plate_from_dark_chorium_steel']),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'born_in_chaos_v1:phantom_powder']),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'irons_spellbooks:ender_upgrade_orb']),
+        event.recipes.createFilling(dragonBook1,  [dragonBook1, Fluid.of('create_dragons_plus:dragon_breath', 500)]),
+        event.recipes.createDeploying(dragonBook1, [dragonBook1, 'cataclysm:void_core']),
+        event.recipes.createPressing(dragonBook1, dragonBook1)
+    ]).transitionalItem(dragonBook1).loops(1)
+
+
+
+    // Дневник распада (Discerning the Eldritch): механическая сборка, 1 цикл.
+    // Основа - Апокриф вампира; кровь 250 мБ, осколок злобы, пресс, осколок потусторонней души, пресс, жидкая молния.
+    event.remove({ output: 'discerning_the_eldritch:diary_of_decay' })
+    let vampBook = 'irons_spellbooks:cursed_doll_spell_book'
+    event.recipes.create.sequenced_assembly([
+        'discerning_the_eldritch:diary_of_decay'
+    ], vampBook, [
+        event.recipes.createFilling(vampBook, [vampBook, Fluid.of('irons_spellbooks:blood', 250)]),
+        event.recipes.createDeploying(vampBook, [vampBook, 'discerning_the_eldritch:shard_of_malice']),
+        event.recipes.createPressing(vampBook, vampBook),
+        event.recipes.createDeploying(vampBook, [vampBook, 'discerning_the_eldritch:eldritch_soul_shard']),
+        event.recipes.createPressing(vampBook, vampBook),
+        event.recipes.createFilling(vampBook, [vampBook, Fluid.of('create_wizardry:lightning', 250)])
+    ]).transitionalItem(vampBook).loops(1)
 })

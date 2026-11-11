@@ -2,17 +2,17 @@
   "parent": "minecraft:item/handheld",
   "loader": "neoforge:separate_transforms",
   "base": {
-    "parent": "somakespells:item/stormcaller_lexicon_3_spell_book_model"
+    "parent": "discerning_the_eldritch:item/tempestuous_tome_innovator_model"
   },
   "perspectives": {
     "gui": {
       "parent": "item/generated",
       "textures": {
-        "layer0": "somakespells:item/stormcaller_lexicon_3_spell_book"
+        "layer0": "discerning_the_eldritch:item/tempestuous_tome"
       }
     },
     "head": {
-      "parent": "somakespells:item/stormcaller_lexicon_3_spell_book_model"
+      "parent": "discerning_the_eldritch:item/tempestuous_tome_innovator_model"
     }
   }
 }

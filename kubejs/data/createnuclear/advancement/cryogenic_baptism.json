@@ -1,0 +1,14 @@
+{
+ "parent": "createnuclear:absolute_zero",
+ "criteria": {
+  "0": {
+   "trigger": "createnuclear:cryogenic_baptism_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

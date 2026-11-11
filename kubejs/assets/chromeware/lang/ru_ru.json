@@ -1025,5 +1025,17 @@
   "config.chromeware.stat.sandevistan.heal_per_kill_fraction": "Лечение за убийство",
   "config.chromeware.stat.mechatronic_core.cyberlimb_target_damage_bonus": "Бонус к урону по киберконечностям",
   "message.chromeware.cyberware_disabled": "Ваши киберимпланты отключены на %s сек.",
-  "message.chromeware.cyberware_disabled_until_death": "Ваши киберимпланты отключены до самой смерти."
+  "message.chromeware.cyberware_disabled_until_death": "Ваши киберимпланты отключены до самой смерти.",
+  "screen.chromeware.part.tentacle_rig.brass": "Корпус",
+  "screen.chromeware.part.tentacle_rig.copper": "Вставки",
+  "screen.chromeware.part.tentacle_rig.steel": "Металл",
+  "screen.chromeware.part.tentacle_rig.dark": "Тёмные детали",
+  "screen.chromeware.part.tentacle_rig.lights": "Огни",
+  "screen.chromeware.part.tentacle_rig.wire": "Проволока",
+  "screen.chromeware.part.tentacle_rig_netherite.brass": "Корпус",
+  "screen.chromeware.part.tentacle_rig_netherite.copper": "Вставки",
+  "screen.chromeware.part.tentacle_rig_netherite.steel": "Металл",
+  "screen.chromeware.part.tentacle_rig_netherite.dark": "Тёмные детали",
+  "screen.chromeware.part.tentacle_rig_netherite.lights": "Огни",
+  "screen.chromeware.part.tentacle_rig_netherite.wire": "Проволока"
 }

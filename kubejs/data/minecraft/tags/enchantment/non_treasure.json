@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [],
+  "remove": [
+    "hazennstuff:blood_attunement",
+    "hazennstuff:lightning_attunement",
+    "hazennstuff:hydro_attunement",
+    "hazennstuff:nature_attunement",
+    "hazennstuff:evocation_attunement",
+    "hazennstuff:shadow_attunement",
+    "hazennstuff:radiance_attunement",
+    "hazennstuff:ice_attunement",
+    "hazennstuff:arcane_affinity",
+    "hazennstuff:cosmic_attunement",
+    "hazennstuff:cinderkissed",
+    "hazennstuff:ender_attunement",
+    "hazennstuff:occult_attunement",
+    "hazennstuff:holy_attunement",
+    "hazennstuff:technomancy_attunement",
+    "hazennstuff:fire_attunement",
+    "hazennstuff:eldritch_attunement"
+  ]
+}

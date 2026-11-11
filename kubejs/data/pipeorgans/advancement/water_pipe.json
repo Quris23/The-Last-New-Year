@@ -1,0 +1,14 @@
+{
+ "parent": "pipeorgans:piccolo",
+ "criteria": {
+  "0": {
+   "trigger": "pipeorgans:water_pipe"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

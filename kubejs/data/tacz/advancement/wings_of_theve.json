@@ -1,0 +1,26 @@
+{
+ "parent": "tacz:gunship",
+ "criteria": {
+  "kill": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "player": {
+     "equipment": {
+      "mainhand": {
+       "items": [
+        "tacz:modern_kinetic_gun"
+       ],
+       "predicates": {
+        "minecraft:custom_data": "{GunId:\"tacz:rpg7\"}"
+       }
+      }
+     },
+     "nbt": "{FallFlying: 1b}"
+    },
+    "entity": {
+     "type": "minecraft:phantom"
+    }
+   }
+  }
+ }
+}

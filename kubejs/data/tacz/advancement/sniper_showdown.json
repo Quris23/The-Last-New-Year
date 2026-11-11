@@ -1,0 +1,27 @@
+{
+ "parent": "tacz:times_changed",
+ "criteria": {
+  "kill": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "player": {
+     "equipment": {
+      "mainhand": {
+       "items": [
+        "tacz:modern_kinetic_gun"
+       ]
+      }
+     }
+    },
+    "entity": {
+     "type": "minecraft:skeleton",
+     "distance": {
+      "absolute": {
+       "min": 100.0
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "parent": "createnuclear:chill_out",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "createnuclear:nitrogen_bucket"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "legendary_spellbooks:item/annihilators_protocol_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "legendary_spellbooks:item/annihilators_protocol"
+      }
+    },
+    "head": {
+      "parent": "legendary_spellbooks:item/annihilators_protocol_model"
+    }
+  }
+}

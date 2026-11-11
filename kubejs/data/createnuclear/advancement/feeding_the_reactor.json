@@ -1,0 +1,21 @@
+{
+ "parent": "createnuclear:reactor_casing",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "items": [
+     {
+      "items": "createnuclear:reactor_rod_input"
+     }
+    ]
+   },
+   "trigger": "minecraft:inventory_changed"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

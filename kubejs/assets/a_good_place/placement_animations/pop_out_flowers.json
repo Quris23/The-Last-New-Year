@@ -1,0 +1,11 @@
+{
+  "predicates": [
+    { "type": "matching_blocks", "blocks": "#minecraft:flowers" }
+  ],
+  "priority": 4,
+  "duration": 4,
+  "height": 1.8,
+  "height_curve": -0.7,
+  "scale": 1.2,
+  "scale_curve": -0.7
+}

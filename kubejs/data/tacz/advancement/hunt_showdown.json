@@ -1,0 +1,29 @@
+{
+ "parent": "tacz:times_changed",
+ "criteria": {
+  "kill": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "player": {
+     "equipment": {
+      "mainhand": {
+       "items": [
+        "tacz:modern_kinetic_gun"
+       ],
+       "predicates": {
+        "minecraft:custom_data": "{GunId:\"tacz:springfield1873\"}"
+       }
+      }
+     }
+    },
+    "entity": {
+     "distance": {
+      "absolute": {
+       "min": 75.0
+      }
+     }
+    }
+   }
+  }
+ }
+}

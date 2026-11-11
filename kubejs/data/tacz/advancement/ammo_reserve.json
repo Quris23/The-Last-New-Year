@@ -1,0 +1,17 @@
+{
+ "parent": "tacz:ammo_workbench",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:ammo_box"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "model": "lny_ammo:ammo/545x39",
+  "texture": "lny_ammo:ammo/uv/545x39",
+  "slot": "tacz:ammo/slot/545x39",
+  "shell": {
+    "model": "tacz:shell/545x39_shell",
+    "texture": "tacz:shell/545x39_shell"
+  }
+}

@@ -1,0 +1,17 @@
+{
+ "parent": "tacz:gun_smith_table",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:modern_kinetic_gun"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

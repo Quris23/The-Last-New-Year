@@ -1,0 +1,20 @@
+{
+ "parent": "tacz:craft_first_gun",
+ "criteria": {
+  "kill": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "player": {
+     "equipment": {
+      "mainhand": {
+       "items": [
+        "tacz:modern_kinetic_gun"
+       ]
+      }
+     }
+    },
+    "entity": {}
+   }
+  }
+ }
+}

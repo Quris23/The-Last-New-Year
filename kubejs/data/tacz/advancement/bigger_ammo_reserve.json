@@ -1,0 +1,19 @@
+{
+ "parent": "tacz:ammo_reserve",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:ammo_storage",
+       "tacz:ammo_storage_gold",
+       "tacz:ammo_storage_diamond"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

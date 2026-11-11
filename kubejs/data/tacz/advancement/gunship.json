@@ -1,0 +1,20 @@
+{
+ "parent": "tacz:times_changed",
+ "criteria": {
+  "kill": {
+   "trigger": "minecraft:player_killed_entity",
+   "conditions": {
+    "player": {
+     "equipment": {
+      "mainhand": {
+       "items": [
+        "tacz:modern_kinetic_gun"
+       ]
+      }
+     },
+     "nbt": "{FallFlying: 1b}"
+    }
+   }
+  }
+ }
+}

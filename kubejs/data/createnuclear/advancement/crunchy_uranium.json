@@ -1,0 +1,19 @@
+{
+ "parent": "createnuclear:yellowcake",
+ "criteria": {
+  "0": {
+   "conditions": {
+    "item": {
+     "items": "createnuclear:yellowcake"
+    }
+   },
+   "trigger": "minecraft:consume_item"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

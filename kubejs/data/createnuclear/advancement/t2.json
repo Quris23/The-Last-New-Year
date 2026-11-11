@@ -1,0 +1,14 @@
+{
+ "parent": "createnuclear:t1",
+ "criteria": {
+  "0": {
+   "trigger": "createnuclear:t2_builtin"
+  }
+ },
+ "requirements": [
+  [
+   "0"
+  ]
+ ],
+ "sends_telemetry_event": true
+}

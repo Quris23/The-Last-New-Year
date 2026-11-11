@@ -1,0 +1,20 @@
+{
+ "parent": "tacz:root",
+ "criteria": {
+  "obtain": {
+   "trigger": "minecraft:inventory_changed",
+   "conditions": {
+    "items": [
+     {
+      "items": [
+       "tacz:gun_pegboard",
+       "tacz:glow_gun_pegboard",
+       "tacz:gun_display_case",
+       "tacz:statue"
+      ]
+     }
+    ]
+   }
+  }
+ }
+}
