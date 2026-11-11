@@ -172,6 +172,16 @@ ServerEvents.recipes(event => {
         results: [{ id: 'chromeware:military_immunosuppressant', amount: 1000 }]
     }).id('kubejs:mixing/military_immunosuppressant')
 
+    // Алмазное сердце
+    event.shaped('quark:diamond_heart', [
+        'ddd',
+        'dHd',
+        'ddd'
+    ], {
+        d: 'diamond',
+        H: 'chromeware:second_heart'
+    })
+
     // TaCZ: оружейные станки стандартного пака без рецептов (шаг Extra руководства Create Armorer).
     // Оружие делается через Create (Create Immersive TaCZ), сами станки крафтятся как раньше
     event.remove({ type: 'tacz:gun_smith_table_crafting', id: /^tacz:/ })
@@ -189,5 +199,7 @@ ServerEvents.recipes(event => {
         'attachments/ap_projectile', 'attachments/wrench_iron_spike', 'attachments/muzzle_refit_energy_blade',
         'attachments/fluid_pipe_grip', 'attachments/fluid_pipe_muzzle', 'attachments/fluid_pipe_scope'
     ].forEach(id => event.remove({ id: `createimmersivetacz:${id}` }))
+
+    
 
 })
